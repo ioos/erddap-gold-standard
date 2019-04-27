@@ -1,4 +1,5 @@
 erddap/data
+logs
 
 .idea
 *.iml
