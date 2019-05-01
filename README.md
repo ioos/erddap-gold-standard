@@ -7,6 +7,15 @@ Uses the [ERDDAP Docker image](https://github.com/axiom-data-science/docker-erdd
 You can view this setup live at [https://standards.sensors.ioos.us/erddap/index.html](https://standards.sensors.ioos.us/erddap/index.html), 
 with documentation at [https://ioos.github.io/ioos-metadata/gold-standard-examples.html](https://ioos.github.io/ioos-metadata/gold-standard-examples.html).
 
+# Download
+
+You should `git clone` or download and unzip this repository from the green "Clone or download" button. Once cloned or downloaded, move into the directory.
+
+```
+$ ls
+datasets erddap .gitignore README.md
+```
+
 # Run
 
 ```
