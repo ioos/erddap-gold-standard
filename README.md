@@ -29,6 +29,10 @@ docker run --rm \
   -v /tmp/:/usr/local/tomcat/temp/ \
  axiom/docker-erddap:1.82
 ```
+or
+```
+docker-compose up -d
+```
 
 After startup, go to http://localhost:8080/erddap/index.html 
 
