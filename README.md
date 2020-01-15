@@ -27,7 +27,7 @@ docker run --rm \
   -v $(pwd)/erddap/data:/erddapData \
   -v $(pwd)/datasets:/datasets \
   -v /tmp/:/usr/local/tomcat/temp/ \
- axiom/docker-erddap:1.82
+ axiom/docker-erddap:2.02
 ```
 or
 ```
@@ -35,6 +35,13 @@ docker-compose up -d
 ```
 
 After startup, go to http://localhost:8080/erddap/index.html 
+
+You can monitor http://localhost:8080/erddap/status.html to see the status of dataset loading.
+If a dataset fails to load, you can see logs under `$(pwd)/erddap/data/logs`.
+
+Note: ERDDAP caches datasets, so if you change one, you can force refresh by creating a file under `$(pwd)/erddap/data/hardFlag/`,
+for example `touch $(pwd)/erddap/data/hardFlag/41024-sun2-sunset-nearshore`. 
+See [ERDDAP docs on flags](https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html#hardFlag).
 
 # Modify
 
