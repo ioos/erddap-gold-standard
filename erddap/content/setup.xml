@@ -107,7 +107,7 @@ You MUST CHANGE this when you install ERDDAP on your server. For example,
 <baseUrl>http://127.0.0.1:8080</baseUrl>              used for running/testing on your personal computer
 <baseUrl>http://coastwatch.pfeg.noaa.gov</baseUrl>    used for ERD releases (erddap and erddap2)
 -->
-<baseUrl>http://localhost:8080</baseUrl>
+<baseUrl>https://test.cioosatlantic.ca</baseUrl>
 
 <!-- This is a variant of <baseUrl> which is used when authentication is active and the user is logged in.
   In general, you take the <baseUrl>, change "http" to "https", and change/add ":8443".
@@ -118,8 +118,8 @@ You MUST CHANGE this when you install ERDDAP on your server. For example,
   For example,
 <baseHttpsUrl>https://127.0.0.1:8443</baseHttpsUrl>                 used for running/testing on your personal computer
 <baseHttpsUrl>https://coastwatch.pfeg.noaa.gov:8443</baseHttpsUrl>  used at ERD for releases (erddap and erddap2)
+<baseHttpsUrl>https://cioosatlantic.ca:8443</baseHttpsUrl>
 -->
-<baseHttpsUrl>http://localhost:8080</baseHttpsUrl>
 
 
 <!-- **************************************************************************** -->
@@ -179,17 +179,17 @@ Prevent mass mailing worms from sending mail" is un-checked.
 <!-- Information about the ERDDAP administrator is used for the SOS and WMS servers.
 You MUST CHANGE these to describe your installation.
 -->
-<adminInstitution>Integrated Ocean Observing System (IOOS)</adminInstitution>
-<adminInstitutionUrl>https://ioos.github.io/</adminInstitutionUrl>
-<adminIndividualName>Micah Wengren</adminIndividualName>
-<adminPosition>Data Manager</adminPosition>
-<adminPhone>240-533-9441</adminPhone>
-<adminAddress>1315 East-West Highway 2nd Floor</adminAddress>
-<adminCity>Silver Spring</adminCity>
-<adminStateOrProvince>MD</adminStateOrProvince>
-<adminPostalCode>20910</adminPostalCode>
-<adminCountry>USA</adminCountry>
-<adminEmail>micah.wengren@noaa.gov</adminEmail>
+<adminInstitution>CIOOS Atlantic Regional Association</adminInstitution>
+<adminInstitutionUrl>https://www.cioos.ca/atlantic</adminInstitutionUrl>
+<adminIndividualName>Data Management Team</adminIndividualName>
+<adminPosition>Data Managers</adminPosition>
+<adminPhone>1-888-FOR-DATA</adminPhone>
+<adminAddress>155 University Ave #302</adminAddress>
+<adminCity>Toronto</adminCity>
+<adminStateOrProvince>ON</adminStateOrProvince>
+<adminPostalCode>M5H 3B7</adminPostalCode>
+<adminCountry>Canada</adminCountry>
+<adminEmail>atlantic@cioos.ca</adminEmail>
 
 <!--
 These default accessConstraints, fees, and keywords are used by
@@ -467,9 +467,11 @@ information.
 <head>
 <meta charset="UTF-8">
 <title>ERDDAP</title>
-<link rel="shortcut icon" href="/erddap/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 <link href="/erddap/images/erddap2.css" rel="stylesheet" type="text/css">
+<link href="/erddap/images/cioos_atlantic.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 ]]></startHeadHtml5>
 
 
@@ -479,9 +481,9 @@ information.
 <table class="compact nowrap" style="width:100%; background-color:#128CB5;">
   <tr>
     <td style="text-align:center; width:80px;"><a rel="bookmark"
-      href="http://www.noaa.gov/"><img
-      title="National Oceanic and Atmospheric Administration"
-      src="/erddap/images/noaab.png" alt="NOAA"
+      href="/"><img
+      title="CIOOS Atlantic - Regional Assocation of the Canadian Integrated Ocean Observing System"
+      src="/wp-content/uploads/cioos_atlantic_en.png" alt="CIOOS Atlantic"
       style="vertical-align:middle;"></a></td>
     <td style="text-align:left; font-size:x-large; color:#FFFFFF; ">
       <strong>ERDDAP</strong>
@@ -528,5 +530,90 @@ ERDDAP, Version &erddapVersion;
 </div>
 </body>
 ]]></endBodyHtml5>
+
+
+
+<!-- The standard license is added to many dataset's global metadata (see datasets.xml) -->
+<standardLicense>
+The data may be used and redistributed for free but is not intended
+for legal use, since it may contain inaccuracies. Neither the data
+Contributor, ERD, NOAA, nor the United States Government, nor any
+of their employees or contractors, makes any warranty, express or
+implied, including warranties of merchantability and fitness for a
+particular purpose, or assumes any legal liability for the accuracy,
+completeness, or usefulness, of this information.
+</standardLicense>
+
+<!-- This is used by <legal> in setup.xml. -->
+<standardContact><![CDATA[
+<br>&nbsp;
+<hr>
+<h2><a class="selfLink" id="contact" href="#contact" rel="help">Contact CIOOS Atlantic</a></h2>
+Questions, comments, suggestions?  Please send an email to <kbd>&adminEmail;</kbd>&nbsp;.
+]]></standardContact>
+
+<!-- This is used by <legal> in setup.xml. -->
+<standardDataLicenses><![CDATA[
+<br>&nbsp;
+<hr>
+<h2><a class="selfLink" id="dataLicenses" href="#dataLicenses" rel="help">Data Licenses / Data Usage Restrictions</a></h2>
+The data from some datasets may be subject to usage limitations or restrictions. See the dataset's
+<kbd>license</kbd> metadata, which can be found on the dataset's Data Access Form (.html), 
+Make A Graph (.graph), and Dataset Attribute Structure (.das) web pages.
+]]></standardDataLicenses>
+
+<!-- This is used by <legal> in setup.xml. -->
+<standardDisclaimerOfEndorsement><![CDATA[
+<h3>DISCLAIMER OF ENDORSEMENT</h3>
+Any reference obtained from this server to a specific product, process, or service does not constitute
+or imply an endorsement by the individuals or organizations associated with this website of the
+product, process, or service, or its producer or provider. The views and opinions expressed in any
+referenced document do not necessarily state or reflect those of the individuals or organizations
+associated with this website.
+]]></standardDisclaimerOfEndorsement>
+
+<!-- This is used by <legal> in setup.xml.
+  This is based on https://swfsc.nmfs.noaa.gov/disclaimer.htm. -->
+<standardDisclaimerOfExternalLinks><![CDATA[
+<h3>DISCLAIMER OF EXTERNAL LINKS</h3>
+The appearance of external links on this World Wide Web site does not constitute endorsement by 
+the individuals and organizations associated with this website of external Web sites or the information,
+products or services contained therein. The individuals and organizations associated with this web
+site do not exercise any editorial control over the information you may find at these locations. These
+links are provided consistent with the stated purpose of this website.
+]]></standardDisclaimerOfExternalLinks>
+
+<!-- This is used by <legal> in setup.xml.
+  This is from BSD plus two instances of ", WEB SERVICE, AND/OR DATA".
+  Pre 2010-08-05 was
+  <br>Neither the data providers, ERD, CoastWatch, NOAA, nor the United States Government, nor any of their
+  <br>employees or contractors, makes any warranty, express or implied, including warranties of
+  <br>merchantability and fitness for a particular purpose, or assumes any legal liability for the accuracy,
+  <br>completeness, or usefulness, of any information at this site.
+-->
+<standardGeneralDisclaimer><![CDATA[
+<h3>GENERAL DISCLAIMER</h3>
+<kbd>THIS SOFTWARE, WEB SERVICE, AND DATA ARE PROVIDED BY THE COPYRIGHT HOLDERS
+AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+WEB SERVICE, OR DATA, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</kbd>
+]]></standardGeneralDisclaimer>
+
+<!-- This is used by <legal> in setup.xml. -->
+<standardPrivacyPolicy><![CDATA[
+<br>&nbsp;
+<hr>
+<h2><a class="selfLink" id="privacyPolicy" href="#privacyPolicy" rel="help">Privacy Policy</a></h2>
+ERDDAP follows 
+<a rel="bookmark" href="https://www.noaa.gov/protecting-your-privacy"
+  >NOAA's Privacy Policy Guidelines</a>.
+]]></standardPrivacyPolicy>
 
 </erddapSetup>
