@@ -79,14 +79,7 @@ Update `<baseUrl>`, `<baseHttpsUrl>` to match your domain.
 #### Steps
 
 1. Add your `nc` file to `datasets/`.
-1. Run `GenerateDatasetsXml.sh`. Results will output to the console and `logs/`.
-    ```
-    docker run --rm -it \
-      -v $(pwd)/datasets:/datasets \
-      -v $(pwd)/logs:/erddapData/logs \
-      axiom/docker-erddap:latest \
-      bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"
-    ```
+1. Run `sh GenerateDatasetsXml.sh`. Results will output to the console and `logs/`.
 1. Copy the resulting `<dataset>` to `erddap/content/datasets.xml`
 1. Restart ERDDAP
 
@@ -95,11 +88,7 @@ Update `<baseUrl>`, `<baseHttpsUrl>` to match your domain.
 Say you have a file called `seward-sealife-center-astra.nc` that you've added to `datasets/`.
 
 ```
-~/dev/ioos/erddap-gold-standard$ docker run --rm -it \
->   -v $(pwd)/datasets:/datasets \
->   -v $(pwd)/logs:/erddapData/logs \
->   axiom/docker-erddap:latest \
->   bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"
+sh GenerateDatasetsXml.sh
 
 *** GenerateDatasetsXml ***
 Press Enter or type the word "default" (but without the quotes)
@@ -189,3 +178,13 @@ Found/using sampleFileName=/datasets/seward-sealife-center-astra.nc
 
 The resulting `<dataset>` is in `logs/GenerateDatasetsXml.out`. 
 Copy this into `datasets.xml` and reload ERDDAP.
+
+#### Troubleshooting
+
+The `DasDds` tool can help you find errors in datasets.xml, it is an interactive tool that will prompt you for a dataset ID. 
+
+```
+sh DasDds.sh
+```
+
+You can find a log of what happened at `logs/DasDds.out`
