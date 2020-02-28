@@ -1,0 +1,27 @@
+a:link {
+  color: #e55162;
+}
+
+a:visited {
+  color: #c45963;
+}
+
+body > table {
+  background-color: #d63d4f !important;
+  color: #fff;
+}
+
+body > table a{
+  color: #fff !important;
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+
+body > table > tbody > tr > td > a > img {
+  width: 450px;
+  height: auto;
+  margin-right: 8px;
+  padding-right: 8px;
+  background-color: #fff;
+}
+
