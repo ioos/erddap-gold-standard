@@ -7,3 +7,7 @@ logs
 
 # Ignore env configuration
 .env
+
+# Ignore the datasets directory
+# Separate version-controlled scripts should be used to re-fetch any data to be cached there.
+datasets

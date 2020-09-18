@@ -17,6 +17,18 @@ body > table a{
   font-weight: bold;
 }
 
+table.commonBGColor td {
+  background-color: #f4f4f4;
+  color: #808081;
+}
+
+
+table.commonBGColor tr:hover td {
+  background-color: #fff;
+  color: #e55162;
+}
+
+
 body > table > tbody > tr > td > a > img {
   width: 450px;
   height: auto;
@@ -24,4 +36,5 @@ body > table > tbody > tr > td > a > img {
   padding-right: 8px;
   background-color: #fff;
 }
+
 
