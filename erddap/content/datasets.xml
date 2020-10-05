@@ -564,6 +564,8 @@
         <addAttributes>
             <att name="ioos_category">Surface Waves</att>
             <att name="long_name">Wave Ht Sig (m)</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
+            <att name="actual_range" type="doubleList">0.0 50.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -589,6 +591,7 @@
         <addAttributes>
             <att name="ioos_category">Surface Waves</att>
             <att name="long_name">Wave Ht Max (m)</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -652,6 +655,7 @@
             <att name="ioos_category">Wind</att>
             <att name="long_name">Wind Speed</att>
             <att name="standard_name">wind_speed</att>
+            <att name="valid_range" type="floatList">0.0 100.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -787,7 +791,7 @@
         <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude, precip_hail_int</att>
         <att name="summary">XEOS Buoy - 003. real-time buoy data. CMAR data from a local source.</att>
         <att name="testOutOfDate">now-1day</att>
-        <att name="title">XEOS Buoy - 003</att>
+        <att name="title">CMAR - Chedabucto Bay</att>
     </addAttributes>
     <dataVariable>
         <sourceName>timestamp</sourceName>
@@ -887,6 +891,7 @@
         <addAttributes>
             <att name="ioos_category">Surface Waves</att>
             <att name="long_name">Wave Ht Sig (m)</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -912,6 +917,7 @@
         <addAttributes>
             <att name="ioos_category">Surface Waves</att>
             <att name="long_name">Wave Ht Max (m)</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -975,6 +981,7 @@
             <att name="ioos_category">Wind</att>
             <att name="long_name">Wind Speed</att>
             <att name="standard_name">wind_speed</att>
+            <att name="valid_range" type="floatList">0.0 100.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1111,7 +1118,7 @@
         <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude</att>
         <att name="summary">XEOS Buoy - 002. real-time buoy data. CMAR data from a local source.</att>
         <att name="testOutOfDate">now-1day</att>
-        <att name="title">XEOS Buoy - 002</att>
+        <att name="title">CMAR - St. Mary's Bay</att>
     </addAttributes>
     <dataVariable>
         <sourceName>timestamp</sourceName>
@@ -1211,6 +1218,7 @@
         <addAttributes>
             <att name="ioos_category">Surface Waves</att>
             <att name="long_name">Wave Ht Sig (m)</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1236,6 +1244,7 @@
         <addAttributes>
             <att name="ioos_category">Surface Waves</att>
             <att name="long_name">Wave Ht Max (m)</att>
+            <att name="valid_range" type="floatList">0.0 50.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1299,6 +1308,7 @@
             <att name="ioos_category">Wind</att>
             <att name="long_name">Wind Speed</att>
             <att name="standard_name">wind_speed</att>
+            <att name="valid_range" type="floatList">0.0 100.0</att>
         </addAttributes>
     </dataVariable>
     <dataVariable>
