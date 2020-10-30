@@ -462,9 +462,9 @@
         <att name="sourceUrl">(local files)</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
         <att name="subsetVariables">buoy_name, latitude, longitude</att>
-        <att name="summary">CMAR - James Bay. real-time buoy data. CMAR data from a local source.</att>
+        <att name="summary">CMAR - Jordan Bay. real-time buoy data. CMAR data from a local source.</att>
         <att name="testOutOfDate">now-1day</att>
-        <att name="title">CMAR - James Bay</att>
+        <att name="title">CMAR - Jordan Bay</att>
     </addAttributes>
     <dataVariable>
         <sourceName>timestamp</sourceName>
