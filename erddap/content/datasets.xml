@@ -1199,7 +1199,7 @@
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>temp_c (C)</sourceName>
+        <sourceName>device_temp_c (C)</sourceName>
         <destinationName>temp_c</destinationName>
         <dataType>byte</dataType>
         <!-- sourceAttributes>
