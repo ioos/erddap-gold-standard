@@ -684,7 +684,7 @@
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>humidity_percent (%)</sourceName>
+        <sourceName>humidity_percent</sourceName>
         <destinationName>humidity_percent</destinationName>
         <dataType>float</dataType>
         <!-- sourceAttributes>
@@ -1010,7 +1010,7 @@
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>humidity_percent (%)</sourceName>
+        <sourceName>humidity_percent</sourceName>
         <destinationName>humidity_percent</destinationName>
         <dataType>float</dataType>
         <!-- sourceAttributes>
@@ -1337,7 +1337,7 @@
         </addAttributes>
     </dataVariable>
     <dataVariable>
-        <sourceName>humidity_percent (%)</sourceName>
+        <sourceName>humidity_percent</sourceName>
         <destinationName>humidity_percent</destinationName>
         <dataType>float</dataType>
         <!-- sourceAttributes>
