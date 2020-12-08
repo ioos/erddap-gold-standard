@@ -1,6 +1,6 @@
 #!/bin/sh
 
-NORMAL="-server -d64 -Xms1G -Xmx2G"
+NORMAL="-server -d64 -Xms8G -Xmx8G"
 HEAP_DUMP="-XX:+HeapDumpOnOutOfMemoryError"
 HEADLESS="-Djava.awt.headless=true"
 EXTRAS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled"

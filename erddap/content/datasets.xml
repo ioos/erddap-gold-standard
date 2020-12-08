@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <erddapDatasets>
+  <requestBlacklist/>
   <!--
  DISCLAIMER:
    The chunk of datasets.xml made by GenerageDatasetsXml isn't perfect.
@@ -420,6 +421,30 @@
   <dataset type="EDDTableFromErddap" datasetID="SmartAtlantic_XEOS_hk4_buoy" active="true">
     <!-- XEOS HK4 Buoy Wave Sensor -->
     <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/SmartAtlantic_XEOS_hk4_buoy</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_postville_nlqu0001" active="true">
+    <!-- NEGL, Postville, Nunatsiavut (NLQU0001) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_postville_nlqu0001</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_rigolet_nlqu0002" active="true">
+    <!-- NEGL, Rigolet, Nunatsiavut (NLQU0002) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_rigolet_nlqu0002</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_black_tickle_nlqu0003" active="true">
+    <!-- NEGL, Black Tickle-Domino, NunatuKavut (NLQU0003) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_black_tickle_nlqu0003</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_cartwright_junction_nlqu0004" active="true">
+    <!-- NEGL, Cartwright Junction, NunatuKavut (NLQU0004) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_cartwright_junction_nlqu0004</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_red_bay_nlqu0005" active="true">
+    <!-- NEGL, Red Bay, NunatuKavut (NLQU0005) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_red_bay_nlqu0005</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_north_west_river_nlqu0007" active="true">
+    <!-- NEGL, North West River, Labrador (NLQU0007) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_north_west_river_nlqu0007</sourceUrl>
   </dataset>
   <dataset type="EDDTableFromErddap" datasetID="bb1_bop_level1" active="true">
     <!-- BBTS BOP Level 1 -->
@@ -1405,7 +1430,6 @@
         </addAttributes>
     </dataVariable>
 </dataset>
-
 
 <!-- NOTE! Since the source files don't have any metadata, you must add metadata
   below, notably 'units' for each of the dataVariables. -->
