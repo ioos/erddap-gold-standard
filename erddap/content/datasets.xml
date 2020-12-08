@@ -1950,7 +1950,7 @@
     -->
     <addAttributes>
       <att name="cdm_data_type">TimeSeries</att>
-      <att name="cdm_timeseries_variables">station_id, latitude, longitude, ???</att>
+      <att name="cdm_timeseries_variables">station, CRAT_01, DOXY_01, POTM_01, PRES_01, PSAL_01, TEMP_01</att>
       <att name="Conventions">CF-1.7, COARDS, ACDD-1.3</att>
       <att name="creator_name">DFO</att>
       <att name="date_modified">2018-08-20T13:08:13Z</att>
@@ -2003,6 +2003,16 @@
         <att name="ioos_category">Identifier</att>
         <att name="units">count</att>
       </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>lat</sourceName>
+      <destinationName>latitude</destinationName>
+      <dataType>float</dataType>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>lon</sourceName>
+      <destinationName>longitude</destinationName>
+      <dataType>float</dataType>
     </dataVariable>
     <dataVariable>
       <sourceName>time</sourceName>
