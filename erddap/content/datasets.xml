@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <erddapDatasets>
+  <requestBlacklist/>
   <!--
  DISCLAIMER:
    The chunk of datasets.xml made by GenerageDatasetsXml isn't perfect.
@@ -421,10 +422,455 @@
     <!-- XEOS HK4 Buoy Wave Sensor -->
     <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/SmartAtlantic_XEOS_hk4_buoy</sourceUrl>
   </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_postville_nlqu0001" active="true">
+    <!-- NEGL, Postville, Nunatsiavut (NLQU0001) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_postville_nlqu0001</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_rigolet_nlqu0002" active="true">
+    <!-- NEGL, Rigolet, Nunatsiavut (NLQU0002) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_rigolet_nlqu0002</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_black_tickle_nlqu0003" active="true">
+    <!-- NEGL, Black Tickle-Domino, NunatuKavut (NLQU0003) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_black_tickle_nlqu0003</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_cartwright_junction_nlqu0004" active="true">
+    <!-- NEGL, Cartwright Junction, NunatuKavut (NLQU0004) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_cartwright_junction_nlqu0004</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_red_bay_nlqu0005" active="true">
+    <!-- NEGL, Red Bay, NunatuKavut (NLQU0005) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_red_bay_nlqu0005</sourceUrl>
+  </dataset>
+  <dataset type="EDDTableFromErddap" datasetID="sma_negl_north_west_river_nlqu0007" active="true">
+    <!-- NEGL, North West River, Labrador (NLQU0007) -->
+    <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/sma_negl_north_west_river_nlqu0007</sourceUrl>
+  </dataset>
   <dataset type="EDDTableFromErddap" datasetID="bb1_bop_level1" active="true">
     <!-- BBTS BOP Level 1 -->
     <sourceUrl>http://belafonte.ocean.dal.ca:8080/erddap/tabledap/bb1_bop_level1</sourceUrl>
   </dataset>
-  <requestBlacklist />
+
+
+<!-- NOTE! Since the source files don't have any metadata, you must add metadata
+  below, notably 'units' for each of the dataVariables. -->
+<dataset type="EDDTableFromAsciiFiles" datasetID="coastal_action_7471_9460_c025" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/datasets/coastal_action/</fileDir>
+    <fileNameRegex>.*\.csv</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <charset>UTF-8</charset>
+    <columnSeparator>,</columnSeparator>
+    <columnNamesRow>1</columnNamesRow>
+    <firstDataRow>2</firstDataRow>
+    <sortedColumnSourceName>start_datetime</sortedColumnSourceName>
+    <sortFilesBySourceNames>start_datetime</sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">Point</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_name">Coastal Action</att>
+        <att name="creator_type">person</att>
+        <att name="creator_url">https://www.coastalaction.org/microplastics.html</att>
+        <att name="infoUrl">https://www.coastalaction.org/microplastics.html</att>
+        <att name="institution">Coastal Action</att>
+        <att name="keywords">2017-2020, action, area, array, array-data, atlantic, beaufort, beaufort_sea_state, canada, class, coastal, collected, colour, colour_2, comprehensive, currents, data, date, date_collected, datetime, distance, distance_travelled, end, end_datetime, erosion, erosion_type, erosion_type_2, flowmeter, flowmeter_in, flowmeter_out, identifier, large, latitude, latitude_out, longitude, longitude_out, microplastic, notes, oceanography, out, physical, physical oceanography, plastic, plastic_id, project, research, sample, sample_id, sea, size, size_class, speed, start, state, stewardship, study, study_area, surface, surface_area, system, time, time_in, time_out, total, total_time, travelled, trawl, trawl_speed, trawl_time, type</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="summary">The purpose of the Atlantic Canada Microplastic Research Project (2017-2020) is to determine the quantity of microplastics in 3 near-shore communities of Atlantic Canada.  Data will be used to better inform the conversation and solutions around plastic pollution in the region.  The project is funded by Environment and Climate Change Canada and is in partnership with Clean Annapolis River Project (CARP), ACAP Humber Arm, and Dr. Max Liboiron at the Civic Laboratory for Environmental Action Research (CLEAR) out of Memorial University of Newfoundland (MUN).  Dr.  Max Liboiron is our chief academic advisor on the 3-year project, assisting with project development, methods and protocol, and sampling design.  The project included sampling both surface water and beach sediment at all three study locations.  The surface water trawling equipment was built using CLEAR&#39;s low-aquatic debris instrument (LADI) design.  This document contains the results from the 2018 surface water samples.  Sediment data results for 2018 and hot-spot data from 2019 will be available in 2020.</att>
+        <att name="title">Atlantic Canada Microplastic Research Project (2017-2020)</att>
+        <att name="subsetVariables">date_collected, study_area, location, type, size_class</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>start_datetime</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Start Datetime</att>
+            <att name="source_name">start_datetime</att>
+            <att name="standard_name">time</att>
+            <att name="time_precision">1970-01-01T00:00:00Z</att>
+            <att name="units">yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>end_datetime</sourceName>
+        <destinationName>end_datetime</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">End Datetime</att>
+            <att name="standard_name">time</att>
+            <att name="time_precision">1970-01-01T00:00:00Z</att>
+            <att name="units">yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>date_collected</sourceName>
+        <destinationName>date_collected</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Date Collected</att>
+            <att name="standard_name">time</att>
+            <att name="time_precision">1970-01-01</att>
+            <att name="units">yyyy-MM-dd</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>study_area</sourceName>
+        <destinationName>study_area</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Study Area</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>location</sourceName>
+        <destinationName>location</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>sample_id</sourceName>
+        <destinationName>sample_id</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Sample Id</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>plastic_id</sourceName>
+        <destinationName>plastic_id</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Plastic Id</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>type</sourceName>
+        <destinationName>type</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Type</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>size_class</sourceName>
+        <destinationName>size_class</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Size Class</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>colour</sourceName>
+        <destinationName>colour</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Colour</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>colour_2</sourceName>
+        <destinationName>colour_2</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Colour 2</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>erosion</sourceName>
+        <destinationName>erosion</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Erosion</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>erosion_type</sourceName>
+        <destinationName>erosion_type</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Erosion Type</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>erosion_type_2</sourceName>
+        <destinationName>erosion_type_2</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Erosion Type 2</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>beaufort_sea_state</sourceName>
+        <destinationName>beaufort_sea_state</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="byte">127</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Beaufort Sea State</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>trawl_speed</sourceName>
+        <destinationName>trawl_speed</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Trawl Speed</att>
+            <att name="units">knots</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>time_in</sourceName>
+        <destinationName>time_in</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time In</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>time_out</sourceName>
+        <destinationName>time_out</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time Out</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>total_time</sourceName>
+        <destinationName>total_time</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Total Time</att>
+            <att name="units">minutes</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude_in</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="source_name">latitude_in</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude_in</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="source_name">longitude_in</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude_out</sourceName>
+        <destinationName>latitude_out</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude_out</sourceName>
+        <destinationName>longitude_out</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>flowmeter_in</sourceName>
+        <destinationName>flowmeter_in</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="int">2147483647</att>
+            <att name="ioos_category">Other</att>
+            <att name="long_name">Flowmeter In</att>
+            <att name="units">counts</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>flowmeter_out</sourceName>
+        <destinationName>flowmeter_out</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="int">2147483647</att>
+            <att name="ioos_category">Other</att>
+            <att name="long_name">Flowmeter Out</att>
+            <att name="units">counts</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>distance_travelled</sourceName>
+        <destinationName>distance_travelled</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Distance Travelled</att>
+            <att name="units">m</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>trawl_time</sourceName>
+        <destinationName>trawl_time</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="short">32767</att>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Trawl Time</att>
+            <att name="units">s</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>speed</sourceName>
+        <destinationName>speed</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Speed</att>
+            <att name="units">cm s-1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>surface_area</sourceName>
+        <destinationName>surface_area</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="ioos_category">Other</att>
+            <att name="long_name">Surface Area</att>
+            <att name="units">m2</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>notes</sourceName>
+        <destinationName>notes</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Other</att>
+            <att name="long_name">Notes</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+
 </erddapDatasets>
 

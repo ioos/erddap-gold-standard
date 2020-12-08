@@ -118,7 +118,7 @@ You MUST CHANGE this when you install ERDDAP on your server. For example,
   For example,
 <baseHttpsUrl>https://127.0.0.1:8443</baseHttpsUrl>                 used for running/testing on your personal computer
 <baseHttpsUrl>https://coastwatch.pfeg.noaa.gov:8443</baseHttpsUrl>  used at ERD for releases (erddap and erddap2)
-<baseHttpsUrl>https://cioosatlantic.ca:8443</baseHttpsUrl>
+<baseHttpsUrl>https://cioosatlantic.ca</baseHttpsUrl>
 -->
 
 
@@ -471,7 +471,6 @@ information.
 <link href="/erddap/images/erddap2.css" rel="stylesheet" type="text/css">
 <link href="/erddap/images/cioos_atlantic.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
 ]]></startHeadHtml5>
 
 
