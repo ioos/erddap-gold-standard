@@ -2,7 +2,7 @@ version: '2'
 services:
   erddap:
     container_name: "erddap_gold_standard"
-    image: axiom/docker-erddap:2.02
+    image: axiom/docker-erddap:latest
     restart: unless-stopped
     ports:
       - "8080:8080"
