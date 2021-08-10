@@ -2777,7 +2777,1472 @@
     </addAttributes>
   </dataVariable>
 </dataset>
-
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="Mar2018_be22_7577_3960" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/datasets/force/ADCP/Mar2018/</fileDir>
+    <fileNameRegex>.*AVER.*\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">Other</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">FORCE</att>
+        <att name="keywords">accelerometer, Accelerometer_Magnitude, Accelerometer_X, Accelerometer_Y, Accelerometer_Z, altimeter, Altimeter_AST, Altimeter_LE, Altimeter_Pressure, AltimeterQuality_AST, AltimeterQuality_LE, AltimeterStatus, ambiguity, ast, astpressure, ASTPressureOffset, battery, blanking, burst, BurstVelocityENU_Range, cell, cells, CellSize, cor, corrected, CorrectedHeading, count, currents, data, DataMask, east, energy, ensemble, EnsembleCount, enu, error, extended, ExtendedStatus, heading, identifier, level, local, magnetometer, Magnetometer_Magnitude, Magnetometer_X, Magnetometer_Y, Magnetometer_Z, MagnetometerTemperature, magnitude, mask, matlab, MatlabTimeStamp, missing, nominal, NominalCor, north, number, numberof, NumberofCells, offset, physicalbeam, pitch, power, PowerLevel, pressure, PressureSensorTemperature, quality, range, roll, rtctemperature, sensor, serial, SerialNumber, size, sound, source, speed, SpeedOfSound, stamp, statistics, status, Status_Missing_Data, temperature, time, time2, TimeStamp, transmit, TransmitEnergy, up1, up2, vel, Vel_East, Vel_North, Vel_Up1, Vel_Up2, velocity, water, WaterTemperature</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="subsetVariables">Status_Missing_Data, Error, NumberofCells, PowerLevel, EnsembleCount</att>
+        <att name="summary">This seabed-mounted ADCP, deployed for two months in spring 2018, collected 3-D velocity profiles and surface wave statistics at a location within the FORCE Crown Lease Area. Data are provided in raw (*ad2cp) form, and as processed currents and waves. These data were collected as part of a project on evaluating fish sensor capabilities at high flow sites (cf. Viehman et al 2019 in the metadata attachment).</att>
+        <att name="title">FORCE Acoustic Doppler Current Profiler (ADCP): Currents</att>
+        	<att name="contributor_name">Joel Culina,FORCE</att>
+	<att name="contributor_role">custodian,owner</att>
+	<att name="creator_email">info@fundyforce.ca</att>
+	<att name="creator_name">FORCE</att>
+	<att name="creator_type">institution</att>
+	<att name="creator_url">https://fundyforce.ca</att>
+	<att name="date_created">2016-12-02</att>
+	<att name="geospatial_lat_max">45.3713</att>
+	<att name="geospatial_lat_min">45.3713</att>
+	<att name="geospatial_lon_max">-64.403</att>
+	<att name="geospatial_lon_min">-64.403</att>
+	<att name="institution">FORCE</att>
+	<att name="instrument">1</att>
+	<att name="keywords">solar radiation,meteorology,wind,atmospheric pressure,air temperature,rain,other</att>
+	<att name="publisher_email">joel.culina@fundyforce.ca</att>
+	<att name="publisher_institution">FORCE</att>
+	<att name="publisher_name">Joel Culina</att>
+	<att name="publisher_url">https://fundyforce.ca</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time2</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time</att>
+            <att name="standard_name">time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Missing_Data</sourceName>
+        <destinationName>Status_Missing_Data</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status Missing Data</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BurstVelocityENU_Range</sourceName>
+        <destinationName>BurstVelocityENU_Range</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Burst Velocity ENU Range</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>DataMask</sourceName>
+        <destinationName>DataMask</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Data Mask</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Vel_East</sourceName>
+        <destinationName>Vel_East</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Vel East</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Vel_North</sourceName>
+        <destinationName>Vel_North</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Vel North</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Vel_Up1</sourceName>
+        <destinationName>Vel_Up1</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Vel Up1</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Vel_Up2</sourceName>
+        <destinationName>Vel_Up2</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Vel Up2</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>TimeStamp</sourceName>
+        <destinationName>TimeStamp</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time Stamp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>MatlabTimeStamp</sourceName>
+        <destinationName>MatlabTimeStamp</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Matlab Time Stamp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SerialNumber</sourceName>
+        <destinationName>SerialNumber</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Serial Number</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SpeedOfSound</sourceName>
+        <destinationName>SpeedOfSound</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Speed Of Sound</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Error</sourceName>
+        <destinationName>Error</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">50.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Error</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ExtendedStatus</sourceName>
+        <destinationName>ExtendedStatus</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Extended Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status</sourceName>
+        <destinationName>Status</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CellSize</sourceName>
+        <destinationName>CellSize</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Cell Size</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>NumberofCells</sourceName>
+        <destinationName>NumberofCells</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Numberof Cells</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Blanking</sourceName>
+        <destinationName>Blanking</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Blanking</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>NominalCor</sourceName>
+        <destinationName>NominalCor</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Nominal Cor</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Battery</sourceName>
+        <destinationName>Battery</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Battery</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Magnetometer_X</sourceName>
+        <destinationName>Magnetometer_X</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Magnetometer X</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Magnetometer_Y</sourceName>
+        <destinationName>Magnetometer_Y</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Magnetometer Y</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Magnetometer_Z</sourceName>
+        <destinationName>Magnetometer_Z</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Magnetometer Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Magnetometer_Magnitude</sourceName>
+        <destinationName>Magnetometer_Magnitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Magnetometer Magnitude</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Accelerometer_X</sourceName>
+        <destinationName>Accelerometer_X</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Accelerometer X</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Accelerometer_Y</sourceName>
+        <destinationName>Accelerometer_Y</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Accelerometer Y</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Accelerometer_Z</sourceName>
+        <destinationName>Accelerometer_Z</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Accelerometer Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Accelerometer_Magnitude</sourceName>
+        <destinationName>Accelerometer_Magnitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Accelerometer Magnitude</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Ambiguity</sourceName>
+        <destinationName>Ambiguity</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Ambiguity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>TransmitEnergy</sourceName>
+        <destinationName>TransmitEnergy</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Transmit Energy</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>PowerLevel</sourceName>
+        <destinationName>PowerLevel</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Power Level</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Physicalbeam</sourceName>
+        <destinationName>Physicalbeam</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Physicalbeam</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>MagnetometerTemperature</sourceName>
+        <destinationName>MagnetometerTemperature</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Magnetometer Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>RTCTemperature</sourceName>
+        <destinationName>RTCTemperature</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">RTCTemperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>PressureSensorTemperature</sourceName>
+        <destinationName>PressureSensorTemperature</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">Pressure Sensor Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>EnsembleCount</sourceName>
+        <destinationName>EnsembleCount</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Ensemble Count</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>WaterTemperature</sourceName>
+        <destinationName>WaterTemperature</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Water Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Pressure</sourceName>
+        <destinationName>Pressure</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">Pressure</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Heading</sourceName>
+        <destinationName>Heading</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Heading</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Pitch</sourceName>
+        <destinationName>Pitch</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Pitch</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Roll</sourceName>
+        <destinationName>Roll</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Roll</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Altimeter_LE</sourceName>
+        <destinationName>Altimeter_LE</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Altimeter LE</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Altimeter_AST</sourceName>
+        <destinationName>Altimeter_AST</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Altimeter AST</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Altimeter_Pressure</sourceName>
+        <destinationName>Altimeter_Pressure</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">Altimeter Pressure</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>AltimeterQuality_LE</sourceName>
+        <destinationName>AltimeterQuality_LE</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+            <att name="long_name">Altimeter Quality LE</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>AltimeterQuality_AST</sourceName>
+        <destinationName>AltimeterQuality_AST</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Quality</att>
+            <att name="long_name">Altimeter Quality AST</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ASTPressureOffset</sourceName>
+        <destinationName>ASTPressureOffset</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">ASTPressure Offset</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>AltimeterStatus</sourceName>
+        <destinationName>AltimeterStatus</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Altimeter Status</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CorrectedHeading</sourceName>
+        <destinationName>CorrectedHeading</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Corrected Heading</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="Mar2018_4fda_6a01_5655" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/datasets/force/ADCP/Mar2018/</fileDir>
+    <fileNameRegex>.*WAVES\.converted\.[0-9]+\.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="history">Tue Aug 10 11:48:27 2021: ncks -d time,2632,2960 2021-07-22_Burst.VTC.WAVES.converted.nc 2021-07-22_Burst.VTC.WAVES.converted.9.nc</att>
+        <att name="NCO">netCDF Operators version 4.7.5 (Homepage = http://nco.sf.net, Code = http://github.com/nco/nco)</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">Other</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="infoUrl">???</att>
+        <att name="institution">FORCE</att>
+        <att name="keywords">ambiguity, amplitude, ast, astspectra, ASTSpectra_Direction, ASTSpectra_Energy, ASTSpectra_Frequency, astwindow, ASTWindow_Ceiling, ASTWindow_Floor, bad, band, BandDirection_L_DirMean, BandDirection_L_DirTp, BandDirection_L_SprTp, BandDirection_U_DirMean, BandDirection_U_DirTp, BandDirection_U_SprTp, BandFrequency_L_High, BandFrequency_L_Low, BandFrequency_U_High, BandFrequency_U_Low, BandHeight_L_Hm0, BandHeight_U_Hm0, BandPeriod_L_Tm02, BandPeriod_L_Tp, BandPeriod_U_Tm02, BandPeriod_U_Tp, BandSpectrumType_Lower, BandSpectrumType_Upper, battery, Battery_Voltage, bounds, ceiling, cell, clip, close, correlation, crossings, current, CurrentDirection, currents, CurrentSpeed, data, detection, dir, direction, Direction_DirTp, Direction_MeanDir, Direction_SprTp, distance, energy, estimate, floor, frequency, FrequencyAmbiguityLimit, h10, heading, height, Height_H10, Height_H3, Height_Hm0, Height_Hmax, Height_Hmean, high, hm0, hmax, hmean, index, limit, local, loss, low, lower, mean, missing, never, noise, out, peak, period, Period_T10, Period_T3, Period_Tenergy, Period_Tm02, Period_Tmax, Period_Tp, Period_Tz, pitch, position, pressure, processed, processing, ProcessingTime, roll, source, spectrum, SpectrumType, speed, spr, statistics, status, Status_Amplitude, Status_AST_Loss_High, Status_AST_Out_Of_Bounds, Status_Close_to_Clip, Status_Correlation, Status_Direction_Ambiguity, Status_High_Tilt, Status_Low_Pressure, Status_Missing_Data, Status_Never_Processed, Status_No_Pressure, Status_Pressure_Peak, Status_Unreasonable_Estimate, Status_White_Noise, surface, surface waves, SurfaceDetection_Bad, SurfaceDetection_None, t10, target, TargetCell, temperature, tenergy, tilt, Tilt_Pitch, Tilt_Roll, time, time2, tm02, tmax, type, u, unidirectivity, UnidirectivityIndex, unreasonable, upper, voltage, wave, WaveCellPosition, waves, white, wind, zero, ZeroCrossings</att>
+        <att name="license">[standard]</att>
+        <att name="NCO">netCDF Operators version 4.7.5 (Homepage = http://nco.sf.net, Code = https://github.com/nco/nco)</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+        <att name="subsetVariables">ASTWindow_Ceiling, ASTWindow_Floor, BandFrequency_L_High, BandFrequency_L_Low, BandFrequency_U_High, BandFrequency_U_Low, Battery_Voltage, Status_AST_Out_Of_Bounds, Status_Amplitude, Status_Close_to_Clip, Status_Correlation, Status_High_Tilt, Status_Low_Pressure, Status_Missing_Data, Status_Never_Processed, Status_No_Pressure, Status_Pressure_Peak, Status_White_Noise, SurfaceDetection_None</att>
+        <att name="summary">This seabed-mounted ADCP, deployed for two months in spring 2018, collected 3-D velocity profiles and surface wave statistics at a location within the FORCE Crown Lease Area. Data are provided in raw (*ad2cp) form, and as processed currents and waves. These data were collected as part of a project on evaluating fish sensor capabilities at high flow sites (cf. Viehman et al 2019 in the metadata attachment).</att>
+        <att name="title">FORCE Acoustic Doppler Current Profiler (ADCP): Waves</att>
+        <att name="contributor_name">Joel Culina,FORCE</att>
+        <att name="contributor_role">custodian,owner</att>
+        <att name="creator_email">info@fundyforce.ca</att>
+        <att name="creator_name">FORCE</att>
+        <att name="creator_type">institution</att>
+        <att name="creator_url">https://fundyforce.ca</att>
+        <att name="date_created">2016-12-02</att>
+        <att name="geospatial_lat_max">45.3713</att>
+        <att name="geospatial_lat_min">45.3713</att>
+        <att name="geospatial_lon_max">-64.403</att>
+        <att name="geospatial_lon_min">-64.403</att>
+        <att name="institution">FORCE</att>
+        <att name="instrument">1</att>
+        <att name="keywords">solar radiation,meteorology,wind,atmospheric pressure,air temperature,rain,other</att>
+        <att name="publisher_email">joel.culina@fundyforce.ca</att>
+        <att name="publisher_institution">FORCE</att>
+        <att name="publisher_name">Joel Culina</att>
+        <att name="publisher_url">https://fundyforce.ca</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>ASTSpectra_Direction</sourceName>
+        <destinationName>ASTSpectra_Direction</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">ASTSpectra Direction</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ASTSpectra_Energy</sourceName>
+        <destinationName>ASTSpectra_Energy</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">9.96921E36</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">ASTSpectra Energy</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ASTSpectra_Frequency</sourceName>
+        <destinationName>ASTSpectra_Frequency</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">ASTSpectra Frequency</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ASTWindow_Ceiling</sourceName>
+        <destinationName>ASTWindow_Ceiling</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Wind</att>
+            <att name="long_name">ASTWindow Ceiling</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ASTWindow_Floor</sourceName>
+        <destinationName>ASTWindow_Floor</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Wind</att>
+            <att name="long_name">ASTWindow Floor</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandDirection_L_DirMean</sourceName>
+        <destinationName>BandDirection_L_DirMean</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Band Direction L Dir Mean</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandDirection_L_DirTp</sourceName>
+        <destinationName>BandDirection_L_DirTp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Band Direction L Dir Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandDirection_L_SprTp</sourceName>
+        <destinationName>BandDirection_L_SprTp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Band Direction L Spr Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandDirection_U_DirMean</sourceName>
+        <destinationName>BandDirection_U_DirMean</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Band Direction U Dir Mean</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandDirection_U_DirTp</sourceName>
+        <destinationName>BandDirection_U_DirTp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Band Direction U Dir Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandDirection_U_SprTp</sourceName>
+        <destinationName>BandDirection_U_SprTp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Band Direction U Spr Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandFrequency_L_High</sourceName>
+        <destinationName>BandFrequency_L_High</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Frequency L High</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandFrequency_L_Low</sourceName>
+        <destinationName>BandFrequency_L_Low</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Frequency L Low</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandFrequency_U_High</sourceName>
+        <destinationName>BandFrequency_U_High</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Frequency U High</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandFrequency_U_Low</sourceName>
+        <destinationName>BandFrequency_U_Low</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Frequency U Low</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandHeight_L_Hm0</sourceName>
+        <destinationName>BandHeight_L_Hm0</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Height L Hm0</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandHeight_U_Hm0</sourceName>
+        <destinationName>BandHeight_U_Hm0</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Height U Hm0</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandPeriod_L_Tm02</sourceName>
+        <destinationName>BandPeriod_L_Tm02</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Period L Tm02</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandPeriod_L_Tp</sourceName>
+        <destinationName>BandPeriod_L_Tp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Period L Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandPeriod_U_Tm02</sourceName>
+        <destinationName>BandPeriod_U_Tm02</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Period U Tm02</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandPeriod_U_Tp</sourceName>
+        <destinationName>BandPeriod_U_Tp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Period U Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandSpectrumType_Lower</sourceName>
+        <destinationName>BandSpectrumType_Lower</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Spectrum Type Lower</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>BandSpectrumType_Upper</sourceName>
+        <destinationName>BandSpectrumType_Upper</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Band Spectrum Type Upper</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Battery_Voltage</sourceName>
+        <destinationName>Battery_Voltage</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Battery Voltage</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CurrentDirection</sourceName>
+        <destinationName>CurrentDirection</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Current Direction</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CurrentSpeed</sourceName>
+        <destinationName>CurrentSpeed</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Current Speed</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Direction_DirTp</sourceName>
+        <destinationName>Direction_DirTp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Direction Dir Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Direction_MeanDir</sourceName>
+        <destinationName>Direction_MeanDir</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Direction Mean Dir</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Direction_SprTp</sourceName>
+        <destinationName>Direction_SprTp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Direction Spr Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Distance</sourceName>
+        <destinationName>Distance</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Distance</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>FrequencyAmbiguityLimit</sourceName>
+        <destinationName>FrequencyAmbiguityLimit</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Frequency Ambiguity Limit</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Heading</sourceName>
+        <destinationName>Heading</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Heading</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Height_H10</sourceName>
+        <destinationName>Height_H10</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Height H10</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Height_H3</sourceName>
+        <destinationName>Height_H3</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Height H3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Height_Hm0</sourceName>
+        <destinationName>Height_Hm0</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Height Hm0</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Height_Hmax</sourceName>
+        <destinationName>Height_Hmax</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Height Hmax</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Height_Hmean</sourceName>
+        <destinationName>Height_Hmean</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Height Hmean</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Period_T10</sourceName>
+        <destinationName>Period_T10</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Period T10</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Period_T3</sourceName>
+        <destinationName>Period_T3</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Period T3</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Period_Tenergy</sourceName>
+        <destinationName>Period_Tenergy</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Period Tenergy</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Period_Tm02</sourceName>
+        <destinationName>Period_Tm02</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Period Tm02</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Period_Tmax</sourceName>
+        <destinationName>Period_Tmax</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Period Tmax</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Period_Tp</sourceName>
+        <destinationName>Period_Tp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Period Tp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Period_Tz</sourceName>
+        <destinationName>Period_Tz</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Period Tz</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Pressure</sourceName>
+        <destinationName>Pressure</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">Pressure</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ProcessingTime</sourceName>
+        <destinationName>ProcessingTime</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Processing Time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SpectrumType</sourceName>
+        <destinationName>SpectrumType</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Spectrum Type</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_AST_Loss_High</sourceName>
+        <destinationName>Status_AST_Loss_High</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status AST Loss High</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_AST_Out_Of_Bounds</sourceName>
+        <destinationName>Status_AST_Out_Of_Bounds</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">50.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Status AST Out Of Bounds</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Amplitude</sourceName>
+        <destinationName>Status_Amplitude</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status Amplitude</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Close_to_Clip</sourceName>
+        <destinationName>Status_Close_to_Clip</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status Close To Clip</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Correlation</sourceName>
+        <destinationName>Status_Correlation</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status Correlation</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Direction_Ambiguity</sourceName>
+        <destinationName>Status_Direction_Ambiguity</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Status Direction Ambiguity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_High_Tilt</sourceName>
+        <destinationName>Status_High_Tilt</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status High Tilt</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Low_Pressure</sourceName>
+        <destinationName>Status_Low_Pressure</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">Status Low Pressure</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Missing_Data</sourceName>
+        <destinationName>Status_Missing_Data</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status Missing Data</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Never_Processed</sourceName>
+        <destinationName>Status_Never_Processed</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status Never Processed</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_No_Pressure</sourceName>
+        <destinationName>Status_No_Pressure</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">Status No Pressure</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Pressure_Peak</sourceName>
+        <destinationName>Status_Pressure_Peak</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">Status Pressure Peak</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_Unreasonable_Estimate</sourceName>
+        <destinationName>Status_Unreasonable_Estimate</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status Unreasonable Estimate</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Status_White_Noise</sourceName>
+        <destinationName>Status_White_Noise</destinationName>
+        <dataType>byte</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Status White Noise</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SurfaceDetection_Bad</sourceName>
+        <destinationName>SurfaceDetection_Bad</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Surface Detection Bad</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SurfaceDetection_None</sourceName>
+        <destinationName>SurfaceDetection_None</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Surface Detection None</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>TargetCell</sourceName>
+        <destinationName>TargetCell</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Target Cell</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Temperature</sourceName>
+        <destinationName>Temperature</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Tilt_Pitch</sourceName>
+        <destinationName>Tilt_Pitch</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Tilt Pitch</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Tilt_Roll</sourceName>
+        <destinationName>Tilt_Roll</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Tilt Roll</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>UnidirectivityIndex</sourceName>
+        <destinationName>UnidirectivityIndex</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Unidirectivity Index</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>WaveCellPosition</sourceName>
+        <destinationName>WaveCellPosition</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="long_name">Wave Cell Position</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>ZeroCrossings</sourceName>
+        <destinationName>ZeroCrossings</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Zero Crossings</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time2</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time</att>
+            <att name="standard_name">time</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
   <requestBlacklist />
 </erddapDatasets>
 
