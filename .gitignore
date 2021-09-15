@@ -11,3 +11,6 @@ logs
 # Ignore the datasets directory
 # Separate version-controlled scripts should be used to re-fetch any data to be cached there.
 datasets
+
+# Ignore the data directory
+data
