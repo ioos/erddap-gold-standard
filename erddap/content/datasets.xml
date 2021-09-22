@@ -1140,7 +1140,7 @@
         <att name="license">[standard]</att>
         <att name="sourceUrl">(local files)</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-        <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude, </att>
+        <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude </att>
         <att name="summary">XEOS Buoy - 002. real-time buoy data. CMAR data from a local source.</att>
         <att name="testOutOfDate">now-1day</att>
         <att name="title">CMAR - St. Mary's Bay</att>
@@ -4210,7 +4210,7 @@
   </dataVariable>
 </dataset>
 
-<!-- FORCE Mar 2018 ADCP Currents Begin -->
+<!-- FORCE Mar 2018 ADCP Currents: BEGIN -->
 <dataset type="EDDTableFromMultidimNcFiles" datasetID="Mar2018_44fa_e1cc_fc53" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
