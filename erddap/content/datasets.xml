@@ -2598,543 +2598,8 @@
         </addAttributes>
     </dataVariable>
     </dataset>
-<dataset active="true" datasetID="9qw2-yb2f" type="EDDTableFromAsciiFiles">
-  <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-  <updateEveryNMillis>10000</updateEveryNMillis>
-  <fileDir>/datasets/cmar/nsodp-sensor-strings/9qw2-yb2f</fileDir>
-  <fileNameRegex>.*merged\.csv</fileNameRegex>
-  <recursive>true</recursive>
-  <pathRegex>.*</pathRegex>
-  <metadataFrom>last</metadataFrom>
-  <standardizeWhat>0</standardizeWhat>
-  <charset>ISO-8859-1</charset>
-  <columnSeparator>,</columnSeparator>
-  <columnNamesRow>1</columnNamesRow>
-  <firstDataRow>2</firstDataRow>
-  <sortedColumnSourceName>timestamp</sortedColumnSourceName>
-  <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
-  <fileTableInMemory>false</fileTableInMemory>
-  <accessibleViaFiles>true</accessibleViaFiles>
-  <addAttributes>
-    <att name="cdm_data_type">Point</att>
-    <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-    <att name="creator_name">CMAR</att>
-    <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
-    <att name="institution">CMAR</att>
-    <att name="license">Nova Scotia Open Government Licence</att>
-    <att name="sourceUrl">(local files)</att>
-    <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease, sensor</att>
-    <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
-    <att name="contributor_role">owner</att>
-    <att name="creator_email">info(at)cmar.ca</att>
-    <att name="creator_type">person</att>
-    <att name="date_created">2021-01-20T14:25:02+0000</att>
-    <att name="geospatial_lat_max">43.8144</att>
-    <att name="geospatial_lat_min">43.67902</att>
-    <att name="geospatial_lon_max">-65.83601</att>
-    <att name="geospatial_lon_min">-65.95942</att>
-    <att name="geospatial_vertical_max">10.0</att>
-    <att name="geospatial_vertical_min">1.0</att>
-    <att name="institution">Centre for Marine Applied Research (CMAR)</att>
-    <att name="instrument">HOBO-20495250,aquaMeasure-670383,aquaMeasure-680326,VR2AR-545777,HOBO-10755242,VR2AR-547099,aquaMeasure-675286,HOBO-20291436,HOBO-20291456,HOBO-10194899,HOBO-10226050,HOBO-10777109,HOBO-10034865,HOBO-10194877,HOBO-10778922,HOBO-10034851,HOBO-10755201,HOBO-10755232,HOBO-10194911,HOBO-10194912,HOBO-10777103,HOBO-20291444,aquaMeasure-680251,aquaMeasure-675009,VR2AR-547086,HOBO-20291476</att>
-    <att name="keywords">aquaculture,climate change,coast,coastal monitoring program,dissolved oxygen,downloadable data,ecosystem,environment,environmental monitoring,fisheries,fishing,yarmouth county,nova scotia,oceanography,salinity,temperature,water</att>
-    <att name="publisher_email">info(at)cmar.ca</att>
-    <att name="publisher_institution">Centre for Marine Applied Research (CMAR)</att>
-    <att name="publisher_name">Centre for Marine Applied Research (CMAR)</att>
-    <att name="summary">The Centre for Marine Applied Research (CMAR) measures environmental data throughout Nova Scotia&#8217;s coastal waters as part of the Coastal Monitoring Program. This program was initiated by the Nova Scotia Department of Fisheries and Aquaculture in 2012 and CMAR became involved in 2017. CMAR collects temperature (degrees Celsius), dissolved oxygen (% saturation), and intermittent salinity (practical salinity units) data using autonomous sensors attached to moored lines, called &#8216;sensor strings&#8217;. Each string is attached to the seafloor by an anchored acoustic release and suspended by a sub-surface buoy, with sensors attached at various depths. Sensor strings are typically deployed for several months, and data are measured every 1 minute to 1 hour depending on the sensor. Data are retrieved by triggering the acoustic release, enabling the sensor string to float to the surface for data download. Some data are excluded from the final dataset during quality control processes.   The Coastal Monitoring Program data is organized by county. These datasets are very large, typically exceeding the number of rows that can be viewed in Excel. We recommend using the filter options of the Open Data Portal to filter to the WATERBODY, STATION, DEPTH, VARIABLE, and/or TIMESTAMP of interest before exporting. A chart derived from the dataset also allows for interactive filtering and export (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Yarmouth-County-Daily-A/bbrp-vuad).   Coastal Monitoring Program data for other Nova Scotia counties is also available through the Open Data Portal. The "Coastal Monitoring Program: Station Locations" dataset on the Portal shows locations with available data (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Station-Locations/cjfb-f4d4). Summary reports by county are available on the CMAR website (https://cmar.ca/2020/07/14/coastal-monitoring-program/). Data collection and retrieval are ongoing. The datasets and reports may be revised pending ongoing data collection and analyses.</att>
-    <att name="title">Coastal Monitoring Program Data: Yarmouth County</att>
-  </addAttributes>
-  <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>latitude</sourceName>
-    <destinationName>latitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">90.0</att>
-      <att type="double" name="colorBarMinimum">-90.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Latitude</att>
-      <att name="standard_name">latitude</att>
-      <att name="units">degrees_north</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>depth</sourceName>
-    <destinationName>depth</destinationName>
-    <dataType>byte</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">8000.0</att>
-      <att type="double" name="colorBarMinimum">-8000.0</att>
-      <att name="colorBarPalette">TopographyDepth</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Depth</att>
-      <att name="standard_name">depth</att>
-      <att name="units">m</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Waterbody</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>sensor</sourceName>
-    <destinationName>sensor</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Sensor</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>timestamp</sourceName>
-    <destinationName>time</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Time</att>
-      <att name="long_name">Timestamp</att>
-      <att name="source_name">timestamp</att>
-      <att name="standard_name">time</att>
-      <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>lease</sourceName>
-    <destinationName>lease</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Lease</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>longitude</sourceName>
-    <destinationName>longitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">180.0</att>
-      <att type="double" name="colorBarMinimum">-190.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Longitude</att>
-      <att name="standard_name">longitude</att>
-      <att name="units">degrees_east</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Dissolved Oxygen</sourceName>
-    <destinationName>Dissolved_Oxygen</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att type="double" name="colorBarMaximum">1.0</att>
-      <att type="double" name="colorBarMinimum">0.0</att>
-      <att name="ioos_category">Dissolved O2</att>
-      <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
-      <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Salinity</sourceName>
-    <destinationName>Salinity</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att name="ioos_category">Salinity</att>
-      <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
-    </addAttributes>
-  </dataVariable>
-</dataset>
-<dataset active="true" datasetID="a9za-3t63" type="EDDTableFromAsciiFiles">
-  <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-  <updateEveryNMillis>10000</updateEveryNMillis>
-  <fileDir>/datasets/cmar/nsodp-sensor-strings/a9za-3t63</fileDir>
-  <fileNameRegex>.*merged\.csv</fileNameRegex>
-  <recursive>true</recursive>
-  <pathRegex>.*</pathRegex>
-  <metadataFrom>last</metadataFrom>
-  <standardizeWhat>0</standardizeWhat>
-  <charset>ISO-8859-1</charset>
-  <columnSeparator>,</columnSeparator>
-  <columnNamesRow>1</columnNamesRow>
-  <firstDataRow>2</firstDataRow>
-  <sortedColumnSourceName>timestamp</sortedColumnSourceName>
-  <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
-  <fileTableInMemory>false</fileTableInMemory>
-  <accessibleViaFiles>true</accessibleViaFiles>
-  <addAttributes>
-    <att name="cdm_data_type">Point</att>
-    <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-    <att name="creator_name">CMAR</att>
-    <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
-    <att name="institution">CMAR</att>
-    <att name="license">Nova Scotia Open Government Licence</att>
-    <att name="sourceUrl">(local files)</att>
-    <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease</att>
-    <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
-    <att name="contributor_role">owner</att>
-    <att name="creator_email">info(at)cmar.ca</att>
-    <att name="creator_type">person</att>
-    <att name="date_created">2021-01-19T19:43:36+0000</att>
-    <att name="geospatial_lat_max">45.976083</att>
-    <att name="geospatial_lat_min">45.59586275</att>
-    <att name="geospatial_lon_max">-61.022683</att>
-    <att name="geospatial_lon_min">-61.36382192</att>
-    <att name="geospatial_vertical_max">28.0</att>
-    <att name="geospatial_vertical_min">2.0</att>
-    <att name="institution">Centre for Marine Applied Research (CMAR)</att>
-    <att name="instrument">HOBO-10034851,HOBO-10034865,HOBO-10778916,aquaMeasure-670290,aquaMeasure-670296,HOBO-10755206,HOBO-10777103,HOBO-10778922,HOBO-10817503</att>
-    <att name="keywords">aquaculture,climate change,coast,coastal monitoring program,dissolved oxygen,downloadable data,ecosystem,environment,environmental monitoring,fisheries,fishing,inverness county,nova scotia,oceanography,salinity,temperature,water quality</att>
-    <att name="publisher_email">info(at)cmar.ca</att>
-    <att name="publisher_institution">Centre for Marine Applied Research (CMAR)</att>
-    <att name="publisher_name">Centre for Marine Applied Research (CMAR)</att>
-    <att name="summary">The Centre for Marine Applied Research (CMAR) measures environmental data throughout Nova Scotia&#8217;s coastal waters as part of the Coastal Monitoring Program. This program was initiated by the Nova Scotia Department of Fisheries and Aquaculture in 2012 and CMAR became involved in 2017. CMAR collects temperature (degrees Celsius), dissolved oxygen (% saturation), and intermittent salinity (practical salinity units) data using autonomous sensors attached to moored lines, called &#8216;sensor strings&#8217;. Each string is attached to the seafloor by an anchored acoustic release and suspended by a sub-surface buoy, with sensors attached at various depths. Sensor strings are typically deployed for several months, and data are measured every 1 minute to 1 hour depending on the sensor. Data are retrieved by triggering the acoustic release, enabling the sensor string to float to the surface for data download. Some data are excluded from the final dataset during quality control processes.   The Coastal Monitoring Program data is organized by county. These datasets are very large, typically exceeding the number of rows that can be viewed in Excel. We recommend using the filter options of the Open Data Portal to filter to the WATERBODY, STATION, DEPTH, VARIABLE, and/or TIMESTAMP of interest before exporting. A chart derived from the dataset also allows for interactive filtering and export (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Data-Inverness-County-D/njv9-c7a6).   Coastal Monitoring Program data for other Nova Scotia counties is also available through the Open Data Portal. The "Coastal Monitoring Program: Station Locations" dataset on the Portal shows locations with available data (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Station-Locations/cjfb-f4d4). Summary reports by county are available on the CMAR website (https://cmar.ca/2020/07/14/coastal-monitoring-program/). Data collection and retrieval are ongoing. The datasets and reports may be revised pending ongoing data collection and analyses.</att>
-    <att name="title">Coastal Monitoring Program Data: Inverness County</att>
-  </addAttributes>
-  <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>lease</sourceName>
-    <destinationName>lease</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Lease</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>longitude</sourceName>
-    <destinationName>longitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">180.0</att>
-      <att type="double" name="colorBarMinimum">-190.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Longitude</att>
-      <att name="standard_name">longitude</att>
-      <att name="units">degrees_east</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Waterbody</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>depth</sourceName>
-    <destinationName>depth</destinationName>
-    <dataType>byte</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">8000.0</att>
-      <att type="double" name="colorBarMinimum">-8000.0</att>
-      <att name="colorBarPalette">TopographyDepth</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Depth</att>
-      <att name="standard_name">depth</att>
-      <att name="units">m</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>sensor</sourceName>
-    <destinationName>sensor</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Sensor</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>timestamp</sourceName>
-    <destinationName>time</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Time</att>
-      <att name="long_name">Timestamp</att>
-      <att name="source_name">timestamp</att>
-      <att name="standard_name">time</att>
-      <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>latitude</sourceName>
-    <destinationName>latitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">90.0</att>
-      <att type="double" name="colorBarMinimum">-90.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Latitude</att>
-      <att name="standard_name">latitude</att>
-      <att name="units">degrees_north</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Dissolved Oxygen</sourceName>
-    <destinationName>Dissolved_Oxygen</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att type="double" name="colorBarMaximum">1.0</att>
-      <att type="double" name="colorBarMinimum">0.0</att>
-      <att name="ioos_category">Dissolved O2</att>
-      <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
-      <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Salinity</sourceName>
-    <destinationName>Salinity</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att name="ioos_category">Salinity</att>
-      <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
-    </addAttributes>
-  </dataVariable>
-</dataset>
-<dataset active="true" datasetID="adpu-nyt8" type="EDDTableFromAsciiFiles">
-  <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-  <updateEveryNMillis>10000</updateEveryNMillis>
-  <fileDir>/datasets/cmar/nsodp-sensor-strings/adpu-nyt8</fileDir>
-  <fileNameRegex>.*merged\.csv</fileNameRegex>
-  <recursive>true</recursive>
-  <pathRegex>.*</pathRegex>
-  <metadataFrom>last</metadataFrom>
-  <standardizeWhat>0</standardizeWhat>
-  <charset>ISO-8859-1</charset>
-  <columnSeparator>,</columnSeparator>
-  <columnNamesRow>1</columnNamesRow>
-  <firstDataRow>2</firstDataRow>
-  <sortedColumnSourceName>timestamp</sortedColumnSourceName>
-  <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
-  <fileTableInMemory>false</fileTableInMemory>
-  <accessibleViaFiles>true</accessibleViaFiles>
-  <addAttributes>
-    <att name="cdm_data_type">Point</att>
-    <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-    <att name="creator_name">CMAR</att>
-    <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
-    <att name="institution">CMAR</att>
-    <att name="license">Nova Scotia Open Government Licence</att>
-    <att name="sourceUrl">(local files)</att>
-    <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease</att>
-    <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
-    <att name="contributor_role">owner</att>
-    <att name="creator_email">info(at)cmar.ca</att>
-    <att name="creator_type">person</att>
-    <att name="date_created">2021-01-19T19:53:25+0000</att>
-    <att name="geospatial_lat_max">45.34641</att>
-    <att name="geospatial_lat_min">45.34641</att>
-    <att name="geospatial_lon_max">-62.66088</att>
-    <att name="geospatial_lon_min">-62.66088</att>
-    <att name="geospatial_vertical_max">2.37</att>
-    <att name="geospatial_vertical_min">2.29</att>
-    <att name="institution">Centre for Marine Applied Research (CMAR)</att>
-    <att name="instrument">aquaMeasure-675014,HOBO-20495236</att>
-    <att name="keywords">aquaculture,climate change,coast,coastal monitoring program,dissolved oxygen,downloadable data,ecosystem,environment,environmental monitoring,fisheries,fishing,pictou county,nova scotia,oceanography,salinity,temperature,water quality</att>
-    <att name="publisher_email">info(at)cmar.ca</att>
-    <att name="publisher_institution">Centre for Marine Applied Research (CMAR)</att>
-    <att name="publisher_name">Centre for Marine Applied Research (CMAR)</att>
-    <att name="summary">The Centre for Marine Applied Research (CMAR) measures environmental data throughout Nova Scotia&#8217;s coastal waters as part of the Coastal Monitoring Program. This program was initiated by the Nova Scotia Department of Fisheries and Aquaculture in 2012 and CMAR became involved in 2017. CMAR collects temperature (degrees Celsius), dissolved oxygen (% saturation), and intermittent salinity (practical salinity units) data using autonomous sensors attached to moored lines, called &#8216;sensor strings&#8217;. Each string is attached to the seafloor by an anchored acoustic release and suspended by a sub-surface buoy, with sensors attached at various depths. Sensor strings are typically deployed for several months, and data are measured every 1 minute to 1 hour depending on the sensor. Data are retrieved by triggering the acoustic release, enabling the sensor string to float to the surface for data download. Some data are excluded from the final dataset during quality control processes.   The Coastal Monitoring Program data is organized by county. These datasets are very large, typically exceeding the number of rows that can be viewed in Excel. We recommend using the filter options of the Open Data Portal to filter to the WATERBODY, STATION, DEPTH, VARIABLE, and/or TIMESTAMP of interest before exporting. A chart derived from the dataset also allows for interactive filtering and export (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Data-Pictou-County-Dail/pmim-yujz).   Coastal Monitoring Program data for other Nova Scotia counties is also available through the Open Data Portal. The "Coastal Monitoring Program: Station Locations" dataset on the Portal shows locations with available data (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Station-Locations/cjfb-f4d4). Summary reports by county are available on the CMAR website (https://cmar.ca/2020/07/14/coastal-monitoring-program/). Data collection and retrieval are ongoing. The datasets and reports may be revised pending ongoing data collection and analyses.</att>
-    <att name="title">Coastal Monitoring Program Data: Pictou County</att>
-  </addAttributes>
-  <dataVariable>
-    <sourceName>sensor</sourceName>
-    <destinationName>sensor</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Sensor</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>longitude</sourceName>
-    <destinationName>longitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">180.0</att>
-      <att type="double" name="colorBarMinimum">-190.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Longitude</att>
-      <att name="standard_name">longitude</att>
-      <att name="units">degrees_east</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>latitude</sourceName>
-    <destinationName>latitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">90.0</att>
-      <att type="double" name="colorBarMinimum">-90.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Latitude</att>
-      <att name="standard_name">latitude</att>
-      <att name="units">degrees_north</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>lease</sourceName>
-    <destinationName>lease</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Lease</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>depth</sourceName>
-    <destinationName>depth</destinationName>
-    <dataType>byte</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">8000.0</att>
-      <att type="double" name="colorBarMinimum">-8000.0</att>
-      <att name="colorBarPalette">TopographyDepth</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Depth</att>
-      <att name="standard_name">depth</att>
-      <att name="units">m</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Waterbody</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>timestamp</sourceName>
-    <destinationName>time</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Time</att>
-      <att name="long_name">Timestamp</att>
-      <att name="source_name">timestamp</att>
-      <att name="standard_name">time</att>
-      <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Dissolved Oxygen</sourceName>
-    <destinationName>Dissolved_Oxygen</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att type="double" name="colorBarMaximum">1.0</att>
-      <att type="double" name="colorBarMinimum">0.0</att>
-      <att name="ioos_category">Dissolved O2</att>
-      <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
-      <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Salinity</sourceName>
-    <destinationName>Salinity</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att name="ioos_category">Salinity</att>
-      <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
-    </addAttributes>
-  </dataVariable>
-</dataset>
+
+<!-- CMAR Sensor Strings: START-->
 <dataset active="true" datasetID="eb3n-uxcb" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
@@ -3162,7 +2627,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
     <att name="creator_email">info(at)cmar.ca</att>
@@ -3184,30 +2649,8 @@
     <att name="title">Coastal Monitoring Program Data: Guysborough County</att>
   </addAttributes>
   <dataVariable>
-    <sourceName>lease</sourceName>
-    <destinationName>lease</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Lease</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>longitude</sourceName>
-    <destinationName>longitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">180.0</att>
-      <att type="double" name="colorBarMinimum">-190.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Longitude</att>
-      <att name="standard_name">longitude</att>
-      <att name="units">degrees_east</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
@@ -3215,12 +2658,12 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
+    <sourceName>lease</sourceName>
+    <destinationName>lease</destinationName>
     <dataType>String</dataType>
     <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Lease</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3237,12 +2680,34 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
+    <sourceName>longitude</sourceName>
+    <destinationName>longitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">180.0</att>
+      <att type="double" name="colorBarMinimum">-190.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Longitude</att>
+      <att name="standard_name">longitude</att>
+      <att name="units">degrees_east</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3255,16 +2720,7 @@
       <att name="source_name">timestamp</att>
       <att name="standard_name">time</att>
       <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>sensor</sourceName>
-    <destinationName>sensor</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Sensor</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3282,13 +2738,12 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
+    <dataType>String</dataType>
     <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Sensor</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3302,6 +2757,7 @@
       <att name="ioos_category">Dissolved O2</att>
       <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
       <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3311,10 +2767,192 @@
     <addAttributes>
       <att name="ioos_category">Salinity</att>
       <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
+      <att name="units">practical salinity units</att>
     </addAttributes>
   </dataVariable>
-</dataset>
-<dataset active="true" datasetID="eda5-aubu" type="EDDTableFromAsciiFiles">
+  <dataVariable>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
+    </addAttributes>
+  </dataVariable>
+</dataset><dataset active="true" datasetID="adpu-nyt8" type="EDDTableFromAsciiFiles">
+  <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+  <updateEveryNMillis>10000</updateEveryNMillis>
+  <fileDir>/datasets/cmar/nsodp-sensor-strings/adpu-nyt8</fileDir>
+  <fileNameRegex>.*merged\.csv</fileNameRegex>
+  <recursive>true</recursive>
+  <pathRegex>.*</pathRegex>
+  <metadataFrom>last</metadataFrom>
+  <standardizeWhat>0</standardizeWhat>
+  <charset>ISO-8859-1</charset>
+  <columnSeparator>,</columnSeparator>
+  <columnNamesRow>1</columnNamesRow>
+  <firstDataRow>2</firstDataRow>
+  <sortedColumnSourceName>timestamp</sortedColumnSourceName>
+  <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
+  <fileTableInMemory>false</fileTableInMemory>
+  <accessibleViaFiles>true</accessibleViaFiles>
+  <addAttributes>
+    <att name="cdm_data_type">Point</att>
+    <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+    <att name="creator_name">CMAR</att>
+    <att name="creator_type">insitution</att>
+    <att name="infoUrl">???</att>
+    <att name="institution">CMAR</att>
+    <att name="license">Nova Scotia Open Government Licence</att>
+    <att name="sourceUrl">(local files)</att>
+    <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
+    <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
+    <att name="contributor_role">owner</att>
+    <att name="creator_email">info(at)cmar.ca</att>
+    <att name="creator_type">person</att>
+    <att name="date_created">2021-01-19T19:53:25+0000</att>
+    <att name="geospatial_lat_max">45.34641</att>
+    <att name="geospatial_lat_min">45.34641</att>
+    <att name="geospatial_lon_max">-62.66088</att>
+    <att name="geospatial_lon_min">-62.66088</att>
+    <att name="geospatial_vertical_max">2.37</att>
+    <att name="geospatial_vertical_min">2.29</att>
+    <att name="institution">Centre for Marine Applied Research (CMAR)</att>
+    <att name="instrument">aquaMeasure-675014,HOBO-20495236</att>
+    <att name="keywords">aquaculture,climate change,coast,coastal monitoring program,dissolved oxygen,downloadable data,ecosystem,environment,environmental monitoring,fisheries,fishing,pictou county,nova scotia,oceanography,salinity,temperature,water quality</att>
+    <att name="publisher_email">info(at)cmar.ca</att>
+    <att name="publisher_institution">Centre for Marine Applied Research (CMAR)</att>
+    <att name="publisher_name">Centre for Marine Applied Research (CMAR)</att>
+    <att name="summary">The Centre for Marine Applied Research (CMAR) measures environmental data throughout Nova Scotia&#8217;s coastal waters as part of the Coastal Monitoring Program. This program was initiated by the Nova Scotia Department of Fisheries and Aquaculture in 2012 and CMAR became involved in 2017. CMAR collects temperature (degrees Celsius), dissolved oxygen (% saturation), and intermittent salinity (practical salinity units) data using autonomous sensors attached to moored lines, called &#8216;sensor strings&#8217;. Each string is attached to the seafloor by an anchored acoustic release and suspended by a sub-surface buoy, with sensors attached at various depths. Sensor strings are typically deployed for several months, and data are measured every 1 minute to 1 hour depending on the sensor. Data are retrieved by triggering the acoustic release, enabling the sensor string to float to the surface for data download. Some data are excluded from the final dataset during quality control processes.   The Coastal Monitoring Program data is organized by county. These datasets are very large, typically exceeding the number of rows that can be viewed in Excel. We recommend using the filter options of the Open Data Portal to filter to the WATERBODY, STATION, DEPTH, VARIABLE, and/or TIMESTAMP of interest before exporting. A chart derived from the dataset also allows for interactive filtering and export (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Data-Pictou-County-Dail/pmim-yujz).   Coastal Monitoring Program data for other Nova Scotia counties is also available through the Open Data Portal. The "Coastal Monitoring Program: Station Locations" dataset on the Portal shows locations with available data (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Station-Locations/cjfb-f4d4). Summary reports by county are available on the CMAR website (https://cmar.ca/2020/07/14/coastal-monitoring-program/). Data collection and retrieval are ongoing. The datasets and reports may be revised pending ongoing data collection and analyses.</att>
+    <att name="title">Coastal Monitoring Program Data: Pictou County</att>
+  </addAttributes>
+  <dataVariable>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Waterbody</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>lease</sourceName>
+    <destinationName>lease</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Lease</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>latitude</sourceName>
+    <destinationName>latitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">90.0</att>
+      <att type="double" name="colorBarMinimum">-90.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Latitude</att>
+      <att name="standard_name">latitude</att>
+      <att name="units">degrees_north</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>longitude</sourceName>
+    <destinationName>longitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">180.0</att>
+      <att type="double" name="colorBarMinimum">-190.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Longitude</att>
+      <att name="standard_name">longitude</att>
+      <att name="units">degrees_east</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>timestamp</sourceName>
+    <destinationName>time</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Time</att>
+      <att name="long_name">Timestamp</att>
+      <att name="source_name">timestamp</att>
+      <att name="standard_name">time</att>
+      <att name="time_precision">1970-01-01T00:00:00Z</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>depth</sourceName>
+    <destinationName>depth</destinationName>
+    <dataType>byte</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">8000.0</att>
+      <att type="double" name="colorBarMinimum">-8000.0</att>
+      <att name="colorBarPalette">TopographyDepth</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Depth</att>
+      <att name="standard_name">depth</att>
+      <att name="units">m</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Sensor</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>Dissolved Oxygen</sourceName>
+    <destinationName>Dissolved_Oxygen</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att type="double" name="colorBarMaximum">1.0</att>
+      <att type="double" name="colorBarMinimum">0.0</att>
+      <att name="ioos_category">Dissolved O2</att>
+      <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
+      <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
+    </addAttributes>
+  </dataVariable>
+</dataset><dataset active="true" datasetID="eda5-aubu" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/eda5-aubu</fileDir>
@@ -3341,7 +2979,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
     <att name="creator_email">info(at)cmar.ca</att>
@@ -3363,61 +3001,8 @@
     <att name="title">Coastal Monitoring Program Data: Lunenburg County</att>
   </addAttributes>
   <dataVariable>
-    <sourceName>sensor</sourceName>
-    <destinationName>sensor</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Sensor</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>longitude</sourceName>
-    <destinationName>longitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">180.0</att>
-      <att type="double" name="colorBarMinimum">-190.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Longitude</att>
-      <att name="standard_name">longitude</att>
-      <att name="units">degrees_east</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>latitude</sourceName>
-    <destinationName>latitude</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">90.0</att>
-      <att type="double" name="colorBarMinimum">-90.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Latitude</att>
-      <att name="standard_name">latitude</att>
-      <att name="units">degrees_north</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
@@ -3434,6 +3019,50 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
+    <sourceName>latitude</sourceName>
+    <destinationName>latitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">90.0</att>
+      <att type="double" name="colorBarMinimum">-90.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Latitude</att>
+      <att name="standard_name">latitude</att>
+      <att name="units">degrees_north</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>longitude</sourceName>
+    <destinationName>longitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">180.0</att>
+      <att type="double" name="colorBarMinimum">-190.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Longitude</att>
+      <att name="standard_name">longitude</att>
+      <att name="units">degrees_east</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
     <sourceName>timestamp</sourceName>
     <destinationName>time</destinationName>
     <dataType>String</dataType>
@@ -3443,7 +3072,7 @@
       <att name="source_name">timestamp</att>
       <att name="standard_name">time</att>
       <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3461,13 +3090,12 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
+    <dataType>String</dataType>
     <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Sensor</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3481,6 +3109,7 @@
       <att name="ioos_category">Dissolved O2</att>
       <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
       <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3490,10 +3119,21 @@
     <addAttributes>
       <att name="ioos_category">Salinity</att>
       <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
+      <att name="units">practical salinity units</att>
     </addAttributes>
   </dataVariable>
-</dataset>
-<dataset active="true" datasetID="knwz-4bap" type="EDDTableFromAsciiFiles">
+  <dataVariable>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
+    </addAttributes>
+  </dataVariable>
+</dataset><dataset active="true" datasetID="knwz-4bap" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/knwz-4bap</fileDir>
@@ -3520,7 +3160,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
     <att name="creator_email">info(at)cmar.ca</att>
@@ -3542,6 +3182,24 @@
     <att name="title">Coastal Monitoring Program Data: Annapolis County</att>
   </addAttributes>
   <dataVariable>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Waterbody</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>lease</sourceName>
+    <destinationName>lease</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Lease</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
     <sourceName>latitude</sourceName>
     <destinationName>latitude</destinationName>
     <dataType>float</dataType>
@@ -3555,21 +3213,34 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>lease</sourceName>
-    <destinationName>lease</destinationName>
-    <dataType>String</dataType>
+    <sourceName>longitude</sourceName>
+    <destinationName>longitude</destinationName>
+    <dataType>float</dataType>
     <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Lease</att>
+      <att type="double" name="colorBarMaximum">180.0</att>
+      <att type="double" name="colorBarMinimum">-190.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Longitude</att>
+      <att name="standard_name">longitude</att>
+      <att name="units">degrees_east</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
     <dataType>String</dataType>
     <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3582,34 +3253,7 @@
       <att name="source_name">timestamp</att>
       <att name="standard_name">time</att>
       <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Waterbody</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>sensor</sourceName>
-    <destinationName>sensor</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Sensor</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3627,26 +3271,12 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>longitude</sourceName>
-    <destinationName>longitude</destinationName>
-    <dataType>float</dataType>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
+    <dataType>String</dataType>
     <addAttributes>
-      <att type="double" name="colorBarMaximum">180.0</att>
-      <att type="double" name="colorBarMinimum">-190.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Longitude</att>
-      <att name="standard_name">longitude</att>
-      <att name="units">degrees_east</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Sensor</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3660,6 +3290,178 @@
       <att name="ioos_category">Dissolved O2</att>
       <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
       <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
+    </addAttributes>
+  </dataVariable>
+</dataset><dataset active="true" datasetID="9qw2-yb2f" type="EDDTableFromAsciiFiles">
+  <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+  <updateEveryNMillis>10000</updateEveryNMillis>
+  <fileDir>/datasets/cmar/nsodp-sensor-strings/9qw2-yb2f</fileDir>
+  <fileNameRegex>.*merged\.csv</fileNameRegex>
+  <recursive>true</recursive>
+  <pathRegex>.*</pathRegex>
+  <metadataFrom>last</metadataFrom>
+  <standardizeWhat>0</standardizeWhat>
+  <charset>ISO-8859-1</charset>
+  <columnSeparator>,</columnSeparator>
+  <columnNamesRow>1</columnNamesRow>
+  <firstDataRow>2</firstDataRow>
+  <sortedColumnSourceName>timestamp</sortedColumnSourceName>
+  <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
+  <fileTableInMemory>false</fileTableInMemory>
+  <accessibleViaFiles>true</accessibleViaFiles>
+  <addAttributes>
+    <att name="cdm_data_type">Point</att>
+    <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+    <att name="creator_name">CMAR</att>
+    <att name="creator_type">insitution</att>
+    <att name="infoUrl">???</att>
+    <att name="institution">CMAR</att>
+    <att name="license">Nova Scotia Open Government Licence</att>
+    <att name="sourceUrl">(local files)</att>
+    <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
+    <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
+    <att name="contributor_role">owner</att>
+    <att name="creator_email">info(at)cmar.ca</att>
+    <att name="creator_type">person</att>
+    <att name="date_created">2021-01-20T14:25:02+0000</att>
+    <att name="geospatial_lat_max">43.8144</att>
+    <att name="geospatial_lat_min">43.67902</att>
+    <att name="geospatial_lon_max">-65.83601</att>
+    <att name="geospatial_lon_min">-65.95942</att>
+    <att name="geospatial_vertical_max">10.0</att>
+    <att name="geospatial_vertical_min">1.0</att>
+    <att name="institution">Centre for Marine Applied Research (CMAR)</att>
+    <att name="instrument">HOBO-20495250,aquaMeasure-670383,aquaMeasure-680326,VR2AR-545777,HOBO-10755242,VR2AR-547099,aquaMeasure-675286,HOBO-20291436,HOBO-20291456,HOBO-10194899,HOBO-10226050,HOBO-10777109,HOBO-10034865,HOBO-10194877,HOBO-10778922,HOBO-10034851,HOBO-10755201,HOBO-10755232,HOBO-10194911,HOBO-10194912,HOBO-10777103,HOBO-20291444,aquaMeasure-680251,aquaMeasure-675009,VR2AR-547086,HOBO-20291476</att>
+    <att name="keywords">aquaculture,climate change,coast,coastal monitoring program,dissolved oxygen,downloadable data,ecosystem,environment,environmental monitoring,fisheries,fishing,yarmouth county,nova scotia,oceanography,salinity,temperature,water</att>
+    <att name="publisher_email">info(at)cmar.ca</att>
+    <att name="publisher_institution">Centre for Marine Applied Research (CMAR)</att>
+    <att name="publisher_name">Centre for Marine Applied Research (CMAR)</att>
+    <att name="summary">The Centre for Marine Applied Research (CMAR) measures environmental data throughout Nova Scotia&#8217;s coastal waters as part of the Coastal Monitoring Program. This program was initiated by the Nova Scotia Department of Fisheries and Aquaculture in 2012 and CMAR became involved in 2017. CMAR collects temperature (degrees Celsius), dissolved oxygen (% saturation), and intermittent salinity (practical salinity units) data using autonomous sensors attached to moored lines, called &#8216;sensor strings&#8217;. Each string is attached to the seafloor by an anchored acoustic release and suspended by a sub-surface buoy, with sensors attached at various depths. Sensor strings are typically deployed for several months, and data are measured every 1 minute to 1 hour depending on the sensor. Data are retrieved by triggering the acoustic release, enabling the sensor string to float to the surface for data download. Some data are excluded from the final dataset during quality control processes.   The Coastal Monitoring Program data is organized by county. These datasets are very large, typically exceeding the number of rows that can be viewed in Excel. We recommend using the filter options of the Open Data Portal to filter to the WATERBODY, STATION, DEPTH, VARIABLE, and/or TIMESTAMP of interest before exporting. A chart derived from the dataset also allows for interactive filtering and export (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Yarmouth-County-Daily-A/bbrp-vuad).   Coastal Monitoring Program data for other Nova Scotia counties is also available through the Open Data Portal. The "Coastal Monitoring Program: Station Locations" dataset on the Portal shows locations with available data (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Station-Locations/cjfb-f4d4). Summary reports by county are available on the CMAR website (https://cmar.ca/2020/07/14/coastal-monitoring-program/). Data collection and retrieval are ongoing. The datasets and reports may be revised pending ongoing data collection and analyses.</att>
+    <att name="title">Coastal Monitoring Program Data: Yarmouth County</att>
+  </addAttributes>
+  <dataVariable>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Waterbody</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>lease</sourceName>
+    <destinationName>lease</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Lease</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>latitude</sourceName>
+    <destinationName>latitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">90.0</att>
+      <att type="double" name="colorBarMinimum">-90.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Latitude</att>
+      <att name="standard_name">latitude</att>
+      <att name="units">degrees_north</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>longitude</sourceName>
+    <destinationName>longitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">180.0</att>
+      <att type="double" name="colorBarMinimum">-190.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Longitude</att>
+      <att name="standard_name">longitude</att>
+      <att name="units">degrees_east</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>timestamp</sourceName>
+    <destinationName>time</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Time</att>
+      <att name="long_name">Timestamp</att>
+      <att name="source_name">timestamp</att>
+      <att name="standard_name">time</att>
+      <att name="time_precision">1970-01-01T00:00:00Z</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>depth</sourceName>
+    <destinationName>depth</destinationName>
+    <dataType>byte</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">8000.0</att>
+      <att type="double" name="colorBarMinimum">-8000.0</att>
+      <att name="colorBarPalette">TopographyDepth</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Depth</att>
+      <att name="standard_name">depth</att>
+      <att name="units">m</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Sensor</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>Dissolved Oxygen</sourceName>
+    <destinationName>Dissolved_Oxygen</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att type="double" name="colorBarMaximum">1.0</att>
+      <att type="double" name="colorBarMinimum">0.0</att>
+      <att name="ioos_category">Dissolved O2</att>
+      <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
+      <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3669,10 +3471,21 @@
     <addAttributes>
       <att name="ioos_category">Salinity</att>
       <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
+      <att name="units">practical salinity units</att>
     </addAttributes>
   </dataVariable>
-</dataset>
-<dataset active="true" datasetID="v6sa-tiit" type="EDDTableFromAsciiFiles">
+  <dataVariable>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
+    </addAttributes>
+  </dataVariable>
+</dataset><dataset active="true" datasetID="v6sa-tiit" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/v6sa-tiit</fileDir>
@@ -3699,7 +3512,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
     <att name="creator_email">info(at)cmar.ca</att>
@@ -3721,25 +3534,21 @@
     <att name="title">Coastal Monitoring Program Data: Richmond County</att>
   </addAttributes>
   <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
+      <att name="long_name">Waterbody</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>longitude</sourceName>
-    <destinationName>longitude</destinationName>
-    <dataType>float</dataType>
+    <sourceName>lease</sourceName>
+    <destinationName>lease</destinationName>
+    <dataType>String</dataType>
     <addAttributes>
-      <att type="double" name="colorBarMaximum">180.0</att>
-      <att type="double" name="colorBarMinimum">-190.0</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Longitude</att>
-      <att name="standard_name">longitude</att>
-      <att name="units">degrees_east</att>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Lease</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3756,21 +3565,34 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
-    <dataType>String</dataType>
+    <sourceName>longitude</sourceName>
+    <destinationName>longitude</destinationName>
+    <dataType>float</dataType>
     <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
+      <att type="double" name="colorBarMaximum">180.0</att>
+      <att type="double" name="colorBarMinimum">-190.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Longitude</att>
+      <att name="standard_name">longitude</att>
+      <att name="units">degrees_east</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
-      <att name="long_name">Waterbody</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3783,16 +3605,7 @@
       <att name="source_name">timestamp</att>
       <att name="standard_name">time</att>
       <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>lease</sourceName>
-    <destinationName>lease</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Lease</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3819,16 +3632,6 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
     <sourceName>Dissolved Oxygen</sourceName>
     <destinationName>Dissolved_Oxygen</destinationName>
     <dataType>float</dataType>
@@ -3839,19 +3642,21 @@
       <att name="ioos_category">Dissolved O2</att>
       <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
       <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>Salinity</sourceName>
-    <destinationName>Salinity</destinationName>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
     <dataType>float</dataType>
     <addAttributes>
-      <att name="ioos_category">Salinity</att>
-      <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset>
-<dataset active="true" datasetID="wpsu-7fer" type="EDDTableFromAsciiFiles">
+</dataset><dataset active="true" datasetID="wpsu-7fer" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/wpsu-7fer</fileDir>
@@ -3878,7 +3683,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
     <att name="creator_email">info(at)cmar.ca</att>
@@ -3900,12 +3705,21 @@
     <att name="title">Coastal Monitoring Program Data: Digby County</att>
   </addAttributes>
   <dataVariable>
-    <sourceName>sensor</sourceName>
-    <destinationName>sensor</destinationName>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
-      <att name="long_name">Sensor</att>
+      <att name="long_name">Waterbody</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>lease</sourceName>
+    <destinationName>lease</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Lease</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3922,6 +3736,37 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
+    <sourceName>longitude</sourceName>
+    <destinationName>longitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">180.0</att>
+      <att type="double" name="colorBarMinimum">-190.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Longitude</att>
+      <att name="standard_name">longitude</att>
+      <att name="units">degrees_east</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
     <sourceName>timestamp</sourceName>
     <destinationName>time</destinationName>
     <dataType>String</dataType>
@@ -3931,25 +3776,7 @@
       <att name="source_name">timestamp</att>
       <att name="standard_name">time</att>
       <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
-    <dataType>String</dataType>
-    <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Waterbody</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3967,6 +3794,97 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Sensor</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>Dissolved Oxygen</sourceName>
+    <destinationName>Dissolved_Oxygen</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att type="double" name="colorBarMaximum">1.0</att>
+      <att type="double" name="colorBarMinimum">0.0</att>
+      <att name="ioos_category">Dissolved O2</att>
+      <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
+      <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
+    </addAttributes>
+  </dataVariable>
+</dataset><dataset active="true" datasetID="a9za-3t63" type="EDDTableFromAsciiFiles">
+  <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+  <updateEveryNMillis>10000</updateEveryNMillis>
+  <fileDir>/datasets/cmar/nsodp-sensor-strings/a9za-3t63</fileDir>
+  <fileNameRegex>.*merged\.csv</fileNameRegex>
+  <recursive>true</recursive>
+  <pathRegex>.*</pathRegex>
+  <metadataFrom>last</metadataFrom>
+  <standardizeWhat>0</standardizeWhat>
+  <charset>ISO-8859-1</charset>
+  <columnSeparator>,</columnSeparator>
+  <columnNamesRow>1</columnNamesRow>
+  <firstDataRow>2</firstDataRow>
+  <sortedColumnSourceName>timestamp</sortedColumnSourceName>
+  <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
+  <fileTableInMemory>false</fileTableInMemory>
+  <accessibleViaFiles>true</accessibleViaFiles>
+  <addAttributes>
+    <att name="cdm_data_type">Point</att>
+    <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+    <att name="creator_name">CMAR</att>
+    <att name="creator_type">insitution</att>
+    <att name="infoUrl">???</att>
+    <att name="institution">CMAR</att>
+    <att name="license">Nova Scotia Open Government Licence</att>
+    <att name="sourceUrl">(local files)</att>
+    <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
+    <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
+    <att name="contributor_role">owner</att>
+    <att name="creator_email">info(at)cmar.ca</att>
+    <att name="creator_type">person</att>
+    <att name="date_created">2021-01-19T19:43:36+0000</att>
+    <att name="geospatial_lat_max">45.976083</att>
+    <att name="geospatial_lat_min">45.59586275</att>
+    <att name="geospatial_lon_max">-61.022683</att>
+    <att name="geospatial_lon_min">-61.36382192</att>
+    <att name="geospatial_vertical_max">28.0</att>
+    <att name="geospatial_vertical_min">2.0</att>
+    <att name="institution">Centre for Marine Applied Research (CMAR)</att>
+    <att name="instrument">HOBO-10034851,HOBO-10034865,HOBO-10778916,aquaMeasure-670290,aquaMeasure-670296,HOBO-10755206,HOBO-10777103,HOBO-10778922,HOBO-10817503</att>
+    <att name="keywords">aquaculture,climate change,coast,coastal monitoring program,dissolved oxygen,downloadable data,ecosystem,environment,environmental monitoring,fisheries,fishing,inverness county,nova scotia,oceanography,salinity,temperature,water quality</att>
+    <att name="publisher_email">info(at)cmar.ca</att>
+    <att name="publisher_institution">Centre for Marine Applied Research (CMAR)</att>
+    <att name="publisher_name">Centre for Marine Applied Research (CMAR)</att>
+    <att name="summary">The Centre for Marine Applied Research (CMAR) measures environmental data throughout Nova Scotia&#8217;s coastal waters as part of the Coastal Monitoring Program. This program was initiated by the Nova Scotia Department of Fisheries and Aquaculture in 2012 and CMAR became involved in 2017. CMAR collects temperature (degrees Celsius), dissolved oxygen (% saturation), and intermittent salinity (practical salinity units) data using autonomous sensors attached to moored lines, called &#8216;sensor strings&#8217;. Each string is attached to the seafloor by an anchored acoustic release and suspended by a sub-surface buoy, with sensors attached at various depths. Sensor strings are typically deployed for several months, and data are measured every 1 minute to 1 hour depending on the sensor. Data are retrieved by triggering the acoustic release, enabling the sensor string to float to the surface for data download. Some data are excluded from the final dataset during quality control processes.   The Coastal Monitoring Program data is organized by county. These datasets are very large, typically exceeding the number of rows that can be viewed in Excel. We recommend using the filter options of the Open Data Portal to filter to the WATERBODY, STATION, DEPTH, VARIABLE, and/or TIMESTAMP of interest before exporting. A chart derived from the dataset also allows for interactive filtering and export (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Data-Inverness-County-D/njv9-c7a6).   Coastal Monitoring Program data for other Nova Scotia counties is also available through the Open Data Portal. The "Coastal Monitoring Program: Station Locations" dataset on the Portal shows locations with available data (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Station-Locations/cjfb-f4d4). Summary reports by county are available on the CMAR website (https://cmar.ca/2020/07/14/coastal-monitoring-program/). Data collection and retrieval are ongoing. The datasets and reports may be revised pending ongoing data collection and analyses.</att>
+    <att name="title">Coastal Monitoring Program Data: Inverness County</att>
+  </addAttributes>
+  <dataVariable>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Waterbody</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
     <sourceName>lease</sourceName>
     <destinationName>lease</destinationName>
     <dataType>String</dataType>
@@ -3976,12 +3894,16 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
-    <dataType>String</dataType>
+    <sourceName>latitude</sourceName>
+    <destinationName>latitude</destinationName>
+    <dataType>float</dataType>
     <addAttributes>
-      <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
+      <att type="double" name="colorBarMaximum">90.0</att>
+      <att type="double" name="colorBarMinimum">-90.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Latitude</att>
+      <att name="standard_name">latitude</att>
+      <att name="units">degrees_north</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3998,13 +3920,57 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
+    <dataType>String</dataType>
     <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>timestamp</sourceName>
+    <destinationName>time</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Time</att>
+      <att name="long_name">Timestamp</att>
+      <att name="source_name">timestamp</att>
+      <att name="standard_name">time</att>
+      <att name="time_precision">1970-01-01T00:00:00Z</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>depth</sourceName>
+    <destinationName>depth</destinationName>
+    <dataType>byte</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">8000.0</att>
+      <att type="double" name="colorBarMinimum">-8000.0</att>
+      <att name="colorBarPalette">TopographyDepth</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Depth</att>
+      <att name="standard_name">depth</att>
+      <att name="units">m</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Sensor</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -4018,19 +3984,21 @@
       <att name="ioos_category">Dissolved O2</att>
       <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
       <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>Salinity</sourceName>
-    <destinationName>Salinity</destinationName>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
     <dataType>float</dataType>
     <addAttributes>
-      <att name="ioos_category">Salinity</att>
-      <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset>
-<dataset active="true" datasetID="x9dy-aai9" type="EDDTableFromAsciiFiles">
+</dataset><dataset active="true" datasetID="x9dy-aai9" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/x9dy-aai9</fileDir>
@@ -4057,7 +4025,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-    <att name="subsetVariables">waterbody, station, lease</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
     <att name="creator_email">info(at)cmar.ca</att>
@@ -4079,35 +4047,21 @@
     <att name="title">Coastal Monitoring Program Data: Halifax County</att>
   </addAttributes>
   <dataVariable>
-    <sourceName>deployment_period</sourceName>
-    <destinationName>deployment_period</destinationName>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
-      <att name="long_name">Deployment Period</att>
+      <att name="long_name">Waterbody</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>depth</sourceName>
-    <destinationName>depth</destinationName>
-    <dataType>byte</dataType>
-    <addAttributes>
-      <att type="double" name="colorBarMaximum">8000.0</att>
-      <att type="double" name="colorBarMinimum">-8000.0</att>
-      <att name="colorBarPalette">TopographyDepth</att>
-      <att name="ioos_category">Location</att>
-      <att name="long_name">Depth</att>
-      <att name="standard_name">depth</att>
-      <att name="units">m</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>sensor</sourceName>
-    <destinationName>sensor</destinationName>
+    <sourceName>lease</sourceName>
+    <destinationName>lease</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
-      <att name="long_name">Sensor</att>
+      <att name="long_name">Lease</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -4137,12 +4091,21 @@
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>waterbody</sourceName>
-    <destinationName>waterbody</destinationName>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
-      <att name="long_name">Waterbody</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -4155,35 +4118,30 @@
       <att name="source_name">timestamp</att>
       <att name="standard_name">time</att>
       <att name="time_precision">1970-01-01T00:00:00Z</att>
-      <att name="units">yyyy-MM-dd' 'HH:mm:ss</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>station</sourceName>
-    <destinationName>station</destinationName>
-    <dataType>String</dataType>
+    <sourceName>depth</sourceName>
+    <destinationName>depth</destinationName>
+    <dataType>byte</dataType>
     <addAttributes>
-      <att name="ioos_category">Identifier</att>
-      <att name="long_name">Station</att>
+      <att type="double" name="colorBarMaximum">8000.0</att>
+      <att type="double" name="colorBarMinimum">-8000.0</att>
+      <att name="colorBarPalette">TopographyDepth</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Depth</att>
+      <att name="standard_name">depth</att>
+      <att name="units">m</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>lease</sourceName>
-    <destinationName>lease</destinationName>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
     <dataType>String</dataType>
     <addAttributes>
       <att name="ioos_category">Unknown</att>
-      <att name="long_name">Lease</att>
-    </addAttributes>
-  </dataVariable>
-  <dataVariable>
-    <sourceName>Temperature</sourceName>
-    <destinationName>Temperature</destinationName>
-    <dataType>float</dataType>
-    <addAttributes>
-      <att type="float" name="_FillValue">NaN</att>
-      <att name="ioos_category">Temperature</att>
-      <att name="long_name">Temperature</att>
+      <att name="long_name">Sensor</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -4197,18 +4155,193 @@
       <att name="ioos_category">Dissolved O2</att>
       <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
       <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
-    <sourceName>Salinity</sourceName>
-    <destinationName>Salinity</destinationName>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
     <dataType>float</dataType>
     <addAttributes>
-      <att name="ioos_category">Salinity</att>
-      <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
+    </addAttributes>
+  </dataVariable>
+</dataset><dataset active="true" datasetID="mq2k-54s4" type="EDDTableFromAsciiFiles">
+  <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+  <updateEveryNMillis>10000</updateEveryNMillis>
+  <fileDir>/datasets/cmar/nsodp-sensor-strings/mq2k-54s4</fileDir>
+  <fileNameRegex>.*merged\.csv</fileNameRegex>
+  <recursive>true</recursive>
+  <pathRegex>.*</pathRegex>
+  <metadataFrom>last</metadataFrom>
+  <standardizeWhat>0</standardizeWhat>
+  <charset>ISO-8859-1</charset>
+  <columnSeparator>,</columnSeparator>
+  <columnNamesRow>1</columnNamesRow>
+  <firstDataRow>2</firstDataRow>
+  <sortedColumnSourceName>timestamp</sortedColumnSourceName>
+  <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
+  <fileTableInMemory>false</fileTableInMemory>
+  <accessibleViaFiles>true</accessibleViaFiles>
+  <addAttributes>
+    <att name="cdm_data_type">Point</att>
+    <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+    <att name="creator_name">CMAR</att>
+    <att name="creator_type">insitution</att>
+    <att name="infoUrl">???</att>
+    <att name="institution">CMAR</att>
+    <att name="license">Nova Scotia Open Government Licence</att>
+    <att name="sourceUrl">(local files)</att>
+    <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="subsetVariables">waterbody_station, lease, sensor</att>
+    <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
+    <att name="contributor_role">owner</att>
+    <att name="creator_email">info(at)cmar.ca</att>
+    <att name="creator_type">person</att>
+    <att name="date_created">2021-01-20T13:55:18+0000</att>
+    <att name="geospatial_lat_max">43.68643</att>
+    <att name="geospatial_lat_min">43.46844</att>
+    <att name="geospatial_lon_max">-65.1667</att>
+    <att name="geospatial_lon_min">-65.43374</att>
+    <att name="geospatial_vertical_max">20.0</att>
+    <att name="geospatial_vertical_min">2.0</att>
+    <att name="institution">Centre for Marine Applied Research (CMAR)</att>
+    <att name="instrument">HOBO-20291451,VR2AR-547095,aquaMeasure-670294,aquaMeasure-670293,HOBO-10034873,aquaMeasure-670291,aquaMeasure-670292,VR2AR-547096,HOBO-20291453,HOBO-20291459,HOBO-20291461,HOBO-20291482,HOBO-20291486,aquaMeasure-670289,VR2AR-547092,aquaMeasure-670286,aquaMeasure-670287,VR2AR-547097,HOBO-20291437,HOBO-20291452,HOBO-10755256,aquaMeasure-670285</att>
+    <att name="keywords">aquaculture,climate change,coast,coastal monitoring program,dissolved oxygen,downloadable data,ecosystem,environment,environmental monitoring,fisheries,fishing,shelburne county,nova scotia,oceanography,salinity,temperature,water quality</att>
+    <att name="publisher_email">info(at)cmar.ca</att>
+    <att name="publisher_institution">Centre for Marine Applied Research (CMAR)</att>
+    <att name="publisher_name">Centre for Marine Applied Research (CMAR)</att>
+    <att name="summary">The Centre for Marine Applied Research (CMAR) measures environmental data throughout Nova Scotia&#8217;s coastal waters as part of the Coastal Monitoring Program. This program was initiated by the Nova Scotia Department of Fisheries and Aquaculture in 2012 and CMAR became involved in 2017. CMAR collects temperature (degrees Celsius), dissolved oxygen (% saturation), and intermittent salinity (practical salinity units) data using autonomous sensors attached to moored lines, called &#8216;sensor strings&#8217;. Each string is attached to the seafloor by an anchored acoustic release and suspended by a sub-surface buoy, with sensors attached at various depths. Sensor strings are typically deployed for several months, and data are measured every 1 minute to 1 hour depending on the sensor. Data are retrieved by triggering the acoustic release, enabling the sensor string to float to the surface for data download. Some data are excluded from the final dataset during quality control processes.   The Coastal Monitoring Program data is organized by county. These datasets are very large, typically exceeding the number of rows that can be viewed in Excel. We recommend using the filter options of the Open Data Portal to filter to the WATERBODY, STATION, DEPTH, VARIABLE, and/or TIMESTAMP of interest before exporting. A chart derived from the dataset also allows for interactive filtering and export (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Shelburne-County-Daily-/5ech-4c5t).   Coastal Monitoring Program data for other Nova Scotia counties is also available through the Open Data Portal. The "Coastal Monitoring Program: Station Locations" dataset on the Portal shows locations with available data (https://data.novascotia.ca/Nature-and-Environment/Coastal-Monitoring-Program-Station-Locations/cjfb-f4d4). Summary reports by county are available on the CMAR website (https://cmar.ca/2020/07/14/coastal-monitoring-program/). Data collection and retrieval are ongoing. The datasets and reports may be revised pending ongoing data collection and analyses.</att>
+    <att name="title">Coastal Monitoring Program Data: Shelburne County</att>
+  </addAttributes>
+  <dataVariable>
+    <sourceName>waterbody_station</sourceName>
+    <destinationName>waterbody_station</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Waterbody</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>lease</sourceName>
+    <destinationName>lease</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Lease</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>latitude</sourceName>
+    <destinationName>latitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">90.0</att>
+      <att type="double" name="colorBarMinimum">-90.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Latitude</att>
+      <att name="standard_name">latitude</att>
+      <att name="units">degrees_north</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>longitude</sourceName>
+    <destinationName>longitude</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">180.0</att>
+      <att type="double" name="colorBarMinimum">-190.0</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Longitude</att>
+      <att name="standard_name">longitude</att>
+      <att name="units">degrees_east</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_start_date</sourceName>
+    <destinationName>deployment_start_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment Start Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>deployment_end_date</sourceName>
+    <destinationName>deployment_end_date</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Deployment End Date</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>timestamp</sourceName>
+    <destinationName>time</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Time</att>
+      <att name="long_name">Timestamp</att>
+      <att name="source_name">timestamp</att>
+      <att name="standard_name">time</att>
+      <att name="time_precision">1970-01-01T00:00:00Z</att>
+      <att name="units">yyyy-MM-dd'T'HH:mm:ss.SSS</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>depth</sourceName>
+    <destinationName>depth</destinationName>
+    <dataType>byte</dataType>
+    <addAttributes>
+      <att type="double" name="colorBarMaximum">8000.0</att>
+      <att type="double" name="colorBarMinimum">-8000.0</att>
+      <att name="colorBarPalette">TopographyDepth</att>
+      <att name="ioos_category">Location</att>
+      <att name="long_name">Depth</att>
+      <att name="standard_name">depth</att>
+      <att name="units">m</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>sensor</sourceName>
+    <destinationName>sensor</destinationName>
+    <dataType>String</dataType>
+    <addAttributes>
+      <att name="ioos_category">Unknown</att>
+      <att name="long_name">Sensor</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>Dissolved Oxygen</sourceName>
+    <destinationName>Dissolved_Oxygen</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att type="double" name="colorBarMaximum">1.0</att>
+      <att type="double" name="colorBarMinimum">0.0</att>
+      <att name="ioos_category">Dissolved O2</att>
+      <att name="long_name">Volume Fraction Of Oxygen In Sea Water</att>
+      <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+      <att name="units">% saturation</att>
+    </addAttributes>
+  </dataVariable>
+  <dataVariable>
+    <sourceName>Temperature</sourceName>
+    <destinationName>Temperature</destinationName>
+    <dataType>float</dataType>
+    <addAttributes>
+      <att type="float" name="_FillValue">NaN</att>
+      <att name="ioos_category">Temperature</att>
+      <att name="long_name">Temperature</att>
+      <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
 </dataset>
+<!-- CMAR Sensor Strings: END -->
 
 <!-- FORCE Mar 2018 ADCP Currents: BEGIN -->
 <dataset type="EDDTableFromMultidimNcFiles" datasetID="Mar2018_44fa_e1cc_fc53" active="true">
