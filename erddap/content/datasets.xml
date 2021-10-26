@@ -7004,7 +7004,12 @@ CALECHOGET,CHA0=0.00,CHB0=0.00,CHC0=0.</att>
     <sortFilesBySourceNames></sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
     <accessibleViaFiles>true</accessibleViaFiles>
-    <sourceAttributes>
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+    <addAttributes>
         <att name="cdm_data_type">Profile</att>
         <att name="cdm_profile_variables">institution,cruise_name,cruise_id,chief_scientist,platform,start_time,end_time,geographic_area,file_id,profile_id</att>
         <att name="Conventions">CF-1.6,CF-1.7,ACDD1.1</att>
@@ -7040,12 +7045,6 @@ CALECHOGET,CHA0=0.00,CHB0=0.00,CHC0=0.</att>
         <att name="time_coverage_start">2020-10-14T18:03:58.000000000</att>
         <att name="title">Atlantic Zone Monitoring Program (AZMP) Fall 2020 Survey (HUD2020063)</att>
         <att name="title_fra">Enqu&#xea;te automne 2020 du Programme de surveillance de la zone atlantique (MPZA) (HUD2020063)</att>
-    </sourceAttributes -->
-    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
-        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
-        <att name="subsetVariables">station_id, longitude, latitude</att>
-    -->
-    <addAttributes>
         <att name="Conventions">CF-1.6,CF-1.7,ACDD1.1, COARDS</att>
         <att name="creator_type">institution</att>
         <att name="institution">Fisheries and Oceans</att>
