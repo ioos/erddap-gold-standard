@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- setup.xml contains setup information for ERDDAP.
 When you install ERDDAP on your server, many of the settings can be left as is.
 Settings that you must change when you install ERDDAP on your server are marked "MUST CHANGE".
@@ -360,7 +360,7 @@ a similar number of pixels wide and high.
 <highResLogoImageFile>noaa_simple.gif</highResLogoImageFile>
 <lowResLogoImageFile>noaa20.gif</lowResLogoImageFile>
 <googleEarthLogoFile>nlogo.gif</googleEarthLogoFile>
-<questionMarkImageFile>QuestionMark.jpg</questionMarkImageFile>
+<!--<questionMarkImageFile>QuestionMark.jpg</questionMarkImageFile>-->
 
 <!-- The font family to be used for all of the text in images.
 "SansSerif" (the default) is always a valid and reasonable option.
@@ -425,12 +425,8 @@ All of the information in [standardShortDescriptionHtml] is also contained in
 -->
 <theShortDescriptionHtml><![CDATA[
 <h1>ERDDAP</h1>
-ERDDAP (the Environmental Research Division's Data Access Program)
-is a data server that gives you a simple, consistent way to download
-subsets of scientific datasets in common file formats and make graphs and maps.
-This particular ERDDAP installation has oceanographic data
-(for example, data from satellites and buoys).
-
+&erddapIs;
+&thisParticularErddap;
 [standardShortDescriptionHtml]
 
 ]]></theShortDescriptionHtml>
@@ -486,11 +482,11 @@ information.
       style="vertical-align:middle;"></a></td>
     <td style="text-align:left; font-size:x-large; color:#FFFFFF; ">
       <strong>ERDDAP</strong>
-      <br><small><small><small>Easier access to scientific data</small></small></small>
+      <br><small><small><small>&EasierAccessToScientificData;</small></small></small>
       </td>
     <td style="text-align:right; font-size:small;">
-      &loginInfo; &nbsp; &nbsp;
-      <br>Brought to you by
+      &loginInfo; | &language; &nbsp; &nbsp;
+      <br>&BroughtToYouBy;
       <a title="National Oceanic and Atmospheric Administration" rel="bookmark"
       href="http://www.noaa.gov">NOAA</a>
       <a title="National Marine Fisheries Service" rel="bookmark"
