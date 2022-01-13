@@ -1140,7 +1140,7 @@
         <att name="license">[standard]</att>
         <att name="sourceUrl">(local files)</att>
         <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-        <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude </att>
+        <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude</att>
         <att name="summary">XEOS Buoy - 002. real-time buoy data. CMAR data from a local source.</att>
         <att name="testOutOfDate">now-1day</att>
         <att name="title">CMAR - St. Mary's Bay</att>
@@ -1850,7 +1850,466 @@
     </dataVariable>
 </dataset>
 
-<!-- CMAR Sensor Strings: START-->
+<dataset type="EDDTableFromErddap" datasetID="cna_werc_weather_10-min_avg" active="true">
+	<!-- 10-Minute Average Weather Data, Lord's Cove -->
+	<sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/cna_werc_weather_10-min_avg</sourceUrl>
+</dataset>
+
+<dataset type="EDDTableFromErddap" datasetID="cna_werc_sustained_wind_2-min_avg" active="true">
+        <!-- 2-Minute Sustained Wind Data, Lord's Cove -->
+        <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/cna_werc_sustained_wind_2-min_avg</sourceUrl>
+</dataset>
+
+<dataset type="EDDTableFromErddap" datasetID="cna_werc_weather_daily_avg" active="true">
+        <!-- Daily Average Weather Data, Lord's Cove -->
+        <sourceUrl>https://www.smartatlantic.ca/erddap/tabledap/cna_werc_weather_daily_avg</sourceUrl>
+</dataset>
+
+<!-- NL Climate Index: BEGIN -->
+<dataset type="EDDTableFromAsciiFiles" datasetID="NL_Climate_Index" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/datasets/dfo/nl_climate_index</fileDir>
+    <fileNameRegex>.*NL_climate_index\.csv</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <charset>ISO-8859-1</charset>
+    <columnSeparator></columnSeparator>
+    <columnNamesRow>1</columnNamesRow>
+    <firstDataRow>2</firstDataRow>
+    <sortedColumnSourceName></sortedColumnSourceName>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">Other</att>
+        <att name="subsetVariables">dataset,year</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">frederic.cyr@dfo-mpo.gc.ca</att>
+        <att name="creator_name">DFO-MPO, MUN</att>
+        <att name="creator_type">institution</att>
+        <att name="creator_url">https://www.dfo-mpo.gc.ca/</att>
+        <att name="infoUrl">https://doi.org/10.20383/101.0301</att>
+        <att name="institution">DFO-MPO, MUN</att>
+        <att name="keywords">atlantic, climate, Climate_index, data, department, dfo, dfo-mpo, fisheries, index, labrador, mpo, mun, nao, newfoundland, north, ocean, oceans, oscillation, sea, sst, surface, temperature, time, year</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">The Newfoundland and Labrador (NL) climate index aims to describe the environmental conditions on the NL shelf and in the Northwest Atlantic as a whole. It consists of annual normalized anomalies of 10 subindices with equal contribution: Winter North Atlantic Oscillation, air temperature, sea ice, icebergs, sea surface temperature, vertically-averaged temperature and salinity at Station~27, cold intermediate layer (CIL) core temperature at Station~27, CIL area on 3 hydrographic sections and bottom temperature on the NL shelf. This index runs from 1951 to 2019 and will be updated annually. Data associated with Cyr, F. and Galbraith, P. S.: A climate index for the Newfoundland and Labrador shelf, Earth Syst. Sci. Data, 13, 1807-1828, https://doi.org/10.5194/essd-13-1807-2021, 2021.</att>
+        <att name="title">Newfoundland and Labrador climate index</att>
+    </addAttributes>
+	<dataVariable>
+        <sourceName>***pathName,/datasets/dfo/nl_climate_index/([0-9]*)/NL_climate_index\.csv,1</sourceName>
+        <destinationName>dataset</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="short">NaN</att>
+            <att name="ioos_category">Other</att>
+            <att name="long_name">Dataset</att>
+        </addAttributes>
+	</dataVariable>
+    <dataVariable>
+        <sourceName>Year</sourceName>
+        <destinationName>year</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="short">32767</att>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Year</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Climate index</sourceName>
+        <destinationName>climate_index</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Other</att>
+            <att name="long_name">Climate Index</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<dataset type="EDDTableFromAsciiFiles" datasetID="NL_Climate_Index_all_fields" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/datasets/dfo/nl_climate_index</fileDir>
+    <fileNameRegex>.*NL_climate_index_all_fields\.csv</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <charset>ISO-8859-1</charset>
+    <columnSeparator></columnSeparator>
+    <columnNamesRow>1</columnNamesRow>
+    <firstDataRow>2</firstDataRow>
+    <sortedColumnSourceName>Year</sortedColumnSourceName>
+    <sortFilesBySourceNames>Year</sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="subsetVariables">dataset,Year</att>
+        <att name="cdm_data_type">Other</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">frederic.cyr@dfo-mpo.gc.ca</att>
+        <att name="creator_name">DFO-MPO, MUN</att>
+        <att name="creator_type">institution</att>
+        <att name="creator_url">https://www.dfo-mpo.gc.ca/</att>
+        <att name="infoUrl">https://doi.org/10.20383/101.0301</att>
+        <att name="institution">DFO-MPO, MUN</att>
+        <att name="keywords">air, Air_Temp, all, area, atlantic, bottom, Bottom_T, cil, CIL_area, climate, data, department, dfo, dfo-mpo, distribution, fields, fisheries, ice, ice distribution, icebergs, index, labrador, mpo, mun, nao, newfoundland, north, ocean, oceans, oscillation, s27, S27_CIL, S27_S, S27_T, sea, Sea_Ice, sst, surface, temperature, wint, Wint_NAO</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">Individual subindices used to construct the Newfoundland and Labrador climate index. Each subindex is normalized using the 1991-2020 climatological period. Some signs were reversed so that positive anomalies are indicative of warmer conditions (e.g. sea ice).  Newfoundland and Labrador climate index - All Fields. The Newfoundland and Labrador (NL) climate index aims to describe the environmental conditions on the NL shelf and in the Northwest Atlantic as a whole. It consists of annual normalized anomalies of 10 subindices with equal contribution: Winter North Atlantic Oscillation, air temperature, sea ice, icebergs, sea surface temperature, vertically-averaged temperature and salinity at Station~27, cold intermediate layer (CIL) core temperature at Station~27, CIL area on 3 hydrographic sections and bottom temperature on the NL shelf. This index runs from 1951 to 2019 and will be updated annually. Data associated with Cyr, F. and Galbraith, P. S.: A climate index for the Newfoundland and Labrador shelf, Earth Syst. Sci. Data, 13, 1807-1828, https://doi.org/10.5194/essd-13-1807-2021, 2021.</att>
+        <att name="title">Newfoundland and Labrador climate index, All Fields</att>
+    </addAttributes>
+	<dataVariable>
+        <sourceName>***pathName,/datasets/dfo/nl_climate_index/([0-9]*)/NL_climate_index_all_fields\.csv,1</sourceName>
+        <destinationName>dataset</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="short">NaN</att>
+            <att name="ioos_category">Other</att>
+            <att name="long_name">Dataset</att>
+        </addAttributes>
+	</dataVariable>
+    <dataVariable>
+        <sourceName>Year</sourceName>
+        <destinationName>Year</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="short">32767</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Year</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Winter NAO</sourceName>
+        <destinationName>Winter_NAO</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Winter NAO</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Air Temp</sourceName>
+        <destinationName>Air_Temp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Air Temp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Sea Ice</sourceName>
+        <destinationName>Sea_Ice</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Ice Distribution</att>
+            <att name="long_name">Sea Ice</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Icebergs</sourceName>
+        <destinationName>Icebergs</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Ice Distribution</att>
+            <att name="long_name">Icebergs</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SST</sourceName>
+        <destinationName>SST</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>S27 Temp</sourceName>
+        <destinationName>S27_Temp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">S27 Temp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>S27 Sal</sourceName>
+        <destinationName>S27_Sal</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">S27 Sal</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>S27 CIL</sourceName>
+        <destinationName>S27_CIL</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">S27 CIL</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CIL area</sourceName>
+        <destinationName>CIL_area</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">CIL Area</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Bottom Temp</sourceName>
+        <destinationName>bottom_temp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Bottom Temp</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+
+<dataset type="EDDTableFromAsciiFiles" datasetID="NL_Climate_Index_natrual_signs" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/datasets/dfo/nl_climate_index</fileDir>
+    <fileNameRegex>.*NL_climate_index_all_fields_natural_signs\.csv</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <charset>ISO-8859-1</charset>
+    <columnSeparator></columnSeparator>
+    <columnNamesRow>1</columnNamesRow>
+    <firstDataRow>2</firstDataRow>
+    <sortedColumnSourceName>Year</sortedColumnSourceName>
+    <sortFilesBySourceNames>Year</sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="subsetVariables">dataset,Year</att>
+        <att name="cdm_data_type">Other</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_email">frederic.cyr@dfo-mpo.gc.ca</att>
+        <att name="creator_name">DFO-MPO, MUN</att>
+        <att name="creator_type">institution</att>
+        <att name="creator_url">https://www.dfo-mpo.gc.ca/</att>
+        <att name="infoUrl">https://doi.org/10.20383/101.0301</att>
+        <att name="institution">DFO-MPO, MUN</att>
+        <att name="keywords">air, Air_Temp, area, atlantic, bottom, Bottom_T, cil, CIL_area, climate, data, department, dfo, dfo-mpo, distribution, fisheries, ice, ice distribution, icebergs, index, labrador, mpo, mun, nao, natural, newfoundland, north, ocean, oceans, oscillation, s27, S27_CIL, S27_S, S27_T, sea, Sea_Ice, signs, sst, surface, temperature, time, wint, Wint_NAO, year</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">Individual subindices of the Newfoundland and Labrador climate index in their natural sign. Each subindex is normalized using the 1991-2020 climatological period.  Newfoundland and Labrador climate index - Natural Signs. The Newfoundland and Labrador (NL) climate index aims to describe the environmental conditions on the NL shelf and in the Northwest Atlantic as a whole. It consists of annual normalized anomalies of 10 subindices with equal contribution: Winter North Atlantic Oscillation, air temperature, sea ice, icebergs, sea surface temperature, vertically-averaged temperature and salinity at Station~27, cold intermediate layer (CIL) core temperature at Station~27, CIL area on 3 hydrographic sections and bottom temperature on the NL shelf. This index runs from 1951 to 2019 and will be updated annually. Data associated with Cyr, F. and Galbraith, P. S.: A climate index for the Newfoundland and Labrador shelf, Earth Syst. Sci. Data, 13, 1807-1828, https://doi.org/10.5194/essd-13-1807-2021, 2021.</att>
+        <att name="title">Newfoundland and Labrador climate index, Natural Signs</att>
+    </addAttributes>
+	<dataVariable>
+		<sourceName>***pathName,/datasets/dfo/nl_climate_index/([0-9]*)/NL_climate_index_all_fields_natural_signs\.csv,1</sourceName>
+        <destinationName>dataset</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="short">NaN</att>
+            <att name="ioos_category">Other</att>
+            <att name="long_name">Dataset</att>
+        </addAttributes>
+	</dataVariable>
+    <dataVariable>
+        <sourceName>Year</sourceName>
+        <destinationName>Year</destinationName>
+        <dataType>short</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="short">32767</att>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Year</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Winter NAO</sourceName>
+        <destinationName>Winter_NAO</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Winter NAO</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Air Temp</sourceName>
+        <destinationName>Air_Temp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Air Temp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Sea Ice</sourceName>
+        <destinationName>Sea_Ice</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Ice Distribution</att>
+            <att name="long_name">Sea Ice</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Icebergs</sourceName>
+        <destinationName>Icebergs</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Ice Distribution</att>
+            <att name="long_name">Icebergs</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SST</sourceName>
+        <destinationName>SST</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Surface Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>S27 Temp</sourceName>
+        <destinationName>S27_Temp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">S27 Temp</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>S27 Sal</sourceName>
+        <destinationName>S27_Sal</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">S27 Sal</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>S27 CIL</sourceName>
+        <destinationName>S27_CIL</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">S27 CIL</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CIL area</sourceName>
+        <destinationName>CIL_area</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">CIL Area</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Bottom Temp</sourceName>
+        <destinationName>Bottom_Temp</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Bottom Temp</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+<!-- NL Climate Index: END   -->
+
+<!-- CMAR Sensor Strings: BEGIN -->
 <dataset active="true" datasetID="eb3n-uxcb" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
@@ -3593,450 +4052,6 @@
   </dataVariable>
 </dataset>
 <!-- CMAR Sensor Strings: END -->
-
-<!-- NL Climate Index: BEGIN -->
-<dataset type="EDDTableFromAsciiFiles" datasetID="NL_Climate_Index" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/nl_climate_index</fileDir>
-    <fileNameRegex>.*NL_climate_index\.csv</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <standardizeWhat>0</standardizeWhat>
-    <charset>ISO-8859-1</charset>
-    <columnSeparator></columnSeparator>
-    <columnNamesRow>1</columnNamesRow>
-    <firstDataRow>2</firstDataRow>
-    <sortedColumnSourceName></sortedColumnSourceName>
-    <sortFilesBySourceNames></sortFilesBySourceNames>
-    <fileTableInMemory>false</fileTableInMemory>
-    <!-- sourceAttributes>
-    </sourceAttributes -->
-    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
-        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
-        <att name="subsetVariables">station_id, longitude, latitude</att>
-    -->
-    <addAttributes>
-        <att name="cdm_data_type">Other</att>
-        <att name="subsetVariables">dataset,year</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">frederic.cyr@dfo-mpo.gc.ca</att>
-        <att name="creator_name">DFO-MPO, MUN</att>
-        <att name="creator_type">institution</att>
-        <att name="creator_url">https://www.dfo-mpo.gc.ca/</att>
-        <att name="infoUrl">https://doi.org/10.20383/101.0301</att>
-        <att name="institution">DFO-MPO, MUN</att>
-        <att name="keywords">atlantic, climate, Climate_index, data, department, dfo, dfo-mpo, fisheries, index, labrador, mpo, mun, nao, newfoundland, north, ocean, oceans, oscillation, sea, sst, surface, temperature, time, year</att>
-        <att name="license">[standard]</att>
-        <att name="sourceUrl">(local files)</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">The Newfoundland and Labrador (NL) climate index aims to describe the environmental conditions on the NL shelf and in the Northwest Atlantic as a whole. It consists of annual normalized anomalies of 10 subindices with equal contribution: Winter North Atlantic Oscillation, air temperature, sea ice, icebergs, sea surface temperature, vertically-averaged temperature and salinity at Station~27, cold intermediate layer (CIL) core temperature at Station~27, CIL area on 3 hydrographic sections and bottom temperature on the NL shelf. This index runs from 1951 to 2019 and will be updated annually. Data associated with Cyr, F. and Galbraith, P. S.: A climate index for the Newfoundland and Labrador shelf, Earth Syst. Sci. Data, 13, 1807-1828, https://doi.org/10.5194/essd-13-1807-2021, 2021.</att>
-        <att name="title">Newfoundland and Labrador climate index</att>
-    </addAttributes>
-	<dataVariable>
-        <sourceName>***pathName,/datasets/dfo/nl_climate_index/([0-9]*)/NL_climate_index\.csv,1</sourceName>
-        <destinationName>dataset</destinationName>
-        <dataType>short</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="short">NaN</att>
-            <att name="ioos_category">Other</att>
-            <att name="long_name">Dataset</att>
-        </addAttributes>
-	</dataVariable>
-    <dataVariable>
-        <sourceName>Year</sourceName>
-        <destinationName>year</destinationName>
-        <dataType>short</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="short">32767</att>
-            <att name="ioos_category">Time</att>
-            <att name="long_name">Year</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Climate index</sourceName>
-        <destinationName>climate_index</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Other</att>
-            <att name="long_name">Climate Index</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<dataset type="EDDTableFromAsciiFiles" datasetID="NL_Climate_Index_all_fields" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/nl_climate_index</fileDir>
-    <fileNameRegex>.*NL_climate_index_all_fields\.csv</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <standardizeWhat>0</standardizeWhat>
-    <charset>ISO-8859-1</charset>
-    <columnSeparator></columnSeparator>
-    <columnNamesRow>1</columnNamesRow>
-    <firstDataRow>2</firstDataRow>
-    <sortedColumnSourceName>Year</sortedColumnSourceName>
-    <sortFilesBySourceNames>Year</sortFilesBySourceNames>
-    <fileTableInMemory>false</fileTableInMemory>
-    <!-- sourceAttributes>
-    </sourceAttributes -->
-    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
-        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
-    -->
-    <addAttributes>
-        <att name="subsetVariables">dataset,Year</att>
-        <att name="cdm_data_type">Other</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">frederic.cyr@dfo-mpo.gc.ca</att>
-        <att name="creator_name">DFO-MPO, MUN</att>
-        <att name="creator_type">institution</att>
-        <att name="creator_url">https://www.dfo-mpo.gc.ca/</att>
-        <att name="infoUrl">https://doi.org/10.20383/101.0301</att>
-        <att name="institution">DFO-MPO, MUN</att>
-        <att name="keywords">air, Air_Temp, all, area, atlantic, bottom, Bottom_T, cil, CIL_area, climate, data, department, dfo, dfo-mpo, distribution, fields, fisheries, ice, ice distribution, icebergs, index, labrador, mpo, mun, nao, newfoundland, north, ocean, oceans, oscillation, s27, S27_CIL, S27_S, S27_T, sea, Sea_Ice, sst, surface, temperature, wint, Wint_NAO</att>
-        <att name="license">[standard]</att>
-        <att name="sourceUrl">(local files)</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">Individual subindices used to construct the Newfoundland and Labrador climate index. Each subindex is normalized using the 1991-2020 climatological period. Some signs were reversed so that positive anomalies are indicative of warmer conditions (e.g. sea ice).  Newfoundland and Labrador climate index - All Fields. The Newfoundland and Labrador (NL) climate index aims to describe the environmental conditions on the NL shelf and in the Northwest Atlantic as a whole. It consists of annual normalized anomalies of 10 subindices with equal contribution: Winter North Atlantic Oscillation, air temperature, sea ice, icebergs, sea surface temperature, vertically-averaged temperature and salinity at Station~27, cold intermediate layer (CIL) core temperature at Station~27, CIL area on 3 hydrographic sections and bottom temperature on the NL shelf. This index runs from 1951 to 2019 and will be updated annually. Data associated with Cyr, F. and Galbraith, P. S.: A climate index for the Newfoundland and Labrador shelf, Earth Syst. Sci. Data, 13, 1807-1828, https://doi.org/10.5194/essd-13-1807-2021, 2021.</att>
-        <att name="title">Newfoundland and Labrador climate index, All Fields</att>
-    </addAttributes>
-	<dataVariable>
-        <sourceName>***pathName,/datasets/dfo/nl_climate_index/([0-9]*)/NL_climate_index_all_fields\.csv,1</sourceName>
-        <destinationName>dataset</destinationName>
-        <dataType>short</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="short">NaN</att>
-            <att name="ioos_category">Other</att>
-            <att name="long_name">Dataset</att>
-        </addAttributes>
-	</dataVariable>
-    <dataVariable>
-        <sourceName>Year</sourceName>
-        <destinationName>Year</destinationName>
-        <dataType>short</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="short">32767</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Year</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Winter NAO</sourceName>
-        <destinationName>Winter_NAO</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Winter NAO</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Air Temp</sourceName>
-        <destinationName>Air_Temp</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Air Temp</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Sea Ice</sourceName>
-        <destinationName>Sea_Ice</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Ice Distribution</att>
-            <att name="long_name">Sea Ice</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Icebergs</sourceName>
-        <destinationName>Icebergs</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Ice Distribution</att>
-            <att name="long_name">Icebergs</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>SST</sourceName>
-        <destinationName>SST</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>S27 Temp</sourceName>
-        <destinationName>S27_Temp</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">S27 Temp</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>S27 Sal</sourceName>
-        <destinationName>S27_Sal</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">S27 Sal</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>S27 CIL</sourceName>
-        <destinationName>S27_CIL</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">S27 CIL</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>CIL area</sourceName>
-        <destinationName>CIL_area</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">CIL Area</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Bottom Temp</sourceName>
-        <destinationName>bottom_temp</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Bottom Temp</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-
-<dataset type="EDDTableFromAsciiFiles" datasetID="NL_Climate_Index_natrual_signs" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/nl_climate_index</fileDir>
-    <fileNameRegex>.*NL_climate_index_all_fields_natural_signs\.csv</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <metadataFrom>last</metadataFrom>
-    <standardizeWhat>0</standardizeWhat>
-    <charset>ISO-8859-1</charset>
-    <columnSeparator></columnSeparator>
-    <columnNamesRow>1</columnNamesRow>
-    <firstDataRow>2</firstDataRow>
-    <sortedColumnSourceName>Year</sortedColumnSourceName>
-    <sortFilesBySourceNames>Year</sortFilesBySourceNames>
-    <fileTableInMemory>false</fileTableInMemory>
-    <!-- sourceAttributes>
-    </sourceAttributes -->
-    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
-        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
-        <att name="subsetVariables">station_id, longitude, latitude</att>
-    -->
-    <addAttributes>
-        <att name="subsetVariables">dataset,Year</att>
-        <att name="cdm_data_type">Other</att>
-        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
-        <att name="creator_email">frederic.cyr@dfo-mpo.gc.ca</att>
-        <att name="creator_name">DFO-MPO, MUN</att>
-        <att name="creator_type">institution</att>
-        <att name="creator_url">https://www.dfo-mpo.gc.ca/</att>
-        <att name="infoUrl">https://doi.org/10.20383/101.0301</att>
-        <att name="institution">DFO-MPO, MUN</att>
-        <att name="keywords">air, Air_Temp, area, atlantic, bottom, Bottom_T, cil, CIL_area, climate, data, department, dfo, dfo-mpo, distribution, fisheries, ice, ice distribution, icebergs, index, labrador, mpo, mun, nao, natural, newfoundland, north, ocean, oceans, oscillation, s27, S27_CIL, S27_S, S27_T, sea, Sea_Ice, signs, sst, surface, temperature, time, wint, Wint_NAO, year</att>
-        <att name="license">[standard]</att>
-        <att name="sourceUrl">(local files)</att>
-        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
-        <att name="summary">Individual subindices of the Newfoundland and Labrador climate index in their natural sign. Each subindex is normalized using the 1991-2020 climatological period.  Newfoundland and Labrador climate index - Natural Signs. The Newfoundland and Labrador (NL) climate index aims to describe the environmental conditions on the NL shelf and in the Northwest Atlantic as a whole. It consists of annual normalized anomalies of 10 subindices with equal contribution: Winter North Atlantic Oscillation, air temperature, sea ice, icebergs, sea surface temperature, vertically-averaged temperature and salinity at Station~27, cold intermediate layer (CIL) core temperature at Station~27, CIL area on 3 hydrographic sections and bottom temperature on the NL shelf. This index runs from 1951 to 2019 and will be updated annually. Data associated with Cyr, F. and Galbraith, P. S.: A climate index for the Newfoundland and Labrador shelf, Earth Syst. Sci. Data, 13, 1807-1828, https://doi.org/10.5194/essd-13-1807-2021, 2021.</att>
-        <att name="title">Newfoundland and Labrador climate index, Natural Signs</att>
-    </addAttributes>
-	<dataVariable>
-		<sourceName>***pathName,/datasets/dfo/nl_climate_index/([0-9]*)/NL_climate_index_all_fields_natural_signs\.csv,1</sourceName>
-        <destinationName>dataset</destinationName>
-        <dataType>short</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="short">NaN</att>
-            <att name="ioos_category">Other</att>
-            <att name="long_name">Dataset</att>
-        </addAttributes>
-	</dataVariable>
-    <dataVariable>
-        <sourceName>Year</sourceName>
-        <destinationName>Year</destinationName>
-        <dataType>short</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="short">32767</att>
-            <att name="ioos_category">Time</att>
-            <att name="long_name">Year</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Winter NAO</sourceName>
-        <destinationName>Winter_NAO</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Winter NAO</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Air Temp</sourceName>
-        <destinationName>Air_Temp</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Air Temp</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Sea Ice</sourceName>
-        <destinationName>Sea_Ice</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Ice Distribution</att>
-            <att name="long_name">Sea Ice</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Icebergs</sourceName>
-        <destinationName>Icebergs</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Ice Distribution</att>
-            <att name="long_name">Icebergs</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>SST</sourceName>
-        <destinationName>SST</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Temperature</att>
-            <att name="long_name">Sea Surface Temperature</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>S27 Temp</sourceName>
-        <destinationName>S27_Temp</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">S27 Temp</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>S27 Sal</sourceName>
-        <destinationName>S27_Sal</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">S27 Sal</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>S27 CIL</sourceName>
-        <destinationName>S27_CIL</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">S27 CIL</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>CIL area</sourceName>
-        <destinationName>CIL_area</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">CIL Area</att>
-        </addAttributes>
-    </dataVariable>
-    <dataVariable>
-        <sourceName>Bottom Temp</sourceName>
-        <destinationName>Bottom_Temp</destinationName>
-        <dataType>float</dataType>
-        <!-- sourceAttributes>
-        </sourceAttributes -->
-        <addAttributes>
-            <att name="_FillValue" type="float">NaN</att>
-            <att name="ioos_category">Unknown</att>
-            <att name="long_name">Bottom Temp</att>
-        </addAttributes>
-    </dataVariable>
-</dataset>
-
-<!-- NL Climate Index: END   -->
 
 <!-- FORCE ADCP Mar 2018: START-->
 <dataset type="EDDTableFromMultidimNcFiles" datasetID="FORCE_Mar2018_ADCP_Currents" active="true">
