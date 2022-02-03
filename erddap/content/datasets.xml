@@ -4802,13 +4802,12 @@
       <att name="scientist">null</att>
       <att name="water_depth">null</att>
     </addAttributes>
-
     <dataVariable>
       <sourceName>institution</sourceName>
       <destinationName>institution</destinationName>
       <dataType>String</dataType>
       <addAttributes>
-        <att name="ioos_category">Identifier</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4816,7 +4815,7 @@
       <destinationName>platform</destinationName>
       <dataType>String</dataType>
       <addAttributes>
-        <att name="ioos_category">Identifier</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4874,6 +4873,7 @@
       <dataType>int</dataType>
       <addAttributes>
         <att name="ioos_category">Other</att>
+        <att name="long_name">Event Number</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4882,6 +4882,7 @@
       <dataType>int</dataType>
       <addAttributes>
         <att name="ioos_category">Other</att>
+        <att name="long_name">Event Qualifier</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4889,6 +4890,7 @@
       <destinationName>event_qualifier2</destinationName>
       <dataType>String</dataType>
       <addAttributes>
+        <att name="long_name">Profile Direction</att>
         <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
@@ -4901,6 +4903,7 @@
         <att name="units">degrees_north</att>
         <att name="source">EVENT_HEADER:INITIAL_LATITUDE</att>
         <att name="ioos_category">Location</att>
+        <att name="long_name">Initial Latitude</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4912,6 +4915,7 @@
         <att name="units">degrees_east</att>
         <att name="source">EVENT_HEADER:INITIAL_LONGITUDE</att>
         <att name="ioos_category">Location</att>
+        <att name="long_name">Initial Longitude</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4979,28 +4983,28 @@
     <dataVariable>
       <sourceName>QLATD_01</sourceName>
       <destinationName>QLATD_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: LATD_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QLATD_01</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QLOND_01</sourceName>
       <destinationName>QLOND_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: LOND_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QLOND_01</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
@@ -5088,14 +5092,14 @@
     <dataVariable>
       <sourceName>QALTB_01</sourceName>
       <destinationName>QALTB_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: ALTB_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QALTB_01</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
@@ -5120,14 +5124,14 @@
     <dataVariable>
       <sourceName>QPRES_01</sourceName>
       <destinationName>QPRES_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: PRES_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPRES_01</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
@@ -5169,14 +5173,14 @@
     <dataVariable>
       <sourceName>QPSAL_01</sourceName>
       <destinationName>QPSAL_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: PSAL_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPSAL_01</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
@@ -5220,14 +5224,14 @@
     <dataVariable>
       <sourceName>QPSAL_02</sourceName>
       <destinationName>QPSAL_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: PSAL_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPSAL_02</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
@@ -5449,42 +5453,42 @@
     <dataVariable>
       <sourceName>QTE90_01</sourceName>
       <destinationName>QTE90_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Control Flag (GTSPP)</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QTE90_01</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QTEMP_01</sourceName>
       <destinationName>QTEMP_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: TEMP_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QTEMP_01</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QTEMP_02</sourceName>
       <destinationName>QTEMP_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: TEMP_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QTEMP_02</att>
         <att name="ioos_category">Quality</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
@@ -5527,13 +5531,13 @@
     <dataVariable>
       <sourceName>QPOTM_01</sourceName>
       <destinationName>QPOTM_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: POTM_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPOTM_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Temperature</att>
       </addAttributes>
@@ -5578,13 +5582,13 @@
     <dataVariable>
       <sourceName>QPOTM_02</sourceName>
       <destinationName>QPOTM_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: POTM_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPOTM_02</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5611,13 +5615,13 @@
     <dataVariable>
       <sourceName>QDOXY_01</sourceName>
       <destinationName>QDOXY_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: DOXY_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QDOXY_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5644,13 +5648,13 @@
     <dataVariable>
       <sourceName>QDOXY_02</sourceName>
       <destinationName>QDOXY_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: DOXY_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QDOXY_02</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5708,13 +5712,13 @@
     <dataVariable>
       <sourceName>QOXYV_01</sourceName>
       <destinationName>QOXYV_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: OXYV_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QOXYV_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5722,13 +5726,13 @@
     <dataVariable>
       <sourceName>QOXYV_02</sourceName>
       <destinationName>QOXYV_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: OXYV_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QOXYV_02</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5745,18 +5749,19 @@
         <att name="gf3_code">CNTR_01</att>
         <att name="ancillary_variables">FFFF_01</att>
         <att name="ioos_category">Other</att>
+        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QCNTR_01</sourceName>
       <destinationName>QCNTR_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Control Flag (GTSPP)</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QCNTR_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5773,18 +5778,19 @@
         <att name="gf3_code">CNTR_02</att>
         <att name="ancillary_variables">FFFF_01</att>
         <att name="ioos_category">Other</att>
+        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QCNTR_02</sourceName>
       <destinationName>QCNTR_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: CNTR_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QCNTR_02</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5796,22 +5802,24 @@
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Conductivity Ratio</att>
+        <att name="comments">Conductivity ratio (CRAT) as Conductivity [S/m] * 10.0 / 42.914</att>
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="gf3_code">CRAT_01</att>
         <att name="ioos_category">Unknown</att>
+        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QCRAT_01</sourceName>
       <destinationName>QCRAT_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: CRAT_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QCRAT_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5823,23 +5831,25 @@
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Conductivity Ratio</att>
+        <att name="comments">Conductivity ratio (CRAT) as Conductivity [S/m] * 10.0 / 42.914</att>
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="gf3_code">CRAT_02</att>
         <att name="ancillary_variables">FFFF_01</att>
         <att name="ioos_category">Unknown</att>
+        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QCRAT_02</sourceName>
       <destinationName>QCRAT_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: CRAT_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QCRAT_02</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -5995,13 +6005,13 @@
     <dataVariable>
       <sourceName>QFLOR_01</sourceName>
       <destinationName>QFLOR_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: FLOR_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QFLOR_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6009,13 +6019,13 @@
     <dataVariable>
       <sourceName>QFLOR_02</sourceName>
       <destinationName>QFLOR_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: FLOR_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QFLOR_02</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6023,13 +6033,13 @@
     <dataVariable>
       <sourceName>QFLOR_03</sourceName>
       <destinationName>QFLOR_03</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: FLOR_03</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QFLOR_03</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6056,13 +6066,13 @@
     <dataVariable>
       <sourceName>QPHPH_01</sourceName>
       <destinationName>QPHPH_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: PHPH_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPHPH_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6084,13 +6094,13 @@
     <dataVariable>
       <sourceName>QSPAR_01</sourceName>
       <destinationName>QSPAR_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: SPAR_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QSPAR_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6110,13 +6120,13 @@
     <dataVariable>
       <sourceName>QPSAR_01</sourceName>
       <destinationName>QPSAR_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: PSAR_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPSAR_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6142,13 +6152,13 @@
     <dataVariable>
       <sourceName>QSIGP_01</sourceName>
       <destinationName>QSIGP_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: SIGP_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QSIGP_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6174,13 +6184,13 @@
     <dataVariable>
       <sourceName>QSIGP_02</sourceName>
       <destinationName>QSIGP_02</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: SIGP_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QSIGP_02</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6253,13 +6263,13 @@
     <dataVariable>
       <sourceName>QTURB_01</sourceName>
       <destinationName>QTURB_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality Flag for Parameter: TURB_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QTURB_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
@@ -6271,7 +6281,7 @@
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">GEOP_1</att>
-        <att name="units"></att>
+        <att name="units">null</att>
         <att name="gf3_code">GEOP_01</att>
         <att name="ioos_category">Unknown</att>
       </addAttributes>
@@ -6304,29 +6314,29 @@
     <dataVariable>
       <sourceName>FFFF_01</sourceName>
       <destinationName>FFFF_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">FFFF_1</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">FFFF_01</att>
         <att name="ancillary_variables">FFFF_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="flag_values" type="intList">0 1</att>
+        <att name="flag_meanings">good bad</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QCFF_01</sourceName>
       <destinationName>QCFF_01</destinationName>
-      <dataType>float</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Quality flag: QCFF</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QCFF_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="flag_values" type="intList">0 1</att>
+        <att name="flag_meanings">good bad</att>
         <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
