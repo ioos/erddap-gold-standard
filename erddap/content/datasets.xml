@@ -4807,43 +4807,57 @@
       <sourceName>institution</sourceName>
       <destinationName>institution</destinationName>
       <dataType>String</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Identifier</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>platform</sourceName>
       <destinationName>platform</destinationName>
       <dataType>String</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Identifier</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>chief_scientist</sourceName>
       <destinationName>chief_scientist</destinationName>
       <dataType>String</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>cruise_name</sourceName>
       <destinationName>cruise_name</destinationName>
       <dataType>String</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>cruise_id</sourceName>
       <destinationName>cruise_id</destinationName>
       <dataType>String</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>geographic_area</sourceName>
       <destinationName>geographic_area</destinationName>
       <dataType>String</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>file_id</sourceName>
       <destinationName>file_id</destinationName>
       <dataType>String</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>profile_id</sourceName>
@@ -4851,25 +4865,32 @@
       <dataType>String</dataType>
       <addAttributes>
         <att name="cf_role">profile_id</att>
+        <att name="ioos_category">Identifier</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>event_number</sourceName>
       <destinationName>event_number</destinationName>
       <dataType>int</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>event_qualifier1</sourceName>
       <destinationName>event_qualifier1</destinationName>
       <dataType>int</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>event_qualifier2</sourceName>
       <destinationName>event_qualifier2</destinationName>
       <dataType>String</dataType>
-      <addAttributes></addAttributes>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>initial_latitude</sourceName>
@@ -4879,6 +4900,7 @@
         <att name="_FillValue">nan</att>
         <att name="units">degrees_north</att>
         <att name="source">EVENT_HEADER:INITIAL_LATITUDE</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4889,6 +4911,7 @@
         <att name="_FillValue">nan</att>
         <att name="units">degrees_east</att>
         <att name="source">EVENT_HEADER:INITIAL_LONGITUDE</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4900,6 +4923,7 @@
         <att name="units">degrees_north</att>
         <att name="standard_name">latitude</att>
         <att name="source">EVENT_HEADER:INITIAL_LATITUDE</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4911,6 +4935,7 @@
         <att name="units">degrees_east</att>
         <att name="standard_name">longitude</att>
         <att name="source">EVENT_HEADER:INITIAL_LONGITUDE</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4929,6 +4954,7 @@
         <att name="gf3_code">LATD_01</att>
         <att name="definition">Latitude north</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4947,6 +4973,7 @@
         <att name="gf3_code">LOND_01</att>
         <att name="definition">Longitude east</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4958,6 +4985,7 @@
         <att name="long_name">Quality Flag for Parameter: LATD_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QLATD_01</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -4971,6 +4999,7 @@
         <att name="long_name">Quality Flag for Parameter: LOND_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QLOND_01</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -4983,6 +5012,7 @@
         <att name="standard_name">time</att>
         <att name="units">seconds since 1970-01-01</att>
         <att name="calendar">proleptic_gregorian</att>
+        <att name="ioos_category">Time</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4992,6 +5022,7 @@
       <addAttributes>
         <att name="units">seconds since 1970-01-01</att>
         <att name="calendar">proleptic_gregorian</att>
+        <att name="ioos_category">Time</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5001,6 +5032,7 @@
       <addAttributes>
         <att name="units">seconds since 1970-01-01</att>
         <att name="calendar">proleptic_gregorian</att>
+        <att name="ioos_category">Time</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5014,6 +5046,7 @@
         <att name="ancillary_variables">QCFF_01</att>
         <att name="units">seconds since 1970-01-01</att>
         <att name="calendar">proleptic_gregorian</att>
+        <att name="ioos_category">Time</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5031,6 +5064,7 @@
         <att name="sdn_uom_urn">SDN:P06::UPDB</att>
         <att name="sdn_uom_name">Decibars</att>
         <att name="definition">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5048,6 +5082,7 @@
         <att name="sdn_uom_name">Metres</att>
         <att name="gf3_code">ALTB_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5059,6 +5094,7 @@
         <att name="long_name">Quality Flag for Parameter: ALTB_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QALTB_01</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -5078,6 +5114,7 @@
         <att name="sdn_uom_name">Decibars</att>
         <att name="gf3_code">PRES_01</att>
         <att name="definition">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
+        <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5089,6 +5126,7 @@
         <att name="long_name">Quality Flag for Parameter: PRES_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPRES_01</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -5107,6 +5145,7 @@
         <att name="sdn_parameter_urn">SDN:P01::PSLTZZ01</att>
         <att name="gf3_code">PSAL_01</att>
         <att name="definition">Practical salinity of the water body</att>
+        <att name="ioos_category">Salinity</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5124,6 +5163,7 @@
         <att name="gf3_code">PSAL_01</att>
         <att name="definition">Practical salinity of the water body</att>
         <att name="instrument">CTD</att>
+        <att name="ioos_category">Salinity</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5135,6 +5175,7 @@
         <att name="long_name">Quality Flag for Parameter: PSAL_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPSAL_01</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -5154,6 +5195,7 @@
         <att name="gf3_code">PSAL_02</att>
         <att name="definition">Practical salinity of the water body</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Salinity</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5172,6 +5214,7 @@
         <att name="definition">Practical salinity of the water body</att>
         <att name="ancillary_variables">FFFF_01</att>
         <att name="instrument">CTD</att>
+        <att name="ioos_category">Salinity</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5183,6 +5226,7 @@
         <att name="long_name">Quality Flag for Parameter: PSAL_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QPSAL_02</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -5198,6 +5242,7 @@
         <att name="scale">ITS-90</att>
         <att name="gf3_code">TE90_01</att>
         <att name="ancillary_variables">QTE90_01 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5217,6 +5262,7 @@
         <att name="gf3_code">TEMP_01</att>
         <att name="definition">Temperature of the water body</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5236,6 +5282,7 @@
         <att name="gf3_code">TEMP_02</att>
         <att name="definition">Temperature of the water body</att>
         <att name="ancillary_variables">QTEMP_02 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5255,6 +5302,7 @@
         <att name="gf3_code">TEMP_01</att>
         <att name="definition">Temperature (ITS-90) of the water body</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5274,6 +5322,7 @@
         <att name="gf3_code">TEMP_02</att>
         <att name="definition">Temperature (ITS-90) of the water body</att>
         <att name="ancillary_variables">QTEMP_02 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5291,6 +5340,7 @@
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="gf3_code">TEMP_01</att>
         <att name="definition">Temperature of the water body</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5309,6 +5359,7 @@
         <att name="gf3_code">TEMP_02</att>
         <att name="definition">Temperature of the water body</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5329,6 +5380,7 @@
         <att name="definition">Temperature of the water body</att>
         <att name="ancillary_variables">FFFF_01</att>
         <att name="instrument">CTD</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5349,6 +5401,7 @@
         <att name="definition">Temperature of the water body</att>
         <att name="ancillary_variables">QTEMP_02 QCFF_01</att>
         <att name="instrument">CTD</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5369,6 +5422,7 @@
         <att name="definition">Unavailable</att>
         <att name="ancillary_variables">FFFF_01</att>
         <att name="instrument">CTD</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5389,6 +5443,7 @@
         <att name="definition">Unavailable</att>
         <att name="ancillary_variables">QTEMP_02 QCFF_01</att>
         <att name="instrument">CTD</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5400,6 +5455,7 @@
         <att name="long_name">Quality Control Flag (GTSPP)</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QTE90_01</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -5413,6 +5469,7 @@
         <att name="long_name">Quality Flag for Parameter: TEMP_01</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QTEMP_01</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -5426,6 +5483,7 @@
         <att name="long_name">Quality Flag for Parameter: TEMP_02</att>
         <att name="standard_name">status_flag</att>
         <att name="gf3_code">QTEMP_02</att>
+        <att name="ioos_category">Quality</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
@@ -5444,6 +5502,7 @@
         <att name="sdn_uom_urn">SDN:P06::UPAA</att>
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="gf3_code">POTM_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5462,6 +5521,7 @@
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="gf3_code">POTM_01</att>
         <att name="ancillary_variables">QPOTM_01 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5475,6 +5535,7 @@
         <att name="gf3_code">QPOTM_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5492,6 +5553,7 @@
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="gf3_code">POTM_02</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5510,6 +5572,7 @@
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="gf3_code">POTM_02</att>
         <att name="ancillary_variables">QPOTM_02 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5523,6 +5586,7 @@
         <att name="gf3_code">QPOTM_02</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5541,6 +5605,7 @@
         <att name="gf3_code">DOXY_01</att>
         <att name="definition">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Dissolved O2</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5554,6 +5619,7 @@
         <att name="gf3_code">QDOXY_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5572,6 +5638,7 @@
         <att name="gf3_code">DOXY_02</att>
         <att name="definition">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Dissolved O2</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5585,6 +5652,7 @@
         <att name="gf3_code">QDOXY_02</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5600,6 +5668,7 @@
         <att name="gf3_code">OCUR_01</att>
         <att name="definition">Raw signal (current) of instrument output by oxygen sensor</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5615,6 +5684,7 @@
         <att name="gf3_code">OCUR_01</att>
         <att name="definition">Raw signal (current) of instrument output by oxygen sensor</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5632,6 +5702,7 @@
         <att name="gf3_code">OXYV_01</att>
         <att name="definition">Raw signal (voltage) of instrument output by oxygen sensor</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5645,6 +5716,7 @@
         <att name="gf3_code">QOXYV_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5658,6 +5730,7 @@
         <att name="gf3_code">QOXYV_02</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5671,6 +5744,7 @@
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="gf3_code">CNTR_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5684,6 +5758,7 @@
         <att name="gf3_code">QCNTR_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5697,6 +5772,7 @@
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="gf3_code">CNTR_02</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5710,6 +5786,62 @@
         <att name="gf3_code">QCNTR_02</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>CRAT_01</sourceName>
+      <destinationName>CRAT_01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Conductivity Ratio</att>
+        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
+        <att name="sdn_uom_name">Dimensionless</att>
+        <att name="gf3_code">CRAT_01</att>
+        <att name="ioos_category">Unknown</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QCRAT_01</sourceName>
+      <destinationName>QCRAT_01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: CRAT_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QCRAT_01</att>
+        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>CRAT_02</sourceName>
+      <destinationName>CRAT_02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Conductivity Ratio</att>
+        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
+        <att name="sdn_uom_name">Dimensionless</att>
+        <att name="gf3_code">CRAT_02</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Unknown</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QCRAT_02</sourceName>
+      <destinationName>QCRAT_02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: CRAT_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QCRAT_02</att>
+        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5727,57 +5859,7 @@
         <att name="sdn_uom_name">Milligrams per cubic metre</att>
         <att name="gf3_code">FLOR_02</att>
         <att name="ancillary_variables">QFLOR_02 QCFF_01</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>CRAT_01</sourceName>
-      <destinationName>CRAT_01</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Conductivity Ratio</att>
-        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
-        <att name="sdn_uom_name">Dimensionless</att>
-        <att name="gf3_code">CRAT_01</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QCRAT_01</sourceName>
-      <destinationName>QCRAT_01</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Quality Flag for Parameter: CRAT_01</att>
-        <att name="standard_name">status_flag</att>
-        <att name="gf3_code">QCRAT_01</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>CRAT_02</sourceName>
-      <destinationName>CRAT_02</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Conductivity Ratio</att>
-        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
-        <att name="sdn_uom_name">Dimensionless</att>
-        <att name="gf3_code">CRAT_02</att>
-        <att name="ancillary_variables">FFFF_01</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QCRAT_02</sourceName>
-      <destinationName>QCRAT_02</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Quality Flag for Parameter: CRAT_02</att>
-        <att name="standard_name">status_flag</att>
-        <att name="gf3_code">QCRAT_02</att>
-        <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5790,6 +5872,7 @@
         <att name="units">?</att>
         <att name="gf3_code">FLOR_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5802,6 +5885,7 @@
         <att name="units">mg/m^3</att>
         <att name="gf3_code">FLOR_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5814,6 +5898,7 @@
         <att name="units">?</att>
         <att name="gf3_code">FLOR_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5826,6 +5911,7 @@
         <att name="units">?</att>
         <att name="gf3_code">FLOR_02</att>
         <att name="ancillary_variables">QFLOR_02 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5838,6 +5924,7 @@
         <att name="units">mg/m^3</att>
         <att name="gf3_code">FLOR_01</att>
         <att name="ancillary_variables">QFLOR_01 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5850,6 +5937,7 @@
         <att name="units">?</att>
         <att name="gf3_code">FLOR_03</att>
         <att name="ancillary_variables">QFLOR_03 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5862,6 +5950,7 @@
         <att name="units">mg/m^3</att>
         <att name="gf3_code">FLOR_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5874,6 +5963,7 @@
         <att name="units">?</att>
         <att name="gf3_code">FLOR_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5886,6 +5976,7 @@
         <att name="units">?</att>
         <att name="gf3_code">FLOR_02</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5898,6 +5989,7 @@
         <att name="units">?</att>
         <att name="gf3_code">FLOR_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5911,6 +6003,7 @@
         <att name="gf3_code">QFLOR_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5924,6 +6017,7 @@
         <att name="gf3_code">QFLOR_02</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5937,6 +6031,7 @@
         <att name="gf3_code">QFLOR_03</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5955,6 +6050,7 @@
         <att name="gf3_code">PHPH_01</att>
         <att name="definition">pH per unit volume of the water body</att>
         <att name="ancillary_variables">QPHPH_01 QCFF_01</att>
+        <att name="ioos_category">CO2</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5968,6 +6064,7 @@
         <att name="gf3_code">QPHPH_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5981,6 +6078,7 @@
         <att name="standard_name">surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water</att>
         <att name="gf3_code">SPAR_01</att>
         <att name="ancillary_variables">QSPAR_01 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5994,6 +6092,7 @@
         <att name="gf3_code">QSPAR_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6005,6 +6104,7 @@
         <att name="long_name">Photosynthetically Active Radiation</att>
         <att name="standard_name">downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water</att>
         <att name="gf3_code">PSAR_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6018,6 +6118,7 @@
         <att name="gf3_code">QPSAR_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6035,6 +6136,7 @@
         <att name="sdn_uom_name">Kilograms per cubic metre</att>
         <att name="gf3_code">SIGP_01</att>
         <att name="definition">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6048,6 +6150,7 @@
         <att name="gf3_code">QSIGP_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6065,6 +6168,7 @@
         <att name="sdn_uom_name">Kilograms per cubic metre</att>
         <att name="gf3_code">SIGP_02</att>
         <att name="definition">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6078,6 +6182,7 @@
         <att name="gf3_code">QSIGP_02</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6095,6 +6200,7 @@
         <att name="sdn_uom_name">Kilograms per cubic metre</att>
         <att name="gf3_code">SIGT_01</att>
         <att name="definition">Sigma-T of the water body by computation from salinity and temperature using UNESCO algorithm</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6124,6 +6230,7 @@
         <att name="gf3_code">TURB_01</att>
         <att name="definition">Turbidity of water in the water body</att>
         <att name="ancillary_variables">QTURB_01 QCFF_01</att>
+        <att name="ioos_category">Total Suspended Matter</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6140,6 +6247,7 @@
         <att name="gf3_code">TURB_01</att>
         <att name="definition">Turbidity of water in the water body</att>
         <att name="ancillary_variables">QTURB_01 QCFF_01</att>
+        <att name="ioos_category">Total Suspended Matter</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6153,6 +6261,7 @@
         <att name="gf3_code">QTURB_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6164,6 +6273,7 @@
         <att name="long_name">GEOP_1</att>
         <att name="units"></att>
         <att name="gf3_code">GEOP_01</att>
+        <att name="ioos_category">Unknown</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6176,6 +6286,7 @@
         <att name="units">degrees C</att>
         <att name="gf3_code">OTMP_01</att>
         <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Unknown</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6187,6 +6298,7 @@
         <att name="long_name">VAIS_1</att>
         <att name="units">hertz</att>
         <att name="gf3_code">VAIS_01</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6201,6 +6313,7 @@
         <att name="ancillary_variables">FFFF_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6214,6 +6327,7 @@
         <att name="gf3_code">QCFF_01</att>
         <att name="flag_values">[0. 1. 2. 3. 4. 5. 9.]</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
 </dataset>
