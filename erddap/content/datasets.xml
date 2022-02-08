@@ -6222,6 +6222,7 @@
         <att name="long_name">SPVO_1</att>
         <att name="units">m**3/kg</att>
         <att name="gf3_code">SPVO_01</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
