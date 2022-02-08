@@ -4738,7 +4738,7 @@
     -->
     <addAttributes>
       <att name="cdm_data_type">Profile</att>
-      <att name="cdm_profile_variables">institution,cruise_name,cruise_id,chief_scientist,platform,start_time,end_time,geographic_area,file_id,profile_id</att>
+      <att name="cdm_profile_variables">institution,platform,chief_scientist,cruise_name,cruise_id,geographic_area,profile_id,event_number,event_qualifier1,event_qualifier2,initial_latitude,initial_longitude,latitude,longitude,start_time,end_time</att>
       <att name="Conventions">CF-1.6,CF-1.7,ACDD1.1</att>
       <att name="creator_email">BIO.Datashop@dfo-mpo.gc.ca</att>
       <att name="creator_name">BIO Data Services</att>
@@ -4782,581 +4782,1032 @@
       <att name="summary">This dataset includes Conductivity, Temperature, Depth (CTD) sensor profile data collected at 51 stations during Fisheries and Oceans Canada&#39;s Maritimes Region Atlantic Zone Monitoring Program (AZMP) fall survey (HUD2020063). The survey was conducted onboard the Canadian Coast Guard Ship Hudson between October 3 and 14th, 2020, embarking at the Bedford Institute of Oceanography, Dartmouth, NS, and disembarking in Sydney, NS. A total of 52 AZMP stations across the Scotian Shelf were occupied, with sampling consisting of vertical ring net deployments for zooplankton biomass and abundance, CTD/Rosette deployments for the collection of profile data and water samples. CTD profiles were collected at 51 of these stations using a SBE-911 CTD unit with dual temperature, conductivity, and dissolved oxygen sensors, and single fluorescence (in situ chlorophyll), coloured dissolved organic matter (Colored Dissolved Organic Matter (CDOM)), pH, Photosynthetically Available Radiation (PAR), surface irradiance (ship-board), and turbidity sensors. Water samples were collected for the analysis of nutrients (nitrate, often reported as nitrate+nitrite, nitrite, phosphate, silicate, and ammonia), chlorophyll a concentration (chl) measured using Turner Fluorometry, salinity, dissolved oxygen concentration, total inorganic carbon (TIC), total alkalinity (TA), partial pressure of carbon dioxide (pCO2), pigment analyses via high performance liquid chromatography (HPLC) and light absorption spectra (ABS), and particulate organic carbon (POC) and nitrogen (PON). The data collected on this survey will be used to inform changes in the physical, chemical, and biological state and productivity on the Scotian Shelf and across the Atlantic zone. This dataset includes downcast CTD profiles only. While data are provided for both the primary and secondary temperature, salinity, and dissolved oxygen sensors, we recommend using the data from the primary sensor for analysis unless otherwise indicated in the file header. The data collected were subjected to standard quality control procedures (e.g., outlier assessment and removal and metadata review), and the salinity and dissolved oxygen bottle measurements were used to calibrate the associated sensor profile data. The pH sensor data will be calibrated at a later date and the dataset re-submitted.</att>
       -->
       <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-      <att name="subsetVariables">institution, cruise_name, cruise_id, chief_scientist, platform, start_time, end_time, time, latitude, longitude, QCNTR_01, QPRES_01, QTEMP_01, QCRAT_01, QTEMP_02, QCRAT_02, QALTB_01, QPSAR_01, QOXYV_01, QOXYV_02, QFLOR_01, QFLOR_02, QPHPH_01, QTURB_01, QSPAR_01, QLATD_01, QLOND_01, QPSAL_01, QPSAL_02, QPOTM_01, QPOTM_02, QSIGP_01, QSIGP_02, QDOXY_01, QDOXY_02, QCNTR_02, QTE90_01, QCFF_01, geographic_area, file_id, profile_id</att>
+      <att name="subsetVariables">file_id,institution, cruise_name, cruise_id, chief_scientist, platform, geographic_area, profile_id,event_number,event_qualifier1,event_qualifier2,QALTB_01,QPRES_01,QPSAL_01,QPSAL_02,QTE90_01,QTEMP_01,QTEMP_02,QPOTM_01,QPOTM_02,QDOXY_01,QDOXY_02,QOXYV_01,QOXYV_02,QCNTR_01,QCNTR_02,QFLOR_01,QFLOR_02,QFLOR_03,QPHPH_01,QTURB_01,FFFF_01,QCFF_01,QCRAT_01,QCRAT_02,QSIGP_01,QSIGP_02</att>
+      <att name="history">null</att>
+      <att name="country_code">null</att>
+      <att name="cruise_description">null</att>
+      <att name="cruise_name">null</att>
+      <att name="cruise_number">null</att>
+      <att name="date_created">null</att>
+      <att name="date_modified">null</att>
+      <att name="event_number">null</att>
+      <att name="event_qualifier1">null</att>
+      <att name="event_qualifier2">null</att>
+      <att name="filename">null</att>
+      <att name="history">null</att>
+      <att name="original_odf_header">null</att>
+      <att name="original_odf_header_json">null</att>
+      <att name="platform">null</att>
+      <att name="processing_level">null</att>
+      <att name="project">null</att>
+      <att name="sampling_interval">null</att>
+      <att name="scientist">null</att>
+      <att name="water_depth">null</att>
     </addAttributes>
     <dataVariable>
       <sourceName>institution</sourceName>
       <destinationName>institution</destinationName>
       <dataType>String</dataType>
-      <!-- sourceAttributes>
-          <att name="coordinates">time longitude latitude</att>
-      </sourceAttributes -->
       <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Institution</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>cruise_name</sourceName>
-      <destinationName>cruise_name</destinationName>
-      <dataType>String</dataType>
-      <!-- sourceAttributes>
-          <att name="coordinates">time longitude latitude</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Cruise Name</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>cruise_id</sourceName>
-      <destinationName>cruise_id</destinationName>
-      <dataType>String</dataType>
-      <!-- sourceAttributes>
-          <att name="coordinates">time longitude latitude</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Identifier</att>
-        <att name="long_name">Cruise Id</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>chief_scientist</sourceName>
-      <destinationName>chief_scientist</destinationName>
-      <dataType>String</dataType>
-      <!-- sourceAttributes>
-          <att name="coordinates">time longitude latitude</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Chief Scientist</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>platform</sourceName>
       <destinationName>platform</destinationName>
       <dataType>String</dataType>
-      <!-- sourceAttributes>
-          <att name="coordinates">time longitude latitude</att>
-      </sourceAttributes -->
       <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Platform</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>start_time</sourceName>
-      <destinationName>start_time</destinationName>
-      <dataType>long</dataType>
-      <!-- sourceAttributes>
-          <att name="calendar">proleptic_gregorian</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="source">EVENT_HEADER:START_DATE_TIME</att>
-          <att name="units">seconds since 1970-01-01</att>
-      </sourceAttributes -->
+      <sourceName>chief_scientist</sourceName>
+      <destinationName>chief_scientist</destinationName>
+      <dataType>String</dataType>
       <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Time</att>
-        <att name="long_name">Start Time</att>
-        <att name="standard_name">time</att>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>end_time</sourceName>
-      <destinationName>end_time</destinationName>
-      <dataType>long</dataType>
-      <!-- sourceAttributes>
-          <att name="calendar">proleptic_gregorian</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="source">EVENT_HEADER:END_DATE_TIME</att>
-          <att name="units">seconds since 1970-01-01</att>
-      </sourceAttributes -->
+      <sourceName>cruise_name</sourceName>
+      <destinationName>cruise_name</destinationName>
+      <dataType>String</dataType>
       <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Time</att>
-        <att name="long_name">End Time</att>
-        <att name="standard_name">time</att>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>precise_time</sourceName>
-      <destinationName>precise_time</destinationName>
-      <dataType>long</dataType>
-      <!-- sourceAttributes>
-          <att name="calendar">proleptic_gregorian</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="units">seconds since 1970-01-01</att>
-      </sourceAttributes -->
+      <sourceName>cruise_id</sourceName>
+      <destinationName>cruise_id</destinationName>
+      <dataType>String</dataType>
       <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Time</att>
-        <att name="long_name">Precise Time</att>
-        <att name="standard_name">time</att>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>preciseLat</sourceName>
-      <destinationName>preciseLat</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="source">LATD_01</att>
-          <att name="standard_name">latitude</att>
-          <att name="units">degrees_north</att>
-          <att name="valid_max" type="double">46.11103</att>
-          <att name="valid_min" type="double">46.11072</att>
-      </sourceAttributes -->
+      <sourceName>geographic_area</sourceName>
+      <destinationName>geographic_area</destinationName>
+      <dataType>String</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">90.0</att>
-        <att name="colorBarMinimum" type="double">-90.0</att>
-        <att name="coordinates">null</att>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>file_id</sourceName>
+      <destinationName>file_id</destinationName>
+      <dataType>String</dataType>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>profile_id</sourceName>
+      <destinationName>profile_id</destinationName>
+      <dataType>String</dataType>
+      <addAttributes>
+        <att name="cf_role">profile_id</att>
+        <att name="ioos_category">Identifier</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>event_number</sourceName>
+      <destinationName>event_number</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+        <att name="long_name">Event Number</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>event_qualifier1</sourceName>
+      <destinationName>event_qualifier1</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+        <att name="long_name">Event Qualifier</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>event_qualifier2</sourceName>
+      <destinationName>event_qualifier2</destinationName>
+      <dataType>String</dataType>
+      <addAttributes>
+        <att name="long_name">Profile Direction</att>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>initial_latitude</sourceName>
+      <destinationName>initial_latitude</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="units">degrees_north</att>
+        <att name="source">EVENT_HEADER:INITIAL_LATITUDE</att>
         <att name="ioos_category">Location</att>
-        <att name="long_name">Latitude</att>
+        <att name="long_name">Initial Latitude</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>preciseLon</sourceName>
-      <destinationName>preciseLon</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="source">LOND_01</att>
-          <att name="standard_name">longitude</att>
-          <att name="units">degrees_east</att>
-          <att name="valid_max" type="double">-59.37308</att>
-          <att name="valid_min" type="double">-59.3741</att>
-      </sourceAttributes -->
+      <sourceName>initial_longitude</sourceName>
+      <destinationName>initial_longitude</destinationName>
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">180.0</att>
-        <att name="colorBarMinimum" type="double">-180.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="units">degrees_east</att>
+        <att name="source">EVENT_HEADER:INITIAL_LONGITUDE</att>
         <att name="ioos_category">Location</att>
-        <att name="long_name">Longitude</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>index</sourceName>
-      <destinationName>index</destinationName>
-      <dataType>long</dataType>
-      <!-- sourceAttributes>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="valid_max" type="long">59</att>
-          <att name="valid_min" type="long">0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">60.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Index</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>time</sourceName>
-      <destinationName>time</destinationName>
-      <dataType>long</dataType>
-      <!-- sourceAttributes>
-          <att name="calendar">proleptic_gregorian</att>
-          <att name="source">EVENT_HEADER:START_DATE_TIME</att>
-          <att name="units">seconds since 1970-01-01</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="ioos_category">Time</att>
-        <att name="long_name">Time</att>
-        <att name="standard_name">time</att>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <att name="long_name">Initial Longitude</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>latitude</sourceName>
       <destinationName>latitude</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="long_name">Latitude</att>
-          <att name="source">EVENT_HEADER:INITIAL_LATITUDE</att>
-          <att name="standard_name">latitude</att>
-          <att name="units">degrees_north</att>
-      </sourceAttributes -->
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">90.0</att>
-        <att name="colorBarMinimum" type="double">-90.0</att>
+        <att name="_FillValue">nan</att>
+        <att name="units">degrees_north</att>
+        <att name="standard_name">latitude</att>
+        <att name="source">EVENT_HEADER:INITIAL_LATITUDE</att>
         <att name="ioos_category">Location</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>longitude</sourceName>
       <destinationName>longitude</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="long_name">Longitude</att>
-          <att name="source">EVENT_HEADER:INITIAL_LONGITUDE</att>
-          <att name="standard_name">longitude</att>
-          <att name="units">degrees_north</att>
-      </sourceAttributes -->
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">180.0</att>
-        <att name="colorBarMinimum" type="double">-180.0</att>
-        <att name="ioos_category">Location</att>
+        <att name="_FillValue">nan</att>
         <att name="units">degrees_east</att>
+        <att name="standard_name">longitude</att>
+        <att name="source">EVENT_HEADER:INITIAL_LONGITUDE</att>
+        <att name="ioos_category">Location</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>preciseLat</sourceName>
+      <destinationName>preciseLat</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Latitude East</att>
+        <att name="units">degrees_north</att>
+        <att name="standard_name">latitude</att>
+        <att name="sdn_parameter_name">Latitude north</att>
+        <att name="sdn_parameter_urn">SDN:P01::ALATZZ01</att>
+        <att name="sdn_uom_urn">SDN:P06::DEGN</att>
+        <att name="sdn_uom_name">Degrees north</att>
+        <att name="gf3_code">LATD_01</att>
+        <att name="definition">Latitude north</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Location</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>preciseLon</sourceName>
+      <destinationName>preciseLon</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Longitude North</att>
+        <att name="units">degrees_east</att>
+        <att name="standard_name">longitude</att>
+        <att name="sdn_parameter_name">Longitude east</att>
+        <att name="sdn_parameter_urn">SDN:P01::ALONZZ01</att>
+        <att name="sdn_uom_urn">SDN:P06::DEGE</att>
+        <att name="sdn_uom_name">Degrees east</att>
+        <att name="gf3_code">LOND_01</att>
+        <att name="definition">Longitude east</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Location</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QLATD_01</sourceName>
+      <destinationName>QLATD_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: LATD_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QLATD_01</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QLOND_01</sourceName>
+      <destinationName>QLOND_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: LOND_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QLOND_01</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>time</sourceName>
+      <destinationName>time</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="standard_name">time</att>
+        <att name="units">seconds since 1970-01-01</att>
+        <att name="calendar">proleptic_gregorian</att>
+        <att name="ioos_category">Time</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>start_time</sourceName>
+      <destinationName>start_time</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="units">seconds since 1970-01-01</att>
+        <att name="calendar">proleptic_gregorian</att>
+        <att name="ioos_category">Time</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>end_time</sourceName>
+      <destinationName>end_time</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="units">seconds since 1970-01-01</att>
+        <att name="calendar">proleptic_gregorian</att>
+        <att name="ioos_category">Time</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>measurement_time</sourceName>
+      <destinationName>measurement_time</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="long_name">Exact Measurement Time</att>
+        <att name="standard_name">time</att>
+        <att name="gf3_code">SYTM_01</att>
+        <att name="ancillary_variables">QCFF_01</att>
+        <att name="units">seconds since 1970-01-01</att>
+        <att name="calendar">proleptic_gregorian</att>
+        <att name="ioos_category">Time</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>depth</sourceName>
       <destinationName>depth</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="positive">down</att>
-          <att name="source">-gsw.z_from_p(PRES_01,latitude)</att>
-          <att name="standard_name">depth</att>
-          <att name="units">m</att>
-      </sourceAttributes -->
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">8000.0</att>
-        <att name="colorBarMinimum" type="double">-8000.0</att>
-        <att name="colorBarPalette">TopographyDepth</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
+        <att name="units">m</att>
+        <att name="gf3_code">PRES_01</att>
+        <att name="standard_name">sea_water_pressure</att>
+        <att name="sdn_parameter_urn">SDN:P01::PRESPR01</att>
+        <att name="sdn_parameter_name">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
+        <att name="sdn_uom_urn">SDN:P06::UPDB</att>
+        <att name="sdn_uom_name">Decibars</att>
+        <att name="definition">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
         <att name="ioos_category">Location</att>
-        <att name="long_name">Depth</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>SYTM_01</sourceName>
-      <destinationName>SYTM_01</destinationName>
-      <dataType>long</dataType>
-      <!-- sourceAttributes>
-          <att name="calendar">proleptic_gregorian</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SYTM&quot;,
-&quot;NAME&quot;: &quot;SYTM_01&quot;,
-&quot;UNITS&quot;: &quot;UTC&quot;,
-&quot;CODE&quot;: &quot;SYTM_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;17-NOV-1858 00:00:00.00&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 27,
-&quot;PRINT_DECIMAL_PLACES&quot;: 2,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: &quot;14-OCT-2020 18:12:31.00&quot;,
-&quot;MAXIMUM_VALUE&quot;: &quot;14-OCT-2020 18:15:21.00&quot;,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">SYTM_01</att>
-          <att name="long_name">SYTM_01</att>
-          <att name="standard_name">time</att>
-          <att name="units">seconds since 1970-01-01</att>
-      </sourceAttributes -->
+      <sourceName>AHSFZZ01</sourceName>
+      <destinationName>AHSFZZ01</destinationName>
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Time</att>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Height (spatial coordinate) relative to bed surface in the water body</att>
+        <att name="units">m</att>
+        <att name="standard_name">height_above_sea_floor</att>
+        <att name="sdn_parameter_name">Height (spatial coordinate) relative to bed surface in the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::AHSFZZ01</att>
+        <att name="sdn_uom_urn">SDN:P06::ULAA</att>
+        <att name="sdn_uom_name">Metres</att>
+        <att name="gf3_code">ALTB_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Location</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QALTB_01</sourceName>
+      <destinationName>QALTB_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: ALTB_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QALTB_01</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>PRESPR01</sourceName>
+      <destinationName>PRESPR01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
+        <att name="units">decibar</att>
+        <att name="standard_name">sea_water_pressure</att>
+        <att name="sdn_parameter_name">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
+        <att name="sdn_parameter_urn">SDN:P01::PRESPR01</att>
+        <att name="sdn_uom_urn">SDN:P06::UPDB</att>
+        <att name="sdn_uom_name">Decibars</att>
+        <att name="gf3_code">PRES_01</att>
+        <att name="definition">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
+        <att name="ioos_category">Location</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QPRES_01</sourceName>
+      <destinationName>QPRES_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: PRES_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QPRES_01</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>PSLTZZ01</sourceName>
+      <destinationName>PSLTZZ01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Practical salinity of the water body</att>
+        <att name="units">1e-3</att>
+        <att name="scale">PSS-78</att>
+        <att name="standard_name">sea_water_practical_salinity</att>
+        <att name="sdn_parameter_name">Practical salinity of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::PSLTZZ01</att>
+        <att name="gf3_code">PSAL_01</att>
+        <att name="definition">Practical salinity of the water body</att>
+        <att name="ioos_category">Salinity</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>PSALST01</sourceName>
+      <destinationName>PSALST01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm</att>
+        <att name="units">1e-3</att>
+        <att name="scale">PSS-78</att>
+        <att name="standard_name">sea_water_practical_salinity</att>
+        <att name="sdn_parameter_name">Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P01::PSALST01</att>
+        <att name="gf3_code">PSAL_01</att>
+        <att name="definition">Practical salinity of the water body</att>
+        <att name="instrument">CTD</att>
+        <att name="ioos_category">Salinity</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QPSAL_01</sourceName>
+      <destinationName>QPSAL_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: PSAL_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QPSAL_01</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>PSLTZZ02</sourceName>
+      <destinationName>PSLTZZ02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Practical salinity of the water body</att>
+        <att name="units">1e-3</att>
+        <att name="scale">PSS-78</att>
+        <att name="standard_name">sea_water_practical_salinity</att>
+        <att name="sdn_parameter_name">Practical salinity of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P02::PSLTZZ02</att>
+        <att name="gf3_code">PSAL_02</att>
+        <att name="definition">Practical salinity of the water body</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Salinity</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>PSALST02</sourceName>
+      <destinationName>PSALST02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm</att>
+        <att name="units">1e-3</att>
+        <att name="scale">PSS-78</att>
+        <att name="standard_name">sea_water_practical_salinity</att>
+        <att name="sdn_parameter_name">Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P02::PSALST02</att>
+        <att name="gf3_code">PSAL_02</att>
+        <att name="definition">Practical salinity of the water body</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="instrument">CTD</att>
+        <att name="ioos_category">Salinity</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QPSAL_02</sourceName>
+      <destinationName>QPSAL_02</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: PSAL_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QPSAL_02</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TE90_01</sourceName>
+      <destinationName>TE90_01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (1990 scale)</att>
+        <att name="units">degrees C</att>
+        <att name="scale">ITS-90</att>
+        <att name="gf3_code">TE90_01</att>
+        <att name="ancillary_variables">QTE90_01 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPP681</sourceName>
+      <destinationName>TEMPP681</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (IPTS-68) of the water body</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPP011</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_01</att>
+        <att name="definition">Temperature of the water body</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPP682</sourceName>
+      <destinationName>TEMPP682</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (IPTS-68) of the water body</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P02::TEMPP021</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_02</att>
+        <att name="definition">Temperature of the water body</att>
+        <att name="ancillary_variables">QTEMP_02 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPP901</sourceName>
+      <destinationName>TEMPP901</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (ITS-90) of the water body</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">ITS-90</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPP011</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_01</att>
+        <att name="definition">Temperature (ITS-90) of the water body</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPP902</sourceName>
+      <destinationName>TEMPP902</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (ITS-90) of the water body</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">ITS-90</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P02::TEMPP021</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_02</att>
+        <att name="definition">Temperature (ITS-90) of the water body</att>
+        <att name="ancillary_variables">QTEMP_02 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPPR01</sourceName>
+      <destinationName>TEMPPR01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature of the water body</att>
+        <att name="units">degree Celsius</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPPR01</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_01</att>
+        <att name="definition">Temperature of the water body</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPPR02</sourceName>
+      <destinationName>TEMPPR02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature of the water body</att>
+        <att name="units">degree Celsius</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P02::TEMPPR02</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_02</att>
+        <att name="definition">Temperature of the water body</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPS601</sourceName>
+      <destinationName>TEMPS601</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPS011</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_01</att>
+        <att name="definition">Temperature of the water body</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="instrument">CTD</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPS602</sourceName>
+      <destinationName>TEMPS602</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
+        <att name="sdn_parameter_urn">SDN:P02::TEMPS021</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_02</att>
+        <att name="definition">Temperature of the water body</att>
+        <att name="ancillary_variables">QTEMP_02 QCFF_01</att>
+        <att name="instrument">CTD</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPS901</sourceName>
+      <destinationName>TEMPS901</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (ITS-90) of the water body by CTD or STD</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">ITS-90</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body by CTD or STD</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPS011</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_01</att>
+        <att name="definition">Unavailable</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="instrument">CTD</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPS902</sourceName>
+      <destinationName>TEMPS902</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (ITS-90) of the water body by CTD or STD</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">ITS-90</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body by CTD or STD</att>
+        <att name="sdn_parameter_urn">SDN:P02::TEMPS021</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">TEMP_02</att>
+        <att name="definition">Unavailable</att>
+        <att name="ancillary_variables">QTEMP_02 QCFF_01</att>
+        <att name="instrument">CTD</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QTE90_01</sourceName>
+      <destinationName>QTE90_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Control Flag (GTSPP)</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QTE90_01</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QTEMP_01</sourceName>
+      <destinationName>QTEMP_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: TEMP_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QTEMP_01</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QTEMP_02</sourceName>
+      <destinationName>QTEMP_02</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: TEMP_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QTEMP_02</att>
+        <att name="ioos_category">Quality</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>POTMCV01</sourceName>
+      <destinationName>POTMCV01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Potential temperature of the water body by computation using UNESCO 1983 algorithm</att>
+        <att name="units">degree Celsius</att>
+        <att name="standard_name">sea_water_potential_temperature</att>
+        <att name="sdn_parameter_name">Potential temperature of the water body by computation using UNESCO 1983 algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P01::POTMCV01</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">POTM_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>POTMS601</sourceName>
+      <destinationName>POTMS601</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Potential temperature of the water body by CTD and computation from pressure, salinity and IPTS-68 temperature using UNESCO algorithm</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_potential_temperature</att>
+        <att name="sdn_parameter_name">Potential temperature of the water body by CTD and computation from pressure, salinity and IPTS-68 temperature using UNESCO algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P01::POTMS011</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">POTM_01</att>
+        <att name="ancillary_variables">QPOTM_01 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QPOTM_01</sourceName>
+      <destinationName>QPOTM_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: POTM_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QPOTM_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>POTMCV02</sourceName>
+      <destinationName>POTMCV02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Potential temperature of the water body by computation using UNESCO 1983 algorithm</att>
+        <att name="units">degree Celsius</att>
+        <att name="standard_name">sea_water_potential_temperature</att>
+        <att name="sdn_parameter_name">Potential temperature of the water body by computation using UNESCO 1983 algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P02::POTMCV02</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">POTM_02</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>POTMS602</sourceName>
+      <destinationName>POTMS602</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Potential temperature of the water body by CTD and computation from pressure, salinity and IPTS-68 temperature using UNESCO algorithm</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_potential_temperature</att>
+        <att name="sdn_parameter_name">Potential temperature of the water body by CTD and computation from pressure, salinity and IPTS-68 temperature using UNESCO algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P02::POTMS021</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="gf3_code">POTM_02</att>
+        <att name="ancillary_variables">QPOTM_02 QCFF_01</att>
+        <att name="ioos_category">Temperature</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QPOTM_02</sourceName>
+      <destinationName>QPOTM_02</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: POTM_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QPOTM_02</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>DOXYZZ01</sourceName>
+      <destinationName>DOXYZZ01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
+        <att name="units">ml/L</att>
+        <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+        <att name="sdn_parameter_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
+        <att name="sdn_parameter_urn">SDN:P01::DOXYZZ01</att>
+        <att name="sdn_uom_urn">SDN:P06::UMLL</att>
+        <att name="sdn_uom_name">Millilitres per litre</att>
+        <att name="gf3_code">DOXY_01</att>
+        <att name="definition">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Dissolved O2</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QDOXY_01</sourceName>
+      <destinationName>QDOXY_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: DOXY_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QDOXY_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>DOXYZZ02</sourceName>
+      <destinationName>DOXYZZ02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
+        <att name="units">ml/L</att>
+        <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
+        <att name="sdn_parameter_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
+        <att name="sdn_parameter_urn">SDN:P02::DOXYZZ02</att>
+        <att name="sdn_uom_urn">SDN:P06::UMLL</att>
+        <att name="sdn_uom_name">Millilitres per litre</att>
+        <att name="gf3_code">DOXY_02</att>
+        <att name="definition">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Dissolved O2</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QDOXY_02</sourceName>
+      <destinationName>QDOXY_02</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: DOXY_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QDOXY_02</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>OXYCRW01_mA</sourceName>
+      <destinationName>OXYCRW01_mA</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Raw signal (current) of instrument output by oxygen sensor</att>
+        <att name="units">mA</att>
+        <att name="sdn_parameter_name">Raw signal (current) of instrument output by oxygen sensor</att>
+        <att name="sdn_parameter_urn">SDN:P01::OXYCRW01</att>
+        <att name="gf3_code">OCUR_01</att>
+        <att name="definition">Raw signal (current) of instrument output by oxygen sensor</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>OXYCRW01_uA</sourceName>
+      <destinationName>OXYCRW01_uA</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Raw signal (current) of instrument output by oxygen sensor</att>
+        <att name="units">uA</att>
+        <att name="sdn_parameter_name">Raw signal (current) of instrument output by oxygen sensor</att>
+        <att name="sdn_parameter_urn">SDN:P01::OXYCRW01</att>
+        <att name="gf3_code">OCUR_01</att>
+        <att name="definition">Raw signal (current) of instrument output by oxygen sensor</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>OXYOCPVL</sourceName>
+      <destinationName>OXYOCPVL</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Raw signal (voltage) of instrument output by oxygen sensor</att>
+        <att name="units">volts</att>
+        <att name="sdn_parameter_name">Raw signal (voltage) of instrument output by oxygen sensor</att>
+        <att name="sdn_parameter_urn">SDN:P01::OXYOCPVL</att>
+        <att name="sdn_uom_urn">SDN:P06::UVLT</att>
+        <att name="sdn_uom_name">Volts</att>
+        <att name="gf3_code">OXYV_01</att>
+        <att name="definition">Raw signal (voltage) of instrument output by oxygen sensor</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QOXYV_01</sourceName>
+      <destinationName>QOXYV_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: OXYV_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QOXYV_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QOXYV_02</sourceName>
+      <destinationName>QOXYV_02</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: OXYV_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QOXYV_02</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>CNTR_01</sourceName>
       <destinationName>CNTR_01</destinationName>
-      <dataType>int</dataType>
-      <!-- sourceAttributes>
-          <att name="ancillary_variables">QCNTR_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;INTE&quot;,
-&quot;NAME&quot;: &quot;CNTR_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;CNTR_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 12316,
-&quot;MAXIMUM_VALUE&quot;: 16407,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">CNTR_01</att>
-          <att name="long_name">CNTR_01</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="long">16407</att>
-          <att name="valid_min" type="long">12316</att>
-      </sourceAttributes -->
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">17000.0</att>
-        <att name="colorBarMinimum" type="double">12000.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">CNTR_1</att>
+        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
+        <att name="sdn_uom_name">Dimensionless</att>
+        <att name="gf3_code">CNTR_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
         <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QCNTR_01</sourceName>
       <destinationName>QCNTR_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: CNTR_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QCNTR_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QCNTR_01</att>
-          <att name="long_name">Quality_Flag: CNTR_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
+      <dataType>int</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Control Flag (GTSPP)</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QCNTR_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>CNTR_02</sourceName>
+      <destinationName>CNTR_02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">SNCNTR_1</att>
+        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
+        <att name="sdn_uom_name">Dimensionless</att>
+        <att name="gf3_code">CNTR_02</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Other</att>
         <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>PRES_01</sourceName>
-      <destinationName>PRES_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPRES_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;PRES_01&quot;,
-&quot;UNITS&quot;: &quot;db&quot;,
-&quot;CODE&quot;: &quot;PRES_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 3,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 2,
-&quot;MAXIMUM_VALUE&quot;: 61,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">PRES_01</att>
-          <att name="long_name">PRES_01</att>
-          <att name="sdn_parameter_name">Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level</att>
-          <att name="sdn_parameter_urn">SDN:P01::PRESPR01</att>
-          <att name="standard_name">sea_water_pressure</att>
-          <att name="units">decibar</att>
-          <att name="valid_max" type="double">61.0</att>
-          <att name="valid_min" type="double">2.0</att>
-      </sourceAttributes -->
+      <sourceName>QCNTR_02</sourceName>
+      <destinationName>QCNTR_02</destinationName>
+      <dataType>int</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">5000.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Pressure</att>
-        <att name="sdn_P02_urn">SDN:P02::AHGT</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QPRES_01</sourceName>
-      <destinationName>QPRES_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: PRES_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QPRES_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QPRES_01</att>
-          <att name="long_name">Quality_Flag: PRES_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: CNTR_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QCNTR_02</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMP_01</sourceName>
-      <destinationName>TEMP_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QTEMP_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;TEMP_01&quot;,
-&quot;UNITS&quot;: &quot;IPTS-68, deg C&quot;,
-&quot;CODE&quot;: &quot;TEMP_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.4287,
-&quot;MAXIMUM_VALUE&quot;: 10.8224,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">TEMP_01</att>
-          <att name="long_name">TEMP_01</att>
-          <att name="matching_sdn_parameter_urn">SDN:P01::TEMPP681,SDN:P01::TEMPPR01,SDN:P01::TEMPTC01</att>
-          <att name="scale">IPTS-68</att>
-          <att name="sdn_parameter_name">Temperature of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::TEMPPR01</att>
-          <att name="standard_name">sea_water_temperature</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.8224</att>
-          <att name="valid_min" type="double">8.4287</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">32.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="sdn_P02_urn">SDN:P02::TEMP</att>
-        <att name="units">degree_C</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QTEMP_01</sourceName>
-      <destinationName>QTEMP_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: TEMP_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QTEMP_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QTEMP_01</att>
-          <att name="long_name">Quality_Flag: TEMP_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>CRAT_01</sourceName>
       <destinationName>CRAT_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QCRAT_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;CRAT_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;CRAT_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 6,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0.77429,
-&quot;MAXIMUM_VALUE&quot;: 0.792295,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">CRAT_01</att>
-          <att name="long_name">CRAT_01</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">0.792295</att>
-          <att name="valid_min" type="double">0.7742899999999999</att>
-      </sourceAttributes -->
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">0.795</att>
-        <att name="colorBarMinimum" type="double">0.77</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Conductivity Ratio</att>
+        <att name="comments">Conductivity ratio (CRAT) as Conductivity [S/m] * 10.0 / 42.914</att>
+        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
+        <att name="sdn_uom_name">Dimensionless</att>
+        <att name="gf3_code">CRAT_01</att>
         <att name="ioos_category">Unknown</att>
         <att name="units">null</att>
       </addAttributes>
@@ -5364,168 +5815,29 @@
     <dataVariable>
       <sourceName>QCRAT_01</sourceName>
       <destinationName>QCRAT_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: CRAT_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QCRAT_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QCRAT_01</att>
-          <att name="long_name">Quality_Flag: CRAT_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
+      <dataType>int</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: CRAT_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QCRAT_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMP_02</sourceName>
-      <destinationName>TEMP_02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QTEMP_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;TEMP_02&quot;,
-&quot;UNITS&quot;: &quot;IPTS-68, deg C&quot;,
-&quot;CODE&quot;: &quot;TEMP_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.4467,
-&quot;MAXIMUM_VALUE&quot;: 10.8221,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">TEMP_02</att>
-          <att name="long_name">TEMP_02</att>
-          <att name="matching_sdn_parameter_urn">SDN:P01::TEMPPR01</att>
-          <att name="scale">IPTS-68</att>
-          <att name="sdn_parameter_name">Temperature of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::TEMPPR02</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.8221</att>
-          <att name="valid_min" type="double">8.4467</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">40.0</att>
-        <att name="colorBarMinimum" type="double">-10.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="sdn_P02_urn">SDN:P02::TEMP</att>
-        <att name="units">degree_C</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QTEMP_02</sourceName>
-      <destinationName>QTEMP_02</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: TEMP_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QTEMP_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QTEMP_02</att>
-          <att name="long_name">Quality_Flag: TEMP_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>CRAT_02</sourceName>
       <destinationName>CRAT_02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QCRAT_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;CRAT_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;CRAT_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 6,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0.774259,
-&quot;MAXIMUM_VALUE&quot;: 0.792308,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">CRAT_02</att>
-          <att name="long_name">CRAT_02</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">0.792308</att>
-          <att name="valid_min" type="double">0.774259</att>
-      </sourceAttributes -->
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">0.795</att>
-        <att name="colorBarMinimum" type="double">0.77</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Conductivity Ratio</att>
+        <att name="comments">Conductivity ratio (CRAT) as Conductivity [S/m] * 10.0 / 42.914</att>
+        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
+        <att name="sdn_uom_name">Dimensionless</att>
+        <att name="gf3_code">CRAT_02</att>
+        <att name="ancillary_variables">FFFF_01</att>
         <att name="ioos_category">Unknown</att>
         <att name="units">null</att>
       </addAttributes>
@@ -5533,2151 +5845,502 @@
     <dataVariable>
       <sourceName>QCRAT_02</sourceName>
       <destinationName>QCRAT_02</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: CRAT_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QCRAT_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QCRAT_02</att>
-          <att name="long_name">Quality_Flag: CRAT_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
+      <dataType>int</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: CRAT_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QCRAT_02</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>ALTB_01</sourceName>
-      <destinationName>ALTB_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QALTB_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;ALT_01&quot;,
-&quot;UNITS&quot;: &quot;m&quot;,
-&quot;CODE&quot;: &quot;ALTB_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 2,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 2.41,
-&quot;MAXIMUM_VALUE&quot;: 60.57,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">ALTB_01</att>
-          <att name="long_name">ALT_01</att>
-          <att name="units">m</att>
-          <att name="valid_max" type="double">60.57</att>
-          <att name="valid_min" type="double">2.41</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">80.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QALTB_01</sourceName>
-      <destinationName>QALTB_01</destinationName>
+      <sourceName>CPHLPR02</sourceName>
+      <destinationName>CPHLPR02</destinationName>
       <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: ALTB_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QALTB_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QALTB_01</att>
-          <att name="long_name">Quality_Flag: ALTB_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate >unknown phase] by in-situ chlorophyll fluorometer</att>
+        <att name="units">mg/m^3</att>
+        <att name="standard_name">mass_concentration_of_chlorophyll_in_sea_water</att>
+        <att name="sdn_parameter_name">Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate >unknown phase] by in-situ chlorophyll fluorometer</att>
+        <att name="sdn_parameter_urn">SDN:P02::CPHLPR02</att>
+        <att name="sdn_uom_urn">SDN:P06::UMMC</att>
+        <att name="sdn_uom_name">Milligrams per cubic metre</att>
+        <att name="gf3_code">FLOR_02</att>
+        <att name="ancillary_variables">QFLOR_02 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>PSAR_01</sourceName>
-      <destinationName>PSAR_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPSAR_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;par/log&quot;,
-&quot;UNITS&quot;: &quot;umol photons/m2/s&quot;,
-&quot;CODE&quot;: &quot;PSAR_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 14,
-&quot;PRINT_DECIMAL_PLACES&quot;: 8,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0.10039,
-&quot;MAXIMUM_VALUE&quot;: 109.36,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">PSAR_01</att>
-          <att name="long_name">par/log</att>
-          <att name="units">umol photons/m2/s</att>
-          <att name="valid_max" type="double">109.36</att>
-          <att name="valid_min" type="double">0.10039</att>
-      </sourceAttributes -->
+      <sourceName>FLOR_CUVA_nonUnits</sourceName>
+      <destinationName>FLOR_CUVA_nonUnits</destinationName>
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">150.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">CUVA</att>
+        <att name="units">?</att>
+        <att name="gf3_code">FLOR_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_FC</sourceName>
+      <destinationName>FLOR_FC</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">FC </att>
+        <att name="units">mg/m^3</att>
+        <att name="gf3_code">FLOR_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_FC_nonUnits</sourceName>
+      <destinationName>FLOR_FC_nonUnits</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">FC </att>
+        <att name="units">?</att>
+        <att name="gf3_code">FLOR_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_FSPUV_nonUnits</sourceName>
+      <destinationName>FLOR_FSPUV_nonUnits</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">FSPUV</att>
+        <att name="units">?</att>
+        <att name="gf3_code">FLOR_02</att>
+        <att name="ancillary_variables">QFLOR_02 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_SPUV</sourceName>
+      <destinationName>FLOR_SPUV</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">SPUV</att>
+        <att name="units">mg/m^3</att>
+        <att name="gf3_code">FLOR_01</att>
+        <att name="ancillary_variables">QFLOR_01 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_SP_nonUnits</sourceName>
+      <destinationName>FLOR_SP_nonUnits</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">SP</att>
+        <att name="units">?</att>
+        <att name="gf3_code">FLOR_03</att>
+        <att name="ancillary_variables">QFLOR_03 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_WETLABS</sourceName>
+      <destinationName>FLOR_WETLABS</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">WETLABS</att>
+        <att name="units">mg/m^3</att>
+        <att name="gf3_code">FLOR_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_WETLABS_noUnits</sourceName>
+      <destinationName>FLOR_WETLABS_noUnits</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">WETLABS</att>
+        <att name="units">?</att>
+        <att name="gf3_code">FLOR_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_WGREEN_noUnits</sourceName>
+      <destinationName>FLOR_WGREEN_noUnits</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">WGREEN</att>
+        <att name="units">?</att>
+        <att name="gf3_code">FLOR_02</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FLOR_unknown</sourceName>
+      <destinationName>FLOR_unknown</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">FLOR Unknown</att>
+        <att name="units">?</att>
+        <att name="gf3_code">FLOR_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QFLOR_01</sourceName>
+      <destinationName>QFLOR_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: FLOR_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QFLOR_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QFLOR_02</sourceName>
+      <destinationName>QFLOR_02</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: FLOR_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QFLOR_02</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QFLOR_03</sourceName>
+      <destinationName>QFLOR_03</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: FLOR_03</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QFLOR_03</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>PHXXZZXX</sourceName>
+      <destinationName>PHXXZZXX</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">pH (unspecified scale) of the water body</att>
+        <att name="units">dimensionless</att>
+        <att name="standard_name">sea_water_ph_reported_on_total_scale</att>
+        <att name="sdn_parameter_name">pH (unspecified scale) of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::PHXXZZ01</att>
+        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
+        <att name="sdn_uom_name">Dimensionless</att>
+        <att name="gf3_code">PHPH_01</att>
+        <att name="definition">pH per unit volume of the water body</att>
+        <att name="ancillary_variables">QPHPH_01 QCFF_01</att>
+        <att name="ioos_category">CO2</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QPHPH_01</sourceName>
+      <destinationName>QPHPH_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: PHPH_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QPHPH_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>SPAR_noUnits</sourceName>
+      <destinationName>SPAR_noUnits</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Surface Photosynthetically Active Radiation</att>
+        <att name="units">?</att>
+        <att name="standard_name">surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water</att>
+        <att name="gf3_code">SPAR_01</att>
+        <att name="ancillary_variables">QSPAR_01 QCFF_01</att>
+        <att name="ioos_category">Optical Properties</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QSPAR_01</sourceName>
+      <destinationName>QSPAR_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: SPAR_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QSPAR_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>PSAR_noUnits</sourceName>
+      <destinationName>PSAR_noUnits</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Photosynthetically Active Radiation</att>
+        <att name="standard_name">downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water</att>
+        <att name="gf3_code">PSAR_01</att>
         <att name="ioos_category">Optical Properties</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QPSAR_01</sourceName>
       <destinationName>QPSAR_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: PSAR_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QPSAR_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QPSAR_01</att>
-          <att name="long_name">Quality_Flag: PSAR_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
+      <dataType>int</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: PSAR_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QPSAR_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>OXYV_01</sourceName>
-      <destinationName>OXYV_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QOXYV_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;OXYV_01&quot;,
-&quot;UNITS&quot;: &quot;V&quot;,
-&quot;CODE&quot;: &quot;OXYV_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 2.3624,
-&quot;MAXIMUM_VALUE&quot;: 2.4457,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">OXYV_01</att>
-          <att name="long_name">OXYV_01</att>
-          <att name="sdn_parameter_name">Raw signal (voltage) of instrument output by oxygen sensor</att>
-          <att name="sdn_parameter_urn">SDN:P01::OXYOCPVL</att>
-          <att name="units">volts</att>
-          <att name="valid_max" type="double">2.4457</att>
-          <att name="valid_min" type="double">2.3624</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">2.46</att>
-        <att name="colorBarMinimum" type="double">2.36</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="sdn_P02_urn">SDN:P02::OXYC</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QOXYV_01</sourceName>
-      <destinationName>QOXYV_01</destinationName>
+      <sourceName>SIGTEQ01</sourceName>
+      <destinationName>SIGTEQ01</destinationName>
       <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: OXYV_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QOXYV_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QOXYV_01</att>
-          <att name="long_name">Quality_Flag: OXYV_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>OXYV_02</sourceName>
-      <destinationName>OXYV_02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QOXYV_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;OXYV_02&quot;,
-&quot;UNITS&quot;: &quot;V&quot;,
-&quot;CODE&quot;: &quot;OXYV_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 2.4111,
-&quot;MAXIMUM_VALUE&quot;: 2.4903,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">OXYV_02</att>
-          <att name="long_name">OXYV_02</att>
-          <att name="sdn_parameter_name">Raw signal (voltage) of instrument output by oxygen sensor</att>
-          <att name="sdn_parameter_urn">SDN:P01::OXYOCPVL</att>
-          <att name="units">volts</att>
-          <att name="valid_max" type="double">2.4903</att>
-          <att name="valid_min" type="double">2.4111</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">2.5</att>
-        <att name="colorBarMinimum" type="double">2.4</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="sdn_P02_urn">SDN:P02::OXYC</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QOXYV_02</sourceName>
-      <destinationName>QOXYV_02</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: OXYV_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QOXYV_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QOXYV_02</att>
-          <att name="long_name">Quality_Flag: OXYV_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>FLOR_01</sourceName>
-      <destinationName>FLOR_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QFLOR_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;FSPUV_01&quot;,
-&quot;UNITS&quot;: &quot;ug/l&quot;,
-&quot;CODE&quot;: &quot;FLOR_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 2.6519,
-&quot;MAXIMUM_VALUE&quot;: 3.0532,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">FLOR_01</att>
-          <att name="long_name">FSPUV_01</att>
-          <att name="units">mg/m^3</att>
-          <att name="valid_max" type="double">3.0532</att>
-          <att name="valid_min" type="double">2.6519</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">3.1</att>
-        <att name="colorBarMinimum" type="double">2.6</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QFLOR_01</sourceName>
-      <destinationName>QFLOR_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: FLOR_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QFLOR_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0,
-&quot;MAXIMUM_VALUE&quot;: 0,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QFLOR_01</att>
-          <att name="long_name">Quality_Flag: FLOR_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">0.0</att>
-          <att name="valid_min" type="double">0.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>FLOR_02</sourceName>
-      <destinationName>FLOR_02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QFLOR_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;FSP_01&quot;,
-&quot;UNITS&quot;: &quot;ug/l&quot;,
-&quot;CODE&quot;: &quot;FLOR_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 14,
-&quot;PRINT_DECIMAL_PLACES&quot;: 8,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0.3215,
-&quot;MAXIMUM_VALUE&quot;: 0.83882,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">FLOR_02</att>
-          <att name="long_name">FSP_01</att>
-          <att name="units">mg/m^3</att>
-          <att name="valid_max" type="double">0.83882</att>
-          <att name="valid_min" type="double">0.3215</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">1.0</att>
-        <att name="colorBarMinimum" type="double">0.2</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QFLOR_02</sourceName>
-      <destinationName>QFLOR_02</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: FLOR_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QFLOR_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0,
-&quot;MAXIMUM_VALUE&quot;: 0,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QFLOR_02</att>
-          <att name="long_name">Quality_Flag: FLOR_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">0.0</att>
-          <att name="valid_min" type="double">0.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>PHPH_01</sourceName>
-      <destinationName>PHPH_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPHPH_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;PHPH_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;PHPH_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.035,
-&quot;MAXIMUM_VALUE&quot;: 8.081,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">PHPH_01</att>
-          <att name="long_name">PHPH_01</att>
-          <att name="sdn_parameter_name">pH per unit volume of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::PHXXZZXX</att>
-          <att name="standard_name">sea_water_ph_reported_on_total_scale</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">8.081</att>
-          <att name="valid_min" type="double">8.035</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">9.0</att>
-        <att name="colorBarMinimum" type="double">7.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Salinity</att>
-        <att name="sdn_P02_urn">SDN:P02::ALKY</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QPHPH_01</sourceName>
-      <destinationName>QPHPH_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: PHPH_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QPHPH_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0,
-&quot;MAXIMUM_VALUE&quot;: 0,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QPHPH_01</att>
-          <att name="long_name">Quality_Flag: PHPH_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">0.0</att>
-          <att name="valid_min" type="double">0.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TURB_01</sourceName>
-      <destinationName>TURB_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QTURB_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;WETECOBB_01&quot;,
-&quot;UNITS&quot;: &quot;m^-1/sr&quot;,
-&quot;CODE&quot;: &quot;TURB_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 14,
-&quot;PRINT_DECIMAL_PLACES&quot;: 8,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0.00033342,
-&quot;MAXIMUM_VALUE&quot;: 0.00049494,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">TURB_01</att>
-          <att name="long_name">WETECOBB_01</att>
-          <att name="units">m^-1/sr</att>
-          <att name="valid_max" type="double">4.9494E-4</att>
-          <att name="valid_min" type="double">3.3342E-4</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">5.0E-4</att>
-        <att name="colorBarMinimum" type="double">3.0000000000000003E-4</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QTURB_01</sourceName>
-      <destinationName>QTURB_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: TURB_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QTURB_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0,
-&quot;MAXIMUM_VALUE&quot;: 0,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QTURB_01</att>
-          <att name="long_name">Quality_Flag: TURB_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">0.0</att>
-          <att name="valid_min" type="double">0.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>SPAR_01</sourceName>
-      <destinationName>SPAR_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QSPAR_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;spar&quot;,
-&quot;UNITS&quot;: &quot;umol photons/m2/s, logarithmic&quot;,
-&quot;CODE&quot;: &quot;SPAR_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 14,
-&quot;PRINT_DECIMAL_PLACES&quot;: 8,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 2.8257,
-&quot;MAXIMUM_VALUE&quot;: 2.8804,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">SPAR_01</att>
-          <att name="long_name">spar</att>
-          <att name="units">umol photons/m2/s, logarithmic</att>
-          <att name="valid_max" type="double">2.8804</att>
-          <att name="valid_min" type="double">2.8257</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">2.9</att>
-        <att name="colorBarMinimum" type="double">2.82</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QSPAR_01</sourceName>
-      <destinationName>QSPAR_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: SPAR_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QSPAR_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0,
-&quot;MAXIMUM_VALUE&quot;: 0,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QSPAR_01</att>
-          <att name="long_name">Quality_Flag: SPAR_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">0.0</att>
-          <att name="valid_min" type="double">0.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>LATD_01</sourceName>
-      <destinationName>LATD_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QLATD_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;LATD_01&quot;,
-&quot;UNITS&quot;: &quot;deg&quot;,
-&quot;CODE&quot;: &quot;LATD_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 13,
-&quot;PRINT_DECIMAL_PLACES&quot;: 5,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 46.11072,
-&quot;MAXIMUM_VALUE&quot;: 46.11103,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">LATD_01</att>
-          <att name="long_name">LATD_01</att>
-          <att name="sdn_parameter_name">Latitude north</att>
-          <att name="sdn_parameter_urn">SDN:P01::ALATZZ01</att>
-          <att name="standard_name">latitude</att>
-          <att name="units">degrees_north</att>
-          <att name="valid_max" type="double">46.11103</att>
-          <att name="valid_min" type="double">46.11072</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">90.0</att>
-        <att name="colorBarMinimum" type="double">-90.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Location</att>
-        <att name="sdn_P02_urn">SDN:P02::ALAT</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QLATD_01</sourceName>
-      <destinationName>QLATD_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: LATD_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QLATD_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QLATD_01</att>
-          <att name="long_name">Quality_Flag: LATD_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>LOND_01</sourceName>
-      <destinationName>LOND_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QLOND_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;LOND_01&quot;,
-&quot;UNITS&quot;: &quot;deg&quot;,
-&quot;CODE&quot;: &quot;LOND_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 14,
-&quot;PRINT_DECIMAL_PLACES&quot;: 5,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: -59.3741,
-&quot;MAXIMUM_VALUE&quot;: -59.37308,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">LOND_01</att>
-          <att name="long_name">LOND_01</att>
-          <att name="sdn_parameter_name">Longitude east</att>
-          <att name="sdn_parameter_urn">SDN:P01::ALONZZ01</att>
-          <att name="standard_name">longitude</att>
-          <att name="units">degrees_east</att>
-          <att name="valid_max" type="double">-59.37308</att>
-          <att name="valid_min" type="double">-59.3741</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">180.0</att>
-        <att name="colorBarMinimum" type="double">-180.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Location</att>
-        <att name="sdn_P02_urn">SDN:P02::ALAT</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QLOND_01</sourceName>
-      <destinationName>QLOND_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: LOND_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QLOND_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QLOND_01</att>
-          <att name="long_name">Quality_Flag: LOND_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>PSAL_01</sourceName>
-      <destinationName>PSAL_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPSAL_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;PSAL_01&quot;,
-&quot;UNITS&quot;: &quot;PSU&quot;,
-&quot;CODE&quot;: &quot;PSAL_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 30.1578,
-&quot;MAXIMUM_VALUE&quot;: 31.4087,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">PSAL_01</att>
-          <att name="long_name">PSAL_01</att>
-          <att name="matching_sdn_parameter_urn">SDN:P01::PSLTZZ01</att>
-          <att name="scale">PSS-78</att>
-          <att name="sdn_parameter_name">Practical salinity of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::PSLTZZ01</att>
-          <att name="standard_name">sea_water_practical_salinity</att>
-          <att name="units">1e-3</att>
-          <att name="valid_max" type="double">31.4087</att>
-          <att name="valid_min" type="double">30.1578</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">37.0</att>
-        <att name="colorBarMinimum" type="double">32.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Salinity</att>
-        <att name="sdn_P02_urn">SDN:P02::PSAL</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QPSAL_01</sourceName>
-      <destinationName>QPSAL_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: PSAL_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QPSAL_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QPSAL_01</att>
-          <att name="long_name">Quality_Flag: PSAL_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>PSAL_02</sourceName>
-      <destinationName>PSAL_02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPSAL_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;PSAL_02&quot;,
-&quot;UNITS&quot;: &quot;PSU&quot;,
-&quot;CODE&quot;: &quot;PSAL_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 30.1587,
-&quot;MAXIMUM_VALUE&quot;: 31.3898,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">PSAL_02</att>
-          <att name="long_name">PSAL_02</att>
-          <att name="matching_sdn_parameter_urn">SDN:P01::PSLTZZ01</att>
-          <att name="scale">PSS-78</att>
-          <att name="sdn_parameter_name">Practical salinity of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::PSLTZZ02</att>
-          <att name="standard_name">sea_water_practical_salinity</att>
-          <att name="units">1e-3</att>
-          <att name="valid_max" type="double">31.3898</att>
-          <att name="valid_min" type="double">30.1587</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">37.0</att>
-        <att name="colorBarMinimum" type="double">32.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Salinity</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QPSAL_02</sourceName>
-      <destinationName>QPSAL_02</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: PSAL_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QPSAL_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QPSAL_02</att>
-          <att name="long_name">Quality_Flag: PSAL_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>POTM_01</sourceName>
-      <destinationName>POTM_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPOTM_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;POTM_01&quot;,
-&quot;UNITS&quot;: &quot;IPTS-68, deg C&quot;,
-&quot;CODE&quot;: &quot;POTM_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.4227,
-&quot;MAXIMUM_VALUE&quot;: 10.8217,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">POTM_01</att>
-          <att name="long_name">POTM_01</att>
-          <att name="scale">IPTS-68</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.8217</att>
-          <att name="valid_min" type="double">8.4227</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">40.0</att>
-        <att name="colorBarMinimum" type="double">-10.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="units">degree_C</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QPOTM_01</sourceName>
-      <destinationName>QPOTM_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: POTM_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QPOTM_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QPOTM_01</att>
-          <att name="long_name">Quality_Flag: POTM_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>POTM_02</sourceName>
-      <destinationName>POTM_02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPOTM_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;POTM_02&quot;,
-&quot;UNITS&quot;: &quot;IPTS-68, deg C&quot;,
-&quot;CODE&quot;: &quot;POTM_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.4407,
-&quot;MAXIMUM_VALUE&quot;: 10.8213,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">POTM_02</att>
-          <att name="long_name">POTM_02</att>
-          <att name="scale">IPTS-68</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.8213</att>
-          <att name="valid_min" type="double">8.4407</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">40.0</att>
-        <att name="colorBarMinimum" type="double">-10.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="units">degree_C</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QPOTM_02</sourceName>
-      <destinationName>QPOTM_02</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: POTM_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QPOTM_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QPOTM_02</att>
-          <att name="long_name">Quality_Flag: POTM_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>SIGP_01</sourceName>
-      <destinationName>SIGP_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QSIGP_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;SIGP_01&quot;,
-&quot;UNITS&quot;: &quot;sigma-theta, kg/m^3&quot;,
-&quot;CODE&quot;: &quot;SIGP_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 23.0385,
-&quot;MAXIMUM_VALUE&quot;: 24.3939,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">SIGP_01</att>
-          <att name="long_name">SIGP_01</att>
-          <att name="sdn_parameter_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
-          <att name="sdn_parameter_urn">SDN:P01::SIGTEQ01</att>
-          <att name="standard_name">sea_water_sigma_theta</att>
-          <att name="units">kg/m^3</att>
-          <att name="valid_max" type="double">24.3939</att>
-          <att name="valid_min" type="double">23.0385</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">200.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Physical Oceanography</att>
-        <att name="sdn_P02_urn">SDN:P02::SIGT</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
+        <att name="units">kg/m^3</att>
+        <att name="standard_name">sea_water_sigma_theta</att>
+        <att name="sdn_parameter_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P01::SIGTEQ01</att>
+        <att name="sdn_uom_urn">SDN:P06::UKMC</att>
+        <att name="sdn_uom_name">Kilograms per cubic metre</att>
+        <att name="gf3_code">SIGP_01</att>
+        <att name="definition">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QSIGP_01</sourceName>
       <destinationName>QSIGP_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: SIGP_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QSIGP_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QSIGP_01</att>
-          <att name="long_name">Quality_Flag: SIGP_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
+      <dataType>int</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: SIGP_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QSIGP_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
         <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>SIGP_02</sourceName>
-      <destinationName>SIGP_02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QSIGP_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;SIGP_02&quot;,
-&quot;UNITS&quot;: &quot;sigma-theta, kg/m^3&quot;,
-&quot;CODE&quot;: &quot;SIGP_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 23.0393,
-&quot;MAXIMUM_VALUE&quot;: 24.3766,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">SIGP_02</att>
-          <att name="long_name">SIGP_02</att>
-          <att name="sdn_parameter_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
-          <att name="sdn_parameter_urn">SDN:P01::SIGTEQ02</att>
-          <att name="standard_name">sea_water_sigma_theta</att>
-          <att name="units">kg/m^3</att>
-          <att name="valid_max" type="double">24.3766</att>
-          <att name="valid_min" type="double">23.0393</att>
-      </sourceAttributes -->
+      <sourceName>SIGTEQ02</sourceName>
+      <destinationName>SIGTEQ02</destinationName>
+      <dataType>float</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">200.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Physical Oceanography</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
+        <att name="units">kg/m^3</att>
+        <att name="standard_name">sea_water_sigma_theta</att>
+        <att name="sdn_parameter_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P02::SIGTEQ02</att>
+        <att name="sdn_uom_urn">SDN:P06::UKMC</att>
+        <att name="sdn_uom_name">Kilograms per cubic metre</att>
+        <att name="gf3_code">SIGP_02</att>
+        <att name="definition">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
+        <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QSIGP_02</sourceName>
       <destinationName>QSIGP_02</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: SIGP_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QSIGP_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QSIGP_02</att>
-          <att name="long_name">Quality_Flag: SIGP_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>DOXY_01</sourceName>
-      <destinationName>DOXY_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QDOXY_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;DOXY_01&quot;,
-&quot;UNITS&quot;: &quot;ml/l&quot;,
-&quot;CODE&quot;: &quot;DOXY_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 6.134,
-&quot;MAXIMUM_VALUE&quot;: 6.4531,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">DOXY_01</att>
-          <att name="long_name">DOXY_01</att>
-          <att name="sdn_parameter_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
-          <att name="sdn_parameter_urn">SDN:P01::DOXYZZ01</att>
-          <att name="units">ml/L</att>
-          <att name="valid_max" type="double">6.4531</att>
-          <att name="valid_min" type="double">6.134</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">6.5</att>
-        <att name="colorBarMinimum" type="double">6.1000000000000005</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="sdn_P02_urn">SDN:P02::DOXY</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QDOXY_01</sourceName>
-      <destinationName>QDOXY_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: DOXY_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QDOXY_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QDOXY_01</att>
-          <att name="long_name">Quality_Flag: DOXY_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>DOXY_02</sourceName>
-      <destinationName>DOXY_02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QDOXY_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;DOXY_02&quot;,
-&quot;UNITS&quot;: &quot;ml/l&quot;,
-&quot;CODE&quot;: &quot;DOXY_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 6.1586,
-&quot;MAXIMUM_VALUE&quot;: 6.4772,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">DOXY_02</att>
-          <att name="long_name">DOXY_02</att>
-          <att name="sdn_parameter_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
-          <att name="sdn_parameter_urn">SDN:P01::DOXYZZ02</att>
-          <att name="units">ml/L</att>
-          <att name="valid_max" type="double">6.4772</att>
-          <att name="valid_min" type="double">6.1586</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">6.5</att>
-        <att name="colorBarMinimum" type="double">6.1000000000000005</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QDOXY_02</sourceName>
-      <destinationName>QDOXY_02</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: DOXY_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QDOXY_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QDOXY_02</att>
-          <att name="long_name">Quality_Flag: DOXY_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>CNTR_02</sourceName>
-      <destinationName>CNTR_02</destinationName>
       <dataType>int</dataType>
-      <!-- sourceAttributes>
-          <att name="ancillary_variables">QCNTR_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;INTE&quot;,
-&quot;NAME&quot;: &quot;SNCNTR_01&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;CNTR_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 5,
-&quot;MAXIMUM_VALUE&quot;: 90,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">CNTR_02</att>
-          <att name="long_name">SNCNTR_01</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="long">90</att>
-          <att name="valid_min" type="long">5</att>
-      </sourceAttributes -->
       <addAttributes>
-        <att name="colorBarMaximum" type="double">100.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: SIGP_02</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QSIGP_02</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>SIGTEQST</sourceName>
+      <destinationName>SIGTEQST</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Sigma-T of the water body by computation from salinity and temperature using UNESCO algorithm</att>
+        <att name="units">kg/m^3</att>
+        <att name="standard_name">sea_water_sigma_t</att>
+        <att name="sdn_parameter_name">Sigma-T of the water body by computation from salinity and temperature using UNESCO algorithm</att>
+        <att name="sdn_parameter_urn">SDN:P01::SIGTEQST</att>
+        <att name="sdn_uom_urn">SDN:P06::UKMC</att>
+        <att name="sdn_uom_name">Kilograms per cubic metre</att>
+        <att name="gf3_code">SIGT_01</att>
+        <att name="definition">Sigma-T of the water body by computation from salinity and temperature using UNESCO algorithm</att>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>SPVO_01</sourceName>
+      <destinationName>SPVO_01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">SPVO_1</att>
+        <att name="units">m**3/kg</att>
+        <att name="gf3_code">SPVO_01</att>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TURB_FTU</sourceName>
+      <destinationName>TURB_FTU</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Turbidity of water in the water body</att>
+        <att name="units">FTU</att>
+        <att name="standard_name">sea_water_turbidity</att>
+        <att name="sdn_parameter_name">Turbidity of water in the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::TURBXX01</att>
+        <att name="sdn_uom_urn">SDN:P06::UFNU</att>
+        <att name="sdn_uom_name">Formazin Nephelometric Units</att>
+        <att name="gf3_code">TURB_01</att>
+        <att name="definition">Turbidity of water in the water body</att>
+        <att name="ancillary_variables">QTURB_01 QCFF_01</att>
+        <att name="ioos_category">Total Suspended Matter</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TURB_WETECOBB</sourceName>
+      <destinationName>TURB_WETECOBB</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Turbidity of water in the water body</att>
+        <att name="units">m^-1/sr</att>
+        <att name="standard_name">sea_water_turbidity</att>
+        <att name="sdn_parameter_name">Turbidity of water in the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::TURBXX01</att>
+        <att name="gf3_code">TURB_01</att>
+        <att name="definition">Turbidity of water in the water body</att>
+        <att name="ancillary_variables">QTURB_01 QCFF_01</att>
+        <att name="ioos_category">Total Suspended Matter</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>QTURB_01</sourceName>
+      <destinationName>QTURB_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality Flag for Parameter: TURB_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QTURB_01</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="ioos_category">Quality</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>GEOP_01</sourceName>
+      <destinationName>GEOP_01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">GEOP_1</att>
+        <att name="units">null</att>
+        <att name="gf3_code">GEOP_01</att>
         <att name="ioos_category">Unknown</att>
-        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>QCNTR_02</sourceName>
-      <destinationName>QCNTR_02</destinationName>
+      <sourceName>OTMP_01</sourceName>
+      <destinationName>OTMP_01</destinationName>
       <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Flag for Parameter: CNTR_02&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QCNTR_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QCNTR_02</att>
-          <att name="long_name">Quality_Flag: CNTR_02</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">OTMP_1</att>
+        <att name="units">degrees C</att>
+        <att name="gf3_code">OTMP_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="ioos_category">Unknown</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>VAIS_01</sourceName>
+      <destinationName>VAIS_01</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">VAIS_1</att>
+        <att name="units">hertz</att>
+        <att name="gf3_code">VAIS_01</att>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>FFFF_01</sourceName>
+      <destinationName>FFFF_01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">FFFF_1</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">FFFF_01</att>
+        <att name="ancillary_variables">FFFF_01</att>
+        <att name="flag_values" type="intList">0 1</att>
+        <att name="flag_meanings">good bad</att>
         <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TE90_01</sourceName>
-      <destinationName>TE90_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="ancillary_variables">QTE90_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Temperature (1990 scale)&quot;,
-&quot;UNITS&quot;: &quot;degrees C&quot;,
-&quot;CODE&quot;: &quot;TE90_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 10,
-&quot;PRINT_DECIMAL_PLACES&quot;: 3,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.427,
-&quot;MAXIMUM_VALUE&quot;: 10.82,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">TE90_01</att>
-          <att name="long_name">Temperature (1990 scale)</att>
-          <att name="matching_sdn_parameter_urn">SDN:P01::TEMPP901,SDN:P01::TEMPPR01,SDN:P01::TEMPTC01</att>
-          <att name="scale">ITS-90</att>
-          <att name="sdn_parameter_name">Temperature (ITS-90) of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::TEMPP901</att>
-          <att name="standard_name">sea_water_temperature</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.819999694824219</att>
-          <att name="valid_min" type="double">8.427000045776367</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">32.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="sdn_P02_urn">SDN:P02::TEMP</att>
-        <att name="units">degree_C</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QTE90_01</sourceName>
-      <destinationName>QTE90_01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Quality Control Flag (GTSPP)&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QTE90_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 2,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 1,
-&quot;MAXIMUM_VALUE&quot;: 1,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QTE90_01</att>
-          <att name="long_name">Quality_Flag: TE90_01</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">1.0</att>
-          <att name="valid_min" type="double">1.0</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>QCFF_01</sourceName>
       <destinationName>QCFF_01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;Quality flag: QCFF&quot;,
-&quot;UNITS&quot;: &quot;none&quot;,
-&quot;CODE&quot;: &quot;QCFF_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.0&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 5,
-&quot;PRINT_DECIMAL_PLACES&quot;: 0,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 0,
-&quot;MAXIMUM_VALUE&quot;: 0,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-          <att name="flag_values" type="longList">0 1 2 3 4 5 9</att>
-          <att name="gf3_code">QCFF_01</att>
-          <att name="long_name">Quality flag: QCFF</att>
-          <att name="standard_name">status_flag</att>
-          <att name="units">none</att>
-          <att name="valid_max" type="double">0.0</att>
-          <att name="valid_min" type="double">0.0</att>
-      </sourceAttributes -->
+      <dataType>int</dataType>
       <addAttributes>
-        <att name="colorBarMaximum" type="double">10.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Quality flag: QCFF</att>
+        <att name="standard_name">status_flag</att>
+        <att name="gf3_code">QCFF_01</att>
+        <att name="flag_values" type="intList">0 1</att>
+        <att name="flag_meanings">good bad</att>
         <att name="ioos_category">Quality</att>
-        <att name="units">null</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>geographic_area</sourceName>
-      <destinationName>geographic_area</destinationName>
-      <dataType>String</dataType>
-      <!-- sourceAttributes>
-          <att name="coordinates">time longitude latitude</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Geographic Area</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>file_id</sourceName>
-      <destinationName>file_id</destinationName>
-      <dataType>String</dataType>
-      <!-- sourceAttributes>
-          <att name="coordinates">time longitude latitude</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Identifier</att>
-        <att name="long_name">File Id</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>profile_id</sourceName>
-      <destinationName>profile_id</destinationName>
-      <dataType>String</dataType>
-      <!-- sourceAttributes>
-          <att name="cf_role">profile_id</att>
-          <att name="coordinates">time longitude latitude</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Identifier</att>
-        <att name="long_name">Profile Id</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPPR01</sourceName>
-      <destinationName>TEMPPR01</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="ancillary_variables">QTE90_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Temperature (1990 scale)&quot;,
-&quot;UNITS&quot;: &quot;degrees C&quot;,
-&quot;CODE&quot;: &quot;TE90_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 10,
-&quot;PRINT_DECIMAL_PLACES&quot;: 3,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.427,
-&quot;MAXIMUM_VALUE&quot;: 10.82,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">TE90_01</att>
-          <att name="long_name">Temperature (1990 scale)</att>
-          <att name="original_variable">TE90_01</att>
-          <att name="scale">ITS-90</att>
-          <att name="sdn_parameter_name">Temperature (ITS-90) of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::TEMPP901</att>
-          <att name="standard_name">sea_water_temperature</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.819999694824219</att>
-          <att name="valid_min" type="double">8.427000045776367</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">32.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="sdn_P02_urn">SDN:P02::TEMP</att>
-        <att name="units">degree_C</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPP681</sourceName>
-      <destinationName>TEMPP681</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QTEMP_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;TEMP_01&quot;,
-&quot;UNITS&quot;: &quot;IPTS-68, deg C&quot;,
-&quot;CODE&quot;: &quot;TEMP_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.4287,
-&quot;MAXIMUM_VALUE&quot;: 10.8224,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">TEMP_01</att>
-          <att name="long_name">TEMP_01</att>
-          <att name="original_variable">TEMP_01</att>
-          <att name="scale">IPTS-68</att>
-          <att name="sdn_parameter_name">Temperature of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::TEMPPR01</att>
-          <att name="standard_name">sea_water_temperature</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.8224</att>
-          <att name="valid_min" type="double">8.4287</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">32.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="sdn_P02_urn">SDN:P02::TEMP</att>
-        <att name="units">degree_C</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPPR02</sourceName>
-      <destinationName>TEMPPR02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QTEMP_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;TEMP_02&quot;,
-&quot;UNITS&quot;: &quot;IPTS-68, deg C&quot;,
-&quot;CODE&quot;: &quot;TEMP_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.4467,
-&quot;MAXIMUM_VALUE&quot;: 10.8221,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">TEMP_02</att>
-          <att name="long_name">TEMP_02</att>
-          <att name="original_variable">TEMP_02</att>
-          <att name="scale">IPTS-68</att>
-          <att name="sdn_parameter_name">Temperature of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::TEMPPR02</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.8221</att>
-          <att name="valid_min" type="double">8.4467</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">40.0</att>
-        <att name="colorBarMinimum" type="double">-10.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="sdn_P02_urn">SDN:P02::TEMP</att>
-        <att name="units">degree_C</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>PSLTZZ01</sourceName>
-      <destinationName>PSLTZZ01</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPSAL_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;PSAL_01&quot;,
-&quot;UNITS&quot;: &quot;PSU&quot;,
-&quot;CODE&quot;: &quot;PSAL_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 30.1578,
-&quot;MAXIMUM_VALUE&quot;: 31.4087,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">PSAL_01</att>
-          <att name="long_name">PSAL_01</att>
-          <att name="original_variable">PSAL_01</att>
-          <att name="scale">PSS-78</att>
-          <att name="sdn_parameter_name">Practical salinity of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::PSLTZZ01</att>
-          <att name="standard_name">sea_water_practical_salinity</att>
-          <att name="units">1e-3</att>
-          <att name="valid_max" type="double">31.4087</att>
-          <att name="valid_min" type="double">30.1578</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">37.0</att>
-        <att name="colorBarMinimum" type="double">32.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Salinity</att>
-        <att name="sdn_P02_urn">SDN:P02::PSAL</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>PSLTZZ02</sourceName>
-      <destinationName>PSLTZZ02</destinationName>
-      <dataType>double</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="double">NaN</att>
-          <att name="ancillary_variables">QPSAL_02</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;DOUB&quot;,
-&quot;NAME&quot;: &quot;PSAL_02&quot;,
-&quot;UNITS&quot;: &quot;PSU&quot;,
-&quot;CODE&quot;: &quot;PSAL_02&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00000000&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 11,
-&quot;PRINT_DECIMAL_PLACES&quot;: 4,
-&quot;ANGLE_OF_SECTION&quot;: 0,
-&quot;MAGNETIC_VARIATION&quot;: 0,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 30.1587,
-&quot;MAXIMUM_VALUE&quot;: 31.3898,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">PSAL_02</att>
-          <att name="long_name">PSAL_02</att>
-          <att name="original_variable">PSAL_02</att>
-          <att name="scale">PSS-78</att>
-          <att name="sdn_parameter_name">Practical salinity of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::PSLTZZ02</att>
-          <att name="standard_name">sea_water_practical_salinity</att>
-          <att name="units">1e-3</att>
-          <att name="valid_max" type="double">31.3898</att>
-          <att name="valid_min" type="double">30.1587</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">37.0</att>
-        <att name="colorBarMinimum" type="double">32.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Salinity</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPP901</sourceName>
-      <destinationName>TEMPP901</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-          <att name="_FillValue" type="float">NaN</att>
-          <att name="ancillary_variables">QTE90_01</att>
-          <att name="comments">{
-&quot;odf_variable_attributes&quot;: {
-&quot;TYPE&quot;: &quot;SING&quot;,
-&quot;NAME&quot;: &quot;Temperature (1990 scale)&quot;,
-&quot;UNITS&quot;: &quot;degrees C&quot;,
-&quot;CODE&quot;: &quot;TE90_01&quot;,
-&quot;NULL_VALUE&quot;: &quot;-99.00&quot;,
-&quot;PRINT_FIELD_WIDTH&quot;: 10,
-&quot;PRINT_DECIMAL_PLACES&quot;: 3,
-&quot;ANGLE_OF_SECTION&quot;: -99,
-&quot;MAGNETIC_VARIATION&quot;: -99,
-&quot;DEPTH&quot;: 0,
-&quot;MINIMUM_VALUE&quot;: 8.427,
-&quot;MAXIMUM_VALUE&quot;: 10.82,
-&quot;NUMBER_VALID&quot;: 60,
-&quot;NUMBER_NULL&quot;: 0
-}
-}</att>
-          <att name="coordinates">time longitude latitude</att>
-          <att name="gf3_code">TE90_01</att>
-          <att name="long_name">Temperature (1990 scale)</att>
-          <att name="original_variable">TE90_01</att>
-          <att name="scale">ITS-90</att>
-          <att name="sdn_parameter_name">Temperature (ITS-90) of the water body</att>
-          <att name="sdn_parameter_urn">SDN:P01::TEMPP901</att>
-          <att name="standard_name">sea_water_temperature</att>
-          <att name="units">degree Celsius</att>
-          <att name="valid_max" type="double">10.819999694824219</att>
-          <att name="valid_min" type="double">8.427000045776367</att>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="colorBarMaximum" type="double">32.0</att>
-        <att name="colorBarMinimum" type="double">0.0</att>
-        <att name="coordinates">null</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="sdn_P02_urn">SDN:P02::TEMP</att>
-        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -7855,4 +6518,3 @@
 
   <requestBlacklist />
 </erddapDatasets>
-
