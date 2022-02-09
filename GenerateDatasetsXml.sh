@@ -1,13 +1,14 @@
 #!/bin/bash
-if [ -e "$(pwd)/.env" ]; then
-  DATASETS_DIR=`grep DATASETS_DIR $(pwd)/.env | sed s/.*\=//`
-fi
+source $(pwd)/.env
 if [ -z $DATASETS_DIR ]; then
-  DATASETS_DIR=$(pwd)/datasets
+  DATASETS_DIR=/srv/data/erddap
+fi
+if [ -z $IMAGE ]; then
+  IMAGE=cioosatlantic/docker-erddap:latest
 fi
 docker run --rm -it \
   -v "${DATASETS_DIR}:/datasets" \
   -v "$(pwd)/logs:/erddapData/logs" \
-  axiom/docker-erddap:latest \
+  ${IMAGE} \
   bash -c "cd webapps/erddap/WEB-INF/ && bash GenerateDatasetsXml.sh -verbose"
   
