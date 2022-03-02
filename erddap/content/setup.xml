@@ -5,6 +5,12 @@ Settings that you must change when you install ERDDAP on your server are marked 
 -->
 <erddapSetup>
 
+<!--
+SECURITY:
+ 2022-02-16: This tag was added to prevent XSS vulnerability by disabling the Data Provider Form
+-->
+<dataProviderFormActive>false</dataProviderFormActive>
+
 <!-- 'logLevel' determines how many diagnostic messages are sent to the log.txt file.
 It can be set to "warning" (the fewest messages), "info" (the default), or "all" (the most messages).
 Diagnostic messages are displayed on some HTML pages if displayDiagnosticInfo (above) is 'true'.
