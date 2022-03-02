@@ -4737,22 +4737,20 @@
         <att name="subsetVariables">station_id, longitude, latitude</att>
     -->
     <addAttributes>
+      <att name="organization">Fisheries and Oceans Canada</att>
+      <att name="organization_fr">Pêches et Océans Canada</att>
+      <att name="institution">Bedford Institute of Oceanography (BIO)</att>
+      <att name="institution">Institut océanographique de Bedford (BIO)</att>
       <att name="cdm_data_type">Profile</att>
-      <att name="cdm_profile_variables">institution,platform,chief_scientist,cruise_name,cruise_number,geographic_area,profile_id,event_number,profile_direction,latitude,longitude,profile_start_time,profile_end_time</att>
+      <att name="cdm_profile_variables">institution,platform,chief_scientist,cruise_name,cruise_number,geographic_area,id,station,event_number,profile_direction,latitude,longitude,profile_start_time,profile_end_time</att>
       <att name="Conventions">CF-1.6,CF-1.7,CF-1.8,ACDD-1.1,ACDD-1.3</att>
       <att name="creator_email">BIO.Datashop@dfo-mpo.gc.ca</att>
-      <att name="creator_name">BIO Data Services</att>
+      <att name="creator_name">Bedford Institute of Oceanography (BIO)</att>
       <att name="creator_url">https://www.dfo-mpo.gc.ca/index-eng.html</att>
       <att name="description">This dataset includes CTD sensor profile data collected at 51 stations during Fisheries and Oceans Canada&#x2019;s Maritimes Region Atlantic Zone Monitoring Program (AZMP) fall survey (HUD2020063). The survey was conducted onboard the Canadian Coast Guard Ship Hudson between October 3 and 14th, 2020, embarking at the Bedford Institute of Oceanography, Dartmouth, NS, and disembarking in Sydney, NS. A total of 52 AZMP stations across the Scotian Shelf were occupied, with sampling consisting of vertical ring net deployments for zooplankton biomass and abundance, CTD/Rosette deployments for the collection of profile data and water samples. CTD profiles were collected at 51 of these stations using a SBE-911 CTD unit with dual temperature, conductivity, and dissolved oxygen sensors, and single fluorescence (in situ chlorophyll), coloured dissolved organic matter (CDOM), pH, PAR, surface irradiance (ship-board), and turbidity sensors. Water samples were collected for the analysis of nutrients (nitrate, often reported as nitrate+nitrite, nitrite, phosphate, silicate, and ammonia), chlorophyll a concentration (chl) measured using Turner Fluorometry, salinity, dissolved oxygen concentration, total inorganic carbon (TIC), total alkalinity (TA), partial pressure of carbon dioxide (pCO2), pigment analyses via high performance liquid chromatography (HPLC) and light absorption spectra (ABS), and particulate organic carbon (POC) and nitrogen (PON). The data collected on this survey will be used to inform changes in the physical, chemical, and biological state and productivity on the Scotian Shelf and across the Atlantic zone. This dataset includes downcast CTD profiles only. While data are provided for both the primary and secondary temperature, salinity, and dissolved oxygen sensors, we recommend using the data from the primary sensor for analysis unless otherwise indicated in the file header. The data collected were subjected to standard quality control procedures (e.g., outlier assessment and removal and metadata review), and the salinity and dissolved oxygen bottle measurements were used to calibrate the associated sensor profile data. The pH sensor data will be calibrated at a later date and the dataset re-submitted.</att>
       <att name="description_fra">Cet ensemble de donn&#xe9;es comprend les donn&#xe9;es de profil des capteurs CTD recueillies dans 52 stations lors du relev&#xe9; automnal du Programme de surveillance de la zone atlantique (PMZA) de P&#xea;ches et Oc&#xe9;ans Canada (HUD2020063). L&#39;enqu&#xea;te a &#xe9;t&#xe9; men&#xe9;e &#xe0; bord du navire de la Garde c&#xf4;ti&#xe8;re canadienne Hudson entre le 3 et le 14 octobre 2020, &#xe0; l&#39;embarquement &#xe0; l&#39;Institut oc&#xe9;anographique de Bedford, &#xe0; Dartmouth, en Nouvelle-&#xc9;cosse, et a d&#xe9;barqu&#xe9; &#xe0; Sydney, en Nouvelle-&#xc9;cosse. Au total, 52 stations du MPA sur le plateau n&#xe9;o-&#xe9;cossais ont &#xe9;t&#xe9; occup&#xe9;es, avec un &#xe9;chantillonnage comprenant des d&#xe9;ploiements de filets en anneau vertical pour la biomasse et l&#39;abondance du zooplancton, des d&#xe9;ploiements de CTD/rosette pour la collecte de donn&#xe9;es de profil et d&#39;&#xe9;chantillons d&#39;eau. Les profils CTD ont &#xe9;t&#xe9; collect&#xe9;s &#xe0; l&#39;aide d&#39;une unit&#xe9; CTD SBE-911 avec deux capteurs de temp&#xe9;rature, de conductivit&#xe9; et d&#39;oxyg&#xe8;ne dissous, et &#xe0; fluorescence unique (chlorophylle in situ), mati&#xe8;re organique dissoute color&#xe9;e (CDOM), pH, PAR, irradiance de surface (embarquement) et capteurs de turbidit&#xe9;. Des &#xe9;chantillons d&#39;eau ont &#xe9;t&#xe9; pr&#xe9;lev&#xe9;s pour l&#39;analyse des nutriments (nitrate, souvent rapport&#xe9;s sous forme de nitrate+nitrite, nitrite, phosphate, silicate et ammoniac), de chlorophylle a (chl) mesur&#xe9;e &#xe0; l&#39;aide de la fluorom&#xe9;trie Turner, de la salinit&#xe9;, de la concentration en oxyg&#xe8;ne dissous, du carbone inorganique total (TIC), de l&#39;alcalinit&#xe9; totale (TA), pression partielle du dioxyde de carbone (PCO2), analyses de pigments par chromatographie liquide haute performance (HPLC) et spectres d&#39;absorption de la lumi&#xe8;re (ABS), ainsi que le carbone organique particulaire (POC) et l&#39;azote (PON). Les donn&#xe9;es recueillies dans le cadre de cette enqu&#xea;te seront utilis&#xe9;es pour &#xe9;clairer les changements survenus dans l&#39;&#xe9;tat physique, chimique et biologique et la productivit&#xe9; sur le plateau n&#xe9;o-&#xe9;cossais et dans la zone atlantique. Ce jeu de donn&#xe9;es inclut des profils CTD descendants uniquement pour les 52 stations occup&#xe9;es. Bien que des donn&#xe9;es soient fournies pour les capteurs de temp&#xe9;rature primaire et secondaire, de salinit&#xe9; et d&#39;oxyg&#xe8;ne dissous, nous recommandons d&#39;utiliser les donn&#xe9;es du capteur principal pour analyse, sauf indication contraire dans l&#39;en-t&#xea;te du fichier pour utiliser le capteur secondaire. Les donn&#xe9;es collect&#xe9;es ont &#xe9;t&#xe9; soumises &#xe0; des proc&#xe9;dures standard de contr&#xf4;le de la qualit&#xe9; (p. ex. &#xe9;valuation des valeurs aberrantes et &#xe9;limination et examen des m&#xe9;tadonn&#xe9;es), et les mesures de salinit&#xe9; et de bouteilles d&#39;oxyg&#xe8;ne dissous ont &#xe9;t&#xe9; utilis&#xe9;es pour &#xe9;talonner les donn&#xe9;es du profil de capteur associ&#xe9;es. Les donn&#xe9;es du capteur de pH seront &#xe9;talonn&#xe9;es ult&#xe9;rieurement et le jeu de donn&#xe9;es sera soumis &#xe0; nouveau.</att>
-      <att name="geospatial_lat_max" type="double">46.11</att>
-      <att name="geospatial_lat_min" type="double">46.11</att>
       <att name="geospatial_lat_units">degrees_north</att>
-      <att name="geospatial_lon_max" type="double">-59.3705</att>
-      <att name="geospatial_lon_min" type="double">-59.3705</att>
       <att name="geospatial_lon_units">degrees_north</att>
-      <att name="geospatial_vertical_max" type="double">60.489777531466906</att>
-      <att name="geospatial_vertical_min" type="double">1.9835554012128287</att>
       <att name="geospatial_vertical_positive">down</att>
       <att name="geospatial_vertical_units">m</att>
       <att name="header"></att>
@@ -4767,13 +4765,9 @@
       <att name="project">SCOTIAN SHELF</att>
       <att name="summary">This dataset includes CTD sensor profile data collected at 51 stations during Fisheries and Oceans Canada&#x2019;s Maritimes Region Atlantic Zone Monitoring Program (AZMP) fall survey (HUD2020063). The survey was conducted onboard the Canadian Coast Guard Ship Hudson between October 3 and 14th, 2020, embarking at the Bedford Institute of Oceanography, Dartmouth, NS, and disembarking in Sydney, NS. A total of 52 AZMP stations across the Scotian Shelf were occupied, with sampling consisting of vertical ring net deployments for zooplankton biomass and abundance, CTD/Rosette deployments for the collection of profile data and water samples. CTD profiles were collected at 51 of these stations using a SBE-911 CTD unit with dual temperature, conductivity, and dissolved oxygen sensors, and single fluorescence (in situ chlorophyll), coloured dissolved organic matter (CDOM), pH, PAR, surface irradiance (ship-board), and turbidity sensors. Water samples were collected for the analysis of nutrients (nitrate, often reported as nitrate+nitrite, nitrite, phosphate, silicate, and ammonia), chlorophyll a concentration (chl) measured using Turner Fluorometry, salinity, dissolved oxygen concentration, total inorganic carbon (TIC), total alkalinity (TA), partial pressure of carbon dioxide (pCO2), pigment analyses via high performance liquid chromatography (HPLC) and light absorption spectra (ABS), and particulate organic carbon (POC) and nitrogen (PON). The data collected on this survey will be used to inform changes in the physical, chemical, and biological state and productivity on the Scotian Shelf and across the Atlantic zone. This dataset includes downcast CTD profiles only. While data are provided for both the primary and secondary temperature, salinity, and dissolved oxygen sensors, we recommend using the data from the primary sensor for analysis unless otherwise indicated in the file header. The data collected were subjected to standard quality control procedures (e.g., outlier assessment and removal and metadata review), and the salinity and dissolved oxygen bottle measurements were used to calibrate the associated sensor profile data. The pH sensor data will be calibrated at a later date and the dataset re-submitted.</att>
       <att name="summary_fra">Cet ensemble de donn&#xe9;es comprend les donn&#xe9;es de profil des capteurs CTD recueillies dans 52 stations lors du relev&#xe9; automnal du Programme de surveillance de la zone atlantique (PMZA) de P&#xea;ches et Oc&#xe9;ans Canada (HUD2020063). L&#39;enqu&#xea;te a &#xe9;t&#xe9; men&#xe9;e &#xe0; bord du navire de la Garde c&#xf4;ti&#xe8;re canadienne Hudson entre le 3 et le 14 octobre 2020, &#xe0; l&#39;embarquement &#xe0; l&#39;Institut oc&#xe9;anographique de Bedford, &#xe0; Dartmouth, en Nouvelle-&#xc9;cosse, et a d&#xe9;barqu&#xe9; &#xe0; Sydney, en Nouvelle-&#xc9;cosse. Au total, 52 stations du MPA sur le plateau n&#xe9;o-&#xe9;cossais ont &#xe9;t&#xe9; occup&#xe9;es, avec un &#xe9;chantillonnage comprenant des d&#xe9;ploiements de filets en anneau vertical pour la biomasse et l&#39;abondance du zooplancton, des d&#xe9;ploiements de CTD/rosette pour la collecte de donn&#xe9;es de profil et d&#39;&#xe9;chantillons d&#39;eau. Les profils CTD ont &#xe9;t&#xe9; collect&#xe9;s &#xe0; l&#39;aide d&#39;une unit&#xe9; CTD SBE-911 avec deux capteurs de temp&#xe9;rature, de conductivit&#xe9; et d&#39;oxyg&#xe8;ne dissous, et &#xe0; fluorescence unique (chlorophylle in situ), mati&#xe8;re organique dissoute color&#xe9;e (CDOM), pH, PAR, irradiance de surface (embarquement) et capteurs de turbidit&#xe9;. Des &#xe9;chantillons d&#39;eau ont &#xe9;t&#xe9; pr&#xe9;lev&#xe9;s pour l&#39;analyse des nutriments (nitrate, souvent rapport&#xe9;s sous forme de nitrate+nitrite, nitrite, phosphate, silicate et ammoniac), de chlorophylle a (chl) mesur&#xe9;e &#xe0; l&#39;aide de la fluorom&#xe9;trie Turner, de la salinit&#xe9;, de la concentration en oxyg&#xe8;ne dissous, du carbone inorganique total (TIC), de l&#39;alcalinit&#xe9; totale (TA), pression partielle du dioxyde de carbone (PCO2), analyses de pigments par chromatographie liquide haute performance (HPLC) et spectres d&#39;absorption de la lumi&#xe8;re (ABS), ainsi que le carbone organique particulaire (POC) et l&#39;azote (PON). Les donn&#xe9;es recueillies dans le cadre de cette enqu&#xea;te seront utilis&#xe9;es pour &#xe9;clairer les changements survenus dans l&#39;&#xe9;tat physique, chimique et biologique et la productivit&#xe9; sur le plateau n&#xe9;o-&#xe9;cossais et dans la zone atlantique. Ce jeu de donn&#xe9;es inclut des profils CTD descendants uniquement pour les 52 stations occup&#xe9;es. Bien que des donn&#xe9;es soient fournies pour les capteurs de temp&#xe9;rature primaire et secondaire, de salinit&#xe9; et d&#39;oxyg&#xe8;ne dissous, nous recommandons d&#39;utiliser les donn&#xe9;es du capteur principal pour analyse, sauf indication contraire dans l&#39;en-t&#xea;te du fichier pour utiliser le capteur secondaire. Les donn&#xe9;es collect&#xe9;es ont &#xe9;t&#xe9; soumises &#xe0; des proc&#xe9;dures standard de contr&#xf4;le de la qualit&#xe9; (p. ex. &#xe9;valuation des valeurs aberrantes et &#xe9;limination et examen des m&#xe9;tadonn&#xe9;es), et les mesures de salinit&#xe9; et de bouteilles d&#39;oxyg&#xe8;ne dissous ont &#xe9;t&#xe9; utilis&#xe9;es pour &#xe9;talonner les donn&#xe9;es du profil de capteur associ&#xe9;es. Les donn&#xe9;es du capteur de pH seront &#xe9;talonn&#xe9;es ult&#xe9;rieurement et le jeu de donn&#xe9;es sera soumis &#xe0; nouveau.</att>
-      <att name="time_coverage_duration">P0DT0H0M0S</att>
-      <att name="time_coverage_end">2020-10-14T18:03:58.000000000</att>
-      <att name="time_coverage_start">2020-10-14T18:03:58.000000000</att>
       <att name="title">Atlantic Zone Monitoring Program (AZMP) Fall 2020 Survey (HUD2020063)</att>
       <att name="title_fra">Enqu&#xea;te automne 2020 du Programme de surveillance de la zone atlantique (MPZA) (HUD2020063)</att>
       <att name="creator_type">institution</att>
-      <att name="institution">Fisheries and Oceans</att>
       <att name="sourceUrl">(local files)</att>
       <!--
         <att name="keywords">altb, ALTB_01, area, atlantic, available, azmp, bio, cdom, chemistry, chief, chief_scientist, chla, chlorophyll, chlorophyll a, chlorophyll-a, climate change, cntr, CNTR_01, CNTR_02, colored, conductivity, control, crat, CRAT_01, CRAT_02, cruise, cruise_id, cruise_name, ctd, data, density, department, depth, dfo, dissolved, doxy, DOXY_01, DOXY_02, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; pH, Earth Science &gt; Oceans &gt; Ocean Pressure &gt; Water Pressure, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Density, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, end, end_time, fall, file, file_id, fisheries, flag, flor, FLOR_01, FLOR_02, fluorescence, fsp, fspuv, geographic, geographic_area, hud2020063, identifier, index, institution, latd, LATD_01, latitude, log, lond, LOND_01, longitude, matter, monitoring, name, O2, ocean, oceanographic missions, oceanography, oceans, optical, optical properties, organic, oxygen, oxyv, OXYV_01, OXYV_02, par, par/log, photosynthetically, phph, PHPH_01, physical, physical oceanography, physical-chemical, platform, potential density, potential temperature, potm, POTM_01, POTM_02, practical, precise, precise_time, preciseLat, preciseLon, pres, PRES_01, pressure, profile, profile_id, program, properties, psal, PSAL_01, PSAL_02, psar, PSAR_01, PSLTZZ01, PSLTZZ02, QALTB_01, qcff, QCFF_01, QCNTR_01, QCNTR_02, QCRAT_01, QCRAT_02, QDOXY_01, QDOXY_02, QFLOR_01, QFLOR_02, QLATD_01, QLOND_01, QOXYV_01, QOXYV_02, QPHPH_01, QPOTM_01, QPOTM_02, QPRES_01, QPSAL_01, QPSAL_02, QPSAR_01, QSIGP_01, QSIGP_02, QSPAR_01, QTE90_01, QTEMP_01, QTEMP_02, QTURB_01, quality, radiation, remote sensing, reported, salinity, sampling, scale, science, scientist, sea, sea surface salinity, sea surface temperature, sea_water_ph_reported_on_total_scale, sea_water_practical_salinity, sea_water_pressure, sea_water_sigma_theta, sea_water_temperature, seawater, seawater density, sigma, sigp, SIGP_01, SIGP_02, sncntr, sonde, spar, SPAR_01, start, start_time, status, status_flag, sub surface temperature, subsurface salinity, survey, sytm, SYTM_01, te90, TE90_01, TEMP_01, TEMP_02, temperature, TEMPP681, TEMPP901, TEMPPR01, TEMPPR02, theta, time, total, turb, TURB_01, water, water density, water temperature, wetecobb, zone</att>
@@ -4781,10 +4775,11 @@
         <att name="summary">This dataset includes Conductivity, Temperature, Depth (CTD) sensor profile data collected at 51 stations during Fisheries and Oceans Canada&#39;s Maritimes Region Atlantic Zone Monitoring Program (AZMP) fall survey (HUD2020063). The survey was conducted onboard the Canadian Coast Guard Ship Hudson between October 3 and 14th, 2020, embarking at the Bedford Institute of Oceanography, Dartmouth, NS, and disembarking in Sydney, NS. A total of 52 AZMP stations across the Scotian Shelf were occupied, with sampling consisting of vertical ring net deployments for zooplankton biomass and abundance, CTD/Rosette deployments for the collection of profile data and water samples. CTD profiles were collected at 51 of these stations using a SBE-911 CTD unit with dual temperature, conductivity, and dissolved oxygen sensors, and single fluorescence (in situ chlorophyll), coloured dissolved organic matter (Colored Dissolved Organic Matter (CDOM)), pH, Photosynthetically Available Radiation (PAR), surface irradiance (ship-board), and turbidity sensors. Water samples were collected for the analysis of nutrients (nitrate, often reported as nitrate+nitrite, nitrite, phosphate, silicate, and ammonia), chlorophyll a concentration (chl) measured using Turner Fluorometry, salinity, dissolved oxygen concentration, total inorganic carbon (TIC), total alkalinity (TA), partial pressure of carbon dioxide (pCO2), pigment analyses via high performance liquid chromatography (HPLC) and light absorption spectra (ABS), and particulate organic carbon (POC) and nitrogen (PON). The data collected on this survey will be used to inform changes in the physical, chemical, and biological state and productivity on the Scotian Shelf and across the Atlantic zone. This dataset includes downcast CTD profiles only. While data are provided for both the primary and secondary temperature, salinity, and dissolved oxygen sensors, we recommend using the data from the primary sensor for analysis unless otherwise indicated in the file header. The data collected were subjected to standard quality control procedures (e.g., outlier assessment and removal and metadata review), and the salinity and dissolved oxygen bottle measurements were used to calibrate the associated sensor profile data. The pH sensor data will be calibrated at a later date and the dataset re-submitted.</att>
         -->
       <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-      <att name="subsetVariables">institution, cruise_name, cruise_number, chief_scientist, platform, geographic_area, profile_id,event_number,profile_direction,QLATD_01,QLOND_01,QALTB_01,QPRES_01,QPSAL_01,QPSAL_02,QTE90_01,QTEMP_01,QTEMP_02,QPOTM_01,QPOTM_02,QDOXY_01,QDOXY_02,QOXYV_01,QOXYV_02,QFLOR_01,QFLOR_02,QPHPH_01,QTURB_01,QCRAT_01,QCRAT_02,QSIGP_01,QSIGP_02,QSPAR_01,QPSAR_01,QTE90_02</att>
+      <att name="subsetVariables">institution, cruise_name, cruise_number, chief_scientist, platform, geographic_area,station, id, event_number,profile_direction,QLATD_01,QLOND_01,QALTB_01,QPRES_01,QPSAL_01,QPSAL_02,QTEMP_01,QTEMP_02,QDOXY_01,QDOXY_02,QCDOMZZ01,QCPHLPR01,QPHPH_01,QTURB_01,QCNDC_01,QCNDC_02,QSPAR_01,QPSAR_01</att>
       <att name="history">null</att>
       <att name="country_code">null</att>
       <att name="cruise_description">null</att>
+      <att name="chief_scientist">null</att>
       <att name="cruise_name">null</att>
       <att name="cruise_number">null</att>
       <att name="date_created">null</att>
@@ -4795,6 +4790,9 @@
       <att name="instrument_description">null</att>
       <att name="instrument_model">null</att>
       <att name="instrument_type">null</att>
+      <att name="instrument">null</att>
+      <att name="instrument_manufacturer_header">null</att>
+      <att name="internal_processing_notes">null</att>
       <att name="filename">null</att>
       <att name="history">null</att>
       <att name="original_odf_header">null</att>
@@ -4816,6 +4814,7 @@
       <att name="id">null</att>
       <att name="initial_latitude">null</att>
       <att name="initial_longitude">null</att>
+      <att name="wmo_platform_code">null</att>
     </addAttributes>
     <dataVariable>
       <sourceName>institution</sourceName>
@@ -4866,8 +4865,16 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
+      <sourceName>station</sourceName>
+      <destinationName>station</destinationName>
+      <dataType>String</dataType>
+      <addAttributes>
+        <att name="ioos_category">Location</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
       <sourceName>id</sourceName>
-      <destinationName>profile_id</destinationName>
+      <destinationName>id</destinationName>
       <dataType>String</dataType>
       <addAttributes>
         <att name="ioos_category">Other</att>
@@ -4904,6 +4911,7 @@
         <att name="units">degrees_north</att>
         <att name="standard_name">latitude</att>
         <att name="ioos_category">Location</att>
+        <att name="coverage_content_type">coordinate</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4916,6 +4924,7 @@
         <att name="units">degrees_east</att>
         <att name="standard_name">longitude</att>
         <att name="ioos_category">Location</att>
+        <att name="coverage_content_type">coordinate</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4932,8 +4941,10 @@
         <att name="sdn_uom_urn">SDN:P06::DEGN</att>
         <att name="sdn_uom_name">Degrees north</att>
         <att name="ioos_category">Location</att>
-        <att name="gf3_code">LATD_01</att>
         <att name="ancillary_variables">QLATD_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">LATD_01</att>
+        <att name="resolution">1e-05</att>
         <att name="coverage_content_type">coordinate</att>
       </addAttributes>
     </dataVariable>
@@ -4951,8 +4962,10 @@
         <att name="sdn_uom_urn">SDN:P06::DEGE</att>
         <att name="sdn_uom_name">Degrees east</att>
         <att name="ioos_category">Location</att>
-        <att name="gf3_code">LOND_01</att>
         <att name="ancillary_variables">QLOND_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">LOND_01</att>
+        <att name="resolution">1e-05</att>
         <att name="coverage_content_type">coordinate</att>
       </addAttributes>
     </dataVariable>
@@ -4964,7 +4977,9 @@
         <att name="long_name">Quality Flag for Parameter: LATD_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QLATD_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QLATD_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -4978,7 +4993,9 @@
         <att name="long_name">Quality Flag for Parameter: LOND_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QLOND_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QLOND_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -4987,49 +5004,57 @@
     <dataVariable>
       <sourceName>time</sourceName>
       <destinationName>time</destinationName>
-      <dataType>int</dataType>
+      <dataType>float</dataType>
       <addAttributes>
+        <att name="_FillValue">nan</att>
         <att name="standard_name">time</att>
         <att name="ioos_category">Time</att>
+        <att name="coverage_content_type">coordinate</att>
         <att name="units">seconds since 1970-01-01</att>
         <att name="calendar">proleptic_gregorian</att>
-        <att name="coverage_content_type">coordinate</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>profile_start_time</sourceName>
       <destinationName>profile_start_time</destinationName>
-      <dataType>int</dataType>
+      <dataType>float</dataType>
       <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Profile Start Time</att>
         <att name="ioos_category">Time</att>
+        <att name="coverage_content_type">auxiliaryInformation</att>
         <att name="units">seconds since 1970-01-01</att>
         <att name="calendar">proleptic_gregorian</att>
-        <att name="coverage_content_type">auxiliaryInformation</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>profile_end_time</sourceName>
       <destinationName>profile_end_time</destinationName>
-      <dataType>int</dataType>
+      <dataType>float</dataType>
       <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Profile End Time</att>
+        <att name="ioos_category">Time</att>
+        <att name="coverage_content_type">auxiliaryInformation</att>
         <att name="units">seconds since 1970-01-01</att>
         <att name="calendar">proleptic_gregorian</att>
-        <att name="coverage_content_type">auxiliaryInformation</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>measurement_time</sourceName>
       <destinationName>measurement_time</destinationName>
-      <dataType>int</dataType>
+      <dataType>float</dataType>
       <addAttributes>
+        <att name="_FillValue">nan</att>
         <att name="long_name">Exact Measurement Time</att>
         <att name="standard_name">time</att>
         <att name="ioos_category">Time</att>
-        <att name="gf3_code">SYTM_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">SYTM_01</att>
+        <att name="resolution">0.01</att>
         <att name="coverage_content_type">coordinate</att>
         <att name="units">seconds since 1970-01-01</att>
         <att name="calendar">proleptic_gregorian</att>
-        <att name="ancillary_variables">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5046,9 +5071,12 @@
         <att name="sdn_uom_urn">SDN:P06::ULAA</att>
         <att name="sdn_uom_name">Metres</att>
         <att name="ioos_category">Location</att>
-        <att name="gf3_code">PRES_01</att>
         <att name="ancillary_variables">QPRES_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">PRES_01</att>
+        <att name="resolution">0.001</att>
         <att name="coverage_content_type">coordinate</att>
+        <att name="positive">down</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5065,9 +5093,12 @@
         <att name="sdn_uom_urn">SDN:P06::ULAA</att>
         <att name="sdn_uom_name">Metres</att>
         <att name="ioos_category">Location</att>
-        <att name="gf3_code">ALTB_01</att>
         <att name="ancillary_variables">QALTB_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">ALTB_01</att>
+        <att name="resolution">0.01</att>
         <att name="coverage_content_type">coordinate</att>
+        <att name="instrument">altimeter_sensor</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5078,7 +5109,9 @@
         <att name="long_name">Quality Flag for Parameter: ALTB_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QALTB_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QALTB_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5098,9 +5131,12 @@
         <att name="sdn_uom_urn">SDN:P06::UPDB</att>
         <att name="sdn_uom_name">Decibars</att>
         <att name="ioos_category">Location</att>
-        <att name="gf3_code">PRES_01</att>
         <att name="ancillary_variables">QPRES_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">PRES_01</att>
+        <att name="resolution">0.001</att>
         <att name="coverage_content_type">coordinate</att>
+        <att name="instrument">pressure_digiquartz_with_tc_sensor</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5111,7 +5147,9 @@
         <att name="long_name">Quality Flag for Parameter: PRES_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QPRES_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QPRES_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5132,8 +5170,10 @@
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="ioos_category">Salinity</att>
-        <att name="gf3_code">PSAL_01</att>
         <att name="ancillary_variables">QPSAL_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">PSAL_01</att>
+        <att name="resolution">0.0001</att>
         <att name="coverage_content_type">physicalMeasurement</att>
       </addAttributes>
     </dataVariable>
@@ -5152,8 +5192,10 @@
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="ioos_category">Salinity</att>
-        <att name="gf3_code">PSAL_01</att>
         <att name="ancillary_variables">QPSAL_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">PSAL_01</att>
+        <att name="resolution">0.0001</att>
         <att name="instrument">CTD</att>
         <att name="coverage_content_type">physicalMeasurement</att>
       </addAttributes>
@@ -5166,7 +5208,9 @@
         <att name="long_name">Quality Flag for Parameter: PSAL_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QPSAL_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QPSAL_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5178,17 +5222,19 @@
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Practical salinity of the water body</att>
+        <att name="long_name">Practical salinity of the water body, 2</att>
         <att name="units">1e-3</att>
         <att name="scale">PSS-78</att>
         <att name="standard_name">sea_water_practical_salinity</att>
         <att name="sdn_parameter_name">Practical salinity of the water body</att>
-        <att name="sdn_parameter_urn">SDN:P02::PSLTZZ02</att>
+        <att name="sdn_parameter_urn">SDN:P01::PSLTZZ02</att>
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="ioos_category">Salinity</att>
-        <att name="gf3_code">PSAL_02</att>
         <att name="ancillary_variables">QPSAL_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">PSAL_02</att>
+        <att name="resolution">0.0001</att>
         <att name="coverage_content_type">physicalMeasurement</att>
       </addAttributes>
     </dataVariable>
@@ -5198,17 +5244,19 @@
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm</att>
+        <att name="long_name">Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm, 2</att>
         <att name="units">1e-3</att>
         <att name="scale">PSS-78</att>
         <att name="standard_name">sea_water_practical_salinity</att>
         <att name="sdn_parameter_name">Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm</att>
-        <att name="sdn_parameter_urn">SDN:P02::PSALST02</att>
+        <att name="sdn_parameter_urn">SDN:P01::PSALST02</att>
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="ioos_category">Salinity</att>
-        <att name="gf3_code">PSAL_02</att>
         <att name="ancillary_variables">QPSAL_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">PSAL_02</att>
+        <att name="resolution">0.0001</att>
         <att name="instrument">CTD</att>
         <att name="coverage_content_type">physicalMeasurement</att>
       </addAttributes>
@@ -5221,7 +5269,9 @@
         <att name="long_name">Quality Flag for Parameter: PSAL_02</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QPSAL_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QPSAL_02</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5238,33 +5288,16 @@
         <att name="scale">IPTS-68</att>
         <att name="standard_name">sea_water_temperature</att>
         <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body</att>
-        <att name="sdn_parameter_urn">SDN:P01::TEMPP011</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPP681</att>
         <att name="sdn_uom_urn">SDN:P06::UPAA</att>
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TEMP_01</att>
         <att name="ancillary_variables">QTEMP_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_01</att>
+        <att name="resolution">0.0001</att>
         <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPP682</sourceName>
-      <destinationName>TEMPP682</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Temperature (IPTS-68) of the water body</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">IPTS-68</att>
-        <att name="standard_name">sea_water_temperature</att>
-        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body</att>
-        <att name="sdn_parameter_urn">SDN:P02::TEMPP021</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TEMP_02</att>
-        <att name="ancillary_variables">QTEMP_02</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">temperature_sensor</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5278,32 +5311,61 @@
         <att name="scale">ITS-90</att>
         <att name="standard_name">sea_water_temperature</att>
         <att name="sdn_parameter_name">Temperature (ITS-90) of the water body</att>
-        <att name="sdn_parameter_urn">SDN:P01::TEMPP011</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPP901</att>
         <att name="sdn_uom_urn">SDN:P06::UPAA</att>
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TE90_01</att>
-        <att name="ancillary_variables">QTE90_01</att>
+        <att name="ancillary_variables">QTEMP_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_01</att>
+        <att name="resolution">0.0001</att>
+        <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">temperature_sensor</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPS601</sourceName>
+      <destinationName>TEMPS601</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPS601</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="ancillary_variables">QTEMP_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_01</att>
+        <att name="resolution">0.0001</att>
+        <att name="instrument">CTD,temperature_sensor</att>
         <att name="coverage_content_type">physicalMeasurement</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>TEMPP902</sourceName>
-      <destinationName>TEMPP902</destinationName>
+      <sourceName>TEMPS901</sourceName>
+      <destinationName>TEMPS901</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Temperature (ITS-90) of the water body</att>
+        <att name="long_name">Temperature (ITS-90) of the water body by CTD or STD</att>
         <att name="units">degree Celsius</att>
         <att name="scale">ITS-90</att>
         <att name="standard_name">sea_water_temperature</att>
-        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body</att>
-        <att name="sdn_parameter_urn">SDN:P02::TEMPP021</att>
+        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body by CTD or STD</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPS901</att>
         <att name="sdn_uom_urn">SDN:P06::UPAA</att>
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TE90_02</att>
-        <att name="ancillary_variables">QTE90_02</att>
+        <att name="ancillary_variables">QTEMP_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_01</att>
+        <att name="resolution">0.0001</att>
+        <att name="instrument">CTD,temperature_sensor</att>
         <att name="coverage_content_type">physicalMeasurement</att>
       </addAttributes>
     </dataVariable>
@@ -5322,141 +5384,12 @@
         <att name="sdn_uom_urn">SDN:P06::UPAA</att>
         <att name="sdn_uom_name">Degrees Celsius</att>
         <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TEMP_01</att>
         <att name="ancillary_variables">QTEMP_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_01</att>
+        <att name="resolution">0.0001</att>
         <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPPR02</sourceName>
-      <destinationName>TEMPPR02</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Temperature of the water body</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">IPTS-68</att>
-        <att name="standard_name">sea_water_temperature</att>
-        <att name="sdn_parameter_name">Temperature of the water body</att>
-        <att name="sdn_parameter_urn">SDN:P02::TEMPPR02</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TEMP_02</att>
-        <att name="ancillary_variables">QTEMP_02</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPS601</sourceName>
-      <destinationName>TEMPS601</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">IPTS-68</att>
-        <att name="standard_name">sea_water_temperature</att>
-        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
-        <att name="sdn_parameter_urn">SDN:P01::TEMPS011</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TEMP_01</att>
-        <att name="ancillary_variables">QTEMP_01</att>
-        <att name="instrument">CTD</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPS602</sourceName>
-      <destinationName>TEMPS602</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">IPTS-68</att>
-        <att name="standard_name">sea_water_temperature</att>
-        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
-        <att name="sdn_parameter_urn">SDN:P02::TEMPS021</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TEMP_02</att>
-        <att name="ancillary_variables">QTEMP_02</att>
-        <att name="instrument">CTD</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPS901</sourceName>
-      <destinationName>TEMPS901</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Temperature (ITS-90) of the water body by CTD or STD</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">ITS-90</att>
-        <att name="standard_name">sea_water_temperature</att>
-        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body by CTD or STD</att>
-        <att name="sdn_parameter_urn">SDN:P01::TEMPS011</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TE90_01</att>
-        <att name="ancillary_variables">QTE90_01</att>
-        <att name="instrument">CTD</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TEMPS902</sourceName>
-      <destinationName>TEMPS902</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Temperature (ITS-90) of the water body by CTD or STD</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">ITS-90</att>
-        <att name="standard_name">sea_water_temperature</att>
-        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body by CTD or STD</att>
-        <att name="sdn_parameter_urn">SDN:P02::TEMPS021</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">TE90_02</att>
-        <att name="ancillary_variables">QTE90_02</att>
-        <att name="instrument">CTD</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QTE90_01</sourceName>
-      <destinationName>QTE90_01</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: TE90_01</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QTE90_01</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QTE90_02</sourceName>
-      <destinationName>QTE90_02</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: TE90_02</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QTE90_02</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+        <att name="instrument">temperature_sensor</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5467,10 +5400,127 @@
         <att name="long_name">Quality Flag for Parameter: TEMP_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QTEMP_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QTEMP_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPP682</sourceName>
+      <destinationName>TEMPP682</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (IPTS-68) of the water body, 2</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPP682</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="ancillary_variables">QTEMP_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_02</att>
+        <att name="resolution">0.0001</att>
+        <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">temperature_2_sensor</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPP902</sourceName>
+      <destinationName>TEMPP902</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (ITS-90) of the water body, 2</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">ITS-90</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPP902</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="ancillary_variables">QTEMP_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_02</att>
+        <att name="resolution">0.0001</att>
+        <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">temperature_2_sensor</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPS602</sourceName>
+      <destinationName>TEMPS602</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (IPTS-68) of the water body by CTD or STD, 2</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (IPTS-68) of the water body by CTD or STD</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPS602</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="ancillary_variables">QTEMP_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_02</att>
+        <att name="resolution">0.0001</att>
+        <att name="instrument">null</att>
+        <att name="coverage_content_type">physicalMeasurement</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPS902</sourceName>
+      <destinationName>TEMPS902</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature (ITS-90) of the water body by CTD or STD, 2</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">ITS-90</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature (ITS-90) of the water body by CTD or STD</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPS902</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="ancillary_variables">QTEMP_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_02</att>
+        <att name="resolution">0.0001</att>
+        <att name="instrument">null</att>
+        <att name="coverage_content_type">physicalMeasurement</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>TEMPPR02</sourceName>
+      <destinationName>TEMPPR02</destinationName>
+      <dataType>float</dataType>
+      <addAttributes>
+        <att name="_FillValue">nan</att>
+        <att name="long_name">Temperature of the water body, 2</att>
+        <att name="units">degree Celsius</att>
+        <att name="scale">IPTS-68</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="sdn_parameter_name">Temperature of the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::TEMPPR02</att>
+        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
+        <att name="sdn_uom_name">Degrees Celsius</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="ancillary_variables">QTEMP_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TEMP_02</att>
+        <att name="resolution">0.0001</att>
+        <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5481,115 +5531,9 @@
         <att name="long_name">Quality Flag for Parameter: TEMP_02</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QTEMP_02</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>POTMCV01</sourceName>
-      <destinationName>POTMCV01</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Potential temperature of the water body by computation using UNESCO 1983 algorithm</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">IPTS-68</att>
-        <att name="standard_name">sea_water_potential_temperature</att>
-        <att name="sdn_parameter_name">Potential temperature of the water body by computation using UNESCO 1983 algorithm</att>
-        <att name="sdn_parameter_urn">SDN:P01::POTMCV01</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">POTM_01</att>
-        <att name="ancillary_variables">QPOTM_01</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>POTMS601</sourceName>
-      <destinationName>POTMS601</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Potential temperature of the water body by CTD and computation from pressure, salinity and IPTS-68 temperature using UNESCO algorithm</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">IPTS-68</att>
-        <att name="standard_name">sea_water_potential_temperature</att>
-        <att name="sdn_parameter_name">Potential temperature of the water body by CTD and computation from pressure, salinity and IPTS-68 temperature using UNESCO algorithm</att>
-        <att name="sdn_parameter_urn">SDN:P01::POTMS011</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">POTM_01</att>
-        <att name="ancillary_variables">QPOTM_01</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QPOTM_01</sourceName>
-      <destinationName>QPOTM_01</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: POTM_01</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QPOTM_01</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>POTMCV02</sourceName>
-      <destinationName>POTMCV02</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Potential temperature of the water body by computation using UNESCO 1983 algorithm</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">IPTS-68</att>
-        <att name="standard_name">sea_water_potential_temperature</att>
-        <att name="sdn_parameter_name">Potential temperature of the water body by computation using UNESCO 1983 algorithm</att>
-        <att name="sdn_parameter_urn">SDN:P02::POTMCV02</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">POTM_02</att>
-        <att name="ancillary_variables">QPOTM_02</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>POTMS602</sourceName>
-      <destinationName>POTMS602</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Potential temperature of the water body by CTD and computation from pressure, salinity and IPTS-68 temperature using UNESCO algorithm</att>
-        <att name="units">degree Celsius</att>
-        <att name="scale">IPTS-68</att>
-        <att name="standard_name">sea_water_potential_temperature</att>
-        <att name="sdn_parameter_name">Potential temperature of the water body by CTD and computation from pressure, salinity and IPTS-68 temperature using UNESCO algorithm</att>
-        <att name="sdn_parameter_urn">SDN:P02::POTMS021</att>
-        <att name="sdn_uom_urn">SDN:P06::UPAA</att>
-        <att name="sdn_uom_name">Degrees Celsius</att>
-        <att name="ioos_category">Temperature</att>
-        <att name="gf3_code">POTM_02</att>
-        <att name="ancillary_variables">QPOTM_02</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QPOTM_02</sourceName>
-      <destinationName>QPOTM_02</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: POTM_02</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QPOTM_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QTEMP_02</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5609,9 +5553,12 @@
         <att name="sdn_uom_urn">SDN:P06::UMLL</att>
         <att name="sdn_uom_name">Millilitres per litre</att>
         <att name="ioos_category">Dissolved O2</att>
-        <att name="gf3_code">DOXY_01</att>
         <att name="ancillary_variables">QDOXY_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">DOXY_01</att>
+        <att name="resolution">0.0001</att>
         <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5622,7 +5569,9 @@
         <att name="long_name">Quality Flag for Parameter: DOXY_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QDOXY_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QDOXY_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5634,17 +5583,20 @@
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
+        <att name="long_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor, 2</att>
         <att name="units">ml/L</att>
         <att name="standard_name">volume_fraction_of_oxygen_in_sea_water</att>
         <att name="sdn_parameter_name">Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
-        <att name="sdn_parameter_urn">SDN:P02::DOXYZZ02</att>
+        <att name="sdn_parameter_urn">SDN:P01::DOXYZZ02</att>
         <att name="sdn_uom_urn">SDN:P06::UMLL</att>
         <att name="sdn_uom_name">Millilitres per litre</att>
         <att name="ioos_category">Dissolved O2</att>
-        <att name="gf3_code">DOXY_02</att>
         <att name="ancillary_variables">QDOXY_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">DOXY_02</att>
+        <att name="resolution">0.0001</att>
         <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5655,133 +5607,85 @@
         <att name="long_name">Quality Flag for Parameter: DOXY_02</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QDOXY_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QDOXY_02</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>OXYOCPVL01</sourceName>
-      <destinationName>OXYOCPVL01</destinationName>
+      <sourceName>CNDCST01</sourceName>
+      <destinationName>CNDCST01</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Raw signal (voltage) of instrument output by oxygen sensor</att>
-        <att name="units">volts</att>
-        <att name="sdn_parameter_name">Raw signal (voltage) of instrument output by oxygen sensor</att>
-        <att name="sdn_parameter_urn">SDN:P01::OXYOCPVL</att>
-        <att name="sdn_uom_urn">SDN:P06::UVLT</att>
-        <att name="sdn_uom_name">Volts</att>
+        <att name="long_name">Electrical Conductivity </att>
+        <att name="units">S/m</att>
+        <att name="standard_name">sea_water_electrical_conductivity</att>
+        <att name="sdn_parameter_name">Electrical conductivity of the water body by CTD</att>
+        <att name="sdn_parameter_urn">SDN:P01::CNDCST01</att>
+        <att name="sdn_uom_urn">SDN:P06::UECA</att>
+        <att name="sdn_uom_name">Siemens per metre</att>
         <att name="ioos_category">Other</att>
-        <att name="gf3_code">OXYV_01</att>
-        <att name="ancillary_variables">QOXYV_01</att>
+        <att name="ancillary_variables">QCNDC_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">CRAT_01</att>
+        <att name="resolution">1e-06</att>
         <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>QOXYV_01</sourceName>
-      <destinationName>QOXYV_01</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: OXYV_01</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QOXYV_01</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>OXYOCPVL02</sourceName>
-      <destinationName>OXYOCPVL02</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Raw signal (voltage) of instrument output by oxygen sensor</att>
-        <att name="units">volts</att>
-        <att name="sdn_parameter_name">Raw signal (voltage) of instrument output by oxygen sensor</att>
-        <att name="sdn_parameter_urn">SDN:P02::OXYOCPVL</att>
-        <att name="sdn_uom_urn">SDN:P06::UVLT</att>
-        <att name="sdn_uom_name">Volts</att>
-        <att name="ioos_category">Other</att>
-        <att name="gf3_code">OXYV_02</att>
-        <att name="ancillary_variables">QOXYV_02</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QOXYV_02</sourceName>
-      <destinationName>QOXYV_02</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: OXYV_02</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QOXYV_02</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>CRAT_01</sourceName>
-      <destinationName>CRAT_01</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Conductivity Ratio</att>
-        <att name="units">1</att>
-        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
-        <att name="sdn_uom_name">Dimensionless</att>
-        <att name="ioos_category">Other</att>
-        <att name="gf3_code">CRAT_01</att>
-        <att name="ancillary_variables">QCRAT_01</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-        <att name="comments">Conductivity Ratio was calculated by using the following equation: CRAT = Conductivity [S/m] * 10.0 / 42.814</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QCRAT_01</sourceName>
-      <destinationName>QCRAT_01</destinationName>
+      <sourceName>QCNDC_01</sourceName>
+      <destinationName>QCNDC_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
         <att name="long_name">Quality Flag for Parameter: CRAT_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QCRAT_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QCNDC_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>CRAT_02</sourceName>
-      <destinationName>CRAT_02</destinationName>
+      <sourceName>CNDCST02</sourceName>
+      <destinationName>CNDCST02</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Conductivity Ratio</att>
-        <att name="units">1</att>
-        <att name="sdn_uom_urn">SDN:P06::UUUU</att>
-        <att name="sdn_uom_name">Dimensionless</att>
+        <att name="long_name">Electrical Conductivity , 2</att>
+        <att name="units">S/m</att>
+        <att name="standard_name">sea_water_electrical_conductivity</att>
+        <att name="sdn_parameter_name">Electrical conductivity of the water body by CTD</att>
+        <att name="sdn_parameter_urn">SDN:P01::CNDCST02</att>
+        <att name="sdn_uom_urn">SDN:P06::UECA</att>
+        <att name="sdn_uom_name">Siemens per metre</att>
         <att name="ioos_category">Other</att>
-        <att name="gf3_code">CRAT_02</att>
-        <att name="ancillary_variables">QCRAT_02</att>
+        <att name="ancillary_variables">QCNDC_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">CRAT_02</att>
+        <att name="resolution">1e-06</att>
         <att name="coverage_content_type">physicalMeasurement</att>
-        <att name="comments">Conductivity Ratio was calculated by using the following equation: CRAT = Conductivity [S/m] * 10.0 / 42.814</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>QCRAT_02</sourceName>
-      <destinationName>QCRAT_02</destinationName>
+      <sourceName>QCNDC_02</sourceName>
+      <destinationName>QCNDC_02</destinationName>
       <dataType>int</dataType>
       <addAttributes>
         <att name="long_name">Quality Flag for Parameter: CRAT_02</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QCRAT_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QCNDC_02</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5801,15 +5705,33 @@
         <att name="sdn_uom_urn">SDN:P06::UMMC</att>
         <att name="sdn_uom_name">Milligrams per cubic metre</att>
         <att name="ioos_category">Colored Dissolved Organic Matter</att>
-        <att name="gf3_code">FLOR_01</att>
-        <att name="ancillary_variables">QFLOR_01</att>
-        <att name="instrument">Seapoint Ultraviolet Fluorometer</att>
+        <att name="ancillary_variables">QCDOMZZ01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">FLOR_01</att>
+        <att name="resolution">0.0001</att>
+        <att name="instrument">null</att>
         <att name="coverage_content_type">physicalMeasurement</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>CPHLPR02</sourceName>
-      <destinationName>CPHLPR02</destinationName>
+      <sourceName>QCDOMZZ01</sourceName>
+      <destinationName>QCDOMZZ01</destinationName>
+      <dataType>int</dataType>
+      <addAttributes>
+        <att name="long_name">Quality Flag for Parameter: FLOR_01</att>
+        <att name="standard_name">status_flag</att>
+        <att name="ioos_category">Quality</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QFLOR_01</att>
+        <att name="resolution">1</att>
+        <att name="coverage_content_type">qualityInformation</att>
+        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
+        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>CPHLPR01</sourceName>
+      <destinationName>CPHLPR01</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
@@ -5817,39 +5739,29 @@
         <att name="units">mg/m^3</att>
         <att name="standard_name">mass_concentration_of_chlorophyll_in_sea_water</att>
         <att name="sdn_parameter_name">Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate >unknown phase] by in-situ chlorophyll fluorometer</att>
-        <att name="sdn_parameter_urn">SDN:P02::CPHLPR02</att>
+        <att name="sdn_parameter_urn">SDN:P01::CPHLPR01</att>
         <att name="sdn_uom_urn">SDN:P06::UMMC</att>
         <att name="sdn_uom_name">Milligrams per cubic metre</att>
         <att name="ioos_category">Other</att>
-        <att name="gf3_code">FLOR_02</att>
-        <att name="ancillary_variables">QFLOR_02</att>
-        <att name="instrument">Seapoint Chlorophyll Fluorometer</att>
+        <att name="ancillary_variables">QCPHLPR01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">FLOR_02</att>
+        <att name="resolution">1e-08</att>
+        <att name="instrument">null</att>
         <att name="coverage_content_type">physicalMeasurement</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>QFLOR_01</sourceName>
-      <destinationName>QFLOR_01</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: FLOR_01</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QFLOR_01</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QFLOR_02</sourceName>
-      <destinationName>QFLOR_02</destinationName>
+      <sourceName>QCPHLPR01</sourceName>
+      <destinationName>QCPHLPR01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
         <att name="long_name">Quality Flag for Parameter: FLOR_02</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QFLOR_02</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QFLOR_02</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5869,9 +5781,12 @@
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="ioos_category">CO2</att>
-        <att name="gf3_code">PHPH_01</att>
         <att name="ancillary_variables">QPHPH_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">PHPH_01</att>
+        <att name="resolution">0.0001</att>
         <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5882,7 +5797,9 @@
         <att name="long_name">Quality Flag for Parameter: PHPH_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QPHPH_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QPHPH_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5902,9 +5819,12 @@
         <att name="sdn_uom_urn">SDN:P06::UMES</att>
         <att name="sdn_uom_name">MicroEinsteins per square metre per second</att>
         <att name="ioos_category">Optical Properties</att>
-        <att name="gf3_code">SPAR_01</att>
         <att name="ancillary_variables">QSPAR_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">SPAR_01</att>
+        <att name="resolution">1e-08</att>
         <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5915,7 +5835,9 @@
         <att name="long_name">Quality Flag for Parameter: SPAR_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QSPAR_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QSPAR_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -5935,9 +5857,12 @@
         <att name="sdn_uom_urn">SDN:P06::UMES</att>
         <att name="sdn_uom_name">MicroEinsteins per square metre per second</att>
         <att name="ioos_category">Optical Properties</att>
-        <att name="gf3_code">PSAR_01</att>
-        <att name="ancillary_variables">QPSAR_01</att>
+        <att name="ancillary_variables">QUNKN_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">UNKN_01</att>
+        <att name="resolution">1e-08</att>
         <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -5948,93 +5873,34 @@
         <att name="long_name">Quality Flag for Parameter: PSAR_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QPSAR_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QPSAR_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>SIGTEQ01</sourceName>
-      <destinationName>SIGTEQ01</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
-        <att name="units">kg/m^3</att>
-        <att name="standard_name">sea_water_sigma_theta</att>
-        <att name="sdn_parameter_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
-        <att name="sdn_parameter_urn">SDN:P01::SIGTEQ01</att>
-        <att name="sdn_uom_urn">SDN:P06::UKMC</att>
-        <att name="sdn_uom_name">Kilograms per cubic metre</att>
-        <att name="ioos_category">Other</att>
-        <att name="gf3_code">SIGP_01</att>
-        <att name="ancillary_variables">QSIGP_01</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QSIGP_01</sourceName>
-      <destinationName>QSIGP_01</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: SIGP_01</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QSIGP_01</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>SIGTEQ02</sourceName>
-      <destinationName>SIGTEQ02</destinationName>
-      <dataType>float</dataType>
-      <addAttributes>
-        <att name="_FillValue">nan</att>
-        <att name="long_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
-        <att name="units">kg/m^3</att>
-        <att name="standard_name">sea_water_sigma_theta</att>
-        <att name="sdn_parameter_name">Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm</att>
-        <att name="sdn_parameter_urn">SDN:P02::SIGTEQ02</att>
-        <att name="sdn_uom_urn">SDN:P06::UKMC</att>
-        <att name="sdn_uom_name">Kilograms per cubic metre</att>
-        <att name="ioos_category">Other</att>
-        <att name="gf3_code">SIGP_02</att>
-        <att name="ancillary_variables">QSIGP_02</att>
-        <att name="coverage_content_type">physicalMeasurement</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>QSIGP_02</sourceName>
-      <destinationName>QSIGP_02</destinationName>
-      <dataType>int</dataType>
-      <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: SIGP_02</att>
-        <att name="standard_name">status_flag</att>
-        <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QSIGP_02</att>
-        <att name="coverage_content_type">qualityInformation</att>
-        <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
-        <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
-      <sourceName>TURB_WETECOBB</sourceName>
-      <destinationName>TURB_WETECOBB</destinationName>
+      <sourceName>VSCTXX01</sourceName>
+      <destinationName>VSCTXX01</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Turbidity of water in the water body</att>
         <att name="units">m^-1/sr</att>
-        <att name="standard_name">sea_water_turbidity</att>
-        <att name="sdn_parameter_name">Turbidity of water in the water body</att>
-        <att name="sdn_parameter_urn">SDN:P01::TURBXX01</att>
+        <att name="standard_name">volume_scattering_function_of_radiative_flux_in_sea_water</att>
+        <att name="sdn_parameter_name">Volume scattering of light (unspecified wavelengths) by the water body</att>
+        <att name="sdn_parameter_urn">SDN:P01::VSCTXX01</att>
+        <att name="sdn_uom_urn">SDN:P06::PMSR</att>
+        <att name="sdn_uom_name">per metre per steradian</att>
         <att name="ioos_category">Total Suspended Matter</att>
-        <att name="gf3_code">TURB_01</att>
         <att name="ancillary_variables">QTURB_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">TURB_01</att>
+        <att name="resolution">1e-08</att>
         <att name="coverage_content_type">physicalMeasurement</att>
+        <att name="instrument">null</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6045,7 +5911,9 @@
         <att name="long_name">Quality Flag for Parameter: TURB_01</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
-        <att name="gf3_code">QTURB_01</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">QTURB_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
         <att name="flag_meanings">not_evaluated correct inconsistent_with_other_values doubtful erroneous modified missing</att>
@@ -6057,12 +5925,14 @@
       <dataType>int</dataType>
       <addAttributes>
         <att name="long_name">Scan Number</att>
-        <att name="units">count</att>
+        <att name="units">1</att>
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="ioos_category">Other</att>
-        <att name="gf3_code">CNTR_02</att>
         <att name="ancillary_variables">null</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">CNTR_01</att>
+        <att name="resolution">1</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
       </addAttributes>
     </dataVariable>
@@ -6072,13 +5942,15 @@
       <dataType>int</dataType>
       <addAttributes>
         <att name="long_name">Number of scans per bin</att>
-        <att name="units">count</att>
+        <att name="units">1</att>
         <att name="sdn_uom_urn">SDN:P06::UUUU</att>
         <att name="sdn_uom_name">Dimensionless</att>
         <att name="ioos_category">Other</att>
-        <att name="gf3_code">CNTR_01</att>
-        <att name="coverage_content_type">auxiliaryInformation</att>
         <att name="ancillary_variables">null</att>
+        <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
+        <att name="legacy_gf3_code">CNTR_02</att>
+        <att name="resolution">1</att>
+        <att name="coverage_content_type">auxiliaryInformation</att>
       </addAttributes>
     </dataVariable>
   </dataset>
