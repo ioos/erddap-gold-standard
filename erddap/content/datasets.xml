@@ -4979,7 +4979,7 @@
       <destinationName>QLATD_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: LATD_01</att>
+        <att name="long_name">Quality Flag for Parameter: Precise Latitude</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -4996,7 +4996,7 @@
       <destinationName>QLOND_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: LOND_01</att>
+        <att name="long_name">Quality Flag for Parameter: Precise Longitude</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5113,7 +5113,7 @@
       <destinationName>QALTB_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: ALTB_01</att>
+        <att name="long_name">Quality Flag for Parameter: Height (spatial coordinate) relative to bed surface in the water body</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5152,7 +5152,7 @@
       <destinationName>QPRES_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: PRES_01</att>
+        <att name="long_name">Quality Flag for Parameter: Pressure (spatial coordinate)</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5214,7 +5214,7 @@
       <destinationName>QPSAL_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: PSAL_01</att>
+        <att name="long_name">Quality Flag for Parameter: Practical salinity of the water body</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5276,7 +5276,7 @@
       <destinationName>QPSAL_02</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: PSAL_02</att>
+        <att name="long_name">Quality Flag for Parameter: Practical salinity of the water body, 2</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5408,7 +5408,7 @@
       <destinationName>QTEMP_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: TEMP_01</att>
+        <att name="long_name">Quality Flag for Parameter: Temperature of the water body</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5540,7 +5540,7 @@
       <destinationName>QTEMP_02</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: TEMP_02</att>
+        <att name="long_name">Quality Flag for Parameter: Temperature of the water body, 2</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5558,7 +5558,7 @@
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Electrical Conductivity </att>
+        <att name="long_name">Electrical Conductivity</att>
         <att name="units">S/m</att>
         <att name="standard_name">sea_water_electrical_conductivity</att>
         <att name="sdn_parameter_name">Electrical conductivity of the water body by CTD</att>
@@ -5579,7 +5579,7 @@
       <destinationName>QCNDC_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: CRAT_01</att>
+        <att name="long_name">Quality Flag for Parameter: Electrical Conductivity</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5597,7 +5597,7 @@
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Electrical Conductivity , 2</att>
+        <att name="long_name">Electrical Conductivity, 2</att>
         <att name="units">S/m</att>
         <att name="standard_name">sea_water_electrical_conductivity</att>
         <att name="sdn_parameter_name">Electrical conductivity of the water body by CTD</att>
@@ -5618,7 +5618,7 @@
       <destinationName>QCNDC_02</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: CRAT_02</att>
+        <att name="long_name">Quality Flag for Parameter: Electrical Conductivity, 2</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5657,7 +5657,7 @@
       <destinationName>QDOXY_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: DOXY_01</att>
+        <att name="long_name">Quality Flag for Parameter: Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5696,7 +5696,7 @@
       <destinationName>QDOXY_02</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: DOXY_02</att>
+        <att name="long_name">Quality Flag for Parameter: Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by in-situ sensor, 2</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5891,7 +5891,7 @@
       <destinationName>QPHPH_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: PHPH_01</att>
+        <att name="long_name">Quality Flag for Parameter: pH (unspecified scale) of the water body</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5930,7 +5930,7 @@
       <destinationName>QSPAR_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: SPAR_01</att>
+        <att name="long_name">Quality Flag for Parameter: Surface Photosynthetically Active Radiation</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5969,7 +5969,7 @@
       <destinationName>QPSAR_01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: PSAR_01</att>
+        <att name="long_name">Quality Flag for Parameter: Photosynthetically Active Radiation</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -6008,7 +6008,7 @@
       <destinationName>QVSCTXX01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: Attenuation (red light wavelength) per unit length of the water body by transmissometer</att>
+        <att name="long_name">Quality Flag for Parameter: Volume scattering of light (unspecified wavelengths) by the water body</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
