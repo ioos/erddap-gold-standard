@@ -5735,7 +5735,7 @@
       <destinationName>QCDOMZZ01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: FLOR_01</att>
+        <att name="long_name">Quality Flag for Parameter: CDOM Concentration by Fluorometer</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5763,7 +5763,7 @@
         <att name="ioos_category">Colored Dissolved Organic Matter</att>
         <att name="ancillary_variables">QCDOMZZ02</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
-        <att name="legacy_gf3_code">FLOR_03</att>
+        <att name="legacy_gf3_code">FLOR_02</att>
         <att name="resolution">0.0001</att>
         <att name="instrument">null</att>
         <att name="coverage_content_type">physicalMeasurement</att>
@@ -5774,11 +5774,11 @@
       <destinationName>QCDOMZZ02</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: FLOR_03</att>
+        <att name="long_name">Quality Flag for Parameter: CDOM Concentration by Fluorometer 2</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
-        <att name="legacy_gf3_code">QFLOR_03</att>
+        <att name="legacy_gf3_code">QFLOR_02</att>
         <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
@@ -5792,7 +5792,7 @@
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Fluorescence, Seapoint</att>
+        <att name="long_name">Chlorophyll Concentration by Fluorometer</att>
         <att name="units">mg/m^3</att>
         <att name="standard_name">mass_concentration_of_chlorophyll_in_sea_water</att>
         <att name="sdn_parameter_name">Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate >unknown phase] by in-situ chlorophyll fluorometer</att>
@@ -5802,7 +5802,7 @@
         <att name="ioos_category">Other</att>
         <att name="ancillary_variables">QCPHLPR01</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
-        <att name="legacy_gf3_code">FLOR_02</att>
+        <att name="legacy_gf3_code">FLOR_01</att>
         <att name="resolution">1e-08</att>
         <att name="instrument">null</att>
         <att name="coverage_content_type">physicalMeasurement</att>
@@ -5813,7 +5813,7 @@
       <destinationName>QCPHLPR01</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: FLOR_02</att>
+        <att name="long_name">Quality Flag for Parameter: Chlorophyll Concentration by Fluorometer</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
@@ -5831,7 +5831,7 @@
       <dataType>float</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
-        <att name="long_name">Fluorescence, Seapoint</att>
+        <att name="long_name">Chlorophyll Concentration by Fluorometer</att>
         <att name="units">mg/m^3</att>
         <att name="standard_name">mass_concentration_of_chlorophyll_in_sea_water</att>
         <att name="sdn_parameter_name">Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate >unknown phase] by in-situ chlorophyll fluorometer</att>
@@ -5841,7 +5841,7 @@
         <att name="ioos_category">Other</att>
         <att name="ancillary_variables">QCPHLPR02</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
-        <att name="legacy_gf3_code">FLOR_03</att>
+        <att name="legacy_gf3_code">FLOR_02</att>
         <att name="resolution">1e-08</att>
         <att name="instrument">null</att>
         <att name="coverage_content_type">physicalMeasurement</att>
@@ -5852,11 +5852,11 @@
       <destinationName>QCPHLPR02</destinationName>
       <dataType>int</dataType>
       <addAttributes>
-        <att name="long_name">Quality Flag for Parameter: FLOR_03</att>
+        <att name="long_name">Quality Flag for Parameter: Chlorophyll Concentration by Fluorometer 2</att>
         <att name="standard_name">status_flag</att>
         <att name="ioos_category">Quality</att>
         <att name="cell_method">PRESPR01: mean (interval: 1 decibars)</att>
-        <att name="legacy_gf3_code">QFLOR_03</att>
+        <att name="legacy_gf3_code">QFLOR_0w</att>
         <att name="resolution">1</att>
         <att name="coverage_content_type">qualityInformation</att>
         <att name="flag_values" type="intList">0 1 2 3 4 5 9</att>
