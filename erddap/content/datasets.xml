@@ -489,7 +489,7 @@
       <att name="sourceUrl">(local files)</att>
       <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
       <att name="cdm_timeseries_variables">buoy_id, longitude, latitude</att>
-      <att name="subsetVariables">buoy_id, latitude, longitude</att>
+      <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude</att>
       <att name="summary">CMAR - Jordan Bay. real-time buoy data. CMAR data from a local source.</att>
       <att name="testOutOfDate">now-1day</att>
       <att name="title">CMAR - Jordan Bay</att>
@@ -6156,5 +6156,5 @@
   </dataset>
   <!-- St. FX Marine Ecology Lab HOBO logger: END -->
 
-  <requestBlacklist />
 </erddapDatasets>
+
