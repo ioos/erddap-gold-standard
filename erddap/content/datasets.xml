@@ -57,7 +57,7 @@
       <att name="subsetVariables">station, longitude, latitude</att>
     -->
     <addAttributes>
-      <att name="cdm_data_type">Point</att>
+      <att name="cdm_data_type">TimeSeries</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="infoUrl">https://open.canada.ca/data/en/dataset/a650f132-7502-402f-a42e-7ba4dea3f829</att>
       <att name="institution">Fisheries and Oceans Canada</att>
@@ -66,6 +66,7 @@
       <att name="license">Open Government License - Canada (http://open.canada.ca/en/open-government-licence-canada)</att>
       <att name="sourceUrl">(local files)</att>
       <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
+      <att name="cdm_timeseries_variables">Cruise, Type, Instrument</att>
       <att name="subsetVariables">Cruise, Type, Instrument</att>
       <att name="summary">Upon a recent rapid increase of the finfish aquaculture industry in the Coast of Bays, an area of the South Coast of Newfoundland (9 fold production growth from 2003 to 2013), Fisheries and Oceans Canada (DFO) carried out a research project to better understand the physical oceanography of the area. This report is the second of a series aiming to provide an oceanographic knowledge baseline of the Coast of Bays (i.e., data and analyses) to help manage and ensure the sustainable growth of the aquaculture industry. This report presents the analysis of 790 water profiles of temperature, salinity and dissolved oxygen concentration sampled at 276 stations over the course of a 5-year oceanographic program (2009 13). The profiles were analyzed using along-channel vertical sections plots (i.e., transects), surface property maps and water masses statistics.</att>
       <att name="summary_fra">À la suite d'une récente augmentation rapide de l'industrie de l'aquaculture de poissons dans la côte des baies, une région de la côte sud de Terre-Neuve (production multiplié par 9 de 2003 à 2013), Pêches et Océans Canada a mené un projet de recherche pour mieux comprendre l'océanographie physique de la région. Ce rapport est le deuxième d'une série visant à fournir une base de connaissances océanographiques sur le littoral des baies (données et analyses) afin d’aider à gérer et assurer la croissance durable de l'industrie aquacole. Ce rapport présente l'analyse de 790 profils de température, salinité et concentration en oxygène dissous échantillonnés à 276 stations au cours d'un programme océanographique de cinq ans (2009 2013). Les profils ont été analysés à l'aide de tracés de sections verticales (transects), de cartes de propriétés de surface et de statistiques des masses d'eau.</att>
@@ -81,6 +82,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Cruise</att>
+        <att name="cf_role">timeseries_id</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -475,7 +477,7 @@
         <att name="subsetVariables">station_id, longitude, latitude</att>
     -->
     <addAttributes>
-      <att name="cdm_data_type">Point</att>
+      <att name="cdm_data_type">TimeSeries</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">CMAR</att>
       <att name="creator_type">institution</att>
@@ -486,7 +488,8 @@
       <att name="license">[standard]</att>
       <att name="sourceUrl">(local files)</att>
       <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-      <att name="subsetVariables">buoy_name, latitude, longitude</att>
+      <att name="cdm_timeseries_variables">buoy_id, longitude, latitude</att>
+      <att name="subsetVariables">buoy_id, latitude, longitude</att>
       <att name="summary">CMAR - Jordan Bay. real-time buoy data. CMAR data from a local source.</att>
       <att name="testOutOfDate">now-1day</att>
       <att name="title">CMAR - Jordan Bay</att>
@@ -515,6 +518,7 @@
       <addAttributes>
         <att name="ioos_category">Identifier</att>
         <att name="long_name">Buoy Id</att>
+        <att name="cf_role">timeseries_id</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -804,7 +808,7 @@
         <att name="subsetVariables">station_id, longitude, latitude</att>
     -->
     <addAttributes>
-      <att name="cdm_data_type">Point</att>
+      <att name="cdm_data_type">TimeSeries</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">CMAR</att>
       <att name="creator_type">institution</att>
@@ -815,6 +819,7 @@
       <att name="license">[standard]</att>
       <att name="sourceUrl">(local files)</att>
       <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+      <att name="cdm_timeseries_variables">buoy_id, longitude, latitude</att>
       <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude, precip_hail_int</att>
       <att name="summary">XEOS Buoy - 003. real-time buoy data. CMAR data from a local source.</att>
       <att name="testOutOfDate">now-1day</att>
@@ -844,6 +849,7 @@
       <addAttributes>
         <att name="ioos_category">Identifier</att>
         <att name="long_name">Buoy Id</att>
+        <att name="cf_role">timeseries_id</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1131,7 +1137,7 @@
         <att name="subsetVariables">station_id, longitude, latitude</att>
     -->
     <addAttributes>
-      <att name="cdm_data_type">Point</att>
+      <att name="cdm_data_type">TimeSeries</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">CMAR</att>
       <att name="creator_type">institution</att>
@@ -1142,6 +1148,7 @@
       <att name="license">[standard]</att>
       <att name="sourceUrl">(local files)</att>
       <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+      <att name="cdm_timeseries_variables">buoy_id, longitude, latitude</att>
       <att name="subsetVariables">buoy_id, buoy_name, latitude, longitude</att>
       <att name="summary">XEOS Buoy - 002. real-time buoy data. CMAR data from a local source.</att>
       <att name="testOutOfDate">now-1day</att>
@@ -1171,6 +1178,7 @@
       <addAttributes>
         <att name="ioos_category">Identifier</att>
         <att name="long_name">Buoy Id</att>
+        <att name="cf_role">timeseries_id</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1458,7 +1466,7 @@
         <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
     -->
     <addAttributes>
-      <att name="cdm_data_type">Point</att>
+      <att name="cdm_data_type">TimeSeries</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">Coastal Action</att>
       <att name="creator_type">person</att>
@@ -1471,6 +1479,7 @@
       <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
       <att name="summary">The purpose of the Atlantic Canada Microplastic Research Project (2017-2020) is to determine the quantity of microplastics in 3 near-shore communities of Atlantic Canada.  Data will be used to better inform the conversation and solutions around plastic pollution in the region.  The project is funded by Environment and Climate Change Canada and is in partnership with Clean Annapolis River Project (CARP), ACAP Humber Arm, and Dr. Max Liboiron at the Civic Laboratory for Environmental Action Research (CLEAR) out of Memorial University of Newfoundland (MUN).  Dr.  Max Liboiron is our chief academic advisor on the 3-year project, assisting with project development, methods and protocol, and sampling design.  The project included sampling both surface water and beach sediment at all three study locations.  The surface water trawling equipment was built using CLEAR&#39;s low-aquatic debris instrument (LADI) design.  This document contains the results from the 2018 surface water samples.  Sediment data results for 2018 and hot-spot data from 2019 will be available in 2020.</att>
       <att name="title">Atlantic Canada Microplastic Research Project (2017-2020)</att>
+      <att name="cdm_timeseries_variables">date_collected, study_area, location, type, size_class</att>
       <att name="subsetVariables">date_collected, study_area, location, type, size_class</att>
     </addAttributes>
     <dataVariable>
@@ -1536,6 +1545,7 @@
       <addAttributes>
         <att name="ioos_category">Location</att>
         <att name="long_name">Location</att>
+        <att name="cf_role">timeseries_id</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -2330,7 +2340,7 @@
     <fileTableInMemory>false</fileTableInMemory>
     <accessibleViaFiles>true</accessibleViaFiles>
     <addAttributes>
-      <att name="cdm_data_type">Point</att>
+      <att name="cdm_data_type">TimeSeries</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">CMAR</att>
       <att name="creator_type">insitution</att>
@@ -2339,6 +2349,7 @@
       <att name="license">Nova Scotia Open Government Licence</att>
       <att name="sourceUrl">(local files)</att>
       <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+      <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
       <att name="subsetVariables">waterbody_station, lease, sensor</att>
       <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
       <att name="contributor_role">owner</att>
@@ -2367,6 +2378,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Waterbody</att>
+        <att name="cf_role">timeseries_id</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -2511,7 +2523,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -2520,6 +2532,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -2548,6 +2561,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -2682,7 +2696,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -2691,6 +2705,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -2719,6 +2734,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -2863,7 +2879,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -2872,6 +2888,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -2900,6 +2917,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3034,7 +3052,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -3043,6 +3061,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -3071,6 +3090,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3215,7 +3235,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -3224,6 +3244,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -3252,6 +3273,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3386,7 +3408,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -3395,6 +3417,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -3423,6 +3446,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3557,7 +3581,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -3566,6 +3590,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -3594,6 +3619,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3728,7 +3754,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -3737,6 +3763,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -3765,6 +3792,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3899,7 +3927,7 @@
   <fileTableInMemory>false</fileTableInMemory>
   <accessibleViaFiles>true</accessibleViaFiles>
   <addAttributes>
-    <att name="cdm_data_type">Point</att>
+    <att name="cdm_data_type">TimeSeries</att>
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
@@ -3908,6 +3936,7 @@
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
     <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
+    <att name="cdm_timeseries_variables">waterbody_station, lease, sensor</att>
     <att name="subsetVariables">waterbody_station, lease, sensor</att>
     <att name="contributor_name">Centre for Marine Applied Research (CMAR)</att>
     <att name="contributor_role">owner</att>
@@ -3936,6 +3965,7 @@
     <addAttributes>
       <att name="ioos_category">Unknown</att>
       <att name="long_name">Waterbody</att>
+      <att name="cf_role">timeseries_id</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
