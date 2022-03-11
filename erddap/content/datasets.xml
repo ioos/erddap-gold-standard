@@ -681,13 +681,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>temp_water_c (C)</sourceName>
-      <destinationName>temp_water_c</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temp Water</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
         <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
@@ -2558,13 +2559,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -2732,13 +2734,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -2916,13 +2919,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -3090,13 +3094,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -3274,13 +3279,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -3448,13 +3454,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -3622,13 +3629,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -3797,13 +3805,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -3971,13 +3980,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -4145,13 +4155,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Temperature</sourceName>
-      <destinationName>Temperature</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <addAttributes>
         <att type="float" name="_FillValue">NaN</att>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Temperature</att>
-        <att name="units">degrees Celsius</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -4351,6 +4362,8 @@
         <att name="colorBarMinimum" type="double">0.0</att>
         <att name="ioos_category">Temperature</att>
         <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -6127,6 +6140,7 @@
         <att name="_FillValue" type="float">NaN</att>
         <att name="ioos_category">Temperature</att>
         <att name="long_name">Air Or Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
         <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
