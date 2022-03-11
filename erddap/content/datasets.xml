@@ -80,7 +80,7 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Identifier</att>
         <att name="long_name">Cruise</att>
         <att name="cf_role">timeseries_id</att>
       </addAttributes>
@@ -92,7 +92,7 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Identifier</att>
         <att name="long_name">Event</att>
         <att name="missing_value">999</att>
       </addAttributes>
@@ -115,7 +115,7 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Identifier</att>
         <att name="long_name">Type</att>
       </addAttributes>
     </dataVariable>
@@ -174,6 +174,7 @@
       <addAttributes>
         <att name="ioos_category">Location</att>
         <att name="long_name">Bot Depth(m)</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -183,7 +184,7 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Other</att>
         <att name="long_name">Instrument</att>
       </addAttributes>
     </dataVariable>
@@ -207,6 +208,7 @@
       <addAttributes>
         <att name="ioos_category">Pressure</att>
         <att name="long_name">Pressure(dbar)</att>
+        <att name="units">dbar</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -218,6 +220,7 @@
       <addAttributes>
         <att name="ioos_category">Temperature</att>
         <att name="long_name">Temperature(o C)</att>
+        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -232,6 +235,7 @@
         <att name="ioos_category">Salinity</att>
         <att name="long_name">Sea Water Electrical Conductivity</att>
         <att name="standard_name">sea_water_electrical_conductivity</att>
+        <att name="units">S m-1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -243,6 +247,7 @@
       <addAttributes>
         <att name="ioos_category">Dissolved O2</att>
         <att name="long_name">Oxygen(V)</att>
+        <att name="units">V</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -258,6 +263,7 @@
         <att name="ioos_category">Location</att>
         <att name="long_name">Depth</att>
         <att name="standard_name">depth</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -284,6 +290,7 @@
       <addAttributes>
         <att name="ioos_category">Dissolved O2</att>
         <att name="long_name">Oxygen(m L/L)</att>
+        <att name="units">mL L-1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -295,6 +302,7 @@
       <addAttributes>
         <att name="ioos_category">Dissolved O2</att>
         <att name="long_name">Oxygen(mg/L)</att>
+        <att name="units">mg L-1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -306,6 +314,7 @@
       <addAttributes>
         <att name="ioos_category">Dissolved O2</att>
         <att name="long_name">Oxygen(&#37;)</att>
+        <att name="units">percent</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -315,8 +324,9 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Location</att>
         <att name="long_name">Descent Rate(m/s)</att>
+        <att name="units">m s-1</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -528,7 +538,7 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Identifier</att>
         <att name="long_name">Buoy Name</att>
       </addAttributes>
     </dataVariable>
@@ -571,6 +581,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Battery Voltage (V)</att>
+        <att name="units">V</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -596,6 +607,7 @@
         <att name="long_name">Wave Ht Sig (m)</att>
         <att name="valid_range" type="floatList">0.0 50.0</att>
         <att name="actual_range" type="doubleList">0.0 50.0</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -610,6 +622,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Sea Surface Swell Wave Period</att>
         <att name="standard_name">sea_surface_swell_wave_period</att>
+        <att name="units">s</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -622,6 +635,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Wave Ht Max (m)</att>
         <att name="valid_range" type="floatList">0.0 50.0</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -636,6 +650,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Sea Surface Wave To Direction</att>
         <att name="standard_name">sea_surface_wave_to_direction</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -647,6 +662,7 @@
       <addAttributes>
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Wave Spread Avg (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -660,6 +676,7 @@
         <att name="colorBarMinimum" type="double">0.0</att>
         <att name="ioos_category">Quality</att>
         <att name="long_name">Sample Quality</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -676,7 +693,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>wind_speed_m_s (knots)</sourceName>
-      <destinationName>wind_speed_m_s</destinationName>
+      <destinationName>wind_speed</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -687,6 +704,7 @@
         <att name="long_name">Wind Speed</att>
         <att name="standard_name">wind_speed</att>
         <att name="valid_range" type="floatList">0.0 100.0</att>
+        <att name="units">knots</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -701,6 +719,7 @@
         <att name="ioos_category">Wind</att>
         <att name="long_name">Wind From Direction</att>
         <att name="standard_name">wind_from_direction</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -712,6 +731,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Air Pres (h Pa)</att>
+        <att name="units">hPa</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -725,6 +745,7 @@
         <att name="colorBarMinimum" type="double">0.0</att>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Humidity Percent (&#37;)</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -736,6 +757,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Temp Air C (C)</att>
+        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -747,6 +769,7 @@
       <addAttributes>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Precip Rain Int (mm/hr)</att>
+        <att name="units">mm h-1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -758,6 +781,7 @@
       <addAttributes>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Precip Hail Int (hits/(cm^2 * Hr))</att>
+        <att name="units">hits/(cm^2 * hr)</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -769,6 +793,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Compass Deci Deg (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -780,6 +805,7 @@
       <addAttributes>
         <att name="ioos_category">Wind</att>
         <att name="long_name">Wind Bearing (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -902,6 +928,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Battery Voltage (V)</att>
+        <att name="units">V</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -913,6 +940,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Device Temp C (C)</att>
+        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -925,6 +953,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Wave Ht Sig (m)</att>
         <att name="valid_range" type="floatList">0.0 50.0</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -939,6 +968,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Sea Surface Swell Wave Period</att>
         <att name="standard_name">sea_surface_swell_wave_period</att>
+        <att name="units">s</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -951,6 +981,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Wave Ht Max (m)</att>
         <att name="valid_range" type="floatList">0.0 50.0</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -965,6 +996,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Sea Surface Wave To Direction</att>
         <att name="standard_name">sea_surface_wave_to_direction</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -976,6 +1008,7 @@
       <addAttributes>
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Wave Spread Avg (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -989,6 +1022,7 @@
         <att name="colorBarMinimum" type="double">0.0</att>
         <att name="ioos_category">Quality</att>
         <att name="long_name">Sample Quality</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1000,11 +1034,12 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Temp Water C (C)</att>
+        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>wind_speed_m_s (knots)</sourceName>
-      <destinationName>wind_speed_m_s</destinationName>
+      <destinationName>wind_speed</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -1015,6 +1050,7 @@
         <att name="long_name">Wind Speed</att>
         <att name="standard_name">wind_speed</att>
         <att name="valid_range" type="floatList">0.0 100.0</att>
+        <att name="units">knots</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1029,6 +1065,7 @@
         <att name="ioos_category">Wind</att>
         <att name="long_name">Wind From Direction</att>
         <att name="standard_name">wind_from_direction</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1040,6 +1077,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Air Pres (h Pa)</att>
+        <att name="units">hPa</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1053,6 +1091,7 @@
         <att name="colorBarMinimum" type="double">0.0</att>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Humidity Percent (&#37;)</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1064,6 +1103,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Temp Air C (C)</att>
+        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1075,6 +1115,7 @@
       <addAttributes>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Precip Rain Int (mm/hr)</att>
+        <att name="units">mm h-1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1086,6 +1127,7 @@
       <addAttributes>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Precip Hail Int (hits/(cm^2 * Hr))</att>
+        <att name="units">hits/(cm^2 * hr)</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1097,6 +1139,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Compass Deci Deg (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1108,6 +1151,7 @@
       <addAttributes>
         <att name="ioos_category">Wind</att>
         <att name="long_name">Wind Bearing (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -1231,6 +1275,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Battery Voltage (V)</att>
+        <att name="units">V</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1242,6 +1287,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Device Temp C (C)</att>
+        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1254,6 +1300,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Wave Ht Sig (m)</att>
         <att name="valid_range" type="floatList">0.0 50.0</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1268,6 +1315,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Sea Surface Swell Wave Period</att>
         <att name="standard_name">sea_surface_swell_wave_period</att>
+        <att name="units">s</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1280,6 +1328,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Wave Ht Max (m)</att>
         <att name="valid_range" type="floatList">0.0 50.0</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1294,6 +1343,7 @@
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Sea Surface Wave To Direction</att>
         <att name="standard_name">sea_surface_wave_to_direction</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1305,6 +1355,7 @@
       <addAttributes>
         <att name="ioos_category">Surface Waves</att>
         <att name="long_name">Wave Spread Avg (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1318,6 +1369,7 @@
         <att name="colorBarMinimum" type="double">0.0</att>
         <att name="ioos_category">Quality</att>
         <att name="long_name">Sample Quality</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1329,11 +1381,12 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Temp Water C (C)</att>
+        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>wind_speed_m_s (knots)</sourceName>
-      <destinationName>wind_speed_m_s</destinationName>
+      <destinationName>wind_speed</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -1344,6 +1397,7 @@
         <att name="long_name">Wind Speed</att>
         <att name="standard_name">wind_speed</att>
         <att name="valid_range" type="floatList">0.0 100.0</att>
+        <att name="units">knots</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1358,6 +1412,7 @@
         <att name="ioos_category">Wind</att>
         <att name="long_name">Wind From Direction</att>
         <att name="standard_name">wind_from_direction</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1369,6 +1424,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Air Pres (h Pa)</att>
+        <att name="units">hPa</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1382,6 +1438,7 @@
         <att name="colorBarMinimum" type="double">0.0</att>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Humidity Percent (&#37;)</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1393,6 +1450,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Temp Air C (C)</att>
+        <att name="units">degree_C</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1404,6 +1462,7 @@
       <addAttributes>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Precip Rain Int (mm/hr)</att>
+        <att name="units">mm hr-1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1415,6 +1474,7 @@
       <addAttributes>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Precip Hail Int (hits/(cm^2 * Hr))</att>
+        <att name="units">hits/(cm^2 * hr)</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1426,6 +1486,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Compass Deci Deg (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1437,6 +1498,7 @@
       <addAttributes>
         <att name="ioos_category">Wind</att>
         <att name="long_name">Wind Bearing (degrees)</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
   </dataset>
@@ -2344,7 +2406,7 @@
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">CMAR</att>
       <att name="creator_type">insitution</att>
-      <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
       <att name="institution">CMAR</att>
       <att name="license">Nova Scotia Open Government Licence</att>
       <att name="sourceUrl">(local files)</att>
@@ -2491,7 +2553,7 @@
       <addAttributes>
         <att name="ioos_category">Salinity</att>
         <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
-        <att name="units">practical salinity units</att>
+        <att name="units">PSU</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -2505,7 +2567,8 @@
         <att name="units">degrees Celsius</att>
       </addAttributes>
     </dataVariable>
-  </dataset><dataset active="true" datasetID="adpu-nyt8" type="EDDTableFromAsciiFiles">
+  </dataset>
+  <dataset active="true" datasetID="adpu-nyt8" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/adpu-nyt8</fileDir>
@@ -2527,7 +2590,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
@@ -2678,7 +2741,8 @@
       <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset><dataset active="true" datasetID="eda5-aubu" type="EDDTableFromAsciiFiles">
+  </dataset>
+  <dataset active="true" datasetID="eda5-aubu" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/eda5-aubu</fileDir>
@@ -2700,7 +2764,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
@@ -2847,7 +2911,7 @@
     <addAttributes>
       <att name="ioos_category">Salinity</att>
       <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
-      <att name="units">practical salinity units</att>
+        <att name="units">PSU</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -2861,7 +2925,8 @@
       <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset><dataset active="true" datasetID="knwz-4bap" type="EDDTableFromAsciiFiles">
+  </dataset>
+  <dataset active="true" datasetID="knwz-4bap" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/knwz-4bap</fileDir>
@@ -2883,7 +2948,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
@@ -3034,7 +3099,8 @@
       <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset><dataset active="true" datasetID="9qw2-yb2f" type="EDDTableFromAsciiFiles">
+  </dataset>
+  <dataset active="true" datasetID="9qw2-yb2f" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/9qw2-yb2f</fileDir>
@@ -3056,7 +3122,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
@@ -3203,7 +3269,7 @@
     <addAttributes>
       <att name="ioos_category">Salinity</att>
       <att name="long_name">Volume Fraction Of Salinity In Sea Water</att>
-      <att name="units">practical salinity units</att>
+        <att name="units">PSU</att>
     </addAttributes>
   </dataVariable>
   <dataVariable>
@@ -3217,7 +3283,8 @@
       <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset><dataset active="true" datasetID="v6sa-tiit" type="EDDTableFromAsciiFiles">
+  </dataset>
+  <dataset active="true" datasetID="v6sa-tiit" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/v6sa-tiit</fileDir>
@@ -3239,7 +3306,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
@@ -3390,7 +3457,8 @@
       <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset><dataset active="true" datasetID="wpsu-7fer" type="EDDTableFromAsciiFiles">
+  </dataset>
+  <dataset active="true" datasetID="wpsu-7fer" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/wpsu-7fer</fileDir>
@@ -3412,7 +3480,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
@@ -3563,7 +3631,9 @@
       <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset><dataset active="true" datasetID="a9za-3t63" type="EDDTableFromAsciiFiles">
+  </dataset>
+
+  <dataset active="true" datasetID="a9za-3t63" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/a9za-3t63</fileDir>
@@ -3585,7 +3655,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
@@ -3736,7 +3806,8 @@
       <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset><dataset active="true" datasetID="x9dy-aai9" type="EDDTableFromAsciiFiles">
+  </dataset>
+  <dataset active="true" datasetID="x9dy-aai9" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/x9dy-aai9</fileDir>
@@ -3758,7 +3829,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
@@ -3909,7 +3980,8 @@
       <att name="units">degrees Celsius</att>
     </addAttributes>
   </dataVariable>
-</dataset><dataset active="true" datasetID="mq2k-54s4" type="EDDTableFromAsciiFiles">
+  </dataset>
+  <dataset active="true" datasetID="mq2k-54s4" type="EDDTableFromAsciiFiles">
   <reloadEveryNMinutes>10080</reloadEveryNMinutes>
   <updateEveryNMillis>10000</updateEveryNMillis>
   <fileDir>/datasets/cmar/nsodp-sensor-strings/mq2k-54s4</fileDir>
@@ -3931,7 +4003,7 @@
     <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
     <att name="creator_name">CMAR</att>
     <att name="creator_type">insitution</att>
-    <att name="infoUrl">???</att>
+      <att name="infoUrl">https://cmar.ca/coastal-monitoring-program/</att>
     <att name="institution">CMAR</att>
     <att name="license">Nova Scotia Open Government Licence</att>
     <att name="sourceUrl">(local files)</att>
