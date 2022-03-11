@@ -220,7 +220,7 @@
       <addAttributes>
         <att name="ioos_category">Temperature</att>
         <att name="long_name">Temperature(o C)</att>
-        <att name="units">degree_C</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -751,14 +751,15 @@
     </dataVariable>
     <dataVariable>
       <sourceName>temp_air_c (C)</sourceName>
-      <destinationName>temp_air_c</destinationName>
+      <destinationName>air_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Temp Air C (C)</att>
-        <att name="units">degree_C</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="long_name">Air Temperature</att>
+        <att name="standard_name">air_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -941,7 +942,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Device Temp C (C)</att>
-        <att name="units">degree_C</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1028,14 +1029,15 @@
     </dataVariable>
     <dataVariable>
       <sourceName>temp_water_c (C)</sourceName>
-      <destinationName>temp_water_c</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Unknown</att>
-        <att name="long_name">Temp Water C (C)</att>
-        <att name="units">degree_C</att>
+        <att name="long_name">Sea Water Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1097,14 +1099,15 @@
     </dataVariable>
     <dataVariable>
       <sourceName>temp_air_c (C)</sourceName>
-      <destinationName>temp_air_c</destinationName>
+      <destinationName>air_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Temp Air C (C)</att>
-        <att name="units">degree_C</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="long_name">Air Temperature</att>
+        <att name="standard_name">air_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1288,7 +1291,7 @@
       <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Device Temp C (C)</att>
-        <att name="units">degree_C</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1375,14 +1378,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>temp_water_c (C)</sourceName>
-      <destinationName>temp_water_c</destinationName>
+      <destinationName>sea_water_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Temp Water C (C)</att>
-        <att name="units">degree_C</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="standard_name">sea_water_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -1444,14 +1447,15 @@
     </dataVariable>
     <dataVariable>
       <sourceName>temp_air_c (C)</sourceName>
-      <destinationName>temp_air_c</destinationName>
+      <destinationName>air_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Temp Air C (C)</att>
-        <att name="units">degree_C</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="long_name">Air Temperature</att>
+        <att name="standard_name">air_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
