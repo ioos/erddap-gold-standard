@@ -4587,46 +4587,55 @@
     </dataVariable>
     <dataVariable>
       <sourceName>batt_volt</sourceName>
-      <destinationName>batt_volt</destinationName>
+      <destinationName>Battery Voltage</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Unknown</att>
-        <att name="long_name">Batt Volt</att>
+        <att name="long_name">Battery Voltage</att>
+        <att name="units">Volts</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>AirTemp_C</sourceName>
-      <destinationName>AirTemp_C</destinationName>
+      <destinationName>Air Temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Air Temp C</att>
+        <att name="long_name">Air Temperature</att>
+        <att name="standard_name">air_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Solar_kW</sourceName>
-      <destinationName>Solar_kW</destinationName>
+      <destinationName>Solar Irradiance</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Solar K W</att>
+        <att name="ioos_category">Optical Properties</att>
+        <att name="long_name">Solar Irradiance (kW/m^2)</att>
+        <att name="standard_name">solar_irradiance</att>
+        <att name="units">kW/m^2</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>RH</sourceName>
-      <destinationName>RH</destinationName>
+      <destinationName>Relative Humidity</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">RH</att>
+        <att name="ioos_category">Meteorology</att>
+        <att name="long_name">Relative Humidity</att>
+        <att name="colorBarMaximum" type="float">100.0</att>
+        <att name="colorBarMinimum" type="float">0.0</att>
+        <att name="standard_name">relative_humidity</att>
+        <att name="units">percent</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4653,40 +4662,48 @@
     </dataVariable>
     <dataVariable>
       <sourceName>WS_ms</sourceName>
-      <destinationName>WS_ms</destinationName>
+      <destinationName>Wind Speed</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">WS MS</att>
+        <att name="ioos_category">Wind</att>
+        <att name="long_name">Wind Speed</att>
+        <att name="standard_name">wind_speed</att>
+        <att name="valid_range" type="floatList">0.0 51.444</att>
+        <att name="units">m/s</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>PTemp</sourceName>
-      <destinationName>PTemp</destinationName>
+      <destinationName>Potential Temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">PTemp</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="long_name">Potential Temperature</att>
+        <att name="standard_name">potential_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>WS_15min_max</sourceName>
-      <destinationName>WS_15min_max</destinationName>
+      <destinationName>Wind Speed 15min Max</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">WS 15min Max</att>
+        <att name="ioos_category">Wind</att>
+        <att name="long_name">Wind Speed 15min Max</att>
+        <att name="standard_name">wind_speed_of_gust</att>
+        <att name="valid_range" type="floatList">0.0 51.444</att>
+        <att name="units">m/s</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Prog_Sig</sourceName>
-      <destinationName>Prog_Sig</destinationName>
+      <destinationName>Prog Sig</destinationName>
       <dataType>int</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4697,73 +4714,85 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Solar_Raw</sourceName>
-      <destinationName>Solar_Raw</destinationName>
+      <destinationName>Solar PV Power Raw</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
-      <addAttributes>
+            <addAttributes>
         <att name="ioos_category">Unknown</att>
-        <att name="long_name">Solar Raw</att>
+        <att name="long_name">Solar PV Power (W)</att>
+        <att name="units">Watts</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Bar_mbar</sourceName>
-      <destinationName>Bar_mbar</destinationName>
+      <destinationName>Pressure</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Pressure</att>
-        <att name="long_name">Bar Mbar</att>
+        <att name="long_name">Pressure</att>
+        <att name="standard_name">pressure</att>
+        <att name="units">mbar</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Solar_MJ</sourceName>
-      <destinationName>Solar_MJ</destinationName>
+      <destinationName>Solar Irradiance</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Solar MJ</att>
+        <att name="ioos_category">Optical Properties</att>
+        <att name="long_name">Solar Irradiance (MJ)</att>
+        <att name="standard_name">solar_irradiance</att>
+        <att name="units">MJ</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Max_WS_2min</sourceName>
-      <destinationName>Max_WS_2min</destinationName>
+      <destinationName>Wind Speed 2min Max</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Max WS 2min</att>
+        <att name="ioos_category">Wind</att>
+        <att name="long_name">Wind Speed 2min Max</att>
+        <att name="standard_name">wind_speed_of_gust</att>
+        <att name="valid_range" type="floatList">0.0 51.444</att>
+        <att name="units">m/s</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Pressure_Raw</sourceName>
-      <destinationName>Pressure_Raw</destinationName>
+      <destinationName>Pressure Raw</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Pressure</att>
         <att name="long_name">Pressure Raw</att>
+        <att name="standard_name">pressure</att>
+        <att name="units">mbar</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Rain_mm</sourceName>
-      <destinationName>Rain_mm</destinationName>
-      <dataType>byte</dataType>
+      <destinationName>Rain</destinationName>
+      <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Meteorology</att>
-        <att name="long_name">Rain Mm</att>
+        <att name="long_name">Rain (mm)</att>
+        <att name="standard_name">precipitation</att>
+        <att name="units">mm</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>WD_15min_ave</sourceName>
-      <destinationName>WD_15min_ave</destinationName>
+      <destinationName>Wind From Direction 15min Average</destinationName>
       <dataType>double</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4771,24 +4800,27 @@
         <att name="colorBarMaximum" type="double">360.0</att>
         <att name="colorBarMinimum" type="double">0.0</att>
         <att name="ioos_category">Wind</att>
-        <att name="long_name">Wind From Direction</att>
+        <att name="long_name">Wind From Direction 15min Average</att>
         <att name="standard_name">wind_from_direction</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Max_AirTemp_1min</sourceName>
-      <destinationName>Max_AirTemp_1min</destinationName>
+      <destinationName>Air Temperature 1min Max</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Max Air Temp 1min</att>
+        <att name="long_name">Air Temperature 1min Max</att>
+        <att name="standard_name">air_temperature</att>
+        <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>WindDir</sourceName>
-      <destinationName>WindDir</destinationName>
+      <destinationName>Wind From Direction</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4798,39 +4830,48 @@
         <att name="ioos_category">Wind</att>
         <att name="long_name">Wind From Direction</att>
         <att name="standard_name">wind_from_direction</att>
+        <att name="units">degree</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>WS_15min_med</sourceName>
-      <destinationName>WS_15min_med</destinationName>
+      <destinationName>Wind Speed 15min Median</destinationName>
       <dataType>double</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">WS 15min Med</att>
+        <att name="ioos_category">Wind</att>
+        <att name="long_name">Wind Speed 15min Median</att>
+        <att name="standard_name">wind_speed</att>
+        <att name="valid_range" type="floatList">0.0 51.444</att>
+        <att name="units">m/s</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>WS_15min_ave</sourceName>
-      <destinationName>WS_15min_ave</destinationName>
+      <destinationName>Wind Speed 15min Average</destinationName>
       <dataType>double</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">WS 15min Ave</att>
+        <att name="ioos_category">Wind</att>
+        <att name="long_name">Wind Speed 15min Average</att>
+        <att name="standard_name">wind_speed</att>
+        <att name="valid_range" type="floatList">0.0 51.444</att>
+        <att name="units">m/s</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Elevation_Correction</sourceName>
-      <destinationName>Elevation_Correction</destinationName>
+      <destinationName>Elevation Correction</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Location</att>
         <att name="long_name">Elevation Correction</att>
+        <att name="standard_name">elevation</att>
+        <att name="units">m</att>
       </addAttributes>
     </dataVariable>
   </dataset>
