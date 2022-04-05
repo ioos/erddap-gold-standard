@@ -4620,7 +4620,7 @@
         <att name="ioos_category">Optical Properties</att>
         <att name="long_name">Solar Irradiance (kW/m^2)</att>
         <att name="standard_name">solar_irradiance</att>
-        <att name="units">kW/m^2</att>
+        <att name="units">kW m-2</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
