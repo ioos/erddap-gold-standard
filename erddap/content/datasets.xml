@@ -4779,7 +4779,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Rain_mm</sourceName>
-      <destinationName>rain</destinationName>
+      <destinationName>Rain_mm</destinationName>
       <dataType>byte</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4863,7 +4863,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Elevation_Correction</sourceName>
-      <destinationName>elevation_correction</destinationName>
+      <destinationName>Elevation_Correction</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
