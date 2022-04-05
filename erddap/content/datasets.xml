@@ -4587,7 +4587,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>batt_volt</sourceName>
-      <destinationName>Battery Voltage</destinationName>
+      <destinationName>battery_voltage</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4599,7 +4599,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>AirTemp_C</sourceName>
-      <destinationName>Air Temperature</destinationName>
+      <destinationName>air_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4612,7 +4612,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Solar_kW</sourceName>
-      <destinationName>Solar Irradiance</destinationName>
+      <destinationName>solar_irradiance</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4625,7 +4625,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>RH</sourceName>
-      <destinationName>Relative Humidity</destinationName>
+      <destinationName>relative_humidity</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4662,7 +4662,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>WS_ms</sourceName>
-      <destinationName>Wind Speed</destinationName>
+      <destinationName>wind_speed</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4676,7 +4676,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>PTemp</sourceName>
-      <destinationName>Potential Temperature</destinationName>
+      <destinationName>potential_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4689,7 +4689,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>WS_15min_max</sourceName>
-      <destinationName>Wind Speed 15min Max</destinationName>
+      <destinationName>wind_speed_15min_max</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4703,7 +4703,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Prog_Sig</sourceName>
-      <destinationName>Prog Sig</destinationName>
+      <destinationName>Prog_Sig</destinationName>
       <dataType>int</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4714,11 +4714,11 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Solar_Raw</sourceName>
-      <destinationName>Solar PV Power Raw</destinationName>
+      <destinationName>solar_PV_power_raw</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
-            <addAttributes>
+      <addAttributes>
         <att name="ioos_category">Unknown</att>
         <att name="long_name">Solar PV Power (W)</att>
         <att name="units">Watts</att>
@@ -4726,7 +4726,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Bar_mbar</sourceName>
-      <destinationName>Pressure</destinationName>
+      <destinationName>pressure</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4739,7 +4739,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Solar_MJ</sourceName>
-      <destinationName>Solar Irradiance</destinationName>
+      <destinationName>solar_irradiance</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4752,7 +4752,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Max_WS_2min</sourceName>
-      <destinationName>Wind Speed 2min Max</destinationName>
+      <destinationName>wind_speed_2min_max</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4766,7 +4766,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Pressure_Raw</sourceName>
-      <destinationName>Pressure Raw</destinationName>
+      <destinationName>pressure_raw</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4779,8 +4779,8 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Rain_mm</sourceName>
-      <destinationName>Rain</destinationName>
-      <dataType>float</dataType>
+      <destinationName>rain</destinationName>
+      <dataType>byte</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
@@ -4792,7 +4792,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>WD_15min_ave</sourceName>
-      <destinationName>Wind From Direction 15min Average</destinationName>
+      <destinationName>wind_from_direction_15min_average</destinationName>
       <dataType>double</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4807,7 +4807,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Max_AirTemp_1min</sourceName>
-      <destinationName>Air Temperature 1min Max</destinationName>
+      <destinationName>air_temperature_1min_max</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4820,7 +4820,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>WindDir</sourceName>
-      <destinationName>Wind From Direction</destinationName>
+      <destinationName>wind_from_direction</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4835,7 +4835,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>WS_15min_med</sourceName>
-      <destinationName>Wind Speed 15min Median</destinationName>
+      <destinationName>wind_speed_15min_median</destinationName>
       <dataType>double</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4849,7 +4849,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>WS_15min_ave</sourceName>
-      <destinationName>Wind Speed 15min Average</destinationName>
+      <destinationName>wind_speed_15min_average</destinationName>
       <dataType>double</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
@@ -4863,7 +4863,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Elevation_Correction</sourceName>
-      <destinationName>Elevation Correction</destinationName>
+      <destinationName>elevation_correction</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
