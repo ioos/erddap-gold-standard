@@ -4739,7 +4739,7 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Solar_MJ</sourceName>
-      <destinationName>solar_irradiance</destinationName>
+      <destinationName>solar_irradiance_mj</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
