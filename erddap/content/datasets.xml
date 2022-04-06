@@ -4722,7 +4722,7 @@
   <dataset type="EDDTableFromMultidimNcFiles" datasetID="2020_fall_6fe3_cad6_5f29" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/bio/azmp/2020_fall/</fileDir>
+    <fileDir>/datasets/dfo/bio/</fileDir>
     <fileNameRegex>.*\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -4819,6 +4819,22 @@
       <att name="wmo_platform_code">null</att>
     </addAttributes>
     <dataVariable>
+      <sourceName>global:program</sourceName>
+      <destinationName>program</destinationName>
+      <dataType>String</dataType>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>global:project</sourceName>
+      <destinationName>project</destinationName>
+      <dataType>String</dataType>
+      <addAttributes>
+        <att name="ioos_category">Other</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
       <sourceName>platform</sourceName>
       <destinationName>platform</destinationName>
       <dataType>String</dataType>
@@ -4828,7 +4844,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>chief_scientist</sourceName>
+      <sourceName>global:chief_scientist</sourceName>
       <destinationName>chief_scientist</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -4836,7 +4852,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>cruise_name</sourceName>
+      <sourceName>global:cruise_name</sourceName>
       <destinationName>cruise_name</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -4844,7 +4860,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>cruise_number</sourceName>
+      <sourceName>global:cruise_number</sourceName>
       <destinationName>cruise_number</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -4869,7 +4885,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>station</sourceName>
+      <sourceName>global:station</sourceName>
       <destinationName>station</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -4888,13 +4904,12 @@
     <dataVariable>
       <sourceName>event_number</sourceName>
       <destinationName>event_number</destinationName>
-      <dataType>int</dataType>
+      <dataType>String</dataType>
       <addAttributes>
         <att name="ioos_category">Other</att>
         <att name="long_name">Event Number</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
         <att name="units">1</att>
-        <att name="_FillValue" type="int">2147483647</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
