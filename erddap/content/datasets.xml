@@ -4742,7 +4742,7 @@
       <att name="institution">Bedford Institute of Oceanography (BIO)</att>
       <att name="institution">Institut océanographique de Bedford (BIO)</att>
       <att name="cdm_data_type">Profile</att>
-      <att name="cdm_profile_variables">institution,platform,chief_scientist,cruise_name,cruise_number,geographic_area,id,station,event_number,profile_direction,latitude,longitude,profile_start_time,profile_end_time</att>
+      <att name="cdm_profile_variables">platform,chief_scientist,cruise_name,cruise_number,geographic_area,id,station,event_number,profile_direction,latitude,longitude,profile_start_time,profile_end_time</att>
       <att name="Conventions">CF-1.6,CF-1.7,CF-1.8,ACDD-1.1,ACDD-1.3</att>
       <att name="creator_email">BIO.Datashop@dfo-mpo.gc.ca</att>
       <att name="creator_name">Bedford Institute of Oceanography (BIO)</att>
@@ -4775,7 +4775,7 @@
         <att name="summary">This dataset includes Conductivity, Temperature, Depth (CTD) sensor profile data collected at 51 stations during Fisheries and Oceans Canada&#39;s Maritimes Region Atlantic Zone Monitoring Program (AZMP) fall survey (HUD2020063). The survey was conducted onboard the Canadian Coast Guard Ship Hudson between October 3 and 14th, 2020, embarking at the Bedford Institute of Oceanography, Dartmouth, NS, and disembarking in Sydney, NS. A total of 52 AZMP stations across the Scotian Shelf were occupied, with sampling consisting of vertical ring net deployments for zooplankton biomass and abundance, CTD/Rosette deployments for the collection of profile data and water samples. CTD profiles were collected at 51 of these stations using a SBE-911 CTD unit with dual temperature, conductivity, and dissolved oxygen sensors, and single fluorescence (in situ chlorophyll), coloured dissolved organic matter (Colored Dissolved Organic Matter (CDOM)), pH, Photosynthetically Available Radiation (PAR), surface irradiance (ship-board), and turbidity sensors. Water samples were collected for the analysis of nutrients (nitrate, often reported as nitrate+nitrite, nitrite, phosphate, silicate, and ammonia), chlorophyll a concentration (chl) measured using Turner Fluorometry, salinity, dissolved oxygen concentration, total inorganic carbon (TIC), total alkalinity (TA), partial pressure of carbon dioxide (pCO2), pigment analyses via high performance liquid chromatography (HPLC) and light absorption spectra (ABS), and particulate organic carbon (POC) and nitrogen (PON). The data collected on this survey will be used to inform changes in the physical, chemical, and biological state and productivity on the Scotian Shelf and across the Atlantic zone. This dataset includes downcast CTD profiles only. While data are provided for both the primary and secondary temperature, salinity, and dissolved oxygen sensors, we recommend using the data from the primary sensor for analysis unless otherwise indicated in the file header. The data collected were subjected to standard quality control procedures (e.g., outlier assessment and removal and metadata review), and the salinity and dissolved oxygen bottle measurements were used to calibrate the associated sensor profile data. The pH sensor data will be calibrated at a later date and the dataset re-submitted.</att>
         -->
       <att name="standard_name_vocabulary">CF Standard Name Table v78</att>
-      <att name="subsetVariables">cruise_name, cruise_number, chief_scientist, platform, geographic_area,station, id, event_number,profile_direction,QLATD_01,QLOND_01,QALTB_01,QPRES_01,QPSAL_01,QPSAL_02,QTEMP_01,QTEMP_02,QDOXY_01,QDOXY_02,QCDOMZZ01,QCPHLPR01,QPHPH_01,QCNDC_01,QCNDC_02,QSPAR_01,QPSAR_01,QVSCTXX01,QATTNZS01,QOPTCPS01</att>
+      <att name="subsetVariables">program,project,platform_id,cruise_name, cruise_number, chief_scientist, platform, geographic_area,station, id, event_number,profile_direction,QLATD_01,QLOND_01,QALTB_01,QPRES_01,QPSAL_01,QPSAL_02,QTEMP_01,QTEMP_02,QDOXY_01,QDOXY_02,QCDOMZZ01,QCPHLPR01,QPHPH_01,QCNDC_01,QCNDC_02,QSPAR_01,QPSAR_01,QVSCTXX01,QATTNZS01,QOPTCPS01</att>
       <att name="history">null</att>
       <att name="country_code">null</att>
       <att name="cruise_description">null</att>
@@ -4909,7 +4909,6 @@
         <att name="ioos_category">Other</att>
         <att name="long_name">Event Number</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
-        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
