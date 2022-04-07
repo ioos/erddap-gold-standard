@@ -473,6 +473,15 @@ information.
 <link href="/erddap/images/erddap2.css" rel="stylesheet" type="text/css">
 <link href="/erddap/images/cioos_atlantic.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154379011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154379011-1');
+</script>
 ]]></startHeadHtml5>
 
 
