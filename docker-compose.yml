@@ -2,12 +2,15 @@ version: '2'
 services:
   erddap:
     container_name: "erddap_gold_standard"
-    image: axiom/docker-erddap:2.02
+    image: axiom/docker-erddap:2.18
     restart: unless-stopped
     ports:
       - "8080:8080"
+    environment:
+      ERDDAP_MIN_MEMORY: 1G
+      ERDDAP_MAX_MEMORY: 2G
     volumes:
-      - "${PWD}/erddap/conf/setenv.sh:/usr/local/tomcat/bin/setenv.sh"
+      - "${PWD}/erddap/conf/config.sh:/usr/local/tomcat/bin/config.sh"
       - "${PWD}/erddap/conf/robots.txt:/usr/local/tomcat/webapps/ROOT/robots.txt"
       - "${PWD}/erddap/content:/usr/local/tomcat/content/erddap"
       - "${PWD}/erddap/data:/erddapData"
