@@ -4,6 +4,7 @@
 - On-premises development
 - Working on the datasets.xml file (MD file)
   - generateDatasetsXML[.sh, .bat]
+  - dasdds[.sh, .bat]
   - Fewer iterations per concise guidance (compared with "900-950")
   - Spatial data: what's the difference in markup
   - Ownership
