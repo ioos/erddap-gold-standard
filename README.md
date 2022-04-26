@@ -1,2 +1,13 @@
-# 
-Put a brief description of this documentation repository here. You may also provide the Web URL of the documentation site, e.g. "See the website at http://ioos.github.io/name-of-you-repo/" .
+Getting Started With ERDDAP
+
+Getting Started with ERDDAP website: https://ioos.github.io/erddap-gold-standard/
+
+Maintainer(s)
+* @MathewBiddle
+
+Deploying site locally
+* See [this documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
+
+Navigate to the folder that contains the lesson, and use `bundle exec jekyll serve` to preview the lessons.
+
+If changing headers and menus `bundle exec jekyll clean` before serving.
