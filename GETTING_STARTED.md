@@ -1,3 +1,10 @@
+# Getting started with ERDDAP
+
+For local development, you will want to use Docker, as a Docker container will contain all the necessary setup for ERDDAP that would be a pain to develop a cross-platform guide for.
+
+
+
+
 - Local development (requirements, spinup, etc.)
   - Windows
   - Linux
