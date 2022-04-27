@@ -374,7 +374,8 @@ source, ssalst01, tempst01, time</att>
     </dataVariable>
 </dataset>
 ```
-Notice the `time` variable and it's associated configuration information:
+### Checking the `time` variable
+Notice the `time` variable and its associated configuration information:
 ```xml
     <dataVariable>
         <sourceName>time</sourceName>
@@ -391,6 +392,12 @@ Notice the `time` variable and it's associated configuration information:
         </addAttributes>
     </dataVariable>
 ```
+This snippet is telling ERDDAP to read the `time` column from the source `sample.csv` file and interpret it as a date-time 
+string using the format `yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;` as defined in the `units` attribute.
+
+According to the [source data file](https://github.com/HakaiInstitute/erddap-basic/blob/master/datasets/sample-dataset/sample.csv), 
+the `time` column contains values looking like `2019-04-06T00:50:10Z`.
+
 
 
 * Append xml to the end of datasets.xml
