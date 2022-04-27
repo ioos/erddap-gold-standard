@@ -459,7 +459,11 @@ For example, we know that the column `PSALST01` has units of `PSS-78` so we will
 ```
 ### Changing the datasetID
 In most cases you will want to change the `datasetID` to be reflective of your dataset identification strategy. To do 
-this adjust the `datasetID` attribute in the `dataset` start node.
+this, adjust the `datasetID` attribute in the `dataset` start node from:
+```xml
+<dataset type="EDDTableFromAsciiFiles" datasetID="datasets_6766_daf3_adf6" active="true">
+```
+to whatever your datasetID might be:
 ```xml
 <dataset type="EDDTableFromAsciiFiles" datasetID="sample" active="true">
 ```
