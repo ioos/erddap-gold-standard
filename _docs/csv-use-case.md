@@ -11,7 +11,7 @@ We will walk through loading an example dataset found at [https://github.com/Hak
 into a Docker deployed ERDDAP instance.
 
 ## Pull the data to the `datasets/` directory.
-```shell
+``` shell
 /usr/local/erddap-gold-standard/datasets$ wget https://raw.githubusercontent.com/HakaiInstitute/erddap-basic/master/datasets/sample-dataset/sample.csv
 HTTP request sent, awaiting response... 200 OK
 Length: 9051 (8.8K) [text/plain]
@@ -27,7 +27,8 @@ sample.csv
 ## Run `GenerateDatasetsXml.sh`
 Remember that everything is relative to the `erddap-gold-standard/` directory. So, if your data files are in `erddap-gold-standard/datasets/`
 your Starting Directory should be `/datasets`.
-```
+
+``` shell
 /usr/local/erddap-gold-standard/datasets$ cd ../
 /usr/local/erddap-gold-standard$ ./GenerateDatasetsXml.sh
 
@@ -396,17 +397,75 @@ This snippet is telling ERDDAP to read the `time` column from the source `sample
 string using the format `yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;` as defined in the `units` attribute.
 
 According to the [source data file](https://github.com/HakaiInstitute/erddap-basic/blob/master/datasets/sample-dataset/sample.csv), 
-the `time` column contains values looking like `2019-04-06T00:50:10Z`.
+the `time` column contains values which look like `2019-04-06T00:50:10Z`. To test if this is the correct interpretation, 
+use the [ERDDAP convert time tool](https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html).
+<div style="text-align: center"><img src="./time_convert.png" width="100" />
+</div>
+Example time conversion.
+{: style="color:gray; font-size: 80%; text-align: center;"}
+From the screenshot above, it looks like ERDDAP is correctly interpreting the time column.
+
+### Checking the `latitude`/`longitude` variables
+Similar to the `time` variable, you should verify the `latitude` and `longitude` variables are correctly interpreted by 
+GenerateDatasetsXml.sh.
+
+```xml
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+```
+
+### Checking the remaining variables
+Now you should check the remaining variables for accuracy and including any additional metadata you might have available. 
+For example, we know that the column `PSALST01` has units of `PSS-78` so we will want to add the `units` attribute to the xml file.
+```xml
+        <dataVariable>
+            <sourceName>PSALST01</sourceName>
+            <destinationName>PSALST01</destinationName>
+            <dataType>float</dataType>
+            <addAttributes>
+                <att name="ioos_category">Unknown</att>
+                <att name="long_name">PSALST01</att>
+                <att name="units">PSS-78</att>
+            </addAttributes>
+        </dataVariable>
+```
 
 
-
-* Append xml to the end of datasets.xml
-  * See /python_tools/script1insert.py
-  * Master datasets file is at /usr/local/erddap-gold-standard/erddap/content/datasets.xml
-  * Be sure to put it above the closing </erddapDatasets> tag. Don’t worry, the script takes care of that.
-* Flag the dataset for ERDDAP to load
-  * Eg.$ touch erddap/data/flag/2019_asset_inventory
-* Check ERDDAP for the new dataset (might take a little if it’s a large dataset)
+## Append xml to the end of datasets.xml
+  * See `/python_tools/script2insert.py`
+  * Master datasets file is at `/usr/local/erddap-gold-standard/erddap/content/datasets.xml`
+  * Be sure to put it above the closing `</erddapDatasets>` tag. Don’t worry, the script takes care of that.
+  * Flag the dataset for ERDDAP to load
+    * Eg.`$ touch erddap/data/flag/2019_asset_inventory`
+  * Check ERDDAP for the new dataset (might take a little if it’s a large dataset)
 
 ```
 /usr/local/erddap-gold-standard/python_tools$ python
