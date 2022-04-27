@@ -4,5 +4,4 @@ These instructions uses the [ERDDAP Docker image](https://github.com/axiom-data-
 
 
 Maintainer(s)
-
-@MathewBiddle
+  @MathewBiddle
