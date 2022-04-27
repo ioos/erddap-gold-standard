@@ -1,11 +1,18 @@
 export ERDDAP_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 export ERDDAP_DATASETS_XML=${ERDDAP_DIR}/erddap/content/datasets.xml
 export ERDDAP_DATA_DIR=${ERDDAP_DIR}/datasets
-export ERDDAP_GENDATA_DIR=${ERDDAP_DIR}/gen_datasets
+export ERDDAP_GENDATA_DIR=${ERDDAP_DIR}/generate_datasets
 if [ -z $ERDDAP_URL ]; then
-    export ERDDAP_URL=cioosatlantic.ca
+    export ERDDAP_URL=http://127.0.0.1:8080/erddap
 fi
 
+erddap_vars() {
+    echo "ERDDAP_DIR: $ERDDAP_DIR"
+    echo "ERDDAP_DATASETS_XML: $ERDDAP_DATASETS_XML"
+    echo "ERDDAP_DATA_DIR: $ERDDAP_DATA_DIR"
+    echo "ERDDAP_GENDATA_DIR: $ERDDAP_GENDATA_DIR"
+    echo "ERDDAP_URL: $ERDDAP_URL"
+}
 
 erddap_generate_datasets_xml() {
     pushd $ERDDAP_DIR
@@ -13,7 +20,8 @@ erddap_generate_datasets_xml() {
     popd
 }
 
-erddap_copy_gendata() {
+erddap_gendata_mv() {
+    # Move the latest output from GenerateDatasetXml.sh to $ERDDAP_GENDATA_DIR
     dataset_id=$1
     if [ -z $dataset_id ]; then
         echo "Usage: erddap_copy_gendata <dataset id>"
@@ -23,6 +31,19 @@ erddap_copy_gendata() {
         mv $ERDDAP_DIR/erddap/data/GenerateDatasetsXml.out $ERDDAP_GENDATA_DIR/${dataset_id}.xml
         echo "The latest generated XML has been copied to $ERDDAP_GENDATA_DIR/${dataset_id}.xml"
     fi
+}
+
+erddap_gendata_cat() {
+    # Concatenate all generated XML files together to create datasets.xml
+    mv $ERDDAP_DATASETS_XML $ERDDAP_DATASETS_XML.bak
+    cat > $ERDDAP_DATASETS_XML << EOF
+<?xml version="1.0" encoding="UTF-8" ?>
+<erddapDatasets>
+    <requestBlacklist />
+EOF
+    for xml_file in $ERDDAP_GENDATA_DIR/*.xml; do
+        cat $xml_file >>  $ERDDAP_DATASETS_XML
+    done
 }
 
 erddap_dir() {
@@ -37,12 +58,12 @@ erddap_chown_content() {
     sudo chown -R $USER ${ERDDAP_DIR}/erddap/content
 }
 
+erddap_index_html() {
+    curl "$ERDDAP_URL/index.html"
+}
+
 erddap_dataset_ids() {
-    if [ ! -z $ERDDAP_APACHE_PASS ]; then
-        curl https://$ERDDAP_URL/erddap/tabledap/allDatasets.tsv?datasetID
-    else
-        curl https://$ERDDAP_URL/erddap/tabledap/allDatasets.tsv?datasetID
-    fi
+    curl $ERDDAP_URL/tabledap/allDatasets.tsv?datasetID
 }
 
 erddap_refresh_dataset() {
