@@ -4546,7 +4546,7 @@
         <att name="subsetVariables">station_id, longitude, latitude</att>
     -->
     <addAttributes>
-      <att name="cdm_data_type">Other</att>
+      <att name="cdm_data_type">TimeSeries</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">FORCE</att>
       <att name="creator_type">institution</att>
