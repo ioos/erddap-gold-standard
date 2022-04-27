@@ -32,7 +32,7 @@ docker run --rm \
  axiom/docker-erddap:2.18
 ```
 
-or
+or, copy the .env.template file to .env, and then run:
 
 ```
 docker-compose up -d
