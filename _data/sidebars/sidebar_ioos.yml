@@ -35,6 +35,18 @@ entries:
           url: /index.html#sub-header-1
           output: web
 
-    - title: Use Cases
-      url: /use-cases.html
-      output: web
+      subfolders:
+
+# A subfolder name that contains sub-level menu items with links to 2nd document/page (note quotes are required for entries with special characters like '#')
+      - title: Use Cases
+        output: web
+
+        subfolderitems:
+
+        - title: "Overview"
+          url: /use-cases.html
+          output: web
+
+        - title: CSV
+          url: /csv-use-case.html
+          output: web
