@@ -7,32 +7,105 @@ toc: false
 summary: A more robust how-to guide for deploying, managing, and updating an erddap server.
 ---
 
-## Header 1
+This page aims to provide an easy-to-use walkthrough for standing up an ERDDAP server using the [ERDDAP Docker image](https://github.com/axiom-data-science/docker-erddap) and IOOS Gold Standard 
+Example datasets. You can view this setup live at <https://standards.sensors.ioos.us/erddap/index.html>, with dataset documentation at <https://ioos.github.io/ioos-metadata/gold-standard-examples.html>.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus. Cras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante. Etiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.
+This getting started page provides instructions and links to external resources for setting up an ERDDAP server using a single Docker image. Multi-node Kubernetes deployments are described [elsewhere](https://link_to_what_Joe_drafts).
 
-Fusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+### Docker local development for ERDDAP
+#### Install Docker 
 
-## Header 2
+Ubuntu Linux: <https://docs.docker.com/engine/install/ubuntu/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus. Cras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante. Etiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.
+Windows: <https://docs.docker.com/desktop/windows/install/>
 
-Fusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Mac: <https://docs.docker.com/desktop/mac/install/>
 
-### Sub-header 1
+#### Install Docker compose 
+For all operating system, please check : <https://docs.docker.com/compose/install/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus. Cras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante. Etiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.
+### Start the docker daemon/engine
 
-Fusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+- Windows:
+- Linux:
+  - RedHat/CentOS: ```sudo systemctl start docker``` 
+  - Ubuntu: ```sudo systemctl start docker```
+- Mac: 
+  - Run the Applications/Docker application.
 
-### Sub-header 2
+### Linux/Mac/Windows
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus. Cras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante. Etiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.
 
-Fusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+1. Create a folder to clone the ERDDAP repository into, or just into your home directory (***ps.*** There are several ways to clone repositories available on GitHub. Please check [here](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)):
 
-## Header 3
+	```
+	cd ~
+	git clone git@github.com:ioos/erddap-gold-standard.git
+	cd erddap-gold-standard
+	docker-compose up -d
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus. Cras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante. Etiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.
+	```
 
-Fusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+2. You should be able to see something similar to the following:
+
+	```
+	Creating network "erddap-gold-standard_default" with the default driver
+	Pulling erddap (axiom/docker-erddap:2.18)...
+	2.18: Pulling from axiom/docker-erddap
+	Digest: sha256:1ae5c7637ba14db60c5a0cd143e9fc1eb4115cdd8f030f40b22d1fdbea919ba3
+	Status: Downloaded newer image for axiom/docker-erddap:2.18
+	Creating erddap_gold_standard ... done
+	```
+
+3. Connecting to your new ERDDAP server:
+
+	In your web browser navigate to <http://localhost:8080/erddap/index.html>. You should now see the standard ERDDAP Website [![Standard ERDDAP Website](https://i.imgur.com/Ae9vWmH.png?raw=true "Standard ERDDAP Website")](https://i.imgur.com/Ae9vWmH.png?raw=true)
+
+## Working on the datasets.xml file (MD file)
+
+### Sample Datasets
+
+#### NetCDF
+
+#### CSV
+
+Sample dataset:
+<https://github.com/HakaiInstitute/erddap-basic/blob/master/datasets/sample-dataset/sample.csv>
+
+Sample datasets.xml config:
+<https://github.com/HakaiInstitute/erddap-basic/blob/master/datasets/sample-dataset/sample.csv>
+
+- Putting the file in the datasets/ folder
+- Running GenerateDatasetsXml.sh
+- Mapping column names
+- Adding units
+
+### generateDatasetsXML[.sh, .bat]
+
+- To run GenerateDatasetsXml.sh within your Docker environment:
+
+    `bash GenerateDatasetsXml.sh`
+
+- If this was successful, it will create a snippet which is output to logs folder. Paste that snipped into the file `/erddap/content/datasets.xml`. 
+
+
+- What is a "best practice" to cp/append the output from `GenerateDatasetsXml.sh` into `/erddap/content/datasets.xml`?
+
+- ?? Make sure to add the text between ...?
+     
+     ```xml
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+        
+    </erddapDatasets>
+        <requestBlacklist />
+        <dataset type="EDDTableFromMultidimNcFiles" datasetID="morro-bay-bs1-met" active="true"...>
+        <dataset type="EDDTableFromMultidimNcFiles" datasetID="org_cormp_cap2" active="true"...>
+        <dataset type="EDDTableFromMultidimNcFiles" datasetID="org_cormp_cap2" active="true"...>
+        <dataset ... ???your new dataset goes here??? ... >
+    </erddapDatasets>     
+    ```
+          
+- Do you we need to append that text every time a new dataset is generated? 
+
+
+- Reload ERDDAP-docker, by running:`docker-compose restart` 
