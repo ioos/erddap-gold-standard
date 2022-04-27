@@ -1,3 +1,10 @@
+---
+title: "ERDDAP Utilities"
+keywords: homepage
+tags: [utilities]
+toc: true
+summary: Some useful utilities
+---
 
 # ERDDAP Utilities
 
@@ -62,7 +69,7 @@ usf_comps_c10_inwater
 morro-bay-bs1-met
 ```
 
-# ERDDAP Logs
+## ERDDAP Logs
 
 To show the Docker-based logs:
 
@@ -76,7 +83,7 @@ To show the `/erddapData/logs/log.txt` output, which is useful when adding new d
 erddap_log_data
 ```
 
-# Refreshing datasets
+## Refreshing datasets
 
 ERDDAP caches your datasets so changes may not show up. In that case you can refresh the dataset using the hardFlag with:
 
