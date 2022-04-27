@@ -20,13 +20,7 @@ entries:
 
 # Top-level menu item #1
     - title: Homepage Header 1
-
-# A link to the 1st rendered document; consists of '/'+'markdown-document-name'+'.html'[+'#'+'any-header-or-other-anchor-on-the-page'
       url: /index.html#header-1
-      output: web
-
-    - title: Homepage Header 2
-      url: /index.html#header-2
       output: web
 
       subfolders:
@@ -41,10 +35,6 @@ entries:
           url: /index.html#sub-header-1
           output: web
 
-        - title: "Sub-header #2"
-          url: /index.html#sub-header-2
-          output: web
-
-    - title: Homepage Header 3
-      url: /index.html#header-3
+    - title: Use Cases
+      url: /use-cases.html
       output: web
