@@ -19,21 +19,9 @@ entries:
       output: web
 
 # Top-level menu item #1
-    - title: Homepage Header 1
-      url: /index.html#header-1
+    - title: Utilities
+      url: /erddap-utils.html
       output: web
-
-      subfolders:
-
-# A subfolder name that contains sub-level menu items with links to 2nd document/page (note quotes are required for entries with special characters like '#')
-      - title: Sub-headers
-        output: web
-
-        subfolderitems:
-
-        - title: "Sub-header #1"
-          url: /index.html#sub-header-1
-          output: web
 
       subfolders:
 
