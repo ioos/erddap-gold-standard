@@ -59,7 +59,7 @@ For all operating system, please check : https://docs.docker.com/compose/install
 
 ```
 cd ~
-git clone git@github.com:ioos/erddap-gold-standard.git
+git clone https://github.com/ioos/erddap-gold-standard.git
 cd erddap-gold-standard
 docker-compose up -d
 
