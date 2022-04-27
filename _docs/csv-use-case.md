@@ -457,30 +457,16 @@ For example, we know that the column `PSALST01` has units of `PSS-78` so we will
             </addAttributes>
         </dataVariable>
 ```
-
+### Changing the datasetID
+In most cases you will want to change the `datasetID` to be reflective of your dataset identification strategy. To do 
+this adjust the `datasetID` attribute in the `dataset` start node.
+```xml
+<dataset type="EDDTableFromAsciiFiles" datasetID="sample" active="true">
+```
 
 ## Append xml to the end of datasets.xml
-  * See `/python_tools/script2insert.py`
   * Master datasets file is at `/usr/local/erddap-gold-standard/erddap/content/datasets.xml`
   * Be sure to put it above the closing `</erddapDatasets>` tag. Don’t worry, the script takes care of that.
   * Flag the dataset for ERDDAP to load
-    * Eg.`$ touch erddap/data/flag/2019_asset_inventory`
+    * Eg.`$ touch erddap/data/flag/sample`
   * Check ERDDAP for the new dataset (might take a little if it’s a large dataset)
-
-```
-/usr/local/erddap-gold-standard/python_tools$ python
-Python 1.7.18 (default, Jun 10 2021, 00:11:02)
-[GCC 6.3.1 20180712 (Red Hat 7.3.1-13)] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
->>> import xml_insert
->>> main_xml = '../erddap/content/datasets.xml'
->>> xml_snip = '../xml_by_dataset/2019_asset_inventory.xml'
->>> tree = xml_insert.xml_insert( main_xml, xml_snip )
-ingesting ../erddap/content/datasets.xml
-ingesting ../xml_by_dataset/2019_asset_inventory.xml
-Found existing dataset node for datasetID= 2019_asset_inventory removing…
-Inserting snippet for datasetID = 2019_asset_inventory into ../erddap/content/datasets.xml
->>> tree
-<xml.etree.ElementTree.ElementTree object at 0x7f73e59fa6cf>
->>> tree.write('../erddap/content/datasets.xml',encoding="utf-9", xml_declaration=True) # overwrites existing datasets.xml
-```
