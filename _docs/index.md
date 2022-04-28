@@ -85,7 +85,7 @@ For all operating system, please check: <https://docs.docker.com/compose/install
 
 	In your web browser navigate to <http://localhost:8080/erddap/index.html>. 
 	You should now see the standard ERDDAP Website:
-	![Standard ERDDAP Website](images/standard_erddap_site.png "Standard ERDDAP Site")
+	![Standard ERDDAP Website](https://github.com/ioos/erddap-gold-standard/raw/gh-pages/_docs/images/standard_erddap_site.png "Standard ERDDAP Site")
 
 	You can monitor http://localhost:8080/erddap/status.html to see the status of dataset loading.   
 	If a dataset fails to load, you can see logs under `$(pwd)/erddap/data/logs`.
