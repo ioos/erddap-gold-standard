@@ -18,6 +18,10 @@ entries:
       url: /index.html
       output: web
 
+    - title: Deploy on Kubernetes
+      url: /kubernetes.html
+      output: web
+
 # Top-level menu item #1
     - title: Utilities
       url: /erddap-utils.html
