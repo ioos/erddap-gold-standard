@@ -8,14 +8,14 @@ summary: A how-to guide for adding datasets to an ERDDAP server.
 ---
 
 ## Adding a new dataset
-The [Use Cases](use-cases.md) page demonstrates how to ingest a few common data types into ERDDAP. Examples currently include datasets imported from NetCDF, CSV, and from an EML metadata file.
+The [Use Cases](/erddap-gold-standard/use-cases.html) page demonstrates how to ingest a few common data types into ERDDAP. Examples currently include datasets imported from NetCDF, CSV, and from an EML metadata file.
 
-### Working on the datasets.xml file
+### Working on the `datasets.xml` file
 
 From the [canonical ERDDAP docs](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html): 
 > After you have followed the ERDDAP installation instructions, you must edit the datasets.xml file in tomcat/content/erddap/ to describe the datasets that your ERDDAP installation will serve.
 
-###  Run GenerateDatasetsXML[.sh, .bat]
+###  Run `GenerateDatasetsXML.sh`
 Remember that everything is relative to the `erddap-gold-standard/` directory. So, if your data files are in `erddap-gold-standard/datasets/`
 your **Starting Directory** should be `/datasets`.
 
@@ -25,9 +25,9 @@ your **Starting Directory** should be `/datasets`.
 $ ./GenerateDatasetsXml.sh
 ```
 
-## Inspect and edit xml created by GenerateDatasetsXml.sh
-If successful, GenerateDatasetsXml.sh will have created the file `/logs/GenerateDatasetsXml.out` which contains a 
-template of what the datasets.xml snippet should be for the dataset provided.
+## Inspect and edit xml created by `GenerateDatasetsXml.sh`
+If successful, `GenerateDatasetsXml.sh` will have created the file `/logs/GenerateDatasetsXml.out` which contains a 
+template of what the `datasets.xml` snippet should be for the dataset provided.
 
 ### Things to check for:
 1. Check the `license` attribute and ensure it correctly depicts your organizations licensing policy.

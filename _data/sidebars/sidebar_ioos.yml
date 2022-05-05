@@ -3,21 +3,18 @@
 entries:
 - title: sidebar
   product: Menu
-  levels: two
+  levels: three
   version:
   folders:
 
 # Always visible folder name that contains top-level menu items with links to 1st document/page
   - title: Homepage
     output: web, pdf
-
     folderitems:
-
 # A link to the top of the homepage (causes accordion to be open by default)
-    - title: Quickstart
+    - title: Quick start
       url: /index.html
       output: web
-
       subfolders:
         - title: Other deployment options
           output: web
@@ -25,32 +22,25 @@ entries:
             - title: Kubernetes
               url: /kubernetes.html
               output: web
-
-    - title: Add datasets to ERDDAP
-      url: /adding-datasets.html
-      output: web
-
+        - title: Add datasets to ERDDAP
+          output: web
+          subfolderitems:
+            - title: Overview
+              url: /adding-datasets.html
+              output: web
+            - title: Use Cases
+              url: /use-cases.html
+              output: web
+            - title: CSV files
+              url: /csv-use-case.html
+              output: web
+            - title: netCDF files
+              url: /nc-example.html
+              output: web
     - title: Customize your ERDDAP
       url: /modify-erddap.html
       output: web
-
 # Top-level menu item #1
     - title: Some useful utilities
       url: /erddap-utils.html
       output: web
-
-      subfolders:
-
-# A subfolder name that contains sub-level menu items with links to 2nd document/page (note quotes are required for entries with special characters like '#')
-      - title: Common dataset loading examples
-        output: web
-
-        subfolderitems:
-
-        - title: "Overview"
-          url: /use-cases.html
-          output: web
-
-        - title: CSV
-          url: /csv-use-case.html
-          output: web
