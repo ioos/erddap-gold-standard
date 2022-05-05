@@ -14,23 +14,35 @@ entries:
     folderitems:
 
 # A link to the top of the homepage (causes accordion to be open by default)
-    - title: Overview
+    - title: Quickstart
       url: /index.html
       output: web
 
-    - title: Deploy on Kubernetes
-      url: /kubernetes.html
+      subfolders:
+        - title: Other deployment options
+          output: web
+          subfolderitems:
+            - title: Kubernetes
+              url: /kubernetes.html
+              output: web
+
+    - title: Add datasets to ERDDAP
+      url: /adding-datasets.html
+      output: web
+
+    - title: Customize your ERDDAP
+      url: /modify-erddap.html
       output: web
 
 # Top-level menu item #1
-    - title: Utilities
+    - title: Some useful utilities
       url: /erddap-utils.html
       output: web
 
       subfolders:
 
 # A subfolder name that contains sub-level menu items with links to 2nd document/page (note quotes are required for entries with special characters like '#')
-      - title: Use Cases
+      - title: Common dataset loading examples
         output: web
 
         subfolderitems:
