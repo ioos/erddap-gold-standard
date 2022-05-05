@@ -4,7 +4,7 @@ keywords: homepage
 tags: [getting_started, about, overview]
 toc: true
 #permalink: index.html
-summary: A more robust how-to guide for deploying, managing, and updating an erddap server.
+summary: A how-to guide for deploying, managing, and updating an ERDDAP server.
 ---
 
 This page aims to provide an easy-to-use walkthrough for standing up an ERDDAP server using the [ERDDAP Docker image](https://github.com/axiom-data-science/docker-erddap) and IOOS Gold Standard 
@@ -12,7 +12,17 @@ Example datasets. You can view this setup live at <https://standards.sensors.ioo
 
 This getting started page provides instructions and links to external resources for setting up an ERDDAP server using a single Docker image. Multi-node Kubernetes deployments are described [elsewhere](/erddap-gold-standard/kubernetes.html).
 
-## Download this Repo
+## Requirements
+There are a few items you need to have installed on your system to deploy ERDDAP using this repository.
+
+1. Git: <https://git-scm.com/>
+2. Docker: <https://www.docker.com/>
+   1. Ubuntu Linux: <https://docs.docker.com/engine/install/ubuntu/>
+   2. Windows: <https://docs.docker.com/desktop/windows/install/>
+   3. Mac: <https://docs.docker.com/desktop/mac/install/>
+3. _(optional)_ Docker compose: <https://docs.docker.com/compose/install/>
+
+## Step 1: Download this Repo
 
 Create a folder to clone the ERDDAP repository into, or just into your home directory. For more help on cloning repositories available on GitHub, please check [here](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories).
 
@@ -29,28 +39,17 @@ $ ls -Ap
 .git/          ArchiveADataset.sh  datasets/  erddap/             GenerateDatasetsXml.sh
 ```
 
-## Docker local development for ERDDAP
-### Install Docker 
+## Step 2: Start the Docker daemon/engine
 
-Ubuntu Linux: <https://docs.docker.com/engine/install/ubuntu/>
-
-Windows: <https://docs.docker.com/desktop/windows/install/>
-
-Mac: <https://docs.docker.com/desktop/mac/install/>
-
-### Install Docker compose 
-For all operating systems, take a look at: <https://docs.docker.com/compose/install/>
-
-### Start the docker daemon/engine
-
-- Windows:
+- Windows: 
+   -  Search for Docker, and select **Docker Desktop** in the search results.
 - Linux:
   - RedHat/CentOS: ```sudo systemctl start docker``` 
   - Ubuntu: ```sudo systemctl start docker```
 - Mac: 
-  - Run the Applications/Docker application.
+  - Double-click **Docker.app** in the Applications folder to start Docker.
 
-## Deploy ERDDAP locally
+## Step 3: Deploy ERDDAP locally
 1. Run it! 
     ```shell
     $ docker run --rm \
@@ -66,14 +65,15 @@ For all operating systems, take a look at: <https://docs.docker.com/compose/inst
      axiom/docker-erddap:2.18
     ```
 
-    or, copy the .env.template file to .env, and then run:
+    or, copy the `.env.template` file to `.env`, and then run:
 
     ```shell
     $ docker-compose up -d
     ```
-   1. Remember, when you run ERDDAP from the docker container, various configuration files will be mounted into the 
+   1. Remember, when you run ERDDAP from the Docker container, various configuration files will be mounted into the 
       container from your local system. Review the various mount points (`-v` flags in your `docker run`/`docker-compose.yml`)
       to ensure you know where the appropriate files are coming from and going to.
+
 2. You should be able to see something similar to the following:
 
     ```shell
@@ -91,19 +91,19 @@ For all operating systems, take a look at: <https://docs.docker.com/compose/inst
     You should now see the standard ERDDAP Website:
     ![Standard ERDDAP Website](https://github.com/ioos/erddap-gold-standard/raw/gh-pages/_docs/images/standard_erddap_site.png "Standard ERDDAP Site")
 
-    You can monitor [http://localhost:8080/erddap/status.html](http://localhost:8080/erddap/status.html) to see the status of dataset loading.   
+    You can monitor <http://localhost:8080/erddap/status.html> to see the status of dataset loading.   
 	
 ## Modifying ERDDAP
 
 These instructions are minimal, and are intended to get you up and running quickly so that you can test out ERDDAP.  
-For full instructions on how to set up your own ERDDAP server, see [https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html](https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html).
+For full instructions on how to set up your own ERDDAP server, see <https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html>.
 
 ### Configuration files overview
 
 * `datasets/` -- Sample datasets. This is where you put your source data files to be loaded in ERDDAP.
 * `erddap/`
     * `erddap/conf/`
-      * `erddap/conf/config.sh` -- [ERDDAP configuration](https://github.com/axiom-data-science/docker-erddap#erddap)
+      * `erddap/conf/config.sh` -- [ERDDAP configuration using Environment Variables](https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html#setupEnvironmentVariables), see [below](#update-configsh) for more details.
       * `erddap/conf/robots.txt` -- [Search engine crawler config](https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html#robots)
     * `erddap/content/`
       * `erddap/content/datasets.xml` -- [Datasets configuration](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html), references data in `datasets/` above
@@ -231,4 +231,4 @@ Examples of a few other useful commands are provided on the [ERDDAP Utilities](/
 ## FAQ
 
 * If a dataset fails to load, you can see logs under `/erddap/data/logs`.
-* ERDDAP caches datasets, so if you change one, you can force refresh by using the hardFlag system. For example `touch /erddap/data/hardFlag/41024-sun2-sunset-nearshore`.  
+* ERDDAP caches datasets, so if you change one, you can force refresh by using the hardFlag system. For example `touch /erddap/data/hardFlag/41024-sun2-sunset-nearshore`. 
