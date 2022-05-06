@@ -102,6 +102,6 @@ $ ls -Ap
 Once you have successfully deployed an ERDDAP using the Docker instance, it's time to start testing out what you can do. 
 Below are links to a few of the topics that might be of interest:
 * [Adding datasets to ERDDAP](/erddap-gold-standard/adding-datasets.html) - How to add new datasets to ERDDAP
-* [Customizing your ERDDAP](/erddap-gold-standard/modify-erddap.html) - How to configure ERDDAP using environment variables.
+* [Customizing your ERDDAP](/erddap-gold-standard/customize-erddap.html) - How to configure ERDDAP using environment variables.
 * [Updating ERDDAP](/erddap-gold-standard/update-erddap.html) - How to update ERDDAP when using Docker.
 * [Useful utilities](/erddap-gold-standard/erddap-utils.html) - Examples of a few other useful commands.

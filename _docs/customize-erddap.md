@@ -1,15 +1,14 @@
 ---
-title: "Modifying ERDDAP"
+title: "Customize your ERDDAP"
 keywords: customize
 tags: [modify, customize]
 toc: true
 #permalink: index.html
 summary: A how-to guide for modifying an ERDDAP server.
 ---
-## Modifying ERDDAP
+## Customizing ERDDAP
 
-These instructions are minimal, and are intended to get you up and running quickly so that you can test out ERDDAP.  
-For full instructions on how to set up your own ERDDAP server, see <https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html>.
+These are minimal instructions for customizing ERDDAP and are intended to get you up and running quickly so that you can test out ERDDAP.
 
 ### Configuration files overview
 

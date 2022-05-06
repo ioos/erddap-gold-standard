@@ -35,7 +35,7 @@ entries:
               url: /nc-use-case.html
               output: web
     - title: Customize your ERDDAP
-      url: /modify-erddap.html
+      url: /customize-erddap.html
       output: web
     - title: Update ERDDAP
       url: /update-erddap.html

@@ -104,8 +104,9 @@ If you want to refresh all of the datasets in your ERDDAP, you can always reload
 ```shell
 $ docker-compose restart
 ```
+* Note that this isn't a great option for a public server.
 
 ## FAQ
 
 * If a dataset fails to load, you can see logs under `/erddap/data/logs`.
-* ERDDAP caches datasets, so if you change one, you can force refresh by using the hardFlag system. For example `touch /erddap/data/hardFlag/41024-sun2-sunset-nearshore`. 
+* If a dataset fails to load, visit <http://localhost:8080/erddap/status.html> (which flushes log information to the log file), then look for an error message related to the dataset in `/erddap/data/logs/log.txt`.
