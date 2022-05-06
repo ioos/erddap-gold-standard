@@ -7,27 +7,40 @@ toc: true
 summary: A how-to guide for adding datasets to an ERDDAP server.
 ---
 
-## Adding a new dataset
-The [Use Cases](use-cases.md) page demonstrates how to ingest a few common data types into ERDDAP. Examples currently include datasets imported from NetCDF, CSV, and from an EML metadata file.
+## Requirements
+* ERDDAP is deployed using the Docker container as described in the [Quick Start](/erddap-gold-standard/index.html).
 
-### Working on the datasets.xml file
+## Adding a new dataset
+A wide variety of data can be accepted by ERDDAP. To see a comprehensive list, check the ERDDAP source documentation on [datasetTypes](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#datasetTypes). 
+In this page we walk through the overall process for adding a dataset to a Docker deployed ERDDAP.
+
+For specific examples on how to ingest a few common data types into ERDDAP, see the following pages:
+* [NetCDF](/erddap-gold-standard/nc-use-case.html)
+* [CSV](/erddap-gold-standard/csv-use-case.html)
+* EML metadata file - TBD
+
+### Working on the `datasets.xml` file
 
 From the [canonical ERDDAP docs](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html): 
 > After you have followed the ERDDAP installation instructions, you must edit the datasets.xml file in tomcat/content/erddap/ to describe the datasets that your ERDDAP installation will serve.
 
-###  Run GenerateDatasetsXML[.sh, .bat]
+`datasets.xml` is the master configuration file for all of the datasets you will be serving through ERDDAP. As such, 
+this file will become large and difficult to manage. It is recommended that ERDDAP administrators store each dataset's xml 
+snippet separately, then use a tool to combine all of the xml snippets into a master `datasets.xml`. See [adding xml snippet to datasets.xml](#adding-xml-snippet-to-datasetsxml) for options.
+
+###  Run `GenerateDatasetsXML.sh`
 Remember that everything is relative to the `erddap-gold-standard/` directory. So, if your data files are in `erddap-gold-standard/datasets/`
 your **Starting Directory** should be `/datasets`.
 
-- To run [GenerateDatasetsXml.sh](https://github.com/ioos/erddap-gold-standard/blob/master/GenerateDatasetsXml.sh) within your Docker environment:
+- To run [GenerateDatasetsXml.sh](https://github.com/ioos/erddap-gold-standard/blob/master/GenerateDatasetsXml.sh) using Docker:
 
 ```shell
 $ ./GenerateDatasetsXml.sh
 ```
 
-## Inspect and edit xml created by GenerateDatasetsXml.sh
-If successful, GenerateDatasetsXml.sh will have created the file `/logs/GenerateDatasetsXml.out` which contains a 
-template of what the datasets.xml snippet should be for the dataset provided.
+## Inspect and edit xml created by `GenerateDatasetsXml.sh`
+If successful, `GenerateDatasetsXml.sh` will have created the file `/logs/GenerateDatasetsXml.out` which contains a 
+template of what the `datasets.xml` snippet should be for the dataset provided.
 
 ### Things to check for:
 1. Check the `license` attribute and ensure it correctly depicts your organizations licensing policy.
@@ -38,23 +51,42 @@ template of what the datasets.xml snippet should be for the dataset provided.
 4. 
 
 ## Adding xml snippet to datasets.xml
-- What is a "best practice" to cp/append the output from `GenerateDatasetsXml.sh` into `/erddap/content/datasets.xml`?
+Now that you have your xml snippet ready to go, we need to add that xml snippet to datasets.xml. There are various ways you 
+can go about doing this, including: copy and paste the xml (prone to errors in xml syntax), concatenating files together, or 
+using a programming language to build the final file. Below are two examples
 
-- Make sure to add the text between ...
-     
-     ```xml
-    <?xml version="1.0" encoding="ISO-8859-1" ?>
-        
-    </erddapDatasets>
-        <requestBlacklist />
-        <dataset type="EDDTableFromMultidimNcFiles" datasetID="morro-bay-bs1-met" active="true"...>
-        <dataset type="EDDTableFromMultidimNcFiles" datasetID="org_cormp_cap2" active="true"...>
-        <dataset type="EDDTableFromMultidimNcFiles" datasetID="org_cormp_cap2" active="true"...>
-        <dataset ... ???your new dataset goes here??? ... >
-    </erddapDatasets>     
-    ```
-          
-- Do we need to append that text every time a new dataset is generated? 
+### Use the shell command [`cat`](https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html) to concatenate all of the xml snippets together:
+```shell
+$ ls
+01-head.xml  dataset1.xml  dataset2.xml  tail.xml
+$ cat 01-head.xml dataset1.xml dataset2.xml tail.xml > datasets.xml
+$ cp datasets.xml erddap/content/datasets.xml
+```
+### Use Python's [`xml.etree.ElementTree`](https://docs.python.org/3/library/xml.etree.elementtree.html) package to insert elements into a template:
+```python
+import xml.etree.ElementTree as ET
+
+main_xml = '/erddap/content/datasets.xml'
+xml_snip = '/logs/GenerateDatasetsXml.out'
+
+# read master datasets.xml
+main_tree = ET.parse(main_xml)
+main_root = main_tree.getroot()
+
+# read individual xml snippet for one dataset
+snip_tree = ET.parse(xml_snip)
+snip_root = snip_tree.getroot()
+
+# insert snippet into master datasets.xml
+main_root.append(snip_root)
+
+# write a new master datasets.xml
+main_tree.write('datasets.xml', encoding="utf-8")
+```
+Then copy the new datasets.xml to the old one:
+```shell
+$ cp datasets.xml erddap/content/datasets.xml
+```
 
 ## Loading/Refreshing the dataset in ERDDAP
 

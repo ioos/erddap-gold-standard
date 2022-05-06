@@ -1,34 +1,40 @@
 ---
-title: "Use cases"
+title: "Adding a NetCDF file to ERDDAP"
 keywords: homepage
-tags: [examples, use cases]
+tags: [getting_started, netcdf]
 toc: true
-summary: Examples for loading different types of files into ERDDAP.
+#permalink: index.html
+summary: NC file info stripped out of README.md
 ---
 
-# Use cases
+## Requirements
+* ERDDAP is deployed using the Docker container as described in the [Quick Start](/erddap-gold-standard/index.html).
+* You have access to the source netCDF file.
 
-## netCDF
+## Adding a new dataset
 
-### Steps Summary:
+### Steps
 
-1. Add your `.nc` file to `datasets/`.
-2. Run `sh GenerateDatasetsXml.sh`. Results will output to the console and `logs/`.
-3. Copy the resulting `<dataset>` to `erddap/content/datasets.xml`
-4. Restart ERDDAP
+1. Add your `nc` file to `datasets/`.
+2. Run `GenerateDatasetsXml.sh`. Results will output to the console and `logs/`.
+   ```shell
+   $ ./GenerateDatasetsXml.sh
+   ```
+4. Copy the resulting dataset xml snippet to `erddap/content/datasets.xml`
+5. [Flag dataset for reloading/Restart ERDDAP.](/erddap-gold-standard/adding-datasets.html#loadingrefreshing-the-dataset-in-erddap)
 
-### Example - netCDF
+### Example
 
 1. Say you have a file called `seward-sealife-center-astra.nc` that you've added to `datasets/`.
 
 2. Navigate to your `~/erddap-gold-standard` directory and run the following command: 
 
     ```shell
-    sh GenerateDatasetsXml.sh
+    $ ./GenerateDatasetsXml.sh
     ```
-+ You should be able to see something similar to this: 
+    You should be able to see something similar to this: 
 
-    ```shell
+    ```text
     *** GenerateDatasetsXml ***
     Press Enter or type the word "default" (but without the quotes)
       to get the default value.
@@ -70,7 +76,7 @@ summary: Examples for loading different types of files into ERDDAP.
 
 4. Start answering ERDDAP questions:
 
-   ```shell
+   ```text
    Which EDDType (default="EDDGridFromDap")
    ? EDDTableFromMultidimNcFiles
    Starting directory (default="")
@@ -136,13 +142,6 @@ summary: Examples for loading different types of files into ERDDAP.
 # TODO
 
 5. Copy the results from `GenerateDatasetsXml.out` into `~/erddap-gold-standard/erddap/content/datasets.xml`.
-
-% Is there any "best practice" to copy/append those results into `datasets.xml`? I noticed some indentation problems
-while copying and paste by using ctrl-c ctrl-v...
-
-% I am not sure whether the following is correct. 
-% Please make sure that the <dataset> text........ blablahblah....  
-
    ```xml
    <?xml version="1.0" encoding="ISO-8859-1" ?>
       
@@ -158,11 +157,17 @@ while copying and paste by using ctrl-c ctrl-v...
 ---
 
 6. Reload ERDDAP by typing the following command:
-
    ```shell
-   docker-compose restart
+   $ docker-compose restart
    ```
 
-## CSV
+### Troubleshooting
 
-## EML
+The `DasDds` tool can help you find errors in datasets.xml, it is an interactive tool that will prompt you for a dataset ID.
+
+```shell
+$ sh DasDds.sh
+```
+
+
+You can find a log of what happened at `logs/DasDds.out`
