@@ -84,7 +84,7 @@ erddap_log_data
 
 ## Refreshing datasets
 
-ERDDAP caches your datasets so changes may not show up. In that case you can refresh the dataset using the hardFlag with:
+ERDDAP caches information about datasets so changes may not show up. In that case, you can fully refresh a dataset using a `hardFlag` with:
 
 ```
 erddap_refresh_dataset <dataset id>

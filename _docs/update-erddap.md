@@ -26,4 +26,5 @@ summary: Guide on how to update ERDDAP
 7. Check <http://localhost:8080/erddap/status.html> to see the status of your ERDDAP.
 
 ## What to do if something breaks
-1. Check the log files at `/erddap/data/logs/`.
+1. If there is a problem, visit <http://localhost:8080/erddap/status.html> (which flushes log information to the log file), then look for
+an error message related to the dataset in `/erddap/data/logs/log.txt`.
