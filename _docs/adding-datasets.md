@@ -12,7 +12,7 @@ summary: A how-to guide for adding datasets to an ERDDAP server.
 
 ## Adding a new dataset
 A wide variety of data can be accepted by ERDDAP. To see a comprehensive list, check the ERDDAP source documentation on [datasetTypes](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#datasetTypes). 
-In this documentation we walk through the overall process for adding a dataset to a Docker deployed ERDDAP.
+In this page we walk through the overall process for adding a dataset to a Docker deployed ERDDAP.
 
 For specific examples on how to ingest a few common data types into ERDDAP, see the following pages:
 * [NetCDF](/erddap-gold-standard/nc-use-case.html)

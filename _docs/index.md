@@ -12,6 +12,9 @@ Example datasets. You can view this setup live at <https://standards.sensors.ioo
 
 This getting started page provides instructions and links to external resources for setting up an ERDDAP server using a single Docker image. [Multi-node Kubernetes deployments](/erddap-gold-standard/kubernetes.html) are linked to under the **Other deployment** options sidebar.
 
+While this is intended to help get you started quickly, it is highly recommended that any ERDDAP administrator becomes comfortable with the 
+source ERDDAP documentation at: <https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html>
+
 ## Requirements
 There are a few items you need to have installed on your system to deploy ERDDAP using the <https://github.com/ioos/erddap-gold-standard> repository.
 
