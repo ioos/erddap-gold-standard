@@ -40,6 +40,9 @@ entries:
     - title: Customize your ERDDAP
       url: /modify-erddap.html
       output: web
+    - title: Update ERDDAP
+      url: /update-erddap.html
+      output: web
 # Top-level menu item #1
     - title: Some useful utilities
       url: /erddap-utils.html
