@@ -28,13 +28,10 @@ entries:
             - title: Overview
               url: /adding-datasets.html
               output: web
-            - title: Use Cases
-              url: /use-cases.html
-              output: web
-            - title: CSV files
+            - title: CSV example
               url: /csv-use-case.html
               output: web
-            - title: netCDF files
+            - title: netCDF example
               url: /nc-use-case.html
               output: web
     - title: Customize your ERDDAP
