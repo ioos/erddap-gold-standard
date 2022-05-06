@@ -6,6 +6,8 @@ layout: default
    <h1 class="post-title-main">{{ page.title }}</h1>
 </div>
 
+<div ><h5>This is IOOS's unofficial ERDDAP setup guide specifically geared to ERDDAP administrators who want to set up ERDDAP using Docker. For non-Docker installations and/or for the complete, official, ERDDAP setup guide, see <a href="https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html">https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html</a></h5></div>
+
 {% if page.simple_map == true %}
 
 <script>
@@ -34,8 +36,6 @@ layout: default
     <div class="summary">{{page.summary}}</div>
    {% endif %}
 
-    <div style="background-color:lightblue;">This is IOOS's unofficial ERDDAP setup guide specifically geared to ERDDAP administrators who want to set up ERDDAP using Docker. For non-Docker installations and/or for the complete, official, ERDDAP setup guide, see <a href="https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html">https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html</a></div>
-    <br />
     {% unless page.toc == false %}
     {% include toc.html %}
     {% endunless %}
