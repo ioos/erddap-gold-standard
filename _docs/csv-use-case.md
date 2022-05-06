@@ -6,7 +6,12 @@ toc: true
 summary: Examples for loading CSV files into ERDDAP.
 ---
 
-# Overview
+## Requirements
+* ERDDAP is deployed using the Docker container as described in the [Quick Start](/erddap-gold-standard/index.html).
+* Access to the source csv file.
+* Access to applicable metadata.
+
+## Overview
 We will walk through loading an example dataset found at [https://github.com/HakaiInstitute/erddap-basic/blob/master/datasets/sample-dataset/sample.csv](https://github.com/HakaiInstitute/erddap-basic/blob/master/datasets/sample-dataset/sample.csv) 
 into a Docker deployed ERDDAP instance.
 
@@ -203,7 +208,7 @@ Once you can successfully run GenerateDatasetsXml.sh it’s time to load the dat
 If successful, GenerateDatasetsXml.sh will have created the file `logs/GenerateDatasetsXml.out` which contains a 
 template of what the datasets.xml snippet should be for the dataset provided.
 
-This template should be updated to include additional metadata and ensure the assumptions GenerateDatasetsXml.sh are 
+This template should be updated to include additional metadata and ensure the assumptions GenerateDatasetsXml.sh made are 
 correct.
 ```xml
 /usr/local/erddap-gold-standard$ more logs/GenerateDatasetsXml.out
@@ -469,7 +474,7 @@ to whatever your datasetID might be:
 ```
 
 ## Append xml to the end of datasets.xml
-  * Master datasets file is at `/usr/local/erddap-gold-standard/erddap/content/datasets.xml`
+  * Master datasets file is at `~/erddap-gold-standard/erddap/content/datasets.xml`
   * Be sure to put it above the closing `</erddapDatasets>` tag. Don’t worry, the script takes care of that.
   * Flag the dataset for ERDDAP to load
     * Eg.`$ touch erddap/data/flag/sample`

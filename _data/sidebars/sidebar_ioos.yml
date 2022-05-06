@@ -35,7 +35,7 @@ entries:
               url: /csv-use-case.html
               output: web
             - title: netCDF files
-              url: /nc-example.html
+              url: /nc-use-case.html
               output: web
     - title: Customize your ERDDAP
       url: /modify-erddap.html

@@ -7,6 +7,9 @@ toc: true
 summary: A how-to guide for adding datasets to an ERDDAP server.
 ---
 
+## Requirements
+* ERDDAP is deployed using the Docker container as described in the [Quick Start](/erddap-gold-standard/index.html).
+
 ## Adding a new dataset
 The [Use Cases](/erddap-gold-standard/use-cases.html) page demonstrates how to ingest a few common data types into ERDDAP. Examples currently include datasets imported from NetCDF, CSV, and from an EML metadata file.
 

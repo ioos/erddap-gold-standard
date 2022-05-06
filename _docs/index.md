@@ -13,7 +13,7 @@ Example datasets. You can view this setup live at <https://standards.sensors.ioo
 This getting started page provides instructions and links to external resources for setting up an ERDDAP server using a single Docker image. [Multi-node Kubernetes deployments](/erddap-gold-standard/kubernetes.html) are linked to under the **Other deployment** options sidebar.
 
 ## Requirements
-There are a few items you need to have installed on your system to deploy ERDDAP using this repository.
+There are a few items you need to have installed on your system to deploy ERDDAP using the <https://github.com/ioos/erddap-gold-standard> repository.
 
 1. Git: <https://git-scm.com/>
 2. Docker: <https://www.docker.com/>
@@ -52,6 +52,7 @@ $ ls -Ap
 ## Step 3: Deploy ERDDAP locally
 1. Run it! 
     ```shell
+    $ cd erddap-gold-standard/
     $ docker run --rm \
       --name erddap_gold_standard \
       -p 8080:8080 \
@@ -65,9 +66,10 @@ $ ls -Ap
      axiom/docker-erddap:2.18
     ```
 
-    or, copy the `.env.template` file to `.env`, and then run:
+    or, copy the `.env.template` file to `.env`, and then run `docker-compose`:
 
     ```shell
+    $ cp .env.template .env
     $ docker-compose up -d
     ```
    1. Remember, when you run ERDDAP from the Docker container, various configuration files will be mounted into the 
@@ -91,11 +93,12 @@ $ ls -Ap
     You should now see the standard ERDDAP Website:
     ![Standard ERDDAP Website](https://github.com/ioos/erddap-gold-standard/raw/gh-pages/_docs/images/standard_erddap_site.png "Standard ERDDAP Site")
 
-    You can monitor <http://localhost:8080/erddap/status.html> to see the status of dataset loading.   
+    You can monitor <http://localhost:8080/erddap/status.html> to see the status of your ERDDAP.   
 
 ## Step 4: Next Steps
 Once you have successfully deployed an ERDDAP using the Docker instance, it's time to start testing out what you can do. 
 Below are links to a few of the topics that might be of interest:
 * [Adding datasets to ERDDAP](/erddap-gold-standard/adding-datasets.html) - How to add new datasets to ERDDAP
 * [Customizing your ERDDAP](/erddap-gold-standard/modify-erddap.html) - How to configure ERDDAP using environment variables.
-* [Useful utilities](/erddap-gold-standard/erddap-utils.html) - Examples of a few other useful commands
+* [Updating ERDDAP](/erddap-gold-standard/update-erddap.html) - How to update ERDDAP when using Docker.
+* [Useful utilities](/erddap-gold-standard/erddap-utils.html) - Examples of a few other useful commands.

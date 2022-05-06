@@ -6,9 +6,9 @@ toc: true
 summary: How-to deploy ERDDAP on Kubernetes.
 ---
 
-# Kubernetes development for ERDDAP (as of 2.18 and the 2022 IOOS Code Sprint)
+## Kubernetes development for ERDDAP (as of 2.18 and the 2022 IOOS Code Sprint)
 
-Assuming you've performed the [Docker installation of ERDDAP](), start by [installing Minikube](https://minikube.sigs.k8s.io/docs/start/).
+Assuming you've performed the [Docker installation of ERDDAP](/erddap-gold-standard/index.html), start by [installing Minikube](https://minikube.sigs.k8s.io/docs/start/).
 
 We will be generating what can be called 'manifest' files for a Kubernetes pod that will contain the ERDDAP instance. The manifest will need to reference the docker-erddap image from a registry. In this case, the registry will reside locally. [Follow this guide precisely](https://hasura.io/blog/sharing-a-local-registry-for-minikube-37c7240d0615/). [Be sure to grab the latest version](https://gist.github.com/coco98/b750b3debc6d517308596c248daf3bb1) of the `kube-registry.yaml` file, and edit as necessary to be compliant with the latest kubernetes APIs. 
 
