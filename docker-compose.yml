@@ -8,6 +8,7 @@ services:
       - "8080:8080"
     volumes:
       - "${PWD}/erddap/conf/config.sh:/usr/local/tomcat/bin/config.sh"
+      - "${PWD}/erddap/conf/setenv.sh:/usr/local/tomcat/bin/setenv.sh"
       - "${PWD}/erddap/conf/robots.txt:/usr/local/tomcat/webapps/ROOT/robots.txt"
       - "${PWD}/erddap/content:/usr/local/tomcat/content/erddap"
       - "${PWD}/erddap/data:/erddapData"
