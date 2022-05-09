@@ -79,7 +79,7 @@ See the email account settings below.
 Whether or not you set up the email system, all potential email messages
 are logged to an emailLogYEAR-MONTH.txt file in [bigParentDirectory]/logs/.
 -->
-    <emailEverythingTo>your.email@yourInstitution.edu</emailEverythingTo>
+    <emailEverythingTo>youremail@yourInstitution.edu</emailEverythingTo>
     <!-- optional:
 <emailDailyReportsTo>your.boss@yourInstitution.edu</emailDailyReportsTo>
 -->

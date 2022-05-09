@@ -3,7 +3,7 @@ ERDDAP_baseUrl="https://dev.cioosatlantic.ca"
 ERDDAP_baseHttpsUrl="https://dev.cioosatlantic.ca"
 ERDDAP_flagKeyKey="4a0c345f-d494-4edc-b8c7-640c6d99f4b1"
 
-ERDDAP_emailEverythingTo="your.email@yourInstitution.edu"
+ERDDAP_emailEverythingTo="youremail@yourInstitution.edu"
 ERDDAP_emailDailyReportsTo=""
 ERDDAP_emailFromAddress=""
 ERDDAP_emailUserName=""
