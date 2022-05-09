@@ -6321,8 +6321,8 @@
     <pathRegex>.*</pathRegex>
     <metadataFrom>last</metadataFrom>
     <standardizeWhat>0</standardizeWhat>
-    <charset>ISO-8859-1</charset>
-    <columnSeparator></columnSeparator>
+    <charset>UTF-8</charset>
+    <columnSeparator>,</columnSeparator>
     <columnNamesRow>1</columnNamesRow>
     <firstDataRow>2</firstDataRow>
     <sortedColumnSourceName>time</sortedColumnSourceName>
@@ -6478,3 +6478,4 @@
   <!-- St. FX Marine Ecology Lab HOBO logger: END -->
 
 </erddapDatasets>
+
