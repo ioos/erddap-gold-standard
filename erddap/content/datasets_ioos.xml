@@ -1,0 +1,1646 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<erddapDatasets>
+    <requestBlacklist />
+    <dataset type="EDDTableFromMultidimNcFiles" datasetID="morro-bay-bs1-met" active="true">
+        <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+        <updateEveryNMillis>10000</updateEveryNMillis>
+        <fileDir>/datasets/</fileDir>
+        <fileNameRegex>edu_calpoly_marine_morro_bay_met.nc</fileNameRegex>
+        <recursive>false</recursive>
+        <fileTableInMemory>false</fileTableInMemory>
+        <accessibleViaFiles>true</accessibleViaFiles>
+        <!-- sourceAttributes>
+            <att name="acknowledgment">Data collection was supported by multiple awards to California Polytechnic State University and an award from NOAA&#39;s Integrated Observing System to the Central and Northern California Ocean Observing System at the Monterey Bay Aquarium Research Institute (NA11NOS0120032).</att>
+            <att name="cdm_data_type">TimeSeries</att>
+            <att name="cdm_timeseries_variables">station,longitude,latitude</att>
+            <att name="comment">Data produced by Ryan Walter with partial funding from CeNCOOS (cencoos_communicatons@mbari.org)</att>
+            <att name="contributor_email">cencoos_communications@mbari.org,feedback@axiomdatascience.com</att>
+            <att name="contributor_name">Central &amp; Northern California Ocean Observing System (CeNCOOS),Axiom Data Science</att>
+            <att name="contributor_role">contributor,processor</att>
+            <att name="contributor_role_vocabulary">NERC</att>
+            <att name="contributor_url">http://cencoos.org/,https://www.axiomdatascience.com</att>
+            <att name="Conventions">IOOS-1.2, CF-1.6, ACDD-1.3</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="creator_country">USA</att>
+            <att name="creator_email">rkwalter@calpoly.edu</att>
+            <att name="creator_institution">California Polytechnic State Univeristy, San Luis Obispo</att>
+            <att name="creator_name">Ryan Walter</att>
+            <att name="creator_role">pi</att>
+            <att name="creator_sector">academic</att>
+            <att name="creator_type">person</att>
+            <att name="creator_url">http://www.marine.calpoly.edu</att>
+            <att name="date_created">2020-04-22T22:29:00Z</att>
+            <att name="Easternmost_Easting" type="double">-120.84725</att>
+            <att name="featureType">TimeSeries</att>
+            <att name="geospatial_lat_max" type="double">35.33382</att>
+            <att name="geospatial_lat_min" type="double">35.33382</att>
+            <att name="geospatial_lat_units">degrees_north</att>
+            <att name="geospatial_lon_max" type="double">-120.84725</att>
+            <att name="geospatial_lon_min" type="double">-120.84725</att>
+            <att name="geospatial_lon_units">degrees_east</att>
+            <att name="geospatial_vertical_positive">up</att>
+            <att name="geospatial_vertical_units">m</att>
+            <att name="history">Downloaded from California Polytechnic State University, Center for Coastal Marine Sciences at http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/
+    2020-04-22T22:22:19Z http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/
+    2020-04-22T22:22:19Z http://erddap.stage.sensors.axds.co/erddap/tabledap/edu_calpoly_marine_morro_bay_met.nc</att>
+            <att name="id">bs1-met</att>
+            <att name="infoUrl">https://sensors.ioos.us/#metadata/57163/station</att>
+            <att name="institution">California Polytechnic State Univeristy, San Luis Obispo</att>
+            <att name="instrument">Nova Lynx 100</att>
+            <att name="ISO_Topic_Categories">Oceans</att>
+            <att name="keywords">Earth Science &gt; Oceans</att>
+            <att name="keywords_vocabulary">GCMD Earth Science Keywords. Version 5.3.3</att>
+            <att name="license">The data may be used and redistributed for free but is not intended
+    for legal use, since it may contain inaccuracies. Neither the data
+    Contributor, ERD, NOAA, nor the United States Government, nor any
+    of their employees or contractors, makes any warranty, express or
+    implied, including warranties of merchantability and fitness for a
+    particular purpose, or assumes any legal liability for the accuracy,
+    completeness, or usefulness, of this information.</att>
+            <att name="metadata_conventions">CF-1.6,ACDD-1.3</att>
+            <att name="metadata_link">http://www.marine.calpoly.edu</att>
+            <att name="naming_authority">edu.calpoly.marine</att>
+            <att name="Northernmost_Northing" type="double">35.33382</att>
+            <att name="platform">morro-bay-bs1-met</att>
+            <att name="platform_name">Morro Bay - BS1 MET</att>
+            <att name="platform_vocabulary">http://mmisw.org/ont/ioos/platform</att>
+            <att name="processing_level">Level 2</att>
+            <att name="program">CeNCOOS</att>
+            <att name="project">CeNCOOS</att>
+            <att name="publisher_country">USA</att>
+            <att name="publisher_email">cencoos_communicatons@mbari.org</att>
+            <att name="publisher_institution">California Polytechnic State University, Center for Coastal Marine Sciences</att>
+            <att name="publisher_name">CeNCOOS</att>
+            <att name="publisher_sector">academic</att>
+            <att name="publisher_type">institution</att>
+            <att name="publisher_url">http://www.cencoos.org</att>
+            <att name="references">http://www.slosea.org/about/dash.php,http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/,https://www.cencoos.org/data/shore/morro,</att>
+            <att name="sea_name">NE Pacific</att>
+            <att name="source">Station mounded on a large tripod resting on the sea floor.</att>
+            <att name="sourceUrl">http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/</att>
+            <att name="Southernmost_Northing" type="double">35.33382</att>
+            <att name="standard_name_vocabulary">CF Standard Name Table v72</att>
+            <att name="summary">Morro Bay BS1 Met station is located in the back of Morro Bay, CA and owned by California Polytechnic State University of San Luis Obispo. The station is mounted on a large tripod, resting on the seafloor. A Nova Lynx 100 Weather Station is fixed at 3 meters above MLLW to a pole extending from the tripod and reports the following in near real-time: wind speed, wind direction, air temperature, barometric pressure, precipitation, relative humidity, and solar radiation. The instrument is maintained and operated by San Luis Obispo Science and Ecosystem Alliance (SLOSEA), a part of the Cal Poly Center for Coastal Marine Sciences.</att>
+            <att name="time_coverage_end">2019-10-25T00:07:17Z</att>
+            <att name="time_coverage_start">2016-02-01T00:00:00Z</att>
+            <att name="title">CeNCOOS met monitoring at Morro Bay (BS1).</att>
+            <att name="Westernmost_Easting" type="double">-120.84725</att>
+        </sourceAttributes -->
+        <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+            <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+            <att name="subsetVariables">station, longitude, latitude</att>
+        -->
+        <addAttributes>
+            <att name="acknowledgement">Data collection was supported by multiple awards to California Polytechnic State University and an award from NOAA&#39;s Integrated Observing System to the Central and Northern California Ocean Observing System at the Monterey Bay Aquarium Research Institute (NA11NOS0120032).</att>
+            <att name="acknowledgment">null</att>
+            <att name="Conventions">IOOS-1.2, CF-1.6, ACDD-1.3, COARDS</att>
+            <att name="keywords">air, air_pressure, air_temperature, altitude, atmosphere, atmospheric, barometric, bay, bs1, california, cencoos, chill, data, dew, dew point, dew_point_temperature, direction, earth, Earth Science &gt; Atmosphere &gt; Altitude &gt; Station Height, Earth Science &gt; Atmosphere &gt; Atmospheric Pressure &gt; Atmospheric Pressure Measurements, Earth Science &gt; Atmosphere &gt; Atmospheric Pressure &gt; Sea Level Pressure, Earth Science &gt; Atmosphere &gt; Atmospheric Pressure &gt; Static Pressure, Earth Science &gt; Atmosphere &gt; Atmospheric Temperature &gt; Air Temperature, Earth Science &gt; Atmosphere &gt; Atmospheric Temperature &gt; Dew Point Temperature, Earth Science &gt; Atmosphere &gt; Atmospheric Temperature &gt; Surface Air Temperature, Earth Science &gt; Atmosphere &gt; Atmospheric Water Vapor &gt; Dew Point Temperature, Earth Science &gt; Atmosphere &gt; Atmospheric Water Vapor &gt; Humidity, Earth Science &gt; Atmosphere &gt; Atmospheric Winds &gt; Surface Winds, Earth Science &gt; Oceans, height, humidity, identifier, irradiance, latitude, level, longitude, luis, lwe_precipitation_rate_cm_time_sum_over_pt2m, measurements, met, monitoring, morro, near, nrt, obispo, ocean, oceans, point, polytechnic, pressure, radiation, real, relative, relative_humidity, san, science, sea, seawater, solar, solar_irradiance, speed, state, static, station, surface, temperature, time, univeristy, vapor, water, wind, wind_chill_temperature, wind_from_direction, wind_speed, winds</att>
+            <att name="keywords_vocabulary">GCMD Science Keywords</att>
+            <att name="sourceUrl">(local files)</att>
+            <att name="subsetVariables">station, latitude, longitude, z</att>
+        </addAttributes>
+        <dataVariable>
+            <sourceName>time</sourceName>
+            <destinationName>time</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40794</att>
+                <att name="_CoordinateAxisType">Time</att>
+                <att name="actual_range" type="doubleList">1.4542848E9 1.571962037E9</att>
+                <att name="axis">T</att>
+                <att name="calendar">gregorian</att>
+                <att name="ioos_category">Time</att>
+                <att name="long_name">Time</att>
+                <att name="standard_name">time</att>
+                <att name="time_origin">01-JAN-1970 00:00:00</att>
+                <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">1.6E9</att>
+                <att name="colorBarMinimum" type="double">1.45E9</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>station</sourceName>
+            <destinationName>station</destinationName>
+            <dataType>String</dataType>
+            <!-- sourceAttributes>
+                <att name="cf_role">timeseries_id</att>
+                <att name="ioos_category">Identifier</att>
+                <att name="ioos_code">urn:ioos:station:com.axiomdatascience:57163</att>
+                <att name="long_name">Morro Bay - BS1 MET</att>
+                <att name="short_name">edu_calpoly_marine_morro_bay_met</att>
+                <att name="type">fixed</att>
+            </sourceAttributes -->
+            <addAttributes>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>latitude</sourceName>
+            <destinationName>latitude</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Lat</att>
+                <att name="actual_range" type="doubleList">35.33382 35.33382</att>
+                <att name="axis">Y</att>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Latitude</att>
+                <att name="standard_name">latitude</att>
+                <att name="units">degrees_north</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">90.0</att>
+                <att name="colorBarMinimum" type="double">-90.0</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>longitude</sourceName>
+            <destinationName>longitude</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Lon</att>
+                <att name="actual_range" type="doubleList">-120.84725 -120.84725</att>
+                <att name="axis">X</att>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Longitude</att>
+                <att name="standard_name">longitude</att>
+                <att name="units">degrees_east</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">180.0</att>
+                <att name="colorBarMinimum" type="double">-180.0</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>z</sourceName>
+            <destinationName>z</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">1</att>
+                <att name="_CoordinateAxisType">Height</att>
+                <att name="_CoordinateZisPositive">up</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 0.0</att>
+                <att name="axis">Z</att>
+                <att name="ioos_category">Location</att>
+                <att name="least_significant_digit" type="double">2.0</att>
+                <att name="long_name">Altitude</att>
+                <att name="positive">up</att>
+                <att name="standard_name">altitude</att>
+                <att name="units">m</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">8000.0</att>
+                <att name="colorBarMinimum" type="double">-8000.0</att>
+                <att name="colorBarPalette">Topography</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>air_temperature</sourceName>
+            <destinationName>air_temperature</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">-9.35 34.03</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000293</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Air Temperature</att>
+                <att name="platform">station</att>
+                <att name="standard_name">air_temperature</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/air_temperature</att>
+                <att name="units">degree_Celsius</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">40.0</att>
+                <att name="colorBarMinimum" type="double">-10.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>air_pressure</sourceName>
+            <destinationName>air_pressure</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">990.38 1031.56</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000289</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Barometric Pressure</att>
+                <att name="platform">station</att>
+                <att name="standard_name">air_pressure</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/air_pressure</att>
+                <att name="units">millibars</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">1050.0</att>
+                <att name="colorBarMinimum" type="double">950.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>dew_point_temperature</sourceName>
+            <destinationName>dew_point_temperature</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">-19.15 34.03</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000290</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Dew Point</att>
+                <att name="platform">station</att>
+                <att name="standard_name">dew_point_temperature</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/dew_point_temperature</att>
+                <att name="units">degree_Celsius</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">40.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>lwe_precipitation_rate_cm_time__sum_over_pt2m</sourceName>
+            <destinationName>lwe_precipitation_rate_cm_time_sum_over_pt2m</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 21.5</att>
+                <att name="cell_methods">time: sum</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000215</att>
+                <att name="interval">PT2M</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Precipitation (increment)</att>
+                <att name="platform">station</att>
+                <att name="standard_name">lwe_precipitation_rate</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/lwe_precipitation_rate</att>
+                <att name="units">mm</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">1.0E-4</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>relative_humidity</sourceName>
+            <destinationName>relative_humidity</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 100.0</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000291</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Relative Humidity</att>
+                <att name="platform">station</att>
+                <att name="standard_name">relative_humidity</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/relative_humidity</att>
+                <att name="units">&#37;</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">100.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+                <att name="units">percent</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>solar_irradiance</sourceName>
+            <destinationName>solar_irradiance</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 892.81</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000292</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Solar Radiation</att>
+                <att name="platform">station</att>
+                <att name="standard_name">solar_irradiance</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/solar_irradiance</att>
+                <att name="units">W.m-2</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">1000.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_chill_temperature</sourceName>
+            <destinationName>wind_chill_temperature</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">-19.15 34.03</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000294</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind Chill</att>
+                <att name="platform">station</att>
+                <att name="standard_name">wind_chill_temperature</att>
+                <att name="standard_name_url">http://mmisw.org/ont/unknown/parameter/wind_chill_temperature</att>
+                <att name="units">degree_Celsius</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">40.0</att>
+                <att name="colorBarMinimum" type="double">-10.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_speed</sourceName>
+            <destinationName>wind_speed</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 18.01</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000296</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind Speed</att>
+                <att name="platform">station</att>
+                <att name="standard_name">wind_speed</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/wind_speed</att>
+                <att name="units">m.s-1</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">15.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_from_direction</sourceName>
+            <destinationName>wind_from_direction</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">40970</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.04 359.88</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000295</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind From Direction</att>
+                <att name="platform">station</att>
+                <att name="standard_name">wind_from_direction</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/wind_from_direction</att>
+                <att name="units">degrees</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">360.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+    </dataset>
+    <dataset type="EDDTableFromMultidimNcFiles" datasetID="org_cormp_cap2" active="true">
+        <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+        <updateEveryNMillis>10000</updateEveryNMillis>
+        <fileDir>/datasets/</fileDir>
+        <fileNameRegex>org_cormp_cap2.nc</fileNameRegex>
+        <recursive>false</recursive>
+        <fileTableInMemory>false</fileTableInMemory>
+        <accessibleViaFiles>true</accessibleViaFiles>
+        <!-- sourceAttributes>
+            <att name="cdm_data_type">TimeSeries</att>
+            <att name="cdm_timeseries_variables">station,longitude,latitude</att>
+            <att name="contributor_email">None,,feedback@axiomdatascience.com</att>
+            <att name="contributor_name">Southeast Coastal Ocean Observing Regional Association (SECOORA),World Meteorological Organization (WMO),Axiom Data Science</att>
+            <att name="contributor_role">funder,contributor,processor</att>
+            <att name="contributor_role_vocabulary">NERC</att>
+            <att name="contributor_url">https://secoora.org/,https://www.wmo.int/pages/prog/amp/mmop/wmo-number-rules.html,https://www.axiomdatascience.com</att>
+            <att name="Conventions">IOOS-1.2, CF-1.6, ACDD-1.3</att>
+            <att name="creator_country">USA</att>
+            <att name="creator_email">info@cormp.org</att>
+            <att name="creator_institution">UNCW - Coastal Ocean Research and Monitoring Program (CORMP)</att>
+            <att name="creator_name">UNCW - Coastal Ocean Research and Monitoring Program (CORMP)</att>
+            <att name="creator_sector">gov_federal</att>
+            <att name="creator_type">institution</att>
+            <att name="creator_url">http://www.cormp.org/index.php</att>
+            <att name="date_created">2020-04-22T22:49:00Z</att>
+            <att name="Easternmost_Easting" type="double">-79.6204</att>
+            <att name="featureType">TimeSeries</att>
+            <att name="geospatial_lat_max" type="double">32.8032</att>
+            <att name="geospatial_lat_min" type="double">32.8032</att>
+            <att name="geospatial_lat_units">degrees_north</att>
+            <att name="geospatial_lon_max" type="double">-79.6204</att>
+            <att name="geospatial_lon_min" type="double">-79.6204</att>
+            <att name="geospatial_lon_units">degrees_east</att>
+            <att name="geospatial_vertical_positive">up</att>
+            <att name="geospatial_vertical_units">m</att>
+            <att name="history">Downloaded from UNCW - Coastal Ocean Research and Monitoring Program (CORMP) at http://services.cormp.org/data.php?format=json&amp;platform=cap2
+    2020-04-22T22:33:09Z http://services.cormp.org/data.php?format=json&amp;platform=cap2
+    2020-04-22T22:33:09Z http://erddap.stage.sensors.axds.co/erddap/tabledap/org_cormp_cap2.nc</att>
+            <att name="id">cap2</att>
+            <att name="infoUrl">https://sensors.ioos.us/#metadata/60417/station</att>
+            <att name="institution">UNCW - Coastal Ocean Research and Monitoring Program (CORMP)</att>
+            <att name="license">The data may be used and redistributed for free but is not intended
+    for legal use, since it may contain inaccuracies. Neither the data
+    Contributor, ERD, NOAA, nor the United States Government, nor any
+    of their employees or contractors, makes any warranty, express or
+    implied, including warranties of merchantability and fitness for a
+    particular purpose, or assumes any legal liability for the accuracy,
+    completeness, or usefulness, of this information.</att>
+            <att name="naming_authority">org.cormp</att>
+            <att name="Northernmost_Northing" type="double">32.8032</att>
+            <att name="platform">41029</att>
+            <att name="platform_name">(41029 / CAP2) Capers Nearshore</att>
+            <att name="platform_vocabulary">http://mmisw.org/ont/ioos/platform</att>
+            <att name="processing_level">Level 2</att>
+            <att name="publisher_country">USA</att>
+            <att name="publisher_email">info@cormp.org</att>
+            <att name="publisher_institution">UNCW - Coastal Ocean Research and Monitoring Program (CORMP)</att>
+            <att name="publisher_name">UNCW - Coastal Ocean Research and Monitoring Program (CORMP)</att>
+            <att name="publisher_sector">gov_federal</att>
+            <att name="publisher_type">institution</att>
+            <att name="publisher_url">http://www.cormp.org/index.php</att>
+            <att name="references">http://www.cormp.org/?platform=CAP2,http://services.cormp.org/data.php?format=json&amp;platform=cap2,http://mwp.secoora.org/?platform=41029,http://services.cormp.org/quality.php</att>
+            <att name="sourceUrl">http://services.cormp.org/data.php?format=json&amp;platform=cap2</att>
+            <att name="Southernmost_Northing" type="double">32.8032</att>
+            <att name="standard_name_vocabulary">CF Standard Name Table v72</att>
+            <att name="summary">Timeseries data from &#39;(41029 / CAP2) Capers Nearshore&#39; (org_cormp_cap2)</att>
+            <att name="time_coverage_end">2020-03-30T15:08:00Z</att>
+            <att name="time_coverage_start">2018-10-01T08:08:00Z</att>
+            <att name="title">(41029 / CAP2) Capers Nearshore</att>
+            <att name="Westernmost_Easting" type="double">-79.6204</att>
+            <att name="wmo_platform_code">41029</att>
+        </sourceAttributes -->
+        <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+            <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+            <att name="subsetVariables">station, longitude, latitude</att>
+        -->
+        <addAttributes>
+            <att name="Conventions">IOOS-1.2, CF-1.6, ACDD-1.3, COARDS</att>
+            <att name="institution">CORMP</att>
+            <att name="keywords">aggregate, aggregate_quality_flag, air, air_pressure, air_pressure quality_flag, air_pressure_qc_agg, air_pressure_qc_tests, air_temperature, air_temperature quality_flag, air_temperature_qc_agg, air_temperature_qc_tests, altitude, atmosphere, atmospheric, barometric, cap2, capers, coastal, cormp, data, density, direction, earth, Earth Science &gt; Atmosphere &gt; Altitude &gt; Station Height, Earth Science &gt; Atmosphere &gt; Atmospheric Pressure &gt; Atmospheric Pressure Measurements, Earth Science &gt; Atmosphere &gt; Atmospheric Pressure &gt; Sea Level Pressure, Earth Science &gt; Atmosphere &gt; Atmospheric Pressure &gt; Static Pressure, Earth Science &gt; Atmosphere &gt; Atmospheric Temperature &gt; Air Temperature, Earth Science &gt; Atmosphere &gt; Atmospheric Temperature &gt; Surface Air Temperature, Earth Science &gt; Atmosphere &gt; Atmospheric Water Vapor &gt; Humidity, Earth Science &gt; Atmosphere &gt; Atmospheric Winds &gt; Surface Winds, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, flag, gust, height, humidity, identifier, individual, latitude, level, longitude, measurements, monitoring, nearshore, ocean, oceans, practical, pressure, program, qartod, quality, relative, relative_humidity, relative_humidity quality_flag, relative_humidity_qc_agg, relative_humidity_qc_tests, research, salinity, science, sea, sea_water_practical_salinity, sea_water_practical_salinity quality_flag, sea_water_practical_salinity_qc_agg, sea_water_practical_salinity_qc_tests, sea_water_temperature, sea_water_temperature quality_flag, sea_water_temperature_qc_agg, sea_water_temperature_qc_tests, seawater, speed, static, station, surface, temperature, tests, time, uncw, vapor, water, wind, wind_from_direction, wind_from_direction quality_flag, wind_from_direction_qc_agg, wind_from_direction_qc_tests, wind_speed, wind_speed quality_flag, wind_speed_of_gust, wind_speed_of_gust quality_flag, wind_speed_of_gust_qc_agg, wind_speed_of_gust_qc_tests, wind_speed_qc_agg, wind_speed_qc_tests, winds</att>
+            <att name="keywords_vocabulary">GCMD Science Keywords</att>
+            <att name="sourceUrl">(local files)</att>
+            <att name="subsetVariables">station, latitude, longitude, z, air_temperature_qc_tests, air_pressure_qc_tests, relative_humidity_qc_tests, sea_water_practical_salinity_qc_tests, sea_water_temperature_qc_tests, wind_speed_of_gust_qc_tests, wind_speed_qc_tests, wind_from_direction_qc_tests</att>
+            <att name="title">41029 / CAP2 Capers Nearshore</att>
+        </addAttributes>
+        <dataVariable>
+            <sourceName>time</sourceName>
+            <destinationName>time</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Time</att>
+                <att name="actual_range" type="doubleList">1.53838128E9 1.58558088E9</att>
+                <att name="axis">T</att>
+                <att name="calendar">gregorian</att>
+                <att name="ioos_category">Time</att>
+                <att name="long_name">Time</att>
+                <att name="standard_name">time</att>
+                <att name="time_origin">01-JAN-1970 00:00:00</att>
+                <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">1.59E9</att>
+                <att name="colorBarMinimum" type="double">1.53E9</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>station</sourceName>
+            <destinationName>station</destinationName>
+            <dataType>String</dataType>
+            <!-- sourceAttributes>
+                <att name="cf_role">timeseries_id</att>
+                <att name="ioos_category">Identifier</att>
+                <att name="ioos_code">urn:ioos:station:com.axiomdatascience:60417</att>
+                <att name="long_name">(41029 / CAP2) Capers Nearshore</att>
+                <att name="short_name">org_cormp_cap2</att>
+                <att name="type">buoy</att>
+            </sourceAttributes -->
+            <addAttributes>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>latitude</sourceName>
+            <destinationName>latitude</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Lat</att>
+                <att name="actual_range" type="doubleList">32.8032 32.8032</att>
+                <att name="axis">Y</att>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Latitude</att>
+                <att name="standard_name">latitude</att>
+                <att name="units">degrees_north</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">90.0</att>
+                <att name="colorBarMinimum" type="double">-90.0</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>longitude</sourceName>
+            <destinationName>longitude</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Lon</att>
+                <att name="actual_range" type="doubleList">-79.6204 -79.6204</att>
+                <att name="axis">X</att>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Longitude</att>
+                <att name="standard_name">longitude</att>
+                <att name="units">degrees_east</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">180.0</att>
+                <att name="colorBarMinimum" type="double">-180.0</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>z</sourceName>
+            <destinationName>z</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Height</att>
+                <att name="_CoordinateZisPositive">up</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 0.0</att>
+                <att name="axis">Z</att>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Altitude</att>
+                <att name="positive">up</att>
+                <att name="standard_name">altitude</att>
+                <att name="units">m</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">8000.0</att>
+                <att name="colorBarMinimum" type="double">-8000.0</att>
+                <att name="colorBarPalette">Topography</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>air_temperature</sourceName>
+            <destinationName>air_temperature</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 29.53</att>
+                <att name="ancillary_variables">air_temperature_qc_agg air_temperature_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000315</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Air Temperature</att>
+                <att name="platform">station</att>
+                <att name="standard_name">air_temperature</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/air_temperature</att>
+                <att name="units">degree_Celsius</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">40.0</att>
+                <att name="colorBarMinimum" type="double">-10.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>air_temperature_qc_agg</sourceName>
+            <destinationName>air_temperature_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="actual_range" type="intList">1 4</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Air Temperature QARTOD Aggregate Quality Flag</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>air_temperature_qc_tests</sourceName>
+            <destinationName>air_temperature_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Air Temperature QARTOD Individual Tests</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">air_temperature quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>air_pressure</sourceName>
+            <destinationName>air_pressure</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 1049.385</att>
+                <att name="ancillary_variables">air_pressure_qc_agg air_pressure_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000314</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Barometric Pressure</att>
+                <att name="platform">station</att>
+                <att name="standard_name">air_pressure</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/air_pressure</att>
+                <att name="units">millibars</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">1050.0</att>
+                <att name="colorBarMinimum" type="double">950.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>air_pressure_qc_agg</sourceName>
+            <destinationName>air_pressure_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="actual_range" type="intList">1 4</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Barometric Pressure QARTOD Aggregate Quality Flag</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>air_pressure_qc_tests</sourceName>
+            <destinationName>air_pressure_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Barometric Pressure QARTOD Individual Tests</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">air_pressure quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>relative_humidity</sourceName>
+            <destinationName>relative_humidity</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 100.0</att>
+                <att name="ancillary_variables">relative_humidity_qc_agg relative_humidity_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000316</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Relative Humidity</att>
+                <att name="platform">station</att>
+                <att name="standard_name">relative_humidity</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/relative_humidity</att>
+                <att name="units">&#37;</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">100.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+                <att name="units">percent</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>relative_humidity_qc_agg</sourceName>
+            <destinationName>relative_humidity_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="actual_range" type="intList">1 4</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Relative Humidity QARTOD Aggregate Quality Flag</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>relative_humidity_qc_tests</sourceName>
+            <destinationName>relative_humidity_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Relative Humidity QARTOD Individual Tests</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">relative_humidity quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_practical_salinity</sourceName>
+            <destinationName>sea_water_practical_salinity</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">5.164 35.71</att>
+                <att name="ancillary_variables">sea_water_practical_salinity_qc_agg sea_water_practical_salinity_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000317</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Salinity</att>
+                <att name="platform">station</att>
+                <att name="standard_name">sea_water_practical_salinity</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/sea_water_practical_salinity</att>
+                <att name="units">1e-3</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">37.0</att>
+                <att name="colorBarMinimum" type="double">32.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_practical_salinity_qc_agg</sourceName>
+            <destinationName>sea_water_practical_salinity_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="actual_range" type="intList">1 4</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Salinity QARTOD Aggregate Quality Flag</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_practical_salinity_qc_tests</sourceName>
+            <destinationName>sea_water_practical_salinity_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Salinity QARTOD Individual Tests</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">sea_water_practical_salinity quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_temperature</sourceName>
+            <destinationName>sea_water_temperature</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">2.958 29.63</att>
+                <att name="ancillary_variables">sea_water_temperature_qc_agg sea_water_temperature_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000318</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Water Temperature</att>
+                <att name="platform">station</att>
+                <att name="standard_name">sea_water_temperature</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/sea_water_temperature</att>
+                <att name="units">degree_Celsius</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">32.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_temperature_qc_agg</sourceName>
+            <destinationName>sea_water_temperature_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="actual_range" type="intList">1 4</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Water Temperature QARTOD Aggregate Quality Flag</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_temperature_qc_tests</sourceName>
+            <destinationName>sea_water_temperature_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Water Temperature QARTOD Individual Tests</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">sea_water_temperature quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_speed_of_gust</sourceName>
+            <destinationName>wind_speed_of_gust</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 59.779812737936</att>
+                <att name="ancillary_variables">wind_speed_of_gust_qc_agg wind_speed_of_gust_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000321</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind Gust</att>
+                <att name="platform">station</att>
+                <att name="standard_name">wind_speed_of_gust</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/wind_speed_of_gust</att>
+                <att name="units">m.s-1</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">30.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_speed_of_gust_qc_agg</sourceName>
+            <destinationName>wind_speed_of_gust_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="actual_range" type="intList">1 4</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind Gust QARTOD Aggregate Quality Flag</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_speed_of_gust_qc_tests</sourceName>
+            <destinationName>wind_speed_of_gust_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind Gust QARTOD Individual Tests</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">wind_speed_of_gust quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_speed</sourceName>
+            <destinationName>wind_speed</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 24.524128</att>
+                <att name="ancillary_variables">wind_speed_qc_agg wind_speed_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000320</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind Speed</att>
+                <att name="platform">station</att>
+                <att name="standard_name">wind_speed</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/wind_speed</att>
+                <att name="units">m.s-1</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">15.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_speed_qc_agg</sourceName>
+            <destinationName>wind_speed_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="actual_range" type="intList">1 4</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind Speed QARTOD Aggregate Quality Flag</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_speed_qc_tests</sourceName>
+            <destinationName>wind_speed_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind Speed QARTOD Individual Tests</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">wind_speed quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_from_direction</sourceName>
+            <destinationName>wind_from_direction</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.0 359.4</att>
+                <att name="ancillary_variables">wind_from_direction_qc_agg wind_from_direction_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1000319</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind From Direction</att>
+                <att name="platform">station</att>
+                <att name="standard_name">wind_from_direction</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/wind_from_direction</att>
+                <att name="units">degrees</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">360.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_from_direction_qc_agg</sourceName>
+            <destinationName>wind_from_direction_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="actual_range" type="intList">1 4</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind From Direction QARTOD Aggregate Quality Flag</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>wind_from_direction_qc_tests</sourceName>
+            <destinationName>wind_from_direction_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="int">7240</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Wind From Direction QARTOD Individual Tests</att>
+                <att name="references">http://services.cormp.org/quality.php</att>
+                <att name="standard_name">wind_from_direction quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+    </dataset>
+    <dataset type="EDDTableFromMultidimNcFiles" datasetID="usf_comps_c10_inwater" active="true">
+        <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+        <updateEveryNMillis>10000</updateEveryNMillis>
+        <fileDir>/datasets/</fileDir>
+        <fileNameRegex>usf_comps_c10_inwater.nc</fileNameRegex>
+        <recursive>false</recursive>
+        <fileTableInMemory>false</fileTableInMemory>
+        <accessibleViaFiles>true</accessibleViaFiles>
+        <!-- sourceAttributes>
+            <att name="cdm_altitude_proxy">z</att>
+            <att name="cdm_data_type">TimeSeriesProfile</att>
+            <att name="cdm_profile_variables">time</att>
+            <att name="cdm_timeseries_variables">station,longitude,latitude</att>
+            <att name="contributor_email">,None,feedback@axiomdatascience.com</att>
+            <att name="contributor_name">World Meteorological Organization (WMO),Southeast Coastal Ocean Observing Regional Association (SECOORA),Axiom Data Science</att>
+            <att name="contributor_role">contributor,funder,processor</att>
+            <att name="contributor_role_vocabulary">NERC</att>
+            <att name="contributor_url">https://www.wmo.int/pages/prog/amp/mmop/wmo-number-rules.html,https://secoora.org/,https://www.axiomdatascience.com</att>
+            <att name="Conventions">IOOS-1.2, CF-1.6, ACDD-1.3</att>
+            <att name="creator_country">USA</att>
+            <att name="creator_email">cmerz@usf.edu</att>
+            <att name="creator_institution">USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)</att>
+            <att name="creator_name">USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)</att>
+            <att name="creator_sector">academic</att>
+            <att name="creator_type">institution</att>
+            <att name="creator_url">http://comps.marine.usf.edu/</att>
+            <att name="date_created">2020-04-22T22:51:00Z</att>
+            <att name="Easternmost_Easting" type="double">-82.924</att>
+            <att name="featureType">TimeSeriesProfile</att>
+            <att name="geospatial_lat_max" type="double">27.173</att>
+            <att name="geospatial_lat_min" type="double">27.173</att>
+            <att name="geospatial_lat_units">degrees_north</att>
+            <att name="geospatial_lon_max" type="double">-82.924</att>
+            <att name="geospatial_lon_min" type="double">-82.924</att>
+            <att name="geospatial_lon_units">degrees_east</att>
+            <att name="geospatial_vertical_positive">up</att>
+            <att name="geospatial_vertical_units">m</att>
+            <att name="history">Downloaded from USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS) at http://comps.marine.usf.edu:82/data.php?format=json&amp;platform=c10_inwater
+    2020-04-22T22:51:03Z http://comps.marine.usf.edu:82/data.php?format=json&amp;platform=c10_inwater
+    2020-04-22T22:51:03Z http://erddap.stage.sensors.axds.co/erddap/tabledap/42013-c10-currents-wfs-centra.nc?&amp;time&#37;3E=2018-03-01T00:00:00Z&amp;time&#37;3C=2018-03-07T00:00:00Z</att>
+            <att name="id">c10_inwater</att>
+            <att name="infoUrl">https://sensors.ioos.us/#metadata/100702/station</att>
+            <att name="institution">USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)</att>
+            <att name="license">The data may be used and redistributed for free but is not intended
+    for legal use, since it may contain inaccuracies. Neither the data
+    Contributor, ERD, NOAA, nor the United States Government, nor any
+    of their employees or contractors, makes any warranty, express or
+    implied, including warranties of merchantability and fitness for a
+    particular purpose, or assumes any legal liability for the accuracy,
+    completeness, or usefulness, of this information.</att>
+            <att name="naming_authority">usf.comps</att>
+            <att name="Northernmost_Northing" type="double">27.173</att>
+            <att name="platform">42013</att>
+            <att name="platform_name">42013 - C10 Currents - WFS Central Buoy</att>
+            <att name="platform_vocabulary">http://mmisw.org/ont/ioos/platform</att>
+            <att name="processing_level">Level 2</att>
+            <att name="publisher_country">USA</att>
+            <att name="publisher_email">cmerz@usf.edu</att>
+            <att name="publisher_institution">USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)</att>
+            <att name="publisher_name">USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)</att>
+            <att name="publisher_sector">academic</att>
+            <att name="publisher_type">institution</att>
+            <att name="publisher_url">http://comps.marine.usf.edu/</att>
+            <att name="references">http://comps.marine.usf.edu/index?view=station&amp;id=C10_INWATER,http://comps.marine.usf.edu:82/data.php?format=json&amp;platform=c10_inwater,</att>
+            <att name="sourceUrl">http://comps.marine.usf.edu:82/data.php?format=json&amp;platform=c10_inwater</att>
+            <att name="Southernmost_Northing" type="double">27.173</att>
+            <att name="standard_name_vocabulary">CF Standard Name Table v72</att>
+            <att name="station_id" type="double">100702.0</att>
+            <att name="summary">Timeseries data from &#39;42013 - C10 Currents - WFS Central Buoy&#39; (42013-c10-currents-wfs-centra)</att>
+            <att name="time_coverage_end">2018-03-07T00:00:00Z</att>
+            <att name="time_coverage_start">2018-03-01T00:00:00Z</att>
+            <att name="title">42013 - C10 Currents - WFS Central Buoy</att>
+            <att name="Westernmost_Easting" type="double">-82.924</att>
+            <att name="wmo_platform_code">42013</att>
+        </sourceAttributes -->
+        <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+            <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+            <att name="subsetVariables">station, longitude, latitude</att>
+        -->
+        <addAttributes>
+            <att name="Conventions">IOOS-1.2, CF-1.6, ACDD-1.3, COARDS</att>
+            <att name="institution">COMPS</att>
+            <att name="keywords">aggregate, aggregate_quality_flag, altitude, atmosphere, buoy, c10, central, circulation, cms, coastal, comps, current, currents, data, direction, earth, Earth Science &gt; Atmosphere &gt; Altitude &gt; Station Height, Earth Science &gt; Oceans &gt; Ocean Circulation &gt; Ocean Currents, eastward, eastward_sea_water_velocity, eastward_sea_water_velocity quality_flag, eastward_sea_water_velocity_qc_agg, eastward_sea_water_velocity_qc_tests, flag, florida, height, identifier, individual, latitude, longitude, monitoring, northward, northward_sea_water_velocity, northward_sea_water_velocity quality_flag, northward_sea_water_velocity_qc_agg, northward_sea_water_velocity_qc_tests, ocean, oceans, prediction, qartod, quality, science, sea, sea_water_speed, sea_water_speed quality_flag, sea_water_speed_qc_agg, sea_water_speed_qc_tests, sea_water_velocity_to_direction, sea_water_velocity_to_direction quality_flag, sea_water_velocity_to_direction_qc_agg, sea_water_velocity_to_direction_qc_tests, seawater, south, speed, station, system, tests, time, university, usf, velocity, water, wfs</att>
+            <att name="keywords_vocabulary">GCMD Science Keywords</att>
+            <att name="sourceUrl">(local files)</att>
+            <att name="subsetVariables">station, latitude, longitude, sea_water_velocity_to_direction_qc_agg, sea_water_velocity_to_direction_qc_tests, sea_water_speed_qc_agg, sea_water_speed_qc_tests, eastward_sea_water_velocity_qc_agg, eastward_sea_water_velocity_qc_tests, northward_sea_water_velocity_qc_agg, northward_sea_water_velocity_qc_tests</att>
+            <att name="title">42013, C10 Currents, WFS Central Buoy</att>
+        </addAttributes>
+        <dataVariable>
+            <sourceName>station</sourceName>
+            <destinationName>station</destinationName>
+            <dataType>String</dataType>
+            <!-- sourceAttributes>
+                <att name="cf_role">timeseries_id</att>
+                <att name="ioos_category">Identifier</att>
+                <att name="ioos_code">urn:ioos:station:com.axiomdatascience:100702</att>
+                <att name="long_name">42013 - C10 Currents - WFS Central Buoy</att>
+                <att name="short_name">42013-c10-currents-wfs-centra</att>
+                <att name="type">buoy</att>
+            </sourceAttributes -->
+            <addAttributes>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>latitude</sourceName>
+            <destinationName>latitude</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Lat</att>
+                <att name="actual_range" type="doubleList">27.173 27.173</att>
+                <att name="axis">Y</att>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Latitude</att>
+                <att name="standard_name">latitude</att>
+                <att name="units">degrees_north</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">90.0</att>
+                <att name="colorBarMinimum" type="double">-90.0</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>longitude</sourceName>
+            <destinationName>longitude</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Lon</att>
+                <att name="actual_range" type="doubleList">-82.924 -82.924</att>
+                <att name="axis">X</att>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Longitude</att>
+                <att name="standard_name">longitude</att>
+                <att name="units">degrees_east</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">180.0</att>
+                <att name="colorBarMinimum" type="double">-180.0</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>time</sourceName>
+            <destinationName>time</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Time</att>
+                <att name="actual_range" type="doubleList">1.5198624E9 1.5203808E9</att>
+                <att name="axis">T</att>
+                <att name="calendar">gregorian</att>
+                <att name="cf_role">profile_id</att>
+                <att name="ioos_category">Time</att>
+                <att name="long_name">Time</att>
+                <att name="standard_name">time</att>
+                <att name="time_origin">01-JAN-1970 00:00:00</att>
+                <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">1.5204E9</att>
+                <att name="colorBarMinimum" type="double">1.5198E9</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>z</sourceName>
+            <destinationName>z</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Height</att>
+                <att name="_CoordinateZisPositive">up</att>
+                <att name="actual_range" type="doubleList">-22.0 -3.0</att>
+                <att name="axis">Z</att>
+                <att name="ioos_category">Location</att>
+                <att name="long_name">Altitude</att>
+                <att name="positive">up</att>
+                <att name="standard_name">altitude</att>
+                <att name="units">m</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">8000.0</att>
+                <att name="colorBarMinimum" type="double">-8000.0</att>
+                <att name="colorBarPalette">Topography</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_velocity_to_direction</sourceName>
+            <destinationName>sea_water_velocity_to_direction</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">180.0429 359.97455</att>
+                <att name="ancillary_variables">sea_water_velocity_to_direction_qc_agg sea_water_velocity_to_direction_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1001923</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Current To Direction</att>
+                <att name="platform">station</att>
+                <att name="standard_name">sea_water_velocity_to_direction</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/sea_water_velocity_to_direction</att>
+                <att name="units">degrees</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">360.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_velocity_to_direction_qc_agg</sourceName>
+            <destinationName>sea_water_velocity_to_direction_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Current To Direction QARTOD Aggregate Quality Flag</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_velocity_to_direction_qc_tests</sourceName>
+            <destinationName>sea_water_velocity_to_direction_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Current To Direction QARTOD Individual Tests</att>
+                <att name="standard_name">sea_water_velocity_to_direction quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_speed</sourceName>
+            <destinationName>sea_water_speed</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">0.002668 0.291263</att>
+                <att name="ancillary_variables">sea_water_speed_qc_agg sea_water_speed_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1001924</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Current Speed</att>
+                <att name="platform">station</att>
+                <att name="standard_name">sea_water_speed</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/sea_water_speed</att>
+                <att name="units">m.s-1</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">0.5</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_speed_qc_agg</sourceName>
+            <destinationName>sea_water_speed_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Current Speed QARTOD Aggregate Quality Flag</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>sea_water_speed_qc_tests</sourceName>
+            <destinationName>sea_water_speed_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Current Speed QARTOD Individual Tests</att>
+                <att name="standard_name">sea_water_speed quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>eastward_sea_water_velocity</sourceName>
+            <destinationName>eastward_sea_water_velocity</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">-0.19399999999999998 0.2574</att>
+                <att name="ancillary_variables">eastward_sea_water_velocity_qc_agg eastward_sea_water_velocity_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1001921</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Eastward Sea Water Velocity</att>
+                <att name="platform">station</att>
+                <att name="standard_name">eastward_sea_water_velocity</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/eastward_sea_water_velocity</att>
+                <att name="units">m.s-1</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">0.5</att>
+                <att name="colorBarMinimum" type="double">-0.5</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>eastward_sea_water_velocity_qc_agg</sourceName>
+            <destinationName>eastward_sea_water_velocity_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Eastward Sea Water Velocity QARTOD Aggregate Quality Flag</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>eastward_sea_water_velocity_qc_tests</sourceName>
+            <destinationName>eastward_sea_water_velocity_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Eastward Sea Water Velocity QARTOD Individual Tests</att>
+                <att name="standard_name">eastward_sea_water_velocity quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>northward_sea_water_velocity</sourceName>
+            <destinationName>northward_sea_water_velocity</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="actual_range" type="doubleList">-0.2895 0.1591</att>
+                <att name="ancillary_variables">northward_sea_water_velocity_qc_agg northward_sea_water_velocity_qc_tests</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="id">1001922</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Northward Sea Water Velocity</att>
+                <att name="platform">station</att>
+                <att name="standard_name">northward_sea_water_velocity</att>
+                <att name="standard_name_url">http://mmisw.org/ont/cf/parameter/northward_sea_water_velocity</att>
+                <att name="units">m.s-1</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">0.5</att>
+                <att name="colorBarMinimum" type="double">-0.5</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>northward_sea_water_velocity_qc_agg</sourceName>
+            <destinationName>northward_sea_water_velocity_qc_agg</destinationName>
+            <dataType>long</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="int">-9999</att>
+                <att name="_Unsigned">true</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Northward Sea Water Velocity QARTOD Aggregate Quality Flag</att>
+                <att name="standard_name">aggregate_quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
+            <sourceName>northward_sea_water_velocity_qc_tests</sourceName>
+            <destinationName>northward_sea_water_velocity_qc_tests</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_ChunkSizes" type="intList">145 24</att>
+                <att name="_FillValue" type="double">-9999.9</att>
+                <att name="_Unsigned">true</att>
+                <att name="comment">11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test</att>
+                <att name="coordinates">time z longitude latitude</att>
+                <att name="flag_meanings">PASS NOT_EVALUATED SUSPECT FAIL MISSING</att>
+                <att name="flag_values" type="intList">1 2 3 4 9</att>
+                <att name="ioos_category">Other</att>
+                <att name="long_name">Northward Sea Water Velocity QARTOD Individual Tests</att>
+                <att name="standard_name">northward_sea_water_velocity quality_flag</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="_ChunkSizes">null</att>
+                <att name="colorBarMaximum" type="double">10.0</att>
+                <att name="colorBarMinimum" type="double">0.0</att>
+                <att name="coordinates">null</att>
+            </addAttributes>
+        </dataVariable>
+    </dataset>
+</erddapDatasets>
