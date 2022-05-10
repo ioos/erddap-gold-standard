@@ -9,4 +9,4 @@ docker run --rm -it \
   -v "$(pwd)/erddap/content:/usr/local/tomcat/content/erddap" \
   ${IMAGE} \
   bash -c "cd webapps/erddap/WEB-INF/ && bash DasDds.sh"
-  
+
