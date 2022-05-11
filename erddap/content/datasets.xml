@@ -4658,6 +4658,7 @@
       <addAttributes>
         <att name="ioos_category">Identifier</att>
         <att name="long_name">Station ID</att>
+        <att name="cf_role">timeseries_id</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
