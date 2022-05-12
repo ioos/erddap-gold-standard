@@ -460,7 +460,7 @@
   </dataset>
   <dataset type="EDDTableFromErddap" datasetID="bb1_bop_level1" active="true">
     <!-- BBTS BOP Level 1 -->
-    <sourceUrl>https://data.ceotr.ca/erddap/tabledap/bb1_bop_level1.html</sourceUrl>
+    <sourceUrl>https://data.ceotr.ca/erddap/tabledap/bb1_bop_level1</sourceUrl>
   </dataset>
 
   <dataset type="EDDTableFromAsciiFiles" datasetID="cmar_fca0_698a_0716" active="true">
@@ -6308,7 +6308,7 @@
 
   <dataset type="EDDTableFromErddap" datasetID="otn200_20110513_1_delayed" active="true">
     <!-- Glider deployment #1 - otn200 2011-05-13 (delayed) -->
-    <sourceUrl>https://data.ceotr.ca/erddap/tabledap/otn200_20110513_1_delayed.html</sourceUrl>
+    <sourceUrl>https://data.ceotr.ca/erddap/tabledap/otn200_20110513_1_delayed</sourceUrl>
   </dataset>
 
   <!-- St. FX Marine Ecology Lab HOBO logger: START -->
