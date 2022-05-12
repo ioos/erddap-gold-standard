@@ -460,7 +460,7 @@
   </dataset>
   <dataset type="EDDTableFromErddap" datasetID="bb1_bop_level1" active="true">
     <!-- BBTS BOP Level 1 -->
-    <sourceUrl>http://belafonte.ocean.dal.ca:8080/erddap/tabledap/bb1_bop_level1</sourceUrl>
+    <sourceUrl>https://data.ceotr.ca/erddap/tabledap/bb1_bop_level1</sourceUrl>
   </dataset>
 
   <dataset type="EDDTableFromAsciiFiles" datasetID="cmar_fca0_698a_0716" active="true">
@@ -4546,7 +4546,7 @@
         <att name="subsetVariables">station_id, longitude, latitude</att>
     -->
     <addAttributes>
-      <att name="cdm_data_type">TimeSeries</att>
+      <att name="cdm_data_type">Other</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">FORCE</att>
       <att name="creator_type">institution</att>
@@ -6308,7 +6308,7 @@
 
   <dataset type="EDDTableFromErddap" datasetID="otn200_20110513_1_delayed" active="true">
     <!-- Glider deployment #1 - otn200 2011-05-13 (delayed) -->
-    <sourceUrl>https://belafonte.ocean.dal.ca/erddap/tabledap/otn200_20110513_1_delayed</sourceUrl>
+    <sourceUrl>https://data.ceotr.ca/erddap/tabledap/otn200_20110513_1_delayed</sourceUrl>
   </dataset>
 
   <!-- St. FX Marine Ecology Lab HOBO logger: START -->
