@@ -4522,7 +4522,7 @@
 
   <!-- FORCE Met Tower: START -->
   <dataset type="EDDTableFromAsciiFiles" datasetID="force_3b1e_d478_b537" active="true">
-    <iso19115File>https://dev.cioosatlantic.ca/metadata/force/force_meteorological_tower_07b11.xml</iso19115File>
+    <iso19115File>https://dev.cioosatlantic.ca/metadata/force/force_meteorological_tower.xml</iso19115File>
     <reloadEveryNMinutes>15</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
     <fileDir>/datasets/force/</fileDir>
@@ -4546,11 +4546,11 @@
         <att name="subsetVariables">station_id, longitude, latitude</att>
     -->
     <addAttributes>
-      <att name="cdm_data_type">Other</att>
+      <att name="cdm_data_type">TimeSeries</att>
       <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
       <att name="creator_name">FORCE</att>
       <att name="creator_type">institution</att>
-      <att name="infoUrl">???</att>
+      <att name="infoUrl">https://fundyforcelive.ca</att>
       <att name="contributor_name">Joel Culina</att>
       <att name="contributor_role">custodian</att>
       <att name="date_created">2016-12-01</att>
@@ -4564,9 +4564,10 @@
       <att name="keywords_vocabulary">GCMD Science Keywords</att>
       <att name="license">[standard]</att>
       <att name="sourceUrl">(local files)</att>
-      <att name="standard_name_vocabulary">CF Standard Name Table v55</att>
-      <att name="subsetVariables">Manual_BP, StationID, Prog_Sig, Rain_mm, Elevation_Correction</att>
-      <att name="summary">Variables:  a)	Rain (mm) b)	Air Temp (C) c)	Wind Dir () d)	Wind Speed (m/s) e)	Pressure Raw (Pa) f)	Wind Speed Max 2 min (m/s) g)	Wind Speed Max 15 min (m/s) h)	Solar Radiation (MJ) i)	Wind Speed Median 15 min (m/s) j)	Relative Humidity (%) k)	Air Temp Max 1 min (C) l)	Pressure (mbar) m)	Elevation Correction n)	Wind Speed Avg 15 min (m/s) o)	Potential Temperature (C) p)	Date (UTC) q)	Solar Raw r)	Wind Dir Avg 15 min () s)	Solar Radiation (kW); Temporal frequency: 15 mins; Temporal coverage: Dec 2016-present; Spatial coverage: Fixed met tower; How: standard sensor suite; Why: Informing meteorological conditions at the FORCE site</att>
+      <att name="standard_name_vocabulary">CF Standard Name Table v78</att>
+      <att name="cdm_timeseries_variables">StationID, longitude, latitude</att>
+      <att name="subsetVariables">battery_voltage, air_temperature, solar_irradiance, relative_humidity, Manual_BP, StationID, longitude, latitude, wind_speed, potential_temperature, wind_speed_15min_max, Prog_Sig, solar_PV_power_raw, pressure, solar_irradiance_mj, wind_speed_2min_max, pressure_raw, Rain_mm, wind_from_direction_15min_average, air_temperature_1min_max, wind_from_direction, wind_speed_15min_median, wind_speed_15min_average, Elevation_Correction</att>
+      <att name="summary">Variables:  a)  Rain (mm) b)  Air Temp (C) c)  Wind Dir () d)  Wind Speed (m/s) e)  Pressure Raw (Pa) f)  Wind Speed Max 2 min (m/s) g)  Wind Speed Max 15 min (m/s) h)  Solar Radiation (MJ) i)  Wind Speed Median 15 min (m/s) j)  Relative Humidity (%) k)  Air Temp Max 1 min (C) l)  Pressure (mbar) m)  Elevation Correction n)  Wind Speed Avg 15 min (m/s) o)  Potential Temperature (C) p)  Date (UTC) q)  Solar Raw r)  Wind Dir Avg 15 min () s)  Solar Radiation (kW); Temporal frequency: 15 mins; Temporal coverage: Dec 2016-present; Spatial coverage: Fixed met tower; How: standard sensor suite; Why: Informing meteorological conditions at the FORCE site</att>
       <att name="testOutOfDate">now-2days</att>
       <att name="title">FORCE Meteorological Tower</att>
     </addAttributes>
@@ -4658,6 +4659,33 @@
       <addAttributes>
         <att name="ioos_category">Identifier</att>
         <att name="long_name">Station ID</att>
+        <att name="cf_role">timeseries_id</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>=-64.403</sourceName>
+      <destinationName>longitude</destinationName>
+      <dataType>double</dataType>
+      <!-- sourceAttributes>
+      </sourceAttributes -->
+      <addAttributes>
+        <att name="ioos_category">Location</att>
+        <att name="long_name">Longitude</att>
+        <att name="standard_name">longitude</att>
+        <att name="units">degrees_east</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>=45.3713</sourceName>
+      <destinationName>latitude</destinationName>
+      <dataType>double</dataType>
+      <!-- sourceAttributes>
+      </sourceAttributes -->
+      <addAttributes>
+        <att name="ioos_category">Location</att>
+        <att name="long_name">Latitude</att>
+        <att name="standard_name">latitude</att>
+        <att name="units">degrees_north</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
