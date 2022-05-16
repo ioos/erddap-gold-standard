@@ -4882,7 +4882,7 @@
   <dataset type="EDDTableFromMultidimNcFiles" datasetID="2020_fall_6fe3_cad6_5f29" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/bio/ctd/</fileDir>
+    <fileDir>/datasets/dfo/bio/ctd</fileDir>
     <fileNameRegex>.*\.ODF\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -6478,4 +6478,3 @@
   <!-- St. FX Marine Ecology Lab HOBO logger: END -->
 
 </erddapDatasets>
-
