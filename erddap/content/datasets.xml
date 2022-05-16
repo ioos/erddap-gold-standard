@@ -4910,7 +4910,7 @@
   <dataset type="EDDTableFromMultidimNcFiles" datasetID="2020_fall_6fe3_cad6_5f29" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/bio/ctd/converted_nc</fileDir>
+    <fileDir>/datasets/dfo/bio/ctd</fileDir>
     <fileNameRegex>.*\.ODF\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -5032,7 +5032,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>platform_id</sourceName>
+      <sourceName>global:platform_id</sourceName>
       <destinationName>platform_id</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -5065,7 +5065,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>geographic_area</sourceName>
+      <sourceName>global:geographic_area</sourceName>
       <destinationName>geographic_area</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -5081,7 +5081,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>id</sourceName>
+      <sourceName>***fileName,(.*),1</sourceName>
       <destinationName>id</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -5090,7 +5090,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>event_number</sourceName>
+      <sourceName>global:event_number</sourceName>
       <destinationName>event_number</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -5100,7 +5100,7 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>profile_direction</sourceName>
+      <sourceName>global:profile_direction</sourceName>
       <destinationName>profile_direction</destinationName>
       <dataType>String</dataType>
       <addAttributes>
@@ -5219,12 +5219,12 @@
         <att name="standard_name">time</att>
         <att name="ioos_category">Time</att>
         <att name="coverage_content_type">coordinate</att>
-        <att name="units">seconds since 1970-01-01</att>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         <att name="calendar">proleptic_gregorian</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>profile_start_time</sourceName>
+      <sourceName>global:event_start_time</sourceName>
       <destinationName>profile_start_time</destinationName>
       <dataType>float</dataType>
       <addAttributes>
@@ -5232,12 +5232,12 @@
         <att name="long_name">Profile Start Time</att>
         <att name="ioos_category">Time</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
-        <att name="units">seconds since 1970-01-01</att>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         <att name="calendar">proleptic_gregorian</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>profile_end_time</sourceName>
+      <sourceName>global:event_end_time</sourceName>
       <destinationName>profile_end_time</destinationName>
       <dataType>float</dataType>
       <addAttributes>
@@ -5245,7 +5245,7 @@
         <att name="long_name">Profile End Time</att>
         <att name="ioos_category">Time</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
-        <att name="units">seconds since 1970-01-01</att>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         <att name="calendar">proleptic_gregorian</att>
       </addAttributes>
     </dataVariable>
@@ -5262,7 +5262,7 @@
         <att name="legacy_gf3_code">SYTM_01</att>
         <att name="resolution">0.01</att>
         <att name="coverage_content_type">coordinate</att>
-        <att name="units">seconds since 1970-01-01</att>
+        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
         <att name="calendar">proleptic_gregorian</att>
       </addAttributes>
     </dataVariable>
@@ -6506,4 +6506,3 @@
   <!-- St. FX Marine Ecology Lab HOBO logger: END -->
 
 </erddapDatasets>
-
