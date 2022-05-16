@@ -1,7 +1,7 @@
 export ERDDAP_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 export ERDDAP_DATASETS_XML=${ERDDAP_DIR}/erddap/content/datasets.xml
 export ERDDAP_DATA_DIR=${ERDDAP_DIR}/datasets
-export ERDDAP_GENDATA_DIR=${ERDDAP_DIR}/generate_datasets
+export ERDDAP_XML_DIR=${ERDDAP_DIR}/erddap/content/datasets_xml
 if [ -z $ERDDAP_URL ]; then
     export ERDDAP_URL=http://127.0.0.1:8080/erddap
 fi
@@ -33,17 +33,17 @@ erddap_gendata_mv() {
     fi
 }
 
-erddap_gendata_cat() {
+erddap_xml_concat() {
     # Concatenate all generated XML files together to create datasets.xml
     mv $ERDDAP_DATASETS_XML $ERDDAP_DATASETS_XML.bak
     cat > $ERDDAP_DATASETS_XML << EOF
 <?xml version="1.0" encoding="UTF-8" ?>
 <erddapDatasets>
-    <requestBlacklist />
 EOF
     for xml_file in $ERDDAP_GENDATA_DIR/*.xml; do
         cat $xml_file >>  $ERDDAP_DATASETS_XML
     done
+    echo "</erddapDatasets>" >> $ERDDAP_DATASETS_XML
 }
 
 erddap_dir() {
