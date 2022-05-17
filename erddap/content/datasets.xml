@@ -5032,11 +5032,11 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>global:platform_id</sourceName>
+      <sourceName>global:wmo_platform_code</sourceName>
       <destinationName>platform_id</destinationName>
       <dataType>String</dataType>
       <addAttributes>
-        <att name="standard_name">platform_id</att>
+        <att name="standard_name">WMO Platform Code</att>
         <att name="ioos_category">Other</att>
       </addAttributes>
     </dataVariable>
@@ -5232,7 +5232,7 @@
         <att name="long_name">Profile Start Time</att>
         <att name="ioos_category">Time</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <att name="units">yyyy-MM-dd'T'HH:mm:ssZ</att>
         <att name="calendar">proleptic_gregorian</att>
       </addAttributes>
     </dataVariable>
@@ -5245,7 +5245,7 @@
         <att name="long_name">Profile End Time</att>
         <att name="ioos_category">Time</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
-        <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+        <att name="units">yyyy-MM-dd'T'HH:mm:ssZ</att>
         <att name="calendar">proleptic_gregorian</att>
       </addAttributes>
     </dataVariable>
