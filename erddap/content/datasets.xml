@@ -5081,10 +5081,11 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>***fileName,(.*),1</sourceName>
+      <sourceName>***fileName,(.*).ODF.nc,1</sourceName>
       <destinationName>id</destinationName>
       <dataType>String</dataType>
       <addAttributes>
+        <att name="long_name">Original File Name</att>
         <att name="ioos_category">Other</att>
         <att name="cf_role">profile_id</att>
       </addAttributes>
@@ -5104,6 +5105,7 @@
       <destinationName>profile_direction</destinationName>
       <dataType>String</dataType>
       <addAttributes>
+        <att name="long_name">Profile Direction</att>
         <att name="ioos_category">Other</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
       </addAttributes>
@@ -5226,26 +5228,26 @@
     <dataVariable>
       <sourceName>global:event_start_time</sourceName>
       <destinationName>profile_start_time</destinationName>
-      <dataType>float</dataType>
+      <dataType>String</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Profile Start Time</att>
         <att name="ioos_category">Time</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
-        <att name="units">yyyy-MM-dd'T'HH:mm:ssZ</att>
+        <att name="units">yyyy-MM-dd'T'HH:mm:ss.SXXX</att>
         <att name="calendar">proleptic_gregorian</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>global:event_end_time</sourceName>
       <destinationName>profile_end_time</destinationName>
-      <dataType>float</dataType>
+      <dataType>String</dataType>
       <addAttributes>
         <att name="_FillValue">nan</att>
         <att name="long_name">Profile End Time</att>
         <att name="ioos_category">Time</att>
         <att name="coverage_content_type">auxiliaryInformation</att>
-        <att name="units">yyyy-MM-dd'T'HH:mm:ssZ</att>
+        <att name="units">yyyy-MM-dd'T'HH:mm:ss.SXXX</att>
         <att name="calendar">proleptic_gregorian</att>
       </addAttributes>
     </dataVariable>
