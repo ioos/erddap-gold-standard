@@ -8,7 +8,8 @@ summary: A how-to guide for modifying an ERDDAP server.
 ---
 ## Customizing ERDDAP
 
-These are minimal instructions for customizing ERDDAP and are intended to get you up and running quickly so that you can test out ERDDAP.
+These are minimal instructions for customizing ERDDAP and are intended to get you up and running quickly so that you can 
+test out ERDDAP.
 
 ### Configuration files overview
 
@@ -24,13 +25,16 @@ These are minimal instructions for customizing ERDDAP and are intended to get yo
 
 ### Update `config.sh`
 
-Set the following variables in `config.sh`
+Starting with ERDDAP v2.13, ERDDAP administrators can override any value in setup.xml by specifying an environment 
+variable named `ERDDAP_valueName` before running ERDDAP. For example, use `ERDDAP_baseUrl` overrides the `<baseUrl>` 
+value. The `config.sh` script assists with setting those environment variables. Below are some of the configurations
+you may want to set up.
 
 #### Configure your institution
 
 Update the `<admin.*>` tags by setting:
 
-```
+```shell
 ERDDAP_adminInstitution=""
 ERDDAP_adminInstitutionUrl=""
 ERDDAP_adminIndividualName=""
@@ -45,10 +49,9 @@ ERDDAP_adminEmail=""
 ```
 
 #### Configure email
+To configure the email address update the `<email.*>` and `<emailEverythingTo>` tags by setting:
 
-Update the `<email.*>` and `<emailEverythingTo>` tags by setting:
-
-```
+```shell
 ERDDAP_emailEverythingTo=""
 ERDDAP_emailDailyReportsTo=""
 ERDDAP_emailFromAddress=""
@@ -59,11 +62,18 @@ ERDDAP_emailSmtpHost=""
 ERDDAP_emailSmtpPort=""
 ```
 
+For example, with a NOAA email accounts use the following settings:
+```shell
+ERDDAP_emailSmtpHost="http://smtp.gmail.com/"
+ERDDAP_emailSmtpPort="587" 
+ERDDAP_emailProperties="mail.smtp.starttls.enable|true"
+```
+
 #### Update for your domain
 
 Update `<baseUrl>`, `<baseHttpsUrl>` and `<flagKeyKey>` to match your domain by setting:
 
-```
+```shell
 ERDDAP_baseUrl=""
 ERDDAP_baseHttpsUrl=""
 ERDDAP_flagKeyKey=""
