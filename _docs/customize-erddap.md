@@ -92,6 +92,17 @@ ERDDAP_emailProperties="mail.smtp.starttls.enable|true"
 ```
 
 #### Update for your domain
+`baseUrl` - is the start of the public url, to which "/erddap" is appended. For example, when running/testing on your 
+personal computer: `<baseUrl>http://localhost:8080</baseUrl>`
+
+`baseHttpsUrl` - this is a variant of `baseUrl` which is used when authentication is active and the user is logged in.
+More details can be found at <https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html#security>. 
+
+`flagKeyKey` - ERDDAP has a service that lets remote users set a flag to notify ERDDAP to try to reload a dataset. These 
+requests use a key which is generated based on baseUrl/erddap, a datasetID, and flagKeyKey. **CHANGE THIS ONCE**, to any 
+text (a favorite quote? random text? Whatever you want.). Normally, you won't ever change this again. But if you think 
+someone is abusing the flag system, change this text again, restart ERDDAP, and send all of the users of the flag system 
+the relevant new flagKeys (see the list in the Daily Report).
 
 Update `<baseUrl>`, `<baseHttpsUrl>` and `<flagKeyKey>` to match your domain by setting:
 
