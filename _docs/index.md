@@ -1,7 +1,6 @@
 ---
 title: "ERDDAP Quick Start"
 keywords: homepage
-tags: [getting_started, about, overview]
 toc: true
 #permalink: index.html
 summary: A quick start for deploying an ERDDAP server.

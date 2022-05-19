@@ -1,7 +1,6 @@
 ---
 title: "Use case for loading a comma separated value (.csv) file"
 keywords: homepage
-tags: [examples, use cases, table]
 toc: true
 summary: Examples for loading CSV files into ERDDAP.
 ---

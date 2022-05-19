@@ -1,7 +1,6 @@
 ---
 title: "Adding a NetCDF file to ERDDAP"
 keywords: homepage
-tags: [getting_started, netcdf]
 toc: true
 #permalink: index.html
 summary: NC file info stripped out of README.md

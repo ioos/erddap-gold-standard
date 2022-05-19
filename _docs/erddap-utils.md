@@ -1,7 +1,6 @@
 ---
 title: "ERDDAP Utilities"
 keywords: homepage
-tags: [utilities]
 toc: true
 summary: Some useful utilities
 ---

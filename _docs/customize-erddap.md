@@ -1,7 +1,6 @@
 ---
 title: "Customize your ERDDAP"
 keywords: customize
-tags: [modify, customize]
 toc: true
 #permalink: index.html
 summary: A how-to guide for modifying an ERDDAP server.
