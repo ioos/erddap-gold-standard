@@ -1,7 +1,6 @@
 ---
 title: "How to update ERDDAP"
 keywords: homepage
-tags: [examples, use cases, table]
 toc: true
 summary: Guide on how to update ERDDAP
 ---

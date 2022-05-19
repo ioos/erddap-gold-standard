@@ -1,7 +1,6 @@
 ---
 title: "Adding datasets to ERDDAP"
 keywords: datasets
-tags: [datasets, overview]
 toc: true
 #permalink: index.html
 summary: A how-to guide for adding datasets to an ERDDAP server.
