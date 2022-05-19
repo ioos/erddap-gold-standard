@@ -5093,7 +5093,7 @@
     <dataVariable>
       <sourceName>global:event_number</sourceName>
       <destinationName>event_number</destinationName>
-      <dataType>String</dataType>
+      <dataType>int</dataType>
       <addAttributes>
         <att name="ioos_category">Other</att>
         <att name="long_name">Event Number</att>
