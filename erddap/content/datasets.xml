@@ -4774,7 +4774,6 @@
       <addAttributes>
         <att name="ioos_category">Optical Properties</att>
         <att name="long_name">Solar Irradiance Raw (MJ)</att>
-        <att name="standard_name">solar_irradiance_raw</att>
         <att name="units">MJ</att>
       </addAttributes>
     </dataVariable>
@@ -4801,7 +4800,7 @@
       <addAttributes>
         <att name="ioos_category">Pressure</att>
         <att name="long_name">Air Pressure Raw</att>
-        <att name="standard_name">air_pressure_raw</att>
+        <att name="standard_name">air_pressure</att>
         <att name="units">Pa</att>
       </addAttributes>
     </dataVariable>
