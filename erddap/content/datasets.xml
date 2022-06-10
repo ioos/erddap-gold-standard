@@ -4910,7 +4910,7 @@
   <dataset type="EDDTableFromMultidimNcFiles" datasetID="atlantic_zone_monitoring_program" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/bio/ctd</fileDir>
+    <fileDir>/datasets/dfo/bio/ctd/Atlantic\ Zone\ Monitoring\ Program/</fileDir>
     <fileNameRegex>.*\.ODF\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
@@ -6352,7 +6352,7 @@
   <dataset type="EDDTableFromMultidimNcFiles" datasetID="atlantic_zone_off_shelf_monitoring_program" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/bio/ctd</fileDir>
+    <fileDir>/datasets/dfo/bio/ctd/Atlantic\ Zone\ Off-Shore\ Monitoring\ Program/</fileDir>
     <fileNameRegex>.*\.ODF\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
