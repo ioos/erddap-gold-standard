@@ -4560,11 +4560,11 @@
       <att name="geospatial_lon_min">-64.403</att>
       <att name="institution">FORCE</att>
       <att name="instrument">1</att>
-      <att name="keywords">rain,pressure,wind,air temperature,solar radiation,other,meteorology</att>
+      <att name="keywords">rain,air pressure,wind,air temperature,solar radiation,other,meteorology</att>
       <att name="keywords_vocabulary">GCMD Science Keywords</att>
       <att name="license">[standard]</att>
       <att name="sourceUrl">(local files)</att>
-      <att name="standard_name_vocabulary">CF Standard Name Table v78</att>
+      <att name="standard_name_vocabulary">CF Standard Name Table v79</att>
       <att name="cdm_timeseries_variables">StationID, longitude, latitude</att>
       <att name="subsetVariables">StationID, longitude, latitude</att>
       <att name="summary">Variables:  a)  Rain (mm) b)  Air Temp (C) c)  Wind Dir () d)  Wind Speed (m/s) e)  Pressure Raw (Pa) f)  Wind Speed Max 2 min (m/s) g)  Wind Speed Max 15 min (m/s) h)  Solar Radiation (MJ) i)  Wind Speed Median 15 min (m/s) j)  Relative Humidity (%) k)  Air Temp Max 1 min (C) l)  Pressure (mbar) m)  Elevation Correction n)  Wind Speed Avg 15 min (m/s) o)  Potential Temperature (C) p)  Date (UTC) q)  Solar Raw r)  Wind Dir Avg 15 min () s)  Solar Radiation (kW); Temporal frequency: 15 mins; Temporal coverage: Dec 2016-present; Spatial coverage: Fixed met tower; How: standard sensor suite; Why: Informing meteorological conditions at the FORCE site</att>
@@ -4704,14 +4704,14 @@
     </dataVariable>
     <dataVariable>
       <sourceName>PTemp</sourceName>
-      <destinationName>potential_temperature</destinationName>
+      <destinationName>air_potential_temperature</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Temperature</att>
-        <att name="long_name">Potential Temperature</att>
-        <att name="standard_name">potential_temperature</att>
+        <att name="long_name">Air Potential Temperature</att>
+        <att name="standard_name">air_potential_temperature</att>
         <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
@@ -4754,27 +4754,27 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Bar_mbar</sourceName>
-      <destinationName>pressure</destinationName>
+      <destinationName>air_pressure</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Pressure</att>
-        <att name="long_name">Pressure</att>
-        <att name="standard_name">pressure</att>
-        <att name="units">mbar</att>
+        <att name="long_name">Air Pressure</att>
+        <att name="standard_name">air_pressure</att>
+        <att name="units">Pa</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
       <sourceName>Solar_MJ</sourceName>
-      <destinationName>solar_irradiance_mj</destinationName>
+      <destinationName>solar_irradiance_raw</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Optical Properties</att>
-        <att name="long_name">Solar Irradiance (MJ)</att>
-        <att name="standard_name">solar_irradiance</att>
+        <att name="long_name">Solar Irradiance Raw (MJ)</att>
+        <att name="standard_name">solar_irradiance_raw</att>
         <att name="units">MJ</att>
       </addAttributes>
     </dataVariable>
@@ -4794,15 +4794,15 @@
     </dataVariable>
     <dataVariable>
       <sourceName>Pressure_Raw</sourceName>
-      <destinationName>pressure_raw</destinationName>
+      <destinationName>air_pressure_raw</destinationName>
       <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Pressure</att>
-        <att name="long_name">Pressure Raw</att>
-        <att name="standard_name">pressure</att>
-        <att name="units">mbar</att>
+        <att name="long_name">Air Pressure Raw</att>
+        <att name="standard_name">air_pressure_raw</att>
+        <att name="units">Pa</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4814,7 +4814,7 @@
       <addAttributes>
         <att name="ioos_category">Meteorology</att>
         <att name="long_name">Rain (mm)</att>
-        <att name="standard_name">precipitation</att>
+        <att name="standard_name">thickness_of_rainfall_amount</att>
         <att name="units">mm</att>
       </addAttributes>
     </dataVariable>
@@ -4898,7 +4898,7 @@
       <addAttributes>
         <att name="ioos_category">Location</att>
         <att name="long_name">Elevation Correction</att>
-        <att name="standard_name">elevation</att>
+        <att name="standard_name">height_above_mean_sea_level</att>
         <att name="units">m</att>
       </addAttributes>
     </dataVariable>
