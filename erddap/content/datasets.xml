@@ -4567,7 +4567,7 @@
       <att name="license">[standard]</att>
       <att name="sourceUrl">(local files)</att>
       <att name="standard_name_vocabulary">CF Standard Name Table v79</att>
-      <att name="subsetVariables">StationID, longitude, latitude</att>
+      <att name="subsetVariables">StationID, Manual_BP, longitude, latitude</att>
       <att name="summary">Variables:  a)  Rain (mm) b)  Air Temp (C) c)  Wind Dir () d)  Wind Speed (m/s) e)  Pressure Raw (Pa) f)  Wind Speed Max 2 min (m/s) g)  Wind Speed Max 15 min (m/s) h)  Solar Radiation (MJ) i)  Wind Speed Median 15 min (m/s) j)  Relative Humidity (%) k)  Air Temp Max 1 min (C) l)  Pressure (mbar) m)  Elevation Correction n)  Wind Speed Avg 15 min (m/s) o)  Potential Temperature (C) p)  Date (UTC) q)  Solar Raw r)  Wind Dir Avg 15 min () s)  Solar Radiation (kW); Temporal frequency: 15 mins; Temporal coverage: Dec 2016-present; Spatial coverage: Fixed met tower; How: standard sensor suite; Why: Informing meteorological conditions at the FORCE site</att>
       <att name="testOutOfDate">now-2days</att>
       <att name="title">FORCE Meteorological Tower</att>
@@ -4575,14 +4575,14 @@
     <dataVariable>
       <sourceName>StationID</sourceName>
       <destinationName>StationID</destinationName>
-      <dataType>String</dataType>
+      <dataType>int</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
         <att name="ioos_category">Identifier</att>
         <att name="long_name">Station ID</att>
         <att name="cf_role">timeseries_id</att>
-        <att name="_Encoding">UTF-8</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4679,12 +4679,13 @@
     <dataVariable>
       <sourceName>Manual_BP</sourceName>
       <destinationName>Manual_BP</destinationName>
-      <dataType>String</dataType>
+      <dataType>int</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Other</att>
         <att name="long_name">Manual BP</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4735,8 +4736,9 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Other</att>
         <att name="long_name">Prog Sig</att>
+        <att name="units">1</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
