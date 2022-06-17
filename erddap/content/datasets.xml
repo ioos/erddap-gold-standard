@@ -522,7 +522,7 @@
     <dataVariable>
       <sourceName>buoy_id</sourceName>
       <destinationName>buoy_id</destinationName>
-      <dataType>String</dataType>
+      <dataType>int</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
