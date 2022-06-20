@@ -5017,6 +5017,8 @@
       <att name="ices_edmo_code">null</att>
       <att name="ices_platform_code">null</att>
       <att name="wmo_platform_code">null</att>
+      <att name="seabid_processing_modules">null</att>
+      <att name="year">null</att>
     </addAttributes>
     <dataVariable>
       <sourceName>global:program</sourceName>
@@ -6462,6 +6464,8 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
       <att name="ices_edmo_code">null</att>
       <att name="ices_platform_code">null</att>
       <att name="wmo_platform_code">null</att>
+      <att name="seabid_processing_modules">null</att>
+      <att name="year">null</att>
     </addAttributes>
     <dataVariable>
       <sourceName>global:program</sourceName>
@@ -7903,6 +7907,8 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
       <att name="ices_edmo_code">null</att>
       <att name="ices_platform_code">null</att>
       <att name="wmo_platform_code">null</att>
+      <att name="seabid_processing_modules">null</att>
+      <att name="year">null</att>
     </addAttributes>
     <dataVariable>
       <sourceName>global:program</sourceName>
