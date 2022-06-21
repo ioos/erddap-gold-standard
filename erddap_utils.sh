@@ -68,11 +68,20 @@ erddap_dataset_ids() {
 
 erddap_refresh_dataset() {
     dataset_id=$1
-    flag_file=${ERDDAP_DIR}/erddap/data/hardFlag/${dataset_id}
-    echo "Creating the following flag file to force refresh of dataset $dataset_id"
+    hard_flag_file=${ERDDAP_DIR}/erddap/data/hardFlag/${dataset_id}
+    echo "Creating the following hard flag file to force hard refresh of all data for dataset $dataset_id"
+    echo $hard_flag_file
+    sudo touch $hard_flag_file
+    echo "Restart ERDDAP to complete the dataset refresh"
+}
+
+erddap_refresh_metadata() {
+    dataset_id=$1
+    flag_file=${ERDDAP_DIR}/erddap/data/flag/${dataset_id}
+    echo "Creating the flag file to notify ERDDAP to refresh its metadata contents as soon as possible for dataset $dataset_id"
     echo $flag_file
     sudo touch $flag_file
-    echo "Restart ERDDAP to complete the dataset refresh"
+    echo "ERDDAP metadata contents for this dataset should be updated shortly."
 }
 
 erddap_log_docker() {
