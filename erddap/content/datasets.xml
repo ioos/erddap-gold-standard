@@ -5035,7 +5035,6 @@
       <att name="water_depth">null</att>
       <att name="mission_start_date">null</att>
       <att name="mission_end_date">null</att>
-      <att name="program">null</att>
       <att name="sounding">null</att>
       <att name="depth_off_bottom">null</att>
       <att name="event_start_time">null</att>
@@ -5049,14 +5048,6 @@
       <att name="seabid_processing_modules">null</att>
       <att name="year">null</att>
     </addAttributes>
-    <dataVariable>
-      <sourceName>global:program</sourceName>
-      <destinationName>program</destinationName>
-      <dataType>String</dataType>
-      <addAttributes>
-        <att name="ioos_category">Other</att>
-      </addAttributes>
-    </dataVariable>
     <dataVariable>
       <sourceName>global:project</sourceName>
       <destinationName>project</destinationName>
@@ -6483,7 +6474,6 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
       <att name="water_depth">null</att>
       <att name="mission_start_date">null</att>
       <att name="mission_end_date">null</att>
-      <att name="program">null</att>
       <att name="sounding">null</att>
       <att name="depth_off_bottom">null</att>
       <att name="event_start_time">null</att>
@@ -6497,14 +6487,6 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
       <att name="seabid_processing_modules">null</att>
       <att name="year">null</att>
     </addAttributes>
-    <dataVariable>
-      <sourceName>global:program</sourceName>
-      <destinationName>program</destinationName>
-      <dataType>String</dataType>
-      <addAttributes>
-        <att name="ioos_category">Other</att>
-      </addAttributes>
-    </dataVariable>
     <dataVariable>
       <sourceName>global:project</sourceName>
       <destinationName>project</destinationName>
@@ -7927,7 +7909,6 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
       <att name="water_depth">null</att>
       <att name="mission_start_date">null</att>
       <att name="mission_end_date">null</att>
-      <att name="program">null</att>
       <att name="sounding">null</att>
       <att name="depth_off_bottom">null</att>
       <att name="event_start_time">null</att>
@@ -7941,14 +7922,6 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
       <att name="seabid_processing_modules">null</att>
       <att name="year">null</att>
     </addAttributes>
-    <dataVariable>
-      <sourceName>global:program</sourceName>
-      <destinationName>program</destinationName>
-      <dataType>String</dataType>
-      <addAttributes>
-        <att name="ioos_category">Other</att>
-      </addAttributes>
-    </dataVariable>
     <dataVariable>
       <sourceName>global:project</sourceName>
       <destinationName>project</destinationName>
