@@ -4584,7 +4584,7 @@
       <att name="infoUrl">https://fundyforcelive.ca</att>
       <att name="contributor_name">Joel Culina</att>
       <att name="contributor_role">custodian</att>
-      <att name="date_created">2016-12-01</att>
+      <att name="date_created">2016-12-09</att>
       <att name="geospatial_lat_max">45.3713</att>
       <att name="geospatial_lat_min">45.3713</att>
       <att name="geospatial_lon_max">-64.403</att>
@@ -4927,6 +4927,18 @@
       <addAttributes>
         <att name="ioos_category">Location</att>
         <att name="long_name">Elevation Correction</att>
+        <att name="units">m</att>
+      </addAttributes>
+    </dataVariable>
+    <dataVariable>
+      <sourceName>=25</sourceName>
+      <destinationName>elevation</destinationName>
+      <dataType>float</dataType>
+      <!-- sourceAttributes>
+      </sourceAttributes -->
+      <addAttributes>
+        <att name="ioos_category">Location</att>
+        <att name="long_name">Height Above Mean Sea Level</att>
         <att name="standard_name">height_above_mean_sea_level</att>
         <att name="units">m</att>
       </addAttributes>
