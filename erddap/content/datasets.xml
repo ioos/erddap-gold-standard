@@ -4792,7 +4792,7 @@
         <att name="ioos_category">Pressure</att>
         <att name="long_name">Air Pressure</att>
         <att name="standard_name">air_pressure</att>
-        <att name="units">Pa</att>
+        <att name="units">hPa</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
@@ -4831,7 +4831,7 @@
         <att name="ioos_category">Pressure</att>
         <att name="long_name">Air Pressure Raw</att>
         <att name="standard_name">air_pressure</att>
-        <att name="units">Pa</att>
+        <att name="units">hPa</att>
       </addAttributes>
     </dataVariable>
     <dataVariable>
