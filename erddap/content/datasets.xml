@@ -4771,18 +4771,6 @@
       </addAttributes>
     </dataVariable>
     <dataVariable>
-      <sourceName>Solar_Raw</sourceName>
-      <destinationName>solar_PV_power_raw</destinationName>
-      <dataType>float</dataType>
-      <!-- sourceAttributes>
-      </sourceAttributes -->
-      <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Solar PV Power (W)</att>
-        <att name="units">Watts</att>
-      </addAttributes>
-    </dataVariable>
-    <dataVariable>
       <sourceName>Bar_mbar</sourceName>
       <destinationName>air_pressure</destinationName>
       <dataType>float</dataType>
