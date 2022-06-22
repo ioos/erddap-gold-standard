@@ -587,7 +587,7 @@
     <dataVariable>
       <sourceName>device_temp_c (C)</sourceName>
       <destinationName>temp_c</destinationName>
-      <dataType>byte</dataType>
+      <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
@@ -871,7 +871,7 @@
     <dataVariable>
       <sourceName>buoy_id</sourceName>
       <destinationName>buoy_id</destinationName>
-      <dataType>short</dataType>
+      <dataType>int</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
@@ -887,7 +887,7 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Identifier</att>
         <att name="long_name">Buoy Name</att>
       </addAttributes>
     </dataVariable>
@@ -936,12 +936,12 @@
     <dataVariable>
       <sourceName>device_temp_c (C)</sourceName>
       <destinationName>temp_c</destinationName>
-      <dataType>byte</dataType>
+      <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Device Temp C (C)</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="long_name">Device Temp</att>
         <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
@@ -1220,7 +1220,7 @@
     <dataVariable>
       <sourceName>buoy_id</sourceName>
       <destinationName>buoy_id</destinationName>
-      <dataType>short</dataType>
+      <dataType>int</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
@@ -1236,7 +1236,7 @@
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
+        <att name="ioos_category">Identifier</att>
         <att name="long_name">Buoy Name</att>
       </addAttributes>
     </dataVariable>
@@ -1285,12 +1285,12 @@
     <dataVariable>
       <sourceName>device_temp_c (C)</sourceName>
       <destinationName>temp_c</destinationName>
-      <dataType>byte</dataType>
+      <dataType>float</dataType>
       <!-- sourceAttributes>
       </sourceAttributes -->
       <addAttributes>
-        <att name="ioos_category">Unknown</att>
-        <att name="long_name">Device Temp C (C)</att>
+        <att name="ioos_category">Temperature</att>
+        <att name="long_name">Device Temp</att>
         <att name="units">degree_Celsius</att>
       </addAttributes>
     </dataVariable>
