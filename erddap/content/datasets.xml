@@ -49,7 +49,7 @@
     <sortedColumnSourceName>DeployTime(ISO8601)</sortedColumnSourceName>
     <sortFilesBySourceNames>DeployTime(ISO8601)</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -479,7 +479,7 @@
     <sortedColumnSourceName>timestamp</sortedColumnSourceName>
     <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -828,7 +828,7 @@
     <sortedColumnSourceName>timestamp</sortedColumnSourceName>
     <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -1177,7 +1177,7 @@
     <sortedColumnSourceName>timestamp</sortedColumnSourceName>
     <sortFilesBySourceNames>timestamp</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -1526,7 +1526,7 @@
     <sortedColumnSourceName>start_datetime</sortedColumnSourceName>
     <sortFilesBySourceNames>start_datetime</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -1961,6 +1961,7 @@
     <sortedColumnSourceName></sortedColumnSourceName>
     <sortFilesBySourceNames></sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -2038,6 +2039,7 @@
     <sortedColumnSourceName>Year</sortedColumnSourceName>
     <sortFilesBySourceNames>Year</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -2220,6 +2222,7 @@
     <sortedColumnSourceName>Year</sortedColumnSourceName>
     <sortFilesBySourceNames>Year</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -4567,7 +4570,7 @@
     <sortedColumnSourceName>date</sortedColumnSourceName>
     <sortFilesBySourceNames>date</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
@@ -9276,6 +9279,7 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
     <sortedColumnSourceName>time</sortedColumnSourceName>
     <sortFilesBySourceNames>time</sortFilesBySourceNames>
     <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
     <!-- sourceAttributes>
     </sourceAttributes -->
     <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
