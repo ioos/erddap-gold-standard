@@ -4553,7 +4553,7 @@
   <!-- FORCE ADCP Mar 2018: END -->
 
   <!-- FORCE Met Tower: START -->
-  <dataset type="EDDTableFromAsciiFiles" datasetID="force_3b1e_d478_b537" active="true">
+  <dataset type="EDDTableFromAsciiFiles" datasetID="force_meteorological_tower" active="true">
     <iso19115File>https://dev.cioosatlantic.ca/metadata/force/met_tower/force_meteorological_tower_a36e4.xml</iso19115File>
     <reloadEveryNMinutes>15</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
