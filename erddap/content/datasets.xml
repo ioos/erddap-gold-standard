@@ -4959,8 +4959,7 @@
     <addAttributes>
       <att name="organization">Fisheries and Oceans Canada</att>
       <att name="organization_fr">Pêches et Océans Canada</att>
-      <att name="institution">Bedford Institute of Oceanography (BIO)</att>
-      <att name="institution">Institut océanographique de Bedford (BIO)</att>
+      <att name="institution">DFO BIO</att>
       <att name="cdm_data_type">Profile</att>
       <att name="cdm_profile_variables">platform_name,chief_scientist,cruise_name,cruise_number,geographic_area,id,station,event_number,profile_direction,latitude,longitude,profile_start_time,profile_end_time</att>
       <att name="Conventions">CF-1.6,CF-1.7,CF-1.8,ACDD-1.1,ACDD-1.3</att>
@@ -6399,8 +6398,7 @@
     <addAttributes>
       <att name="organization">Fisheries and Oceans Canada</att>
       <att name="organization_fr">Pêches et Océans Canada</att>
-      <att name="institution">Bedford Institute of Oceanography (BIO)</att>
-      <att name="institution">Institut océanographique de Bedford (BIO)</att>
+      <att name="institution">DFO BIO</att>
       <att name="cdm_data_type">Profile</att>
       <att name="cdm_profile_variables">platform_name,chief_scientist,cruise_name,cruise_number,geographic_area,id,station,event_number,profile_direction,latitude,longitude,profile_start_time,profile_end_time</att>
       <att name="Conventions">CF-1.6,CF-1.7,CF-1.8,ACDD-1.1,ACDD-1.3</att>
@@ -7842,8 +7840,7 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
     <addAttributes>
       <att name="organization">Fisheries and Oceans Canada</att>
       <att name="organization_fr">Pêches et Océans Canada</att>
-      <att name="institution">Bedford Institute of Oceanography (BIO)</att>
-      <att name="institution">Institut océanographique de Bedford (BIO)</att>
+      <att name="institution">DFO BIO</att>
       <att name="cdm_data_type">Profile</att>
       <att name="cdm_profile_variables">platform_name,chief_scientist,cruise_name,cruise_number,geographic_area,id,station,event_number,profile_direction,latitude,longitude,profile_start_time,profile_end_time</att>
       <att name="Conventions">CF-1.6,CF-1.7,CF-1.8,ACDD-1.1,ACDD-1.3</att>
