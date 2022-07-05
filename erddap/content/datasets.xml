@@ -4980,7 +4980,6 @@
       <att name="geospatial_vertical_units">m</att>
       <att name="header"></att>
       <att name="infoUrl">https://www.dfo-mpo.gc.ca/science/data-donnees/azmp-pmza/index-eng.html</att>
-      <att name="institution">Fisheries and Oceans Canada - Bedford Institute of Oceanography</att>
       <att name="keywords">chlorophyll a,climate change,phosphate,oxygen,water density,seaSurfaceSalinity,subSurfaceTemperature,remote sensing,salinity,seaSurfaceTemperature,oceanographic missions,physical-chemical,other,nutrients,inorganicCarbon,sampling,water temperature,dissolvedOrganicCarbon,potential temperature,fluorescence,potential density,nitrate,pressure,seawater density,subSurfaceSalinity,silicate</att>
       <att name="keywords_fra">changement climatique, salinit&#xe9;, chlorophylle a, temp&#xe9;rature de l&#39;eau, t&#xe9;l&#xe9;d&#xe9;tection, fluorescence, densit&#xe9; eau, &#xe9;chantillonnage, missions oc&#xe9;anographique, physico-chimie, Oxyg&#xe8;ne, Pression, Salinit&#xe9; de surface, Temp&#xe9;rature de surface, Densit&#xe9; d&#39;eau de mer, Temp&#xe9;rature potentielle, Densit&#xe9; potentielle, Autre, Salinit&#xe9; sous la surface, Temp&#xe9;rature sous la surface</att>
       <att name="keywords_vocabulary">CIOOS Keywords</att>
@@ -6418,7 +6417,6 @@
       <att name="geospatial_vertical_units">m</att>
       <att name="header"></att>
       <att name="infoUrl">https://www.dfo-mpo.gc.ca/science/data-donnees/azmp-pmza/index-eng.html</att>
-      <att name="institution">Fisheries and Oceans Canada</att>
       <att name="keywords">CTD,tracers,chlorophyll a,climate change,phosphate,oceanColour,zooplanktonBiomassAndDiversity,oxygen,water density,phytoplankton,seaSurfaceSalinity,subSurfaceTemperature,particulateMatter,remote sensing,salinity,ADCP,seaSurfaceTemperature,PCO2,phytoplanktonBiomassAndDiversity,sea currents,oceanographic missions,transientTracers,physical-chemical,other,surfaceCurrents,nutrients,inorganicCarbon,sampling,subSurfaceCurrents,water temperature,carbon dioxide,dissolvedOrganicCarbon,potential temperature,fluorescence,potential density,nitrate,pressure,seawater density,subSurfaceSalinity,silicate</att>
       <att name="keywords_fra">changement climatique, salinit&#xe9;, chlorophylle a, temp&#xe9;rature de l&#39;eau, t&#xe9;l&#xe9;d&#xe9;tection, fluorescence, densit&#xe9; eau, &#xe9;chantillonnage, missions oc&#xe9;anographique, physico-chimie, Oxyg&#xe8;ne, Pression, Salinit&#xe9; de surface, Temp&#xe9;rature de surface, Densit&#xe9; d&#39;eau de mer, Temp&#xe9;rature potentielle, Densit&#xe9; potentielle, Autre, Salinit&#xe9; sous la surface, Temp&#xe9;rature sous la surface</att>
       <att name="keywords_vocabulary">CIOOS Keywords</att>
@@ -7860,7 +7858,6 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
       <att name="geospatial_vertical_units">m</att>
       <att name="header"></att>
       <att name="infoUrl">https://www.dfo-mpo.gc.ca/science/data-donnees/azmp-pmza/index-eng.html</att>
-      <att name="institution">Fisheries and Oceans Canada</att>
       <att name="keywords">CTD</att>
       <att name="keywords_fra">CTD</att>
       <att name="keywords_vocabulary">CIOOS Keywords</att>
