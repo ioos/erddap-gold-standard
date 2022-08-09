@@ -9262,7 +9262,7 @@ AZOMP's sampling scheme off Atlantic Canada and the Labrador Sea involves annual
   <dataset type="EDDTableFromMultidimNcFiles" datasetID="bio_barrow_strait_program_rosette" active="true">
     <reloadEveryNMinutes>10080</reloadEveryNMinutes>
     <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/dfo/bio/ctd/Barrow Strait Program/</fileDir>
+    <fileDir>/datasets/dfo/bio/ctd/Barrow Strait Monitoring Program/</fileDir>
     <fileNameRegex>.*\.ODF\.nc</fileNameRegex>
     <recursive>true</recursive>
     <pathRegex>.*</pathRegex>
