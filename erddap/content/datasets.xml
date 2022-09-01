@@ -1,6 +1,39 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <erddapDatasets>
-    <requestBlacklist />
+    <cacheMinutes></cacheMinutes>                                     <!-- default=60 -->
+    <decompressedCacheMaxGB></decompressedCacheMaxGB>                 <!-- default=10 -->
+    <decompressedCacheMaxMinutesOld></decompressedCacheMaxMinutesOld> <!-- default=15 -->
+    <drawLandMask></drawLandMask>                                     <!-- "over" or "under" (default) -->
+    <emailDiagnosticsToErdData></emailDiagnosticsToErdData>           <!-- true (the default) or false -->
+    <graphBackgroundColor></graphBackgroundColor>                     <!-- 0xAARRGGBB, default is 0xffccccff -->
+    <ipAddressMaxRequests></ipAddressMaxRequests>                     <!-- current default=7 -->
+    <ipAddressMaxRequestsActive></ipAddressMaxRequestsActive>         <!-- current default=2 -->
+    <ipAddressUnlimited></ipAddressUnlimited>                         <!-- default=empty -->
+    <loadDatasetsMinMinutes></loadDatasetsMinMinutes>                 <!-- usually=default=15 -->
+    <loadDatasetsMaxMinutes></loadDatasetsMaxMinutes>                 <!-- default=60 -->
+    <logLevel></logLevel>                                             <!-- "warning" (fewest messages), "info" (default), or "all" (most messages) -->
+    <nGridThreads></nGridThreads>                                     <!-- default=1 if CPU>4cores=3 -->
+    <nTableThreads></nTableThreads>                                   <!-- default=1 if CPU>4cores=3-->
+    <partialRequestMaxBytes></partialRequestMaxBytes>                 <!-- default=490000000 -->
+    <partialRequestMaxCells></partialRequestMaxCells>                 <!-- default=10000000 -->
+    <slowDownTroubleMillis></slowDownTroubleMillis>                   <!-- default=1000 -->
+    <unusualActivity></unusualActivity>                               <!-- default=10000 -->
+    <updateMaxEvents></updateMaxEvents>                               <!-- default=10 -->
+    <!-- The defaults for the following tags are in messages.xml. -->
+    <startHeadHtml5></startHeadHtml5>
+    <startBodyHtml5></startBodyHtml5>                                 <!-- This is often customized. -->
+    <theShortDescriptionHtml></theShortDescriptionHtml>               <!-- This is often customized. -->
+    <endBodyHtml5></endBodyHtml5>
+    <standardLicense></standardLicense>
+    <standardContact></standardContact>
+    <standardDataLicenses></standardDataLicenses>
+    <standardDisclaimerOfEndorsement></standardDisclaimerOfEndorsement>
+    <standardDisclaimerOfExternalLinks></standardDisclaimerOfExternalLinks>
+    <standardGeneralDisclaimer></standardGeneralDisclaimer>
+    <standardPrivacyPolicy></standardPrivacyPolicy>
+    <!-- End of standard text -->
+    <requestBlacklist></requestBlacklist>                              <!--  comma-separated list of numeric IP addresses which will be blacklisted -->
+
     <dataset type="EDDTableFromMultidimNcFiles" datasetID="morro-bay-bs1-met" active="true">
         <reloadEveryNMinutes>10080</reloadEveryNMinutes>
         <updateEveryNMillis>10000</updateEveryNMillis>
