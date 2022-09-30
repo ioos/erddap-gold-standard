@@ -1,5 +1,5 @@
 ---
-title: "ERDDAP Quick Start"
+title: "Quick Start Guide for ERDDAP in a Docker Container"
 keywords: homepage
 toc: true
 #permalink: index.html

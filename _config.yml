@@ -2,9 +2,9 @@ output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
 ##### IOOS edit: replace this field with the documentation site name to appear on the top navigation bar next to the home button #####
-topnav_title: Getting Started with ERDDAP
+topnav_title: Quick Start Guide for ERDDAP in a Docker Container
 
-site_title: Getting Started with ERDDAP
+site_title: Quick Start Guide for ERDDAP in a Docker Container
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: US IOOS
