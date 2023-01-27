@@ -62,6 +62,9 @@ $ cat 01-head.xml dataset1.xml dataset2.xml tail.xml > datasets.xml
 $ cp datasets.xml erddap/content/datasets.xml
 ```
 ### Use Python's [`xml.etree.ElementTree`](https://docs.python.org/3/library/xml.etree.elementtree.html) package to insert elements into a template:
+
+**Do note that this approach removes commented sections of the XML, such as the `<sourceAttributes>` element.**
+
 ```python
 import xml.etree.ElementTree as ET
 
