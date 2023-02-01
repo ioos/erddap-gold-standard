@@ -63,7 +63,7 @@ $ cp datasets.xml erddap/content/datasets.xml
 ```
 ### Use Python's [`xml.etree.ElementTree`](https://docs.python.org/3/library/xml.etree.elementtree.html) package to insert elements into a template:
 
-**Do note that this approach removes commented sections of the XML, such as the `<sourceAttributes>` element.**
+**Do note that some sections of the output of `GenerateDatasetsXml.sh` are commented with the `<!--` and `-->` characters. This approach will remove such sections.**
 
 ```python
 import xml.etree.ElementTree as ET
