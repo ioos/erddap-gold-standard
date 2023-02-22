@@ -85,6 +85,7 @@ defaults:
       comments: true
       search: true
       sidebar: sidebar_ioos
+      topnav: topnav_ioos
   -
     scope:
       path: ""
@@ -94,6 +95,7 @@ defaults:
       comments: true
       search: true
       sidebar: sidebar_ioos
+      topnav: topnav_ioos
 
   -
     scope:
@@ -114,6 +116,7 @@ defaults:
       comments: true
       search: true
       sidebar: sidebar_ioos
+      topnav: topnav_ioos
 
 # these are defaults used for the frontmatter for these file types
 
