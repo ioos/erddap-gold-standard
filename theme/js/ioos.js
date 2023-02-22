@@ -1,1 +1,0 @@
-var navbarFixedPositionExcludedRepos = ["ioos/ioosngdac"];
