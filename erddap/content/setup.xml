@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- setup.xml contains setup information for ERDDAP.
 When you install ERDDAP on your server, many of the settings can be left as is.
 Settings that you MUST change are in this top section.
