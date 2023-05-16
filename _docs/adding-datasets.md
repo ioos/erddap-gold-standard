@@ -112,3 +112,7 @@ $ docker-compose restart
 
 * If a dataset fails to load, you can see logs under `/erddap/data/logs`.
 * If a dataset fails to load, visit <http://localhost:8080/erddap/status.html> (which flushes log information to the log file), then look for an error message related to the dataset in `/erddap/data/logs/log.txt`.
+* When I add a new dataset it does not show on ERDDAP until I restart the Docker image or reboot the server.
+  * datasets.xml was not updating within docker when it was changed on the host machine. When I rebooted the docker container, the datasets.xml synced again and the dataset was processed by ERDDAP and displayed on the server. This is why restarting the container fixed the problem. The reason that datasets.xml stopped syncing was inodes. We use a linux host machine and mount our datasets.xml file to the docker container with:```-v /path/to/our/erddap/directory:/datasets.xml:/usr/local/tomcat/content/erddap/datasets.xml```
+  * If you mount a file like this then edit the file on the hosts machine, you can cause the inode to change https://stackoverflow.com/questions/71344789/docker-mount-not-updating-the-files. Check this by calling ls -i on datasets.xml on both host and container and see if they are the same. If not, datasets.xml on the container will stop syncing with datasets.xml on the host.
+  * The solution was to mount the directory instead with ```-v /path/to/our/erddap/directory:/usr/local/tomcat/content/erddap```
