@@ -65,9 +65,10 @@ $ ls -Ap
       -v $(pwd)/datasets:/datasets \
       -v /tmp/:/usr/local/tomcat/temp/ \
       --env ERDDAP_MIN_MEMORY=1G --env ERDDAP_MAX_MEMORY=2G \
-     axiom/docker-erddap:2.18
+     axiom/docker-erddap:2.23-jdk17-openjdk
     ```
-
+    get `axiom/docker-erddap:2.23-jdk17-openjdk` or the latest one available from [axiom docker-erddap](https://github.com/axiom-data-science/docker-erddap).
+    
     or, copy the `.env.template` file to `.env`, and then run `docker-compose`:
 
     ```shell
@@ -82,10 +83,10 @@ $ ls -Ap
 
     ```shell
     Creating network "erddap-gold-standard_default" with the default driver
-    Pulling erddap (axiom/docker-erddap:2.18)...
-    2.18: Pulling from axiom/docker-erddap
+    Pulling erddap (axiom/docker-erddap:2.23-jdk17-openjdk)...
+    2.23-jdk17-openjdk: Pulling from axiom/docker-erddap
     Digest: sha256:1ae5c7637ba14db60c5a0cd143e9fc1eb4115cdd8f030f40b22d1fdbea919ba3
-    Status: Downloaded newer image for axiom/docker-erddap:2.18
+    Status: Downloaded newer image for axiom/docker-erddap:2.23-jdk17-openjdk
     Creating erddap_gold_standard ... done
     ```
 
