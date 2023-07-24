@@ -27,12 +27,12 @@ services:
       ERDDAP_emailSmtpPort:
       ERDDAP_adminInstitution: Integrated Ocean Observing System (IOOS)
       ERDDAP_adminInstitutionUrl: https://ioos.github.io/
-      ERDDAP_adminIndividualName: Micah Wengren
+      ERDDAP_adminIndividualName: IOOS Data Manager
       ERDDAP_adminPosition: Data Manager
-      ERDDAP_adminPhone: "240-533-9441"
+      ERDDAP_adminPhone: "240-533-9444"
       ERDDAP_adminAddress: "1315 East-West Highway 2nd Floor"
       ERDDAP_adminCity: Silver Spring
       ERDDAP_adminStateOrProvince: MD
       ERDDAP_adminPostalCode: "20910"
       ERDDAP_adminCountry: USA
-      ERDDAP_adminEmail: micah.wengren@noaa.gov
+      ERDDAP_adminEmail: data.ioos@noaa.gov
