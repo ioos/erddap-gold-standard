@@ -30,7 +30,7 @@ snippet separately, then use a tool to combine all of the xml snippets into a ma
 ###  Run `GenerateDatasetsXML.sh`
 Remember that everything is relative to the `erddap-gold-standard/` directory. So, if your data files are in `erddap-gold-standard/datasets/`
 your **Starting Directory** should be `/datasets`.
-
+- Before running `GenerateDatasetsXML.sh`, you must update the value of flagKeyKey in `erddap/content/setup.xml`.
 - To run [GenerateDatasetsXml.sh](https://github.com/ioos/erddap-gold-standard/blob/master/GenerateDatasetsXml.sh) using Docker:
 
 ```shell
