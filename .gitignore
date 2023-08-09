@@ -5,3 +5,4 @@ logs
 *.iml
 .project
 .env
+.envrc
