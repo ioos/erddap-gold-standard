@@ -46,7 +46,7 @@ $ ls -Ap
 - Windows: 
   -  Search for Docker, and select **Docker Desktop** in the search results.
 - Linux:
-  ```sudo systemctl start docker``` 
+  - ```sudo systemctl start docker``` 
 - Mac: 
   - Double-click **Docker.app** in the Applications folder to start Docker.
 
