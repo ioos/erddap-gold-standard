@@ -44,10 +44,9 @@ $ ls -Ap
 ## Step 2: Start the Docker daemon/engine
 
 - Windows: 
-   -  Search for Docker, and select **Docker Desktop** in the search results.
+  -  Search for Docker, and select **Docker Desktop** in the search results.
 - Linux:
-  - RedHat/CentOS: ```sudo systemctl start docker``` 
-  - Ubuntu: ```sudo systemctl start docker```
+  - ```sudo systemctl start docker``` 
 - Mac: 
   - Double-click **Docker.app** in the Applications folder to start Docker.
 
