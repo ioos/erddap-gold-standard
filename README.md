@@ -13,6 +13,6 @@ Maintainer(s)
 Deploying site locally
 * See [this documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
 
-To preview this documentaiton locally, use `bundle exec jekyll serve` in the top level 'erddap-gold-standard' folder.
+To preview this documentation locally, use `bundle exec jekyll serve` in the top level 'erddap-gold-standard' folder.
 
 If changing headers and menus `bundle exec jekyll clean` before serving.
