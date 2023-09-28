@@ -6,7 +6,8 @@ summary: Guide on how to update ERDDAP
 ---
 
 ## Requirements
-* ERDDAP is deployed using the Docker container as described in the [Quick Start](/erddap-gold-standard/index.html).
+
+ERDDAP is deployed using the Docker container as described in the [Quick Start](/erddap-gold-standard/index.html).
 
 ## Steps
 1. Check that [docker-erddap](https://hub.docker.com/r/axiom/docker-erddap/tags) has the version you want to update to.
