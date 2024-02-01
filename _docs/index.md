@@ -62,8 +62,6 @@ $ ls -Ap
       -v $(pwd)/erddap/content:/usr/local/tomcat/content/erddap \
       -v $(pwd)/erddap/data:/erddapData \
       -v $(pwd)/datasets:/datasets \
-      -v /tmp/:/usr/local/tomcat/temp/ \
-      --env ERDDAP_MIN_MEMORY=1G --env ERDDAP_MAX_MEMORY=2G \
      axiom/docker-erddap:2.23-jdk17-openjdk
     ```
     get `axiom/docker-erddap:2.23-jdk17-openjdk` or the latest one available from [axiom docker-erddap](https://github.com/axiom-data-science/docker-erddap).
