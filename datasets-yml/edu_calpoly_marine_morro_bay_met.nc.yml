@@ -1,0 +1,333 @@
+dimensions:
+  time: 40970
+variables:
+  air_pressure:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - 990.38
+        - 1031.56
+      id: "1000289"
+      ioos_category: Other
+      long_name: Barometric Pressure
+      platform: station
+      standard_name: air_pressure
+      standard_name_url: http://mmisw.org/ont/cf/parameter/air_pressure
+      units: millibars
+      coordinates: time z longitude latitude
+  air_temperature:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - -9.35
+        - 34.03
+      id: "1000293"
+      ioos_category: Other
+      long_name: Air Temperature
+      platform: station
+      standard_name: air_temperature
+      standard_name_url: http://mmisw.org/ont/cf/parameter/air_temperature
+      units: degree_Celsius
+      coordinates: time z longitude latitude
+  crs:
+    type: int
+  dew_point_temperature:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - -19.15
+        - 34.03
+      id: "1000290"
+      ioos_category: Other
+      long_name: Dew Point
+      platform: station
+      standard_name: dew_point_temperature
+      standard_name_url: http://mmisw.org/ont/cf/parameter/dew_point_temperature
+      units: degree_Celsius
+      coordinates: time z longitude latitude
+  latitude:
+    type: double
+    attributes:
+      axis: Y
+      _CoordinateAxisType: Lat
+      actual_range:
+        - 35.33382
+        - 35.33382
+      ioos_category: Location
+      long_name: Latitude
+      standard_name: latitude
+      units: degrees_north
+  longitude:
+    type: double
+    attributes:
+      axis: X
+      _CoordinateAxisType: Lon
+      actual_range:
+        - -120.84725
+        - -120.84725
+      ioos_category: Location
+      long_name: Longitude
+      standard_name: longitude
+      units: degrees_east
+  lwe_precipitation_rate_cm_time__sum_over_pt2m:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - 0
+        - 21.5
+      cell_methods: 'time: sum'
+      id: "1000215"
+      interval: PT2M
+      ioos_category: Other
+      long_name: Precipitation (increment)
+      platform: station
+      standard_name: lwe_precipitation_rate
+      standard_name_url: http://mmisw.org/ont/cf/parameter/lwe_precipitation_rate
+      units: mm
+      coordinates: time z longitude latitude
+  relative_humidity:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - 0
+        - 100
+      id: "1000291"
+      ioos_category: Other
+      long_name: Relative Humidity
+      platform: station
+      standard_name: relative_humidity
+      standard_name_url: http://mmisw.org/ont/cf/parameter/relative_humidity
+      units: '%'
+      coordinates: time z longitude latitude
+  solar_irradiance:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - 0
+        - 892.81
+      id: "1000292"
+      ioos_category: Other
+      long_name: Solar Radiation
+      platform: station
+      standard_name: solar_irradiance
+      standard_name_url: http://mmisw.org/ont/cf/parameter/solar_irradiance
+      units: W.m-2
+      coordinates: time z longitude latitude
+  station:
+    type: string
+    attributes:
+      cf_role: timeseries_id
+      long_name: Morro Bay - BS1 MET
+      _Encoding: ISO-8859-1
+      ioos_category: Identifier
+      ioos_code: urn:ioos:station:com.axiomdatascience:57163
+      short_name: edu_calpoly_marine_morro_bay_met
+      type: fixed
+  time:
+    shape:
+      - time
+    type: double
+    attributes:
+      units: seconds since 1970-01-01T00:00:00Z
+      standard_name: time
+      axis: T
+      _ChunkSizes: 40794
+      _CoordinateAxisType: Time
+      actual_range:
+        - 1.4542848e+09
+        - 1.571962037e+09
+      calendar: gregorian
+      ioos_category: Time
+      long_name: Time
+      time_origin: 01-JAN-1970 00:00:00
+  wind_chill_temperature:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - -19.15
+        - 34.03
+      id: "1000294"
+      ioos_category: Other
+      long_name: Wind Chill
+      platform: station
+      standard_name: wind_chill_temperature
+      standard_name_url: http://mmisw.org/ont/unknown/parameter/wind_chill_temperature
+      units: degree_Celsius
+      coordinates: time z longitude latitude
+  wind_from_direction:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - 0.04
+        - 359.88
+      id: "1000295"
+      ioos_category: Other
+      long_name: Wind From Direction
+      platform: station
+      standard_name: wind_from_direction
+      standard_name_url: http://mmisw.org/ont/cf/parameter/wind_from_direction
+      units: degrees
+      coordinates: time z longitude latitude
+  wind_speed:
+    shape:
+      - time
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 40794
+        - 1
+      actual_range:
+        - 0
+        - 18.01
+      id: "1000296"
+      ioos_category: Other
+      long_name: Wind Speed
+      platform: station
+      standard_name: wind_speed
+      standard_name_url: http://mmisw.org/ont/cf/parameter/wind_speed
+      units: m.s-1
+      coordinates: time z longitude latitude
+  z:
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      axis: Z
+      _ChunkSizes: 1
+      _CoordinateAxisType: Height
+      _CoordinateZisPositive: up
+      actual_range:
+        - 0
+        - 0
+      ioos_category: Location
+      least_significant_digit: 2
+      long_name: Altitude
+      positive: up
+      standard_name: altitude
+      units: m
+attributes:
+  Conventions: IOOS-1.2, CF-1.6, ACDD-1.3
+  date_created: "2020-04-22T22:29:00Z"
+  featureType: TimeSeries
+  cdm_data_type: TimeSeries
+  acknowledgment: Data collection was supported by multiple awards to California Polytechnic State University and an award from NOAA's Integrated Observing System to the Central and Northern California Ocean Observing System at the Monterey Bay Aquarium Research Institute (NA11NOS0120032).
+  cdm_timeseries_variables: station,longitude,latitude
+  comment: Data produced by Ryan Walter with partial funding from CeNCOOS (cencoos_communicatons@mbari.org)
+  contributor_email: cencoos_communications@mbari.org,feedback@axiomdatascience.com
+  contributor_name: Central & Northern California Ocean Observing System (CeNCOOS),Axiom Data Science
+  contributor_role: contributor,processor
+  contributor_role_vocabulary: NERC
+  contributor_url: http://cencoos.org/,https://www.axiomdatascience.com
+  coverage_content_type: physicalMeasurement
+  creator_country: USA
+  creator_email: rkwalter@calpoly.edu
+  creator_institution: California Polytechnic State Univeristy, San Luis Obispo
+  creator_name: Ryan Walter
+  creator_role: pi
+  creator_sector: academic
+  creator_type: person
+  creator_url: http://www.marine.calpoly.edu
+  Easternmost_Easting: -120.84725
+  geospatial_lat_max: 35.33382
+  geospatial_lat_min: 35.33382
+  geospatial_lat_units: degrees_north
+  geospatial_lon_max: -120.84725
+  geospatial_lon_min: -120.84725
+  geospatial_lon_units: degrees_east
+  geospatial_vertical_positive: up
+  geospatial_vertical_units: m
+  history: |-
+    Downloaded from California Polytechnic State University, Center for Coastal Marine Sciences at http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/
+    2020-04-22T22:22:19Z http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/
+    2020-04-22T22:22:19Z http://erddap.stage.sensors.axds.co/erddap/tabledap/edu_calpoly_marine_morro_bay_met.nc
+  infoUrl: https://sensors.ioos.us/#metadata/57163/station
+  institution: California Polytechnic State Univeristy, San Luis Obispo
+  instrument: Nova Lynx 100
+  ISO_Topic_Categories: Oceans
+  keywords: Earth Science > Oceans
+  keywords_vocabulary: GCMD Earth Science Keywords. Version 5.3.3
+  license: |-
+    The data may be used and redistributed for free but is not intended
+    for legal use, since it may contain inaccuracies. Neither the data
+    Contributor, ERD, NOAA, nor the United States Government, nor any
+    of their employees or contractors, makes any warranty, express or
+    implied, including warranties of merchantability and fitness for a
+    particular purpose, or assumes any legal liability for the accuracy,
+    completeness, or usefulness, of this information.
+  metadata_conventions: CF-1.6,ACDD-1.3
+  metadata_link: http://www.marine.calpoly.edu
+  Northernmost_Northing: 35.33382
+  platform_name: Morro Bay - BS1 MET
+  platform_vocabulary: http://mmisw.org/ont/ioos/platform
+  processing_level: Level 2
+  program: CeNCOOS
+  project: CeNCOOS
+  publisher_country: USA
+  publisher_email: cencoos_communicatons@mbari.org
+  publisher_institution: California Polytechnic State University, Center for Coastal Marine Sciences
+  publisher_name: CeNCOOS
+  publisher_sector: academic
+  publisher_type: institution
+  publisher_url: http://www.cencoos.org
+  references: http://www.slosea.org/about/dash.php,http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/,https://www.cencoos.org/data/shore/morro,
+  sea_name: NE Pacific
+  source: Station mounded on a large tripod resting on the sea floor.
+  sourceUrl: http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/
+  Southernmost_Northing: 35.33382
+  standard_name_vocabulary: CF Standard Name Table v72
+  summary: 'Morro Bay BS1 Met station is located in the back of Morro Bay, CA and owned by California Polytechnic State University of San Luis Obispo. The station is mounted on a large tripod, resting on the seafloor. A Nova Lynx 100 Weather Station is fixed at 3 meters above MLLW to a pole extending from the tripod and reports the following in near real-time: wind speed, wind direction, air temperature, barometric pressure, precipitation, relative humidity, and solar radiation. The instrument is maintained and operated by San Luis Obispo Science and Ecosystem Alliance (SLOSEA), a part of the Cal Poly Center for Coastal Marine Sciences.'
+  time_coverage_end: "2019-10-25T00:07:17Z"
+  time_coverage_start: "2016-02-01T00:00:00Z"
+  title: CeNCOOS met monitoring at Morro Bay (BS1).
+  Westernmost_Easting: -120.84725
+  id: bs1-met
+  naming_authority: edu.calpoly.marine
+  platform: morro-bay-bs1-met

@@ -1,0 +1,409 @@
+dimensions:
+  time: 145
+  z: 24
+variables:
+  crs:
+    type: int
+  eastward_sea_water_velocity:
+    shape:
+      - time
+      - z
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 51050
+        - 8
+      actual_range:
+        - -0.194
+        - 0.2574
+      ancillary_variables: eastward_sea_water_velocity_qc_agg eastward_sea_water_velocity_qc_tests
+      id: "1001921"
+      ioos_category: Other
+      long_name: Eastward Sea Water Velocity
+      platform: station
+      standard_name: eastward_sea_water_velocity
+      standard_name_url: http://mmisw.org/ont/cf/parameter/eastward_sea_water_velocity
+      units: m.s-1
+      coordinates: time z longitude latitude
+  eastward_sea_water_velocity_qc_agg:
+    shape:
+      - time
+      - z
+    type: int
+    attributes:
+      _FillValue: -9999
+      _ChunkSizes:
+        - 153150
+        - 24
+      _Unsigned: "true"
+      flag_meanings: PASS NOT_EVALUATED SUSPECT FAIL MISSING
+      flag_values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 9
+      ioos_category: Other
+      long_name: Eastward Sea Water Velocity QARTOD Aggregate Quality Flag
+      standard_name: aggregate_quality_flag
+      coordinates: time z longitude latitude
+  eastward_sea_water_velocity_qc_tests:
+    shape:
+      - time
+      - z
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 51050
+        - 8
+      _Unsigned: "true"
+      comment: '11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test'
+      flag_meanings: PASS NOT_EVALUATED SUSPECT FAIL MISSING
+      flag_values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 9
+      ioos_category: Other
+      long_name: Eastward Sea Water Velocity QARTOD Individual Tests
+      standard_name: eastward_sea_water_velocity quality_flag
+      coordinates: time z longitude latitude
+  latitude:
+    type: double
+    attributes:
+      axis: Y
+      _CoordinateAxisType: Lat
+      actual_range:
+        - 27.173
+        - 27.173
+      ioos_category: Location
+      long_name: Latitude
+      standard_name: latitude
+      units: degrees_north
+  longitude:
+    type: double
+    attributes:
+      axis: X
+      _CoordinateAxisType: Lon
+      actual_range:
+        - -82.924
+        - -82.924
+      ioos_category: Location
+      long_name: Longitude
+      standard_name: longitude
+      units: degrees_east
+  northward_sea_water_velocity:
+    shape:
+      - time
+      - z
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 51050
+        - 8
+      actual_range:
+        - -0.2895
+        - 0.1591
+      ancillary_variables: northward_sea_water_velocity_qc_agg northward_sea_water_velocity_qc_tests
+      id: "1001922"
+      ioos_category: Other
+      long_name: Northward Sea Water Velocity
+      platform: station
+      standard_name: northward_sea_water_velocity
+      standard_name_url: http://mmisw.org/ont/cf/parameter/northward_sea_water_velocity
+      units: m.s-1
+      coordinates: time z longitude latitude
+  northward_sea_water_velocity_qc_agg:
+    shape:
+      - time
+      - z
+    type: int
+    attributes:
+      _FillValue: -9999
+      _ChunkSizes:
+        - 153150
+        - 24
+      _Unsigned: "true"
+      flag_meanings: PASS NOT_EVALUATED SUSPECT FAIL MISSING
+      flag_values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 9
+      ioos_category: Other
+      long_name: Northward Sea Water Velocity QARTOD Aggregate Quality Flag
+      standard_name: aggregate_quality_flag
+      coordinates: time z longitude latitude
+  northward_sea_water_velocity_qc_tests:
+    shape:
+      - time
+      - z
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 51050
+        - 8
+      _Unsigned: "true"
+      comment: '11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test'
+      flag_meanings: PASS NOT_EVALUATED SUSPECT FAIL MISSING
+      flag_values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 9
+      ioos_category: Other
+      long_name: Northward Sea Water Velocity QARTOD Individual Tests
+      standard_name: northward_sea_water_velocity quality_flag
+      coordinates: time z longitude latitude
+  sea_water_speed:
+    shape:
+      - time
+      - z
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 51050
+        - 8
+      actual_range:
+        - 0.002668
+        - 0.291263
+      ancillary_variables: sea_water_speed_qc_agg sea_water_speed_qc_tests
+      id: "1001924"
+      ioos_category: Other
+      long_name: Current Speed
+      platform: station
+      standard_name: sea_water_speed
+      standard_name_url: http://mmisw.org/ont/cf/parameter/sea_water_speed
+      units: m.s-1
+      coordinates: time z longitude latitude
+  sea_water_speed_qc_agg:
+    shape:
+      - time
+      - z
+    type: int
+    attributes:
+      _FillValue: -9999
+      _ChunkSizes:
+        - 153150
+        - 24
+      _Unsigned: "true"
+      flag_meanings: PASS NOT_EVALUATED SUSPECT FAIL MISSING
+      flag_values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 9
+      ioos_category: Other
+      long_name: Current Speed QARTOD Aggregate Quality Flag
+      standard_name: aggregate_quality_flag
+      coordinates: time z longitude latitude
+  sea_water_speed_qc_tests:
+    shape:
+      - time
+      - z
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 51050
+        - 8
+      _Unsigned: "true"
+      comment: '11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test'
+      flag_meanings: PASS NOT_EVALUATED SUSPECT FAIL MISSING
+      flag_values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 9
+      ioos_category: Other
+      long_name: Current Speed QARTOD Individual Tests
+      standard_name: sea_water_speed quality_flag
+      coordinates: time z longitude latitude
+  sea_water_velocity_to_direction:
+    shape:
+      - time
+      - z
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 51050
+        - 8
+      actual_range:
+        - 180.0429
+        - 359.97455
+      ancillary_variables: sea_water_velocity_to_direction_qc_agg sea_water_velocity_to_direction_qc_tests
+      id: "1001923"
+      ioos_category: Other
+      long_name: Current To Direction
+      platform: station
+      standard_name: sea_water_velocity_to_direction
+      standard_name_url: http://mmisw.org/ont/cf/parameter/sea_water_velocity_to_direction
+      units: degrees
+      coordinates: time z longitude latitude
+  sea_water_velocity_to_direction_qc_agg:
+    shape:
+      - time
+      - z
+    type: int
+    attributes:
+      _FillValue: -9999
+      _ChunkSizes:
+        - 153150
+        - 24
+      _Unsigned: "true"
+      flag_meanings: PASS NOT_EVALUATED SUSPECT FAIL MISSING
+      flag_values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 9
+      ioos_category: Other
+      long_name: Current To Direction QARTOD Aggregate Quality Flag
+      standard_name: aggregate_quality_flag
+      coordinates: time z longitude latitude
+  sea_water_velocity_to_direction_qc_tests:
+    shape:
+      - time
+      - z
+    type: double
+    attributes:
+      _FillValue: -9999.9
+      _ChunkSizes:
+        - 51050
+        - 8
+      _Unsigned: "true"
+      comment: '11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test'
+      flag_meanings: PASS NOT_EVALUATED SUSPECT FAIL MISSING
+      flag_values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 9
+      ioos_category: Other
+      long_name: Current To Direction QARTOD Individual Tests
+      standard_name: sea_water_velocity_to_direction quality_flag
+      coordinates: time z longitude latitude
+  station:
+    type: string
+    attributes:
+      cf_role: timeseries_id
+      long_name: 42013 - C10 Currents - WFS Central Buoy
+      _Encoding: ISO-8859-1
+      ioos_category: Identifier
+      ioos_code: urn:ioos:station:com.axiomdatascience:100702
+      short_name: 42013-c10-currents-wfs-centra
+      type: buoy
+  time:
+    shape:
+      - time
+    type: double
+    attributes:
+      units: seconds since 1970-01-01T00:00:00Z
+      standard_name: time
+      axis: T
+      _CoordinateAxisType: Time
+      actual_range:
+        - 1.5198624e+09
+        - 1.5203808e+09
+      calendar: gregorian
+      cf_role: profile_id
+      ioos_category: Time
+      long_name: Time
+      time_origin: 01-JAN-1970 00:00:00
+  z:
+    shape:
+      - z
+    type: double
+    attributes:
+      axis: Z
+      _CoordinateAxisType: Height
+      _CoordinateZisPositive: up
+      actual_range:
+        - -22
+        - -3
+      ioos_category: Location
+      long_name: Altitude
+      positive: up
+      standard_name: altitude
+      units: m
+attributes:
+  Conventions: IOOS-1.2, CF-1.6, ACDD-1.3
+  date_created: "2020-04-22T22:51:00Z"
+  featureType: TimeSeriesProfile
+  cdm_data_type: TimeSeriesProfile
+  cdm_altitude_proxy: z
+  cdm_profile_variables: time
+  cdm_timeseries_variables: station,longitude,latitude
+  contributor_email: ',None,feedback@axiomdatascience.com'
+  contributor_name: World Meteorological Organization (WMO),Southeast Coastal Ocean Observing Regional Association (SECOORA),Axiom Data Science
+  contributor_role: contributor,funder,processor
+  contributor_role_vocabulary: NERC
+  contributor_url: https://www.wmo.int/pages/prog/amp/mmop/wmo-number-rules.html,https://secoora.org/,https://www.axiomdatascience.com
+  creator_country: USA
+  creator_email: cmerz@usf.edu
+  creator_institution: USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)
+  creator_name: USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)
+  creator_sector: academic
+  creator_type: institution
+  creator_url: http://comps.marine.usf.edu/
+  Easternmost_Easting: -82.924
+  geospatial_lat_max: 27.173
+  geospatial_lat_min: 27.173
+  geospatial_lat_units: degrees_north
+  geospatial_lon_max: -82.924
+  geospatial_lon_min: -82.924
+  geospatial_lon_units: degrees_east
+  geospatial_vertical_positive: up
+  geospatial_vertical_units: m
+  history: |-
+    Downloaded from USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS) at http://comps.marine.usf.edu:82/data.php?format=json&platform=c10_inwater
+    2020-04-22T22:51:03Z http://comps.marine.usf.edu:82/data.php?format=json&platform=c10_inwater
+    2020-04-22T22:51:03Z http://erddap.stage.sensors.axds.co/erddap/tabledap/42013-c10-currents-wfs-centra.nc?&time%3E=2018-03-01T00:00:00Z&time%3C=2018-03-07T00:00:00Z
+  infoUrl: https://sensors.ioos.us/#metadata/100702/station
+  institution: USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)
+  license: |-
+    The data may be used and redistributed for free but is not intended
+    for legal use, since it may contain inaccuracies. Neither the data
+    Contributor, ERD, NOAA, nor the United States Government, nor any
+    of their employees or contractors, makes any warranty, express or
+    implied, including warranties of merchantability and fitness for a
+    particular purpose, or assumes any legal liability for the accuracy,
+    completeness, or usefulness, of this information.
+  Northernmost_Northing: 27.173
+  platform_name: 42013 - C10 Currents - WFS Central Buoy
+  platform_vocabulary: http://mmisw.org/ont/ioos/platform
+  processing_level: Level 2
+  publisher_country: USA
+  publisher_email: cmerz@usf.edu
+  publisher_institution: USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)
+  publisher_name: USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)
+  publisher_sector: academic
+  publisher_type: institution
+  publisher_url: http://comps.marine.usf.edu/
+  references: http://comps.marine.usf.edu/index?view=station&id=C10_INWATER,http://comps.marine.usf.edu:82/data.php?format=json&platform=c10_inwater,
+  sourceUrl: http://comps.marine.usf.edu:82/data.php?format=json&platform=c10_inwater
+  Southernmost_Northing: 27.173
+  standard_name_vocabulary: CF Standard Name Table v72
+  station_id: 100702
+  summary: Timeseries data from '42013 - C10 Currents - WFS Central Buoy' (42013-c10-currents-wfs-centra)
+  time_coverage_end: "2018-03-07T00:00:00Z"
+  time_coverage_start: "2018-03-01T00:00:00Z"
+  title: 42013 - C10 Currents - WFS Central Buoy
+  Westernmost_Easting: -82.924
+  wmo_platform_code: "42013"
+  id: c10_inwater
+  naming_authority: usf.comps
+  platform: "42013"

@@ -14,7 +14,7 @@ services:
       ERDDAP_MIN_MEMORY: 1G
       ERDDAP_MAX_MEMORY: 2G
       ERDDAP_bigParentDirectory: /erddapData/
-      ERDDAP_baseUrl: http://localhost:8080
+      ERDDAP_baseUrl: "${ERDDAP_baseUrl:-http://localhost:8080}"
       ERDDAP_baseHttpsUrl: https://localhost:8080
       ERDDAP_flagKeyKey: change-this-value!!
       ERDDAP_emailEverythingT: this+goes+nowhere@doesnotexist.ioos.us
