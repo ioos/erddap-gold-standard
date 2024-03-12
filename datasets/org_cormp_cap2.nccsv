@@ -1,0 +1,636 @@
+*GLOBAL*,Conventions,"IOOS-1.2, CF-1.6, ACDD-1.3, COARDS, NCCSV-1.2"
+*GLOBAL*,cdm_data_type,TimeSeries
+*GLOBAL*,cdm_timeseries_variables,"station,longitude,latitude"
+*GLOBAL*,contributor_email,"None,,feedback@axiomdatascience.com"
+*GLOBAL*,contributor_name,"Southeast Coastal Ocean Observing Regional Association (SECOORA),World Meteorological Organization (WMO),Axiom Data Science"
+*GLOBAL*,contributor_role,"funder,contributor,processor"
+*GLOBAL*,contributor_role_vocabulary,NERC
+*GLOBAL*,contributor_url,"https://secoora.org/,https://www.wmo.int/pages/prog/amp/mmop/wmo-number-rules.html,https://www.axiomdatascience.com"
+*GLOBAL*,creator_country,USA
+*GLOBAL*,creator_email,info@cormp.org
+*GLOBAL*,creator_institution,UNCW - Coastal Ocean Research and Monitoring Program (CORMP)
+*GLOBAL*,creator_name,UNCW - Coastal Ocean Research and Monitoring Program (CORMP)
+*GLOBAL*,creator_sector,gov_federal
+*GLOBAL*,creator_type,institution
+*GLOBAL*,creator_url,http://www.cormp.org/index.php
+*GLOBAL*,date_created,2020-04-22T22:49:00Z
+*GLOBAL*,Easternmost_Easting,-79.6204d
+*GLOBAL*,featureType,TimeSeries
+*GLOBAL*,geospatial_lat_max,32.8032d
+*GLOBAL*,geospatial_lat_min,32.8032d
+*GLOBAL*,geospatial_lat_units,degrees_north
+*GLOBAL*,geospatial_lon_max,-79.6204d
+*GLOBAL*,geospatial_lon_min,-79.6204d
+*GLOBAL*,geospatial_lon_units,degrees_east
+*GLOBAL*,geospatial_vertical_positive,up
+*GLOBAL*,geospatial_vertical_units,m
+*GLOBAL*,history,Downloaded from UNCW - Coastal Ocean Research and Monitoring Program (CORMP) at http://services.cormp.org/data.php?format=json&platform=cap2\n2020-04-22T22:33:09Z http://services.cormp.org/data.php?format=json&platform=cap2\n2020-04-22T22:33:09Z http://erddap.stage.sensors.axds.co/erddap/tabledap/org_cormp_cap2.nc\n2023-07-13T17:58:43Z (local files)\n2023-07-13T17:58:43Z http://estuaries03.axiomptk:8080/erddap/tabledap/org_cormp_cap2.nccsv
+*GLOBAL*,id,cap2
+*GLOBAL*,infoUrl,https://sensors.ioos.us/#metadata/60417/station
+*GLOBAL*,institution,CORMP
+*GLOBAL*,keywords,"aggregate, aggregate_quality_flag, air, air_pressure, air_pressure quality_flag, air_pressure_qc_agg, air_pressure_qc_tests, air_temperature, air_temperature quality_flag, air_temperature_qc_agg, air_temperature_qc_tests, altitude, atmosphere, atmospheric, barometric, cap2, capers, coastal, cormp, data, density, direction, earth, Earth Science > Atmosphere > Altitude > Station Height, Earth Science > Atmosphere > Atmospheric Pressure > Atmospheric Pressure Measurements, Earth Science > Atmosphere > Atmospheric Pressure > Sea Level Pressure, Earth Science > Atmosphere > Atmospheric Pressure > Static Pressure, Earth Science > Atmosphere > Atmospheric Temperature > Air Temperature, Earth Science > Atmosphere > Atmospheric Temperature > Surface Air Temperature, Earth Science > Atmosphere > Atmospheric Water Vapor > Humidity, Earth Science > Atmosphere > Atmospheric Winds > Surface Winds, Earth Science > Oceans > Ocean Temperature > Water Temperature, Earth Science > Oceans > Salinity/Density > Salinity, flag, gust, height, humidity, identifier, individual, latitude, level, longitude, measurements, monitoring, nearshore, ocean, oceans, practical, pressure, program, qartod, quality, relative, relative_humidity, relative_humidity quality_flag, relative_humidity_qc_agg, relative_humidity_qc_tests, research, salinity, science, sea, sea_water_practical_salinity, sea_water_practical_salinity quality_flag, sea_water_practical_salinity_qc_agg, sea_water_practical_salinity_qc_tests, sea_water_temperature, sea_water_temperature quality_flag, sea_water_temperature_qc_agg, sea_water_temperature_qc_tests, seawater, speed, static, station, surface, temperature, tests, time, uncw, vapor, water, wind, wind_from_direction, wind_from_direction quality_flag, wind_from_direction_qc_agg, wind_from_direction_qc_tests, wind_speed, wind_speed quality_flag, wind_speed_of_gust, wind_speed_of_gust quality_flag, wind_speed_of_gust_qc_agg, wind_speed_of_gust_qc_tests, wind_speed_qc_agg, wind_speed_qc_tests, winds"
+*GLOBAL*,keywords_vocabulary,GCMD Science Keywords
+*GLOBAL*,license,"The data may be used and redistributed for free but is not intended\nfor legal use, since it may contain inaccuracies. Neither the data\nContributor, ERD, NOAA, nor the United States Government, nor any\nof their employees or contractors, makes any warranty, express or\nimplied, including warranties of merchantability and fitness for a\nparticular purpose, or assumes any legal liability for the accuracy,\ncompleteness, or usefulness, of this information."
+*GLOBAL*,naming_authority,org.cormp
+*GLOBAL*,Northernmost_Northing,32.8032d
+*GLOBAL*,platform,"41029"
+*GLOBAL*,platform_name,(41029 / CAP2) Capers Nearshore
+*GLOBAL*,platform_vocabulary,http://mmisw.org/ont/ioos/platform
+*GLOBAL*,processing_level,Level 2
+*GLOBAL*,publisher_country,USA
+*GLOBAL*,publisher_email,info@cormp.org
+*GLOBAL*,publisher_institution,UNCW - Coastal Ocean Research and Monitoring Program (CORMP)
+*GLOBAL*,publisher_name,UNCW - Coastal Ocean Research and Monitoring Program (CORMP)
+*GLOBAL*,publisher_sector,gov_federal
+*GLOBAL*,publisher_type,institution
+*GLOBAL*,publisher_url,http://www.cormp.org/index.php
+*GLOBAL*,references,"http://www.cormp.org/?platform=CAP2,http://services.cormp.org/data.php?format=json&platform=cap2,http://mwp.secoora.org/?platform=41029,http://services.cormp.org/quality.php"
+*GLOBAL*,sourceUrl,(local files)
+*GLOBAL*,Southernmost_Northing,32.8032d
+*GLOBAL*,standard_name_vocabulary,CF Standard Name Table v72
+*GLOBAL*,subsetVariables,"station, latitude, longitude, z, air_temperature_qc_tests, air_pressure_qc_tests, relative_humidity_qc_tests, sea_water_practical_salinity_qc_tests, sea_water_temperature_qc_tests, wind_speed_of_gust_qc_tests, wind_speed_qc_tests, wind_from_direction_qc_tests"
+*GLOBAL*,summary,Timeseries data from '(41029 / CAP2) Capers Nearshore' (org_cormp_cap2)
+*GLOBAL*,title,41029 / CAP2 Capers Nearshore
+*GLOBAL*,Westernmost_Easting,-79.6204d
+*GLOBAL*,wmo_platform_code,"41029"
+time,*DATA_TYPE*,String
+time,_CoordinateAxisType,Time
+time,axis,T
+time,calendar,gregorian
+time,colorBarMaximum,1.59E9d
+time,colorBarMinimum,1.53E9d
+time,ioos_category,Time
+time,long_name,Time
+time,standard_name,time
+time,time_origin,01-JAN-1970 00:00:00
+time,units,yyyy-MM-dd'T'HH:mm:ssZ
+station,*DATA_TYPE*,String
+station,cf_role,timeseries_id
+station,ioos_category,Identifier
+station,ioos_code,urn:ioos:station:com.axiomdatascience:60417
+station,long_name,(41029 / CAP2) Capers Nearshore
+station,short_name,org_cormp_cap2
+station,type,buoy
+latitude,*DATA_TYPE*,double
+latitude,_CoordinateAxisType,Lat
+latitude,axis,Y
+latitude,colorBarMaximum,90.0d
+latitude,colorBarMinimum,-90.0d
+latitude,ioos_category,Location
+latitude,long_name,Latitude
+latitude,standard_name,latitude
+latitude,units,degrees_north
+longitude,*DATA_TYPE*,double
+longitude,_CoordinateAxisType,Lon
+longitude,axis,X
+longitude,colorBarMaximum,180.0d
+longitude,colorBarMinimum,-180.0d
+longitude,ioos_category,Location
+longitude,long_name,Longitude
+longitude,standard_name,longitude
+longitude,units,degrees_east
+z,*DATA_TYPE*,double
+z,_CoordinateAxisType,Height
+z,_CoordinateZisPositive,up
+z,_FillValue,-9999.9d
+z,axis,Z
+z,colorBarMaximum,8000.0d
+z,colorBarMinimum,-8000.0d
+z,colorBarPalette,Topography
+z,ioos_category,Location
+z,long_name,Altitude
+z,positive,up
+z,standard_name,altitude
+z,units,m
+air_temperature,*DATA_TYPE*,double
+air_temperature,_FillValue,-9999.9d
+air_temperature,ancillary_variables,air_temperature_qc_agg air_temperature_qc_tests
+air_temperature,colorBarMaximum,40.0d
+air_temperature,colorBarMinimum,-10.0d
+air_temperature,id,"1000315"
+air_temperature,ioos_category,Other
+air_temperature,long_name,Air Temperature
+air_temperature,platform,station
+air_temperature,standard_name,air_temperature
+air_temperature,standard_name_url,http://mmisw.org/ont/cf/parameter/air_temperature
+air_temperature,units,degree_Celsius
+air_temperature_qc_agg,*DATA_TYPE*,long
+air_temperature_qc_agg,_FillValue,4294957297L
+air_temperature_qc_agg,colorBarMaximum,10.0d
+air_temperature_qc_agg,colorBarMinimum,0.0d
+air_temperature_qc_agg,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+air_temperature_qc_agg,flag_values,1i,2i,3i,4i,9i
+air_temperature_qc_agg,ioos_category,Other
+air_temperature_qc_agg,long_name,Air Temperature QARTOD Aggregate Quality Flag
+air_temperature_qc_agg,references,http://services.cormp.org/quality.php
+air_temperature_qc_agg,standard_name,aggregate_quality_flag
+air_temperature_qc_tests,*DATA_TYPE*,double
+air_temperature_qc_tests,_FillValue,-9999.9d
+air_temperature_qc_tests,colorBarMaximum,10.0d
+air_temperature_qc_tests,colorBarMinimum,0.0d
+air_temperature_qc_tests,comment,"11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test"
+air_temperature_qc_tests,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+air_temperature_qc_tests,flag_values,1i,2i,3i,4i,9i
+air_temperature_qc_tests,ioos_category,Other
+air_temperature_qc_tests,long_name,Air Temperature QARTOD Individual Tests
+air_temperature_qc_tests,references,http://services.cormp.org/quality.php
+air_temperature_qc_tests,standard_name,air_temperature quality_flag
+air_pressure,*DATA_TYPE*,double
+air_pressure,_FillValue,-9999.9d
+air_pressure,ancillary_variables,air_pressure_qc_agg air_pressure_qc_tests
+air_pressure,colorBarMaximum,1050.0d
+air_pressure,colorBarMinimum,950.0d
+air_pressure,id,"1000314"
+air_pressure,ioos_category,Other
+air_pressure,long_name,Barometric Pressure
+air_pressure,platform,station
+air_pressure,standard_name,air_pressure
+air_pressure,standard_name_url,http://mmisw.org/ont/cf/parameter/air_pressure
+air_pressure,units,millibars
+air_pressure_qc_agg,*DATA_TYPE*,long
+air_pressure_qc_agg,_FillValue,4294957297L
+air_pressure_qc_agg,colorBarMaximum,10.0d
+air_pressure_qc_agg,colorBarMinimum,0.0d
+air_pressure_qc_agg,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+air_pressure_qc_agg,flag_values,1i,2i,3i,4i,9i
+air_pressure_qc_agg,ioos_category,Other
+air_pressure_qc_agg,long_name,Barometric Pressure QARTOD Aggregate Quality Flag
+air_pressure_qc_agg,references,http://services.cormp.org/quality.php
+air_pressure_qc_agg,standard_name,aggregate_quality_flag
+air_pressure_qc_tests,*DATA_TYPE*,double
+air_pressure_qc_tests,_FillValue,-9999.9d
+air_pressure_qc_tests,colorBarMaximum,10.0d
+air_pressure_qc_tests,colorBarMinimum,0.0d
+air_pressure_qc_tests,comment,"11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test"
+air_pressure_qc_tests,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+air_pressure_qc_tests,flag_values,1i,2i,3i,4i,9i
+air_pressure_qc_tests,ioos_category,Other
+air_pressure_qc_tests,long_name,Barometric Pressure QARTOD Individual Tests
+air_pressure_qc_tests,references,http://services.cormp.org/quality.php
+air_pressure_qc_tests,standard_name,air_pressure quality_flag
+relative_humidity,*DATA_TYPE*,double
+relative_humidity,_FillValue,-9999.9d
+relative_humidity,ancillary_variables,relative_humidity_qc_agg relative_humidity_qc_tests
+relative_humidity,colorBarMaximum,100.0d
+relative_humidity,colorBarMinimum,0.0d
+relative_humidity,id,"1000316"
+relative_humidity,ioos_category,Other
+relative_humidity,long_name,Relative Humidity
+relative_humidity,platform,station
+relative_humidity,standard_name,relative_humidity
+relative_humidity,standard_name_url,http://mmisw.org/ont/cf/parameter/relative_humidity
+relative_humidity,units,percent
+relative_humidity_qc_agg,*DATA_TYPE*,long
+relative_humidity_qc_agg,_FillValue,4294957297L
+relative_humidity_qc_agg,colorBarMaximum,10.0d
+relative_humidity_qc_agg,colorBarMinimum,0.0d
+relative_humidity_qc_agg,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+relative_humidity_qc_agg,flag_values,1i,2i,3i,4i,9i
+relative_humidity_qc_agg,ioos_category,Other
+relative_humidity_qc_agg,long_name,Relative Humidity QARTOD Aggregate Quality Flag
+relative_humidity_qc_agg,references,http://services.cormp.org/quality.php
+relative_humidity_qc_agg,standard_name,aggregate_quality_flag
+relative_humidity_qc_tests,*DATA_TYPE*,double
+relative_humidity_qc_tests,_FillValue,-9999.9d
+relative_humidity_qc_tests,colorBarMaximum,10.0d
+relative_humidity_qc_tests,colorBarMinimum,0.0d
+relative_humidity_qc_tests,comment,"11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test"
+relative_humidity_qc_tests,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+relative_humidity_qc_tests,flag_values,1i,2i,3i,4i,9i
+relative_humidity_qc_tests,ioos_category,Other
+relative_humidity_qc_tests,long_name,Relative Humidity QARTOD Individual Tests
+relative_humidity_qc_tests,references,http://services.cormp.org/quality.php
+relative_humidity_qc_tests,standard_name,relative_humidity quality_flag
+sea_water_practical_salinity,*DATA_TYPE*,double
+sea_water_practical_salinity,_FillValue,-9999.9d
+sea_water_practical_salinity,ancillary_variables,sea_water_practical_salinity_qc_agg sea_water_practical_salinity_qc_tests
+sea_water_practical_salinity,colorBarMaximum,37.0d
+sea_water_practical_salinity,colorBarMinimum,32.0d
+sea_water_practical_salinity,id,"1000317"
+sea_water_practical_salinity,ioos_category,Other
+sea_water_practical_salinity,long_name,Salinity
+sea_water_practical_salinity,platform,station
+sea_water_practical_salinity,standard_name,sea_water_practical_salinity
+sea_water_practical_salinity,standard_name_url,http://mmisw.org/ont/cf/parameter/sea_water_practical_salinity
+sea_water_practical_salinity,units,"1e-3"
+sea_water_practical_salinity_qc_agg,*DATA_TYPE*,long
+sea_water_practical_salinity_qc_agg,_FillValue,4294957297L
+sea_water_practical_salinity_qc_agg,colorBarMaximum,10.0d
+sea_water_practical_salinity_qc_agg,colorBarMinimum,0.0d
+sea_water_practical_salinity_qc_agg,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+sea_water_practical_salinity_qc_agg,flag_values,1i,2i,3i,4i,9i
+sea_water_practical_salinity_qc_agg,ioos_category,Other
+sea_water_practical_salinity_qc_agg,long_name,Salinity QARTOD Aggregate Quality Flag
+sea_water_practical_salinity_qc_agg,references,http://services.cormp.org/quality.php
+sea_water_practical_salinity_qc_agg,standard_name,aggregate_quality_flag
+sea_water_practical_salinity_qc_tests,*DATA_TYPE*,double
+sea_water_practical_salinity_qc_tests,_FillValue,-9999.9d
+sea_water_practical_salinity_qc_tests,colorBarMaximum,10.0d
+sea_water_practical_salinity_qc_tests,colorBarMinimum,0.0d
+sea_water_practical_salinity_qc_tests,comment,"11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test"
+sea_water_practical_salinity_qc_tests,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+sea_water_practical_salinity_qc_tests,flag_values,1i,2i,3i,4i,9i
+sea_water_practical_salinity_qc_tests,ioos_category,Other
+sea_water_practical_salinity_qc_tests,long_name,Salinity QARTOD Individual Tests
+sea_water_practical_salinity_qc_tests,references,http://services.cormp.org/quality.php
+sea_water_practical_salinity_qc_tests,standard_name,sea_water_practical_salinity quality_flag
+sea_water_temperature,*DATA_TYPE*,double
+sea_water_temperature,_FillValue,-9999.9d
+sea_water_temperature,ancillary_variables,sea_water_temperature_qc_agg sea_water_temperature_qc_tests
+sea_water_temperature,colorBarMaximum,32.0d
+sea_water_temperature,colorBarMinimum,0.0d
+sea_water_temperature,id,"1000318"
+sea_water_temperature,ioos_category,Other
+sea_water_temperature,long_name,Water Temperature
+sea_water_temperature,platform,station
+sea_water_temperature,standard_name,sea_water_temperature
+sea_water_temperature,standard_name_url,http://mmisw.org/ont/cf/parameter/sea_water_temperature
+sea_water_temperature,units,degree_Celsius
+sea_water_temperature_qc_agg,*DATA_TYPE*,long
+sea_water_temperature_qc_agg,_FillValue,4294957297L
+sea_water_temperature_qc_agg,colorBarMaximum,10.0d
+sea_water_temperature_qc_agg,colorBarMinimum,0.0d
+sea_water_temperature_qc_agg,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+sea_water_temperature_qc_agg,flag_values,1i,2i,3i,4i,9i
+sea_water_temperature_qc_agg,ioos_category,Other
+sea_water_temperature_qc_agg,long_name,Water Temperature QARTOD Aggregate Quality Flag
+sea_water_temperature_qc_agg,references,http://services.cormp.org/quality.php
+sea_water_temperature_qc_agg,standard_name,aggregate_quality_flag
+sea_water_temperature_qc_tests,*DATA_TYPE*,double
+sea_water_temperature_qc_tests,_FillValue,-9999.9d
+sea_water_temperature_qc_tests,colorBarMaximum,10.0d
+sea_water_temperature_qc_tests,colorBarMinimum,0.0d
+sea_water_temperature_qc_tests,comment,"11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test"
+sea_water_temperature_qc_tests,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+sea_water_temperature_qc_tests,flag_values,1i,2i,3i,4i,9i
+sea_water_temperature_qc_tests,ioos_category,Other
+sea_water_temperature_qc_tests,long_name,Water Temperature QARTOD Individual Tests
+sea_water_temperature_qc_tests,references,http://services.cormp.org/quality.php
+sea_water_temperature_qc_tests,standard_name,sea_water_temperature quality_flag
+wind_speed_of_gust,*DATA_TYPE*,double
+wind_speed_of_gust,_FillValue,-9999.9d
+wind_speed_of_gust,ancillary_variables,wind_speed_of_gust_qc_agg wind_speed_of_gust_qc_tests
+wind_speed_of_gust,colorBarMaximum,30.0d
+wind_speed_of_gust,colorBarMinimum,0.0d
+wind_speed_of_gust,id,"1000321"
+wind_speed_of_gust,ioos_category,Other
+wind_speed_of_gust,long_name,Wind Gust
+wind_speed_of_gust,platform,station
+wind_speed_of_gust,standard_name,wind_speed_of_gust
+wind_speed_of_gust,standard_name_url,http://mmisw.org/ont/cf/parameter/wind_speed_of_gust
+wind_speed_of_gust,units,m.s-1
+wind_speed_of_gust_qc_agg,*DATA_TYPE*,long
+wind_speed_of_gust_qc_agg,_FillValue,4294957297L
+wind_speed_of_gust_qc_agg,colorBarMaximum,10.0d
+wind_speed_of_gust_qc_agg,colorBarMinimum,0.0d
+wind_speed_of_gust_qc_agg,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+wind_speed_of_gust_qc_agg,flag_values,1i,2i,3i,4i,9i
+wind_speed_of_gust_qc_agg,ioos_category,Other
+wind_speed_of_gust_qc_agg,long_name,Wind Gust QARTOD Aggregate Quality Flag
+wind_speed_of_gust_qc_agg,references,http://services.cormp.org/quality.php
+wind_speed_of_gust_qc_agg,standard_name,aggregate_quality_flag
+wind_speed_of_gust_qc_tests,*DATA_TYPE*,double
+wind_speed_of_gust_qc_tests,_FillValue,-9999.9d
+wind_speed_of_gust_qc_tests,colorBarMaximum,10.0d
+wind_speed_of_gust_qc_tests,colorBarMinimum,0.0d
+wind_speed_of_gust_qc_tests,comment,"11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test"
+wind_speed_of_gust_qc_tests,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+wind_speed_of_gust_qc_tests,flag_values,1i,2i,3i,4i,9i
+wind_speed_of_gust_qc_tests,ioos_category,Other
+wind_speed_of_gust_qc_tests,long_name,Wind Gust QARTOD Individual Tests
+wind_speed_of_gust_qc_tests,references,http://services.cormp.org/quality.php
+wind_speed_of_gust_qc_tests,standard_name,wind_speed_of_gust quality_flag
+wind_speed,*DATA_TYPE*,double
+wind_speed,_FillValue,-9999.9d
+wind_speed,ancillary_variables,wind_speed_qc_agg wind_speed_qc_tests
+wind_speed,colorBarMaximum,15.0d
+wind_speed,colorBarMinimum,0.0d
+wind_speed,id,"1000320"
+wind_speed,ioos_category,Other
+wind_speed,long_name,Wind Speed
+wind_speed,platform,station
+wind_speed,standard_name,wind_speed
+wind_speed,standard_name_url,http://mmisw.org/ont/cf/parameter/wind_speed
+wind_speed,units,m.s-1
+wind_speed_qc_agg,*DATA_TYPE*,long
+wind_speed_qc_agg,_FillValue,4294957297L
+wind_speed_qc_agg,colorBarMaximum,10.0d
+wind_speed_qc_agg,colorBarMinimum,0.0d
+wind_speed_qc_agg,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+wind_speed_qc_agg,flag_values,1i,2i,3i,4i,9i
+wind_speed_qc_agg,ioos_category,Other
+wind_speed_qc_agg,long_name,Wind Speed QARTOD Aggregate Quality Flag
+wind_speed_qc_agg,references,http://services.cormp.org/quality.php
+wind_speed_qc_agg,standard_name,aggregate_quality_flag
+wind_speed_qc_tests,*DATA_TYPE*,double
+wind_speed_qc_tests,_FillValue,-9999.9d
+wind_speed_qc_tests,colorBarMaximum,10.0d
+wind_speed_qc_tests,colorBarMinimum,0.0d
+wind_speed_qc_tests,comment,"11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test"
+wind_speed_qc_tests,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+wind_speed_qc_tests,flag_values,1i,2i,3i,4i,9i
+wind_speed_qc_tests,ioos_category,Other
+wind_speed_qc_tests,long_name,Wind Speed QARTOD Individual Tests
+wind_speed_qc_tests,references,http://services.cormp.org/quality.php
+wind_speed_qc_tests,standard_name,wind_speed quality_flag
+wind_from_direction,*DATA_TYPE*,double
+wind_from_direction,_FillValue,-9999.9d
+wind_from_direction,ancillary_variables,wind_from_direction_qc_agg wind_from_direction_qc_tests
+wind_from_direction,colorBarMaximum,360.0d
+wind_from_direction,colorBarMinimum,0.0d
+wind_from_direction,id,"1000319"
+wind_from_direction,ioos_category,Other
+wind_from_direction,long_name,Wind From Direction
+wind_from_direction,platform,station
+wind_from_direction,standard_name,wind_from_direction
+wind_from_direction,standard_name_url,http://mmisw.org/ont/cf/parameter/wind_from_direction
+wind_from_direction,units,degrees
+wind_from_direction_qc_agg,*DATA_TYPE*,long
+wind_from_direction_qc_agg,_FillValue,4294957297L
+wind_from_direction_qc_agg,colorBarMaximum,10.0d
+wind_from_direction_qc_agg,colorBarMinimum,0.0d
+wind_from_direction_qc_agg,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+wind_from_direction_qc_agg,flag_values,1i,2i,3i,4i,9i
+wind_from_direction_qc_agg,ioos_category,Other
+wind_from_direction_qc_agg,long_name,Wind From Direction QARTOD Aggregate Quality Flag
+wind_from_direction_qc_agg,references,http://services.cormp.org/quality.php
+wind_from_direction_qc_agg,standard_name,aggregate_quality_flag
+wind_from_direction_qc_tests,*DATA_TYPE*,double
+wind_from_direction_qc_tests,_FillValue,-9999.9d
+wind_from_direction_qc_tests,colorBarMaximum,10.0d
+wind_from_direction_qc_tests,colorBarMinimum,0.0d
+wind_from_direction_qc_tests,comment,"11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test"
+wind_from_direction_qc_tests,flag_meanings,PASS NOT_EVALUATED SUSPECT FAIL MISSING
+wind_from_direction_qc_tests,flag_values,1i,2i,3i,4i,9i
+wind_from_direction_qc_tests,ioos_category,Other
+wind_from_direction_qc_tests,long_name,Wind From Direction QARTOD Individual Tests
+wind_from_direction_qc_tests,references,http://services.cormp.org/quality.php
+wind_from_direction_qc_tests,standard_name,wind_from_direction quality_flag
+
+*END_METADATA*
+time,station,latitude,longitude,z,air_temperature,air_temperature_qc_agg,air_temperature_qc_tests,air_pressure,air_pressure_qc_agg,air_pressure_qc_tests,relative_humidity,relative_humidity_qc_agg,relative_humidity_qc_tests,sea_water_practical_salinity,sea_water_practical_salinity_qc_agg,sea_water_practical_salinity_qc_tests,sea_water_temperature,sea_water_temperature_qc_agg,sea_water_temperature_qc_tests,wind_speed_of_gust,wind_speed_of_gust_qc_agg,wind_speed_of_gust_qc_tests,wind_speed,wind_speed_qc_agg,wind_speed_qc_tests,wind_from_direction,wind_from_direction_qc_agg,wind_from_direction_qc_tests
+1999-09-20T00:08:00Z,,32.8032,-79.6204,0.0,24.25,1L,-9999.9,1022.087,1L,-9999.9,58.61,1L,-9999.9,34.32,1L,-9999.9,26.95,1L,-9999.9,11.8993723634,1L,-9999.9,8.879514,1L,-9999.9,78.07,1L,-9999.9
+1999-09-20T01:08:00Z,,32.8032,-79.6204,0.0,24.2,1L,-9999.9,1022.341,1L,-9999.9,64.51,1L,-9999.9,34.32,1L,-9999.9,26.91,1L,-9999.9,12.8665500566,1L,-9999.9,9.141887,1L,-9999.9,84.1,1L,-9999.9
+1999-09-20T02:08:00Z,,32.8032,-79.6204,0.0,24.36,1L,-9999.9,1022.602,1L,-9999.9,65.49,1L,-9999.9,34.34,1L,-9999.9,26.88,1L,-9999.9,13.216380286,1L,-9999.9,9.255067,1L,-9999.9,84.6,1L,-9999.9
+1999-09-20T03:08:00Z,,32.8032,-79.6204,0.0,24.58,1L,-9999.9,1022.683,1L,-9999.9,65.94,1L,-9999.9,34.33,1L,-9999.9,26.81,1L,-9999.9,13.1700792263,1L,-9999.9,9.260212,1L,-9999.9,81.4,1L,-9999.9
+1999-09-20T04:08:00Z,,32.8032,-79.6204,0.0,24.67,1L,-9999.9,1022.655,1L,-9999.9,65.44,1L,-9999.9,34.33,1L,-9999.9,26.81,1L,-9999.9,13.9108961827,1L,-9999.9,9.131598,1L,-9999.9,83.7,1L,-9999.9
+1999-09-20T05:08:00Z,,32.8032,-79.6204,0.0,22.98,1L,-9999.9,1022.585,1L,-9999.9,80.7,1L,-9999.9,34.32,1L,-9999.9,26.78,1L,-9999.9,10.6286655006,1L,-9999.9,7.711699,1L,-9999.9,49.8,1L,-9999.9
+1999-09-20T06:08:00Z,,32.8032,-79.6204,0.0,22.84,1L,-9999.9,1022.629,1L,-9999.9,81.6,1L,-9999.9,34.42,1L,-9999.9,26.69,1L,-9999.9,12.3212264636,1L,-9999.9,7.583085,1L,-9999.9,55.62,1L,-9999.9
+1999-09-20T07:08:00Z,,32.8032,-79.6204,0.0,22.77,1L,-9999.9,1022.178,1L,-9999.9,82.9,1L,-9999.9,34.58,1L,-9999.9,26.71,1L,-9999.9,10.6080872518,1L,-9999.9,7.52135,1L,-9999.9,46.54,1L,-9999.9
+1999-09-20T08:08:00Z,,32.8032,-79.6204,0.0,21.61,1L,-9999.9,1021.912,1L,-9999.9,86.7,1L,-9999.9,34.7,1L,-9999.9,26.64,1L,-9999.9,9.7180779916,1L,-9999.9,6.970882,1L,-9999.9,40.89,1L,-9999.9
+1999-09-20T09:08:00Z,,32.8032,-79.6204,0.0,21.16,1L,-9999.9,1022.031,1L,-9999.9,89.4,1L,-9999.9,34.36,1L,-9999.9,26.35,1L,-9999.9,8.817779607,1L,-9999.9,6.790822,1L,-9999.9,38.42,1L,-9999.9
+1999-09-20T10:08:00Z,,32.8032,-79.6204,0.0,20.52,1L,-9999.9,1022.926,1L,-9999.9,91.1,1L,-9999.9,34.25,1L,-9999.9,26.35,1L,-9999.9,7.5676509929,1L,-9999.9,6.795967,1L,-9999.9,37.12,1L,-9999.9
+1999-09-20T11:08:00Z,,32.8032,-79.6204,0.0,20.61,1L,-9999.9,1023.764,1L,-9999.9,91.0,1L,-9999.9,34.28,1L,-9999.9,26.28,1L,-9999.9,8.9258154131,1L,-9999.9,6.204342,1L,-9999.9,44.33,1L,-9999.9
+1999-09-20T12:08:00Z,,32.8032,-79.6204,0.0,20.16,1L,-9999.9,1024.314,1L,-9999.9,93.9,1L,-9999.9,34.15,1L,-9999.9,26.15,1L,-9999.9,9.6974997428,1L,-9999.9,7.336146,1L,-9999.9,33.04,1L,-9999.9
+1999-09-20T13:08:00Z,,32.8032,-79.6204,0.0,20.74,1L,-9999.9,1024.809,1L,-9999.9,94.6,1L,-9999.9,34.39,1L,-9999.9,26.3,1L,-9999.9,10.7469904311,1L,-9999.9,8.370203,1L,-9999.9,45.94,1L,-9999.9
+1999-09-20T14:08:00Z,,32.8032,-79.6204,0.0,21.83,1L,-9999.9,1025.32,1L,-9999.9,91.7,1L,-9999.9,34.45,1L,-9999.9,26.44,1L,-9999.9,11.8067702439,1L,-9999.9,8.097541,1L,-9999.9,52.9,1L,-9999.9
+1999-09-20T15:08:00Z,,32.8032,-79.6204,0.0,22.77,1L,-9999.9,1025.361,1L,-9999.9,89.7,1L,-9999.9,34.39,1L,-9999.9,26.48,1L,-9999.9,12.7379360016,1L,-9999.9,9.563741,1L,-9999.9,65.56,1L,-9999.9
+1999-09-20T16:08:00Z,,32.8032,-79.6204,0.0,23.77,1L,-9999.9,1025.496,1L,-9999.9,87.9,1L,-9999.9,34.41,1L,-9999.9,26.54,1L,-9999.9,13.190657475,1L,-9999.9,9.496862,1L,-9999.9,72.59,1L,-9999.9
+1999-09-20T17:08:00Z,,32.8032,-79.6204,0.0,23.99,1L,-9999.9,1025.056,1L,-9999.9,87.0,1L,-9999.9,34.43,1L,-9999.9,26.54,1L,-9999.9,13.9469081181,1L,-9999.9,9.676921,1L,-9999.9,73.44,1L,-9999.9
+1999-09-20T18:08:00Z,,32.8032,-79.6204,0.0,25.0,1L,-9999.9,1024.93,1L,-9999.9,75.98,3L,-9999.9,34.44,1L,-9999.9,26.6,1L,-9999.9,11.549542134,1L,-9999.9,8.282745,1L,-9999.9,96.4,1L,-9999.9
+1999-09-20T19:08:00Z,,32.8032,-79.6204,0.0,25.13,1L,-9999.9,1024.503,1L,-9999.9,76.4,1L,-9999.9,34.49,1L,-9999.9,26.63,1L,-9999.9,10.6595328738,1L,-9999.9,7.69112,1L,-9999.9,91.0,1L,-9999.9
+1999-09-20T20:08:00Z,,32.8032,-79.6204,0.0,25.22,1L,-9999.9,1024.332,1L,-9999.9,73.72,1L,-9999.9,34.66,1L,-9999.9,26.63,1L,-9999.9,10.5463525054,1L,-9999.9,7.166375,1L,-9999.9,97.9,1L,-9999.9
+1999-09-20T21:08:00Z,,32.8032,-79.6204,0.0,25.39,1L,-9999.9,1024.247,1L,-9999.9,73.16,1L,-9999.9,34.7,1L,-9999.9,26.6,1L,-9999.9,8.6994546764,1L,-9999.9,6.440992,1L,-9999.9,100.4,1L,-9999.9
+1999-09-20T22:08:00Z,,32.8032,-79.6204,0.0,25.54,1L,-9999.9,1024.19,1L,-9999.9,71.18,1L,-9999.9,34.41,1L,-9999.9,26.38,1L,-9999.9,8.9206708509,1L,-9999.9,6.091162,1L,-9999.9,102.4,1L,-9999.9
+1999-09-20T23:08:00Z,,32.8032,-79.6204,0.0,25.33,1L,-9999.9,1024.202,1L,-9999.9,71.16,1L,-9999.9,34.32,1L,-9999.9,26.33,1L,-9999.9,8.6685873032,1L,-9999.9,6.420414,1L,-9999.9,107.0,1L,-9999.9
+1999-09-21T00:08:00Z,,32.8032,-79.6204,0.0,25.21,1L,-9999.9,1024.466,1L,-9999.9,70.73,1L,-9999.9,34.33,1L,-9999.9,26.29,1L,-9999.9,9.10587509,1L,-9999.9,6.46157,1L,-9999.9,103.0,1L,-9999.9
+1999-09-21T01:08:00Z,,32.8032,-79.6204,0.0,25.31,1L,-9999.9,1024.858,1L,-9999.9,68.84,1L,-9999.9,34.43,1L,-9999.9,26.3,1L,-9999.9,9.9084267929,1L,-9999.9,6.595329,1L,-9999.9,103.7,1L,-9999.9
+1999-09-21T02:08:00Z,,32.8032,-79.6204,0.0,25.42,1L,-9999.9,1025.133,1L,-9999.9,67.72,1L,-9999.9,34.61,1L,-9999.9,26.34,1L,-9999.9,9.2705010804,1L,-9999.9,6.147752,1L,-9999.9,108.6,1L,-9999.9
+1999-09-21T03:08:00Z,,32.8032,-79.6204,0.0,25.46,1L,-9999.9,1025.1,1L,-9999.9,69.01,1L,-9999.9,34.9,1L,-9999.9,26.44,1L,-9999.9,8.8898034777,1L,-9999.9,6.482148,1L,-9999.9,106.1,1L,-9999.9
+1999-09-21T04:08:00Z,,32.8032,-79.6204,0.0,25.53,1L,-9999.9,1025.007,1L,-9999.9,65.76,1L,-9999.9,34.96,1L,-9999.9,26.43,1L,-9999.9,7.9792159687,1L,-9999.9,5.324622,1L,-9999.9,118.4,1L,-9999.9
+1999-09-21T05:08:00Z,,32.8032,-79.6204,0.0,25.49,1L,-9999.9,1025.087,1L,-9999.9,59.72,1L,-9999.9,34.98,1L,-9999.9,26.37,1L,-9999.9,7.1663751415,1L,-9999.9,4.054944,1L,-9999.9,90.1,1L,-9999.9
+1999-09-21T06:08:00Z,,32.8032,-79.6204,0.0,25.31,1L,-9999.9,1025.373,1L,-9999.9,57.4,1L,-9999.9,34.97,1L,-9999.9,26.36,1L,-9999.9,7.4184586892,1L,-9999.9,4.259697,1L,-9999.9,74.31,1L,-9999.9
+1999-09-21T07:08:00Z,,32.8032,-79.6204,0.0,25.25,1L,-9999.9,1025.228,1L,-9999.9,57.35,1L,-9999.9,34.94,1L,-9999.9,26.33,1L,-9999.9,6.6004732997,1L,-9999.9,4.125939,1L,-9999.9,70.76,1L,-9999.9
+1999-09-21T08:08:00Z,,32.8032,-79.6204,0.0,25.0,1L,-9999.9,1024.754,1L,-9999.9,57.12,1L,-9999.9,34.6,1L,-9999.9,26.05,1L,-9999.9,5.098261138,1L,-9999.9,2.920568,1L,-9999.9,69.4,1L,-9999.9
+1999-09-21T09:08:00Z,,32.8032,-79.6204,0.0,24.61,1L,-9999.9,1024.612,1L,-9999.9,64.21,1L,-9999.9,34.5,1L,-9999.9,26.03,1L,-9999.9,6.9657372158,1L,-9999.9,5.005659,1L,-9999.9,38.8,1L,-9999.9
+1999-09-21T10:08:00Z,,32.8032,-79.6204,0.0,24.51,1L,-9999.9,1024.986,1L,-9999.9,63.26,1L,-9999.9,34.52,1L,-9999.9,26.01,1L,-9999.9,7.4596151867,1L,-9999.9,4.969647,1L,-9999.9,54.57,1L,-9999.9
+1999-09-21T11:08:00Z,,32.8032,-79.6204,0.0,24.34,1L,-9999.9,1025.596,1L,-9999.9,64.79,1L,-9999.9,34.73,1L,-9999.9,26.1,1L,-9999.9,7.0068937133,1L,-9999.9,5.612717,1L,-9999.9,53.53,1L,-9999.9
+1999-09-21T12:08:00Z,,32.8032,-79.6204,0.0,24.52,1L,-9999.9,1025.965,1L,-9999.9,63.45,1L,-9999.9,34.91,1L,-9999.9,26.21,1L,-9999.9,7.5882292417,1L,-9999.9,5.833934,1L,-9999.9,49.85,1L,-9999.9
+1999-09-21T13:08:00Z,,32.8032,-79.6204,0.0,24.44,1L,-9999.9,1026.503,1L,-9999.9,69.86,1L,-9999.9,34.95,1L,-9999.9,26.25,1L,-9999.9,7.5985183661,1L,-9999.9,5.633296,1L,-9999.9,48.79,1L,-9999.9
+1999-09-21T14:08:00Z,,32.8032,-79.6204,0.0,24.64,1L,-9999.9,1026.898,1L,-9999.9,67.73,1L,-9999.9,34.94,1L,-9999.9,26.23,1L,-9999.9,8.349624447,1L,-9999.9,6.101451,1L,-9999.9,55.96,1L,-9999.9
+1999-09-21T15:08:00Z,,32.8032,-79.6204,0.0,24.9,1L,-9999.9,1026.953,1L,-9999.9,68.04,1L,-9999.9,34.71,1L,-9999.9,26.2,1L,-9999.9,8.4679493775,1L,-9999.9,6.101451,1L,-9999.9,66.65,1L,-9999.9
+1999-09-21T16:08:00Z,,32.8032,-79.6204,0.0,25.14,1L,-9999.9,1026.504,1L,-9999.9,68.59,1L,-9999.9,34.73,1L,-9999.9,26.3,1L,-9999.9,7.727132421,1L,-9999.9,5.520115,1L,-9999.9,82.7,1L,-9999.9
+1999-09-21T17:08:00Z,,32.8032,-79.6204,0.0,25.16,1L,-9999.9,1025.783,1L,-9999.9,67.98,1L,-9999.9,34.73,1L,-9999.9,26.32,1L,-9999.9,8.3393353226,1L,-9999.9,5.144562,1L,-9999.9,88.2,1L,-9999.9
+1999-09-21T18:08:00Z,,32.8032,-79.6204,0.0,25.23,1L,-9999.9,1025.29,1L,-9999.9,68.85,1L,-9999.9,34.86,1L,-9999.9,26.43,1L,-9999.9,6.9760263402,1L,-9999.9,4.861611,1L,-9999.9,92.0,1L,-9999.9
+1999-09-21T19:08:00Z,,32.8032,-79.6204,0.0,25.36,1L,-9999.9,1024.855,1L,-9999.9,68.01,1L,-9999.9,34.87,1L,-9999.9,26.51,1L,-9999.9,6.7187982303,1L,-9999.9,4.516926,1L,-9999.9,104.8,1L,-9999.9
+1999-09-21T20:08:00Z,,32.8032,-79.6204,0.0,25.37,1L,-9999.9,1024.043,1L,-9999.9,67.46,1L,-9999.9,34.86,1L,-9999.9,26.53,1L,-9999.9,6.399835374,1L,-9999.9,4.414034,1L,-9999.9,107.0,1L,-9999.9
+1999-09-21T21:08:00Z,,32.8032,-79.6204,0.0,25.51,1L,-9999.9,1023.793,1L,-9999.9,67.95,1L,-9999.9,34.85,1L,-9999.9,26.52,1L,-9999.9,6.8885687828,1L,-9999.9,4.501492,1L,-9999.9,112.5,1L,-9999.9
+1999-09-21T22:08:00Z,,32.8032,-79.6204,0.0,25.5,1L,-9999.9,1023.839,1L,-9999.9,68.47,1L,-9999.9,34.84,1L,-9999.9,26.45,1L,-9999.9,6.3689680008,1L,-9999.9,4.393456,1L,-9999.9,118.3,1L,-9999.9
+1999-09-21T23:08:00Z,,32.8032,-79.6204,0.0,25.38,1L,-9999.9,1023.697,1L,-9999.9,68.03,1L,-9999.9,34.82,1L,-9999.9,26.35,1L,-9999.9,6.8782796584,1L,-9999.9,4.64554,1L,-9999.9,129.0,1L,-9999.9
+1999-09-22T00:08:00Z,,32.8032,-79.6204,0.0,25.3,1L,-9999.9,1023.856,1L,-9999.9,68.52,1L,-9999.9,34.84,1L,-9999.9,26.31,1L,-9999.9,7.4904825599,1L,-9999.9,4.851322,1L,-9999.9,125.5,1L,-9999.9
+1999-09-22T01:08:00Z,,32.8032,-79.6204,0.0,25.34,1L,-9999.9,1024.217,1L,-9999.9,68.11,1L,-9999.9,34.86,1L,-9999.9,26.38,1L,-9999.9,7.1303632061,1L,-9999.9,4.990225,1L,-9999.9,132.8,1L,-9999.9
+1999-09-22T02:08:00Z,,32.8032,-79.6204,0.0,25.44,1L,-9999.9,1024.628,1L,-9999.9,63.56,1L,-9999.9,34.89,1L,-9999.9,26.3,1L,-9999.9,6.6467743595,1L,-9999.9,4.120794,1L,-9999.9,138.7,1L,-9999.9
+1999-09-22T03:08:00Z,,32.8032,-79.6204,0.0,25.46,1L,-9999.9,1024.421,1L,-9999.9,63.09,1L,-9999.9,34.96,1L,-9999.9,26.34,1L,-9999.9,5.5972836712,1L,-9999.9,3.556436,1L,-9999.9,135.4,1L,-9999.9
+1999-09-22T04:08:00Z,,32.8032,-79.6204,0.0,25.23,1L,-9999.9,1023.974,1L,-9999.9,66.6,1L,-9999.9,34.98,1L,-9999.9,26.3,1L,-9999.9,5.0776828892,1L,-9999.9,2.590287,1L,-9999.9,138.1,1L,-9999.9
+1999-09-22T05:08:00Z,,32.8032,-79.6204,0.0,25.06,1L,-9999.9,1023.737,1L,-9999.9,66.76,1L,-9999.9,34.97,1L,-9999.9,26.19,1L,-9999.9,3.5291696677,1L,-9999.9,1.973454,1L,-9999.9,135.7,1L,-9999.9
+1999-09-22T06:08:00Z,,32.8032,-79.6204,0.0,25.01,1L,-9999.9,1023.607,1L,-9999.9,67.78,1L,-9999.9,34.98,1L,-9999.9,26.28,1L,-9999.9,3.6269163494,1L,-9999.9,1.980656,1L,-9999.9,96.1,1L,-9999.9
+1999-09-22T07:08:00Z,,32.8032,-79.6204,0.0,24.95,1L,-9999.9,1023.301,1L,-9999.9,67.56,1L,-9999.9,34.98,1L,-9999.9,26.16,1L,-9999.9,4.3986006791,1L,-9999.9,2.394794,1L,-9999.9,89.0,1L,-9999.9
+1999-09-22T08:08:00Z,,32.8032,-79.6204,0.0,24.9,1L,-9999.9,1023.076,1L,-9999.9,68.61,1L,-9999.9,35.06,1L,-9999.9,26.26,1L,-9999.9,5.1857186953,1L,-9999.9,3.119148,1L,-9999.9,76.95,1L,-9999.9
+1999-09-22T09:08:00Z,,32.8032,-79.6204,0.0,24.74,1L,-9999.9,1022.988,1L,-9999.9,69.97,1L,-9999.9,35.0,1L,-9999.9,26.21,1L,-9999.9,6.3895462496,1L,-9999.9,3.637205,1L,-9999.9,75.47,1L,-9999.9
+1999-09-22T10:08:00Z,,32.8032,-79.6204,0.0,24.55,1L,-9999.9,1023.253,1L,-9999.9,74.26,1L,-9999.9,34.59,1L,-9999.9,25.92,1L,-9999.9,7.1303632061,1L,-9999.9,4.923346,1L,-9999.9,61.89,1L,-9999.9
+1999-09-22T11:08:00Z,,32.8032,-79.6204,0.0,24.53,1L,-9999.9,1023.234,1L,-9999.9,73.58,1L,-9999.9,34.48,1L,-9999.9,25.96,1L,-9999.9,7.0480502109,1L,-9999.9,5.170285,1L,-9999.9,54.87,1L,-9999.9
+1999-09-22T12:08:00Z,,32.8032,-79.6204,0.0,25.02,1L,-9999.9,1023.679,1L,-9999.9,67.6,1L,-9999.9,34.45,1L,-9999.9,25.91,1L,-9999.9,6.6879308571,1L,-9999.9,4.264842,1L,-9999.9,84.3,1L,-9999.9
+1999-09-22T13:08:00Z,,32.8032,-79.6204,0.0,24.54,1L,-9999.9,1023.955,1L,-9999.9,75.54,1L,-9999.9,34.42,1L,-9999.9,25.79,1L,-9999.9,8.1489865212,1L,-9999.9,5.556127,1L,-9999.9,44.36,1L,-9999.9
+1999-09-22T14:08:00Z,,32.8032,-79.6204,0.0,24.53,1L,-9999.9,1024.019,1L,-9999.9,70.17,1L,-9999.9,34.67,1L,-9999.9,26.01,1L,-9999.9,7.8094454162,1L,-9999.9,5.869945,1L,-9999.9,50.68,1L,-9999.9
+1999-09-22T15:08:00Z,,32.8032,-79.6204,0.0,24.79,1L,-9999.9,1024.133,1L,-9999.9,70.04,1L,-9999.9,34.83,1L,-9999.9,26.18,1L,-9999.9,7.5779401173,1L,-9999.9,5.252598,1L,-9999.9,55.64,1L,-9999.9
+1999-09-22T16:08:00Z,,32.8032,-79.6204,0.0,25.18,1L,-9999.9,1023.757,1L,-9999.9,67.22,1L,-9999.9,34.98,1L,-9999.9,26.37,1L,-9999.9,6.2866550057,1L,-9999.9,4.305999,1L,-9999.9,63.19,1L,-9999.9
+1999-09-22T17:08:00Z,,32.8032,-79.6204,0.0,25.33,1L,-9999.9,1023.036,1L,-9999.9,66.78,1L,-9999.9,34.97,1L,-9999.9,26.52,1L,-9999.9,5.5458380492,1L,-9999.9,3.431937,1L,-9999.9,78.15,1L,-9999.9
+1999-09-22T18:08:00Z,,32.8032,-79.6204,0.0,25.31,1L,-9999.9,1022.589,1L,-9999.9,68.33,1L,-9999.9,34.9,1L,-9999.9,26.69,1L,-9999.9,5.566416298,1L,-9999.9,3.742669,1L,-9999.9,92.9,1L,-9999.9
+1999-09-22T19:08:00Z,,32.8032,-79.6204,0.0,25.43,1L,-9999.9,1021.843,1L,-9999.9,68.77,1L,-9999.9,34.77,1L,-9999.9,26.63,1L,-9999.9,7.4493260624,1L,-9999.9,4.681552,1L,-9999.9,116.7,1L,-9999.9
+1999-09-22T20:08:00Z,,32.8032,-79.6204,0.0,25.6,1L,-9999.9,1021.402,1L,-9999.9,68.28,1L,-9999.9,34.71,1L,-9999.9,26.56,1L,-9999.9,6.4461364338,1L,-9999.9,4.501492,1L,-9999.9,124.1,1L,-9999.9
+1999-09-22T21:08:00Z,,32.8032,-79.6204,0.0,25.63,1L,-9999.9,1021.104,1L,-9999.9,70.03,1L,-9999.9,34.69,1L,-9999.9,26.45,1L,-9999.9,7.8403127894,1L,-9999.9,5.741331,1L,-9999.9,132.3,1L,-9999.9
+1999-09-22T22:08:00Z,,32.8032,-79.6204,0.0,25.67,1L,-9999.9,1021.013,1L,-9999.9,69.62,1L,-9999.9,34.69,1L,-9999.9,26.42,1L,-9999.9,6.5696059265,1L,-9999.9,4.753575,1L,-9999.9,125.9,1L,-9999.9
+1999-09-22T23:08:00Z,,32.8032,-79.6204,0.0,25.47,1L,-9999.9,1020.889,1L,-9999.9,70.62,1L,-9999.9,34.68,1L,-9999.9,26.41,1L,-9999.9,6.5696059265,1L,-9999.9,4.419179,1L,-9999.9,119.8,1L,-9999.9
+1999-09-23T00:08:00Z,,32.8032,-79.6204,0.0,25.41,1L,-9999.9,1021.27,1L,-9999.9,70.55,1L,-9999.9,34.66,1L,-9999.9,26.36,1L,-9999.9,6.0705833934,1L,-9999.9,3.888775,1L,-9999.9,120.2,1L,-9999.9
+1999-09-23T01:08:00Z,,32.8032,-79.6204,0.0,25.42,1L,-9999.9,1021.549,1L,-9999.9,71.18,1L,-9999.9,34.67,1L,-9999.9,26.34,1L,-9999.9,5.8596563432,1L,-9999.9,3.734952,1L,-9999.9,127.7,1L,-9999.9
+1999-09-23T02:08:00Z,,32.8032,-79.6204,0.0,25.42,1L,-9999.9,1021.525,1L,-9999.9,70.85,1L,-9999.9,34.68,1L,-9999.9,26.28,1L,-9999.9,6.0397160202,1L,-9999.9,3.662928,1L,-9999.9,121.3,1L,-9999.9
+1999-09-23T03:08:00Z,,32.8032,-79.6204,0.0,25.36,1L,-9999.9,1021.254,1L,-9999.9,71.35,1L,-9999.9,34.71,1L,-9999.9,26.26,1L,-9999.9,4.4654799877,1L,-9999.9,2.651507,1L,-9999.9,115.8,1L,-9999.9
+1999-09-23T04:08:00Z,,32.8032,-79.6204,0.0,25.44,1L,-9999.9,1020.649,1L,-9999.9,73.67,1L,-9999.9,34.77,1L,-9999.9,26.3,1L,-9999.9,5.0673937648,1L,-9999.9,3.236444,1L,-9999.9,140.4,1L,-9999.9
+1999-09-23T05:08:00Z,,32.8032,-79.6204,0.0,25.5,1L,-9999.9,1019.895,1L,-9999.9,68.99,1L,-9999.9,34.86,1L,-9999.9,26.37,1L,-9999.9,4.2699866241,1L,-9999.9,2.6299,1L,-9999.9,189.6,1L,-9999.9
+1999-09-23T06:08:00Z,,32.8032,-79.6204,0.0,25.46,1L,-9999.9,1019.519,1L,-9999.9,69.06,1L,-9999.9,34.92,1L,-9999.9,26.36,1L,-9999.9,4.2699866241,1L,-9999.9,2.638131,1L,-9999.9,189.9,1L,-9999.9
+1999-09-23T07:08:00Z,,32.8032,-79.6204,0.0,25.26,1L,-9999.9,1018.905,1L,-9999.9,68.93,1L,-9999.9,34.85,1L,-9999.9,26.26,1L,-9999.9,3.2873752444,1L,-9999.9,2.316596,1L,-9999.9,219.1,1L,-9999.9
+1999-09-23T08:08:00Z,,32.8032,-79.6204,0.0,25.16,1L,-9999.9,1018.772,1L,-9999.9,67.73,1L,-9999.9,34.84,1L,-9999.9,26.29,1L,-9999.9,3.148472065,1L,-9999.9,1.789793,1L,-9999.9,262.2,1L,-9999.9
+1999-09-23T09:08:00Z,,32.8032,-79.6204,0.0,23.88,1L,-9999.9,1018.737,1L,-9999.9,83.1,3L,-9999.9,34.4,1L,-9999.9,25.94,1L,-9999.9,4.4860582364,1L,-9999.9,2.369071,1L,-9999.9,8.19,1L,-9999.9
+1999-09-23T10:08:00Z,,32.8032,-79.6204,0.0,23.43,1L,-9999.9,1019.018,1L,-9999.9,87.5,1L,-9999.9,34.15,1L,-9999.9,25.9,1L,-9999.9,4.578660356,1L,-9999.9,3.153617,1L,-9999.9,23.25,1L,-9999.9
+1999-09-23T11:08:00Z,,32.8032,-79.6204,0.0,23.34,1L,-9999.9,1019.628,1L,-9999.9,87.9,1L,-9999.9,33.99,1L,-9999.9,25.84,1L,-9999.9,4.8976232123,1L,-9999.9,3.219981,1L,-9999.9,41.04,1L,-9999.9
+1999-09-23T12:08:00Z,,32.8032,-79.6204,0.0,23.92,1L,-9999.9,1020.229,1L,-9999.9,85.2,1L,-9999.9,34.06,1L,-9999.9,25.9,1L,-9999.9,5.566416298,1L,-9999.9,3.247248,1L,-9999.9,43.87,1L,-9999.9
+1999-09-23T13:08:00Z,,32.8032,-79.6204,0.0,24.27,1L,-9999.9,1020.419,1L,-9999.9,80.8,1L,-9999.9,34.02,1L,-9999.9,25.89,1L,-9999.9,3.6886510958,1L,-9999.9,3.009569,1L,-9999.9,45.77,1L,-9999.9
+1999-09-23T14:08:00Z,,32.8032,-79.6204,0.0,24.57,1L,-9999.9,1020.638,1L,-9999.9,78.92,1L,-9999.9,34.14,1L,-9999.9,26.07,1L,-9999.9,3.2565078712,1L,-9999.9,2.12419,1L,-9999.9,37.79,1L,-9999.9
+1999-09-23T15:08:00Z,,32.8032,-79.6204,0.0,25.0,1L,-9999.9,1020.514,1L,-9999.9,74.75,1L,-9999.9,34.17,1L,-9999.9,26.31,1L,-9999.9,2.9992797613,1L,-9999.9,1.251158,1L,-9999.9,4.341,1L,-9999.9
+1999-09-23T16:08:00Z,,32.8032,-79.6204,0.0,25.9,1L,-9999.9,1019.873,1L,-9999.9,63.39,1L,-9999.9,34.3,1L,-9999.9,26.68,1L,-9999.9,2.5259800391,1L,-9999.9,0.739788,1L,-9999.9,284.1,1L,-9999.9
+1999-09-23T17:08:00Z,,32.8032,-79.6204,0.0,25.88,1L,-9999.9,1018.728,1L,-9999.9,64.72,1L,-9999.9,34.31,1L,-9999.9,26.79,1L,-9999.9,3.3388208663,1L,-9999.9,1.685873,1L,-9999.9,134.1,1L,-9999.9
+1999-09-23T18:08:00Z,,32.8032,-79.6204,0.0,25.67,1L,-9999.9,1017.678,1L,-9999.9,64.75,1L,-9999.9,34.38,1L,-9999.9,27.25,1L,-9999.9,4.8255993415,1L,-9999.9,2.968412,1L,-9999.9,140.9,1L,-9999.9
+1999-09-23T19:08:00Z,,32.8032,-79.6204,0.0,25.84,1L,-9999.9,1017.045,1L,-9999.9,61.61,1L,-9999.9,34.42,1L,-9999.9,27.64,1L,-9999.9,5.0673937648,1L,-9999.9,3.826525,1L,-9999.9,152.9,1L,-9999.9
+1999-09-23T20:08:00Z,,32.8032,-79.6204,0.0,25.73,1L,-9999.9,1016.407,1L,-9999.9,65.23,1L,-9999.9,34.35,1L,-9999.9,27.64,1L,-9999.9,7.0686284597,1L,-9999.9,4.949069,1L,-9999.9,172.7,1L,-9999.9
+1999-09-23T21:08:00Z,,32.8032,-79.6204,0.0,25.52,1L,-9999.9,1016.024,1L,-9999.9,70.1,1L,-9999.9,33.87,1L,-9999.9,26.51,1L,-9999.9,7.4699043111,1L,-9999.9,5.190863,1L,-9999.9,178.4,1L,-9999.9
+1999-09-23T22:08:00Z,,32.8032,-79.6204,0.0,25.6,1L,-9999.9,1016.116,1L,-9999.9,69.52,1L,-9999.9,33.79,1L,-9999.9,26.27,1L,-9999.9,5.9882703982,1L,-9999.9,4.34201,1L,-9999.9,198.0,1L,-9999.9
+1999-09-23T23:08:00Z,,32.8032,-79.6204,0.0,25.43,1L,-9999.9,1015.854,1L,-9999.9,70.64,1L,-9999.9,33.7,1L,-9999.9,26.22,1L,-9999.9,6.6159069863,1L,-9999.9,4.424323,1L,-9999.9,200.9,1L,-9999.9
+1999-09-24T00:08:00Z,,32.8032,-79.6204,0.0,25.45,1L,-9999.9,1015.607,1L,-9999.9,70.6,1L,-9999.9,33.71,1L,-9999.9,26.22,1L,-9999.9,7.0068937133,1L,-9999.9,4.887334,1L,-9999.9,199.2,1L,-9999.9
+1999-09-24T01:08:00Z,,32.8032,-79.6204,0.0,25.52,1L,-9999.9,1015.575,1L,-9999.9,70.82,1L,-9999.9,33.83,1L,-9999.9,26.48,1L,-9999.9,6.399835374,1L,-9999.9,4.362589,1L,-9999.9,190.8,1L,-9999.9
+1999-09-24T02:08:00Z,,32.8032,-79.6204,0.0,25.56,1L,-9999.9,1015.652,1L,-9999.9,70.9,1L,-9999.9,33.65,1L,-9999.9,26.6,1L,-9999.9,6.2763658813,1L,-9999.9,4.64554,1L,-9999.9,193.6,1L,-9999.9
+1999-09-24T03:08:00Z,,32.8032,-79.6204,0.0,25.63,1L,-9999.9,1015.694,1L,-9999.9,69.75,1L,-9999.9,33.24,1L,-9999.9,26.71,1L,-9999.9,6.2300648215,1L,-9999.9,4.573516,1L,-9999.9,196.8,1L,-9999.9
+1999-09-24T04:08:00Z,,32.8032,-79.6204,0.0,25.66,1L,-9999.9,1015.27,1L,-9999.9,69.31,1L,-9999.9,33.03,1L,-9999.9,26.61,1L,-9999.9,6.1477518263,1L,-9999.9,4.660973,1L,-9999.9,209.5,1L,-9999.9
+1999-09-24T05:08:00Z,,32.8032,-79.6204,0.0,25.6,1L,-9999.9,1014.613,1L,-9999.9,70.92,1L,-9999.9,33.14,1L,-9999.9,26.56,1L,-9999.9,6.1065953287,1L,-9999.9,4.892479,1L,-9999.9,222.0,1L,-9999.9
+1999-09-24T06:08:00Z,,32.8032,-79.6204,0.0,25.7,1L,-9999.9,1014.007,1L,-9999.9,71.14,1L,-9999.9,33.13,1L,-9999.9,26.48,1L,-9999.9,6.0397160202,1L,-9999.9,5.154851,1L,-9999.9,229.6,1L,-9999.9
+1999-09-24T07:08:00Z,,32.8032,-79.6204,0.0,25.61,1L,-9999.9,1013.096,1L,-9999.9,72.56,1L,-9999.9,33.1,1L,-9999.9,26.4,1L,-9999.9,6.816544912,1L,-9999.9,5.185719,1L,-9999.9,232.0,1L,-9999.9
+1999-09-24T08:08:00Z,,32.8032,-79.6204,0.0,25.51,1L,-9999.9,1012.518,1L,-9999.9,73.86,1L,-9999.9,33.08,1L,-9999.9,26.36,1L,-9999.9,6.7290873547,1L,-9999.9,5.093117,1L,-9999.9,248.4,1L,-9999.9
+1999-09-24T09:08:00Z,,32.8032,-79.6204,0.0,25.27,1L,-9999.9,1012.601,1L,-9999.9,79.87,1L,-9999.9,33.22,1L,-9999.9,26.27,1L,-9999.9,6.3586788764,1L,-9999.9,4.799877,1L,-9999.9,276.0,1L,-9999.9
+1999-09-24T10:08:00Z,,32.8032,-79.6204,0.0,24.28,1L,-9999.9,1012.72,1L,-9999.9,84.1,1L,-9999.9,32.92,1L,-9999.9,25.97,1L,-9999.9,7.1560860171,1L,-9999.9,5.123984,1L,-9999.9,287.4,1L,-9999.9
+1999-09-24T11:08:00Z,,32.8032,-79.6204,0.0,24.02,1L,-9999.9,1013.127,1L,-9999.9,84.6,1L,-9999.9,32.79,1L,-9999.9,26.0,1L,-9999.9,6.3792571252,1L,-9999.9,4.974792,1L,-9999.9,286.8,1L,-9999.9
+1999-09-24T12:08:00Z,,32.8032,-79.6204,0.0,23.83,1L,-9999.9,1013.544,1L,-9999.9,85.8,1L,-9999.9,32.83,1L,-9999.9,26.07,1L,-9999.9,7.855746476,1L,-9999.9,5.628151,1L,-9999.9,286.4,1L,-9999.9
+1999-09-24T13:08:00Z,,32.8032,-79.6204,0.0,24.3,3L,-9999.9,1013.861,3L,-9999.9,83.6,3L,-9999.9,32.92,3L,-9999.9,26.09,3L,-9999.9,6.9091470316,3L,-9999.9,5.149707,3L,-9999.9,274.3,3L,-9999.9
+1999-09-24T14:08:00Z,,32.8032,-79.6204,0.0,24.69,1L,-9999.9,1014.064,1L,-9999.9,77.87,1L,-9999.9,32.85,1L,-9999.9,26.15,1L,-9999.9,6.2969441301,1L,-9999.9,4.805021,1L,-9999.9,263.4,1L,-9999.9
+1999-09-24T15:08:00Z,,32.8032,-79.6204,0.0,25.16,1L,-9999.9,1013.806,1L,-9999.9,75.68,1L,-9999.9,33.08,1L,-9999.9,26.33,1L,-9999.9,5.4995369894,1L,-9999.9,4.835888,1L,-9999.9,252.7,1L,-9999.9
+1999-09-24T16:08:00Z,,32.8032,-79.6204,0.0,25.74,1L,-9999.9,1013.393,1L,-9999.9,73.75,1L,-9999.9,33.19,1L,-9999.9,26.56,1L,-9999.9,4.4860582364,1L,-9999.9,3.142299,1L,-9999.9,254.8,1L,-9999.9
+1999-09-24T17:08:00Z,,32.8032,-79.6204,0.0,26.21,1L,-9999.9,1012.613,1L,-9999.9,74.39,1L,-9999.9,33.23,1L,-9999.9,26.86,1L,-9999.9,4.136228007,1L,-9999.9,2.998765,1L,-9999.9,211.9,1L,-9999.9
+1999-09-24T18:08:00Z,,32.8032,-79.6204,0.0,26.22,1L,-9999.9,1011.852,1L,-9999.9,77.58,1L,-9999.9,33.27,1L,-9999.9,27.14,1L,-9999.9,4.8564667147,1L,-9999.9,3.766334,1L,-9999.9,213.2,1L,-9999.9
+1999-09-24T19:08:00Z,,32.8032,-79.6204,0.0,26.43,1L,-9999.9,1011.023,1L,-9999.9,77.74,1L,-9999.9,33.3,1L,-9999.9,27.27,1L,-9999.9,5.2577425661,1L,-9999.9,3.570326,1L,-9999.9,205.6,1L,-9999.9
+1999-09-24T20:08:00Z,,32.8032,-79.6204,0.0,26.88,1L,-9999.9,1010.575,1L,-9999.9,75.82,1L,-9999.9,33.49,1L,-9999.9,27.56,1L,-9999.9,3.8687107727,1L,-9999.9,2.834654,1L,-9999.9,199.4,1L,-9999.9
+1999-09-24T21:08:00Z,,32.8032,-79.6204,0.0,26.95,1L,-9999.9,1010.488,1L,-9999.9,77.38,1L,-9999.9,33.45,1L,-9999.9,27.55,1L,-9999.9,5.0776828892,1L,-9999.9,3.842474,1L,-9999.9,215.5,1L,-9999.9
+1999-09-24T22:08:00Z,,32.8032,-79.6204,0.0,26.93,1L,-9999.9,1010.805,1L,-9999.9,78.25,1L,-9999.9,33.41,1L,-9999.9,27.44,1L,-9999.9,4.969647083,1L,-9999.9,3.756045,1L,-9999.9,204.0,1L,-9999.9
+1999-09-24T23:08:00Z,,32.8032,-79.6204,0.0,26.8,1L,-9999.9,1010.7,1L,-9999.9,81.7,1L,-9999.9,33.33,1L,-9999.9,27.2,1L,-9999.9,4.655828789,1L,-9999.9,3.539973,1L,-9999.9,198.5,1L,-9999.9
+1999-09-25T00:08:00Z,,32.8032,-79.6204,0.0,26.75,1L,-9999.9,1011.197,1L,-9999.9,80.6,1L,-9999.9,33.43,1L,-9999.9,26.91,1L,-9999.9,4.0384813252,1L,-9999.9,3.179854,1L,-9999.9,191.5,1L,-9999.9
+1999-09-25T01:08:00Z,,32.8032,-79.6204,0.0,26.77,1L,-9999.9,1011.7,1L,-9999.9,82.9,1L,-9999.9,32.8,1L,-9999.9,27.3,1L,-9999.9,3.9561683301,1L,-9999.9,2.985904,1L,-9999.9,190.6,1L,-9999.9
+1999-09-25T02:08:00Z,,32.8032,-79.6204,0.0,26.86,1L,-9999.9,1011.983,1L,-9999.9,80.7,1L,-9999.9,32.39,1L,-9999.9,27.49,1L,-9999.9,4.8770449635,1L,-9999.9,3.475666,1L,-9999.9,202.0,1L,-9999.9
+1999-09-25T03:08:00Z,,32.8032,-79.6204,0.0,26.88,1L,-9999.9,1012.118,1L,-9999.9,82.5,1L,-9999.9,32.51,1L,-9999.9,27.43,1L,-9999.9,4.0281922008,1L,-9999.9,3.218953,1L,-9999.9,203.9,1L,-9999.9
+1999-09-25T04:08:00Z,,32.8032,-79.6204,0.0,26.82,1L,-9999.9,1012.072,1L,-9999.9,83.1,1L,-9999.9,32.44,1L,-9999.9,27.19,1L,-9999.9,3.6269163494,1L,-9999.9,2.791954,1L,-9999.9,176.9,1L,-9999.9
+1999-09-25T05:08:00Z,,32.8032,-79.6204,0.0,26.73,1L,-9999.9,1011.854,1L,-9999.9,81.4,1L,-9999.9,32.51,1L,-9999.9,27.0,1L,-9999.9,4.5477929828,1L,-9999.9,3.619714,1L,-9999.9,191.1,1L,-9999.9
+1999-09-25T06:08:00Z,,32.8032,-79.6204,0.0,26.7,1L,-9999.9,1011.605,1L,-9999.9,84.5,1L,-9999.9,32.55,1L,-9999.9,26.93,1L,-9999.9,5.4275131186,1L,-9999.9,3.867167,1L,-9999.9,217.4,1L,-9999.9
+1999-09-25T07:08:00Z,,32.8032,-79.6204,0.0,26.46,1L,-9999.9,1011.024,1L,-9999.9,86.9,1L,-9999.9,32.57,1L,-9999.9,26.88,1L,-9999.9,4.1773845046,1L,-9999.9,3.137668,1L,-9999.9,218.1,1L,-9999.9
+1999-09-25T08:08:00Z,,32.8032,-79.6204,0.0,26.39,1L,-9999.9,1010.794,1L,-9999.9,88.1,1L,-9999.9,32.61,1L,-9999.9,26.81,1L,-9999.9,3.4057001749,1L,-9999.9,3.038378,1L,-9999.9,217.0,1L,-9999.9
+1999-09-25T09:08:00Z,,32.8032,-79.6204,0.0,26.29,1L,-9999.9,1011.198,1L,-9999.9,87.9,1L,-9999.9,32.74,1L,-9999.9,26.72,1L,-9999.9,2.9066776417,1L,-9999.9,2.071201,1L,-9999.9,214.2,1L,-9999.9
+1999-09-25T10:08:00Z,,32.8032,-79.6204,0.0,26.2,1L,-9999.9,1011.805,1L,-9999.9,90.6,1L,-9999.9,32.75,1L,-9999.9,26.61,1L,-9999.9,2.7471962136,1L,-9999.9,1.45694,1L,-9999.9,200.4,1L,-9999.9
+1999-09-25T11:08:00Z,,32.8032,-79.6204,0.0,26.1,1L,-9999.9,1012.431,1L,-9999.9,92.1,1L,-9999.9,32.89,1L,-9999.9,26.58,1L,-9999.9,4.0796378228,1L,-9999.9,1.77436,1L,-9999.9,177.3,1L,-9999.9
+1999-09-25T12:08:00Z,,32.8032,-79.6204,0.0,26.46,1L,-9999.9,1013.688,1L,-9999.9,89.0,1L,-9999.9,32.86,1L,-9999.9,26.46,1L,-9999.9,4.8358884659,1L,-9999.9,3.562095,1L,-9999.9,186.3,1L,-9999.9
+1999-09-25T13:08:00Z,,32.8032,-79.6204,0.0,26.81,1L,-9999.9,1013.919,1L,-9999.9,89.0,1L,-9999.9,32.96,1L,-9999.9,26.51,1L,-9999.9,3.4057001749,1L,-9999.9,2.445725,1L,-9999.9,173.8,1L,-9999.9
+1999-09-25T14:08:00Z,,32.8032,-79.6204,0.0,26.97,1L,-9999.9,1014.154,1L,-9999.9,89.6,1L,-9999.9,32.91,1L,-9999.9,26.67,1L,-9999.9,2.6597386562,1L,-9999.9,2.278527,1L,-9999.9,149.1,1L,-9999.9
+1999-09-25T15:08:00Z,,32.8032,-79.6204,0.0,27.25,1L,-9999.9,1014.431,1L,-9999.9,87.0,1L,-9999.9,32.89,1L,-9999.9,26.8,1L,-9999.9,3.3696882395,1L,-9999.9,2.511061,1L,-9999.9,157.2,1L,-9999.9
+1999-09-25T16:08:00Z,,32.8032,-79.6204,0.0,27.31,1L,-9999.9,1014.181,1L,-9999.9,86.0,1L,-9999.9,32.85,1L,-9999.9,27.07,1L,-9999.9,4.239119251,1L,-9999.9,3.285317,1L,-9999.9,148.4,1L,-9999.9
+1999-09-25T17:08:00Z,,32.8032,-79.6204,0.0,27.39,1L,-9999.9,1013.665,1L,-9999.9,86.0,1L,-9999.9,32.78,1L,-9999.9,27.34,1L,-9999.9,5.5201152382,1L,-9999.9,4.095586,1L,-9999.9,156.9,1L,-9999.9
+1999-09-25T18:08:00Z,,32.8032,-79.6204,0.0,27.45,1L,-9999.9,1012.766,1L,-9999.9,85.9,1L,-9999.9,32.73,1L,-9999.9,27.72,1L,-9999.9,6.2506430703,1L,-9999.9,4.681552,1L,-9999.9,149.8,1L,-9999.9
+1999-09-25T19:08:00Z,,32.8032,-79.6204,0.0,27.66,1L,-9999.9,1012.158,1L,-9999.9,83.6,1L,-9999.9,32.58,1L,-9999.9,27.84,1L,-9999.9,6.8062557876,1L,-9999.9,5.262887,1L,-9999.9,161.1,1L,-9999.9
+1999-09-25T20:08:00Z,,32.8032,-79.6204,0.0,27.79,1L,-9999.9,1011.77,1L,-9999.9,84.0,1L,-9999.9,32.33,1L,-9999.9,28.06,1L,-9999.9,7.0686284597,1L,-9999.9,5.206297,1L,-9999.9,170.8,1L,-9999.9
+1999-09-25T21:08:00Z,,32.8032,-79.6204,0.0,27.91,1L,-9999.9,1011.796,1L,-9999.9,83.8,1L,-9999.9,32.72,1L,-9999.9,28.04,1L,-9999.9,8.3804918201,1L,-9999.9,5.900813,1L,-9999.9,172.4,1L,-9999.9
+1999-09-25T22:08:00Z,,32.8032,-79.6204,0.0,27.96,1L,-9999.9,1011.749,1L,-9999.9,81.5,1L,-9999.9,32.81,1L,-9999.9,27.91,1L,-9999.9,8.1284082725,1L,-9999.9,5.972837,1L,-9999.9,172.3,1L,-9999.9
+1999-09-25T23:08:00Z,,32.8032,-79.6204,0.0,27.89,1L,-9999.9,1011.893,1L,-9999.9,80.6,1L,-9999.9,32.86,1L,-9999.9,27.82,1L,-9999.9,8.2673114518,1L,-9999.9,5.473814,1L,-9999.9,180.8,1L,-9999.9
+1999-09-26T00:08:00Z,,32.8032,-79.6204,0.0,27.85,1L,-9999.9,1012.27,1L,-9999.9,79.32,1L,-9999.9,33.04,1L,-9999.9,27.6,1L,-9999.9,8.2004321432,1L,-9999.9,5.715609,1L,-9999.9,180.2,1L,-9999.9
+1999-09-26T01:08:00Z,,32.8032,-79.6204,0.0,27.78,1L,-9999.9,1012.706,1L,-9999.9,79.8,1L,-9999.9,33.52,1L,-9999.9,27.31,1L,-9999.9,7.6190966149,1L,-9999.9,5.504682,1L,-9999.9,179.2,1L,-9999.9
+1999-09-26T02:08:00Z,,32.8032,-79.6204,0.0,27.61,1L,-9999.9,1013.047,1L,-9999.9,83.2,1L,-9999.9,33.89,1L,-9999.9,27.04,1L,-9999.9,9.5791748122,1L,-9999.9,6.765099,1L,-9999.9,185.9,1L,-9999.9
+1999-09-26T03:08:00Z,,32.8032,-79.6204,0.0,27.53,1L,-9999.9,1013.491,1L,-9999.9,84.4,1L,-9999.9,33.85,1L,-9999.9,27.11,1L,-9999.9,9.7695236135,1L,-9999.9,6.847412,1L,-9999.9,195.1,1L,-9999.9
+1999-09-26T04:08:00Z,,32.8032,-79.6204,0.0,27.42,1L,-9999.9,1013.371,1L,-9999.9,85.5,1L,-9999.9,33.86,1L,-9999.9,27.0,1L,-9999.9,9.5174400659,1L,-9999.9,6.883424,1L,-9999.9,195.0,1L,-9999.9
+1999-09-26T05:08:00Z,,32.8032,-79.6204,0.0,27.36,1L,-9999.9,1012.905,1L,-9999.9,84.6,1L,-9999.9,33.72,1L,-9999.9,27.01,1L,-9999.9,9.9701615393,1L,-9999.9,7.017183,1L,-9999.9,197.6,1L,-9999.9
+1999-09-26T06:08:00Z,,32.8032,-79.6204,0.0,27.33,1L,-9999.9,1012.803,1L,-9999.9,83.3,1L,-9999.9,33.87,1L,-9999.9,26.91,1L,-9999.9,9.548307439,1L,-9999.9,6.595329,1L,-9999.9,197.1,1L,-9999.9
+1999-09-26T07:08:00Z,,32.8032,-79.6204,0.0,27.31,1L,-9999.9,1012.144,1L,-9999.9,83.0,1L,-9999.9,33.75,1L,-9999.9,26.95,1L,-9999.9,9.1367424632,1L,-9999.9,6.790822,1L,-9999.9,197.6,1L,-9999.9
+1999-09-26T08:08:00Z,,32.8032,-79.6204,0.0,27.21,1L,-9999.9,1011.834,1L,-9999.9,84.3,1L,-9999.9,33.66,1L,-9999.9,26.95,1L,-9999.9,8.0100833419,1L,-9999.9,6.086017,1L,-9999.9,202.5,1L,-9999.9
+1999-09-26T09:08:00Z,,32.8032,-79.6204,0.0,27.19,1L,-9999.9,1011.76,1L,-9999.9,83.0,1L,-9999.9,33.7,1L,-9999.9,26.89,1L,-9999.9,9.3682477621,1L,-9999.9,6.821689,1L,-9999.9,199.5,1L,-9999.9
+1999-09-26T10:08:00Z,,32.8032,-79.6204,0.0,27.17,1L,-9999.9,1012.205,1L,-9999.9,83.9,1L,-9999.9,33.65,1L,-9999.9,26.86,1L,-9999.9,9.4968618171,1L,-9999.9,6.559317,1L,-9999.9,200.5,1L,-9999.9
+1999-09-26T11:08:00Z,,32.8032,-79.6204,0.0,27.2,1L,-9999.9,1012.871,1L,-9999.9,83.4,1L,-9999.9,33.7,1L,-9999.9,26.77,1L,-9999.9,9.2499228316,1L,-9999.9,6.713654,1L,-9999.9,201.0,1L,-9999.9
+1999-09-26T12:08:00Z,,32.8032,-79.6204,0.0,27.22,1L,-9999.9,1013.542,1L,-9999.9,84.2,1L,-9999.9,33.85,1L,-9999.9,26.72,1L,-9999.9,10.1605103406,1L,-9999.9,7.053195,1L,-9999.9,203.2,1L,-9999.9
+1999-09-26T13:08:00Z,,32.8032,-79.6204,0.0,27.27,1L,-9999.9,1014.045,1L,-9999.9,84.3,1L,-9999.9,33.91,1L,-9999.9,26.7,1L,-9999.9,10.7367013067,1L,-9999.9,7.557362,1L,-9999.9,209.0,1L,-9999.9
+1999-09-26T14:08:00Z,,32.8032,-79.6204,0.0,27.29,1L,-9999.9,1014.379,1L,-9999.9,86.0,1L,-9999.9,33.82,1L,-9999.9,26.68,1L,-9999.9,10.6080872518,1L,-9999.9,7.140652,1L,-9999.9,209.2,1L,-9999.9
+1999-09-26T15:08:00Z,,32.8032,-79.6204,0.0,27.29,1L,-9999.9,1014.088,1L,-9999.9,88.3,1L,-9999.9,33.85,1L,-9999.9,26.73,1L,-9999.9,10.7161230579,1L,-9999.9,6.559317,1L,-9999.9,208.5,1L,-9999.9
+1999-09-26T16:08:00Z,,32.8032,-79.6204,0.0,27.31,1L,-9999.9,1013.788,1L,-9999.9,88.1,1L,-9999.9,33.87,1L,-9999.9,26.86,1L,-9999.9,9.6872106184,1L,-9999.9,6.981171,1L,-9999.9,211.2,1L,-9999.9
+1999-09-26T17:08:00Z,,32.8032,-79.6204,0.0,27.4,1L,-9999.9,1013.641,1L,-9999.9,86.0,1L,-9999.9,33.97,1L,-9999.9,26.95,1L,-9999.9,9.3476695133,1L,-9999.9,7.058339,1L,-9999.9,214.2,1L,-9999.9
+1999-09-26T18:08:00Z,,32.8032,-79.6204,0.0,27.56,1L,-9999.9,1012.96,1L,-9999.9,81.8,1L,-9999.9,34.02,1L,-9999.9,27.0,1L,-9999.9,9.990739788,1L,-9999.9,7.207532,1L,-9999.9,215.6,1L,-9999.9
+1999-09-26T19:08:00Z,,32.8032,-79.6204,0.0,27.42,1L,-9999.9,1012.969,1L,-9999.9,84.5,1L,-9999.9,33.92,1L,-9999.9,27.21,1L,-9999.9,9.5174400659,1L,-9999.9,6.965737,1L,-9999.9,219.0,1L,-9999.9
+1999-09-26T20:08:00Z,,32.8032,-79.6204,0.0,27.4,1L,-9999.9,1012.325,1L,-9999.9,84.4,1L,-9999.9,34.0,1L,-9999.9,27.1,1L,-9999.9,10.0370408478,1L,-9999.9,6.831979,1L,-9999.9,213.4,1L,-9999.9
+1999-09-26T21:08:00Z,,32.8032,-79.6204,0.0,27.37,1L,-9999.9,1012.044,1L,-9999.9,85.4,1L,-9999.9,33.85,1L,-9999.9,27.25,1L,-9999.9,9.3168021401,1L,-9999.9,6.898858,1L,-9999.9,203.3,1L,-9999.9
+1999-09-26T22:08:00Z,,32.8032,-79.6204,0.0,27.26,1L,-9999.9,1012.143,1L,-9999.9,87.1,1L,-9999.9,33.88,1L,-9999.9,27.27,1L,-9999.9,9.6409095586,1L,-9999.9,6.904002,1L,-9999.9,207.4,1L,-9999.9
+1999-09-26T23:08:00Z,,32.8032,-79.6204,0.0,27.0,1L,-9999.9,1012.076,1L,-9999.9,88.8,1L,-9999.9,33.82,1L,-9999.9,27.27,1L,-9999.9,10.9373392324,1L,-9999.9,7.531639,1L,-9999.9,195.9,1L,-9999.9
+1999-09-27T00:08:00Z,,32.8032,-79.6204,0.0,26.95,1L,-9999.9,1012.674,1L,-9999.9,87.6,1L,-9999.9,34.01,1L,-9999.9,27.24,1L,-9999.9,9.3682477621,1L,-9999.9,6.93487,1L,-9999.9,198.7,1L,-9999.9
+1999-09-27T01:08:00Z,,32.8032,-79.6204,0.0,27.07,1L,-9999.9,1013.206,1L,-9999.9,86.4,1L,-9999.9,34.43,1L,-9999.9,27.07,1L,-9999.9,9.9187159173,1L,-9999.9,7.063484,1L,-9999.9,196.9,1L,-9999.9
+1999-09-27T02:08:00Z,,32.8032,-79.6204,0.0,27.2,1L,-9999.9,1013.546,1L,-9999.9,85.5,1L,-9999.9,33.9,1L,-9999.9,27.21,1L,-9999.9,9.5071509415,1L,-9999.9,6.734232,1L,-9999.9,202.7,1L,-9999.9
+1999-09-27T03:08:00Z,,32.8032,-79.6204,0.0,27.19,1L,-9999.9,1013.833,1L,-9999.9,87.2,1L,-9999.9,33.55,1L,-9999.9,27.07,1L,-9999.9,8.6788764276,1L,-9999.9,6.070583,1L,-9999.9,199.0,1L,-9999.9
+1999-09-27T04:08:00Z,,32.8032,-79.6204,0.0,27.14,1L,-9999.9,1013.964,1L,-9999.9,87.7,1L,-9999.9,33.65,1L,-9999.9,27.02,1L,-9999.9,7.6396748637,1L,-9999.9,5.391501,1L,-9999.9,204.7,1L,-9999.9
+1999-09-27T05:08:00Z,,32.8032,-79.6204,0.0,27.14,1L,-9999.9,1013.925,1L,-9999.9,88.4,1L,-9999.9,33.81,1L,-9999.9,26.98,1L,-9999.9,8.6788764276,1L,-9999.9,5.87509,1L,-9999.9,208.7,1L,-9999.9
+1999-09-27T06:08:00Z,,32.8032,-79.6204,0.0,27.01,1L,-9999.9,1013.803,1L,-9999.9,91.0,1L,-9999.9,33.86,1L,-9999.9,26.94,1L,-9999.9,8.6582981788,1L,-9999.9,6.173475,1L,-9999.9,207.1,1L,-9999.9
+1999-09-27T07:08:00Z,,32.8032,-79.6204,0.0,26.96,1L,-9999.9,1013.572,1L,-9999.9,91.3,1L,-9999.9,33.91,1L,-9999.9,26.93,1L,-9999.9,9.5791748122,1L,-9999.9,6.34839,1L,-9999.9,207.1,1L,-9999.9
+1999-09-27T08:08:00Z,,32.8032,-79.6204,0.0,26.9,1L,-9999.9,1013.706,1L,-9999.9,91.7,1L,-9999.9,33.9,1L,-9999.9,26.92,1L,-9999.9,8.1489865212,1L,-9999.9,6.158041,1L,-9999.9,212.3,1L,-9999.9
+1999-09-27T09:08:00Z,,32.8032,-79.6204,0.0,26.92,1L,-9999.9,1014.196,1L,-9999.9,90.6,1L,-9999.9,33.78,1L,-9999.9,26.89,1L,-9999.9,9.6563432452,1L,-9999.9,6.744521,1L,-9999.9,211.3,1L,-9999.9
+1999-09-27T10:08:00Z,,32.8032,-79.6204,0.0,26.95,1L,-9999.9,1014.8,1L,-9999.9,89.6,1L,-9999.9,33.71,1L,-9999.9,26.84,1L,-9999.9,9.5380183146,1L,-9999.9,6.847412,1L,-9999.9,213.9,1L,-9999.9
+1999-09-27T11:08:00Z,,32.8032,-79.6204,0.0,26.92,1L,-9999.9,1015.28,1L,-9999.9,90.1,1L,-9999.9,33.74,1L,-9999.9,26.83,1L,-9999.9,9.260211956,1L,-9999.9,6.99146,1L,-9999.9,207.5,1L,-9999.9
+1999-09-27T12:08:00Z,,32.8032,-79.6204,0.0,26.99,1L,-9999.9,1016.0,1L,-9999.9,89.1,1L,-9999.9,33.79,1L,-9999.9,26.79,1L,-9999.9,9.4865726927,1L,-9999.9,6.75481,1L,-9999.9,204.8,1L,-9999.9
+1999-09-27T13:08:00Z,,32.8032,-79.6204,0.0,27.09,1L,-9999.9,1016.6,1L,-9999.9,88.1,1L,-9999.9,34.13,1L,-9999.9,26.8,1L,-9999.9,8.9772610351,1L,-9999.9,6.327812,1L,-9999.9,208.6,1L,-9999.9
+1999-09-27T14:08:00Z,,32.8032,-79.6204,0.0,27.2,1L,-9999.9,1017.49,1L,-9999.9,88.1,1L,-9999.9,34.43,1L,-9999.9,26.86,1L,-9999.9,8.0203724663,1L,-9999.9,5.962548,1L,-9999.9,204.7,1L,-9999.9
+1999-09-27T15:08:00Z,,32.8032,-79.6204,0.0,27.24,1L,-9999.9,1018.14,1L,-9999.9,87.6,1L,-9999.9,34.55,1L,-9999.9,26.94,1L,-9999.9,8.2570223274,1L,-9999.9,5.833934,1L,-9999.9,202.4,1L,-9999.9
+1999-09-27T16:08:00Z,,32.8032,-79.6204,0.0,27.37,1L,-9999.9,1018.265,1L,-9999.9,86.9,1L,-9999.9,34.56,1L,-9999.9,26.99,1L,-9999.9,7.9997942175,1L,-9999.9,5.123984,1L,-9999.9,206.3,1L,-9999.9
+1999-09-27T17:08:00Z,,32.8032,-79.6204,0.0,27.37,1L,-9999.9,1017.969,1L,-9999.9,86.8,1L,-9999.9,34.56,1L,-9999.9,27.13,1L,-9999.9,7.0994958329,1L,-9999.9,4.964503,1L,-9999.9,204.4,1L,-9999.9
+1999-09-27T18:08:00Z,,32.8032,-79.6204,0.0,27.45,1L,-9999.9,1017.606,1L,-9999.9,84.8,1L,-9999.9,34.54,1L,-9999.9,27.3,1L,-9999.9,7.2075316391,1L,-9999.9,5.52526,1L,-9999.9,195.7,1L,-9999.9
+1999-09-27T19:08:00Z,,32.8032,-79.6204,0.0,27.56,1L,-9999.9,1016.778,1L,-9999.9,83.8,1L,-9999.9,34.56,1L,-9999.9,27.31,1L,-9999.9,7.4184586892,1L,-9999.9,5.268032,1L,-9999.9,192.9,1L,-9999.9
+1999-09-27T20:08:00Z,,32.8032,-79.6204,0.0,27.71,1L,-9999.9,1016.846,1L,-9999.9,82.1,1L,-9999.9,33.83,1L,-9999.9,27.82,1L,-9999.9,7.9380594711,1L,-9999.9,5.484103,1L,-9999.9,197.4,1L,-9999.9
+1999-09-27T21:08:00Z,,32.8032,-79.6204,0.0,27.65,1L,-9999.9,1016.454,1L,-9999.9,81.8,1L,-9999.9,33.97,1L,-9999.9,27.67,1L,-9999.9,8.246733203,1L,-9999.9,5.952258,1L,-9999.9,177.4,1L,-9999.9
+1999-09-27T22:08:00Z,,32.8032,-79.6204,0.0,27.58,1L,-9999.9,1016.458,1L,-9999.9,79.14,1L,-9999.9,33.93,1L,-9999.9,27.59,1L,-9999.9,8.4062146311,1L,-9999.9,5.936825,1L,-9999.9,173.1,1L,-9999.9
+1999-09-27T23:08:00Z,,32.8032,-79.6204,0.0,27.43,1L,-9999.9,1017.099,1L,-9999.9,79.93,1L,-9999.9,33.78,1L,-9999.9,27.56,1L,-9999.9,9.0287066571,1L,-9999.9,6.482148,1L,-9999.9,178.6,1L,-9999.9
+1999-09-28T00:08:00Z,,32.8032,-79.6204,0.0,27.32,1L,-9999.9,1017.47,1L,-9999.9,81.4,1L,-9999.9,33.75,1L,-9999.9,27.45,1L,-9999.9,8.8898034777,1L,-9999.9,6.46157,1L,-9999.9,173.9,1L,-9999.9
+1999-09-28T01:08:00Z,,32.8032,-79.6204,0.0,27.25,1L,-9999.9,1017.868,1L,-9999.9,81.6,1L,-9999.9,33.78,1L,-9999.9,27.36,1L,-9999.9,9.8878485441,1L,-9999.9,6.806256,1L,-9999.9,169.2,1L,-9999.9
+1999-09-28T02:08:00Z,,32.8032,-79.6204,0.0,27.25,1L,-9999.9,1018.61,1L,-9999.9,79.51,1L,-9999.9,34.07,1L,-9999.9,27.14,1L,-9999.9,9.9804506636,1L,-9999.9,6.739376,1L,-9999.9,177.4,1L,-9999.9
+1999-09-28T03:08:00Z,,32.8032,-79.6204,0.0,27.05,1L,-9999.9,1019.128,1L,-9999.9,82.3,1L,-9999.9,34.31,1L,-9999.9,27.0,1L,-9999.9,9.4505607573,1L,-9999.9,6.626196,1L,-9999.9,175.7,1L,-9999.9
+1999-09-28T04:08:00Z,,32.8032,-79.6204,0.0,27.09,1L,-9999.9,1019.207,1L,-9999.9,80.7,1L,-9999.9,34.39,1L,-9999.9,26.97,1L,-9999.9,9.6666323696,1L,-9999.9,6.780533,1L,-9999.9,179.7,1L,-9999.9
+1999-09-28T05:08:00Z,,32.8032,-79.6204,0.0,27.12,1L,-9999.9,1018.969,1L,-9999.9,79.88,1L,-9999.9,33.88,1L,-9999.9,27.12,1L,-9999.9,9.1881880852,1L,-9999.9,7.04805,1L,-9999.9,171.3,1L,-9999.9
+1999-09-28T06:08:00Z,,32.8032,-79.6204,0.0,26.91,1L,-9999.9,1018.56,1L,-9999.9,82.1,1L,-9999.9,33.81,1L,-9999.9,27.05,1L,-9999.9,10.9990739788,1L,-9999.9,7.212676,1L,-9999.9,177.0,1L,-9999.9
+1999-09-28T07:08:00Z,,32.8032,-79.6204,0.0,26.85,3L,-9999.9,1018.653,3L,-9999.9,81.3,3L,-9999.9,33.91,3L,-9999.9,26.99,3L,-9999.9,9.5585965634,3L,-9999.9,7.022327,3L,-9999.9,188.3,3L,-9999.9
+1999-09-28T08:08:00Z,,32.8032,-79.6204,0.0,26.78,3L,-9999.9,1018.688,3L,-9999.9,82.0,3L,-9999.9,33.9,3L,-9999.9,26.94,3L,-9999.9,8.3804918201,3L,-9999.9,6.276366,3L,-9999.9,190.3,3L,-9999.9
+1999-09-28T09:08:00Z,,32.8032,-79.6204,0.0,26.74,3L,-9999.9,1018.877,3L,-9999.9,82.0,3L,-9999.9,33.89,3L,-9999.9,26.94,3L,-9999.9,8.0769626505,3L,-9999.9,5.916247,3L,-9999.9,185.5,3L,-9999.9
+1999-09-28T10:08:00Z,,32.8032,-79.6204,0.0,26.77,3L,-9999.9,1019.444,3L,-9999.9,81.5,3L,-9999.9,33.68,3L,-9999.9,26.84,3L,-9999.9,7.2898446342,3L,-9999.9,4.892479,3L,-9999.9,191.7,3L,-9999.9
+1999-09-28T11:08:00Z,,32.8032,-79.6204,0.0,26.72,3L,-9999.9,1020.018,3L,-9999.9,80.1,3L,-9999.9,33.77,3L,-9999.9,26.86,3L,-9999.9,5.8956682786,3L,-9999.9,4.28542,3L,-9999.9,192.3,3L,-9999.9
+1999-09-28T12:08:00Z,,32.8032,-79.6204,0.0,26.87,3L,-9999.9,1020.724,3L,-9999.9,79.43,3L,-9999.9,33.94,3L,-9999.9,26.89,3L,-9999.9,6.5798950509,3L,-9999.9,4.095586,3L,-9999.9,190.0,3L,-9999.9
+1999-09-28T13:08:00Z,,32.8032,-79.6204,0.0,27.07,1L,-9999.9,1021.417,1L,-9999.9,77.78,1L,-9999.9,33.9,1L,-9999.9,26.9,1L,-9999.9,4.8976232123,1L,-9999.9,3.550777,1L,-9999.9,200.2,1L,-9999.9
+1999-09-28T14:08:00Z,,32.8032,-79.6204,0.0,27.18,1L,-9999.9,1022.018,1L,-9999.9,76.73,1L,-9999.9,33.83,1L,-9999.9,26.96,1L,-9999.9,3.9253009569,1L,-9999.9,3.058957,1L,-9999.9,206.2,1L,-9999.9
+1999-09-28T15:08:00Z,,32.8032,-79.6204,0.0,27.34,1L,-9999.9,1022.385,1L,-9999.9,76.39,1L,-9999.9,33.83,1L,-9999.9,27.05,1L,-9999.9,4.1259388826,1L,-9999.9,2.297047,1L,-9999.9,210.6,1L,-9999.9
+1999-09-28T16:08:00Z,,32.8032,-79.6204,0.0,27.37,1L,-9999.9,1022.754,1L,-9999.9,75.36,1L,-9999.9,33.95,1L,-9999.9,27.45,1L,-9999.9,4.0693486984,1L,-9999.9,2.032617,1L,-9999.9,201.6,1L,-9999.9
+1999-09-28T17:08:00Z,,32.8032,-79.6204,0.0,27.45,1L,-9999.9,1022.51,1L,-9999.9,76.28,1L,-9999.9,34.02,1L,-9999.9,27.67,1L,-9999.9,4.4294680523,1L,-9999.9,2.229139,1L,-9999.9,195.1,1L,-9999.9
+1999-09-28T18:08:00Z,,32.8032,-79.6204,0.0,27.58,1L,-9999.9,1022.075,1L,-9999.9,76.13,1L,-9999.9,34.05,1L,-9999.9,27.84,1L,-9999.9,4.8101656549,1L,-9999.9,2.570223,1L,-9999.9,177.4,1L,-9999.9
+1999-09-28T19:08:00Z,,32.8032,-79.6204,0.0,27.6,1L,-9999.9,1021.391,1L,-9999.9,74.4,1L,-9999.9,34.06,1L,-9999.9,27.9,1L,-9999.9,5.0776828892,1L,-9999.9,3.126865,1L,-9999.9,172.9,1L,-9999.9
+1999-09-28T20:08:00Z,,32.8032,-79.6204,0.0,27.52,1L,-9999.9,1021.12,1L,-9999.9,76.44,1L,-9999.9,34.06,1L,-9999.9,28.11,1L,-9999.9,4.8667558391,1L,-9999.9,2.987447,1L,-9999.9,167.0,1L,-9999.9
+1999-09-28T21:08:00Z,,32.8032,-79.6204,0.0,27.54,1L,-9999.9,1020.807,1L,-9999.9,76.51,1L,-9999.9,34.07,1L,-9999.9,28.15,1L,-9999.9,5.3503446857,1L,-9999.9,3.278629,1L,-9999.9,167.6,1L,-9999.9
+1999-09-28T22:08:00Z,,32.8032,-79.6204,0.0,27.6,1L,-9999.9,1021.121,1L,-9999.9,73.36,1L,-9999.9,34.12,1L,-9999.9,28.08,1L,-9999.9,4.8564667147,1L,-9999.9,2.447783,1L,-9999.9,168.0,1L,-9999.9
+1999-09-28T23:08:00Z,,32.8032,-79.6204,0.0,27.22,1L,-9999.9,1020.952,1L,-9999.9,75.89,1L,-9999.9,34.15,1L,-9999.9,28.04,1L,-9999.9,4.6095277292,1L,-9999.9,2.484309,1L,-9999.9,177.2,1L,-9999.9
+1999-09-29T00:08:00Z,,32.8032,-79.6204,0.0,27.01,1L,-9999.9,1021.192,1L,-9999.9,76.99,1L,-9999.9,34.07,1L,-9999.9,27.93,1L,-9999.9,4.7895874061,1L,-9999.9,2.629386,1L,-9999.9,174.8,1L,-9999.9
+1999-09-29T01:08:00Z,,32.8032,-79.6204,0.0,27.01,1L,-9999.9,1021.171,1L,-9999.9,78.27,1L,-9999.9,33.93,1L,-9999.9,27.79,1L,-9999.9,4.2494083753,1L,-9999.9,3.204033,1L,-9999.9,174.6,1L,-9999.9
+1999-09-29T02:08:00Z,,32.8032,-79.6204,0.0,26.95,1L,-9999.9,1021.348,1L,-9999.9,77.8,1L,-9999.9,33.78,1L,-9999.9,27.66,1L,-9999.9,6.1580409507,1L,-9999.9,3.834757,1L,-9999.9,188.8,1L,-9999.9
+1999-09-29T03:08:00Z,,32.8032,-79.6204,0.0,26.87,1L,-9999.9,1021.309,1L,-9999.9,79.44,1L,-9999.9,33.74,1L,-9999.9,27.56,1L,-9999.9,4.8976232123,1L,-9999.9,3.642864,1L,-9999.9,190.1,1L,-9999.9
+1999-09-29T04:08:00Z,,32.8032,-79.6204,0.0,26.78,1L,-9999.9,1021.434,1L,-9999.9,80.4,1L,-9999.9,33.98,1L,-9999.9,27.39,1L,-9999.9,4.059059574,1L,-9999.9,2.80533,1L,-9999.9,185.7,1L,-9999.9
+1999-09-29T05:08:00Z,,32.8032,-79.6204,0.0,26.69,1L,-9999.9,1021.442,1L,-9999.9,78.85,1L,-9999.9,34.06,1L,-9999.9,27.21,1L,-9999.9,3.5754707274,1L,-9999.9,2.439551,1L,-9999.9,183.9,1L,-9999.9
+1999-09-29T06:08:00Z,,32.8032,-79.6204,0.0,26.63,1L,-9999.9,1021.538,1L,-9999.9,80.2,1L,-9999.9,33.94,1L,-9999.9,27.11,1L,-9999.9,3.8172651507,1L,-9999.9,2.606235,1L,-9999.9,205.3,1L,-9999.9
+1999-09-29T07:08:00Z,,32.8032,-79.6204,0.0,26.47,1L,-9999.9,1021.323,1L,-9999.9,81.7,1L,-9999.9,33.98,1L,-9999.9,27.06,1L,-9999.9,2.5568474123,1L,-9999.9,1.481634,1L,-9999.9,218.0,1L,-9999.9
+1999-09-29T08:08:00Z,,32.8032,-79.6204,0.0,26.32,1L,-9999.9,1021.148,1L,-9999.9,82.3,1L,-9999.9,33.97,1L,-9999.9,26.98,1L,-9999.9,2.4899681037,1L,-9999.9,1.539767,1L,-9999.9,289.4,1L,-9999.9
+1999-09-29T09:08:00Z,,32.8032,-79.6204,0.0,25.59,1L,-9999.9,1021.353,1L,-9999.9,90.2,1L,-9999.9,34.02,1L,-9999.9,27.04,1L,-9999.9,3.9201563947,1L,-9999.9,2.802757,1L,-9999.9,356.0,1L,-9999.9
+1999-09-29T10:08:00Z,,32.8032,-79.6204,0.0,25.22,1L,-9999.9,1021.792,1L,-9999.9,90.8,1L,-9999.9,33.86,1L,-9999.9,26.85,1L,-9999.9,5.2474534417,1L,-9999.9,3.628974,1L,-9999.9,1.755,1L,-9999.9
+1999-09-29T11:08:00Z,,32.8032,-79.6204,0.0,24.66,1L,-9999.9,1022.223,1L,-9999.9,92.0,1L,-9999.9,33.88,1L,-9999.9,26.86,1L,-9999.9,5.2988990637,1L,-9999.9,3.792057,1L,-9999.9,7.001,1L,-9999.9
+1999-09-29T12:08:00Z,,32.8032,-79.6204,0.0,24.57,1L,-9999.9,1022.749,1L,-9999.9,92.0,1L,-9999.9,33.87,1L,-9999.9,26.86,1L,-9999.9,5.9265356518,1L,-9999.9,4.187674,1L,-9999.9,18.58,1L,-9999.9
+1999-09-29T13:08:00Z,,32.8032,-79.6204,0.0,24.94,1L,-9999.9,1023.422,1L,-9999.9,89.7,1L,-9999.9,33.84,1L,-9999.9,26.94,1L,-9999.9,5.3297664369,1L,-9999.9,3.555407,1L,-9999.9,12.55,1L,-9999.9
+1999-09-29T14:08:00Z,,32.8032,-79.6204,0.0,25.47,1L,-9999.9,1023.651,1L,-9999.9,88.0,1L,-9999.9,33.78,1L,-9999.9,27.07,1L,-9999.9,4.2288301266,1L,-9999.9,2.801214,1L,-9999.9,25.44,1L,-9999.9
+1999-09-29T15:08:00Z,,32.8032,-79.6204,0.0,25.91,1L,-9999.9,1023.686,1L,-9999.9,86.2,1L,-9999.9,33.78,1L,-9999.9,27.3,1L,-9999.9,2.9375450149,1L,-9999.9,2.40817,1L,-9999.9,23.74,1L,-9999.9
+1999-09-29T16:08:00Z,,32.8032,-79.6204,0.0,27.7,1L,-9999.9,1023.674,1L,-9999.9,78.43,1L,-9999.9,33.82,1L,-9999.9,27.49,1L,-9999.9,1.5176458483,1L,-9999.9,0.666735,1L,-9999.9,199.2,1L,-9999.9
+1999-09-29T17:08:00Z,,32.8032,-79.6204,0.0,27.34,1L,-9999.9,1022.811,1L,-9999.9,80.0,1L,-9999.9,33.89,1L,-9999.9,27.64,1L,-9999.9,1.275851425,1L,-9999.9,0.626093,1L,-9999.9,184.2,1L,-9999.9
+1999-09-29T18:08:00Z,,32.8032,-79.6204,0.0,27.39,1L,-9999.9,1021.837,1L,-9999.9,78.33,1L,-9999.9,33.96,1L,-9999.9,27.69,1L,-9999.9,2.3253421134,1L,-9999.9,1.522276,1L,-9999.9,191.3,1L,-9999.9
+1999-09-29T19:08:00Z,,32.8032,-79.6204,0.0,27.88,1L,-9999.9,1021.227,1L,-9999.9,77.34,1L,-9999.9,33.97,1L,-9999.9,27.83,1L,-9999.9,3.0352916967,1L,-9999.9,2.267723,1L,-9999.9,166.0,1L,-9999.9
+1999-09-29T20:08:00Z,,32.8032,-79.6204,0.0,27.9,1L,-9999.9,1020.871,1L,-9999.9,76.99,1L,-9999.9,33.96,1L,-9999.9,28.65,1L,-9999.9,4.7278526597,1L,-9999.9,3.733409,1L,-9999.9,170.3,1L,-9999.9
+1999-09-29T21:08:00Z,,32.8032,-79.6204,0.0,27.9,1L,-9999.9,1020.492,1L,-9999.9,78.76,1L,-9999.9,33.92,1L,-9999.9,28.53,1L,-9999.9,5.14970676,1L,-9999.9,4.213396,1L,-9999.9,171.7,1L,-9999.9
+1999-09-29T22:08:00Z,,32.8032,-79.6204,0.0,27.9,1L,-9999.9,1020.367,1L,-9999.9,77.27,1L,-9999.9,33.89,1L,-9999.9,28.37,1L,-9999.9,4.8873340879,1L,-9999.9,3.69431,1L,-9999.9,172.0,1L,-9999.9
+1999-09-29T23:08:00Z,,32.8032,-79.6204,0.0,27.78,1L,-9999.9,1020.344,1L,-9999.9,74.12,1L,-9999.9,33.88,1L,-9999.9,28.12,1L,-9999.9,4.5683712316,1L,-9999.9,3.443255,1L,-9999.9,165.9,1L,-9999.9
+1999-09-30T00:08:00Z,,32.8032,-79.6204,0.0,27.57,1L,-9999.9,1020.623,1L,-9999.9,75.51,1L,-9999.9,33.9,1L,-9999.9,27.84,1L,-9999.9,3.8584216483,1L,-9999.9,2.746682,1L,-9999.9,184.6,1L,-9999.9
+1999-09-30T01:08:00Z,,32.8032,-79.6204,0.0,27.37,1L,-9999.9,1021.011,1L,-9999.9,74.54,1L,-9999.9,33.97,1L,-9999.9,27.8,1L,-9999.9,3.5085914189,1L,-9999.9,2.779092,1L,-9999.9,203.2,1L,-9999.9
+1999-09-30T02:08:00Z,,32.8032,-79.6204,0.0,27.33,1L,-9999.9,1021.374,1L,-9999.9,76.47,1L,-9999.9,34.09,1L,-9999.9,27.85,1L,-9999.9,3.3182426176,1L,-9999.9,2.67723,1L,-9999.9,221.3,1L,-9999.9
+1999-09-30T03:08:00Z,,32.8032,-79.6204,0.0,27.21,1L,-9999.9,1021.441,1L,-9999.9,76.1,1L,-9999.9,34.11,1L,-9999.9,28.01,1L,-9999.9,2.8963885173,1L,-9999.9,2.092293,1L,-9999.9,222.0,1L,-9999.9
+1999-09-30T04:08:00Z,,32.8032,-79.6204,0.0,27.16,1L,-9999.9,1021.433,1L,-9999.9,76.38,1L,-9999.9,34.05,1L,-9999.9,27.61,1L,-9999.9,2.8963885173,1L,-9999.9,2.240457,1L,-9999.9,244.4,1L,-9999.9
+1999-09-30T05:08:00Z,,32.8032,-79.6204,0.0,27.09,1L,-9999.9,1021.219,1L,-9999.9,78.77,1L,-9999.9,33.87,1L,-9999.9,27.59,1L,-9999.9,3.4262784237,1L,-9999.9,2.647392,1L,-9999.9,267.0,1L,-9999.9
+1999-09-30T06:08:00Z,,32.8032,-79.6204,0.0,27.17,1L,-9999.9,1021.104,1L,-9999.9,76.85,1L,-9999.9,33.91,1L,-9999.9,27.44,1L,-9999.9,3.2153513736,1L,-9999.9,2.484309,1L,-9999.9,290.0,1L,-9999.9
+1999-09-30T07:08:00Z,,32.8032,-79.6204,0.0,26.4,1L,-9999.9,1020.41,1L,-9999.9,85.5,1L,-9999.9,33.92,1L,-9999.9,27.44,1L,-9999.9,4.6661179134,1L,-9999.9,3.734438,1L,-9999.9,332.6,1L,-9999.9
+1999-09-30T08:08:00Z,,32.8032,-79.6204,0.0,26.21,1L,-9999.9,1019.989,1L,-9999.9,85.8,1L,-9999.9,34.01,1L,-9999.9,27.34,1L,-9999.9,3.8378433995,1L,-9999.9,2.795555,1L,-9999.9,325.4,1L,-9999.9
+1999-09-30T09:08:00Z,,32.8032,-79.6204,0.0,25.9,1L,-9999.9,1019.894,1L,-9999.9,86.4,1L,-9999.9,34.06,1L,-9999.9,27.27,1L,-9999.9,3.6269163494,1L,-9999.9,2.771376,1L,-9999.9,350.0,1L,-9999.9
+1999-09-30T10:08:00Z,,32.8032,-79.6204,0.0,25.19,1L,-9999.9,1020.167,1L,-9999.9,87.3,1L,-9999.9,34.04,1L,-9999.9,27.18,1L,-9999.9,5.3091881881,1L,-9999.9,4.197963,1L,-9999.9,12.17,1L,-9999.9
+1999-09-30T11:08:00Z,,32.8032,-79.6204,0.0,25.42,1L,-9999.9,1020.759,1L,-9999.9,83.6,1L,-9999.9,34.08,1L,-9999.9,27.16,1L,-9999.9,6.3175223788,1L,-9999.9,4.738142,1L,-9999.9,17.8,1L,-9999.9
+1999-09-30T12:08:00Z,,32.8032,-79.6204,0.0,25.67,1L,-9999.9,1021.437,1L,-9999.9,86.3,1L,-9999.9,34.1,1L,-9999.9,27.18,1L,-9999.9,5.9882703982,1L,-9999.9,4.480914,1L,-9999.9,51.32,1L,-9999.9
+1999-09-30T13:08:00Z,,32.8032,-79.6204,0.0,26.35,1L,-9999.9,1021.441,1L,-9999.9,81.2,1L,-9999.9,34.11,1L,-9999.9,27.17,1L,-9999.9,7.258977261,1L,-9999.9,5.046816,1L,-9999.9,58.76,1L,-9999.9
+1999-09-30T14:08:00Z,,32.8032,-79.6204,0.0,26.83,1L,-9999.9,1021.418,1L,-9999.9,80.0,1L,-9999.9,34.07,1L,-9999.9,27.21,1L,-9999.9,5.8905237164,1L,-9999.9,5.067394,1L,-9999.9,41.3,1L,-9999.9
+1999-09-30T15:08:00Z,,32.8032,-79.6204,0.0,27.09,1L,-9999.9,1021.657,1L,-9999.9,83.9,1L,-9999.9,34.07,1L,-9999.9,27.28,1L,-9999.9,6.0500051446,1L,-9999.9,4.789587,1L,-9999.9,49.0,1L,-9999.9
+1999-09-30T16:08:00Z,,32.8032,-79.6204,0.0,27.25,1L,-9999.9,1021.696,1L,-9999.9,89.3,1L,-9999.9,34.12,1L,-9999.9,27.35,1L,-9999.9,6.4667146826,1L,-9999.9,4.943924,1L,-9999.9,75.22,1L,-9999.9
+1999-09-30T17:08:00Z,,32.8032,-79.6204,0.0,27.13,1L,-9999.9,1021.357,1L,-9999.9,89.9,1L,-9999.9,34.14,1L,-9999.9,27.52,1L,-9999.9,7.1097849573,1L,-9999.9,5.036526,1L,-9999.9,93.2,1L,-9999.9
+1999-09-30T18:08:00Z,,32.8032,-79.6204,0.0,27.12,1L,-9999.9,1020.551,1L,-9999.9,89.2,1L,-9999.9,34.17,1L,-9999.9,27.61,1L,-9999.9,7.0892067085,1L,-9999.9,5.417224,1L,-9999.9,97.2,1L,-9999.9
+1999-09-30T19:08:00Z,,32.8032,-79.6204,0.0,26.97,1L,-9999.9,1019.951,1L,-9999.9,89.7,1L,-9999.9,34.18,1L,-9999.9,27.68,1L,-9999.9,9.4094042597,1L,-9999.9,6.466715,1L,-9999.9,111.0,1L,-9999.9
+1999-09-30T20:08:00Z,,32.8032,-79.6204,0.0,27.04,1L,-9999.9,1019.467,1L,-9999.9,89.5,1L,-9999.9,34.2,1L,-9999.9,27.75,1L,-9999.9,9.5894639366,1L,-9999.9,6.497582,1L,-9999.9,102.1,1L,-9999.9
+1999-09-30T21:08:00Z,,32.8032,-79.6204,0.0,26.72,1L,-9999.9,1018.903,1L,-9999.9,89.3,1L,-9999.9,34.29,1L,-9999.9,27.63,1L,-9999.9,11.029941352,1L,-9999.9,8.148987,1L,-9999.9,110.7,1L,-9999.9
+1999-09-30T22:08:00Z,,32.8032,-79.6204,0.0,26.43,1L,-9999.9,1019.194,1L,-9999.9,88.6,1L,-9999.9,34.47,1L,-9999.9,27.41,1L,-9999.9,9.7180779916,1L,-9999.9,6.919436,1L,-9999.9,102.5,1L,-9999.9
+1999-09-30T23:08:00Z,,32.8032,-79.6204,0.0,26.38,1L,-9999.9,1019.003,1L,-9999.9,88.3,1L,-9999.9,34.53,1L,-9999.9,27.33,1L,-9999.9,8.8898034777,1L,-9999.9,6.34839,1L,-9999.9,103.3,1L,-9999.9
+*END_DATA*

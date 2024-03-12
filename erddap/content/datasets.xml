@@ -34,11 +34,11 @@
     <!-- End of standard text -->
     <requestBlacklist></requestBlacklist>                              <!--  comma-separated list of numeric IP addresses which will be blacklisted -->
 
-    <dataset type="EDDTableFromMultidimNcFiles" datasetID="morro-bay-bs1-met" active="true">
+    <dataset type="EDDTableFromNccsvFiles" datasetID="morro-bay-bs1-met" active="true">
         <reloadEveryNMinutes>10080</reloadEveryNMinutes>
         <updateEveryNMillis>10000</updateEveryNMillis>
         <fileDir>/datasets/</fileDir>
-        <fileNameRegex>edu_calpoly_marine_morro_bay_met.nc</fileNameRegex>
+        <fileNameRegex>morro-bay-bs1-met\.nccsv</fileNameRegex>
         <recursive>false</recursive>
         <fileTableInMemory>false</fileTableInMemory>
         <accessibleViaFiles>true</accessibleViaFiles>
@@ -139,7 +139,6 @@
             <!-- sourceAttributes>
                 <att name="_ChunkSizes" type="int">40794</att>
                 <att name="_CoordinateAxisType">Time</att>
-                <att name="actual_range" type="doubleList">1.4542848E9 1.571962037E9</att>
                 <att name="axis">T</att>
                 <att name="calendar">gregorian</att>
                 <att name="ioos_category">Time</att>
@@ -303,7 +302,7 @@
             </addAttributes>
         </dataVariable>
         <dataVariable>
-            <sourceName>lwe_precipitation_rate_cm_time__sum_over_pt2m</sourceName>
+            <sourceName>lwe_precipitation_rate_cm_time_sum_over_pt2m</sourceName>
             <destinationName>lwe_precipitation_rate_cm_time_sum_over_pt2m</destinationName>
             <dataType>double</dataType>
             <!-- sourceAttributes>
@@ -450,11 +449,11 @@
             </addAttributes>
         </dataVariable>
     </dataset>
-    <dataset type="EDDTableFromMultidimNcFiles" datasetID="org_cormp_cap2" active="true">
+    <dataset type="EDDTableFromNccsvFiles" datasetID="org_cormp_cap2" active="true">
         <reloadEveryNMinutes>10080</reloadEveryNMinutes>
         <updateEveryNMillis>10000</updateEveryNMillis>
         <fileDir>/datasets/</fileDir>
-        <fileNameRegex>org_cormp_cap2.nc</fileNameRegex>
+        <fileNameRegex>org_cormp_cap2\.nccsv</fileNameRegex>
         <recursive>false</recursive>
         <fileTableInMemory>false</fileTableInMemory>
         <accessibleViaFiles>true</accessibleViaFiles>
@@ -541,7 +540,6 @@
             <dataType>double</dataType>
             <!-- sourceAttributes>
                 <att name="_CoordinateAxisType">Time</att>
-                <att name="actual_range" type="doubleList">1.53838128E9 1.58558088E9</att>
                 <att name="axis">T</att>
                 <att name="calendar">gregorian</att>
                 <att name="ioos_category">Time</att>
@@ -1214,11 +1212,11 @@
             </addAttributes>
         </dataVariable>
     </dataset>
-    <dataset type="EDDTableFromMultidimNcFiles" datasetID="usf_comps_c10_inwater" active="true">
+    <dataset type="EDDTableFromNccsvFiles" datasetID="usf_comps_c10_inwater" active="true">
         <reloadEveryNMinutes>10080</reloadEveryNMinutes>
         <updateEveryNMillis>10000</updateEveryNMillis>
         <fileDir>/datasets/</fileDir>
-        <fileNameRegex>usf_comps_c10_inwater.nc</fileNameRegex>
+        <fileNameRegex>usf_comps_c10_inwater\.nccsv</fileNameRegex>
         <recursive>false</recursive>
         <fileTableInMemory>false</fileTableInMemory>
         <accessibleViaFiles>true</accessibleViaFiles>
@@ -1303,6 +1301,26 @@
             <att name="title">42013, C10 Currents, WFS Central Buoy</att>
         </addAttributes>
         <dataVariable>
+            <sourceName>time</sourceName>
+            <destinationName>time</destinationName>
+            <dataType>double</dataType>
+            <!-- sourceAttributes>
+                <att name="_CoordinateAxisType">Time</att>
+                <att name="axis">T</att>
+                <att name="calendar">gregorian</att>
+                <att name="cf_role">profile_id</att>
+                <att name="ioos_category">Time</att>
+                <att name="long_name">Time</att>
+                <att name="standard_name">time</att>
+                <att name="time_origin">01-JAN-1970 00:00:00</att>
+                <att name="units">seconds since 1970-01-01T00:00:00Z</att>
+            </sourceAttributes -->
+            <addAttributes>
+                <att name="colorBarMaximum" type="double">1.5204E9</att>
+                <att name="colorBarMinimum" type="double">1.5198E9</att>
+            </addAttributes>
+        </dataVariable>
+        <dataVariable>
             <sourceName>station</sourceName>
             <destinationName>station</destinationName>
             <dataType>String</dataType>
@@ -1351,27 +1369,6 @@
             <addAttributes>
                 <att name="colorBarMaximum" type="double">180.0</att>
                 <att name="colorBarMinimum" type="double">-180.0</att>
-            </addAttributes>
-        </dataVariable>
-        <dataVariable>
-            <sourceName>time</sourceName>
-            <destinationName>time</destinationName>
-            <dataType>double</dataType>
-            <!-- sourceAttributes>
-                <att name="_CoordinateAxisType">Time</att>
-                <att name="actual_range" type="doubleList">1.5198624E9 1.5203808E9</att>
-                <att name="axis">T</att>
-                <att name="calendar">gregorian</att>
-                <att name="cf_role">profile_id</att>
-                <att name="ioos_category">Time</att>
-                <att name="long_name">Time</att>
-                <att name="standard_name">time</att>
-                <att name="time_origin">01-JAN-1970 00:00:00</att>
-                <att name="units">seconds since 1970-01-01T00:00:00Z</att>
-            </sourceAttributes -->
-            <addAttributes>
-                <att name="colorBarMaximum" type="double">1.5204E9</att>
-                <att name="colorBarMinimum" type="double">1.5198E9</att>
             </addAttributes>
         </dataVariable>
         <dataVariable>
