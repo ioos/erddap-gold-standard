@@ -1,0 +1,26 @@
+name: Check NC <->C DL
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Micromamba Python
+      uses: mamba-org/setup-micromamba@v1
+      with:
+        environment-name: GHA
+        init-shell: bash
+        create-args: >-
+          python=3 netcdf4 --channel conda-forge
+
+    - name: Convert NC files to CDL and back
+      shell: bash -l {0}
+      run: |
+        python convert_nc_cdl.py
