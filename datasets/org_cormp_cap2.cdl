@@ -1,0 +1,1747 @@
+netcdf org_cormp_cap2 {
+dimensions:
+	time = 7240 ;
+variables:
+	int crs ;
+		crs:_Storage = "contiguous" ;
+		crs:_Endianness = "little" ;
+	double time(time) ;
+		time:units = "seconds since 1970-01-01T00:00:00Z" ;
+		time:standard_name = "time" ;
+		time:axis = "T" ;
+		time:_CoordinateAxisType = "Time" ;
+		time:actual_range = 1538381280., 1585580880. ;
+		time:calendar = "gregorian" ;
+		time:ioos_category = "Time" ;
+		time:long_name = "Time" ;
+		time:time_origin = "01-JAN-1970 00:00:00" ;
+		time:_Storage = "contiguous" ;
+		time:_Endianness = "little" ;
+	string station ;
+		station:cf_role = "timeseries_id" ;
+		station:long_name = "(41029 / CAP2) Capers Nearshore" ;
+		station:_Encoding = "ISO-8859-1" ;
+		station:ioos_category = "Identifier" ;
+		station:ioos_code = "urn:ioos:station:com.axiomdatascience:60417" ;
+		station:short_name = "org_cormp_cap2" ;
+		station:type = "buoy" ;
+		station:_Storage = "contiguous" ;
+	double latitude ;
+		latitude:axis = "Y" ;
+		latitude:_CoordinateAxisType = "Lat" ;
+		latitude:actual_range = 32.8032, 32.8032 ;
+		latitude:ioos_category = "Location" ;
+		latitude:long_name = "Latitude" ;
+		latitude:standard_name = "latitude" ;
+		latitude:units = "degrees_north" ;
+		latitude:_Storage = "contiguous" ;
+		latitude:_Endianness = "little" ;
+	double longitude ;
+		longitude:axis = "X" ;
+		longitude:_CoordinateAxisType = "Lon" ;
+		longitude:actual_range = -79.6204, -79.6204 ;
+		longitude:ioos_category = "Location" ;
+		longitude:long_name = "Longitude" ;
+		longitude:standard_name = "longitude" ;
+		longitude:units = "degrees_east" ;
+		longitude:_Storage = "contiguous" ;
+		longitude:_Endianness = "little" ;
+	double z ;
+		z:_FillValue = -9999.9 ;
+		z:axis = "Z" ;
+		z:_CoordinateAxisType = "Height" ;
+		z:_CoordinateZisPositive = "up" ;
+		z:actual_range = 0., 0. ;
+		z:ioos_category = "Location" ;
+		z:long_name = "Altitude" ;
+		z:positive = "up" ;
+		z:standard_name = "altitude" ;
+		z:units = "m" ;
+		z:_Storage = "contiguous" ;
+		z:_Endianness = "little" ;
+	double air_temperature(time) ;
+		air_temperature:_FillValue = -9999.9 ;
+		air_temperature:_ChunkSizes = 7240, 1 ;
+		air_temperature:actual_range = 0., 29.53 ;
+		air_temperature:ancillary_variables = "air_temperature_qc_agg air_temperature_qc_tests" ;
+		air_temperature:id = "1000315" ;
+		air_temperature:ioos_category = "Other" ;
+		air_temperature:long_name = "Air Temperature" ;
+		air_temperature:platform = "station" ;
+		air_temperature:standard_name = "air_temperature" ;
+		air_temperature:standard_name_url = "http://mmisw.org/ont/cf/parameter/air_temperature" ;
+		air_temperature:units = "degree_Celsius" ;
+		air_temperature:coordinates = "time z longitude latitude" ;
+		air_temperature:_Storage = "chunked" ;
+		air_temperature:_ChunkSizes = 7240 ;
+		air_temperature:_Shuffle = "true" ;
+		air_temperature:_DeflateLevel = 1 ;
+		air_temperature:_Endianness = "little" ;
+	int air_temperature_qc_agg(time) ;
+		air_temperature_qc_agg:_FillValue = -9999 ;
+		air_temperature_qc_agg:_ChunkSizes = 7240, 1 ;
+		air_temperature_qc_agg:_Unsigned = "true" ;
+		air_temperature_qc_agg:actual_range = 1, 4 ;
+		air_temperature_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		air_temperature_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		air_temperature_qc_agg:ioos_category = "Other" ;
+		air_temperature_qc_agg:long_name = "Air Temperature QARTOD Aggregate Quality Flag" ;
+		air_temperature_qc_agg:references = "http://services.cormp.org/quality.php" ;
+		air_temperature_qc_agg:standard_name = "aggregate_quality_flag" ;
+		air_temperature_qc_agg:coordinates = "time z longitude latitude" ;
+		air_temperature_qc_agg:_Storage = "chunked" ;
+		air_temperature_qc_agg:_ChunkSizes = 7240 ;
+		air_temperature_qc_agg:_Shuffle = "true" ;
+		air_temperature_qc_agg:_DeflateLevel = 1 ;
+		air_temperature_qc_agg:_Endianness = "little" ;
+	double air_temperature_qc_tests(time) ;
+		air_temperature_qc_tests:_FillValue = -9999.9 ;
+		air_temperature_qc_tests:_ChunkSizes = 7240, 1 ;
+		air_temperature_qc_tests:_Unsigned = "true" ;
+		air_temperature_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		air_temperature_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		air_temperature_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		air_temperature_qc_tests:ioos_category = "Other" ;
+		air_temperature_qc_tests:long_name = "Air Temperature QARTOD Individual Tests" ;
+		air_temperature_qc_tests:references = "http://services.cormp.org/quality.php" ;
+		air_temperature_qc_tests:standard_name = "air_temperature quality_flag" ;
+		air_temperature_qc_tests:coordinates = "time z longitude latitude" ;
+		air_temperature_qc_tests:_Storage = "chunked" ;
+		air_temperature_qc_tests:_ChunkSizes = 7240 ;
+		air_temperature_qc_tests:_Shuffle = "true" ;
+		air_temperature_qc_tests:_DeflateLevel = 1 ;
+		air_temperature_qc_tests:_Endianness = "little" ;
+	double air_pressure(time) ;
+		air_pressure:_FillValue = -9999.9 ;
+		air_pressure:_ChunkSizes = 7240, 1 ;
+		air_pressure:actual_range = 0., 1049.385 ;
+		air_pressure:ancillary_variables = "air_pressure_qc_agg air_pressure_qc_tests" ;
+		air_pressure:id = "1000314" ;
+		air_pressure:ioos_category = "Other" ;
+		air_pressure:long_name = "Barometric Pressure" ;
+		air_pressure:platform = "station" ;
+		air_pressure:standard_name = "air_pressure" ;
+		air_pressure:standard_name_url = "http://mmisw.org/ont/cf/parameter/air_pressure" ;
+		air_pressure:units = "millibars" ;
+		air_pressure:coordinates = "time z longitude latitude" ;
+		air_pressure:_Storage = "chunked" ;
+		air_pressure:_ChunkSizes = 7240 ;
+		air_pressure:_Shuffle = "true" ;
+		air_pressure:_DeflateLevel = 1 ;
+		air_pressure:_Endianness = "little" ;
+	int air_pressure_qc_agg(time) ;
+		air_pressure_qc_agg:_FillValue = -9999 ;
+		air_pressure_qc_agg:_ChunkSizes = 7240, 1 ;
+		air_pressure_qc_agg:_Unsigned = "true" ;
+		air_pressure_qc_agg:actual_range = 1, 4 ;
+		air_pressure_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		air_pressure_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		air_pressure_qc_agg:ioos_category = "Other" ;
+		air_pressure_qc_agg:long_name = "Barometric Pressure QARTOD Aggregate Quality Flag" ;
+		air_pressure_qc_agg:references = "http://services.cormp.org/quality.php" ;
+		air_pressure_qc_agg:standard_name = "aggregate_quality_flag" ;
+		air_pressure_qc_agg:coordinates = "time z longitude latitude" ;
+		air_pressure_qc_agg:_Storage = "chunked" ;
+		air_pressure_qc_agg:_ChunkSizes = 7240 ;
+		air_pressure_qc_agg:_Shuffle = "true" ;
+		air_pressure_qc_agg:_DeflateLevel = 1 ;
+		air_pressure_qc_agg:_Endianness = "little" ;
+	double air_pressure_qc_tests(time) ;
+		air_pressure_qc_tests:_FillValue = -9999.9 ;
+		air_pressure_qc_tests:_ChunkSizes = 7240, 1 ;
+		air_pressure_qc_tests:_Unsigned = "true" ;
+		air_pressure_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		air_pressure_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		air_pressure_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		air_pressure_qc_tests:ioos_category = "Other" ;
+		air_pressure_qc_tests:long_name = "Barometric Pressure QARTOD Individual Tests" ;
+		air_pressure_qc_tests:references = "http://services.cormp.org/quality.php" ;
+		air_pressure_qc_tests:standard_name = "air_pressure quality_flag" ;
+		air_pressure_qc_tests:coordinates = "time z longitude latitude" ;
+		air_pressure_qc_tests:_Storage = "chunked" ;
+		air_pressure_qc_tests:_ChunkSizes = 7240 ;
+		air_pressure_qc_tests:_Shuffle = "true" ;
+		air_pressure_qc_tests:_DeflateLevel = 1 ;
+		air_pressure_qc_tests:_Endianness = "little" ;
+	double relative_humidity(time) ;
+		relative_humidity:_FillValue = -9999.9 ;
+		relative_humidity:_ChunkSizes = 7240, 1 ;
+		relative_humidity:actual_range = 0., 100. ;
+		relative_humidity:ancillary_variables = "relative_humidity_qc_agg relative_humidity_qc_tests" ;
+		relative_humidity:id = "1000316" ;
+		relative_humidity:ioos_category = "Other" ;
+		relative_humidity:long_name = "Relative Humidity" ;
+		relative_humidity:platform = "station" ;
+		relative_humidity:standard_name = "relative_humidity" ;
+		relative_humidity:standard_name_url = "http://mmisw.org/ont/cf/parameter/relative_humidity" ;
+		relative_humidity:units = "%" ;
+		relative_humidity:coordinates = "time z longitude latitude" ;
+		relative_humidity:_Storage = "chunked" ;
+		relative_humidity:_ChunkSizes = 7240 ;
+		relative_humidity:_Shuffle = "true" ;
+		relative_humidity:_DeflateLevel = 1 ;
+		relative_humidity:_Endianness = "little" ;
+	int relative_humidity_qc_agg(time) ;
+		relative_humidity_qc_agg:_FillValue = -9999 ;
+		relative_humidity_qc_agg:_ChunkSizes = 7240, 1 ;
+		relative_humidity_qc_agg:_Unsigned = "true" ;
+		relative_humidity_qc_agg:actual_range = 1, 4 ;
+		relative_humidity_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		relative_humidity_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		relative_humidity_qc_agg:ioos_category = "Other" ;
+		relative_humidity_qc_agg:long_name = "Relative Humidity QARTOD Aggregate Quality Flag" ;
+		relative_humidity_qc_agg:references = "http://services.cormp.org/quality.php" ;
+		relative_humidity_qc_agg:standard_name = "aggregate_quality_flag" ;
+		relative_humidity_qc_agg:coordinates = "time z longitude latitude" ;
+		relative_humidity_qc_agg:_Storage = "chunked" ;
+		relative_humidity_qc_agg:_ChunkSizes = 7240 ;
+		relative_humidity_qc_agg:_Shuffle = "true" ;
+		relative_humidity_qc_agg:_DeflateLevel = 1 ;
+		relative_humidity_qc_agg:_Endianness = "little" ;
+	double relative_humidity_qc_tests(time) ;
+		relative_humidity_qc_tests:_FillValue = -9999.9 ;
+		relative_humidity_qc_tests:_ChunkSizes = 7240, 1 ;
+		relative_humidity_qc_tests:_Unsigned = "true" ;
+		relative_humidity_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		relative_humidity_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		relative_humidity_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		relative_humidity_qc_tests:ioos_category = "Other" ;
+		relative_humidity_qc_tests:long_name = "Relative Humidity QARTOD Individual Tests" ;
+		relative_humidity_qc_tests:references = "http://services.cormp.org/quality.php" ;
+		relative_humidity_qc_tests:standard_name = "relative_humidity quality_flag" ;
+		relative_humidity_qc_tests:coordinates = "time z longitude latitude" ;
+		relative_humidity_qc_tests:_Storage = "chunked" ;
+		relative_humidity_qc_tests:_ChunkSizes = 7240 ;
+		relative_humidity_qc_tests:_Shuffle = "true" ;
+		relative_humidity_qc_tests:_DeflateLevel = 1 ;
+		relative_humidity_qc_tests:_Endianness = "little" ;
+	double sea_water_practical_salinity(time) ;
+		sea_water_practical_salinity:_FillValue = -9999.9 ;
+		sea_water_practical_salinity:_ChunkSizes = 7240, 1 ;
+		sea_water_practical_salinity:actual_range = 5.164, 35.71 ;
+		sea_water_practical_salinity:ancillary_variables = "sea_water_practical_salinity_qc_agg sea_water_practical_salinity_qc_tests" ;
+		sea_water_practical_salinity:id = "1000317" ;
+		sea_water_practical_salinity:ioos_category = "Other" ;
+		sea_water_practical_salinity:long_name = "Salinity" ;
+		sea_water_practical_salinity:platform = "station" ;
+		sea_water_practical_salinity:standard_name = "sea_water_practical_salinity" ;
+		sea_water_practical_salinity:standard_name_url = "http://mmisw.org/ont/cf/parameter/sea_water_practical_salinity" ;
+		sea_water_practical_salinity:units = "1e-3" ;
+		sea_water_practical_salinity:coordinates = "time z longitude latitude" ;
+		sea_water_practical_salinity:_Storage = "chunked" ;
+		sea_water_practical_salinity:_ChunkSizes = 7240 ;
+		sea_water_practical_salinity:_Shuffle = "true" ;
+		sea_water_practical_salinity:_DeflateLevel = 1 ;
+		sea_water_practical_salinity:_Endianness = "little" ;
+	int sea_water_practical_salinity_qc_agg(time) ;
+		sea_water_practical_salinity_qc_agg:_FillValue = -9999 ;
+		sea_water_practical_salinity_qc_agg:_ChunkSizes = 7240, 1 ;
+		sea_water_practical_salinity_qc_agg:_Unsigned = "true" ;
+		sea_water_practical_salinity_qc_agg:actual_range = 1, 4 ;
+		sea_water_practical_salinity_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		sea_water_practical_salinity_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		sea_water_practical_salinity_qc_agg:ioos_category = "Other" ;
+		sea_water_practical_salinity_qc_agg:long_name = "Salinity QARTOD Aggregate Quality Flag" ;
+		sea_water_practical_salinity_qc_agg:references = "http://services.cormp.org/quality.php" ;
+		sea_water_practical_salinity_qc_agg:standard_name = "aggregate_quality_flag" ;
+		sea_water_practical_salinity_qc_agg:coordinates = "time z longitude latitude" ;
+		sea_water_practical_salinity_qc_agg:_Storage = "chunked" ;
+		sea_water_practical_salinity_qc_agg:_ChunkSizes = 7240 ;
+		sea_water_practical_salinity_qc_agg:_Shuffle = "true" ;
+		sea_water_practical_salinity_qc_agg:_DeflateLevel = 1 ;
+		sea_water_practical_salinity_qc_agg:_Endianness = "little" ;
+	double sea_water_practical_salinity_qc_tests(time) ;
+		sea_water_practical_salinity_qc_tests:_FillValue = -9999.9 ;
+		sea_water_practical_salinity_qc_tests:_ChunkSizes = 7240, 1 ;
+		sea_water_practical_salinity_qc_tests:_Unsigned = "true" ;
+		sea_water_practical_salinity_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		sea_water_practical_salinity_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		sea_water_practical_salinity_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		sea_water_practical_salinity_qc_tests:ioos_category = "Other" ;
+		sea_water_practical_salinity_qc_tests:long_name = "Salinity QARTOD Individual Tests" ;
+		sea_water_practical_salinity_qc_tests:references = "http://services.cormp.org/quality.php" ;
+		sea_water_practical_salinity_qc_tests:standard_name = "sea_water_practical_salinity quality_flag" ;
+		sea_water_practical_salinity_qc_tests:coordinates = "time z longitude latitude" ;
+		sea_water_practical_salinity_qc_tests:_Storage = "chunked" ;
+		sea_water_practical_salinity_qc_tests:_ChunkSizes = 7240 ;
+		sea_water_practical_salinity_qc_tests:_Shuffle = "true" ;
+		sea_water_practical_salinity_qc_tests:_DeflateLevel = 1 ;
+		sea_water_practical_salinity_qc_tests:_Endianness = "little" ;
+	double sea_water_temperature(time) ;
+		sea_water_temperature:_FillValue = -9999.9 ;
+		sea_water_temperature:_ChunkSizes = 7240, 1 ;
+		sea_water_temperature:actual_range = 2.958, 29.63 ;
+		sea_water_temperature:ancillary_variables = "sea_water_temperature_qc_agg sea_water_temperature_qc_tests" ;
+		sea_water_temperature:id = "1000318" ;
+		sea_water_temperature:ioos_category = "Other" ;
+		sea_water_temperature:long_name = "Water Temperature" ;
+		sea_water_temperature:platform = "station" ;
+		sea_water_temperature:standard_name = "sea_water_temperature" ;
+		sea_water_temperature:standard_name_url = "http://mmisw.org/ont/cf/parameter/sea_water_temperature" ;
+		sea_water_temperature:units = "degree_Celsius" ;
+		sea_water_temperature:coordinates = "time z longitude latitude" ;
+		sea_water_temperature:_Storage = "chunked" ;
+		sea_water_temperature:_ChunkSizes = 7240 ;
+		sea_water_temperature:_Shuffle = "true" ;
+		sea_water_temperature:_DeflateLevel = 1 ;
+		sea_water_temperature:_Endianness = "little" ;
+	int sea_water_temperature_qc_agg(time) ;
+		sea_water_temperature_qc_agg:_FillValue = -9999 ;
+		sea_water_temperature_qc_agg:_ChunkSizes = 7240, 1 ;
+		sea_water_temperature_qc_agg:_Unsigned = "true" ;
+		sea_water_temperature_qc_agg:actual_range = 1, 4 ;
+		sea_water_temperature_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		sea_water_temperature_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		sea_water_temperature_qc_agg:ioos_category = "Other" ;
+		sea_water_temperature_qc_agg:long_name = "Water Temperature QARTOD Aggregate Quality Flag" ;
+		sea_water_temperature_qc_agg:references = "http://services.cormp.org/quality.php" ;
+		sea_water_temperature_qc_agg:standard_name = "aggregate_quality_flag" ;
+		sea_water_temperature_qc_agg:coordinates = "time z longitude latitude" ;
+		sea_water_temperature_qc_agg:_Storage = "chunked" ;
+		sea_water_temperature_qc_agg:_ChunkSizes = 7240 ;
+		sea_water_temperature_qc_agg:_Shuffle = "true" ;
+		sea_water_temperature_qc_agg:_DeflateLevel = 1 ;
+		sea_water_temperature_qc_agg:_Endianness = "little" ;
+	double sea_water_temperature_qc_tests(time) ;
+		sea_water_temperature_qc_tests:_FillValue = -9999.9 ;
+		sea_water_temperature_qc_tests:_ChunkSizes = 7240, 1 ;
+		sea_water_temperature_qc_tests:_Unsigned = "true" ;
+		sea_water_temperature_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		sea_water_temperature_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		sea_water_temperature_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		sea_water_temperature_qc_tests:ioos_category = "Other" ;
+		sea_water_temperature_qc_tests:long_name = "Water Temperature QARTOD Individual Tests" ;
+		sea_water_temperature_qc_tests:references = "http://services.cormp.org/quality.php" ;
+		sea_water_temperature_qc_tests:standard_name = "sea_water_temperature quality_flag" ;
+		sea_water_temperature_qc_tests:coordinates = "time z longitude latitude" ;
+		sea_water_temperature_qc_tests:_Storage = "chunked" ;
+		sea_water_temperature_qc_tests:_ChunkSizes = 7240 ;
+		sea_water_temperature_qc_tests:_Shuffle = "true" ;
+		sea_water_temperature_qc_tests:_DeflateLevel = 1 ;
+		sea_water_temperature_qc_tests:_Endianness = "little" ;
+	double wind_speed_of_gust(time) ;
+		wind_speed_of_gust:_FillValue = -9999.9 ;
+		wind_speed_of_gust:_ChunkSizes = 7240, 1 ;
+		wind_speed_of_gust:actual_range = 0., 59.779812737936 ;
+		wind_speed_of_gust:ancillary_variables = "wind_speed_of_gust_qc_agg wind_speed_of_gust_qc_tests" ;
+		wind_speed_of_gust:id = "1000321" ;
+		wind_speed_of_gust:ioos_category = "Other" ;
+		wind_speed_of_gust:long_name = "Wind Gust" ;
+		wind_speed_of_gust:platform = "station" ;
+		wind_speed_of_gust:standard_name = "wind_speed_of_gust" ;
+		wind_speed_of_gust:standard_name_url = "http://mmisw.org/ont/cf/parameter/wind_speed_of_gust" ;
+		wind_speed_of_gust:units = "m.s-1" ;
+		wind_speed_of_gust:coordinates = "time z longitude latitude" ;
+		wind_speed_of_gust:_Storage = "chunked" ;
+		wind_speed_of_gust:_ChunkSizes = 7240 ;
+		wind_speed_of_gust:_Shuffle = "true" ;
+		wind_speed_of_gust:_DeflateLevel = 1 ;
+		wind_speed_of_gust:_Endianness = "little" ;
+	int wind_speed_of_gust_qc_agg(time) ;
+		wind_speed_of_gust_qc_agg:_FillValue = -9999 ;
+		wind_speed_of_gust_qc_agg:_ChunkSizes = 7240, 1 ;
+		wind_speed_of_gust_qc_agg:_Unsigned = "true" ;
+		wind_speed_of_gust_qc_agg:actual_range = 1, 4 ;
+		wind_speed_of_gust_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		wind_speed_of_gust_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		wind_speed_of_gust_qc_agg:ioos_category = "Other" ;
+		wind_speed_of_gust_qc_agg:long_name = "Wind Gust QARTOD Aggregate Quality Flag" ;
+		wind_speed_of_gust_qc_agg:references = "http://services.cormp.org/quality.php" ;
+		wind_speed_of_gust_qc_agg:standard_name = "aggregate_quality_flag" ;
+		wind_speed_of_gust_qc_agg:coordinates = "time z longitude latitude" ;
+		wind_speed_of_gust_qc_agg:_Storage = "chunked" ;
+		wind_speed_of_gust_qc_agg:_ChunkSizes = 7240 ;
+		wind_speed_of_gust_qc_agg:_Shuffle = "true" ;
+		wind_speed_of_gust_qc_agg:_DeflateLevel = 1 ;
+		wind_speed_of_gust_qc_agg:_Endianness = "little" ;
+	double wind_speed_of_gust_qc_tests(time) ;
+		wind_speed_of_gust_qc_tests:_FillValue = -9999.9 ;
+		wind_speed_of_gust_qc_tests:_ChunkSizes = 7240, 1 ;
+		wind_speed_of_gust_qc_tests:_Unsigned = "true" ;
+		wind_speed_of_gust_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		wind_speed_of_gust_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		wind_speed_of_gust_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		wind_speed_of_gust_qc_tests:ioos_category = "Other" ;
+		wind_speed_of_gust_qc_tests:long_name = "Wind Gust QARTOD Individual Tests" ;
+		wind_speed_of_gust_qc_tests:references = "http://services.cormp.org/quality.php" ;
+		wind_speed_of_gust_qc_tests:standard_name = "wind_speed_of_gust quality_flag" ;
+		wind_speed_of_gust_qc_tests:coordinates = "time z longitude latitude" ;
+		wind_speed_of_gust_qc_tests:_Storage = "chunked" ;
+		wind_speed_of_gust_qc_tests:_ChunkSizes = 7240 ;
+		wind_speed_of_gust_qc_tests:_Shuffle = "true" ;
+		wind_speed_of_gust_qc_tests:_DeflateLevel = 1 ;
+		wind_speed_of_gust_qc_tests:_Endianness = "little" ;
+	double wind_speed(time) ;
+		wind_speed:_FillValue = -9999.9 ;
+		wind_speed:_ChunkSizes = 7240, 1 ;
+		wind_speed:actual_range = 0., 24.524128 ;
+		wind_speed:ancillary_variables = "wind_speed_qc_agg wind_speed_qc_tests" ;
+		wind_speed:id = "1000320" ;
+		wind_speed:ioos_category = "Other" ;
+		wind_speed:long_name = "Wind Speed" ;
+		wind_speed:platform = "station" ;
+		wind_speed:standard_name = "wind_speed" ;
+		wind_speed:standard_name_url = "http://mmisw.org/ont/cf/parameter/wind_speed" ;
+		wind_speed:units = "m.s-1" ;
+		wind_speed:coordinates = "time z longitude latitude" ;
+		wind_speed:_Storage = "chunked" ;
+		wind_speed:_ChunkSizes = 7240 ;
+		wind_speed:_Shuffle = "true" ;
+		wind_speed:_DeflateLevel = 1 ;
+		wind_speed:_Endianness = "little" ;
+	int wind_speed_qc_agg(time) ;
+		wind_speed_qc_agg:_FillValue = -9999 ;
+		wind_speed_qc_agg:_ChunkSizes = 7240, 1 ;
+		wind_speed_qc_agg:_Unsigned = "true" ;
+		wind_speed_qc_agg:actual_range = 1, 4 ;
+		wind_speed_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		wind_speed_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		wind_speed_qc_agg:ioos_category = "Other" ;
+		wind_speed_qc_agg:long_name = "Wind Speed QARTOD Aggregate Quality Flag" ;
+		wind_speed_qc_agg:references = "http://services.cormp.org/quality.php" ;
+		wind_speed_qc_agg:standard_name = "aggregate_quality_flag" ;
+		wind_speed_qc_agg:coordinates = "time z longitude latitude" ;
+		wind_speed_qc_agg:_Storage = "chunked" ;
+		wind_speed_qc_agg:_ChunkSizes = 7240 ;
+		wind_speed_qc_agg:_Shuffle = "true" ;
+		wind_speed_qc_agg:_DeflateLevel = 1 ;
+		wind_speed_qc_agg:_Endianness = "little" ;
+	double wind_speed_qc_tests(time) ;
+		wind_speed_qc_tests:_FillValue = -9999.9 ;
+		wind_speed_qc_tests:_ChunkSizes = 7240, 1 ;
+		wind_speed_qc_tests:_Unsigned = "true" ;
+		wind_speed_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		wind_speed_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		wind_speed_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		wind_speed_qc_tests:ioos_category = "Other" ;
+		wind_speed_qc_tests:long_name = "Wind Speed QARTOD Individual Tests" ;
+		wind_speed_qc_tests:references = "http://services.cormp.org/quality.php" ;
+		wind_speed_qc_tests:standard_name = "wind_speed quality_flag" ;
+		wind_speed_qc_tests:coordinates = "time z longitude latitude" ;
+		wind_speed_qc_tests:_Storage = "chunked" ;
+		wind_speed_qc_tests:_ChunkSizes = 7240 ;
+		wind_speed_qc_tests:_Shuffle = "true" ;
+		wind_speed_qc_tests:_DeflateLevel = 1 ;
+		wind_speed_qc_tests:_Endianness = "little" ;
+	double wind_from_direction(time) ;
+		wind_from_direction:_FillValue = -9999.9 ;
+		wind_from_direction:_ChunkSizes = 7240, 1 ;
+		wind_from_direction:actual_range = 0., 359.4 ;
+		wind_from_direction:ancillary_variables = "wind_from_direction_qc_agg wind_from_direction_qc_tests" ;
+		wind_from_direction:id = "1000319" ;
+		wind_from_direction:ioos_category = "Other" ;
+		wind_from_direction:long_name = "Wind From Direction" ;
+		wind_from_direction:platform = "station" ;
+		wind_from_direction:standard_name = "wind_from_direction" ;
+		wind_from_direction:standard_name_url = "http://mmisw.org/ont/cf/parameter/wind_from_direction" ;
+		wind_from_direction:units = "degrees" ;
+		wind_from_direction:coordinates = "time z longitude latitude" ;
+		wind_from_direction:_Storage = "chunked" ;
+		wind_from_direction:_ChunkSizes = 7240 ;
+		wind_from_direction:_Shuffle = "true" ;
+		wind_from_direction:_DeflateLevel = 1 ;
+		wind_from_direction:_Endianness = "little" ;
+	int wind_from_direction_qc_agg(time) ;
+		wind_from_direction_qc_agg:_FillValue = -9999 ;
+		wind_from_direction_qc_agg:_ChunkSizes = 7240, 1 ;
+		wind_from_direction_qc_agg:_Unsigned = "true" ;
+		wind_from_direction_qc_agg:actual_range = 1, 4 ;
+		wind_from_direction_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		wind_from_direction_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		wind_from_direction_qc_agg:ioos_category = "Other" ;
+		wind_from_direction_qc_agg:long_name = "Wind From Direction QARTOD Aggregate Quality Flag" ;
+		wind_from_direction_qc_agg:references = "http://services.cormp.org/quality.php" ;
+		wind_from_direction_qc_agg:standard_name = "aggregate_quality_flag" ;
+		wind_from_direction_qc_agg:coordinates = "time z longitude latitude" ;
+		wind_from_direction_qc_agg:_Storage = "chunked" ;
+		wind_from_direction_qc_agg:_ChunkSizes = 7240 ;
+		wind_from_direction_qc_agg:_Shuffle = "true" ;
+		wind_from_direction_qc_agg:_DeflateLevel = 1 ;
+		wind_from_direction_qc_agg:_Endianness = "little" ;
+	double wind_from_direction_qc_tests(time) ;
+		wind_from_direction_qc_tests:_FillValue = -9999.9 ;
+		wind_from_direction_qc_tests:_ChunkSizes = 7240, 1 ;
+		wind_from_direction_qc_tests:_Unsigned = "true" ;
+		wind_from_direction_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		wind_from_direction_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		wind_from_direction_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		wind_from_direction_qc_tests:ioos_category = "Other" ;
+		wind_from_direction_qc_tests:long_name = "Wind From Direction QARTOD Individual Tests" ;
+		wind_from_direction_qc_tests:references = "http://services.cormp.org/quality.php" ;
+		wind_from_direction_qc_tests:standard_name = "wind_from_direction quality_flag" ;
+		wind_from_direction_qc_tests:coordinates = "time z longitude latitude" ;
+		wind_from_direction_qc_tests:_Storage = "chunked" ;
+		wind_from_direction_qc_tests:_ChunkSizes = 7240 ;
+		wind_from_direction_qc_tests:_Shuffle = "true" ;
+		wind_from_direction_qc_tests:_DeflateLevel = 1 ;
+		wind_from_direction_qc_tests:_Endianness = "little" ;
+
+// global attributes:
+		:Conventions = "IOOS-1.2, CF-1.6, ACDD-1.3" ;
+		:date_created = "2020-04-22T22:49:00Z" ;
+		:featureType = "TimeSeries" ;
+		:cdm_data_type = "TimeSeries" ;
+		:cdm_timeseries_variables = "station,longitude,latitude" ;
+		:contributor_email = "None,,feedback@axiomdatascience.com" ;
+		:contributor_name = "Southeast Coastal Ocean Observing Regional Association (SECOORA),World Meteorological Organization (WMO),Axiom Data Science" ;
+		:contributor_role = "funder,contributor,processor" ;
+		:contributor_role_vocabulary = "NERC" ;
+		:contributor_url = "https://secoora.org/,https://www.wmo.int/pages/prog/amp/mmop/wmo-number-rules.html,https://www.axiomdatascience.com" ;
+		:creator_country = "USA" ;
+		:creator_email = "info@cormp.org" ;
+		:creator_institution = "UNCW - Coastal Ocean Research and Monitoring Program (CORMP)" ;
+		:creator_name = "UNCW - Coastal Ocean Research and Monitoring Program (CORMP)" ;
+		:creator_sector = "gov_federal" ;
+		:creator_type = "institution" ;
+		:creator_url = "http://www.cormp.org/index.php" ;
+		:Easternmost_Easting = -79.6204 ;
+		:geospatial_lat_max = 32.8032 ;
+		:geospatial_lat_min = 32.8032 ;
+		:geospatial_lat_units = "degrees_north" ;
+		:geospatial_lon_max = -79.6204 ;
+		:geospatial_lon_min = -79.6204 ;
+		:geospatial_lon_units = "degrees_east" ;
+		:geospatial_vertical_positive = "up" ;
+		:geospatial_vertical_units = "m" ;
+		:history = "Downloaded from UNCW - Coastal Ocean Research and Monitoring Program (CORMP) at http://services.cormp.org/data.php?format=json&platform=cap2\n2020-04-22T22:33:09Z http://services.cormp.org/data.php?format=json&platform=cap2\n2020-04-22T22:33:09Z http://erddap.stage.sensors.axds.co/erddap/tabledap/org_cormp_cap2.nc" ;
+		:infoUrl = "https://sensors.ioos.us/#metadata/60417/station" ;
+		:institution = "UNCW - Coastal Ocean Research and Monitoring Program (CORMP)" ;
+		:license = "The data may be used and redistributed for free but is not intended\nfor legal use, since it may contain inaccuracies. Neither the data\nContributor, ERD, NOAA, nor the United States Government, nor any\nof their employees or contractors, makes any warranty, express or\nimplied, including warranties of merchantability and fitness for a\nparticular purpose, or assumes any legal liability for the accuracy,\ncompleteness, or usefulness, of this information." ;
+		:Northernmost_Northing = 32.8032 ;
+		:platform_name = "(41029 / CAP2) Capers Nearshore" ;
+		:platform_vocabulary = "http://mmisw.org/ont/ioos/platform" ;
+		:processing_level = "Level 2" ;
+		:publisher_country = "USA" ;
+		:publisher_email = "info@cormp.org" ;
+		:publisher_institution = "UNCW - Coastal Ocean Research and Monitoring Program (CORMP)" ;
+		:publisher_name = "UNCW - Coastal Ocean Research and Monitoring Program (CORMP)" ;
+		:publisher_sector = "gov_federal" ;
+		:publisher_type = "institution" ;
+		:publisher_url = "http://www.cormp.org/index.php" ;
+		:references = "http://www.cormp.org/?platform=CAP2,http://services.cormp.org/data.php?format=json&platform=cap2,http://mwp.secoora.org/?platform=41029,http://services.cormp.org/quality.php" ;
+		:sourceUrl = "http://services.cormp.org/data.php?format=json&platform=cap2" ;
+		:Southernmost_Northing = 32.8032 ;
+		:standard_name_vocabulary = "CF Standard Name Table v72" ;
+		:summary = "Timeseries data from \'(41029 / CAP2) Capers Nearshore\' (org_cormp_cap2)" ;
+		:time_coverage_end = "2020-03-30T15:08:00Z" ;
+		:time_coverage_start = "2018-10-01T08:08:00Z" ;
+		:title = "(41029 / CAP2) Capers Nearshore" ;
+		:Westernmost_Easting = -79.6204 ;
+		:wmo_platform_code = "41029" ;
+		:id = "cap2" ;
+		:naming_authority = "org.cormp" ;
+		:platform = "41029" ;
+		:_NCProperties = "version=2,netcdf=4.6.2,hdf5=1.10.5" ;
+		:_SuperblockVersion = 0 ;
+		:_IsNetcdf4 = 1 ;
+		:_Format = "netCDF-4" ;
+data:
+
+ time = 907229280, 907232880, 907236480, 907240080, 907243680, 907247280, 
+    907250880, 907254480, 907258080, 907261680, 907265280, 907268880, 
+    907272480, 907276080, 907279680, 907283280, 907286880, 907290480, 
+    907294080, 907297680, 907301280, 907304880, 907308480, 907312080, 
+    907315680, 907319280, 907322880, 907326480, 907330080, 907333680, 
+    907337280, 907340880, 907344480, 907348080, 907351680, 907355280, 
+    907358880, 907362480, 907366080, 907369680, 907373280, 907376880, 
+    907380480, 907384080, 907387680, 907391280, 907394880, 907398480, 
+    907402080, 907405680, 907409280, 907412880, 907416480, 907420080, 
+    907423680, 907427280, 907430880, 907434480, 907438080, 907441680, 
+    907445280, 907448880, 907452480, 907456080, 907459680, 907463280, 
+    907466880, 907470480, 907474080, 907477680, 907481280, 907484880, 
+    907488480, 907492080, 907495680, 907499280, 907502880, 907506480, 
+    907510080, 907513680, 907517280, 907520880, 907524480, 907528080, 
+    907531680, 907535280, 907538880, 907542480, 907546080, 907549680, 
+    907553280, 907556880, 907560480, 907564080, 907567680, 907571280, 
+    907574880, 907578480, 907582080, 907585680, 907589280, 907592880, 
+    907596480, 907600080, 907603680, 907607280, 907610880, 907614480, 
+    907618080, 907621680, 907625280, 907628880, 907632480, 907636080, 
+    907639680, 907643280, 907646880, 907650480, 907654080, 907657680, 
+    907661280, 907664880, 907668480, 907672080, 907675680, 907679280, 
+    907682880, 907686480, 907690080, 907693680, 907697280, 907700880, 
+    907704480, 907708080, 907711680, 907715280, 907718880, 907722480, 
+    907726080, 907729680, 907733280, 907736880, 907740480, 907744080, 
+    907747680, 907751280, 907754880, 907758480, 907762080, 907765680, 
+    907769280, 907772880, 907776480, 907780080, 907783680, 907787280, 
+    907790880, 907794480, 907798080, 907801680, 907805280, 907808880, 
+    907812480, 907816080, 907819680, 907823280, 907826880, 907830480, 
+    907834080, 907837680, 907841280, 907844880, 907848480, 907852080, 
+    907855680, 907859280, 907862880, 907866480, 907870080, 907873680, 
+    907877280, 907880880, 907884480, 907888080, 907891680, 907895280, 
+    907898880, 907902480, 907906080, 907909680, 907913280, 907916880, 
+    907920480, 907924080, 907927680, 907931280, 907934880, 907938480, 
+    907942080, 907945680, 907949280, 907952880, 907956480, 907960080, 
+    907963680, 907967280, 907970880, 907974480, 907978080, 907981680, 
+    907985280, 907988880, 907992480, 907996080, 907999680, 908003280, 
+    908006880, 908010480, 908014080, 908017680, 908021280, 908024880, 
+    908028480, 908032080, 908035680, 908039280, 908042880, 908046480, 
+    908050080, 908053680, 908057280, 908060880, 908064480, 908068080, 
+    908071680, 908075280, 908078880, 908082480, 908086080, 908089680, 
+    908093280, 908096880, 908100480, 908104080, 908107680, 908111280, 
+    908114880, 908118480, 908122080, 908125680, 908129280, 908132880, 
+    908136480, 908140080, 908143680, 908147280, 908150880, 908154480, 
+    908158080, 908161680, 908165280, 908168880, 908172480, 908176080, 
+    908179680, 908183280, 908186880, 908190480, 908194080, 908197680, 
+    908201280, 908204880, 908208480, 908212080, 908215680, 908219280, 
+    908222880, 908226480, 908230080, 908233680, 908237280, 908240880, 
+    908244480, 908248080, 908251680, 908255280, 908258880, 908262480, 
+    908266080, 908269680, 908273280, 908276880, 908280480, 908284080, 
+    908287680, 908291280, 908294880, 908298480, 908302080, 908305680, 
+    908309280, 908312880, 908316480, 908320080, 908323680, 908327280, 
+    908330880, 908334480, 908338080, 908341680, 908345280, 908348880, 
+    908352480, 908356080, 908359680, 908363280, 908366880, 908370480, 
+    908381280, 908384880, 908388480, 908392080, 908395680, 908399280, 
+    908402880, 908406480, 908410080, 908413680, 908417280, 908420880, 
+    908424480, 908428080, 908431680, 908435280, 908438880, 908442480, 
+    908446080, 908449680, 908453280, 908456880, 908460480, 908464080, 
+    908467680, 908471280, 908474880, 908478480, 908482080, 908485680, 
+    908489280, 908492880, 908496480, 908500080, 908503680, 908507280, 
+    908510880, 908514480, 908518080, 908521680, 908525280, 908528880, 
+    908532480, 908536080, 908539680, 908543280, 908546880, 908550480, 
+    908554080, 908557680, 908561280, 908564880, 908568480, 908572080, 
+    908575680, 908579280, 908582880, 908586480, 908590080, 908593680, 
+    908597280, 908600880, 908604480, 908608080, 908611680, 908615280, 
+    908618880, 908622480, 908626080, 908629680, 908633280, 908636880, 
+    908640480, 908644080, 908647680, 908651280, 908654880, 908658480, 
+    908662080, 908665680, 908669280, 908672880, 908676480, 908680080, 
+    908683680, 908687280, 908690880, 908694480, 908698080, 908701680, 
+    908705280, 908708880, 908712480, 908716080, 908719680, 908723280, 
+    908726880, 908730480, 908734080, 908737680, 908741280, 908744880, 
+    908748480, 908752080, 908755680, 908759280, 908762880, 908766480, 
+    908770080, 908773680, 908777280, 908780880, 908784480, 908788080, 
+    908791680, 908795280, 908798880, 908802480, 908806080, 908809680, 
+    908813280, 908816880, 908820480, 908824080, 908827680, 908831280, 
+    908834880, 908838480, 908842080, 908845680, 908849280, 908852880, 
+    908856480, 908860080, 908863680, 908867280, 908870880, 908874480, 
+    908878080, 908881680, 908885280, 908888880, 908892480, 908896080, 
+    908899680, 908903280, 908906880, 908910480, 908914080, 908917680, 
+    908921280, 908924880, 908928480, 908932080, 908935680, 908939280, 
+    908942880, 908946480, 908950080, 908953680, 908957280, 908960880, 
+    908964480, 908968080, 908971680, 908975280, 908978880, 908982480, 
+    908986080, 908989680, 908993280, 908996880, 909000480, 909004080, 
+    909007680, 909011280, 909014880, 909018480, 909022080, 909025680, 
+    909029280, 909032880, 909036480, 909040080, 909043680, 909047280, 
+    909050880, 909054480, 909058080, 909061680, 909065280, 909068880, 
+    909072480, 909076080, 909079680, 909083280, 909086880, 909090480, 
+    909094080, 909097680, 909101280, 909104880, 909108480, 909112080, 
+    909115680, 909119280, 909122880, 909126480, 909130080, 909133680, 
+    909137280, 909140880, 909144480, 909148080, 909151680, 909155280, 
+    909158880, 909162480, 909166080, 909169680, 909173280, 909176880, 
+    909180480, 909184080, 909187680, 909191280, 909194880, 909198480, 
+    909202080, 909205680, 909209280, 909212880, 909216480, 909220080, 
+    909223680, 909227280, 909230880, 909234480, 909238080, 909241680, 
+    909245280, 909248880, 909252480, 909256080, 909259680, 909263280, 
+    909266880, 909270480, 909274080, 909277680, 909281280, 909284880, 
+    909288480, 909292080, 909295680, 909299280, 909302880, 909306480, 
+    909310080, 909313680, 909317280, 909320880, 909324480, 909328080, 
+    909331680, 909335280, 909338880, 909342480, 909346080, 909349680, 
+    909353280, 909356880, 909360480, 909364080, 909367680, 909371280, 
+    909374880, 909378480, 909382080, 909385680, 909389280, 909392880, 
+    909396480, 909400080, 909403680, 909407280, 909410880, 909414480, 
+    909418080, 909421680, 909425280, 909428880, 909432480, 909436080, 
+    909439680, 909443280, 909446880, 909450480, 909454080, 909457680, 
+    909461280, 909464880, 909468480, 909472080, 909475680, 909479280, 
+    909482880, 909486480, 909490080, 909493680, 909497280, 909500880, 
+    909504480, 909508080, 909511680, 909515280, 909518880, 909522480, 
+    909526080, 909529680, 909533280, 909536880, 909540480, 909544080, 
+    909547680, 909551280, 909554880, 909558480, 909562080, 909565680, 
+    909569280, 909572880, 909576480, 909580080, 909583680, 909587280, 
+    909590880, 909594480, 909598080, 909601680, 909605280, 909608880, 
+    909612480, 909616080, 909619680, 909623280, 909626880, 909630480, 
+    909634080, 909637680, 909641280, 909644880, 909648480, 909652080, 
+    909655680, 909659280, 909662880, 909666480, 909670080, 909673680, 
+    909677280, 909680880, 909684480, 909688080, 909691680, 909695280, 
+    909698880, 909702480, 909706080, 909709680, 909713280, 909716880, 
+    909720480, 909724080, 909727680, 909731280, 909734880, 909738480, 
+    909742080, 909745680, 909749280, 909752880, 909756480, 909760080, 
+    909763680, 909767280, 909770880, 909774480, 909778080, 909781680, 
+    909785280, 909788880, 909792480, 909796080, 909799680, 909803280, 
+    909806880, 909810480, 909814080, 909817680, 909821280, 909824880, 
+    909828480, 909832080, 909835680, 909839280, 909842880, 909846480, 
+    909850080, 909853680, 909857280, 909860880, 909864480, 909868080, 
+    909871680, 909875280, 909878880, 909882480, 909886080, 909889680, 
+    909893280, 909896880, 909900480, 909904080, 909907680, 909911280, 
+    909914880, 909918480, 909922080, 909925680, 909929280, 909932880, 
+    909936480, 909940080, 909943680, 909947280, 909950880, 909954480, 
+    909958080, 909961680, 909965280, 909968880, 909972480, 909976080, 
+    909979680, 909983280, 909986880, 909990480, 909994080, 909997680, 
+    910001280, 910004880, 910008480, 910012080, 910015680, 910019280, 
+    910022880, 910026480, 910030080, 910033680, 910037280, 910040880, 
+    910044480, 910048080, 910051680, 910055280, 910058880, 910062480, 
+    910066080, 910069680, 910073280, 910076880, 910080480, 910084080, 
+    910087680, 910091280, 910094880, 910098480, 910102080, 910105680, 
+    910109280, 910112880, 910116480, 910120080, 910123680, 910127280, 
+    910130880, 910134480, 910138080, 910141680, 910145280, 910148880, 
+    910152480, 910156080, 910159680, 910163280, 910166880, 910170480, 
+    910174080, 910177680, 910181280, 910184880, 910188480, 910192080, 
+    910195680, 910199280, 910206480, 910210080, 910213680, 910217280, 
+    910220880, 910224480, 910228080, 910231680, 910235280, 910238880, 
+    910242480, 910246080, 910249680, 910253280, 910256880, 910260480, 
+    910264080, 910267680, 910271280, 910274880, 910278480, 910282080, 
+    910285680, 910289280, 910292880, 910296480, 910300080, 910303680, 
+    910307280, 910310880, 910314480, 910318080, 910321680, 910325280, 
+    910328880, 910332480, 910336080, 910339680, 910343280, 910346880, 
+    910350480, 910354080, 910357680, 910361280, 910364880, 910368480, 
+    910372080, 910375680, 910379280, 910382880, 910386480, 910390080, 
+    910393680, 910397280, 910400880, 910404480, 910408080, 910411680, 
+    910415280, 910418880, 910422480, 910426080, 910429680, 910433280, 
+    910436880, 910440480, 910444080, 910447680, 910451280, 910454880, 
+    910458480, 910462080, 910465680, 910469280, 910472880, 910476480, 
+    910480080, 910483680, 910487280, 910490880, 910494480, 910498080, 
+    910501680, 910505280, 910508880, 910512480, 910516080, 910519680, 
+    910523280, 910526880, 910530480, 910534080, 910537680, 910541280, 
+    910544880, 910548480, 910552080, 910555680, 910559280, 910562880, 
+    910566480, 910570080, 910573680, 910577280, 910580880, 910584480, 
+    910588080, 910591680, 910595280, 910598880, 910602480, 910606080, 
+    910609680, 910613280, 910616880, 910620480, 910624080, 910627680, 
+    910631280, 910634880, 910638480, 910642080, 910645680, 910649280, 
+    910652880, 910656480, 910660080, 910663680, 910667280, 910670880, 
+    910674480, 910678080, 910681680, 910685280, 910688880, 910692480, 
+    910696080, 910699680, 910703280, 910706880, 910710480, 910714080, 
+    910717680, 910721280, 910724880, 910728480, 910732080, 910735680, 
+    910739280, 910742880, 910746480, 910750080, 910753680, 910757280, 
+    910760880, 910764480, 910768080, 910771680, 910775280, 910778880, 
+    910782480, 910786080, 910789680, 910793280, 910796880, 910800480, 
+    910804080, 910807680, 910811280, 910814880, 910818480, 910822080, 
+    910825680, 910829280, 910832880, 910836480, 910840080, 910843680, 
+    910847280, 910850880, 910854480, 910858080, 910861680, 910865280, 
+    910868880, 910872480, 910876080, 910879680, 910883280, 910886880, 
+    910890480, 910894080, 910897680, 910901280, 910904880, 910908480, 
+    910912080, 910915680, 910919280, 910922880, 910926480, 910930080, 
+    910933680, 910937280, 910940880, 910944480, 910948080, 910951680, 
+    910955280, 910958880, 910962480, 910966080, 910969680, 910973280, 
+    910976880, 910980480, 910984080, 910987680, 910991280, 910994880, 
+    910998480, 911002080, 911005680, 911009280, 911012880, 911016480, 
+    911020080, 911023680, 911027280, 911030880, 911034480, 911038080, 
+    911041680, 911045280, 911048880, 911052480, 911056080, 911059680, 
+    911063280, 911066880, 911070480, 911074080, 911077680, 911081280, 
+    911084880, 911088480, 911092080, 911095680, 911099280, 911102880, 
+    911106480, 911110080, 911113680, 911117280, 911120880, 911124480, 
+    911128080, 911131680, 911135280, 911138880, 911142480, 911146080, 
+    911149680, 911153280, 911156880, 911160480, 911164080, 911167680, 
+    911171280, 911174880, 911178480, 911182080, 911185680, 911189280, 
+    911192880, 911196480, 911200080, 911203680, 911207280, 911210880, 
+    911214480, 911218080, 911221680, 911225280, 911228880, 911232480, 
+    911236080, 911239680, 911243280, 911246880, 911250480, 911254080, 
+    911257680, 911261280, 911264880, 911268480, 911272080, 911275680, 
+    911279280, 911282880, 911286480, 911290080, 911293680, 911297280, 
+    911300880, 911304480, 911308080, 911311680, 911315280, 911318880, 
+    911322480, 911326080, 911329680, 911333280, 911336880, 911340480, 
+    911344080, 911347680, 911351280, 911354880, 911358480, 911362080, 
+    911365680, 911369280, 911372880, 911376480, 911380080, 911383680, 
+    911387280, 911390880, 911394480, 911398080, 911401680, 911405280, 
+    911408880, 911412480, 911416080, 911419680, 911423280, 911426880, 
+    911430480, 911434080, 911437680, 911441280, 911444880, 911448480, 
+    911452080, 911455680, 911459280, 911462880, 911466480, 911470080, 
+    911473680, 911477280, 911480880, 911484480, 911488080, 911491680, 
+    911495280, 911498880, 911502480, 911506080, 911509680, 911513280, 
+    911516880, 911520480, 911524080, 911527680, 911531280, 911534880, 
+    911538480, 911542080, 911545680, 911549280, 911552880, 911556480, 
+    911560080, 911563680, 911567280, 911570880, 911574480, 911578080, 
+    911581680, 911585280, 911588880, 911592480, 911596080, 911599680, 
+    911603280, 911606880, 911610480, 911614080, 911617680, 911621280, 
+    911624880, 911628480, 911632080, 911635680, 911639280, 911642880, 
+    911646480, 911650080, 911653680, 911657280, 911660880, 911664480, 
+    911668080, 911671680, 911675280, 911678880, 911682480, 911686080, 
+    911689680, 911693280, 911696880, 911700480, 911704080, 911707680, 
+    911711280, 911714880, 911718480, 911722080, 911725680, 911729280, 
+    911732880, 911736480, 911740080, 911743680, 911747280, 911750880, 
+    911754480, 911758080, 911761680, 911765280, 911768880, 911772480, 
+    911776080, 911779680, 911783280, 911786880, 911790480, 911794080, 
+    911797680, 911801280, 911804880, 911808480, 911812080, 911815680, 
+    911819280, 911822880, 911826480, 911830080, 911833680, 911837280, 
+    911840880, 911844480, 911848080, 911851680, 911855280, 911858880, 
+    911862480, 911866080, 911869680, 911873280, 911876880, 911880480, 
+    911884080, 911887680, 911891280, 911894880, 911898480, 911902080, 
+    911905680, 911909280, 911912880, 911916480, 911920080, 911923680, 
+    911927280, 911930880, 911934480, 911938080, 911941680, 911945280, 
+    911948880, 911952480, 911956080, 911959680, 911963280, 911966880, 
+    911970480, 911974080, 911977680, 911981280, 911984880, 911988480, 
+    911992080, 911995680, 911999280, 912002880, 912006480, 912010080, 
+    912013680, 912017280, 912020880, 912024480, 912028080, 912031680, 
+    912035280, 912038880, 912042480, 912046080, 912049680, 912053280, 
+    912056880, 912060480, 912064080, 912067680, 912071280, 912074880, 
+    912078480, 912082080, 912085680, 912089280, 912092880, 912096480, 
+    912100080, 912103680, 912107280, 912110880, 912114480, 912118080, 
+    912121680, 912125280, 912128880, 912132480, 912136080, 912139680, 
+    912143280, 912146880, 912150480, 912154080, 912157680, 912161280, 
+    912164880, 912168480, 912172080, 912175680, 912179280, 912182880, 
+    912186480, 912190080, 912193680, 912197280, 912200880, 912204480, 
+    912208080, 912211680, 912215280, 912218880, 912222480, 912226080, 
+    912229680, 912233280, 912236880, 912240480, 912244080, 912247680, 
+    912251280, 912254880, 912258480, 912262080, 912265680, 912269280, 
+    912272880, 912276480, 912280080, 912283680, 912287280, 912290880, 
+    912294480, 912298080, 912301680, 912305280, 912308880, 912312480, 
+    912316080, 912319680, 912323280, 912326880, 912330480, 912334080, 
+    912337680, 912341280, 912344880, 912348480, 912352080, 912355680, 
+    912359280, 912362880, 912366480, 912370080, 912373680, 912377280, 
+    912380880, 912384480, 912388080, 912391680, 912395280, 912398880, 
+    912402480, 912406080, 912409680, 912413280, 912416880, 912420480, 
+    912424080, 912427680, 912431280, 912434880, 912438480, 912442080, 
+    912445680, 912449280, 912452880, 912456480, 912460080, 912463680, 
+    912467280, 912470880, 912474480, 912478080, 912481680, 912485280, 
+    912488880, 912492480, 912496080, 912499680, 912503280, 912506880, 
+    912510480, 912514080, 912517680, 912521280, 912524880, 912528480, 
+    912532080, 912535680, 912539280, 912542880, 912546480, 912550080, 
+    912553680, 912557280, 912560880, 912564480, 912568080, 912571680, 
+    912575280, 912578880, 912582480, 912586080, 912589680, 912593280, 
+    912596880, 912600480, 912604080, 912607680, 912611280, 912614880, 
+    912618480, 912622080, 912625680, 912629280, 912632880, 912636480, 
+    912640080, 912643680, 912647280, 912650880, 912654480, 912658080, 
+    912661680, 912665280, 912668880, 912672480, 912676080, 912679680, 
+    912683280, 912686880, 912690480, 912694080, 912697680, 912701280, 
+    912704880, 912708480, 912712080, 912715680, 912719280, 912722880, 
+    912726480, 912730080, 912733680, 912737280, 912740880, 912744480, 
+    912748080, 912751680, 912755280, 912758880, 912762480, 912766080, 
+    912769680, 912773280, 912776880, 912780480, 912784080, 912787680, 
+    912791280, 912794880, 912798480, 912802080, 912805680, 912809280, 
+    912812880, 912816480, 912820080, 912823680, 912827280, 912830880, 
+    912834480, 912838080, 912841680, 912845280, 912848880, 912852480, 
+    912856080, 912859680, 912863280, 912866880, 912870480, 912874080, 
+    912877680, 912881280, 912884880, 912888480, 912892080, 912895680, 
+    912899280, 912902880, 912906480, 912910080, 912913680, 912917280, 
+    912920880, 912924480, 912928080, 912931680, 930730080, 930733680, 
+    930737280, 930740880, 930744480, 930748080, 930751680, 930755280, 
+    930758880, 930762480, 930766080, 930769680, 930773280, 930776880, 
+    930780480, 930784080, 930787680, 930791280, 930794880, 930798480, 
+    930802080, 930805680, 930809280, 930812880, 936029280, 936032880, 
+    936036480, 936040080, 936043680, 936047280, 936050880, 936054480, 
+    936058080, 936061680, 936065280, 936066180, 936067080, 936067980, 
+    936068880, 936069780, 936070680, 936071580, 936072480, 936073380, 
+    936074280, 936075180, 936076080, 936076980, 936077880, 936078780, 
+    936079680, 936080580, 936081480, 936082380, 936083280, 936084180, 
+    936085080, 936085980, 936086880, 936087780, 936088680, 936089580, 
+    936090480, 936091380, 936092280, 936093180, 936094080, 936094980, 
+    936095880, 936096780, 936097680, 936098580, 936099480, 936100380, 
+    936101280, 936102180, 936103080, 936103980, 936104880, 936105780, 
+    936106680, 936107580, 936108480, 936109380, 936110280, 936111180, 
+    936112080, 936112980, 936113880, 936114780, 936115680, 936116580, 
+    936117480, 936118380, 936119280, 936120180, 936121080, 936121980, 
+    936122880, 936123780, 936124680, 936125580, 936126480, 936127380, 
+    936128280, 936129180, 936130080, 936130980, 936131880, 936132780, 
+    936133680, 936134580, 936135480, 936136380, 936137280, 936138180, 
+    936139080, 936139980, 936140880, 936141780, 936142680, 936143580, 
+    936144480, 936145380, 936146280, 936147180, 936148080, 936148980, 
+    936149880, 936150780, 936151680, 936152580, 936153480, 936154380, 
+    936155280, 936156180, 936157080, 936157980, 936158880, 936159780, 
+    936160680, 936161580, 936162480, 936163380, 936164280, 936165180, 
+    936166080, 936166980, 936167880, 936168780, 936169680, 936170580, 
+    936171480, 936172380, 936173280, 936174180, 936175080, 936175980, 
+    936176880, 936177780, 936178680, 936179580, 936180480, 936181380, 
+    936182280, 936183180, 936184080, 936184980, 936185880, 936186780, 
+    936187680, 936188580, 936189480, 936190380, 936191280, 936192180, 
+    936193080, 936193980, 936194880, 936195780, 936196680, 936197580, 
+    936198480, 936199380, 936200280, 936201180, 936202080, 936202980, 
+    936203880, 936204780, 936205680, 936206580, 936207480, 936208380, 
+    936209280, 936210180, 936211080, 936211980, 936212880, 936213780, 
+    936214680, 936215580, 936216480, 936217380, 936218280, 936219180, 
+    936220080, 936220980, 936221880, 936222780, 936223680, 936224580, 
+    936225480, 936226380, 936227280, 936228180, 936229080, 936229980, 
+    936230880, 936231780, 936232680, 936233580, 936234480, 936235380, 
+    936236280, 936237180, 936238080, 936238980, 936239880, 936240780, 
+    936241680, 936242580, 936243480, 936244380, 936245280, 936246180, 
+    936247080, 936247980, 936248880, 936249780, 936250680, 936251580, 
+    936252480, 936253380, 936254280, 936255180, 936256080, 936256980, 
+    936257880, 936258780, 936259680, 936260580, 936261480, 936262380, 
+    936263280, 936264180, 936265080, 936265980, 936266880, 936267780, 
+    936268680, 936269580, 936270480, 936271380, 936272280, 936273180, 
+    936274080, 936274980, 936275880, 936276780, 936277680, 936278580, 
+    936279480, 936280380, 936281280, 936282180, 936283080, 936283980, 
+    936284880, 936285780, 936286680, 936287580, 936288480, 936289380, 
+    936290280, 936291180, 936292080, 936292980, 936293880, 936294780, 
+    936295680, 936296580, 936297480, 936298380, 936299280, 936300180, 
+    936301080, 936301980, 936302880, 936303780, 936304680, 936305580, 
+    936306480, 936307380, 936308280, 936309180, 936310080, 936310980, 
+    936311880, 936312780, 936313680, 936314580, 936315480, 936316380, 
+    936317280, 936318180, 936319080, 936319980, 936320880, 936321780, 
+    936322680, 936323580, 936324480, 936325380, 936326280, 936327180, 
+    936328080, 936328980, 936329880, 936330780, 936331680, 936332580, 
+    936333480, 936334380, 936335280, 936336180, 936337080, 936337980, 
+    936338880, 936339780, 936340680, 936341580, 936342480, 936343380, 
+    936344280, 936345180, 936346080, 936346980, 936347880, 936348780, 
+    936349680, 936350580, 936351480, 936352380, 936353280, 936354180, 
+    936355080, 936355980, 936356880, 936357780, 936358680, 936359580, 
+    936360480, 936361380, 936362280, 936363180, 936364080, 936364980, 
+    936365880, 936366780, 936367680, 936368580, 936369480, 936370380, 
+    936371280, 936372180, 936373080, 936373980, 936374880, 936375780, 
+    936376680, 936377580, 936378480, 936379380, 936380280, 936381180, 
+    936382080, 936382980, 936383880, 936384780, 936385680, 936386580, 
+    936389280, 936390180, 936391080, 936391980, 936392880, 936393780, 
+    936394680, 936395580, 936396480, 936397380, 936398280, 936399180, 
+    936400080, 936400980, 936401880, 936402780, 936403680, 936404580, 
+    936405480, 936406380, 936407280, 936408180, 936409080, 936409980, 
+    936410880, 936411780, 936412680, 936413580, 936414480, 936415380, 
+    936416280, 936417180, 936418080, 936418980, 936419880, 936420780, 
+    936421680, 936422580, 936423480, 936424380, 936425280, 936426180, 
+    936427080, 936427980, 936428880, 936429780, 936430680, 936431580, 
+    936432480, 936433380, 936434280, 936435180, 936436080, 936436980, 
+    936437880, 936438780, 936439680, 936440580, 936441480, 936442380, 
+    936443280, 936444180, 936445080, 936445980, 936446880, 936447780, 
+    936448680, 936449580, 936450480, 936451380, 936452280, 936457680, 
+    936458580, 936459480, 936460380, 936461280, 936462180, 936463080, 
+    936463980, 936464880, 936465780, 936466680, 936467580, 936468480, 
+    936469380, 936470280, 936471180, 936472080, 936472980, 936473880, 
+    936474780, 936475680, 936476580, 936477480, 936478380, 936479280, 
+    936480180, 936481080, 936481980, 936482880, 936483780, 936484680, 
+    936485580, 936486480, 936487380, 936488280, 936489180, 936490080, 
+    936490980, 936491880, 936492780, 936493680, 936494580, 936495480, 
+    936496380, 936497280, 936498180, 936499080, 936499980, 936500880, 
+    936501780, 936502680, 936503580, 936504480, 936505380, 936506280, 
+    936507180, 936508080, 936508980, 936509880, 936510780, 936511680, 
+    936512580, 936513480, 936514380, 936515280, 936516180, 936517080, 
+    936517980, 936518880, 936519780, 936520680, 936521580, 936522480, 
+    936523380, 936524280, 936525180, 936526080, 936526980, 936527880, 
+    936528780, 936529680, 936530580, 936531480, 936532380, 936533280, 
+    936534180, 936535080, 936535980, 936536880, 936537780, 936538680, 
+    936539580, 936540480, 936541380, 936542280, 936543180, 936544080, 
+    936544980, 936545880, 936546780, 936547680, 936548580, 936549480, 
+    936550380, 936551280, 936552180, 936553080, 936553980, 936554880, 
+    936555780, 936556680, 936557580, 936558480, 936559380, 936560280, 
+    936561180, 936562080, 936562980, 936563880, 936564780, 936565680, 
+    936566580, 936567480, 936568380, 936569280, 936570180, 936571080, 
+    936571980, 936572880, 936573780, 936574680, 936575580, 936576480, 
+    936577380, 936578280, 936579180, 936580080, 936580980, 936581880, 
+    936582780, 936583680, 936584580, 936585480, 936586380, 936587280, 
+    936588180, 936589080, 936589980, 936590880, 936591780, 936592680, 
+    936593580, 936594480, 936595380, 936596280, 936597180, 936598080, 
+    936598980, 936599880, 936600780, 936601680, 936602580, 936603480, 
+    936604380, 936605280, 936606180, 936607080, 936607980, 936608880, 
+    936609780, 936610680, 936611580, 936612480, 936613380, 936614280, 
+    936615180, 936616080, 936616980, 936617880, 936618780, 936619680, 
+    936620580, 936621480, 936622380, 936623280, 936624180, 936625080, 
+    936625980, 936626880, 936627780, 936628680, 936629580, 936630480, 
+    936631380, 936632280, 936633180, 936634080, 936634980, 936635880, 
+    936636780, 936637680, 936638580, 936639480, 936640380, 936641280, 
+    936642180, 936643080, 936643980, 936644880, 936645780, 936646680, 
+    936647580, 936648480, 936649380, 936650280, 936651180, 936652080, 
+    936652980, 936653880, 936654780, 936655680, 936656580, 936657480, 
+    936658380, 936659280, 936660180, 936661080, 936661980, 936662880, 
+    936663780, 936664680, 936665580, 936666480, 936667380, 936668280, 
+    936669180, 936670080, 936670980, 936671880, 936672780, 936673680, 
+    936674580, 936675480, 936676380, 936677280, 936678180, 936679080, 
+    936679980, 936680880, 936681780, 936682680, 936683580, 936684480, 
+    936685380, 936686280, 936687180, 936688080, 936688980, 936689880, 
+    936690780, 936691680, 936692580, 936693480, 936694380, 936695280, 
+    936696180, 936697080, 936697980, 936698880, 936699780, 936700680, 
+    936701580, 936702480, 936703380, 936704280, 936705180, 936706080, 
+    936706980, 936707880, 936708780, 936709680, 936710580, 936711480, 
+    936712380, 936713280, 936716880, 936720480, 936724080, 936727680, 
+    936731280, 936734880, 936738480, 936742080, 936745680, 936749280, 
+    936752880, 936756480, 936760080, 936763680, 936767280, 936770880, 
+    936774480, 936778080, 936781680, 936785280, 936788880, 936792480, 
+    936796080, 936799680, 936803280, 936806880, 936810480, 936814080, 
+    936817680, 936821280, 936824880, 936828480, 936832080, 936835680, 
+    936839280, 936842880, 936846480, 936850080, 936853680, 936857280, 
+    936860880, 936864480, 936868080, 936871680, 936875280, 936878880, 
+    936882480, 936886080, 936889680, 936893280, 936896880, 936900480, 
+    936904080, 936907680, 936911280, 936914880, 936918480, 936922080, 
+    936925680, 936929280, 936932880, 936936480, 936940080, 936943680, 
+    936947280, 936950880, 936954480, 936958080, 936961680, 936965280, 
+    936968880, 936972480, 936976080, 936979680, 936983280, 936986880, 
+    936990480, 936994080, 936997680, 937001280, 937004880, 937008480, 
+    937012080, 937015680, 937019280, 937022880, 937026480, 937030080, 
+    937033680, 937037280, 937040880, 937044480, 937048080, 937051680, 
+    937055280, 937058880, 937062480, 937066080, 937069680, 937073280, 
+    937076880, 937080480, 937084080, 937087680, 937091280, 937094880, 
+    937098480, 937102080, 937105680, 937109280, 937112880, 937116480, 
+    937120080, 937123680, 937127280, 937130880, 937134480, 937138080, 
+    937141680, 937145280, 937148880, 937152480, 937156080, 937159680, 
+    937163280, 937166880, 937170480, 937174080, 937177680, 937181280, 
+    937184880, 937188480, 937192080, 937195680, 937199280, 937202880, 
+    937206480, 937210080, 937213680, 937217280, 937220880, 937224480, 
+    937228080, 937231680, 937235280, 937238880, 937242480, 937246080, 
+    937249680, 937253280, 937256880, 937260480, 937264080, 937267680, 
+    937271280, 937274880, 937278480, 937282080, 937285680, 937289280, 
+    937292880, 937296480, 937300080, 937303680, 937307280, 937310880, 
+    937314480, 937318080, 937321680, 937325280, 937328880, 937332480, 
+    937336080, 937339680, 937343280, 937346880, 937350480, 937354080, 
+    937357680, 937361280, 937364880, 937368480, 937372080, 937375680, 
+    937379280, 937382880, 937386480, 937390080, 937393680, 937397280, 
+    937400880, 937404480, 937408080, 937411680, 937415280, 937418880, 
+    937422480, 937426080, 937429680, 937433280, 937436880, 937440480, 
+    937444080, 937447680, 937451280, 937454880, 937458480, 937462080, 
+    937465680, 937469280, 937472880, 937476480, 937480080, 937483680, 
+    937487280, 937490880, 937494480, 937498080, 937501680, 937505280, 
+    937508880, 937512480, 937516080, 937519680, 937523280, 937526880, 
+    937530480, 937534080, 937537680, 937541280, 937544880, 937548480, 
+    937552080, 937555680, 937559280, 937562880, 937566480, 937570080, 
+    937573680, 937577280, 937580880, 937584480, 937588080, 937591680, 
+    937595280, 937598880, 937602480, 937606080, 937609680, 937613280, 
+    937616880, 937620480, 937624080, 937627680, 937631280, 937634880, 
+    937638480, 937642080, 937645680, 937649280, 937652880, 937656480, 
+    937660080, 937663680, 937667280, 937670880, 937674480, 937678080, 
+    937681680, 937685280, 937688880, 937692480, 937696080, 937699680, 
+    937703280, 937721280, 937724880, 937728480, 937732080, 937735680, 
+    937739280, 937742880, 937746480, 937750080, 937753680, 937757280, 
+    937760880, 937764480, 937768080, 937771680, 937775280, 937778880, 
+    937782480, 937786080, 937789680, 937793280, 937796880, 937800480, 
+    937804080, 937807680, 937811280, 937814880, 937818480, 937822080, 
+    937825680, 937829280, 937832880, 937836480, 937840080, 937843680, 
+    937847280, 937850880, 937854480, 937858080, 937861680, 937865280, 
+    937868880, 937872480, 937876080, 937879680, 937883280, 937886880, 
+    937890480, 937894080, 937897680, 937901280, 937904880, 937908480, 
+    937912080, 937915680, 937919280, 937922880, 937926480, 937930080, 
+    937933680, 937937280, 937940880, 937944480, 937948080, 937951680, 
+    937955280, 937958880, 937962480, 937966080, 937969680, 937973280, 
+    937976880, 937980480, 937984080, 937987680, 937991280, 937994880, 
+    937998480, 938002080, 938005680, 938009280, 938012880, 938016480, 
+    938020080, 938023680, 938027280, 938030880, 938034480, 938038080, 
+    938041680, 938045280, 938048880, 938052480, 938056080, 938059680, 
+    938063280, 938066880, 938070480, 938074080, 938077680, 938081280, 
+    938084880, 938088480, 938092080, 938095680, 938099280, 938102880, 
+    938106480, 938110080, 938113680, 938117280, 938120880, 938124480, 
+    938128080, 938131680, 938135280, 938138880, 938142480, 938146080, 
+    938149680, 938153280, 938156880, 938160480, 938164080, 938167680, 
+    938171280, 938174880, 938178480, 938182080, 938185680, 938189280, 
+    938192880, 938196480, 938200080, 938203680, 938207280, 938210880, 
+    938214480, 938218080, 938221680, 938225280, 938228880, 938232480, 
+    938236080, 938239680, 938243280, 938246880, 938250480, 938254080, 
+    938257680, 938261280, 938264880, 938268480, 938272080, 938275680, 
+    938279280, 938282880, 938286480, 938290080, 938293680, 938297280, 
+    938300880, 938304480, 938308080, 938311680, 938315280, 938318880, 
+    938322480, 938326080, 938329680, 938333280, 938336880, 938340480, 
+    938344080, 938347680, 938351280, 938354880, 938358480, 938362080, 
+    938365680, 938369280, 938372880, 938376480, 938380080, 938383680, 
+    938387280, 938390880, 938394480, 938398080, 938401680, 938405280, 
+    938408880, 938412480, 938416080, 938419680, 938423280, 938426880, 
+    938430480, 938434080, 938437680, 938441280, 938444880, 938448480, 
+    938452080, 938455680, 938459280, 938462880, 938466480, 938470080, 
+    938473680, 938477280, 938480880, 938484480, 938488080, 938491680, 
+    938495280, 938498880, 938502480, 938506080, 938509680, 938513280, 
+    938516880, 938520480, 938524080, 938527680, 938531280, 938534880, 
+    938538480, 938542080, 938545680, 938549280, 938552880, 938556480, 
+    938560080, 938563680, 938567280, 938570880, 938574480, 938578080, 
+    938581680, 938585280, 938588880, 938592480, 938596080, 938599680, 
+    938603280, 938606880, 938610480, 938614080, 938617680, 938621280, 
+    938624880, 938628480, 938632080, 938635680, 938639280, 938642880, 
+    938646480, 938650080, 938653680, 938657280, 938660880, 938664480, 
+    938668080, 938671680, 938675280, 938678880, 938682480, 938686080, 
+    938689680, 938693280, 938696880, 938700480, 938704080, 938707680, 
+    938711280, 938714880, 938718480, 938722080, 938725680, 938729280, 
+    938732880, 938736480, 938740080, 938743680, 938747280, 938750880, 
+    938754480, 938758080, 938761680, 938765280, 938768880, 938772480, 
+    938776080, 938779680, 938783280, 938786880, 938790480, 938794080, 
+    938797680, 938801280, 938804880, 938808480, 938812080, 938815680, 
+    938819280, 938822880, 938826480, 938830080, 938833680, 938837280, 
+    938840880, 938844480, 938848080, 938851680, 938855280, 938858880, 
+    938862480, 938866080, 938869680, 938873280, 938876880, 938880480, 
+    938884080, 938887680, 938891280, 938894880, 938898480, 938902080, 
+    938905680, 938909280, 938912880, 938916480, 938920080, 938923680, 
+    938927280, 938930880, 938934480, 938938080, 938941680, 938945280, 
+    938948880, 938952480, 938956080, 938959680, 938963280, 938966880, 
+    938970480, 938974080, 938977680, 938981280, 938984880, 938988480, 
+    938992080, 938995680, 938999280, 939002880, 939006480, 939010080, 
+    939013680, 939017280, 939020880, 939024480, 939028080, 939031680, 
+    939035280, 939038880, 939042480, 939046080, 939049680, 939053280, 
+    939056880, 939060480, 939064080, 939067680, 939071280, 939074880, 
+    939078480, 939082080, 939085680, 939089280, 939092880, 939096480, 
+    939100080, 939103680, 939107280, 939110880, 939114480, 939118080, 
+    939121680, 939125280, 939128880, 939132480, 939136080, 939139680, 
+    939143280, 939146880, 939150480, 939154080, 939157680, 939161280, 
+    939164880, 939168480, 939172080, 939175680, 939179280, 939182880, 
+    939186480, 939190080, 939193680, 939197280, 939200880, 939204480, 
+    939208080, 939211680, 939215280, 939218880, 939222480, 939226080, 
+    939229680, 939233280, 939236880, 939240480, 939244080, 939247680, 
+    939251280, 939254880, 939258480, 939262080, 939265680, 939269280, 
+    939272880, 939276480, 939280080, 939283680, 939287280, 939290880, 
+    939294480, 939298080, 939301680, 939305280, 939308880, 939312480, 
+    939316080, 939319680, 939323280, 939326880, 939330480, 939334080, 
+    939337680, 939341280, 939344880, 939348480, 939352080, 939355680, 
+    939359280, 939362880, 939366480, 939370080, 939373680, 939377280, 
+    939380880, 939384480, 939388080, 939391680, 939395280, 939398880, 
+    939402480, 939406080, 939409680, 939413280, 939416880, 939420480, 
+    939424080, 939427680, 939431280, 939434880, 939438480, 939442080, 
+    939445680, 939449280, 939452880, 939456480, 939460080, 939463680, 
+    939467280, 939470880, 939474480, 939478080, 939481680, 939485280, 
+    939488880, 939492480, 939496080, 939499680, 939503280, 939506880, 
+    939510480, 939514080, 939517680, 939521280, 939524880, 939528480, 
+    939532080, 939535680, 939539280, 939542880, 939546480, 939550080, 
+    939553680, 939557280, 939560880, 939564480, 939568080, 939571680, 
+    939575280, 939578880, 939582480, 939586080, 939589680, 939593280, 
+    939596880, 939600480, 939604080, 939607680, 939611280, 939614880, 
+    939618480, 939622080, 939625680, 939629280, 939632880, 939636480, 
+    939640080, 939643680, 939647280, 939650880, 939654480, 939658080, 
+    939661680, 939665280, 939668880, 939672480, 939676080, 939679680, 
+    939683280, 939686880, 939690480, 939694080, 939697680, 939701280, 
+    939704880, 939708480, 939712080, 939715680, 939719280, 939722880, 
+    939726480, 939730080, 939733680, 939737280, 939740880, 939744480, 
+    939748080, 939751680, 939755280, 939758880, 939762480, 939766080, 
+    939769680, 939773280, 939776880, 939780480, 939784080, 939787680, 
+    939791280, 939794880, 939798480, 939802080, 939805680, 939809280, 
+    939812880, 939816480, 939820080, 939823680, 939827280, 939830880, 
+    939834480, 939838080, 939841680, 939845280, 939848880, 939852480, 
+    939856080, 939859680, 939863280, 939866880, 939870480, 939874080, 
+    939877680, 939881280, 939884880, 939888480, 939892080, 939895680, 
+    939899280, 939902880, 939906480, 939910080, 939913680, 939917280, 
+    939920880, 939924480, 939928080, 939931680, 939935280, 939938880, 
+    939942480, 939946080, 939949680, 939953280, 939956880, 939960480, 
+    939964080, 939967680, 939971280, 939974880, 939978480, 939982080, 
+    939985680, 939989280, 939992880, 939996480, 940000080, 940003680, 
+    940007280, 940010880, 940014480, 940018080, 940021680, 940025280, 
+    940028880, 940032480, 940036080, 940039680, 940043280, 940046880, 
+    940050480, 940054080, 940057680, 940061280, 940064880, 940068480, 
+    940072080, 940075680, 940079280, 940082880, 940086480, 940090080, 
+    940093680, 940097280, 940100880, 940104480, 940108080, 940111680, 
+    940115280, 940118880, 940122480, 940126080, 940129680, 940133280, 
+    940136880, 940140480, 940144080, 940147680, 940151280, 940154880, 
+    940158480, 940162080, 940165680, 940169280, 940172880, 940176480, 
+    940180080, 940183680, 940187280, 940190880, 940194480, 940198080, 
+    940201680, 940205280, 940208880, 940212480, 940216080, 940219680, 
+    940223280, 940226880, 940230480, 940234080, 940237680, 940241280, 
+    940244880, 940248480, 940252080, 940255680, 940259280, 940262880, 
+    940266480, 940270080, 940273680, 940277280, 940280880, 940284480, 
+    940288080, 940291680, 940295280, 940298880, 940302480, 940306080, 
+    940309680, 940313280, 940316880, 940320480, 940324080, 940327680, 
+    940331280, 940334880, 940338480, 940342080, 940345680, 940349280, 
+    940352880, 940356480, 940360080, 940363680, 940367280, 940370880, 
+    940374480, 940378080, 940381680, 940385280, 940388880, 940392480, 
+    940396080, 940399680, 940403280, 940406880, 940410480, 940414080, 
+    940417680, 940421280, 940424880, 940428480, 940432080, 940435680, 
+    940439280, 940442880, 940446480, 940450080, 940453680, 940457280, 
+    940460880, 940464480, 940468080, 940471680, 940475280, 940478880, 
+    940482480, 940486080, 940489680, 940493280, 940496880, 940500480, 
+    940504080, 940507680, 940511280, 940514880, 940518480, 940522080, 
+    940525680, 940529280, 940532880, 940536480, 940540080, 940543680, 
+    940547280, 940550880, 940554480, 940558080, 940561680, 940565280, 
+    940568880, 940572480, 940576080, 940579680, 940583280, 940586880, 
+    940590480, 940594080, 940597680, 940601280, 940604880, 940608480, 
+    940612080, 940615680, 940619280, 940622880, 940626480, 940630080, 
+    940633680, 940637280, 940640880, 940644480, 940648080, 940651680, 
+    940655280, 940658880, 940662480, 940666080, 940669680, 940676880, 
+    940680480, 940684080, 940687680, 940691280, 940694880, 940698480, 
+    940702080, 940705680, 940709280, 940712880, 940716480, 940720080, 
+    940723680, 940727280, 940730880, 940734480, 940738080, 940741680, 
+    940745280, 940748880, 940752480, 940756080, 940759680, 940763280, 
+    940766880, 940770480, 940774080, 940777680, 940781280, 940784880, 
+    940788480, 940792080, 940795680, 940799280, 940802880, 940806480, 
+    940810080, 940813680, 940817280, 940820880, 940824480, 940828080, 
+    940831680, 940835280, 940838880, 940842480, 940846080, 940849680, 
+    940853280, 940856880, 940860480, 940864080, 940867680, 940871280, 
+    940874880, 940878480, 940882080, 940885680, 940889280, 940892880, 
+    940896480, 940900080, 940903680, 940907280, 940910880, 940914480, 
+    940918080, 940921680, 940925280, 940928880, 940932480, 940936080, 
+    940939680, 940943280, 940946880, 940950480, 940954080, 940957680, 
+    940961280, 940964880, 940968480, 940972080, 940975680, 940979280, 
+    940982880, 940986480, 940990080, 940993680, 940997280, 941000880, 
+    941004480, 941008080, 941011680, 941015280, 941018880, 941022480, 
+    941026080, 941029680, 941033280, 941036880, 941040480, 941044080, 
+    941047680, 941051280, 941054880, 941058480, 941062080, 941065680, 
+    941069280, 941072880, 941076480, 941080080, 941083680, 941087280, 
+    941090880, 941094480, 941098080, 941101680, 941105280, 941108880, 
+    941112480, 941116080, 941119680, 941123280, 941126880, 941130480, 
+    941134080, 941137680, 941141280, 941144880, 941148480, 941152080, 
+    941155680, 941159280, 941162880, 941166480, 941170080, 941173680, 
+    941177280, 941180880, 941184480, 941188080, 941191680, 941195280, 
+    941198880, 941202480, 941206080, 941209680, 941213280, 941216880, 
+    941220480, 941224080, 941227680, 941231280, 941234880, 941238480, 
+    941242080, 941245680, 941249280, 941252880, 941256480, 941260080, 
+    941263680, 941267280, 941270880, 941274480, 941278080, 941281680, 
+    941285280, 941288880, 941292480, 941296080, 941299680, 941303280, 
+    941306880, 941310480, 941314080, 941317680, 941321280, 941324880, 
+    941328480, 941332080, 941335680, 941339280, 941342880, 941346480, 
+    941350080, 941353680, 941357280, 941360880, 941364480, 941368080, 
+    941371680, 941375280, 941378880, 941382480, 941386080, 941389680, 
+    941393280, 941396880, 941400480, 941404080, 941407680, 941411280, 
+    941414880, 941418480, 941422080, 941425680, 941429280, 941432880, 
+    941436480, 941440080, 941443680, 941447280, 941450880, 941454480, 
+    941458080, 941461680, 941465280, 941468880, 941472480, 941476080, 
+    941479680, 941483280, 941486880, 941490480, 941494080, 941497680, 
+    941501280, 941504880, 941508480, 941512080, 941515680, 941519280, 
+    941522880, 941526480, 941530080, 941533680, 941537280, 941540880, 
+    941544480, 941548080, 941551680, 941555280, 941558880, 941562480, 
+    941566080, 941569680, 941573280, 941576880, 941580480, 941584080, 
+    941587680, 941591280, 941594880, 941598480, 941602080, 941605680, 
+    941609280, 941612880, 941616480, 941620080, 941623680, 941627280, 
+    941630880, 941638080, 941641680, 941645280, 941648880, 941652480, 
+    941656080, 941659680, 941663280, 941666880, 941670480, 941674080, 
+    941677680, 941681280, 941684880, 941688480, 941692080, 941695680, 
+    941699280, 941702880, 941706480, 941710080, 941713680, 941717280, 
+    941720880, 941724480, 941728080, 941731680, 941735280, 941738880, 
+    941742480, 941746080, 941749680, 941753280, 941756880, 941760480, 
+    941764080, 941767680, 941771280, 941774880, 941778480, 941782080, 
+    941785680, 941789280, 941792880, 941796480, 941800080, 941803680, 
+    941810880, 941814480, 941818080, 941821680, 941825280, 941828880, 
+    941832480, 941836080, 941839680, 941843280, 941846880, 941850480, 
+    941854080, 941857680, 941861280, 941864880, 941868480, 941872080, 
+    941875680, 941879280, 941882880, 941886480, 941890080, 941893680, 
+    941897280, 941900880, 941904480, 941908080, 941911680, 941915280, 
+    941918880, 941922480, 941926080, 941929680, 941933280, 941936880, 
+    941940480, 941944080, 941947680, 941951280, 941954880, 941958480, 
+    941962080, 941965680, 941969280, 941972880, 941976480, 941980080, 
+    941983680, 941987280, 941990880, 941994480, 941998080, 942001680, 
+    942005280, 942008880, 942012480, 942016080, 942019680, 942023280, 
+    942026880, 942030480, 942034080, 942037680, 942041280, 942044880, 
+    942048480, 942052080, 942055680, 942059280, 942062880, 942066480, 
+    942070080, 942073680, 942077280, 942080880, 942084480, 942088080, 
+    942091680, 942095280, 942098880, 942102480, 942106080, 942109680, 
+    942113280, 942116880, 942120480, 942124080, 942127680, 942131280, 
+    942134880, 942138480, 942142080, 942145680, 942149280, 942152880, 
+    942156480, 942160080, 942163680, 942167280, 942170880, 942174480, 
+    942178080, 942181680, 942185280, 942188880, 942192480, 942196080, 
+    942199680, 942203280, 942206880, 942210480, 942214080, 942217680, 
+    942221280, 942224880, 942228480, 942232080, 942235680, 942239280, 
+    942242880, 942246480, 942250080, 942253680, 942257280, 942260880, 
+    942264480, 942268080, 942271680, 942275280, 942278880, 942282480, 
+    942286080, 942289680, 942293280, 942296880, 942300480, 942304080, 
+    942307680, 942311280, 942314880, 942318480, 942322080, 942325680, 
+    942329280, 942332880, 942336480, 942340080, 942343680, 942347280, 
+    942350880, 942354480, 942358080, 942361680, 942365280, 942368880, 
+    942372480, 942376080, 942379680, 942383280, 942386880, 942390480, 
+    942394080, 942397680, 942401280, 942404880, 942408480, 942412080, 
+    942415680, 942419280, 942422880, 942426480, 942430080, 942433680, 
+    942437280, 942440880, 942444480, 942448080, 942451680, 942455280, 
+    942458880, 942462480, 942466080, 942469680, 942473280, 942476880, 
+    942480480, 942484080, 942487680, 942491280, 942494880, 942498480, 
+    942502080, 942505680, 942509280, 942512880, 942516480, 942520080, 
+    942523680, 942527280, 942530880, 942534480, 942538080, 942541680, 
+    942545280, 942548880, 942552480, 942556080, 942559680, 942563280, 
+    942566880, 942570480, 942574080, 942577680, 942581280, 942584880, 
+    942588480, 942592080, 942595680, 942599280, 942602880, 942606480, 
+    942610080, 942613680, 942617280, 942620880, 942624480, 942628080, 
+    942631680, 942635280, 942638880, 942642480, 942646080, 942649680, 
+    942653280, 942656880, 942660480, 942664080, 942667680, 942671280, 
+    942674880, 942678480, 942682080, 942685680, 942689280, 942692880, 
+    942696480, 942700080, 942703680, 942707280, 942710880, 942714480, 
+    942718080, 942721680, 942725280, 942728880, 942732480, 942736080, 
+    942739680, 942743280, 942746880, 942750480, 942754080, 942757680, 
+    942761280, 942764880, 942768480, 942772080, 942775680, 942779280, 
+    942782880, 942786480, 942790080, 942793680, 942797280, 942800880, 
+    942804480, 942808080, 942811680, 942815280, 942818880, 942822480, 
+    942826080, 942829680, 942833280, 942836880, 942840480, 942844080, 
+    942847680, 942851280, 942854880, 942858480, 942862080, 942865680, 
+    942869280, 942872880, 942876480, 942880080, 942883680, 942887280, 
+    942890880, 942894480, 942898080, 942901680, 942905280, 942908880, 
+    942912480, 942916080, 942919680, 942923280, 942926880, 942930480, 
+    942934080, 942937680, 942941280, 942944880, 942948480, 942952080, 
+    942955680, 942959280, 942962880, 942966480, 942970080, 942973680, 
+    942977280, 942980880, 942984480, 942988080, 942991680, 942995280, 
+    942998880, 943002480, 943006080, 943009680, 943013280, 943016880, 
+    943020480, 943024080, 943027680, 943031280, 943034880, 943038480, 
+    943042080, 943045680, 943049280, 943052880, 943056480, 943060080, 
+    943063680, 943067280, 943070880, 943074480, 943078080, 943081680, 
+    943085280, 943088880, 943092480, 943096080, 943099680, 943103280, 
+    943106880, 943110480, 943114080, 943117680, 943121280, 943124880, 
+    943128480, 943132080, 943135680, 943139280, 943142880, 943146480, 
+    943150080, 943153680, 943157280, 943160880, 943164480, 943168080, 
+    943171680, 943175280, 943178880, 943182480, 943186080, 943189680, 
+    943193280, 943196880, 943200480, 943211280, 943214880, 943218480, 
+    943222080, 943225680, 943229280, 943232880, 943236480, 943240080, 
+    943243680, 943247280, 943250880, 943254480, 943258080, 943261680, 
+    943265280, 943268880, 943272480, 943276080, 943279680, 943283280, 
+    943286880, 943290480, 943294080, 943297680, 943301280, 943304880, 
+    943308480, 943312080, 943315680, 943319280, 943322880, 943326480, 
+    943330080, 943333680, 943337280, 943340880, 943344480, 943348080, 
+    943351680, 943355280, 943358880, 943362480, 943366080, 943369680, 
+    943373280, 943376880, 943380480, 943384080, 943387680, 943391280, 
+    943394880, 943398480, 943402080, 943405680, 943409280, 943412880, 
+    943416480, 943420080, 943423680, 943427280, 943430880, 943434480, 
+    943438080, 943441680, 943445280, 943448880, 943452480, 943456080, 
+    943459680, 943463280, 943466880, 943470480, 943474080, 943477680, 
+    943481280, 943484880, 943488480, 943492080, 943495680, 943499280, 
+    943502880, 943506480, 943510080, 943513680, 943517280, 943520880, 
+    943524480, 943528080, 943531680, 943535280, 943538880, 943542480, 
+    943546080, 943549680, 943553280, 943556880, 943560480, 943564080, 
+    943567680, 943571280, 943574880, 943578480, 943582080, 943585680, 
+    943589280, 943592880, 943596480, 943600080, 943603680, 943607280, 
+    943610880, 943614480, 943618080, 943621680, 943625280, 943628880, 
+    943632480, 943636080, 943639680, 943643280, 943646880, 943650480, 
+    943654080, 943657680, 943661280, 943664880, 943668480, 943672080, 
+    943675680, 943679280, 943682880, 943686480, 943690080, 943693680, 
+    943697280, 943700880, 943704480, 943708080, 943711680, 943715280, 
+    943718880, 943722480, 943726080, 943729680, 943733280, 943736880, 
+    943740480, 943744080, 943747680, 943751280, 943754880, 943758480, 
+    943762080, 943765680, 943769280, 943772880, 943776480, 943780080, 
+    943783680, 943787280, 943790880, 943794480, 943798080, 943801680, 
+    943805280, 943808880, 943812480, 943816080, 943819680, 943823280, 
+    943826880, 943830480, 943834080, 943837680, 943841280, 943844880, 
+    943848480, 943852080, 943855680, 943859280, 943862880, 943866480, 
+    943870080, 943873680, 943877280, 943880880, 943884480, 943888080, 
+    943891680, 943895280, 943898880, 943902480, 943906080, 943909680, 
+    943913280, 943916880, 943920480, 943924080, 943927680, 943931280, 
+    943934880, 943938480, 943942080, 943945680, 943949280, 943952880, 
+    943956480, 943960080, 943963680, 943967280, 943970880, 943974480, 
+    943978080, 943981680, 943985280, 943988880, 943992480, 943996080, 
+    943999680, 944003280, 944006880, 944010480, 944014080, 944017680, 
+    944021280, 944024880, 944028480, 944032080, 944035680, 944039280, 
+    944042880, 944046480, 944050080, 944053680, 944057280, 944060880, 
+    944064480, 944068080, 944071680, 944075280, 944078880, 944082480, 
+    944086080, 944089680, 944093280, 944096880, 944100480, 944104080, 
+    944107680, 944111280, 944114880, 944118480, 944122080, 944125680, 
+    944129280, 944132880, 944136480, 944140080, 944143680, 944147280, 
+    944150880, 944154480, 944158080, 944161680, 944165280, 944168880, 
+    944172480, 944176080, 944179680, 944183280, 944186880, 944190480, 
+    944194080, 944197680, 944201280, 944204880, 944208480, 944212080, 
+    944215680, 944219280, 944222880, 944226480, 944230080, 944233680, 
+    944237280, 944240880, 944244480, 944248080, 944251680, 944255280, 
+    944258880, 944262480, 944266080, 944269680, 944273280, 944276880, 
+    944280480, 944284080, 944287680, 944291280, 944294880, 944298480, 
+    944302080, 944305680, 944309280, 944312880, 944316480, 944320080, 
+    944323680, 944327280, 944330880, 944334480, 944338080, 944341680, 
+    944345280, 944348880, 944352480, 944356080, 944359680, 944363280, 
+    944366880, 944370480, 944374080, 944377680, 944381280, 944384880, 
+    944388480, 944392080, 944395680, 944399280, 944402880, 944406480, 
+    944410080, 944413680, 944417280, 944420880, 944424480, 944428080, 
+    944431680, 944435280, 944438880, 944442480, 944446080, 944449680, 
+    944453280, 944456880, 944460480, 944464080, 944467680, 944471280, 
+    944474880, 944478480, 944482080, 944485680, 944489280, 944492880, 
+    944496480, 944500080, 944503680, 944507280, 944510880, 944514480, 
+    944518080, 944521680, 944525280, 944528880, 944532480, 944536080, 
+    944539680, 944543280, 944546880, 944550480, 944554080, 944557680, 
+    944561280, 944564880, 944568480, 944572080, 944575680, 944579280, 
+    944582880, 944586480, 944590080, 944593680, 944597280, 944600880, 
+    944604480, 944608080, 944611680, 944615280, 944618880, 944622480, 
+    944626080, 944629680, 944633280, 944636880, 944640480, 944644080, 
+    944647680, 944651280, 944654880, 944658480, 944662080, 944665680, 
+    944669280, 944672880, 944676480, 944680080, 944683680, 944687280, 
+    944690880, 944694480, 944698080, 944701680, 944705280, 944708880, 
+    944712480, 944716080, 944719680, 944723280, 944726880, 944730480, 
+    944734080, 944737680, 944741280, 944744880, 944748480, 944752080, 
+    944755680, 944759280, 944762880, 944766480, 944770080, 944773680, 
+    944777280, 944780880, 944784480, 944788080, 944791680, 944795280, 
+    944798880, 944802480, 944806080, 944809680, 944813280, 944816880, 
+    944820480, 944824080, 944827680, 944831280, 944834880, 944838480, 
+    944842080, 944845680, 944849280, 944852880, 944856480, 944860080, 
+    944863680, 944867280, 944870880, 944874480, 944878080, 944881680, 
+    944885280, 944888880, 944892480, 944896080, 944899680, 944903280, 
+    944906880, 944910480, 944914080, 944917680, 944921280, 944924880, 
+    944928480, 944932080, 944935680, 944939280, 944942880, 944946480, 
+    944950080, 944953680, 944957280, 944960880, 944964480, 944968080, 
+    944971680, 944975280, 944978880, 944982480, 944986080, 944989680, 
+    944993280, 944996880, 945000480, 945004080, 945007680, 945011280, 
+    945014880, 945018480, 945022080, 945025680, 945029280, 945032880, 
+    945036480, 945040080, 945043680, 945047280, 945050880, 945054480, 
+    945058080, 945061680, 945065280, 945068880, 945072480, 945076080, 
+    945079680, 945083280, 945086880, 945090480, 945094080, 945097680, 
+    945101280, 945104880, 945108480, 945112080, 945115680, 945119280, 
+    945122880, 945126480, 945130080, 945133680, 945137280, 945140880, 
+    945144480, 945148080, 945151680, 945155280, 945158880, 945162480, 
+    945166080, 945169680, 945173280, 945176880, 945180480, 945184080, 
+    945187680, 945191280, 945194880, 945198480, 945202080, 945205680, 
+    945209280, 945212880, 945216480, 945220080, 945223680, 945227280, 
+    945230880, 945234480, 945238080, 945241680, 945245280, 945248880, 
+    945252480, 945256080, 945259680, 945263280, 945266880, 945270480, 
+    945274080, 945277680, 945281280, 945284880, 945288480, 945292080, 
+    945295680, 945299280, 945302880, 945306480, 945310080, 945313680, 
+    945317280, 945320880, 945324480, 945328080, 945331680, 945335280, 
+    945338880, 945342480, 945346080, 945349680, 945353280, 945356880, 
+    945360480, 945364080, 945367680, 945371280, 945374880, 945378480, 
+    945382080, 945385680, 945389280, 945392880, 945396480, 945400080, 
+    945403680, 945407280, 945410880, 945414480, 945418080, 945421680, 
+    945425280, 945428880, 945432480, 945436080, 945439680, 945443280, 
+    945446880, 945450480, 945454080, 945457680, 945461280, 945464880, 
+    945468480, 945472080, 945475680, 945479280, 945482880, 945486480, 
+    945490080, 945493680, 945497280, 945500880, 945504480, 945508080, 
+    945511680, 945515280, 945518880, 945522480, 945526080, 945529680, 
+    945533280, 945536880, 945540480, 945544080, 945547680, 945551280, 
+    945554880, 945558480, 945562080, 945565680, 945569280, 945572880, 
+    945576480, 945580080, 945583680, 945587280, 945590880, 945594480, 
+    945598080, 945601680, 945605280, 945608880, 945612480, 945616080, 
+    945619680, 945623280, 945626880, 945630480, 945634080, 945637680, 
+    945641280, 945644880, 945648480, 945652080, 945655680, 945659280, 
+    945662880, 945666480, 945670080, 945673680, 945677280, 945680880, 
+    945684480, 945688080, 945691680, 945695280, 945698880, 945702480, 
+    945706080, 945709680, 945713280, 945716880, 945720480, 945724080, 
+    945727680, 945731280, 945734880, 945738480, 945742080, 945745680, 
+    945749280, 945752880, 945756480, 945760080, 945763680, 945767280, 
+    945770880, 945774480, 945778080, 945781680, 945785280, 945788880, 
+    945792480, 945796080, 945799680, 945803280, 945806880, 945810480, 
+    945814080, 945817680, 945821280, 945824880, 945828480, 945832080, 
+    945835680, 945839280, 945842880, 945846480, 945850080, 945853680, 
+    945857280, 945860880, 945864480, 945868080, 945871680, 945875280, 
+    945878880, 945882480, 945886080, 945889680, 945893280, 945896880, 
+    945900480, 945904080, 945907680, 945911280, 945914880, 945918480, 
+    945922080, 945925680, 945929280, 945932880, 945936480, 945940080, 
+    945943680, 945947280, 945950880, 945954480, 945958080, 945961680, 
+    945965280, 945968880, 945972480, 945976080, 945979680, 945983280, 
+    945986880, 945990480, 945994080, 945997680, 946001280, 946004880, 
+    946008480, 946012080, 946015680, 946019280, 946022880, 946026480, 
+    946030080, 946033680, 946037280, 946040880, 946044480, 946048080, 
+    946051680, 946055280, 946058880, 946062480, 946066080, 946069680, 
+    946073280, 946076880, 946080480, 946084080, 946087680, 946091280, 
+    946094880, 946098480, 946102080, 946105680, 946109280, 946112880, 
+    946116480, 946120080, 946123680, 946127280, 946130880, 946134480, 
+    946138080, 946141680, 946145280, 946148880, 946152480, 946156080, 
+    946159680, 946163280, 946166880, 946170480, 946174080, 946177680, 
+    946181280, 946184880, 946188480, 946192080, 946195680, 946199280, 
+    946202880, 946206480, 946210080, 946213680, 946217280, 946220880, 
+    946224480, 946228080, 946231680, 946235280, 946238880, 946242480, 
+    946246080, 946249680, 946253280, 946256880, 946260480, 946264080, 
+    946267680, 946271280, 946274880, 946278480, 946282080, 946285680, 
+    946289280, 946292880, 946296480, 946300080, 946303680, 946307280, 
+    946310880, 946314480, 946318080, 946321680, 946325280, 946328880, 
+    946332480, 946336080, 946339680, 946343280, 946346880, 946350480, 
+    946354080, 946357680, 946361280, 946364880, 946368480, 946372080, 
+    946375680, 946379280, 946382880, 946386480, 946390080, 946393680, 
+    946397280, 946400880, 946404480, 946408080, 946411680, 946415280, 
+    946418880, 946422480, 946426080, 946429680, 946433280, 946436880, 
+    946440480, 946444080, 946447680, 946451280, 946454880, 946458480, 
+    946462080, 946465680, 946469280, 946472880, 946476480, 946480080, 
+    946483680, 946487280, 946490880, 946494480, 946498080, 946501680, 
+    946505280, 946508880, 946512480, 946516080, 946519680, 946523280, 
+    946526880, 946530480, 946534080, 946537680, 946541280, 946544880, 
+    946548480, 946552080, 946555680, 946559280, 946562880, 946566480, 
+    946570080, 946573680, 946577280, 946580880, 946584480, 946588080, 
+    946591680, 946595280, 946598880, 946602480, 946606080, 946609680, 
+    946613280, 946616880, 946620480, 946624080, 946627680, 946631280, 
+    946634880, 946638480, 946642080, 946645680, 946649280, 946652880, 
+    946656480, 946660080, 946663680, 946667280, 946670880, 946674480, 
+    946678080, 946681680, 946685280, 946688880, 946692480, 946696080, 
+    946699680, 946703280, 946706880, 946710480, 946714080, 946717680, 
+    946721280, 946724880, 946728480, 946732080, 946735680, 946739280, 
+    946742880, 946746480, 946750080, 946753680, 946757280, 946760880, 
+    946764480, 946768080, 946771680, 946775280, 946778880, 946782480, 
+    946786080, 946789680, 946793280, 946796880, 946800480, 946804080, 
+    946807680, 946811280, 946814880, 946818480, 946822080, 946825680, 
+    946829280, 946832880, 946836480, 946840080, 946843680, 946847280, 
+    946850880, 946854480, 946858080, 946861680, 946865280, 946868880, 
+    946872480, 946876080, 946879680, 946883280, 946886880, 946890480, 
+    946894080, 946897680, 946901280, 946904880, 946908480, 946912080, 
+    946915680, 946919280, 946922880, 946926480, 946930080, 946933680, 
+    946937280, 946940880, 946944480, 946948080, 946951680, 946955280, 
+    946958880, 946962480, 946966080, 946969680, 946973280, 946976880, 
+    946980480, 946984080, 946987680, 946991280, 946994880, 946998480, 
+    947002080, 947005680, 947009280, 947012880, 947016480, 947020080, 
+    947023680, 947027280, 947030880, 947034480, 947038080, 947041680, 
+    947045280, 947048880, 947052480, 947056080, 947059680, 947063280, 
+    947066880, 947070480, 947074080, 947077680, 947081280, 947084880, 
+    947088480, 947092080, 947095680, 947099280, 947102880, 947106480, 
+    947110080, 947113680, 947117280, 947120880, 947124480, 947128080, 
+    947131680, 947135280, 947138880, 947142480, 947146080, 947149680, 
+    947153280, 947156880, 947160480, 947164080, 947167680, 947171280, 
+    947174880, 947178480, 947182080, 947185680, 947189280, 947192880, 
+    947196480, 947200080, 947203680, 947207280, 947210880, 947214480, 
+    947218080, 947221680, 947225280, 947228880, 947232480, 947236080, 
+    947239680, 947243280, 947246880, 947250480, 947254080, 947257680, 
+    947261280, 947264880, 947268480, 947272080, 947275680, 947279280, 
+    947282880, 947286480, 947290080, 947293680, 947297280, 947300880, 
+    947304480, 947308080, 947311680, 947315280, 947318880, 947322480, 
+    947326080, 947329680, 947333280, 947336880, 947340480, 947344080, 
+    947347680, 947351280, 947354880, 947358480, 947362080, 947365680, 
+    947369280, 947372880, 947376480, 947380080, 947383680, 947387280, 
+    947390880, 947394480, 947398080, 947401680, 947405280, 947408880, 
+    947412480, 947416080, 947419680, 947423280, 947426880, 947430480, 
+    947434080, 947437680, 947441280, 947444880, 947448480, 947452080, 
+    947455680, 947459280, 947462880, 947466480, 947470080, 947473680, 
+    947477280, 947480880, 947484480, 947488080, 947491680, 947495280, 
+    947498880, 947502480, 947506080, 947509680, 947513280, 947516880, 
+    947520480, 947524080, 947527680, 947531280, 947534880, 947538480, 
+    947542080, 947545680, 947549280, 947552880, 947556480, 947560080, 
+    947563680, 947567280, 947570880, 947574480, 947578080, 947581680, 
+    947585280, 947588880, 947592480, 947596080, 947599680, 947603280, 
+    947606880, 947610480, 947614080, 947617680, 947621280, 947624880, 
+    947628480, 947632080, 947635680, 947639280, 947642880, 947646480, 
+    947650080, 947653680, 947657280, 947660880, 947664480, 947668080, 
+    947671680, 947675280, 947678880, 947682480, 947686080, 947689680, 
+    947693280, 947696880, 947700480, 947704080, 947707680, 947711280, 
+    947714880, 947718480, 947722080, 947725680, 947729280, 947732880, 
+    947736480, 947740080, 947743680, 947747280, 947750880, 947754480, 
+    947758080, 947761680, 947765280, 947768880, 947772480, 947776080, 
+    947779680, 947783280, 947786880, 947790480, 947794080, 947797680, 
+    947801280, 947804880, 947808480, 947812080, 947815680, 947819280, 
+    947822880, 947826480, 947830080, 947833680, 947837280, 947840880, 
+    947844480, 947848080, 947851680, 947855280, 947858880, 947862480, 
+    947866080, 947869680, 947873280, 947876880, 947880480, 947884080, 
+    947887680, 947891280, 947894880, 947898480, 947902080, 947905680, 
+    947909280, 947912880, 947916480, 947920080, 947923680, 947927280, 
+    947930880, 947934480, 947938080, 947941680, 947945280, 947948880, 
+    947952480, 947956080, 947959680, 947963280, 947966880, 947970480, 
+    947974080, 947977680, 947981280, 947984880, 947988480, 947992080, 
+    947995680, 947999280, 948002880, 948006480, 948010080, 948013680, 
+    948017280, 948020880, 948024480, 948028080, 948031680, 948035280, 
+    948038880, 948042480, 948046080, 948049680, 948053280, 948056880, 
+    948060480, 948064080, 948067680, 948071280, 948074880, 948078480, 
+    948082080, 948085680, 948089280, 948092880, 948096480, 948100080, 
+    948103680, 948107280, 948110880, 948114480, 948118080, 948121680, 
+    948125280, 948128880, 948132480, 948136080, 948139680, 948143280, 
+    948146880, 948150480, 948154080, 948157680, 948161280, 948164880, 
+    948168480, 948172080, 948175680, 948179280, 948182880, 948186480, 
+    948190080, 948193680, 948197280, 948200880, 948204480, 948208080, 
+    948211680, 948215280, 948218880, 948222480, 948226080, 948229680, 
+    948233280, 948236880, 948240480, 948244080, 948247680, 948251280, 
+    948254880, 948258480, 948262080, 948265680, 948269280, 948272880, 
+    948276480, 948280080, 948283680, 948287280, 948290880, 948294480, 
+    948298080, 948301680, 948305280, 948308880, 948312480, 948316080, 
+    948319680, 948323280, 948326880, 948330480, 948334080, 948337680, 
+    948341280, 948344880, 948348480, 948352080, 948355680, 948359280, 
+    948362880, 948366480, 948370080, 948373680, 948377280, 948380880, 
+    948384480, 948388080, 948391680, 948395280, 948398880, 948402480, 
+    948406080, 948409680, 948413280, 948416880, 948420480, 948424080, 
+    948427680, 948431280, 948434880, 948438480, 948442080, 948445680, 
+    948449280, 948452880, 948456480, 948460080, 948463680, 948467280, 
+    948470880, 948474480, 948478080, 948481680, 948485280, 948488880, 
+    948492480, 948496080, 948499680, 948503280, 948506880, 948510480, 
+    948514080, 948517680, 948521280, 948524880, 948528480, 948532080, 
+    948535680, 948539280, 948542880, 948546480, 948550080, 948553680, 
+    948557280, 948560880, 948564480, 948568080, 948571680, 948575280, 
+    948578880, 948582480, 948586080, 948589680, 948593280, 948596880, 
+    948600480, 948604080, 948607680, 948611280, 948614880, 948618480, 
+    948622080, 948625680, 948629280, 948632880, 948636480, 948640080, 
+    948643680, 948647280, 948650880, 948654480, 948658080, 948661680, 
+    948665280, 948668880, 948672480, 948676080, 948679680, 948683280, 
+    948686880, 948690480, 948694080, 948697680, 948701280, 948704880, 
+    948708480, 948712080, 948715680, 948719280, 948722880, 948726480, 
+    948730080, 948733680, 948737280, 948740880, 948744480, 948748080, 
+    948751680, 948755280, 948758880, 948762480, 948766080, 948769680, 
+    948773280, 948776880, 948780480, 948784080, 948787680, 948791280, 
+    948794880, 948798480, 948802080, 948805680, 948809280, 948812880, 
+    948816480, 948820080, 948823680, 948827280, 948830880, 948834480, 
+    948838080, 948841680, 948845280, 948848880, 948852480, 948856080, 
+    948859680, 948863280, 948866880, 948870480, 948874080, 948877680, 
+    948881280, 948884880, 948888480, 948892080, 948895680, 948899280, 
+    948902880, 948906480, 948910080, 948913680, 948917280, 948920880, 
+    948924480, 948928080, 948931680, 948935280, 948938880, 948942480, 
+    948946080, 948949680, 948953280, 948956880, 948960480, 948964080, 
+    948967680, 948971280, 948974880, 948978480, 948982080, 948985680, 
+    948989280, 948992880, 948996480, 949000080, 949003680, 949007280, 
+    949010880, 949014480, 949018080, 949021680, 949025280, 949028880, 
+    949032480, 949036080, 949039680, 949043280, 949046880, 949050480, 
+    949054080, 949057680, 949061280, 949064880, 949068480, 949072080, 
+    949075680, 949079280, 949082880, 949086480, 949090080, 949093680, 
+    949097280, 949100880, 949104480, 949108080, 949111680, 949115280, 
+    949118880, 949122480, 949126080, 949129680, 949133280, 949136880, 
+    949140480, 949144080, 949147680, 949151280, 949154880, 949158480, 
+    949162080, 949165680, 949169280, 949172880, 949176480, 949180080, 
+    949183680, 949187280, 949190880, 949194480, 949198080, 949201680, 
+    949205280, 949208880, 949212480, 949216080, 949219680, 949223280, 
+    949226880, 949230480, 949234080, 949237680, 949241280, 949244880, 
+    949248480, 949252080, 949255680, 949259280, 949262880, 949266480, 
+    949270080, 949273680, 949277280, 949280880, 949284480, 949288080, 
+    949291680, 949295280, 949298880, 949302480, 949306080, 949309680, 
+    949313280, 949316880, 949320480, 949324080, 949327680, 949331280, 
+    949334880, 949338480, 949342080, 949345680, 949349280, 949352880, 
+    949356480, 949360080, 949363680, 949367280, 949370880, 949374480, 
+    949378080, 949381680, 949385280, 949388880, 949392480, 949396080, 
+    949399680, 949403280, 949406880, 949410480, 949414080, 949417680, 
+    949421280, 949424880, 949428480, 949432080, 949435680, 949439280, 
+    949442880, 949446480, 949450080, 949453680, 949457280, 949460880, 
+    949464480, 949468080, 949471680, 949475280, 949478880, 949482480, 
+    949486080, 949489680, 949493280, 949496880, 949500480, 949504080, 
+    949507680, 949511280, 949514880, 949518480, 949522080, 949525680, 
+    949529280, 949532880, 949536480, 949540080, 949543680, 949547280, 
+    949550880, 949554480, 949558080, 949561680, 949565280, 949568880, 
+    949572480, 949576080, 949579680, 949583280, 949586880, 949590480, 
+    949594080, 949597680, 949601280, 949604880, 949608480, 949612080, 
+    949615680, 949619280, 949622880, 949626480, 949630080, 949633680, 
+    949637280, 949640880, 949644480, 949648080, 949651680, 949655280, 
+    949658880, 949662480, 949666080, 949669680, 949673280, 949676880, 
+    949680480, 949684080, 949687680, 949691280, 949694880, 949698480, 
+    949702080, 949705680, 949709280, 949712880, 949716480, 949720080, 
+    949723680, 949727280, 949730880, 949734480, 949738080, 949741680, 
+    949745280, 949748880, 949752480, 949756080, 949759680, 949763280, 
+    949766880, 949770480, 949774080, 949777680, 949781280, 949784880, 
+    949788480, 949792080, 949795680, 949799280, 949802880, 949806480, 
+    949810080, 949813680, 949817280, 949820880, 949824480, 949828080, 
+    949831680, 949835280, 949838880, 949842480, 949846080, 949849680, 
+    949853280, 949856880, 949860480, 949864080, 949867680, 949871280, 
+    949874880, 949878480, 949882080, 949885680, 949889280, 949892880, 
+    949896480, 949900080, 949903680, 949907280, 949910880, 949914480, 
+    949918080, 949921680, 949925280, 949928880, 949932480, 949936080, 
+    949939680, 949943280, 949946880, 949950480, 949954080, 949957680, 
+    949961280, 949964880, 949968480, 949972080, 949975680, 949979280, 
+    949982880, 949986480, 949990080, 949993680, 949997280, 950000880, 
+    950004480, 950008080, 950011680, 950015280, 950018880, 950022480, 
+    950026080, 950029680, 950033280, 950036880, 950040480, 950044080, 
+    950047680, 950051280, 950054880, 950058480, 950062080, 950065680, 
+    950069280, 950072880, 950076480, 950080080, 950083680, 950087280, 
+    950090880, 950094480, 950098080, 950101680, 950105280, 950108880, 
+    950112480, 950116080, 950119680, 950123280, 950126880, 950130480, 
+    950134080, 950137680, 950141280, 950144880, 950148480, 950152080, 
+    950155680, 950159280, 950162880, 950166480, 950170080, 950173680, 
+    950177280, 950180880, 950184480, 950188080, 950191680, 950195280, 
+    950198880, 950202480, 950206080, 950209680, 950213280, 950216880, 
+    950220480, 950224080, 950227680, 950231280, 950234880, 950238480, 
+    950242080, 950245680, 950249280, 950252880, 950256480, 950260080, 
+    950263680, 950267280, 950270880, 950274480, 950278080, 950281680, 
+    950285280, 950288880, 950292480, 950296080, 950299680, 950303280, 
+    950306880, 950310480, 950314080, 950317680, 950321280, 950324880, 
+    950328480, 950332080, 950335680, 950339280, 950342880, 950346480, 
+    950350080, 950353680, 950357280, 950360880, 950364480, 950368080, 
+    950371680, 950375280, 950378880, 950382480, 950386080, 950389680, 
+    950393280, 950396880, 950400480, 950404080, 950407680, 950411280, 
+    950414880, 950418480, 950422080, 950425680, 950429280, 950432880, 
+    950436480, 950440080, 950443680, 950447280, 950450880, 950454480, 
+    950458080, 950461680, 950465280, 950468880, 950472480, 950476080, 
+    950479680, 950483280, 950486880, 950490480, 950494080, 950497680, 
+    950501280, 950504880, 950508480, 950512080, 950515680, 950519280, 
+    950522880, 950526480, 950530080, 950533680, 950537280, 950540880, 
+    950544480, 950548080, 950551680, 950555280, 950558880, 950562480, 
+    950566080, 950569680, 950573280, 950576880, 950580480, 950584080, 
+    950587680, 950591280, 950594880, 950598480, 950602080, 950605680, 
+    950609280, 950612880, 950616480, 950620080, 950623680, 950627280, 
+    950630880, 950634480, 950638080, 950641680, 950645280, 950648880, 
+    950652480, 950656080, 950659680, 950663280, 950666880, 950670480, 
+    950674080, 950677680, 950681280, 950684880, 950688480, 950692080, 
+    950695680, 950699280, 950702880, 950706480, 950710080, 950713680, 
+    950717280, 950720880, 950724480, 950728080, 950731680, 950735280, 
+    950738880, 950742480, 950746080, 950749680, 950753280, 950756880, 
+    950760480, 950764080, 950767680, 950771280, 950774880, 950778480, 
+    950782080, 950785680, 950789280, 950792880, 950796480, 950800080, 
+    950803680, 950807280, 950810880, 950814480, 950818080, 950821680, 
+    950825280, 950828880, 950832480, 950836080, 950839680, 950843280, 
+    950846880, 950850480, 950854080, 950857680, 950861280, 950864880, 
+    950868480, 950872080, 950875680, 950879280, 950882880, 950886480, 
+    950890080, 950893680, 950897280, 950900880, 950904480, 950908080, 
+    950911680, 950915280, 950918880, 950922480, 950926080, 950929680, 
+    950933280, 950936880, 950940480, 950944080, 950947680, 950951280, 
+    950954880, 950958480, 950962080, 950965680, 950969280, 950972880, 
+    950976480, 950980080, 950983680, 950987280, 950990880, 950994480, 
+    950998080, 951001680, 951005280, 951008880, 951012480, 951016080, 
+    951019680, 951023280, 951026880, 951030480, 951034080, 951037680, 
+    951041280, 951044880, 951048480, 951052080, 951055680, 951059280, 
+    951062880, 951066480, 951070080, 951073680, 951077280, 951080880, 
+    951084480, 951088080, 951091680, 951095280, 951098880, 951102480, 
+    951106080, 951109680, 951113280, 951116880, 951120480, 951124080, 
+    951127680, 951131280, 951134880, 951138480, 951142080, 951145680, 
+    951149280, 951152880, 951156480, 951160080, 951163680, 951167280, 
+    951170880, 951174480, 951178080, 951181680, 951185280, 951188880, 
+    951192480, 951196080, 951199680, 951203280, 951206880, 951210480, 
+    951214080, 951217680, 951221280, 951224880, 951228480, 951232080, 
+    951235680, 951239280, 951242880, 951246480, 951250080, 951253680, 
+    951257280, 951260880, 951264480, 951268080, 951271680, 951275280, 
+    951278880, 951282480, 951286080, 951289680, 951293280, 951296880, 
+    951300480, 951304080, 951307680, 951311280, 951314880, 951318480, 
+    951322080, 951325680, 951329280, 951332880, 951336480, 951340080, 
+    951343680, 951347280, 951350880, 951354480, 951358080, 951361680, 
+    951365280, 951368880, 951372480, 951376080, 951379680, 951383280, 
+    951386880, 951390480, 951394080, 951397680, 951401280, 951404880, 
+    951408480, 951412080, 951415680, 951419280, 951422880, 951426480, 
+    951430080, 951433680, 951437280, 951440880, 951444480, 951448080, 
+    951451680, 951455280, 951458880, 951462480, 951466080, 951469680, 
+    951473280, 951476880, 951480480, 951484080, 951487680, 951491280, 
+    951494880, 951498480, 951502080, 951505680, 951509280, 951512880, 
+    951516480, 951520080, 951523680, 951527280, 951530880, 951534480, 
+    951538080, 951541680, 951545280, 951548880, 951552480, 951556080, 
+    951559680, 951563280, 951566880, 951570480, 951574080, 951577680, 
+    951581280, 951584880, 951588480, 951592080, 951595680, 951599280, 
+    951602880, 951606480, 951610080, 951613680, 951617280, 951620880, 
+    951624480, 951628080, 951631680, 951635280, 951638880, 951642480, 
+    951646080, 951649680, 951653280, 951656880, 951660480, 951664080, 
+    951667680, 951671280, 951674880, 951678480, 951682080, 951685680, 
+    951689280, 951692880, 951696480, 951700080, 951703680, 951707280, 
+    951710880, 951714480, 951718080, 951721680, 951725280, 951728880, 
+    951732480, 951736080, 951739680, 951743280, 951746880, 951750480, 
+    951754080, 951757680, 951761280, 951764880, 951768480, 951772080, 
+    951775680, 951779280, 951782880, 951786480, 951790080, 951793680, 
+    951797280, 951800880, 951804480, 951808080, 951811680, 951815280, 
+    951818880, 951822480, 951826080, 951829680, 951833280, 951836880, 
+    951840480, 951844080, 951847680, 951851280, 951854880, 951858480, 
+    951862080, 951865680, 951869280, 951872880, 951876480, 951880080, 
+    951883680, 951887280, 951890880, 951894480, 951898080, 951901680, 
+    951905280, 951908880, 951912480, 951916080, 951919680, 951923280, 
+    951926880, 951930480, 951934080, 951937680, 951941280, 951944880, 
+    951948480, 951952080, 951955680, 951959280, 951962880, 951966480, 
+    951970080, 951973680, 951977280, 951980880, 951984480, 951988080, 
+    951991680, 951995280, 951998880, 952002480, 952006080, 952009680, 
+    952013280, 952016880, 952020480, 952024080, 952027680, 952031280, 
+    952034880, 952038480, 952042080, 952045680, 952049280, 952052880, 
+    952056480, 952060080, 952063680, 952067280, 952070880, 952074480, 
+    952078080, 952081680, 952085280, 952088880, 952092480, 952096080, 
+    952099680, 952103280, 952106880, 952110480, 952114080, 952117680, 
+    952121280, 952124880, 952128480, 952132080, 952135680, 952139280, 
+    952142880, 952146480, 952150080, 952153680, 952157280, 952160880, 
+    952164480, 952168080, 952171680, 952175280, 952178880, 952182480, 
+    952186080, 952189680, 952193280, 952196880, 952200480, 952204080, 
+    952207680, 952211280, 952214880, 952218480, 952222080, 952225680, 
+    952229280, 952232880, 952236480, 952240080, 952243680, 952247280, 
+    952250880, 952254480, 952258080, 952261680, 952265280, 952268880, 
+    952272480, 952276080, 952279680, 952283280, 952286880, 952290480, 
+    952294080, 952297680, 952301280, 952304880, 952308480, 952312080, 
+    952315680, 952319280, 952322880, 952326480, 952330080, 952333680, 
+    952337280, 952340880, 952344480, 952348080, 952351680, 952355280, 
+    952358880, 952362480, 952366080, 952369680, 952373280, 952376880, 
+    952380480, 952384080, 952387680, 952391280, 952394880, 952398480, 
+    952402080, 952405680, 952409280, 952412880, 952416480, 952420080, 
+    952423680, 952427280, 952430880, 952434480, 952438080, 952441680, 
+    952445280, 952448880, 952452480, 952456080, 952459680, 952463280, 
+    952466880, 952470480, 952474080, 952477680, 952481280, 952484880, 
+    952488480, 952492080, 952495680, 952499280, 952506480, 952510080, 
+    952513680, 952517280, 952520880, 952524480, 952528080, 952531680, 
+    952535280, 952538880, 952542480, 952546080, 952549680, 952553280, 
+    952556880, 952560480, 952564080, 952567680, 952571280, 952574880, 
+    952578480, 952582080, 952585680, 952589280, 952592880, 952596480, 
+    952600080, 952603680, 952607280, 952610880, 952614480, 952618080, 
+    952621680, 952625280, 952628880, 952632480, 952636080, 952639680, 
+    952643280, 952646880, 952650480, 952654080, 952657680, 952661280, 
+    952664880, 952668480, 952672080, 952675680, 952679280, 952682880, 
+    952686480, 952690080, 952693680, 952697280, 952700880, 952704480, 
+    952708080, 952711680, 952715280, 952718880, 952722480, 952726080, 
+    952729680, 952733280, 952736880, 952740480, 952744080, 952747680, 
+    952754880, 952758480, 952762080, 952765680, 952769280, 952772880, 
+    952776480, 952780080, 952783680, 952787280, 952790880, 952794480, 
+    952798080, 952801680, 952805280, 952808880, 952812480, 952816080, 
+    952819680, 952823280, 952826880, 952830480, 952834080, 952837680, 
+    952841280, 952844880, 952848480, 952852080, 952855680, 952859280, 
+    952862880, 952866480, 952870080, 952873680, 952877280, 952880880, 
+    952884480, 952888080, 952891680, 952895280, 952898880, 952902480, 
+    952906080, 952909680, 952913280, 952916880, 952920480, 952924080, 
+    952927680, 952931280, 952934880, 952938480, 952942080, 952945680, 
+    952949280, 952952880, 952956480, 952960080, 952963680, 952967280, 
+    952970880, 952974480, 952978080, 952981680, 952985280, 952988880, 
+    952992480, 952996080, 952999680, 953003280, 953006880, 953010480, 
+    953014080, 953017680, 953021280, 953024880, 953028480, 953032080, 
+    953035680, 953039280, 953042880, 953046480, 953050080, 953053680, 
+    953057280, 953060880, 953064480, 953068080, 953071680, 953075280, 
+    953078880, 953082480, 953086080, 953089680, 953093280, 953096880, 
+    953100480, 953104080, 953107680, 953111280, 953114880, 953118480, 
+    953122080, 953125680, 953129280, 953132880, 953136480, 953140080, 
+    953143680, 953147280, 953150880, 953154480, 953158080, 953161680, 
+    953165280, 953168880, 953172480, 953176080, 953179680, 953183280, 
+    953186880, 953190480, 953194080, 953197680, 953201280, 953204880, 
+    953208480, 953212080, 953215680, 953219280, 953222880, 953226480, 
+    953230080, 953233680, 953237280, 953240880, 953244480, 953248080, 
+    953251680, 953255280, 953258880, 953262480, 953266080, 953269680, 
+    953273280, 953276880, 953280480, 953284080, 953287680, 953291280, 
+    953294880, 953298480, 953302080, 953305680, 953309280, 953312880, 
+    953316480, 953320080, 953323680, 953327280, 953330880, 953334480, 
+    953338080, 953341680, 953345280, 953348880, 953352480, 953356080, 
+    953359680, 953363280, 953366880, 953370480, 953374080, 953377680, 
+    953381280, 953384880, 953388480, 953392080, 953395680, 953399280, 
+    953402880, 953406480, 953410080, 953413680, 953417280, 953420880, 
+    953424480, 953428080, 953431680, 953435280, 953438880, 953442480, 
+    953446080, 953449680, 953453280, 953456880, 953460480, 953464080, 
+    953467680, 953471280, 953474880, 953478480, 953482080, 953485680, 
+    953489280, 953492880, 953496480, 953500080, 953503680, 953507280, 
+    953510880, 953514480, 953518080, 953521680, 953525280, 953528880, 
+    953532480, 953536080, 953539680, 953543280, 953546880, 953550480, 
+    953554080, 953557680, 953561280, 953564880, 953568480, 953572080, 
+    953575680, 953579280, 953582880, 953586480, 953590080, 953593680, 
+    953597280, 953600880, 953604480, 953608080, 953611680, 953615280, 
+    953618880, 953622480, 953626080, 953629680, 953633280, 953636880, 
+    953640480, 953644080, 953647680, 953651280, 953654880, 953658480, 
+    953662080, 953665680, 953669280, 953672880, 953676480, 953680080, 
+    953683680, 953687280, 953690880, 953694480, 953698080, 953701680, 
+    953705280, 953708880, 953712480, 953716080, 953719680, 953723280, 
+    953726880, 953730480, 953734080, 953737680, 953741280, 953744880, 
+    953748480, 953752080, 953755680, 953759280, 953762880, 953766480, 
+    953770080, 953773680, 953777280, 953780880, 953784480, 953788080, 
+    953791680, 953795280, 953798880, 953802480, 953806080, 953809680, 
+    953813280, 953816880, 953820480, 953824080, 953827680, 953831280, 
+    953834880, 953838480, 953842080, 953845680, 953849280, 953852880, 
+    953856480, 953860080, 953863680, 953867280, 953870880, 953874480, 
+    953878080, 953881680, 953885280, 953888880, 953892480, 953896080, 
+    953899680, 953903280, 953906880, 953910480, 953914080, 953917680, 
+    953921280, 953924880, 953928480, 953932080, 953935680, 953939280, 
+    953942880, 953946480, 953950080, 953953680, 953957280, 953960880, 
+    953964480, 953968080, 953971680, 953975280, 953978880, 953982480, 
+    953986080, 953989680, 953993280, 953996880, 954000480, 954004080, 
+    954007680, 954011280, 954014880, 954018480, 954022080, 954025680, 
+    954029280, 954032880, 954036480, 954040080, 954043680, 954047280, 
+    954050880, 954054480, 954058080, 954061680, 954065280, 954068880, 
+    954072480, 954076080, 954079680, 954083280, 954086880, 954090480, 
+    954094080, 954097680, 954101280, 954104880, 954108480, 954112080, 
+    954115680, 954119280, 954122880, 954126480, 954130080, 954133680, 
+    954137280, 954140880, 954144480, 954148080, 954151680, 954155280, 
+    954158880, 954162480, 954166080, 954169680, 954173280, 954176880, 
+    954180480, 954184080, 954187680, 954191280, 954194880, 954198480, 
+    954202080, 954205680, 954209280, 954212880, 954216480, 954220080, 
+    954223680, 954227280, 954230880, 954234480, 954238080, 954241680, 
+    954245280, 954248880, 954252480, 954256080, 954259680, 954263280, 
+    954266880, 954270480, 954274080, 954277680, 954281280, 954284880, 
+    954288480, 954292080, 954295680, 954299280, 954302880, 954306480, 
+    954310080, 954313680, 954317280, 954320880, 954324480, 954328080, 
+    954331680, 954335280, 954338880, 954342480, 954346080, 954349680, 
+    954353280, 954356880, 954360480, 954364080, 954367680, 954371280, 
+    954374880, 954378480, 954382080, 954385680, 954389280, 954392880, 
+    954396480, 954400080, 954403680, 954407280, 954410880, 954414480, 
+    954418080, 954421680, 954425280, 954428880 ;
+}
