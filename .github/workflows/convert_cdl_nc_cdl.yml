@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   run:
@@ -24,3 +25,27 @@ jobs:
       shell: bash -l {0}
       run: |
         python convert_nc_cdl.py
+
+    - name: Get current date
+      run: echo "NOW=$(date -u)" >> ${GITHUB_ENV}
+
+    - name: Create Pull Request
+      if: github.ref == 'refs/heads/main'
+      id: cpr
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Latest data: ${{ env.NOW }}"
+        branch: update-gold-standard-files
+        delete-branch: true
+        title: "[file-conversion-ci] update gold standard file"
+        body: |
+          Update gold-standard files.
+        labels: |
+          Bot
+
+    - name: Check outputs
+      if: ${{ steps.cpr.outputs.pull-request-number }}
+      run: |
+        echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+        echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
