@@ -1,0 +1,352 @@
+netcdf usf_comps_c10_inwater {
+dimensions:
+	time = 145 ;
+	z = 24 ;
+variables:
+	string station ;
+		station:cf_role = "timeseries_id" ;
+		station:long_name = "42013 - C10 Currents - WFS Central Buoy" ;
+		station:_Encoding = "ISO-8859-1" ;
+		station:ioos_category = "Identifier" ;
+		station:ioos_code = "urn:ioos:station:com.axiomdatascience:100702" ;
+		station:short_name = "42013-c10-currents-wfs-centra" ;
+		station:type = "buoy" ;
+		station:_Storage = "contiguous" ;
+	double latitude ;
+		latitude:axis = "Y" ;
+		latitude:_CoordinateAxisType = "Lat" ;
+		latitude:actual_range = 27.173, 27.173 ;
+		latitude:ioos_category = "Location" ;
+		latitude:long_name = "Latitude" ;
+		latitude:standard_name = "latitude" ;
+		latitude:units = "degrees_north" ;
+		latitude:_Storage = "contiguous" ;
+		latitude:_Endianness = "little" ;
+	double longitude ;
+		longitude:axis = "X" ;
+		longitude:_CoordinateAxisType = "Lon" ;
+		longitude:actual_range = -82.924, -82.924 ;
+		longitude:ioos_category = "Location" ;
+		longitude:long_name = "Longitude" ;
+		longitude:standard_name = "longitude" ;
+		longitude:units = "degrees_east" ;
+		longitude:_Storage = "contiguous" ;
+		longitude:_Endianness = "little" ;
+	int crs ;
+		crs:_Storage = "contiguous" ;
+		crs:_Endianness = "little" ;
+	double time(time) ;
+		time:units = "seconds since 1970-01-01T00:00:00Z" ;
+		time:standard_name = "time" ;
+		time:axis = "T" ;
+		time:_CoordinateAxisType = "Time" ;
+		time:actual_range = 1519862400., 1520380800. ;
+		time:calendar = "gregorian" ;
+		time:cf_role = "profile_id" ;
+		time:ioos_category = "Time" ;
+		time:long_name = "Time" ;
+		time:time_origin = "01-JAN-1970 00:00:00" ;
+		time:_Storage = "contiguous" ;
+		time:_Endianness = "little" ;
+	double z(z) ;
+		z:axis = "Z" ;
+		z:_CoordinateAxisType = "Height" ;
+		z:_CoordinateZisPositive = "up" ;
+		z:actual_range = -22., -3. ;
+		z:ioos_category = "Location" ;
+		z:long_name = "Altitude" ;
+		z:positive = "up" ;
+		z:standard_name = "altitude" ;
+		z:units = "m" ;
+		z:_Storage = "contiguous" ;
+		z:_Endianness = "little" ;
+	double sea_water_velocity_to_direction(time, z) ;
+		sea_water_velocity_to_direction:_FillValue = -9999.9 ;
+		sea_water_velocity_to_direction:_ChunkSizes = 51050, 8 ;
+		sea_water_velocity_to_direction:actual_range = 180.0429, 359.97455 ;
+		sea_water_velocity_to_direction:ancillary_variables = "sea_water_velocity_to_direction_qc_agg sea_water_velocity_to_direction_qc_tests" ;
+		sea_water_velocity_to_direction:id = "1001923" ;
+		sea_water_velocity_to_direction:ioos_category = "Other" ;
+		sea_water_velocity_to_direction:long_name = "Current To Direction" ;
+		sea_water_velocity_to_direction:platform = "station" ;
+		sea_water_velocity_to_direction:standard_name = "sea_water_velocity_to_direction" ;
+		sea_water_velocity_to_direction:standard_name_url = "http://mmisw.org/ont/cf/parameter/sea_water_velocity_to_direction" ;
+		sea_water_velocity_to_direction:units = "degrees" ;
+		sea_water_velocity_to_direction:coordinates = "time z longitude latitude" ;
+		sea_water_velocity_to_direction:_Storage = "chunked" ;
+		sea_water_velocity_to_direction:_ChunkSizes = 145, 24 ;
+		sea_water_velocity_to_direction:_Shuffle = "true" ;
+		sea_water_velocity_to_direction:_DeflateLevel = 1 ;
+		sea_water_velocity_to_direction:_Endianness = "little" ;
+	int sea_water_velocity_to_direction_qc_agg(time, z) ;
+		sea_water_velocity_to_direction_qc_agg:_FillValue = -9999 ;
+		sea_water_velocity_to_direction_qc_agg:_ChunkSizes = 153150, 24 ;
+		sea_water_velocity_to_direction_qc_agg:_Unsigned = "true" ;
+		sea_water_velocity_to_direction_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		sea_water_velocity_to_direction_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		sea_water_velocity_to_direction_qc_agg:ioos_category = "Other" ;
+		sea_water_velocity_to_direction_qc_agg:long_name = "Current To Direction QARTOD Aggregate Quality Flag" ;
+		sea_water_velocity_to_direction_qc_agg:standard_name = "aggregate_quality_flag" ;
+		sea_water_velocity_to_direction_qc_agg:coordinates = "time z longitude latitude" ;
+		sea_water_velocity_to_direction_qc_agg:_Storage = "chunked" ;
+		sea_water_velocity_to_direction_qc_agg:_ChunkSizes = 145, 24 ;
+		sea_water_velocity_to_direction_qc_agg:_Shuffle = "true" ;
+		sea_water_velocity_to_direction_qc_agg:_DeflateLevel = 1 ;
+		sea_water_velocity_to_direction_qc_agg:_Endianness = "little" ;
+	double sea_water_velocity_to_direction_qc_tests(time, z) ;
+		sea_water_velocity_to_direction_qc_tests:_FillValue = -9999.9 ;
+		sea_water_velocity_to_direction_qc_tests:_ChunkSizes = 51050, 8 ;
+		sea_water_velocity_to_direction_qc_tests:_Unsigned = "true" ;
+		sea_water_velocity_to_direction_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		sea_water_velocity_to_direction_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		sea_water_velocity_to_direction_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		sea_water_velocity_to_direction_qc_tests:ioos_category = "Other" ;
+		sea_water_velocity_to_direction_qc_tests:long_name = "Current To Direction QARTOD Individual Tests" ;
+		sea_water_velocity_to_direction_qc_tests:standard_name = "sea_water_velocity_to_direction quality_flag" ;
+		sea_water_velocity_to_direction_qc_tests:coordinates = "time z longitude latitude" ;
+		sea_water_velocity_to_direction_qc_tests:_Storage = "chunked" ;
+		sea_water_velocity_to_direction_qc_tests:_ChunkSizes = 145, 24 ;
+		sea_water_velocity_to_direction_qc_tests:_Shuffle = "true" ;
+		sea_water_velocity_to_direction_qc_tests:_DeflateLevel = 1 ;
+		sea_water_velocity_to_direction_qc_tests:_Endianness = "little" ;
+	double sea_water_speed(time, z) ;
+		sea_water_speed:_FillValue = -9999.9 ;
+		sea_water_speed:_ChunkSizes = 51050, 8 ;
+		sea_water_speed:actual_range = 0.002668, 0.291263 ;
+		sea_water_speed:ancillary_variables = "sea_water_speed_qc_agg sea_water_speed_qc_tests" ;
+		sea_water_speed:id = "1001924" ;
+		sea_water_speed:ioos_category = "Other" ;
+		sea_water_speed:long_name = "Current Speed" ;
+		sea_water_speed:platform = "station" ;
+		sea_water_speed:standard_name = "sea_water_speed" ;
+		sea_water_speed:standard_name_url = "http://mmisw.org/ont/cf/parameter/sea_water_speed" ;
+		sea_water_speed:units = "m.s-1" ;
+		sea_water_speed:coordinates = "time z longitude latitude" ;
+		sea_water_speed:_Storage = "chunked" ;
+		sea_water_speed:_ChunkSizes = 145, 24 ;
+		sea_water_speed:_Shuffle = "true" ;
+		sea_water_speed:_DeflateLevel = 1 ;
+		sea_water_speed:_Endianness = "little" ;
+	int sea_water_speed_qc_agg(time, z) ;
+		sea_water_speed_qc_agg:_FillValue = -9999 ;
+		sea_water_speed_qc_agg:_ChunkSizes = 153150, 24 ;
+		sea_water_speed_qc_agg:_Unsigned = "true" ;
+		sea_water_speed_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		sea_water_speed_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		sea_water_speed_qc_agg:ioos_category = "Other" ;
+		sea_water_speed_qc_agg:long_name = "Current Speed QARTOD Aggregate Quality Flag" ;
+		sea_water_speed_qc_agg:standard_name = "aggregate_quality_flag" ;
+		sea_water_speed_qc_agg:coordinates = "time z longitude latitude" ;
+		sea_water_speed_qc_agg:_Storage = "chunked" ;
+		sea_water_speed_qc_agg:_ChunkSizes = 145, 24 ;
+		sea_water_speed_qc_agg:_Shuffle = "true" ;
+		sea_water_speed_qc_agg:_DeflateLevel = 1 ;
+		sea_water_speed_qc_agg:_Endianness = "little" ;
+	double sea_water_speed_qc_tests(time, z) ;
+		sea_water_speed_qc_tests:_FillValue = -9999.9 ;
+		sea_water_speed_qc_tests:_ChunkSizes = 51050, 8 ;
+		sea_water_speed_qc_tests:_Unsigned = "true" ;
+		sea_water_speed_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		sea_water_speed_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		sea_water_speed_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		sea_water_speed_qc_tests:ioos_category = "Other" ;
+		sea_water_speed_qc_tests:long_name = "Current Speed QARTOD Individual Tests" ;
+		sea_water_speed_qc_tests:standard_name = "sea_water_speed quality_flag" ;
+		sea_water_speed_qc_tests:coordinates = "time z longitude latitude" ;
+		sea_water_speed_qc_tests:_Storage = "chunked" ;
+		sea_water_speed_qc_tests:_ChunkSizes = 145, 24 ;
+		sea_water_speed_qc_tests:_Shuffle = "true" ;
+		sea_water_speed_qc_tests:_DeflateLevel = 1 ;
+		sea_water_speed_qc_tests:_Endianness = "little" ;
+	double eastward_sea_water_velocity(time, z) ;
+		eastward_sea_water_velocity:_FillValue = -9999.9 ;
+		eastward_sea_water_velocity:_ChunkSizes = 51050, 8 ;
+		eastward_sea_water_velocity:actual_range = -0.194, 0.2574 ;
+		eastward_sea_water_velocity:ancillary_variables = "eastward_sea_water_velocity_qc_agg eastward_sea_water_velocity_qc_tests" ;
+		eastward_sea_water_velocity:id = "1001921" ;
+		eastward_sea_water_velocity:ioos_category = "Other" ;
+		eastward_sea_water_velocity:long_name = "Eastward Sea Water Velocity" ;
+		eastward_sea_water_velocity:platform = "station" ;
+		eastward_sea_water_velocity:standard_name = "eastward_sea_water_velocity" ;
+		eastward_sea_water_velocity:standard_name_url = "http://mmisw.org/ont/cf/parameter/eastward_sea_water_velocity" ;
+		eastward_sea_water_velocity:units = "m.s-1" ;
+		eastward_sea_water_velocity:coordinates = "time z longitude latitude" ;
+		eastward_sea_water_velocity:_Storage = "chunked" ;
+		eastward_sea_water_velocity:_ChunkSizes = 145, 24 ;
+		eastward_sea_water_velocity:_Shuffle = "true" ;
+		eastward_sea_water_velocity:_DeflateLevel = 1 ;
+		eastward_sea_water_velocity:_Endianness = "little" ;
+	int eastward_sea_water_velocity_qc_agg(time, z) ;
+		eastward_sea_water_velocity_qc_agg:_FillValue = -9999 ;
+		eastward_sea_water_velocity_qc_agg:_ChunkSizes = 153150, 24 ;
+		eastward_sea_water_velocity_qc_agg:_Unsigned = "true" ;
+		eastward_sea_water_velocity_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		eastward_sea_water_velocity_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		eastward_sea_water_velocity_qc_agg:ioos_category = "Other" ;
+		eastward_sea_water_velocity_qc_agg:long_name = "Eastward Sea Water Velocity QARTOD Aggregate Quality Flag" ;
+		eastward_sea_water_velocity_qc_agg:standard_name = "aggregate_quality_flag" ;
+		eastward_sea_water_velocity_qc_agg:coordinates = "time z longitude latitude" ;
+		eastward_sea_water_velocity_qc_agg:_Storage = "chunked" ;
+		eastward_sea_water_velocity_qc_agg:_ChunkSizes = 145, 24 ;
+		eastward_sea_water_velocity_qc_agg:_Shuffle = "true" ;
+		eastward_sea_water_velocity_qc_agg:_DeflateLevel = 1 ;
+		eastward_sea_water_velocity_qc_agg:_Endianness = "little" ;
+	double eastward_sea_water_velocity_qc_tests(time, z) ;
+		eastward_sea_water_velocity_qc_tests:_FillValue = -9999.9 ;
+		eastward_sea_water_velocity_qc_tests:_ChunkSizes = 51050, 8 ;
+		eastward_sea_water_velocity_qc_tests:_Unsigned = "true" ;
+		eastward_sea_water_velocity_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		eastward_sea_water_velocity_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		eastward_sea_water_velocity_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		eastward_sea_water_velocity_qc_tests:ioos_category = "Other" ;
+		eastward_sea_water_velocity_qc_tests:long_name = "Eastward Sea Water Velocity QARTOD Individual Tests" ;
+		eastward_sea_water_velocity_qc_tests:standard_name = "eastward_sea_water_velocity quality_flag" ;
+		eastward_sea_water_velocity_qc_tests:coordinates = "time z longitude latitude" ;
+		eastward_sea_water_velocity_qc_tests:_Storage = "chunked" ;
+		eastward_sea_water_velocity_qc_tests:_ChunkSizes = 145, 24 ;
+		eastward_sea_water_velocity_qc_tests:_Shuffle = "true" ;
+		eastward_sea_water_velocity_qc_tests:_DeflateLevel = 1 ;
+		eastward_sea_water_velocity_qc_tests:_Endianness = "little" ;
+	double northward_sea_water_velocity(time, z) ;
+		northward_sea_water_velocity:_FillValue = -9999.9 ;
+		northward_sea_water_velocity:_ChunkSizes = 51050, 8 ;
+		northward_sea_water_velocity:actual_range = -0.2895, 0.1591 ;
+		northward_sea_water_velocity:ancillary_variables = "northward_sea_water_velocity_qc_agg northward_sea_water_velocity_qc_tests" ;
+		northward_sea_water_velocity:id = "1001922" ;
+		northward_sea_water_velocity:ioos_category = "Other" ;
+		northward_sea_water_velocity:long_name = "Northward Sea Water Velocity" ;
+		northward_sea_water_velocity:platform = "station" ;
+		northward_sea_water_velocity:standard_name = "northward_sea_water_velocity" ;
+		northward_sea_water_velocity:standard_name_url = "http://mmisw.org/ont/cf/parameter/northward_sea_water_velocity" ;
+		northward_sea_water_velocity:units = "m.s-1" ;
+		northward_sea_water_velocity:coordinates = "time z longitude latitude" ;
+		northward_sea_water_velocity:_Storage = "chunked" ;
+		northward_sea_water_velocity:_ChunkSizes = 145, 24 ;
+		northward_sea_water_velocity:_Shuffle = "true" ;
+		northward_sea_water_velocity:_DeflateLevel = 1 ;
+		northward_sea_water_velocity:_Endianness = "little" ;
+	int northward_sea_water_velocity_qc_agg(time, z) ;
+		northward_sea_water_velocity_qc_agg:_FillValue = -9999 ;
+		northward_sea_water_velocity_qc_agg:_ChunkSizes = 153150, 24 ;
+		northward_sea_water_velocity_qc_agg:_Unsigned = "true" ;
+		northward_sea_water_velocity_qc_agg:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		northward_sea_water_velocity_qc_agg:flag_values = 1, 2, 3, 4, 9 ;
+		northward_sea_water_velocity_qc_agg:ioos_category = "Other" ;
+		northward_sea_water_velocity_qc_agg:long_name = "Northward Sea Water Velocity QARTOD Aggregate Quality Flag" ;
+		northward_sea_water_velocity_qc_agg:standard_name = "aggregate_quality_flag" ;
+		northward_sea_water_velocity_qc_agg:coordinates = "time z longitude latitude" ;
+		northward_sea_water_velocity_qc_agg:_Storage = "chunked" ;
+		northward_sea_water_velocity_qc_agg:_ChunkSizes = 145, 24 ;
+		northward_sea_water_velocity_qc_agg:_Shuffle = "true" ;
+		northward_sea_water_velocity_qc_agg:_DeflateLevel = 1 ;
+		northward_sea_water_velocity_qc_agg:_Endianness = "little" ;
+	double northward_sea_water_velocity_qc_tests(time, z) ;
+		northward_sea_water_velocity_qc_tests:_FillValue = -9999.9 ;
+		northward_sea_water_velocity_qc_tests:_ChunkSizes = 51050, 8 ;
+		northward_sea_water_velocity_qc_tests:_Unsigned = "true" ;
+		northward_sea_water_velocity_qc_tests:comment = "11-character string with results of individual QARTOD tests. 1: Gap Test, 2: Syntax Test, 3: Location Test, 4: Gross Range Test, 5: Climatology Test, 6: Spike Test, 7: Rate of Change Test, 8: Flat-line Test, 9: Multi-variate Test, 10: Attenuated Signal Test, 11: Neighbor Test" ;
+		northward_sea_water_velocity_qc_tests:flag_meanings = "PASS NOT_EVALUATED SUSPECT FAIL MISSING" ;
+		northward_sea_water_velocity_qc_tests:flag_values = 1, 2, 3, 4, 9 ;
+		northward_sea_water_velocity_qc_tests:ioos_category = "Other" ;
+		northward_sea_water_velocity_qc_tests:long_name = "Northward Sea Water Velocity QARTOD Individual Tests" ;
+		northward_sea_water_velocity_qc_tests:standard_name = "northward_sea_water_velocity quality_flag" ;
+		northward_sea_water_velocity_qc_tests:coordinates = "time z longitude latitude" ;
+		northward_sea_water_velocity_qc_tests:_Storage = "chunked" ;
+		northward_sea_water_velocity_qc_tests:_ChunkSizes = 145, 24 ;
+		northward_sea_water_velocity_qc_tests:_Shuffle = "true" ;
+		northward_sea_water_velocity_qc_tests:_DeflateLevel = 1 ;
+		northward_sea_water_velocity_qc_tests:_Endianness = "little" ;
+
+// global attributes:
+		:Conventions = "IOOS-1.2, CF-1.6, ACDD-1.3" ;
+		:date_created = "2020-04-22T22:51:00Z" ;
+		:featureType = "TimeSeriesProfile" ;
+		:cdm_data_type = "TimeSeriesProfile" ;
+		:cdm_altitude_proxy = "z" ;
+		:cdm_profile_variables = "time" ;
+		:cdm_timeseries_variables = "station,longitude,latitude" ;
+		:contributor_email = ",None,feedback@axiomdatascience.com" ;
+		:contributor_name = "World Meteorological Organization (WMO),Southeast Coastal Ocean Observing Regional Association (SECOORA),Axiom Data Science" ;
+		:contributor_role = "contributor,funder,processor" ;
+		:contributor_role_vocabulary = "NERC" ;
+		:contributor_url = "https://www.wmo.int/pages/prog/amp/mmop/wmo-number-rules.html,https://secoora.org/,https://www.axiomdatascience.com" ;
+		:creator_country = "USA" ;
+		:creator_email = "cmerz@usf.edu" ;
+		:creator_institution = "USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)" ;
+		:creator_name = "USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)" ;
+		:creator_sector = "academic" ;
+		:creator_type = "institution" ;
+		:creator_url = "http://comps.marine.usf.edu/" ;
+		:Easternmost_Easting = -82.924 ;
+		:geospatial_lat_max = 27.173 ;
+		:geospatial_lat_min = 27.173 ;
+		:geospatial_lat_units = "degrees_north" ;
+		:geospatial_lon_max = -82.924 ;
+		:geospatial_lon_min = -82.924 ;
+		:geospatial_lon_units = "degrees_east" ;
+		:geospatial_vertical_positive = "up" ;
+		:geospatial_vertical_units = "m" ;
+		:history = "Downloaded from USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS) at http://comps.marine.usf.edu:82/data.php?format=json&platform=c10_inwater\n2020-04-22T22:51:03Z http://comps.marine.usf.edu:82/data.php?format=json&platform=c10_inwater\n2020-04-22T22:51:03Z http://erddap.stage.sensors.axds.co/erddap/tabledap/42013-c10-currents-wfs-centra.nc?&time%3E=2018-03-01T00:00:00Z&time%3C=2018-03-07T00:00:00Z" ;
+		:infoUrl = "https://sensors.ioos.us/#metadata/100702/station" ;
+		:institution = "USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)" ;
+		:license = "The data may be used and redistributed for free but is not intended\nfor legal use, since it may contain inaccuracies. Neither the data\nContributor, ERD, NOAA, nor the United States Government, nor any\nof their employees or contractors, makes any warranty, express or\nimplied, including warranties of merchantability and fitness for a\nparticular purpose, or assumes any legal liability for the accuracy,\ncompleteness, or usefulness, of this information." ;
+		:Northernmost_Northing = 27.173 ;
+		:platform_name = "42013 - C10 Currents - WFS Central Buoy" ;
+		:platform_vocabulary = "http://mmisw.org/ont/ioos/platform" ;
+		:processing_level = "Level 2" ;
+		:publisher_country = "USA" ;
+		:publisher_email = "cmerz@usf.edu" ;
+		:publisher_institution = "USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)" ;
+		:publisher_name = "USF CMS - Coastal Ocean Monitoring and Prediction System (COMPS)" ;
+		:publisher_sector = "academic" ;
+		:publisher_type = "institution" ;
+		:publisher_url = "http://comps.marine.usf.edu/" ;
+		:references = "http://comps.marine.usf.edu/index?view=station&id=C10_INWATER,http://comps.marine.usf.edu:82/data.php?format=json&platform=c10_inwater," ;
+		:sourceUrl = "http://comps.marine.usf.edu:82/data.php?format=json&platform=c10_inwater" ;
+		:Southernmost_Northing = 27.173 ;
+		:standard_name_vocabulary = "CF Standard Name Table v72" ;
+		:station_id = 100702. ;
+		:summary = "Timeseries data from \'42013 - C10 Currents - WFS Central Buoy\' (42013-c10-currents-wfs-centra)" ;
+		:time_coverage_end = "2018-03-07T00:00:00Z" ;
+		:time_coverage_start = "2018-03-01T00:00:00Z" ;
+		:title = "42013 - C10 Currents - WFS Central Buoy" ;
+		:Westernmost_Easting = -82.924 ;
+		:wmo_platform_code = "42013" ;
+		:id = "c10_inwater" ;
+		:naming_authority = "usf.comps" ;
+		:platform = "42013" ;
+		:_NCProperties = "version=2,netcdf=4.7.1,hdf5=1.10.5" ;
+		:_SuperblockVersion = 0 ;
+		:_IsNetcdf4 = 1 ;
+		:_Format = "netCDF-4" ;
+data:
+
+ time = 888710400, 888714000, 888717600, 888721200, 888724800, 888728400, 
+    888732000, 888735600, 888739200, 888742800, 888746400, 888750000, 
+    888753600, 888757200, 888760800, 888764400, 888768000, 888771600, 
+    888775200, 888778800, 888782400, 888786000, 888789600, 888793200, 
+    888796800, 888800400, 888804000, 888807600, 888811200, 888814800, 
+    888818400, 888822000, 888825600, 888829200, 888832800, 888836400, 
+    888840000, 888843600, 888847200, 888850800, 888854400, 888858000, 
+    888861600, 888865200, 888868800, 888872400, 888876000, 888879600, 
+    888883200, 888886800, 888890400, 888894000, 888897600, 888901200, 
+    888904800, 888908400, 888912000, 888915600, 888919200, 888922800, 
+    888926400, 888930000, 888933600, 888937200, 888940800, 888944400, 
+    888948000, 888951600, 888955200, 888958800, 888962400, 888966000, 
+    888969600, 888973200, 888976800, 888980400, 888984000, 888987600, 
+    888991200, 888994800, 888998400, 889002000, 889005600, 889009200, 
+    889012800, 889016400, 889020000, 889023600, 889027200, 889030800, 
+    889034400, 889038000, 889041600, 889045200, 889048800, 889052400, 
+    889056000, 889059600, 889063200, 889066800, 889070400, 889074000, 
+    889077600, 889081200, 889084800, 889088400, 889092000, 889095600, 
+    889099200, 889102800, 889106400, 889110000, 889113600, 889117200, 
+    889120800, 889124400, 889128000, 889131600, 889135200, 889138800, 
+    889142400, 889146000, 889149600, 889153200, 889156800, 889160400, 
+    889164000, 889167600, 889171200, 889174800, 889178400, 889182000, 
+    889185600, 889189200, 889192800, 889196400, 889200000, 889203600, 
+    889207200, 889210800, 889214400, 889218000, 889221600, 889225200, 
+    889228800 ;
+
+ z = -22, -21, -20.4, -20, -19, -18, -17, -16, -15, -14.4, -14, -13, -12, 
+    -11, -10, -9, -8.4, -8, -7, -6, -5, -4, -3.4, -3 ;
+}
