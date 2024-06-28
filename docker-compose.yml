@@ -18,7 +18,7 @@ services:
       ERDDAP_baseHttpsUrl: https://localhost:8080
       ERDDAP_flagKeyKey: change-this-value!!
       ERDDAP_emailEverythingT: this+goes+nowhere@doesnotexist.ioos.us
-      ERDDAP_emailDailyReportsTo:
+      ERDDAP_emailDailyReportTo:
       ERDDAP_emailFromAddress:
       ERDDAP_emailUserName:
       ERDDAP_emailPassword:
