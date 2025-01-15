@@ -5,6 +5,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
+      - /erddap/conf/config.sh:/usr/local/tomcat/bin/config.sh
       - ./erddap/conf/robots.txt:/usr/local/tomcat/webapps/ROOT/robots.txt
       - ./erddap/content:/usr/local/tomcat/content/erddap
       - ./erddap/data:/erddapData
