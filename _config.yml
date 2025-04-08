@@ -48,7 +48,7 @@ feedback_email: data.ioos@noaa.gov
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+feedback_link: "https://github.com/ioos/erddap-gold-standard/issues"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
