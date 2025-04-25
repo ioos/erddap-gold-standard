@@ -1,38 +1,40 @@
 services:
   erddap:
-    image: axiom/docker-erddap:2.23-jdk17-openjdk
+    image: axiom/docker-erddap:2.25-1-jdk21-openjdk
     restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "${ERDDAP_HTTP_PORT:-8080}:8080"
     volumes:
       - ./erddap/conf/robots.txt:/usr/local/tomcat/webapps/ROOT/robots.txt
       - ./erddap/content:/usr/local/tomcat/content/erddap
       - ./erddap/data:/erddapData
       - ./datasets:/datasets
+      #to set environment variables using config.sh instead of the docker compose environment,
+      #uncomment the following line
+      #- ./erddap/conf/config.sh:/usr/local/tomcat/bin/config.sh
     environment:
-      #note: these can also be set in /usr/local/tomcat/bin/config.sh
-      ERDDAP_MIN_MEMORY: 1G
-      ERDDAP_MAX_MEMORY: 2G
+      # note: these can also be set in /usr/local/tomcat/bin/config.sh (see above comment)
+      ERDDAP_MEMORY: "${ERDDAP_MEMORY:-2G}"
       ERDDAP_bigParentDirectory: /erddapData/
-      ERDDAP_baseUrl: http://localhost:8080
-      ERDDAP_baseHttpsUrl: https://localhost:8080
-      ERDDAP_flagKeyKey: change-this-value!!
-      ERDDAP_emailEverythingTo: this+goes+nowhere@doesnotexist.ioos.us
-      ERDDAP_emailDailyReportTo:
-      ERDDAP_emailFromAddress:
-      ERDDAP_emailUserName:
-      ERDDAP_emailPassword:
-      ERDDAP_emailProperties:
-      ERDDAP_emailSmtpHost:
-      ERDDAP_emailSmtpPort:
-      ERDDAP_adminInstitution: Integrated Ocean Observing System (IOOS)
-      ERDDAP_adminInstitutionUrl: https://ioos.github.io/
-      ERDDAP_adminIndividualName: IOOS Data Manager
-      ERDDAP_adminPosition: Data Manager
-      ERDDAP_adminPhone: "240-533-9444"
-      ERDDAP_adminAddress: "1315 East-West Highway 2nd Floor"
-      ERDDAP_adminCity: Silver Spring
-      ERDDAP_adminStateOrProvince: MD
-      ERDDAP_adminPostalCode: "20910"
-      ERDDAP_adminCountry: USA
-      ERDDAP_adminEmail: data.ioos@noaa.gov
+      ERDDAP_baseUrl: "${ERDDAP_baseUrl:-http://localhost:8080}"
+      ERDDAP_baseHttpsUrl: "${ERDDAP_baseHttpsUrl:-https://localhost:8080}"
+      ERDDAP_flagKeyKey: "${ERDDAP_flagKeyKey:-change-this-value!!}"
+      ERDDAP_emailEverythingTo: "${ERDDAP_emailEverythingTo:-this+goes+nowhere@doesnotexist.ioos.us}"
+      ERDDAP_emailDailyReportTo: "${ERDDAP_emailDailyReportTo:-}"
+      ERDDAP_emailFromAddress: "${ERDDAP_emailFromAddress:-}"
+      ERDDAP_emailUserName: "${ERDDAP_emailUserName:-}"
+      ERDDAP_emailPassword: "${ERDDAP_emailPassword:-}"
+      ERDDAP_emailProperties: "${ERDDAP_emailProperties:-}"
+      ERDDAP_emailSmtpHost: "${ERDDAP_emailSmtpHost:-}"
+      ERDDAP_emailSmtpPort: "${ERDDAP_emailSmtpPort:-}"
+      ERDDAP_adminInstitution: "${ERDDAP_adminInstitution:-Integrated Ocean Observing System (IOOS)}"
+      ERDDAP_adminInstitutionUrl: "${ERDDAP_adminInstitutionUrl:-https://ioos.github.io/}"
+      ERDDAP_adminIndividualName: "${ERDDAP_adminIndividualName:-IOOS Data Manager}"
+      ERDDAP_adminPosition: "${ERDDAP_adminPosition:-Data Manager}"
+      ERDDAP_adminPhone: "${ERDDAP_adminPhone:-240-533-9444}"
+      ERDDAP_adminAddress: "${ERDDAP_adminAddress:-1315 East-West Highway 2nd Floor}"
+      ERDDAP_adminCity: "${ERDDAP_adminCity:-Silver Spring}"
+      ERDDAP_adminStateOrProvince: "${ERDDAP_adminStateOrProvince:-MD}"
+      ERDDAP_adminPostalCode: "${ERDDAP_adminPostalCode:-20910}"
+      ERDDAP_adminCountry: "${ERDDAP_adminCountry:-USA}"
+      ERDDAP_adminEmail: "${ERDDAP_adminEmail:-data.ioos@noaa.gov}"
