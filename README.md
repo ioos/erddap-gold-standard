@@ -4,7 +4,7 @@
 
 Example datasets and configuration for ERDDAP.
 
-Uses the [ERDDAP Docker image](https://github.com/axiom-data-science/docker-erddap).
+Uses the official [ERDDAP Docker image](https://hub.docker.com/r/erddap/erddap).
 
 You can view this setup live at <https://standards.sensors.ioos.us/erddap/index.html>.
 
@@ -22,13 +22,13 @@ The `ERDDAP_baseUrl` and `ERDDAP_baseHttpsUrl` settings are still used when ERDD
 generates URLs outside the context of an HTTP request (for example, in emailed
 reports or background tasks).
 
-This repository's Docker compose file is configured to work on localhost by
+This repository's Docker compose file (`compose.yaml`) is configured to work on localhost by
 default. To make ERDDAP reachable from a public IP address or domain name,
 follow these simple steps:
 
 - Set the host and ports used to build ERDDAP's public URLs. You can do this
-  by creating a `.env` file in the same directory as `docker-compose.yml` or
-  by exporting the variables in your shell before running `docker-compose up`.
+  by creating a `.env` file in the same directory as `compose.yaml` or
+  by exporting the variables in your shell before running `docker compose up`.
 
 Example .env (replace with your public domain or IP):
 
