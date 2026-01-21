@@ -17,11 +17,8 @@ services:
       # Host and port used to construct public URLs. These can be set in an
       # environment file (.env) or exported in your shell before running
       # docker-compose. Sensible defaults keep localhost behavior unchanged.
-      ERDDAP_HOST: ${ERDDAP_HOST:-localhost}
-      HOST_HTTP_PORT: ${HOST_HTTP_PORT:-8080}
-      HOST_HTTPS_PORT: ${HOST_HTTPS_PORT:-8080}
-      ERDDAP_baseUrl: http://${ERDDAP_HOST}:${HOST_HTTP_PORT}
-      ERDDAP_baseHttpsUrl: https://${ERDDAP_HOST}:${HOST_HTTPS_PORT}
+      ERDDAP_baseUrl: ${ERDDAP_baseUrl:-http://localhost:8080}
+      ERDDAP_baseHttpsUrl: ${ERDDAP_baseHttpsUrl}
       ERDDAP_flagKeyKey: change-this-value!!
       ERDDAP_emailEverythingTo: this+goes+nowhere@doesnotexist.ioos.us
       ERDDAP_emailDailyReportTo:
