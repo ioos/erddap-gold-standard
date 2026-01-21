@@ -40,7 +40,9 @@ follow these simple steps:
   ERDDAP_baseHttpsUrl environment variables inside the container. Sensible
   defaults keep localhost behavior working without any changes.
 
-- Make sure DNS for your domain points to the machine running the container.
+- Make sure DNS for your domain resolves to a publicly accessible IP address
+  that routes requests to the machine running the container (for example,
+  via firewall NAT directly to ERDDAP or through a reverse proxy).
   If the machine is behind a router, configure port forwarding for the ports
   you chose (for example, 80/443 or a custom port) to the host running the
   container.
