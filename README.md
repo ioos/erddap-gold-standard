@@ -46,12 +46,16 @@ follow these simple steps:
   If the machine is behind a router, configure port forwarding for the ports
   you chose (for example, 80/443 or a custom port) to the host running the
   container.
-
 - Use HTTPS in production. Obtain and install a TLS certificate (for example,
-  via Let's Encrypt) for your domain. You can terminate TLS at a reverse
-  proxy (nginx, Traefik, Caddy) in front of the ERDDAP container, or configure
-  a proxy service to forward HTTPS to the container's HTTP port. ERDDAP itself
-  should be left unchanged.
+  via Let's Encrypt) for your domain. Typical deployment scenarios include:
+  - Terminating TLS at a reverse proxy (nginx, Traefik, Caddy) and proxying
+    requests to ERDDAP’s HTTP port
+  - Directly routing traffic to ERDDAP’s HTTP/HTTPS ports, typically via
+    firewall NAT
+  - Forwarding requests to ERDDAP at the web server, using HTTPS→HTTPS or
+    HTTP→HTTP (or redirecting HTTP to HTTPS)
+
+  ERDDAP itself should be left unchanged.
 
 For more detailed ERDDAP deployment guidance (security, reverse proxies,
 certificates and recommended production practices), see the upstream ERDDAP
