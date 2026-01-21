@@ -3,7 +3,8 @@ services:
     image: axiom/docker-erddap:2.23-jdk17-openjdk
     restart: unless-stopped
     ports:
-      - "${HOST_HTTP_PORT:-8080}:8080"
+      - "${ERDDAP_HTTP_PORT:-8080}:8080"
+      - "${ERDDAP_HTTPS_PORT:-8443}:8443"
     volumes:
       - ./erddap/conf/robots.txt:/usr/local/tomcat/webapps/ROOT/robots.txt
       - ./erddap/content:/usr/local/tomcat/content/erddap
