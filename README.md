@@ -53,4 +53,4 @@ follow these simple steps:
 
 For more detailed ERDDAP deployment guidance (security, reverse proxies,
 certificates and recommended production practices), see the upstream ERDDAP
-documentation: https://coastwatch.pfeg.noaa.gov/erddap/
+documentation: https://erddap.github.io/
