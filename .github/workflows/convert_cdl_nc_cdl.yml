@@ -1,5 +1,8 @@
 name: Check NC <->C DL
 
+# no permissions by default
+permissions: {}
+
 on:
   pull_request:
   push:
@@ -9,12 +12,17 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98 # v6.0.2
+      with:
+        fetch-depth: 0
+        persist-credentials: false
 
     - name: Setup Micromamba Python
-      uses: mamba-org/setup-micromamba@v2
+      uses: mamba-org/setup-micromamba@7f29b8b80078b1b601dfa018b0f7425c587c63bb  # v2.0.6
       with:
         environment-name: GHA
         init-shell: bash
@@ -32,7 +40,7 @@ jobs:
     - name: Create Pull Request
       if: github.ref == 'refs/heads/main'
       id: cpr
-      uses: peter-evans/create-pull-request@v8
+      uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0  # v8.1.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: "Latest data: ${{ env.NOW }}"
@@ -48,4 +56,3 @@ jobs:
       if: ${{ steps.cpr.outputs.pull-request-number }}
       run: |
         echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-        echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
