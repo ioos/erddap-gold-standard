@@ -30,11 +30,10 @@ follow these simple steps:
   by creating a `.env` file in the same directory as `docker-compose.yml` or
   by exporting the variables in your shell before running `docker-compose up`.
 
-  Example `.env` (replace with your public domain or IP):
+Example .env (replace with your public domain or IP):
 
-  ERDDAP_HOST=example.org
-  HOST_HTTP_PORT=8080
-  HOST_HTTPS_PORT=443
+ERDDAP_baseUrl=http://example.org:8080
+ERDDAP_baseHttpsUrl=https://example.org:8443
 
   The compose file uses these values to set the ERDDAP_baseUrl and
   ERDDAP_baseHttpsUrl environment variables inside the container. Sensible
