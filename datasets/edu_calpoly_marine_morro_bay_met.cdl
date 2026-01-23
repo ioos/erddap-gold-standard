@@ -234,7 +234,7 @@ variables:
 		:coverage_content_type = "physicalMeasurement" ;
 		:creator_country = "USA" ;
 		:creator_email = "rkwalter@calpoly.edu" ;
-		:creator_institution = "California Polytechnic State Univeristy, San Luis Obispo" ;
+		:creator_institution = "California Polytechnic State University, San Luis Obispo" ;
 		:creator_name = "Ryan Walter" ;
 		:creator_role = "pi" ;
 		:creator_sector = "academic" ;
@@ -251,7 +251,7 @@ variables:
 		:geospatial_vertical_units = "m" ;
 		:history = "Downloaded from California Polytechnic State University, Center for Coastal Marine Sciences at http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/\n2020-04-22T22:22:19Z http://cpool1.marine.calpoly.edu/cpool/CCMS_MorroBay/\n2020-04-22T22:22:19Z http://erddap.stage.sensors.axds.co/erddap/tabledap/edu_calpoly_marine_morro_bay_met.nc" ;
 		:infoUrl = "https://sensors.ioos.us/#metadata/57163/station" ;
-		:institution = "California Polytechnic State Univeristy, San Luis Obispo" ;
+		:institution = "California Polytechnic State University, San Luis Obispo" ;
 		:instrument = "Nova Lynx 100" ;
 		:ISO_Topic_Categories = "Oceans" ;
 		:keywords = "Earth Science > Oceans" ;
