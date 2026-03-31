@@ -95,7 +95,36 @@ $ ls -Ap
 
     You can monitor <http://localhost:8080/erddap/status.html> to see the status of your ERDDAP.   
 
-## Step 4: Next Steps
+## Step 4: Making ERDDAP Publicly Accessible
+
+If you want other people to reach your ERDDAP over the internet, you need to make the host running Docker reachable, set ERDDAP's public URLs, and (recommended) terminate TLS with a reverse proxy.
+
+At a minimum you will need:
+
+1. A public IP address for the machine running Docker (cloud VM, or home/office network with port-forwarding)
+2. Inbound firewall/security group rules that allow traffic to your server
+   - Recommended: TCP 80 (HTTP) and 443 (HTTPS)
+   - Alternative: TCP 8080 if you plan to expose Tomcat directly (not recommended)
+3. A DNS name pointing at that public IP (strongly recommended), e.g. `erddap.example.org`
+
+### Option A (recommended): reverse proxy + TLS (ports 80/443)
+
+Run a reverse proxy (e.g., Nginx, Caddy, Traefik) on the host that forwards `https://erddap.example.org/erddap/` to `http://localhost:8080/erddap/` and obtains/renews a TLS certificate (e.g., Let's Encrypt).
+
+Then update your ERDDAP configuration so links it generates use your public hostname:
+
+- `ERDDAP_baseUrl=https://erddap.example.org`
+- `ERDDAP_baseHttpsUrl=https://erddap.example.org`
+
+In this repo, you can set these in your `.env` (copied from `.env.template`) and redeploy with `docker-compose up -d`.
+See [Customizing your ERDDAP](/erddap-gold-standard/customize-erddap.html) for more context.
+
+### Option B: expose port 8080 directly
+
+You can map the container port to a public port on the host (e.g., `-p 8080:8080`) and then allow inbound traffic to that port.
+If you do this, you should still set `ERDDAP_baseUrl`/`ERDDAP_baseHttpsUrl` to your public URL and consider moving to HTTPS (Option A) as soon as possible.
+
+## Step 5: Next Steps
 Once you have successfully deployed an ERDDAP using the Docker instance, it's time to start testing out what you can do. 
 Below are links to a few of the topics that might be of interest:
 * [Adding datasets to ERDDAP](/erddap-gold-standard/adding-datasets.html) - How to add new datasets to ERDDAP
