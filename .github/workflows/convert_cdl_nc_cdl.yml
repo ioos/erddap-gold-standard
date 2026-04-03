@@ -22,7 +22,7 @@ jobs:
         persist-credentials: false
 
     - name: Setup Micromamba Python
-      uses: mamba-org/setup-micromamba@7f29b8b80078b1b601dfa018b0f7425c587c63bb  # v2.0.6
+      uses: mamba-org/setup-micromamba@d7c9bd84e824b79d2af72a2d4196c7f4300d3476  # v3.0.0
       with:
         environment-name: GHA
         init-shell: bash
