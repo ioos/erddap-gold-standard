@@ -5,4 +5,4 @@ docker run --rm -it \
   -v "$(pwd)/erddap/content:/usr/local/tomcat/content/erddap" \
   -e ERDDAP_flagKeyKey=das_dds \
   erddap/erddap:latest \
-  bash -c "cd webapps/erddap/WEB-INF/ && bash DasDds.sh"
+  bash -c "cd webapps/erddap/WEB-INF/ && bash DasDds.sh $@"
