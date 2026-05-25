@@ -12,7 +12,6 @@ on:
 
   workflow_dispatch:
 
-
 jobs:
   sync_theme_submodules:
     if: github.repository_owner == 'ioos' # only run if ioos owns repo
