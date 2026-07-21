@@ -6,7 +6,7 @@ toc: true
 summary: A quick start for deploying an ERDDAP server.
 ---
 
-This page aims to provide a quick start for standing up an ERDDAP server using the [ERDDAP Docker image](https://github.com/axiom-data-science/docker-erddap) and a few IOOS Gold Standard 
+This page aims to provide a quick start for standing up an ERDDAP server using the [ERDDAP Docker image](https://hub.docker.com/r/erddap/erddap) and a few IOOS Gold Standard 
 Example datasets. You can view this setup live at <https://standards.sensors.ioos.us/erddap/index.html>, with dataset documentation at <https://ioos.github.io/ioos-metadata/gold-standard-examples.html>.
 
 This getting started page provides instructions and links to external resources for setting up an ERDDAP server using a single Docker image. [Multi-node Kubernetes deployments](/erddap-gold-standard/kubernetes.html) are linked to under the **Other deployment** options sidebar.
@@ -62,9 +62,9 @@ $ ls -Ap
       -v $(pwd)/erddap/content:/usr/local/tomcat/content/erddap \
       -v $(pwd)/erddap/data:/erddapData \
       -v $(pwd)/datasets:/datasets \
-     axiom/docker-erddap:2.23-jdk17-openjdk
+     erddap/erddap:latest
     ```
-    get `axiom/docker-erddap:2.23-jdk17-openjdk` or the latest one available from [axiom docker-erddap](https://github.com/axiom-data-science/docker-erddap).
+    get `erddap/erddap:latest` or specify a version available from [erddap/erddap Docker](https://hub.docker.com/r/erddap/erddap).
     
     or, copy the `.env.template` file to `.env`, and then run `docker-compose`:
 
@@ -80,10 +80,10 @@ $ ls -Ap
 
     ```shell
     Creating network "erddap-gold-standard_default" with the default driver
-    Pulling erddap (axiom/docker-erddap:2.23-jdk17-openjdk)...
-    2.23-jdk17-openjdk: Pulling from axiom/docker-erddap
-    Digest: sha256:1ae5c7637ba14db60c5a0cd143e9fc1eb4115cdd8f030f40b22d1fdbea919ba3
-    Status: Downloaded newer image for axiom/docker-erddap:2.23-jdk17-openjdk
+    Pulling erddap (erddap/erddap:latest)...
+    latest: Pulling from erddap/erddap
+    Digest: sha256:dcf68c0ade410fcf6a9925221424e7e9385b1a0b3400513980fddbd8a33c74a3
+    Status: Downloaded newer image for erddap/erddap:latest
     Creating erddap_gold_standard ... done
     ```
 
